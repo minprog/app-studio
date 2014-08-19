@@ -118,22 +118,23 @@ No books are required for this course. However, we recommend the below. Each of 
 
 *Learning Android*  
 Marko Gargenta  
-O'Reilly (2011)  
-ISBN 9781449390501
+[O'Reilly (2011)](http://shop.oreilly.com/product/0636920010883.do)  
+ISBN 9781449390501  
+*note*: do not buy the 2014 edition, it is full of errors
 
 *Hello, Android: Introducing Google's Mobile Development Platform, Third Edition*  
 Ed Burnette  
-Pragmatic Bookshelf (2010)  
-ISBN 978193435656
+[Pragmatic Bookshelf (2010)](http://pragprog.com/book/eband3/hello-android)  
+ISBN 9781934356562
 
 **iOS**
 
-*Beginning iOS 5 Development: Exploring the iOS SDK*  
+*Beginning iOS 7 Development: Exploring the iOS SDK*  
 Dave Mark, Jack Nutting, Jeff LaMarch  
-Apress (2011)  
-ISBN 9781430236054
+[Apress (2014)](http://www.apress.com/9781430260226)  
+ISBN 9781430260226
 
 *Beginning iOS 5 Application Development*  
 Wei-Meng Lee  
-Wiley (2012)  
+[Wiley (2012)](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118144252.html)  
 ISBN 9781118144251

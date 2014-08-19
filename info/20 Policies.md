@@ -1,5 +1,3 @@
-# Course policies
-
 ## Collaboration
 
 All work that you do toward fulfillment of this course's expectations must be

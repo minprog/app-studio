@@ -1,0 +1,4 @@
+name: App Studio + Native
+requirements:
+    - nfinal
+final: nfinal

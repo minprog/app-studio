@@ -25,39 +25,43 @@ of running Xcode or Eclipse.
 
 ## Expectations
 
+### For all students
+
+* Students are expected to watch all lectures and sections and to submit all
+  required projects, as specified below.
+
+* Students wanting to learn iOS programming are encouraged to have a Mac
+  (running Mountain Lion) as well as an iPad, iPhone, or iPod touch; students
+  wanting to learn Android can use any platform that Eclipse runs on and should
+  probably have access to an Android phone or tablet.
+
 <div class="row">
 <div class="col-xs-6">
 
-### For most students	
+### For non-cs students	
 
-* Students are expected to attend or watch all lectures and sections and to submit all projects.
+* You, individually, are expected to be at the weekly workgroup sessions led by
+  a teaching fellow. We will make sure we notice your progress and we will help
+  you to keep going in the right direction.
 
-* You are individually expected to be at the weekly workgroup sessions led by a teaching fellow. This will make sure we notice your progress and we can help you to keep going in the right direction.
+* You are expected to present three times on the progress of your work,
+  together with your teammates.
 
-* You are expected to present three times on the progress of your work, together with your teammates.
+* You are expected to co-author a written proposal as well as a
+  scientific-style poster with your teammates.
 
-* You are expected to co-author a written proposal as well as a scientific-style poster with your teammates.
-
-* You are expected to hand in three programming assignments invidiually, but with generous help of your teammates, if needed. You are expected to help your teammates with the programming assignments, if needed.
-
-You are required to work in the lab for some amount of time during the week, as
-agreed upon before starting the course. You are expected to deliver, with the
-same partner (if applicable) for each, four milestones for each of four
-projects. You are also expected to meet a course assistant to discuss each
-deliverable and improve on your work.
-
-Working in pairs is optional. Students are encouraged to enroll with a friend,
-but this is not required. Students wanting to learn iOS programming are
-encouraged to have a Mac (running Mountain Lion) as well as an iPad, iPhone, or
-iPod touch; students wanting to learn Android can use any platform that Eclipse
-runs on and should probably have access to an Android phone or tablet.
+* You are expected to hand in two programming assignments invidiually, but with
+  generous help of your teammates, if needed. You are expected to help your
+  teammates with the programming assignments, if needed.
 
 </div>
 <div class="col-xs-6">
 
 ### For computer science students
 
-Test.
+* You are expected to deliver, four milestones for each of two projects. You
+  are also expected to meet a course assistant to discuss each deliverable and
+  improve on your work.
 
 </div>
 </div>

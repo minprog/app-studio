@@ -74,7 +74,7 @@ of running Xcode or Eclipse.
 
 ## Getting help
 
-
+You can get help from the TA's during weekly sessions, and you are encouraged to ask questions on [Slack](https://minprog.slack.com/). Your fellow students are supposed to help you out there, and our TA's will also monitor the `appstudio` channel.
 
 ## Grades
 

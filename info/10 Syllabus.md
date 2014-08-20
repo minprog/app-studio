@@ -25,6 +25,11 @@ of running Xcode or Eclipse.
 
 ## Expectations
 
+<div class="row">
+<div class="col-xs-6">
+
+### For most students	
+
 * Students are expected to attend or watch all lectures and sections and to submit all projects.
 
 * You are individually expected to be at the weekly workgroup sessions led by a teaching fellow. This will make sure we notice your progress and we can help you to keep going in the right direction.
@@ -47,6 +52,15 @@ encouraged to have a Mac (running Mountain Lion) as well as an iPad, iPhone, or
 iPod touch; students wanting to learn Android can use any platform that Eclipse
 runs on and should probably have access to an Android phone or tablet.
 
+</div>
+<div class="col-xs-6">
+
+### For computer science students
+
+Test.
+
+</div>
+</div>
 
 ## Getting help
 

@@ -59,9 +59,13 @@ of running Xcode or Eclipse.
 
 ### For computer science students
 
-* You are expected to deliver, four milestones for each of two projects. You
-  are also expected to meet a course assistant to discuss each deliverable and
+* You are expected to hand in one programming assignment that gets you started with the platform of choice.
+
+* You are expected to deliver four milestones for each of two projects. You
+  are also expected to meet a TA to discuss each deliverable and
   improve on your work.
+
+* You are expected to use the discussions with the TA to improve the technical and functional designs of your projects.
 
 </div>
 </div>

@@ -27,11 +27,13 @@ of running Xcode or Eclipse.
 
 ### For all students
 
-* Students are expected to watch all lectures and sections and to submit all
+* You are expected to watch all lectures and sections and to submit all
   required projects, as specified below.
+  
+* You are expected to participate in the online environment provided ([Slack](https://minprog.slack.com/)), to ask questions that will help you get on with your projects, and answer questions that will help others get on.
 
 * Students wanting to learn iOS programming are encouraged to have a Mac
-  (running Mountain Lion) as well as an iPad, iPhone, or iPod touch; students
+  (running OS 10.9) as well as an iPad, iPhone, or iPod touch; students
   wanting to learn Android can use any platform that Eclipse runs on and should
   probably have access to an Android phone or tablet.
 
@@ -52,7 +54,7 @@ of running Xcode or Eclipse.
 
 * You are expected to hand in two programming assignments invidiually, but with
   generous help of your teammates, if needed. You are expected to help your
-  teammates with the programming assignments, if needed.
+  teammates with the programming assignments, if needed. Do mind the collaboration policies!
 
 </div>
 <div class="col-xs-6">
@@ -72,13 +74,9 @@ of running Xcode or Eclipse.
 
 ## Getting help
 
-Your most important resource for help in learning the material in this course
-is your fellow students. Work closely with your teammates. Also, regularly
-confer with some of the other students. You are responsible for helping each
-other learn.
+
 
 ## Grades
-
 
 Other than that, you will meet with a course assistant to discuss each
 milestone, and that is where you'll get detailed feedback on the products you

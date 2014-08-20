@@ -1,4 +1,4 @@
-*Edition: September 2014*
+*Edition: September 2014 (this is a beta version!)*
 
 Today's applications are increasingly mobile. Computers are no longer confined to desks and laps but instead live in our pockets and hands. This course teaches students how to build mobile apps for Android and iOS, two of today's most popular platforms, and how to deploy them in Android Market and the App Store. Students learn to write native apps for Android using Eclipse and the Android SDK, to write native apps for iPhones, iPod Touches, and iPads using Xcode and the iOS SDK, and to write web apps for both platforms.
 

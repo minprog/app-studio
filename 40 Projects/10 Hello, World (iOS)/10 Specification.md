@@ -3,10 +3,6 @@
 * Objective-C
 * Xcode
 
-## Help.
-
-Help is available throughout the week at http://help.cs76.net/! We’ll do our best to respond within 24 hours. Be sure, though, to take advantage of lectures and sections as well as videos thereof!
-
 ## Academic Honesty.
 
 Building Mobile Applications CSCI E-76 Harvard Extension School Spring 2012
@@ -26,15 +22,21 @@ Your work on this problem set will be evaluated along one primary axis.
 
 ## Required Reading.
 
-*   First curl up with Learning Objective-C: A Primer: http://developer.apple.com/library/mac/referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/
+*   First curl up with Learning Objective-C: A Primer: 
 
-    You’ll find that it’s a pretty quick read and hopefully whets your appetite for a bit more detail. £ It’s time for more detail! Now curl up with The Objective-C Programming Language: http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
+    <http://developer.apple.com/library/mac/referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/>
+
+    You’ll find that it’s a pretty quick read and hopefully whets your appetite for a bit more detail.
+
+*   It’s time for more detail! Now curl up with The Objective-C Programming Language:
+    <http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html>
 
     This one’s a few chapters, so be sure to click through to each by clicking Next in the bottom-right corner of most every page or by clicking through to each via the Table of Contents in the site’s top-left corner.
 
     Odds are you won’t retain everything you read. But not to worry; it’ll start to sink in once you get your hands dirty with code of your own.
 
-*   Next skim Coding Guidelines for Cocoa: http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
+*   Next skim Coding Guidelines for Cocoa:
+    <http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html>
 
     Try to keep those guidelines in mind as you begin to write code of your own. We won’t expect strict adherence to Apple’s guidelines, so long as your own style is clean and consistent, but might as well familiarize yourself with some best practices.
 
@@ -54,21 +56,19 @@ Your work on this problem set will be evaluated along one primary axis.
 	
 	<http://developer.apple.com/programs/ios/enterprise/>
 	
-	which costs $299/year. However, know that you do not need to sign up for either program for this course. Because the course is part of the iOS Developer University Program, you will be able to install apps that you write on your own iPad, iPhone, or iPod touch this semester for free. You won’t be able to submit any apps to the App Store, though, unless you sign up for one of the paid programs. See http://developer.apple.com/programs/which-program/ for more details.
+	which costs $299/year. However, know that you do not need to sign up for either program for this course. Because the course is part of the iOS Developer University Program, you will be able to install apps that you write on your own iPad, iPhone, or iPod touch this semester for free. You won’t be able to submit any apps to the App Store, though, unless you sign up for one of the paid programs. See <http://developer.apple.com/programs/which-program/> for more details.
 	
 ## Xcode.
 
-From this point forward in the story, you’ll need to be sure that you’re on an Intel-based Mac running Lion (Mac OS X 10.7.3 or later). To find out whether a particular Mac qualifies, select About This Mac from the  menu. Hopefully you’ll see Version 10.7.3 (or later) as well as some mention of Intel next to Processor.
-
-If you don’t own a Mac that meets these requirements and are distant from Cambridge, you will need to borrow or otherwise procure one. (Afraid these are Apple’s requirements, not ours!) If you don’t own a Mac that meets these requirements but are local to Cambridge, you’re welcome to use the Mac lab at 53 Church Street in Harvard Square, the hours of which are listed at http://lab.dce.harvard.edu/; do bring proof of your enrollment in the course (e.g., any paperwork you received from the school in the mail) in case asked for it by the User Assistants at the front desk.
+From this point forward in the story, you’ll need to be sure that you’re on an Intel-based Mac running Mavericks (Mac OS X 10.9 or later). To find out whether a particular Mac qualifies, select About This Mac from the  menu. Hopefully you’ll see Version 10.9 (or later) as well as some mention of Intel next to Processor.
 
 If, at this very moment, using a Mac at 53 Church Street, where everything’s already installed for you, go ahead and skip the following two checkboxes. Otherwise it’s time to install Xcode!
 
-*   If you only signed up as an Apple Developer (for free) and neither of the paid programs, visit http://itunes.apple.com/us/app/xcode/id497799835?mt=12 with Safari, even if not your preferred browser, then click View in Mac App Store at top-left. That button should trigger the Mac’s own App Store to launch, at which point you can download Xcode 4.3.1 for free. Do so and proceed to install it once downloaded.[^1]
+*   If you only signed up as an Apple Developer (for free) and neither of the paid programs, visit <http://itunes.apple.com/us/app/xcode/id497799835?mt=12> with Safari, even if not your preferred browser, then click View in Mac App Store at top-left. That button should trigger the Mac’s own App Store to launch, at which point you can download Xcode 4.3.1 for free. Do so and proceed to install it once downloaded.[^1]
 
 *   If you did sign up for the iOS Developer Program (for $99/year) or the iOS Developer Enterprise Program (for $299/year), head to
 
-    http://developer.apple.com/xcode/
+    <http://developer.apple.com/xcode/>
 
     and click Log in where prompted in order to download Xcode 4.3.1 for free. (Well, "free," seeing as you did just pay $99 or $299.) Proceed to install it once downloaded.
 
@@ -78,14 +78,14 @@ If, at this very moment, using a Mac at 53 Church Street, where everything’s a
 
 [^1]: If you already have an earlier version of Xcode installed, Xcode 4.3.1’s installer will allow you to retain or remove it.
 
-[^2]: Prior versions of Xcode could be found in /Developer/Applications/.
+[^2]: Prior versions of Xcode could be found in `/Developer/Applications/`.
 
 
 ## Hello, World.
 
-*   Alright, it’s time to take Xcode for a spin. Go ahead and launch it, if not running already, and create a new project, as by clicking Create a new Xcode project in the splash screen that displays upon launch (if you didn’t disable) or by selecting New > New Project... from Xcode’s File menu. When prompted to choose a template for your new project, select Application under Mac OS X (not iOS), select Command Line Tool, then click Next. On the screen that appears: input MacApp for Product Name; input edu.harvard.extension for Company Identifier; select Foundation (not Core Foundation) next to Type; then click Next. Choose a location for the project when prompted, check the box to create a local git repository if you’d like, then click Create.
+*   Alright, it’s time to take Xcode for a spin. Go ahead and launch it, if not running already, and create a new project, as by clicking Create a new Xcode project in the splash screen that displays upon launch (if you didn’t disable) or by selecting New &rarr; New Project... from Xcode’s File menu. When prompted to choose a template for your new project, select Application under Mac OS X (not iOS), select Command Line Tool, then click Next. On the screen that appears: input MacApp for Product Name; input edu.harvard.extension for Company Identifier; select Foundation (not Core Foundation) next to Type; then click Next. Choose a location for the project when prompted, check the box to create a local git repository if you’d like, then click Create.
 
-    A window entitled MacApp.xcodeproj should then appear. Go ahead and expand each of the triangles at left (except for Foundation.framework), and you should see main.m, MacApp.1, and MacApp-Prefix.pch among their contents. Click MacApp.1 then hit delete on your keyboard; when prompted to permanently delete it, click Delete. (That file’s just a template for a “man page” that you won’t need for this project. See http://en.wikipedia.org/wiki/Man_page if curious.)
+    A window entitled MacApp.xcodeproj should then appear. Go ahead and expand each of the triangles at left (except for Foundation.framework), and you should see main.m, MacApp.1, and MacApp-Prefix.pch among their contents. Click MacApp.1 then hit delete on your keyboard; when prompted to permanently delete it, click Delete. (That file’s just a template for a “man page” that you won’t need for this project. See <http://en.wikipedia.org/wiki/Man_page> if curious.)
 
     Now click main.m, and you should see its contents at right. Ha, turns out Xcode already wrote this program for you! But go ahead and change
 
@@ -122,7 +122,5 @@ If, at this very moment, using a Mac at 53 Church Street, where everything’s a
 *   First, open up each of your projects (i.e., MacApp and iPhoneApp) in Xcode, select Clean from Xcode’s Product menu, and then close them again.
 
     Then create a ZIP file containing both of those projects’ folders, and name the ZIP ########.zip, where ####### is your 8-digit Harvard ID (HUID), the same credential that you use to log into help.cs76.net.
-
-    Then head to https://www.cs76.net/submit, click the login link at top-right, click the link to your TF’s dropboxes at top-left, click this project’s own folder, click Upload File, and upload your ZIP file as prompted; no need to give it a title. Be sure not to click the wrong project’s folder. You may re-submit in this same manner as many times as you’d like. Just take care to delete any prior submissions.
 
     Be sure not to submit or re-submit after this project’s deadline.

@@ -5,10 +5,6 @@
 * Eclipse
 * Java
 
-## Help.
-
-Help is available throughout the week at http://help.cs76.net/! We’ll do our best to respond within 24 hours. Be sure, though, to take advantage of lectures and sections as well as videos thereof!
-
 ## Academic Honesty.
 
 All work that you do toward fulfillment of this course’s expectations must be your own unless collaboration is explicitly allowed by some project. Viewing, requesting, or copying another individual’s work or lifting material from a book, magazine, website, or other source—even in part—and presenting it as your own constitutes academic dishonesty, as does showing or giving your work, even in part, to another student.

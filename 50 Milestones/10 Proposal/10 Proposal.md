@@ -23,7 +23,7 @@ Then follow these three simple steps to share your repository with us. You
 should do this once for each project.
 
 1. go to `https://github.com/<github username>/<repository>/settings/collaboration`
-2. add the github users `v1kko`, `zll19910516`, `florisdb` and `Roxot`.
-3. Send the link to your repository to your TA when you make an appointment to discuss it. 
+2. add the github users `stgm` and `Roxot`.
+3. Send the link to your repository to your TA when you make an appointment to discuss it.
 
 And don't forget to make an appointment to discuss your proposal.

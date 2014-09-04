@@ -29,33 +29,19 @@ Your work on this project will be evaluated along one primary axis.
 
     We have some things to install, so let’s get started!
 
-*   First up: Eclipse, the standard IDE that supports the Android SDK and its Android Development Tools (ADT) Plugin. You can use a pre-existing installation of Eclipse if you already have it installed, but do make sure you are using the latest version. If you already have the latest version installed, skip ahead to the next step. If you don’t have it installed, visit the download page: <http://www.eclipse.org/downloads/> and download "Eclipse Standard 4.4". You might be presented with two download options: 32-bit or 64-bit. If you are unsure which applies to your specific machine, use one of the following links that is appropriate for your platform:
+*   We’re ready for the Android SDK! To download the development kit, visit <http://developer.android.com/sdk/index.html> and download the SDK appropriate for your platform. If you downloaded a ZIP or TGZ, uncompress the downloaded file.
 
-    * Windows: http://support.microsoft.com/kb/827218
-    * Mac OS X: http://support.apple.com/kb/ht3696
-    * Linux: open a terminal window and type uname –p. The result will be i386 for 32-bit machines and x86_64 for 64-bit machines.
+*   Follow the directions from "Adding SDK Packages" to so that Eclipse can find the right SDKs:
 
-*   Once you’ve downloaded the appropriate Eclipse version, install it by unzipping the downloaded file and moving the `eclipse` folder to some appropriate location, like /Applications/ on a Mac or C:\Program Files\ on a Windows PC.
+	<http://developer.android.com/sdk/installing/adding-packages.html>
 
-*   Now we’re ready for the Android SDK itself! To download the development kit, visit <http://developer.android.com/sdk/index.html> and download the SDK appropriate for your platform. If you downloaded a ZIP or TGZ, uncompress the downloaded file and place the entire SDK folder into the `eclipse` folder from above. If you use the Windows installer, we recommend installing the SDK in the same `eclipse` folder and leaving checked the box that says Start SDK Manager to install some required components. Incidentally, it’s not required that you place or install the SDK components in the `eclipse` folder, but we find that it keeps things tidy this way. If you do decide to place the SDK elsewhere, simply remember its location so that you can properly configure the ADT Plugin in the upcoming steps.
-
-*   Next up, let’s tell Eclipse how to use the Android SDK by installing the ADT Plugin. To do this, first open Eclipse and follow the directions from the “Downloading the ADT Plugin” from:
-
-	<http://developer.android.com/sdk/eclipse-adt.html#downloading>
-
-*   Follow the directions from "Configuring the ADT Plugin" to so that Eclipse can find the SDK:
-
-	<http://developer.android.com/sdk/eclipse-adt.html#configuring>
-
-    You might receive a message like "SDK Platform Tools component is missing! Please use the SDK Manager to install it." If so, it’s fine to click OK and ignore since we’re installing this next.
-
-*   The SDK does not actually contain all of the tools specific to each Android version to build applications. We need to install the SDK Components to achieve this functionality, though if you have already done so after using the SDK installer on Windows you may skip to the next step. Otherwise, open Eclipse, select the Window menu and open the Android SDK Manager. From there, sort by repository and check all available components from Google’s repositories. If you’re unsure, simply install all available components by selecting the New and the Updates packages links. Finally, click the Install Packages button.
+*   Open Eclipse, select the Window menu and open the Android SDK Manager. From there, sort by repository and check all available components from Google’s repositories. If you're unsure, simply install all available components from the "Android 4.4.2 (API 19)" platform. Finally, click the Install Packages button.
 
     Installing older versions in addition to the newest ones will allow you to build Android applications for the oldest version of Android your code can support, which will be useful to create applications that are compatible with as many devices as possible.
 
-*   Almost there! Everything is installed, but you can’t quite open up an Android emulator quite yet. For that, we need to create an Android Virtual Device, or AVD. To do this, open the Android AVD Manager via the Window menu and select the New... button. Give your virtual device a name; we recommend that you give it a name that reflects the version of Android and any features you’ve selected for the AVD. In the Target pull-down, select "Android 4.0.3 – API Level 15", which reflects the most recent version publicly available on devices. Note that installing the SDK components from the previous step provided all available targets in that pull-down. If you don’t see the Android 4.0.3 in the target pull down, you should double-check that you’ve installed all components.
+*   Almost there! Everything is installed, but you can’t quite open up an Android emulator quite yet. For that, we need to create an Android Virtual Device, or AVD. To do this, open the Android AVD Manager via the Window menu and select the *New...* button. Give your virtual device a name; we recommend that you give it a name that reflects the version of Android and any features you’ve selected for the AVD. In the Target pull-down, select "Android 4.4.2 - API Level 19", which reflects the most recent version publicly available on devices. Note that installing the SDK components from the previous step provided all available targets in that pull-down. If you don't see the Android 4.4.2 in the target pull down, you should double-check that you've installed all components.
 
-    The remainder of the options in the Create new Android Virtual Device (AVD) window defines additional properties of the emulated device, such as an (emulated) SD card or any special hardware or features, but leaving the defaults is fine for now. When done, click the Create AVD button. You should see your new AVD in the Android SDK and AVD Manager window, where you can click on your new AVD and click Start... to load the emulator and the AVD. If the resolution on your screen is low and you find the emulated screen is too large to fit on your display, you might need to select the “Scale display to real size” checkbox and change the DPI to reflect that of your own display in the Launch Options window that appears when starting an AVD. If this is the case, click on the ? button next to the Monitor dpi field to help you calculate your screen’s DPI.
+    The remainder of the options in the *Create new Android Virtual Device (AVD)* window defines additional properties of the emulated device, such as an (emulated) SD card or any special hardware or features, but leaving the defaults is fine for now. When done, click the *Create AVD* button. You should see your new AVD in the Android SDK and AVD Manager window, where you can click on your new AVD and click *Start...* to load the emulator and the AVD. If the resolution on your screen is low and you find the emulated screen is too large to fit on your display, you might need to select the "Scale display to real size" checkbox and change the DPI to reflect that of your own display in the Launch Options window that appears when starting an AVD. If this is the case, click on the **?** button next to the *Monitor dpi* field to help you calculate your screen's DPI.
 
 *   Now create another AVD but use a target of "Android 2.1 – API Level 7", and be sure to give yourself some time to play with both AVDs to get a feel for how Android has matured over time.
 

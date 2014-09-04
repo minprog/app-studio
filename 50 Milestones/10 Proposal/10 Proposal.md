@@ -8,8 +8,7 @@ README might be:
 * a bulleted list of any frameworks, languages, libraries, or other technologies
   with which you'll implement your project;
 * mockups and/or wireframes of the screens a user might encounter, and the way these are linked
-  together;
-* a few sentences of who will do what.
+  together.
 
 [Tom Preston-Werner]: http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 

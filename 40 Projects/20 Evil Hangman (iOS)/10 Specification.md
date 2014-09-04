@@ -161,7 +161,7 @@ http://cdn.cs76.net/2012/spring/projects/ios-staff/words.plist?download
 
 ### Implementation Details.
 
-*   Your app’s UI should be sized for an iPhone or iPod touch (i.e., 320 × 480 points) with support for, at least, UIInterfaceOrientationPortrait. However, if you or your partner owns an iPad and would prefer to optimize your app for it (i.e., 768 × 1024 points), you may, so long as you inform your TF prior to this project’s deadline.
+*   Your app’s UI should be sized for an iPhone or iPod touch (i.e., 320 × 480 points) with support for, at least, UIInterfaceOrientationPortrait. However, if you own an iPad and would prefer to optimize your app for it (i.e., 768 × 1024 points), you may, so long as you inform your TF prior to this project’s deadline.
 *   You must use the contents of words.plist as your universe of possible words. You’re welcome, but not required, to transform it into some other format (e.g., SQLite).
 *   Your app must come with default values for the flipside’s two settings; those defaults should be set in NSUserDefaults with registerDefaults:. Anytime the user changes those settings, the new values should be stored immediately in NSUserDefaults (so that changes are not lost if the application is terminated).
 *   You must implement each of the flipside’s numeric settings with a UISlider. Each slider should be accompanied by at least one UILabel that reports its current value (as an integer).
@@ -169,19 +169,8 @@ http://cdn.cs76.net/2012/spring/projects/ios-staff/words.plist?download
 *   You must obtain a user’s guesses via a UITextField (and the on-screen keyboard that accompanies it). For the sake of aesthetics, you are welcome, but not required, to keep that UITextField hidden (so long as the on-screen keyboard works). You are also welcome, but not required, to respond to user’s keypresses instantly, without waiting for them to hit return or the like, in which case textField:shouldChangeCharactersInRange:replacementString in the UITextFieldDelegate protocol might be of some interest.
 *   Your app must use Automatic Reference Counting (ARC).
 *   Your app must tolerate low-memory warnings (as by reloading views when needed).
-*   Your app must work within the iPhone 5.1 Simulator; you need not test it on actual hardware. However, if you or your partner owns an iPad, iPhone, or iPod touch, and you'd like to install your app on it, see https://manual.cs50.net/iOS for instructions.
-
-## How to Submit.
-
-*   First, open up your project (i.e., Hangman) in Xcode, select Clean from Xcode’s Product menu, and then close them again.
-
-    Then create a ZIP file containing the project’s folder and name the ZIP ########.zip, where ####### is your 8-digit Harvard ID (HUID), the same credential that you use to log into help.cs76.net.
-
-    Then head to https://www.cs76.net/submit, click the login link at top-right, click the link to your TF’s dropboxes at top-left, click this project’s own folder, click Upload File, and upload your ZIP file as prompted; no need to give it a title. Be sure not to click the wrong project’s folder. You may re-submit in this same manner as many times as you’d like. Just take care to delete any prior submissions.
-
-    Be sure not to submit or re-submit after this project’s deadline.
+*   Your app must work within the iPhone 5.1 Simulator; you need not test it on actual hardware. However, if you own an iPad, iPhone, or iPod touch, and you'd like to install your app on it, TDB instructions.
 
 [^2]: The words are taken from /usr/share/dict/words on Mac OS 10.7.3, with all forced to uppercase and duplicates removed.
 
 [^3]: Even though Xcode presents the contents of words.plist with three columns (Key, Type, and Value) as though the file contained a dictionary, it indeed contains an array (implemented in XML with an array element, which you can see if you open `words.plist` with a text editor).
-

@@ -6,7 +6,7 @@ style guide, you should review them with your instructor.
 ## Design document
 
 The format of your design doc is up to you, but it should somehow capture any
-and all design decisions that you and your partner make before (or while)
+and all design decisions that you make before (or while)
 implementing your app. Reasonable to incude in your design doc might be:
 
 * a list of database tables and fields (and their types) that you've decided to
@@ -28,7 +28,7 @@ put them in the same directory.
 ## Style guide
 
 The format of your style guide is up to you, but it should somehow capture the
-style conventions to which you and your partner will adhere for this app's:
+style conventions to which you will adhere for this app's:
 
 * CSS declarations
 * HTML tags

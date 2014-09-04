@@ -51,14 +51,4 @@ Your task, by the project’s deadline, is to implement the project whose propos
 
 *   Your app must tolerate low-memory warnings (as by reloading views when needed).
 
-*   Your app must work within the iPhone 5.1 Simulator; you need not test it on actual hardware. However, if you or your partner owns an iPad, iPhone, or iPod touch, and you'd like to install your app on it, see https://manual.cs50.net/iOS for instructions.
-
-## How to Submit.
-
-*   First, open up your project in Xcode, select Clean from Xcode’s Product menu, and then close them again.
-
-*   Then create a ZIP file containing the project’s folder and name the ZIP ########.zip, where ####### is your 8-digit Harvard ID (HUID), the same credential that you use to log into help.cs76.net.
-
-*   Then head to https://www.cs76.net/submit, click the login link at top-right, click the link to your TF’s dropboxes at top-left, click this project’s own folder, click Upload File, and upload your ZIP file as prompted; no need to give it a title. Be sure not to click the wrong project’s folder. You may re-submit in this same manner as many times as you’d like. Just take care to delete any prior submissions.
-
-*   Be sure not to submit or re-submit after this project’s deadline.
+*   Your app must work within the iPhone 5.1 Simulator; you need not test it on actual hardware. However, if you own an iPad, iPhone, or iPod touch, and you'd like to install your app on it, see TBD for instructions.

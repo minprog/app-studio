@@ -1,8 +1,6 @@
-To submit your final, only you or your partner (not both) need to follow
-these steps:
+To submit your final, you need to follow these steps:
 
-* Ensure that you have the latest version of your code (and your partner's
-  code), as via `git pull`.
+* Ensure that you have the latest version of your code, as via `git pull`.
 
 * Ensure that you have a README (which you should already have created prior
   to submission of your beta version). Update that README with any thoughts
@@ -17,13 +15,12 @@ these steps:
 
 * Tag and push your code for submission as follows:
 
-		cd ~/vhosts/project0
+		cd ~/project_name
 		git add --all
 		git commit -m "Ready for release"
 		git push
 		git tag --force release
 		git push --tags
 
-* Ask your partner to pull down your code via `git` and confirm that
+* Ask a classmate to pull down your code via `git` and confirm that
   everything is indeed in working order, lest your instructor find otherwise.
-

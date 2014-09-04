@@ -1,20 +1,21 @@
 *Edition: September 2014 (this is a beta version!)*
 
-Today's applications are increasingly mobile. Computers are no longer confined to desks and laps but instead live in our pockets and hands. This course teaches students how to build mobile apps for Android and iOS, two of today's most popular platforms, and how to deploy them in Android Market and the App Store. Students learn to write native apps for Android using Eclipse and the Android SDK, to write native apps for iPhones, iPod Touches, and iPads using Xcode and the iOS SDK, and to write web apps for both platforms.
-
-Students work in small collaborative design teams to propose, build, and
-document a semester-long project focused on mobile applications for cell
-phones. Additional assignments include creating several small mobile
-applications such as context-aware mobile media capture and games. Students
-document their work through a series of written and oral proposals, progress
-reports, and final reports. This course explores mobile imaging and media
-creation, GPS location, user-centered design, usability testing, and
-prototyping.
+Today's applications are increasingly mobile. Computers are no longer confined
+to desks and laps but instead live in our pockets and hands. This course
+teaches students how to build mobile apps for Android and iOS, two of today's
+most popular platforms, and how to deploy them on Google Play and the App
+Store. Students document their work through a series of written and oral
+proposals, progress reports, and code. Students learn to write native apps for Android using Eclipse and the Android SDK, to write native apps for iPhones, iPod Touches, and iPads using Xcode and the iOS SDK, and to write web apps for both platforms.
 
 ## Instructors
 
 Martijn Stegeman  
+**instructor**  
+<help@mprog.nl>
 <m.stegeman@uva.nl>
+
+Bryan Eikema  
+**teaching assistant**
 
 ## Prerequisites
 
@@ -40,7 +41,7 @@ of running Xcode or Eclipse.
 <div class="row">
 <div class="col-xs-6">
 
-### For non-cs students	
+### Design track
 
 * You, individually, are expected to be at the weekly workgroup sessions led by
   a teaching fellow. We will make sure we notice your progress and we will help
@@ -59,7 +60,7 @@ of running Xcode or Eclipse.
 </div>
 <div class="col-xs-6">
 
-### For computer science students
+### Programming track
 
 * You are expected to hand in one programming assignment that gets you started with the platform of choice.
 
@@ -76,51 +77,30 @@ of running Xcode or Eclipse.
 
 You can get help from the TA's during weekly sessions, and you are encouraged to ask questions on [Slack](https://minprog.slack.com/). Your fellow students are supposed to help you out there, and our TA's will also monitor the `appstudio` channel.
 
-## Grades
-
 Other than that, you will meet with a course assistant to discuss each
 milestone, and that is where you'll get detailed feedback on the products you
 deliver. Often, these sessions will result in some extra work.
 
+## Grades
 
-A student must ordinarily meet all milestone deadlines in order to be eligible
-for a passing grade unless granted an exception in writing by the course's
-lecturer.
+A student must ordinarily meet all deadlines in order to be eligible for a
+passing grade unless granted an exception in writing by the course's
+instructor. Your final grade will be based on your performance on the course's
+projects.
 
-Each project's proposal, design doc, style guide, and code reviews are
-evaluated primarily along axes of clarity and thoroughness. Each project's
-beta is evaluated primarily along axes of scope, design, and style. Each
-project's release is evaluated primarily along axes of scope, correctness,
-design, and style. Axes' weights may vary by project.
+Each project's proposal, design doc and style guide are evaluated primarily
+along axes of clarity and thoroughness. Each project's beta is evaluated
+primarily along axes of scope, design, and style. Each project's release is
+evaluated primarily along axes of scope, correctness, design, and style. Axes'
+weights may vary by project.
 
 The course is not graded on a curve. The course does not have pre-determined
 cutoffs for final grades. Scores on projects' milestones may be normalized
 across graders at term's end. Each student's final grade is individually
-determined after input from the teaching fellows. Prior experience, remarkable
+determined after input from the teaching staff. Prior experience, remarkable
 effort, and upward trending may be considered.
 
-Partners ordinarily receive the same grade at the end of the course, except in
-cases where one partner's contributions to projects fall short of
-expectations.
-
-Your final grade will be based on your performance on the courseʼs projects. Projects will be evaluated along the axes of scope, correctness, design, and style, with the axes generally weighted in that same order.
-
-A student must ordinarily meet all deadlines in order to be eligible for a
-passing grade unless granted an exception in writing by the course's instructor.
-
-Each oral or written deliverable in the course is evaluated primarily along
-axes of clarity and thoroughness. Each programming assignment is evaluated
-primarily along axes of scope, design, and style. Axes' weights may vary by
-deliverable.
-
-The course is not graded on a curve. The course does not have pre-determined
-cutoffs for final grades. Scores on deliverables may be normalized across
-graders at term's end. Each student's final grade is individually determined
-after input from the teaching staff. Prior experience, remarkable effort, and
-upward trending may be considered.
-
-Teammates ordinarily receive the same grade at the end of the course, except in
-cases where one partner's contributions to projects fall short of expectations.
+### Design
 
 * Class participation	10%
 * Mobile observation study	15%

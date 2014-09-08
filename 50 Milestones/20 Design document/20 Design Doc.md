@@ -1,22 +1,23 @@
-Your second milestone consist of delivering a technical design for your app.
-It should convey the way your app fits into the platform your building it on,
-and the specific design choices you make. After finishing the design doc and
-style guide, you should review them with your instructor.
+Your second milestone consist of delivering a technical design for your app. It
+should convey the way your app fits into the platform you are building on, and
+the specific design choices you make. After finishing the design doc and style
+guide, you will review them with your tutor.
 
 ## Design document
 
 The format of your design doc is up to you, but it should somehow capture any
-and all design decisions that you make before (or while)
-implementing your app. Reasonable to incude in your design doc might be:
+and all design decisions that you make before (or while) implementing your app.
+Reasonable to incude in your design doc might be:
 
-* a list of database tables and fields (and their types) that you've decided to
-  implement;
 * a list of classes and methods (and their return types and/or arguments) that
   you've decided to implement;
-* more advanced sketches of UIs.
+* more advanced sketches of UIs that are connected to the classes you are implementing;
+* a list of frameworks that you will be using to provide common functionality;
+* a list of database tables and fields (and their types) that you've decided to
+  implement (if needed).
 
-Be sure to update your README if you have made some incompatible decisions.
-You are free to update your documents at any time.
+Be sure to update your README if you have made some incompatible decisions in
+your design document. You are free to update all documentation at any time.
 
 Add the design doc to your project on GitHub in a directory named `doc`. Like
 the README, the design doc should be written in Markdown, so check out the
@@ -52,3 +53,8 @@ content:
 [CS50 Style Guide]: https://manual.cs50.net/Style_Guide
 [Google JavaScript Style Guide]: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 [Coding guidelines for Cocoa]: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
+
+Add the style guide to your project on GitHub in a directory named `doc`. Like
+the README, the design doc should be written in Markdown, so check out the
+[syntax] again if needed. If you'd like to include images in your style guide,
+put them in the same directory.

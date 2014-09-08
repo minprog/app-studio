@@ -77,9 +77,15 @@ of running Xcode or Eclipse.
 
 You can get help from the TA's during weekly sessions, and you are encouraged to ask questions on [Slack](https://minprog.slack.com/). Your fellow students are supposed to help you out there, and our TA's will also monitor the `appstudio` channel.
 
-Other than that, you will meet with a course assistant to discuss each
-milestone, and that is where you'll get detailed feedback on the products you
-deliver. Often, these sessions will result in some extra work.
+## Weekly meetings
+
+You will meet with a course assistant to discuss each milestone, and that is
+where you'll get detailed feedback on the products you deliver. Often, these
+sessions will result in some extra work. Topics of the meetings would normally include:
+
+* reporting on milestones
+* defending design decisions
+* presenting code for review
 
 ## Grades
 

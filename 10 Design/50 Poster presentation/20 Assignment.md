@@ -6,7 +6,7 @@ Prepare an A0-sized poster describing your project. Your poster should include i
 the motivation from your initial field study as well as some details about how the system works and
 the key use cases.
 
-Prepare the poster so that it’s easy to understand what problems your application solves at a
+Prepare the poster so that it's easy to understand what problems your application solves at a
 glance and clearly provide subheadings so that viewers can focus on the areas that they are most
 interested in. Include a small section on future plans including plans for your field study.
 

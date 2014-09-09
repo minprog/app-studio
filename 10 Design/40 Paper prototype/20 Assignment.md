@@ -10,8 +10,8 @@ that you are having a hard time designing or where you think that users might ha
 
 All screens and overlays should be brought to class next week for a usability trial that will be
 conducted at the start of class. Each group will have team members from other groups try their
-application by “using” the paper prototype for each of the identified use cases. One team member
-will be responsible for acting as “the phone” changing the screens and overlays as the “user”
+application by "using" the paper prototype for each of the identified use cases. One team member
+will be responsible for acting as "the phone" changing the screens and overlays as the "user"
 interacts with the paper.
 
 The deliverable document should contain the following aspects:

@@ -9,10 +9,9 @@ The format of your design doc is up to you, but it should somehow capture any
 and all design decisions that you make before (or while) implementing your app.
 Reasonable to incude in your design doc might be:
 
-* a list of classes and methods (and their return types and/or arguments) that
-  you've decided to implement;
-* more advanced sketches of UIs that are connected to the classes you are implementing;
-* a list of frameworks that you will be using to provide common functionality;
+* a list of classes and public methods (and their return types and/or arguments) that you've decided to implement;
+* more advanced sketches of UIs that clearly explain which features are connected to which underlying classes;
+* a list of APIs and frameworks that you will be using to provide functionality in your app;
 * a list of database tables and fields (and their types) that you've decided to
   implement (if needed).
 

@@ -1,11 +1,11 @@
 ## Collaboration
 
 All work that you do toward fulfillment of this course's expectations must be
-the work of you and your partner (if applicable). Collaboration with anyone
-other than the partner with whom you begin the course is not permitted unless
-one of the course's heads approves a change of partner in writing. Partners must
-contribute equitably to each milestone: you may not implement most or all of
-some project's milestone and submit it on behalf of your two-person team.
+the work of you and your partners (if applicable). Collaboration with anyone
+other than the partners with whom you begin the course is not permitted unless
+one of the course's heads approves a change of partner in writing. Partners
+must contribute equitably to each milestone: you may not implement most or all
+of some project's milestone and submit it on behalf of your two-person team.
 
 You may read and comment upon classmates' code toward fulfillment of projects'
 code reviews but only for classmates whose code is assigned to you by the
@@ -15,10 +15,10 @@ your code into your own work, so long as you attribute those ideas and
 techniques back to your classmates, as with comments in your own code. As for
 classmates beyond your own partner and those with whom you're involved in
 reviews, you may discuss projects, including designs, but you may not share
-code. In other words, you may communicate with those classmates in English,
-but you may not communicate in PHP, JavaScript, or Objective-C and such
-languages. If in doubt as to the appropriateness of some discussion, contact
-the course's heads.
+code. In other words, you may communicate with those classmates in English, but
+you may not communicate in PHP, JavaScript, or Objective-C and such languages.
+If in doubt as to the appropriateness of some discussion, contact the course's
+heads.
 
 ## Quoting sources
 

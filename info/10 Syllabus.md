@@ -1,4 +1,4 @@
-*Edition: September 2014 (this is a beta version!)*
+*Edition: november--december 2014 (this is a beta version!)*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -12,9 +12,11 @@ proposals, progress reports, and code. Students learn to write native apps for A
 Martijn Stegeman  
 **instructor**  
 <help@mprog.nl>
-<m.stegeman@uva.nl>
 
 Bryan Eikema  
+**teaching assistant**
+
+Floris de Bruin  
 **teaching assistant**
 
 ## Prerequisites
@@ -26,62 +28,42 @@ of running Xcode or Eclipse.
 
 ## Expectations
 
-### For all students
-
-* You are expected to watch all lectures and sections and to submit all
-  required projects, as specified below.
-  
-* You are expected to participate in the online environment provided ([Slack](https://minprog.slack.com/)), to ask questions that will help you get on with your projects, and answer questions that will help others get on.
-
 * Students wanting to learn iOS programming are encouraged to have a Mac
   (running OS 10.9) as well as an iPad, iPhone, or iPod touch; students
   wanting to learn Android can use any platform that Eclipse runs on and should
-  probably have access to an Android phone or tablet.
+  have access to an Android phone or tablet.
 
-<div class="row">
-<div class="col-xs-6">
+* Students are expected to co-author a written proposal as well as a
+  scientific-style poster with your teammates. Each team member is expected to contribute equally to the content of these deliverables.
 
-### Design track
+* Students are expected to hand in one programming project invidiually, but
+  with generous help of teammates, if needed. You are expected to help your
+  teammates with the programming assignments, if needed. Do mind the
+  collaboration policies!
 
-* You, individually, are expected to be at the weekly workgroup sessions led by
-  a teaching fellow. We will make sure we notice your progress and we will help
-  you to keep going in the right direction.
+* Students are expected to use the discussions with the TA to improve the
+  technical and functional designs of all projects.
 
-* You are expected to present three times on the progress of your work,
-  together with your teammates.
+* Students are expected to watch all lectures and sections and to submit all
+  required projects, as specified below.
+  
+* Students are expected to attend weekly workgroup sessions led by the course's
+  instructor.
 
-* You are expected to co-author a written proposal as well as a
-  scientific-style poster with your teammates.
+* Students are expected to attend weekly lab sessions led by the course's
+  teaching assistants. We will make sure we notice your progress and we will
+  help you to keep going in the right direction.
 
-* You are expected to hand in two programming assignments invidiually, but with
-  generous help of your teammates, if needed. You are expected to help your
-  teammates with the programming assignments, if needed. Do mind the collaboration policies!
+* Students of computer science and artificial intelligence are expected to
+  define their own programming project that uses any two of phone sensors,
+  external APIs or OS integration, as accepted by the course's instructor.
 
-</div>
-<div class="col-xs-6">
+## Meetings
 
-### Programming track
-
-* You are expected to hand in one programming assignment that gets you started with the platform of choice.
-
-* You are expected to deliver four milestones for each of two projects. You
-  are also expected to meet a TA to discuss each deliverable and
-  improve on your work.
-
-* You are expected to use the discussions with the TA to improve the technical and functional designs of your projects.
-
-</div>
-</div>
-
-## Getting help
-
-You can get help from the TA's during weekly sessions, and you are encouraged to ask questions on [Slack](https://minprog.slack.com/). Your fellow students are supposed to help you out there, and our TA's will also monitor the `appstudio` channel.
-
-## Weekly meetings
-
-You will meet with a course assistant to discuss each milestone, and that is
-where you'll get detailed feedback on the products you deliver. Often, these
-sessions will result in some extra work. Topics of the meetings would normally include:
+You will meet with a course assistant to discuss your project milestones, and
+that is where you'll get detailed feedback on the products you deliver. Often,
+these sessions will result in some extra work. Topics of the meetings would
+normally include:
 
 * reporting on milestones
 * defending design decisions
@@ -91,8 +73,8 @@ sessions will result in some extra work. Topics of the meetings would normally i
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's
-instructor. Your final grade will be based on your performance on the course's
-projects.
+instructor. Final grades will be based on performance on the course's
+projects and design assignments.
 
 Each project's proposal, design doc and style guide are evaluated primarily
 along axes of clarity and thoroughness. Each project's beta is evaluated
@@ -105,16 +87,6 @@ cutoffs for final grades. Scores on projects' milestones may be normalized
 across graders at term's end. Each student's final grade is individually
 determined after input from the teaching staff. Prior experience, remarkable
 effort, and upward trending may be considered.
-
-### Design
-
-* Class participation	10%
-* Mobile observation study	15%
-* Project proposal	20%
-* HelloWorld application	5%
-* Paper prototype	15%
-* Poster/demo on project progress	20%
-* AppFurnace prototype	15%
 
 ## Books
 

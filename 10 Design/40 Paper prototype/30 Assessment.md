@@ -15,30 +15,6 @@ Furthermore the following two questions must be answered:
 * Why did you choose those specific use cases (what do they say about the use of the application as a whole)?
 * To what extend do the results support your conclusions?
 
-Therefore, the following aspects/sections must be present in your report:
-
-__Conceptual model__:
-
-- 10 pt: one model with accompanying describing text, in which amongst others the choice of model type is supported by arguments.
-- 5 pt: only a model, or only describing text
-- 0 pt: no model, no text.
-
-__Use cases__:
-
-- 10 pt: 2 unique use cases, choice of use case motivated by representativeness for whole app
-- 5 pt: 1 unique use cases, choice of use case motivated by representativeness for whole app
-- 0 pt: 0 unique use cases
-
-__Screen designs__:
-
-- 10 pt: detailed screens + interactions for each use case
-- 5 pt: some details missing, too much magic in interaction (implicit)
-- 0 pt: almost or no screens
-
-__Structure/screen flow__:
-
-- 10 pt: structure/screen flow of all screens used use cases
-- 0 pt: no structure
 
 __Video__:
 

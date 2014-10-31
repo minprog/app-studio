@@ -1,7 +1,16 @@
-About writing a proposal
+Mobile design + concept models
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/xuqG2uFaiD8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/LE6kXAlaKYc?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Analyzing qualitative data, including an affinity example
+Use cases
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/HdbOv5CWFj4?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/atwpiz4qWHg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Flows
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/lFIsaUWuSWY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Screen design
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/d7tiSijjrJs?rel=0" frameborder="0" allowfullscreen></iframe>
+

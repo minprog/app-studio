@@ -1,38 +1,5 @@
 ## Assessment
 
-Written Proposal
-
-- 10 pages (15)
-- Less than 9 pages (10)
-- Less than 8 pages (5)
-- Less than 7 pages (0)
-
-Related Work: Discusses relevant papers from the ACM Digital Library
-
-- Greater than 3 citations from CHI, Ubicomp, Pervasive, UIST, TOCHI, PUC, etc. (10)
-- 1 to 3 references from ACM sources (5)
-- No academic references (0)
-
-Related Work: Discusses relevant existing products/apps
-
-- Greater than 3 citations to existing products/apps (5)
-- 1-3 references to existing products/apps (2)
-- No reference to existing products/apps (0)
-
-Research Questions
-
-- Discussion of the research questions that led to the study (5)
-- No discussion of the research questions (0)
-
-Study Methods
-
-- Description of study methods (5)
-- No description of study methods (0)
-
-Study Findings
-
-- Description of study findings (5)
-- No description of study findings (0)
 
 Application concept
 
@@ -45,3 +12,29 @@ Concept description
 - Description is complete: how the app will be built and designed (10)
 - Description leaves questions open to the reader (5)
 - Description is rather vague (0)
+
+
+
+__Conceptual model__:
+
+- 10 pt: one model with accompanying describing text, in which amongst others the choice of model type is supported by arguments.
+- 5 pt: only a model, or only describing text
+- 0 pt: no model, no text.
+
+__Use cases__:
+
+- 10 pt: 2 unique use cases, choice of use case motivated by representativeness for whole app
+- 5 pt: 1 unique use cases, choice of use case motivated by representativeness for whole app
+- 0 pt: 0 unique use cases
+
+__Screen designs__:
+
+- 10 pt: detailed screens + interactions for each use case
+- 5 pt: some details missing, too much magic in interaction (implicit)
+- 0 pt: almost or no screens
+
+__Structure/screen flow__:
+
+- 10 pt: structure/screen flow of all screens used use cases
+- 0 pt: no structure
+

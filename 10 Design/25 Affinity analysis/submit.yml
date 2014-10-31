@@ -1,0 +1,6 @@
+name: affinity
+required:
+    - research.pdf
+dependent_grades:
+    - attend
+    - final

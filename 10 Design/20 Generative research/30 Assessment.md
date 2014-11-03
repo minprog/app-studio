@@ -1,5 +1,7 @@
 ## Assesment of user research
 
+### Field study criteria
+
 Research questions are clearly enumerated:
 
 - yes (10)
@@ -28,6 +30,8 @@ Note cards are exact quotes from users:
 - 1/3-2/3  (5)
 - Less than 1/3 (0)
 
+### Affinity analysis criteria
+
 The affinity is organized in a 3-level hierarchy:
 
 - Yes (10)
@@ -51,4 +55,3 @@ Multiple design ideas are identified and explicitly connected to areas of the af
 - At least 5 ideas (10)
 - 2-4 ideas (5)
 - 0-1 ideas (0)
-

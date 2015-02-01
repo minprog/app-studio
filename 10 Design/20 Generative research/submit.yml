@@ -1,6 +1,0 @@
-name: research
-required:
-    - research.pdf
-dependent_grades:
-    - attend
-    - final

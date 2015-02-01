@@ -18,11 +18,9 @@ have. It is required that you provide your own answers, however!
 1. Develop a short personal mission statement for this course. What are your
 personal goals?
 
-2. Why do you think that the word *perceived* is used in Nick D.'s definition:
+2. Why do you think that the word *perceived* is used in the following  definition from Nick D.? Check out the dictionary definition for "perceived" if needed.
 
     > a <strong>task</strong> is a user's perceived goal
-
-    Check out the dictionary definition for "perceived" if needed.
 
 3. How is this week's app consistent with the norms prescribed by the *context*?
 Give a couple of examples of where it is and isn't, and explain what the

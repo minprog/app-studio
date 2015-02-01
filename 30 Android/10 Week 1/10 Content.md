@@ -10,7 +10,7 @@ You'll need to start understanding object-oriented programming, because the Andr
 
 ## Videos
 
-Note: these video's are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
+Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 
 * Derek Banas, [Android Studio tutorial](https://www.youtube.com/watch?v=nBD4xhH5vIE&index=1&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
 

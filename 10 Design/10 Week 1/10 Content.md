@@ -1,4 +1,4 @@
-## This week's app
+## This week's app: Rise
 
 <iframe src="https://player.vimeo.com/video/55786338?color=4691b9&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

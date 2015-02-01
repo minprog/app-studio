@@ -1,4 +1,4 @@
-*Edition: november--december 2014 (this is a beta version!)*
+*Edition: February 2014*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -10,14 +10,8 @@ proposals, progress reports, and code. Students learn to write native apps for A
 ## Instructors
 
 Martijn Stegeman  
-**instructor**  
+*instructor*  
 <help@mprog.nl>
-
-Bryan Eikema  
-**teaching assistant**
-
-Floris de Bruin  
-**teaching assistant**
 
 ## Prerequisites
 
@@ -33,43 +27,36 @@ of running Xcode or Eclipse.
   wanting to learn Android can use any platform that Eclipse runs on and should
   have access to an Android phone or tablet.
 
-* Students are expected to co-author a written proposal as well as a
-  scientific-style poster with your teammates. Each team member is expected to contribute equally to the content of these deliverables.
+* Students are expected to attend all but one weekly workgroup sessions led by
+  the course's instructor, where everyone will help each other to make sense of
+  the course's requirements.
 
+* Students are expected to watch all lectures, read all provided materials and
+  to submit all required projects, as specified below.
+  
 * Students are expected to hand in one programming project invidiually, but
   with generous help of teammates, if needed. You are expected to help your
   teammates with the programming assignments, if needed. Do mind the
   collaboration policies!
 
-* Students are expected to use the discussions with the TA to improve the
-  technical and functional designs of all projects.
-
-* Students are expected to watch all lectures and sections and to submit all
-  required projects, as specified below.
-  
-* Students are expected to attend weekly workgroup sessions led by the course's
-  instructor.
-
-* Students are expected to attend weekly lab sessions led by the course's
-  teaching assistants. We will make sure we notice your progress and we will
-  help you to keep going in the right direction.
+* Students are expected to use discussions with the course's instructor to
+  improve the technical and functional designs of all projects.
 
 * Students of computer science and artificial intelligence are expected to
   define their own programming project that uses any two of phone sensors,
   external APIs or OS integration, as accepted by the course's instructor.
 
-## Meetings
+## Schedule
 
-You will meet with a course assistant to discuss your project milestones, and
-that is where you'll get detailed feedback on the products you deliver. Often,
-these sessions will result in some extra work. Topics of the meetings would
-normally include:
+These are the main activities during the course. There will, however, be some overlap between activities.
 
-* reporting on milestones
-* defending design decisions
-* presenting code for review
+* Weeks 1-3: getting started with object-oriented and user-centered design concepts.
+
+* Weeks 4-7: creating a fully fledged mobile application and re-focusing on code quality.
 
 ## Grades
+
+This section is not final yet, but participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course.
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's
@@ -90,29 +77,4 @@ effort, and upward trending may be considered.
 
 ## Books
 
-No books are required for this course. However, we recommend the below. Each of these books is available for purchase at sites like Amazon.com. Each has also been placed on reserve at Grossman Library.
-
-**Android**
-
-*Learning Android*  
-Marko Gargenta  
-[O'Reilly (2011)](http://shop.oreilly.com/product/0636920010883.do)  
-ISBN 9781449390501  
-*note*: do not buy the 2014 edition, it is full of errors
-
-*Hello, Android: Introducing Google's Mobile Development Platform, Third Edition*  
-Ed Burnette  
-[Pragmatic Bookshelf (2010)](http://pragprog.com/book/eband3/hello-android)  
-ISBN 9781934356562
-
-**iOS**
-
-*Beginning iOS 7 Development: Exploring the iOS SDK*  
-Dave Mark, Jack Nutting, Jeff LaMarch  
-[Apress (2014)](http://www.apress.com/9781430260226)  
-ISBN 9781430260226
-
-*Beginning iOS 5 Application Development*  
-Wei-Meng Lee  
-[Wiley (2012)](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118144252.html)  
-ISBN 9781118144251
+No books are required for this course.

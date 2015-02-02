@@ -52,7 +52,7 @@ Now, you need to request a certificate that uniquely identifies the computer you
 
 ## Loading the provisioning profile
 
-Only *after* the certificate has been generated, you can get your provisioning profile by clicking the *refresh* button:
+Only *after* the certificate has been generated, you can get your provisioning profile by clicking the *refresh* button. Accepting the certificate is done by hand, so it will take a while before a profile with your name appears in the window below.
 
 ![](refresh.png)
 

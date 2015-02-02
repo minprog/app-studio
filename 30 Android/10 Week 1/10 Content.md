@@ -8,6 +8,10 @@ You'll need to start understanding object-oriented programming, because the Andr
 
 * Lecture [code](http://web.stanford.edu/class/cs193a/lectures/01/lecture-code-01.zip), [MainActivity.java](http://web.stanford.edu/class/cs193a/lectures/01/MainActivity.java), [activity_main.xml](http://web.stanford.edu/class/cs193a/lectures/01/activity_main.xml).
 
+* Oracle explanations of [object-orientation](http://docs.oracle.com/javase/tutorial/java/concepts/index.html).
+
+* Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html).
+
 ## Videos
 
 Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!

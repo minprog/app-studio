@@ -18,6 +18,8 @@ One part of this class is starting to fully understand and develop valid require
 
 * [Assignment with requirements](http://web.stanford.edu/class/cs193a/homework/hw2-spec.pdf)
 
+* [Mr. Potatohead files](http://web.stanford.edu/class/cs193a/homework/mr-potato-head-images.zip)
+
 ## Assessment
 
 This first homework assignment will be graded *in class* next week. You will need to show the app working on a real device.

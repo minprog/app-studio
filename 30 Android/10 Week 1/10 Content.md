@@ -1,4 +1,4 @@
-## Reading
+## Preparation
 
 You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
 
@@ -11,8 +11,6 @@ You'll need to start understanding object-oriented programming, because the Andr
 * Oracle explanations of [object-orientation](http://docs.oracle.com/javase/tutorial/java/concepts/index.html).
 
 * Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html).
-
-## Videos
 
 Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 

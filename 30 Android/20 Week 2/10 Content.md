@@ -1,10 +1,8 @@
-## Reading
+## Preparation
 
 * CS193a, [Lecture 2](http://web.stanford.edu/class/cs193a/lectures/02-layout-gui.pdf)
 
 * Lecture [code](http://web.stanford.edu/class/cs193a/lectures/02-layout-gui.pdf), [MainActivity.java](http://web.stanford.edu/class/cs193a/lectures/02/MainActivity.java), [activity_main.xml](http://web.stanford.edu/class/cs193a/lectures/02/activity_main.xml).
-
-## Videos
 
 Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 

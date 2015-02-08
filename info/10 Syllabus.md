@@ -48,15 +48,31 @@ of running Xcode or Eclipse.
 
 ## Schedule
 
-These are the main activities during the course. There will, however, be some overlap between activities.
+These are the main activities during the course:
 
-* Weeks 1-3: getting started with object-oriented and user-centered design concepts.
+* Week 1: interaction design
 
-* Weeks 4-7: creating a fully fledged mobile application and re-focusing on code quality.
+* Week 2: design principles
+
+* Week 3: prototyping interactions
+
+* Week 4: technical design
+
+* Week 5: gameplay
+
+* Week 6: hiscores
+
+* Week 7: refactoring
 
 ## Grades
 
 This section is not final yet, but participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course.
+
+It will be something like this:
+
+- participation: 10%
+- practice homework on design and programming: 50%
+- project: 40%
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's

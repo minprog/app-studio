@@ -22,7 +22,7 @@ Note: these videos are not even a year old, but already slightly out of date. If
 
 * Derek Banas, [Android Intro](https://www.youtube.com/watch?v=ef-6NZjBtW0&index=3&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
 
-* Derek Banas, [Layout, user input, toasts](https://www.youtube.com/watch?v=ef-6NZjBtW0&index=3&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
+* Derek Banas, [Layout, user input, toasts](https://www.youtube.com/watch?v=kmsB_P2xbus&index=4&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
 
 ## Homework
 
@@ -32,7 +32,7 @@ One part of this class is starting to fully understand and develop valid require
 
 ## Assessment
 
-This first homework assignment will be graded *in class* next week. You will need to show the app working on a real device.
+This first homework assignment will be graded *in class* next week. You will need to show the app working on a real device. See the [Android documentation](http://developer.android.com/training/basics/firstapp/running-app.html) on how to do this.
 
 Your work on this assignment will be evaluated along two axes primarily:
 

@@ -4,7 +4,7 @@ This week, the assignment will concern any app you choose, as long it is on your
 
 ## Reading
 
-Karl Ulrich, *Design: creation of artifacts in society*:
+Karl Ulrich, *Design: creation of artifacts in society*.
 
 * chapter 1: *Introduction to Design*
 

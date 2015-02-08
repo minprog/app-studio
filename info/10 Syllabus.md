@@ -1,4 +1,4 @@
-*Edition: February 2014*
+*Edition: February 2015*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course

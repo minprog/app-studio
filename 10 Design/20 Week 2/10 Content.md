@@ -18,7 +18,7 @@ Karl Ulrich, *Design: creation of artifacts in society*.
 
 ## Homework
 
-Choose an app you have on your phone -- preferably one that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
+Choose one app you have on your phone -- preferably one that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
 
 1. What gap in the user experience can you infer from the app's functionality? Create your own precise definition of this gap.
 
@@ -29,3 +29,5 @@ Choose an app you have on your phone -- preferably one that you really like or o
 4. Give quite a few examples of needs that could be fulfilled for different stakeholders of this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
 
 5. How often is this app updated? Have a look in the app store to find out. What evidence is there in the change logs that updates were made to correct for misunderstandings of user's needs?
+
+Aim for ~100-150 words per answer.

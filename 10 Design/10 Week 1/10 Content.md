@@ -10,17 +10,16 @@
 
 ## Homework
 
-Check out question 5 first. It requires you to read all text. Are you having
-problems with the questions? Use a dictionary, discuss the *meaning* of the
-questions with other students, or send an e-mail with any question you might
-have. It is required that you provide your own answers, however!
+Are you having problems with the questions? Use a dictionary, discuss the
+*meaning* of the questions with other students, or send an e-mail with any
+question you might have. It is required that you provide your own answers,
+however!
 
 1. Develop a short personal mission statement for this course. What are your
 personal goals?
 
-2. Why do you think that the word *perceived* is used in the following  definition from Nick D.? Check out the dictionary definition for "perceived" if needed.
-
-    > a <strong>task</strong> is a user's perceived goal
+2. Describe the complete experience of this week's app in terms of
+*interactions*, *paths* and *steps* as defined by Nick D.
 
 3. How is this week's app consistent with the norms prescribed by the *context*?
 Give a couple of examples of where it is and isn't, and explain what the
@@ -31,7 +30,11 @@ on this app's affordances? To make your answer understandable, you probably
 have to explicitly state your definition of "affordance", or the parts that are
 relevant to your answer.
 
-5. Make a list of important concepts in both chapters -- there are quite a lot!
-Include a short definition or few keywords that help you remember the
-definition. It does *not* have to be correct, though. Rate them 1-10 on how
-easy it would be to use the concept in building an app.
+5. Make a list of important *concepts* in both chapters. A concept is an
+important abstract idea that has a name. The text contains quite a few concepts
+that are important for talking about interaction design. Include a short
+definition or few keywords that help you remember the definition of each
+concept. It does *not* have to be correct, though. Rate them 1-10 on how easy
+it would be to use the concept in building an app.
+
+Aim for ~100-150 words per answer.

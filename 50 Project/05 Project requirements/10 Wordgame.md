@@ -1,54 +1,60 @@
-# Quick Words
+# Ghost
 
-Your challenge for this project is to implement Quick Words as a native iOS app. The overall design and aesthetics of this app are ultimately up to you, but we require that your app meet some requirements. All other details are left to your own creativity and interpretation.
+Your challenge for this project is to implement the game of Ghost as a native iOS app. The overall design and aesthetics of this app are ultimately up to you, but we require that your app meet some requirements. All other details are left to your own creativity and interpretation.
 
-Quick Words is not entirely unlike Scrabble. Letters are dealt to players, who
-then construct one or more words out of their letters. Each valid word receives
-a score, based on the length of the word and the letters in that word.
+Ghost is an inanely popular two-player wordgame. Our goal in this problem is to
+implement an interactive Python program that allows two humans to play a game
+of Ghost against each other. For those of you who are unfamiliar with the
+rules, you may read all about it here at
+[Wikipedia](http://en.wikipedia.org/wiki/Ghost_(game)). For this project,
+please follow the following rules.
 
-The rules of the game are as follows:
+## Rules of Ghost
 
-## Dealing
+Players form a word by alternating turns saying a letter, which is added on to the end of the word fragment. There are two ways to lose Ghost:
 
-- A player is dealt a *hand* of $$n$$ letters chosen at random (assume $$n=7$$ for now).
+* Forming a word longer than 3 letters ("PEA" is ok, but "PEAR" is not).
+* Creating a fragment (of any size) which cannot become a word by adding more letters (for example, "QZ").
 
-- The player arranges the hand into a set of words using each letter at most once.
+Winning Ghost is simply not losing! So, for example, game play proceeds like this:
 
-- Some letters may remain unused (these won't be scored).
-
-## Scoring
-
-- The score for the hand is the sum of the score for the words.
-
-- The score for a word is the sum of the points for letters in the word, plus
-  50 points if all $$n$$ letters are used on the first go.
-
-- Letters are scored as in Scrabble; A is worth 1, B is worth 3, C is worth 3,
-  D is worth 2, E is worth 1, and so on.
-
-- For example, 'weed' would be worth 8 points ($$4+1+1+2=8$$), as long as the hand actually has 1 'w', 2 'e's, and 1 'd'.
-
-- As another example, if $$n=7$$ and you get 'waybill' on the first go, it
-  would be worth 65 points ($$4+1+4+3+1+1+1=15$$, and 50 for the 'bingo' bonus
-  of using all seven letters).
-
-## Values
-
-	SCRABBLE_LETTER_VALUES = {
-	    'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1, 'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1, 's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10
-	}
+* Player 1 says a letter. For example, 'P'.
+* Player 2 says a letter. For example, 'E'.
+* Player 1 says a letter. For example, 'A'. Player 1 has formed the word PEA, but that's okay because it is not longer than 3 letters.
+* Player 2 says a letter. For example, 'F'.
+* Player 1 says a letter. Player 1 must say 'O', because only one word starts with PEAF. If Player 1 says any other letter, for example 'A', he or she loses, because no word begins with PEAFA. Player 2 says a letter, which must be 'W'.
+* Player 1 says a letter, which must be 'L'. Player 1 loses, because PEAFOWL is a word.
 
 ## Feature requirements
 
-*   The game must have three levels of difficulty: "easy", "medium", and "hard". The "easy" level indicates that n=8 (in other words, a 3x3 puzzle), "medium" represents n=15 or 4x4, and "hard" means n=24 or 5x5. The default difficulty should be "medium".
+* The game must be interactive: At each step, it should say who the current player is and what the current word fragment is.
 
-*   During game play, the user should be allowed to hit the MENU button on the Android device (or emulator) to cause a menu to appear and allow the user to reset the puzzle to a shuffled state, change the difficulty, or quit the current game and pick another image. This menu should only appear during game play and not during an image selection.
+* The player should be asked to input a letter, and the program should make sure that it the input is valid (one alphabetic character only, but it may be uppercase or lowercase).
 
-*   If the user changes the difficulty level it must cause game play to restart. The solution preview must appear and be replaced by the shuffled n-puzzle after three seconds, as above. Additionally, the user's preference for difficulty level must be remembered by the app so that the same difficulty is used automatically the next time the game is played. The preference should survive if the user quits and re-opens the app. If no preference is set, the default difficulty should be used.
+* The letter should be added to the word fragment and the updated word fragment should be displayed.
 
-*   The game's state must also survive if the user quits the app or other activities appear above it. The end result should be that a user can return to the game and continue playing where they left off even if the app is quit or the device is turned off. Don't forget to save such things as the image selection, difficulty, number of moves taken so far, and current tile positions!
+* The game should end if the current player has formed a word (longer than 3 characters) or no words can be formed.
 
-*   When the user has successfully solved the puzzle, a new activity must appear that congratulates the user on their accomplishment, displays the original image, and lists the number of moves they used while solving it. There must also be a button to return back to the list of images and allow the user to play another game.
+* The game must have a choice of dictionaries: either Dutch or English.
+
+* During game play, the user should be allowed to hit the MENU button on the
+  Android device to cause a menu to appear and allow the user to reset the
+  puzzle to a shuffled state, change the difficulty, or quit the current game
+  and pick another image. This menu should only appear during game play and not
+  during an image selection.
+
+* If the user changes the language of the game it must cause game play to
+  restart. The preference should survive if the user quits and re-opens the
+  app. If no preference is set, the default language should be used.
+
+* The game's state must survive if the user quits the app or other activities
+  appear above it. The end result should be that a user can return to the game
+  and continue playing where they left off even if the app is quit or the
+  device is turned off.
+
+* When a player has won, a new screen must appear that congratulates the user
+  on their accomplishment. There must also be a button to return back
+  to the list of images and allow the user to play another game.
 
 * Immediately upon launch, gameplay must start (unless the app was simply
   backgrounded, in which case gameplay, if in progress prior to backgrounding,
@@ -91,30 +97,42 @@ The rules of the game are as follows:
 * When settings are changed, they should only take effect for new games, not
   one already in progress, if any.
 
-### Implementation details
+## Platform integration requirements
 
-*   Your app's UI should be sized for an iPhone or iPod touch (i.e., 320 × 480 points) with support for, at least, `UIInterfaceOrientationPortrait`. However, if you own an iPad and would prefer to optimize your app for it (i.e., 768 $$\times$$ 1024 points), you may, so long as you inform your TF prior to this project's deadline.
+* Your app's UI should be sized for an iPhone or iPod touch (i.e., 320 × 480
+  points) with support for, at least, `UIInterfaceOrientationPortrait`.
+  However, if you own an iPad and would prefer to optimize your app for it
+  (i.e., 768 $$\times$$ 1024 points), you may, so long as you inform your TF
+  prior to this project's deadline.
 
-*   You must use the contents of `words.plist` as your universe of possible words. You're welcome, but not required, to transform it into some other format (e.g., SQLite).
+* Your app must come with default values for the settings. Anytime the user
+  changes those settings, the new values should be stored immediately in
+  `NSUserDefaults` (so that changes are not lost if the application is
+  terminated).
 
-*   Your app must come with default values for the flipside's two settings; those defaults should be set in `NSUserDefaults` with `registerDefaults:`. Anytime the user changes those settings, the new values should be stored immediately in `NSUserDefaults` (so that changes are not lost if the application is terminated).
+    * On iOS, those defaults should be set in `NSUserDefaults` with `registerDefaults`.
+    
+    * On Android, those defaults should be set in `SharedPreferences` with `edit()`.
 
-*   You must implement each of the flipside's numeric settings with a `UISlider`. Each slider should be accompanied by at least one `UILabel` that reports its current value (as an integer).
+## Implementation details
 
-*   You are welcome to implement your UI with Xcode's interface builder in `MainViewController.xib` and `FlipsideViewController.xib`, or you may implement your UI in code in `MainViewController.{h,m}` and `FlipsideViewController.{h,m}`.
+* The logic of the wordgame itself should be implemented in a completely separate set of model classes that do not have any knowledge about the user interface implementation.
 
-*   You must obtain a user's guesses via a `UITextField` (and the on-screen keyboard that accompanies it). For the sake of aesthetics, you are welcome, but not required, to keep that `UITextField` hidden (so long as the on-screen keyboard works). You are also welcome, but not required, to respond to user's keypresses instantly, without waiting for them to hit return or the like, in which case `textField:shouldChangeCharactersInRange:replacementString` in the `UITextFieldDelegate` protocol might be of some interest.
+* You must use the contents of `words.plist` as your universe of possible
+  words. You're welcome, but not required, to transform it into some other
+  format (e.g., SQLite) when the app is first run.
 
-*   Your app must use Automatic Reference Counting (ARC).
+* Your app must tolerate low-memory warnings (as by reloading views when
+  needed).
 
-*   Your app must tolerate low-memory warnings (as by reloading views when needed).
+* On iOS, your app must work with version 8.1 on both iPhones and iPads.
 
-*   Your app must work within the iPhone 5.1 Simulator; you need not test it on actual hardware. However, if you own an iPad, iPhone, or iPod touch, and you'd like to install your app on it, ask your tutor.
+* On Android, your app must work with an SDK API level of 21 (Android 5) on both tablets and phone sizes.
 
-*   The application should have a minimum SDK API level of 7 (Android 2.1).
-*   You must include at least 3 images of your choosing in the res/drawable folder that can be selected as puzzle solutions. The file names must be `puzzle_N.jpg`, where N will begin at 0 and increment sequentially to a maximum value of 9. Keep in mind that we reserve the right to swap out these images or add additional ones (up to a maximum of 10) during testing, so be sure that your tiles are generated on-the-fly by your app and not pre- generated by you and that the quantity of images and sizes of each are not hard-coded. In other words, your image selection activity must dynamically detect the quantity of images and present the user with an appropriate number of choices.
-*   Per the features list you should have three activities in this application. The initial list activity should be called ImageSelection, the activity where game play occurs should be called GamePlay, and the congratulatory activity called YouWin. The `.java` files should be named accordingly. You may include other `.java` files if you deem it necessary to implement other classes for your game.
-*   Under no circumstances should we be able to cause your program to crash at runtime.
-*   Be sure the project and application name are both `nPuzzle########`, where `########` is your student ID.
-*   Your project's package name should be: `nl.mprog.projects.nPuzzle########`
-*   You must include your name, email, and student ID in a comment atop every Java source file in the project.
+* Under no circumstances should we be able to cause your program to crash at
+  runtime.
+
+* Your project's bundle identifier or package name should be: `nl.mprog.QuickWords`
+
+* You must include your name and student ID in a comment atop every source file
+  in the project.

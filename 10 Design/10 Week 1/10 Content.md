@@ -1,40 +1,33 @@
-## This week's app: Rise
+## This week's app
 
-<iframe src="https://player.vimeo.com/video/55786338?color=4691b9&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+This week, the assignment will concern any app you choose, as long it is on your phone and you can test it.
 
 ## Reading
 
-* Nick Disabato, *Cadence & Slang*, chapter 1: *Empathy & Kindness*
+Karl Ulrich, *Design: creation of artifacts in society*.
 
-* Nick Disabato, *Cadence & Slang*, chapter 2: *Consistency & Character*
+* chapter 1: *Introduction to Design*
+
+* chapter 2: *Problem Solving and Design*
+
+* chapter 3: *Design Problem Definition*
+
+* chapter 4: *Exploration*
+
+* chapter 7: *Aesthetics in Design*
 
 ## Homework
 
-Are you having problems with the questions? Use a dictionary, discuss the
-*meaning* of the questions with other students, or send an e-mail with any
-question you might have. It is required that you provide your own answers,
-however!
+Choose one app you have on your phone -- preferably one that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
 
-1. Develop a short personal mission statement for this course. What are your
-personal goals?
+1. What gap in the user experience can you infer from the app's functionality? Create your own precise definition of this gap.
 
-2. Describe the complete experience of this week's app in terms of
-*interactions*, *paths* and *steps* as defined by Nick D.
+2. Do you think the designer really understands the problem? What are clues in the app's functionality to evidence presence or absence of understanding?
 
-3. How is this week's app consistent with the norms prescribed by the *context*?
-Give a couple of examples of where it is and isn't, and explain what the
-context prescribes.
+3. What stakeholder groups can you define for this app? In other words, does it serve different *kinds* of people? Which are these?
 
-4. Does this week's have *affordances*? Why, how, where, when? Can you improve
-on this app's affordances? To make your answer understandable, you probably
-have to explicitly state your definition of "affordance", or the parts that are
-relevant to your answer.
+4. Give quite a few examples of needs that could be fulfilled for different stakeholders of this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
 
-5. Make a list of important *concepts* in both chapters. A concept is an
-important abstract idea that has a name. The text contains quite a few concepts
-that are important for talking about interaction design. Include a short
-definition or few keywords that help you remember the definition of each
-concept. It does *not* have to be correct, though. Rate them 1-10 on how easy
-it would be to use the concept in building an app.
+5. How often is this app updated? Have a look in the app store to find out. What evidence is there in the change logs that updates were made to correct for misunderstandings of user's needs?
 
 Aim for ~100-150 words per answer.

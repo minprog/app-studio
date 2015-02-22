@@ -10,6 +10,8 @@ Add a `README.md` to the root of your repository to contain your proposal docume
 * hand-drawn sketches of the complete user experience;
 * a bulleted list of any internal frameworks, libraries, or other technologies.
 
+Note: features are [not the same as requirements](http://pmblog.accompa.com/2009/07/13/features-vs-requirements-requirements-management-basics/).
+
 ## Introduction
 
 The project title, summary and feature list introduce the reader to the product. It should give a high-level overview of what can be done with the app.

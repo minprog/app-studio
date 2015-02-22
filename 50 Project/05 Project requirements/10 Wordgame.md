@@ -1,9 +1,9 @@
 # Ghost
 
-Your challenge for this project is to implement the game of Ghost as a native iOS app. The overall design and aesthetics of this app are ultimately up to you, but we require that your app meet some requirements. All other details are left to your own creativity and interpretation.
+Your challenge for this project is to implement the game of Ghost as a native app. The overall design and aesthetics of this app are ultimately up to you, but we require that your app meet some requirements. All other details are left to your own creativity and interpretation.
 
 Ghost is an inanely popular two-player wordgame. Our goal in this problem is to
-implement an interactive Python program that allows two humans to play a game
+implement an interactive program that allows two humans to play a game
 of Ghost against each other. For those of you who are unfamiliar with the
 rules, you may read all about it here at
 [Wikipedia](http://en.wikipedia.org/wiki/Ghost_(game)). For this project,

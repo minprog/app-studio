@@ -70,8 +70,8 @@ This section is not final yet, but participation and practice assignments, and d
 
 It will be something like this:
 
-- participation: 10%
-- practice homework on design and programming: 50%
+- participation on design and programming homework: 30%
+- graded design report: 30%
 - project: 40%
 
 A student must ordinarily meet all deadlines in order to be eligible for a

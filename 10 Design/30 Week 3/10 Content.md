@@ -17,4 +17,4 @@ however!
 
 1. Evaluate this week's app using all relevant concepts in chapters three and four of Cadence & Slang.
 
-As you see, you will need to find out which concepts are in the chapters, which are relevant, and then provide a short analysis on how the app seems to perform regarding these concepts. Aim for ~two pages of written material.
+As you see, you will need to find out which concepts are in the chapters, which are relevant, and then provide a short analysis on how the app seems to perform regarding these concepts. Aim for ~two pages of written text.

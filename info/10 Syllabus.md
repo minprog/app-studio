@@ -70,9 +70,10 @@ This section is not final yet, but participation and practice assignments, and d
 
 It will be something like this:
 
-- participation on design and programming homework: 30%
-- graded design report: 30%
-- project: 40%
+- homework participation: 30%
+- graded design review: 20%
+- programming project: 30%
+- final project report: 20%
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's

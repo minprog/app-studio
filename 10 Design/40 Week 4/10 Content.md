@@ -19,7 +19,7 @@ Are you having problems with the questions? Use a dictionary, discuss the
 question you might have. It is required that you provide your own answers,
 however!
 
-1. Evaluate this week's app using relevant concepts in chapters four, five and six of Cadence & Slang.
+1. Evaluate this week's app using relevant concepts in chapters five, six and seven of Cadence & Slang.
 
 Requirements:
 

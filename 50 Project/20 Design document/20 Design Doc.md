@@ -8,11 +8,13 @@ The format of your design doc is up to you, but it should somehow capture any
 and all design decisions that you make before (or while) implementing your app.
 Reasonable to incude in your design doc might be:
 
-* a list of classes and public methods (and their return types and/or arguments) that you've decided to implement;
-* more advanced sketches of UIs that clearly explain which features are connected to which underlying classes;
-* a list of APIs and frameworks that you will be using to provide functionality in your app;
-* a list of database tables and fields (and their types) that you've decided to
-  implement (if needed).
+* consolidated sketches of each "screen" in the application, along with the name of the controller that will manage each screen (each sketch should be a separate PNG)
+
+* annotations on each sketch of the class name of each view that is a platform-specific control (so: no checkboxes, but definitely tabbars or menus)
+
+* a list of model classes, public and private fields, and *public* methods (and their return types and/or arguments) that you've decided to implement
+
+* a list of any APIs and frameworks that have not yet been named in the above, along with a description of what these will be used for
 
 Be sure to update your README if you have made some incompatible decisions in
 your design document. You are free to update all documentation at any time.

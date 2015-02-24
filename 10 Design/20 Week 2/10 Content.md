@@ -15,6 +15,8 @@ Are you having problems with the questions? Use a dictionary, discuss the
 question you might have. It is required that you provide your own answers,
 however!
 
+CADENCE verschil tussen producteigenschappen en proces
+
 1. Develop a short personal mission statement for this course. What are your
 personal goals?
 

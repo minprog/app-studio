@@ -4,7 +4,7 @@ This week, the assignment will concern any app you choose, as long it is on your
 
 ## Reading
 
-Karl Ulrich, *Design: creation of artifacts in society*.
+Karl Ulrich, [*Design: creation of artifacts in society*](http://opim.wharton.upenn.edu/~ulrich/designbook.html).
 
 * chapter 1: *Introduction to Design*
 
@@ -20,14 +20,12 @@ Karl Ulrich, *Design: creation of artifacts in society*.
 
 Choose one app you have on your phone -- preferably one that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
 
-1. What gap in the user experience can you infer from the app's functionality? Create your own precise definition of this gap. Is this gap uniquely solved by a mobile app? Or are there websites that provide a solution to the same gap?
+1. What gap in the user experience can you infer from the app's functionality? Define this gap or problem very precisely. Is this problem uniquely solved by a mobile app? Or are there websites that provide a solution to the same problem? In other words, what is the added value of providing it as an app?
 
 2. Do you think the designer really understands the problem? What are clues in the app's functionality to evidence presence or absence of understanding?
 
-3. market segements FIXME What stakeholder groups can you define for this app? In other words, does it serve different *kinds* of people? Which are these?
+3. What market segments can you define for this app? In other words, does it serve different *kinds* of people? Which are these?
 
-4. FIXME Give quite a few examples of needs that could be fulfilled for different stakeholders of this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
-
-5. FIXME ANDROID How often is this app updated? Have a look in the app store to find out. What evidence is there in the change logs that updates were made to correct for misunderstandings of user's needs?
+4. List examples of needs that could be fulfilled for different market segments served by this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
 
 Aim for ~100-150 words per answer.

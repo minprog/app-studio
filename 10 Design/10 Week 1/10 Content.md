@@ -28,7 +28,7 @@ Choose one app you have on your phone -- preferably one that you really like or 
 
 4. List examples of needs that could be fulfilled for different market segments served by this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
 
-5. Prepare one discussion question about the chapters above. We will discuss some of these in class.
+5. Prepare and submit one discussion question about the chapters above. We will discuss some of these in class.
 
 Aim for ~100-150 words per answer.
 

@@ -2,6 +2,8 @@
 
 You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
 
+* First, read chapters 1--3 from *Learning Android*.
+
 * [Java tutorial](http://docs.oracle.com/javase/tutorial/java/index.html).
 
 * Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html).

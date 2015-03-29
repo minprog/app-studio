@@ -1,6 +1,8 @@
 ## Preparation
 
-All materials for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.
+* First, read up on Swift. Read chapters 1--4 from *Introducing iOS 8*.
+
+All videos for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.
 
 <https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099>
 
@@ -9,10 +11,6 @@ So, many of the references in these iOS assignments are to materials form that c
 * Before you do anything else, watch *Lecture 1* and *Lecture 2*.
 
 You'll need to start understanding object-oriented programming, because the iOS platform requires you to take an object-oriented approach when making apps!
-
-* First, read up on Swift concepts. See *Reading: Project 1*.
-
-* [This document](http://www.raywenderlich.com/81952/intro-object-oriented-design-swift-part-1) will help you understand that OO is trying to model "the real world" or whatever that is.
 
 ## Homework
 

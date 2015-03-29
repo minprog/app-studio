@@ -50,15 +50,15 @@ of running Xcode or Eclipse.
 
 These are the main activities during the course:
 
-* Week 1: interaction design
+* Week 1: design principles
 
-* Week 2: design principles
+* Week 2: interaction design + proposal document
 
-* Week 3: prototyping interactions
+* Week 3: prototyping interactions + design document + game class
 
-* Week 4: technical design
+* Week 4: gameplay
 
-* Week 5: gameplay
+* Week 5: custom users
 
 * Week 6: hiscores
 
@@ -94,4 +94,6 @@ effort, and upward trending may be considered.
 
 ## Books
 
-No books are required for this course.
+- Marko Gargenta and Masumi Nakamura, [*Learning Android*](http://shop.oreilly.com/product/0636920023456.do)
+
+- Steve Derico, [*Introducing iOS 8*](http://shop.oreilly.com/product/0636920034247.do)

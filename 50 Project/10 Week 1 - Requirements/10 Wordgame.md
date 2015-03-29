@@ -1,5 +1,9 @@
 # Ghost
 
+You need to understand this game by the start of Week 2. Be sure to write down any questions you may have about the game and take them to class.
+
+## Summary
+
 Your challenge for this project is to implement the game of Ghost as a native app. The overall design and aesthetics of this app are ultimately up to you, but we require that your app meet some requirements. All other details are left to your own creativity and interpretation.
 
 Ghost is an inanely popular two-player wordgame. Our goal in this problem is to

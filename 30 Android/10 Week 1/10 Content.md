@@ -1,8 +1,8 @@
-## Preparation
-
-You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
+## Readings
 
 * First, read chapters 1--3 from *Learning Android*.
+
+You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
 
 * [Java tutorial](http://docs.oracle.com/javase/tutorial/java/index.html).
 
@@ -13,6 +13,8 @@ You'll need to start understanding object-oriented programming, because the Andr
 * CS193a, [Lecture 1](http://web.stanford.edu/class/cs193a/lectures/01-introduction.pdf)
 
 * Lecture [code](http://web.stanford.edu/class/cs193a/lectures/01/lecture-code-01.zip), [MainActivity.java](http://web.stanford.edu/class/cs193a/lectures/01/MainActivity.java), [activity_main.xml](http://web.stanford.edu/class/cs193a/lectures/01/activity_main.xml).
+
+## Videos
 
 Note: the videos below are only about a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 
@@ -29,6 +31,10 @@ Note: the videos below are only about a year old, but already slightly out of da
 One part of this class is starting to fully understand and develop valid requirements for your assignments. Make sure you read the requirements, understand them, ask questions if needed, and always re-check the requirements when you *think* you're finished!
 
 * [Assignment with requirements](http://web.stanford.edu/class/cs193a/homework/hw1-spec.pdf)
+
+## Submitting
+
+You will need to upload your app *by Friday* through GitHub. Then, submit a link to the GitHub repository on this page.
 
 ## Assessment
 

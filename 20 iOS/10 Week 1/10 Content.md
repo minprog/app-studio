@@ -1,6 +1,8 @@
-## Preparation
+## Readings
 
 * First, read up on Swift. Read chapters 1--4 from *Introducing iOS 8*.
+
+## Videos
 
 All videos for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.
 
@@ -10,13 +12,17 @@ So, many of the references in these iOS assignments are to materials form that c
 
 * Before you do anything else, watch *Lecture 1* and *Lecture 2*.
 
-You'll need to start understanding object-oriented programming, because the iOS platform requires you to take an object-oriented approach when making apps!
+You'll need to start to understand object-oriented programming, because the iOS platform requires you to take an object-oriented approach when making apps!
 
 ## Homework
 
 One part of this class is starting to fully understand and develop valid requirements for your assignments. Make sure you read the requirements, understand them, ask questions if needed, and always re-check the requirements when you *think* you're finished!
 
-* Read the requirements for this week's assignment. See *Programming: Project 1*. Do not do any extra credit assignment!
+* Read the requirements for this week's assignment. See *Programming: Project 1*. Please do not do any extra credit assignment! These will not be graded.
+
+## Submitting
+
+You will need to upload your app *by Friday* through GitHub. Then, submit a link to the GitHub repository on this page.
 
 ## Assessment
 

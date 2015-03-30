@@ -66,12 +66,12 @@ These are the main activities during the course:
 
 ## Grades
 
-This section is not final yet, but participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course.
+This section is not final yet, but participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course, regardless of compensation.
 
 It will be something like this:
 
-- homework participation: 30%
-- graded design review: 20%
+- homework participation: 20%
+- graded design review: 30%
 - programming project: 30%
 - final project report: 20%
 

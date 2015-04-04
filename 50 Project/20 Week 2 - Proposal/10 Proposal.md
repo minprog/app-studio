@@ -10,7 +10,7 @@ Add a `README.md` to the root of your repository to contain your proposal docume
 * hand-drawn sketches of the complete user experience;
 * a bulleted list of any internal frameworks, libraries, or other technologies.
 
-Note: features are [not the same as requirements](http://pmblog.accompa.com/2009/07/13/features-vs-requirements-requirements-management-basics/).
+Note: features are [not the same as requirements](http://pmblog.accompa.com/2009/07/13/features-vs-requirements-requirements-management-basics/). Thus, do not simply repeat the list of requirements.
 
 ## Introduction
 

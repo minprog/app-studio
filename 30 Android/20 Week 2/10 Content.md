@@ -16,7 +16,7 @@ Note: these videos are not even a year old, but already slightly out of date. If
 
 One part of this class is starting to fully understand and develop valid requirements for your assignments. Make sure you read the requirements, understand them, ask questions if needed, and always re-check the requirements when you *think* you're finished!
 
-* [Assignment with requirements](http://web.stanford.edu/class/cs193a/homework/hw2-spec.pdf)
+* [Assignment with requirements](http://web.stanford.edu/class/cs193a/homework/hw2-spec.pdf) (do Mr. Potatohead!)
 
 * [Mr. Potatohead files](http://web.stanford.edu/class/cs193a/homework/mr-potato-head-images.zip)
 

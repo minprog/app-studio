@@ -1,3 +1,7 @@
+## Readings
+
+* First, read up on Swift. Read chapters 5--7 from *Introducing iOS 8*.
+
 ## Preparation
 
 All materials for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.

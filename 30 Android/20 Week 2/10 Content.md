@@ -1,4 +1,6 @@
-## Preparation
+## Readings
+
+* First, read chapters 5--7 from *Learning Android*.
 
 * CS193a, [Lecture 2](http://web.stanford.edu/class/cs193a/lectures/02-layout-gui.pdf)
 

@@ -50,19 +50,16 @@ of running Xcode or Eclipse.
 
 These are the main activities during the course:
 
-* Week 1: design principles
-
-* Week 2: interaction design + proposal document
-
-* Week 3: prototyping interactions + design document + game class
-
-* Week 4: gameplay
-
-* Week 5: custom users
-
-* Week 6: hiscores
-
-* Week 7: refactoring
+| week | class                     | design                | platform   | project                |  
+| ---: | ------------------------- | --------------------- | ---------- | ---------------------- |  
+|    1 | intro                     | design principles     | first app  | read spec              |  
+|    2 |                           | interaction design    | second app | proposal               |  
+|    3 | sketching, models         | definition, usability | readings   | design doc, game class |  
+|    4 | architecture, peer review | users                 | readings   | simple game play       |  
+|    5 |                           |                       |            | custom users           |  
+|    6 |                           |                       |            | highscore screen       |  
+|    7 | code quality              |                       |            | refactoring            |  
+|    8 | peer code review          |                       |            | refactoring            |  
 
 ## Grades
 

@@ -1,4 +1,4 @@
-Your second milestone consist of delivering a technical design for your app. It
+Your second milestone consists of delivering a technical design for your app. It
 should convey the way your app fits into the platform you are building on, and
 the specific design choices you make. After finishing the design doc, you will review them with your tutor.
 

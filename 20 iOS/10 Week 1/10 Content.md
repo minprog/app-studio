@@ -18,7 +18,7 @@ You'll need to start to understand object-oriented programming, because the iOS 
 
 One part of this class is starting to fully understand and develop valid requirements for your assignments. Make sure you read the requirements, understand them, ask questions if needed, and always re-check the requirements when you *think* you're finished!
 
-* Read the requirements for this week's assignment. See *Programming: Project 1*. Please do not do any extra credit assignment! These will not be graded.
+* Read the requirements for this week's assignment. See the document *Programming: Project 1* on iTunes U. Please do not do any extra credit assignment! These will not be graded.
 
 ## Submitting
 

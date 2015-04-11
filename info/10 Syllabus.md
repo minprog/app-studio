@@ -60,6 +60,7 @@ These are the main activities during the course:
 |    6 |                              |                       |            |                        |  
 |    7 | code quality                 |                       |            | highscore screen       |  
 |    8 | peer code review             |                       |            | refactoring            |  
+|    9 | no classes                   |                       |            |                        |  
 
 ## Grades
 

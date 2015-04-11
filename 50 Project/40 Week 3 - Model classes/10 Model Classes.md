@@ -8,7 +8,11 @@ Upon construction of an instance, the class should load the words contained in a
 
 - `filter`: this method takes a string as input and filters the word list using this string. Because loading the dictionary takes quite a bit of time, this method should not destroy the base dictionary and thus allows it to be re-used.
 
-- `count`: this method returns the length of the filtered word list.
+- `count`: this method returns the length of the words remaining in the filtered list.
+
+- `result`: this method returns the single remaining word in the list. Obviously, this method can only be called if `count` returns the number `1`.
+
+- `reset`: to remove the filter and re-start with the original dictionary.
 
 The second is the `Game` class, which represents a single game. It should implement all relevant game rules and use a `Dictionary` instance to serve as the dictionary. It implements a 2-player game and should keep track of which player is currently up!
 

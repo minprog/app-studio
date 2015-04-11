@@ -29,7 +29,7 @@ Requirements:
 
 - as such, the document must show *your* understanding of the material
 
-- aim for two to three pages of written text
+- aim for three to four pages of written text
 
 ## Assessment
 

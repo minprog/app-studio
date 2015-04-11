@@ -50,16 +50,16 @@ of running Xcode or Eclipse.
 
 These are the main activities during the course:
 
-| week | class                     | design                | platform   | project                |  
-| ---: | ------------------------- | --------------------- | ---------- | ---------------------- |  
-|    1 | intro                     | design principles     | first app  | read spec              |  
-|    2 |                           | interaction design    | second app | proposal               |  
-|    3 | sketching, models         | definition, usability | readings   | design doc, game class |  
-|    4 | architecture, peer review | users                 | readings   | simple game play       |  
-|    5 |                           |                       |            | custom users           |  
-|    6 |                           |                       |            | highscore screen       |  
-|    7 | code quality              |                       |            | refactoring            |  
-|    8 | peer code review          |                       |            | refactoring            |  
+| week | class                        | design                | platform   | project                |  
+| ---: | ---------------------------- | --------------------- | ---------- | ---------------------- |  
+|    1 | intro                        | design principles     | first app  | read spec              |  
+|    2 |                              | interaction design    | second app | proposal               |  
+|    3 | sketching, models, dev cycle | definition, usability | readings   | design doc, game class |  
+|    4 | architecture, peer review    | users                 | readings   | simple game play       |  
+|    5 |                              |                       |            | custom users           |  
+|    6 |                              |                       |            |                        |  
+|    7 | code quality                 |                       |            | highscore screen       |  
+|    8 | peer code review             |                       |            | refactoring            |  
 
 ## Grades
 
@@ -67,7 +67,7 @@ This section is not final yet, but participation and practice assignments, and d
 
 It will be something like this:
 
-- homework participation: 20%
+- homework participation: 20% (3x design writing, 2x app practice)
 - graded design review: 30%
 - programming project: 30%
 - final project report: 20%

@@ -18,6 +18,8 @@ The project title, summary and feature list introduce the reader to the product.
 
 ## Sketches
 
+Read this: [Sketching: the Visual Thinking Power Tool](http://alistapart.com/article/sketching-the-visual-thinking-power-tool).
+
 The sketches should include the *complete* user experience of the product, so all interactions, paths and steps. Combine storyboarding techniques and annotations with precise sketches of each screen.
 
 Sketches should accomodate the basic design rules of the platform that you will be working on. So, you will need to read up on these and make sure your sketches are in line with the intended ways of using e.g. pop-ups, color, undo, etc.

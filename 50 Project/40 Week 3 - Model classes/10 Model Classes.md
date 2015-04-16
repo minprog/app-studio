@@ -24,7 +24,7 @@ Upon construction of an instance, the class should connect to the `Dictionary` i
 
 - `ended`: this method returns a boolean indicating if the game has ended.
 
-- `winner`: this method returns a boolean indicating which player has won the game. This method can obviously only make sense if `hasEnded` returns `true`.
+- `winner`: this method returns a boolean indicating which player has won the game. This method can obviously only make sense if `ended` returns `true`.
 
 ## Testing the classes
 

@@ -19,7 +19,7 @@ Are you having problems with the questions? Use a dictionary, discuss the
 question you might have. It is required that you provide your own answers,
 however!
 
-1. Evaluate the quiality of this week's app using relevant concepts in chapters five, six and seven of Cadence & Slang.
+- Evaluate the quiality of this week's app using relevant concepts in chapters five, six and seven of Cadence & Slang.
 
 Requirements:
 
@@ -29,13 +29,15 @@ Requirements:
 
 - provide short definitions, in your own words (!), of the chosen concepts
 
-- organize your document into a hierarchy that is meaningful to you, and not *just* the hierarchy of the source material
+- organize your document into a hierarchy that is meaningful to you (and the reader) -- not *just* the hierarchy of the source material
 
-- do not focus on Nick D.'s advice -- we're more interested if and where the app uses *modes* than in knowing that it violates the advice to avoid modes
+- do not focus on Nick D.'s advice ("don't do it this way") but on the underlying ideas of describing app quality
+
+- make a coherent essay out of your observations
 
 - as such, the document must show *your* understanding of the material
 
-- aim for ~four pages of written text
+- aim for three to four pages of written text
 
 ## Assessment
 

@@ -1,4 +1,4 @@
-*Edition: February 2015*
+*Edition: April 2015*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -64,11 +64,11 @@ These are the main activities during the course:
 
 ## Grades
 
-This section is not final yet, but participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course, regardless of compensation.
+Participation and practice assignments, and design homework will all be part of your final grade. Non-effort in any of these will lead to a failing grade for the course, regardless of compensation. But if you do the work and interact regularly with instructor and fellow students, you should be able to make it!
 
-It will be something like this:
+Grading specification:
 
-- homework participation: 20% (3x design writing, 2x app practice)
+- homework participation: 20%
 - graded design review: 30%
 - programming project: 30%
 - final project report: 20%
@@ -78,15 +78,14 @@ passing grade unless granted an exception in writing by the course's
 instructor. Final grades will be based on performance on the course's
 projects and design assignments.
 
-Each project's proposal, design doc and style guide are evaluated primarily
-along axes of clarity and thoroughness. Each project's beta is evaluated
-primarily along axes of scope, design, and style. Each project's release is
-evaluated primarily along axes of scope, correctness, design, and style. Axes'
-weights may vary by project.
+Homework participation is graded as a percentage of the passes obtained by
+doing the design writing practice and app platform practice homeworks. The
+design review and the final project reports are evaluated primarily along axes
+of clarity and thoroughness. The project's beta and release are evaluated
+primarily along axes of correctness, design, and style.
 
 The course is not graded on a curve. The course does not have pre-determined
-cutoffs for final grades. Scores on projects' milestones may be normalized
-across graders at term's end. Each student's final grade is individually
+cutoffs for final grades. Each student's final grade is individually
 determined after input from the teaching staff. Prior experience, remarkable
 effort, and upward trending may be considered.
 

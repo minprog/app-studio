@@ -1,8 +1,8 @@
-## Components
+## Programming project
 
-### Programming projects
-
-Projects will be graded on the axes of scope, correctness, design and style:
+The project will be graded on the axes of correctness, design and style. A more
+detailed feedback scheme will be used in class and to perform a final
+evaluation of your work.
 
 * Correctness --- have you tried doing everything?
 

@@ -1,29 +1,46 @@
+# Grading
+
+Participation and practice assignments, and design homework will all be part of
+your final grade. Non-effort in any of these will lead to a failing grade for
+the course, regardless of compensation. But if you do the work and interact
+regularly with instructor and fellow students, you should be able to make it!
+
+Grading specification:
+
+- homework participation: 20%
+- graded design review: 30%
+- programming project and report: 50%
+
+A student must ordinarily meet all deadlines in order to be eligible for a
+passing grade unless granted an exception in writing by the course's
+instructor. Final grades will be based on performance on the course's
+projects and design assignments.
+
+Homework participation is graded as a percentage of the passes obtained by
+doing the design writing practice and app platform practice homeworks. The
+design review and the final project reports are evaluated primarily along axes
+of clarity and thoroughness. The project's beta and release are evaluated
+primarily along axes of correctness, design, and style.
+
+The course is not graded on a curve. The course does not have pre-determined
+cutoffs for final grades. Each student's final grade is individually
+determined after input from the teaching staff. Prior experience, remarkable
+effort, and upward trending may be considered.
+
+## Homework participation
+
+These parts of the course will earn you points for homework participation:
+
+- each of the four programming exercises for your platform
+- each of the three design review exercises
+
+## Design review
+
+The design review will be graded on *clarity* (how you organize the essay and
+formulate your thesis) and *thoroughness* (as evidence of your understanding).
+
 ## Programming project
 
-The project will be graded on the axes of correctness, design and style. A more
-detailed feedback scheme will be used in class and to perform a final
-evaluation of your work.
-
-* Correctness --- have you tried doing everything?
-
-	1. takes too much time to get it working (bugs!)
-    2. a whole parts is missing, or has to be fixed to get it working
-	3. it works without real bugs, but a small part is unfinished
-	4. everything is there, but not always the correct result
-	5. even with erroneous input the program still works
-
-* Design --- how orderly is your code?
-
-	1. lots of complex code
-	2. too complicated, but you seem to know your stuff
-	3. straightforward code, could be put a bit inefficiently
-	4. makes good use of the possibilities in the language
-	5. you've read up on design and applied it to your code
-
-* Style --- how readable is your code?
-
-	1. not easily readable overall
-	2. you've read the style guide but haven't applied it consistently
-	3. your code is readable and consistent, barring some minor problems
-	4. the code is consistent, and only well-reasoned deviations from the guide
-	5. you've clearly made your own choices but maintained perfect consistency
+The project will be graded on the axes of *scope*, *correctness*, *design* and
+*style*. A more detailed feedback scheme will be used in class and to perform a
+final evaluation of your work.

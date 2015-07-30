@@ -12,7 +12,7 @@ Before working on this or any assignment, you will need to set up the *Android S
 
 - Your app should be set up as an Android Studio project, so it can easily be opened/run/graded by others.
 
-- Your app should use at least 4 widgets/views on the screen. (Example: Three Buttons and a TextView, ...)
+- Your app should use at least 4 widgets/views on the screen. (Example: three Buttons and a TextView, ...)
 
 - Your app should use at least 2 different kinds of widgets. (Example: Button, TextView, EditText, ...)
 
@@ -22,14 +22,14 @@ Before working on this or any assignment, you will need to set up the *Android S
 
 - We haven't talked very much about layout yet, so your app can have essentially any layout you want, so long as the various widgets are visible and can be interacted with.
 
-- Along with your app, please turn in a file named README.txt that contains your name and e-mail address along with the name of your app and a very brief description of it, along with any special instructions that the user might need to know in order to use it properly (if there are any). For example:
+- Along with your app, please turn in a file named **README.md** that contains your name and e-mail address along with the name of your app and a very brief description of it, along with any special instructions that the user might need to know in order to use it properly (if there are any). For example:
 
         Joe Student <jstudent@stanford.edu>
-
+        
         NumberGame 2.05 - This app shows two numbers on the screen and asks
         the user to pick the larger number.  Perfect for Berkeley students!
         Note: Runs best on big Android tablets because of 1000dp font choice.
-￼￼￼￼￼￼
+
 *Suggestions* Outside of the constraints above, you can do anything you want! Again, we're trying to let you be creative here. Your app does not need to be totally unique; if you have an existing idea that you want to replicate, or if you and a friend want to make the same kind of app, please go ahead.
 
 If you are not feeling very inspired and want some suggestions of what to make, here are a few ideas. Some of the ideas below are trickier than others or use material we haven't covered yet, so you'd have to do your own digging.

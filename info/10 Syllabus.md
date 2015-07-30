@@ -29,7 +29,7 @@ Julian Jansen
 Programming 1 and 2 or equivalent, as decided by the courses' instructors. You
 will need to be comfortable in programming, plus have some experience with
 memory management, runtime analysis, data structures and algorithms. You will
-need to have a laptop capable of running Xcode or Androi Studio.
+need to have a laptop capable of running Xcode or Android Studio.
 
 ## Expectations
 

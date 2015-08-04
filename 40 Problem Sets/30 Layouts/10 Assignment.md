@@ -1,4 +1,4 @@
-# Layout
+# Layouts
 
 The purpose of this assignment is to practice more advanced graphical layouts than you did in Homework 1, as well as using more widgets/views in a graphical user interface. As with HW1, we'll suggest some ideas for programs you could write to practice layout. We will list several suggestions, but you only need to write one app to submit. If you have a different idea for a program you want to make that will still allow you to explore layout, please feel free to do something other than the suggestions provided.
 

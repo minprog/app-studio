@@ -1,4 +1,4 @@
-## Introducing Swift
+# Introducing Swift
 
 Swift is quite a new language. It was introduced in June 2014 by Apple and positioned as *the* language for development on iOS. So, lets learn it!
 

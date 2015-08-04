@@ -31,7 +31,7 @@ effort, and upward trending may be considered.
 
 These parts of the course will earn you points for homework participation:
 
-- each of the four programming exercises for your platform
+- each of the five programming exercises for your platform
 - each of the three design review exercises
 
 ## Design review

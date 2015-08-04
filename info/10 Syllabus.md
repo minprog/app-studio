@@ -35,8 +35,8 @@ need to have a laptop capable of running Xcode or Android Studio.
 
 * Students wanting to learn iOS programming are encouraged to have a Mac
   (running OS 10.9) as well as an iPad, iPhone, or iPod touch; students wanting
-  to learn Android can use any platform that Eclipse runs on and should have
-  access to an Android phone or tablet.
+  to learn Android can use any platform that Android Studio runs on and should
+  have access to an Android phone or tablet.
 
 * Students are expected to attend all but one weekly workgroup sessions led by
   the course's instructor, where everyone will help each other to make sense of

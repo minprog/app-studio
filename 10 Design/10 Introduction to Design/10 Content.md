@@ -1,20 +1,6 @@
-## This week's app
+# This week's app
 
-This week, the assignment will concern any app you choose, as long it is on your phone and you can test it.
-
-## Reading
-
-Karl Ulrich, [*Design: creation of artifacts in society*](http://opim.wharton.upenn.edu/~ulrich/designbook.html).
-
-* chapter 1: *Introduction to Design*
-
-* chapter 2: *Problem Solving and Design*
-
-* chapter 3: *Design Problem Definition*
-
-* chapter 4: *Exploration*
-
-* chapter 7: *Aesthetics in Design*
+The assignment below will concern any app you choose, as long it is on your phone and you can test it.
 
 ## Homework
 
@@ -31,7 +17,3 @@ Choose one app you have on your phone -- preferably one that you really like or 
 5. Prepare and submit one discussion question about the chapters above. We will discuss some of these in class.
 
 Aim for ~100-150 words per answer.
-
-## Submitting
-
-You should submit this assignment on Wednesday evening at the latest.

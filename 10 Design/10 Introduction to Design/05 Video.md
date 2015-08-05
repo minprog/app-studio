@@ -4,6 +4,8 @@ Review the video from class and then read Karl Ulrich's book to get acquanted wi
 
 ![videoplayer](http://d396qusza40orc.cloudfront.net/design/recoded_videos%2F1a.%20What%20is%20Design-sep2012%20%5B3e88bfde%5D%20.mp4)
 
+(This video is the first from a fun course [on Coursera](https://www.coursera.org/course/design) by Karl Ulrich.)
+
 ## Reading
 
 Karl Ulrich, [*Design: creation of artifacts in society*](http://opim.wharton.upenn.edu/~ulrich/designbook.html).

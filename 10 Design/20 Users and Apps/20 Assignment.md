@@ -1,5 +1,7 @@
 ## Homework
 
+Answer the following questions about the *Rise* app describe above. Some of the questions require not so much an *essay* answer, but more of a schematic description.
+
 Are you having problems with the questions? Use a dictionary, discuss the
 *meaning* of the questions with other students, or send an e-mail with any
 question you might have. It is required that you provide your own answers,

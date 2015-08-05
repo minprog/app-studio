@@ -1,4 +1,4 @@
-## Homework
+# Homework
 
 Answer the following questions about the *Rise* app describe above. Some of the questions require not so much an *essay* answer, but more of a schematic description.
 

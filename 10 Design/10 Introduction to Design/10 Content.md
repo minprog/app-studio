@@ -1,10 +1,6 @@
-# This week's app
+# Homework
 
-The assignment below will concern any app you choose, as long it is on your phone and you can test it.
-
-## Homework
-
-Choose one app you have on your phone -- preferably one that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
+The assignment below will concern any app you choose, as long it is on your phone and you can test it. Preferably, choose an app that you really like or one that is really "meh" to you. Use the concepts from the readings to answer the following questions:
 
 1. What gap in the user experience can you infer from the app's functionality? Define this gap or problem very precisely. Is this problem uniquely solved by a mobile app? Or are there websites that provide a solution to the same problem? In other words, what is the added value of providing it as an app?
 

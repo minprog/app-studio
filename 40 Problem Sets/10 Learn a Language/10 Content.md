@@ -1,19 +1,10 @@
-# Learn yourself Java in five days
+# Learn yourself a new language
 
-This first week, you'll need to start learning the programming languages that you will be working in for your Android projects. You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
+This first week, you'll need to start learning the programming language that you will be working in for your app projects. Please refer to these pages for the resources that are needed:
 
-## Readings
+- [Learn Java for Android](/android/learn-java)
+- [Learn Swift for iOS](/ios/learn-swift)
 
-First, read chapters 1--3 from *Learning Android*, which will get you in the mood...
+## Submit instructions
 
-## Exercises for Wednesday
-
-From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--6. Submit your exercises using the form, below.
-
-## Exercises for Friday
-
-From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 7--11. Submit your exercises (again!) using the form, below.
-
-## Assessment
-
-This assignment counts towards 2 of the points you can earn for doing exercises! It will only be scored in terms of *scope*: have you done everything that is required?
+Do all exercises as required, and create a Git repository to store your answers. You should put this repository on GitHub, and then submit a link to the repository, below. This way, we'll have access to all your files and can review your progress.

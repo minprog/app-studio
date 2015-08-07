@@ -39,7 +39,7 @@ These parts of the course will earn you points for homework participation:
 The design review will be graded on *clarity* (how you organize the essay and
 formulate your thesis) and *thoroughness* (as evidence of your understanding).
 
-## Programming project
+## Project
 
 The project will be graded on the axes of *scope*, *correctness*, *design* and
 *style*. A more detailed feedback scheme will be used in class and to perform a

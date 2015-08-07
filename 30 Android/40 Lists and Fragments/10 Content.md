@@ -1,12 +1,12 @@
 # Lists and Fragments
 
-## Preparation
+This week we will talk about: text-to-speech and speech-to-text in an app; lists and more advanced GUI widgets; designing for different device sizes and features; and fragments.
 
-* CS193a, [State and preferences](http://web.stanford.edu/class/cs193a/lectures/state-preferences.pdf)
+## Demonstration
 
-* CS193a, [Files and storage](http://web.stanford.edu/class/cs193a/lectures/files-storage.pdf)
+Based on [Text to Speech](http://web.stanford.edu/class/cs193a/lectures/text-to-speech.pdf), [Lists](http://web.stanford.edu/class/cs193a/lectures/lists.pdf), [Fragments](http://web.stanford.edu/class/cs193a/lectures/fragments.pdf). [Code](http://web.stanford.edu/class/cs193a/lectures/05/lecture-code-05-InsultList.zip). [Code](http://web.stanford.edu/class/cs193a/lectures/05/lecture-code-05-FragmentFun.zip).
 
-* CS193a, [Custom views](http://web.stanford.edu/class/cs193a/lectures/2d-graphics.pdf)
+## Helpful Videos
 
 Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 

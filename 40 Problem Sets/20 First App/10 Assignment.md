@@ -1,8 +1,8 @@
-# First Android App
+# First App
 
-The purpose of this assignment is to get a first taste of Android application programming and using the Android Studio editor, as well as using widgets/views and events to produce an interactive graphical application.
+The purpose of this assignment is to get a first taste of app programming and using the IDE, as well as using widgets/views and events to produce an interactive graphical application.
 
-Before working on this or any assignment, you will need to set up the *Android Studio* IDE on your computer. We suggest that you do this as early as possible, because some students get stuck and need time to get the IDE set up.
+Before working on this or any assignment, you will need to set up *Android Studio* or *Xcode* on your computer. We suggest that you do this as early as possible, because some students get stuck and need time to get the IDE set up.
 
 ## Assignment Description
 

@@ -10,7 +10,7 @@ Swift is quite a new language. It was introduced in June 2014 by Apple and posit
 
 - While studying these materials, please take note of all the things that you do not really understand. For example, you probably don't know what *closures* are. But there's probably more!
 
-## Homework
+## Readings
 
 Please prepare by reading chapters 1--4 from *Introducing iOS 8*, which gets you acquainted with Swift and Xcode.
 

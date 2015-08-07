@@ -61,10 +61,11 @@ need to have a laptop capable of running Xcode or Android Studio.
 
 We've got a fairly regular schedule:
 
-- there are short lectures on Mondays, introducing you to important course materials
-- all deadlines are on Tuesdays
-- there are workgroups on Thursdays, where you get help with programming
-- there are tutoring opportunities throughout the week, to help you out individually
+- assignments are released on Fridays
+- lectures on Mondays, introducing you to important course materials
+- workgroups on Mondays, where coding demonstrations are given
+- tutoring on Fridays, where you can get help from classmates and staff
+- all deadlines are on Fridays
 
 These are the main activities during the course:
 

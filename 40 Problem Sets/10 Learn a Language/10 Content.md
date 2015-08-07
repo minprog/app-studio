@@ -1,9 +1,20 @@
 # Learn yourself a new language
 
-This first week, you'll need to start learning the programming language that you will be working in for your app projects. Please refer to these pages for the resources that are needed:
+This first week, you'll need to start learning the programming language that you will be working in for your app projects.
 
-- [Learn Java for Android](/android/learn-java)
-- [Learn Swift for iOS](/ios/learn-swift)
+## iOS
+
+To be determined.
+
+## Android
+
+### Exercises for Wednesday
+
+From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--6.
+
+### Exercises for Friday
+
+From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 7--11.
 
 ## Submit instructions
 

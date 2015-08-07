@@ -1,4 +1,4 @@
-# Introducing Swift
+# Learn Swift
 
 Swift is quite a new language. It was introduced in June 2014 by Apple and positioned as *the* language for development on iOS. Previously, all code for Mac and iOS apps was written in the much older language called *Objective C*. And now, there's this brand new language that is based on many of the more modern languages that have been created over the past decade. So, lets learn Swift!
 

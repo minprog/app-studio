@@ -1,4 +1,4 @@
-# Introducing Java
+# Learn Java
 
 This first week, you'll need to start learning the programming languages that you will be working in for your Android projects. You'll need to start understanding object-oriented programming, because the Android platform requires you to take an object-oriented approach when making apps!
 

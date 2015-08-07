@@ -1,7 +1,7 @@
-## Preparation
+# Multiple Controllers
 
-All materials for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.
+Please prepare for this week by reading chapters 5 from *Introducing iOS 8*, which helps you understand multi-screen apps.
 
-<https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099>
+## Demonstration
 
-* Watch *Lecture 5* and *Lecture 6*.
+Based on [Flashcards](http://swifteducation.github.io/teaching_app_development_with_swift/flashcards.html).

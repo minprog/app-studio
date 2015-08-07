@@ -1,35 +1,21 @@
-## Readings
+# Introducing Swift
 
-* First, read up on Swift. Read chapters 1--4 from *Introducing iOS 8*.
+Swift is quite a new language. It was introduced in June 2014 by Apple and positioned as *the* language for development on iOS. Previously, all code for Mac and iOS apps was written in the much older language called *Objective C*. And now, there's this brand new language that is based on many of the more modern languages that have been created over the past decade. So, lets learn Swift!
 
-## Videos
+- On the Apple Developer website, there is a great video highlighting the syntax and meaning of the Swift language. It covers all of the basic syntax and more! Watching the video, you will probably see elements borrowed from C, Javascript and Python. It's quite a recognizable language!
 
-All videos for the iOS part of this course are on iTunes U. Here's a link. Best is to subscribe to this online course in iTunes so it will automatically download new materials as they become available.
+    <https://developer.apple.com/videos/wwdc/2014/?id=402>
 
-<https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099>
+- To get started in our book, please also work through chapters 1--4 of  *Introducing iOS 8*. Especially do not forget to study chapter 4, which will help you get started on object-oriented programming in Swift!
 
-So, many of the references in these iOS assignments are to materials form that course, like this one:
-
-* Before you do anything else, watch *Lecture 1* and *Lecture 2*.
-
-You'll need to start to understand object-oriented programming, because the iOS platform requires you to take an object-oriented approach when making apps!
+- While studying these materials, please take note of all the things that you do not really understand. For example, you probably don't know what *closures* are. But there's probably more!
 
 ## Homework
 
-One part of this class is starting to fully understand and develop valid requirements for your assignments. Make sure you read the requirements, understand them, ask questions if needed, and always re-check the requirements when you *think* you're finished!
+Please prepare by reading chapters 1--4 from *Introducing iOS 8*, which gets you acquainted with Swift and Xcode.
 
-* Read the requirements for this week's assignment. See the document *Programming: Project 1* on iTunes U. Please do not do any extra credit assignment! These will not be graded.
+Also, please install *Xcode* before coming to class!
 
-## Submitting
+## Demonstration
 
-You will need to upload your app *by Friday* through GitHub. Then, submit a link to the GitHub repository on this page.
-
-## Assessment
-
-This first homework assignment will be graded *in class* next week. You will need to show the app working on a real device.
-
-Your work on this assignment will be evaluated along two axes primarily:
-
-* *Scope* -- to what extent does your code implement the features required by our specification?
-
-* *Correctness* -- to what extent is your code free of bugs?
+Based on [WordCollage](http://swifteducation.github.io/teaching_app_development_with_swift/wordcollage.html).

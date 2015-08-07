@@ -1,3 +1,5 @@
+# Multiple Activities
+
 ## Preparation
 
 * CS193a, [The activity lifecycle](http://web.stanford.edu/class/cs193a/lectures/activity-lifecycle.pdf)

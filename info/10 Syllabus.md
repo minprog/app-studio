@@ -57,21 +57,25 @@ need to have a laptop capable of running Xcode or Android Studio.
   programming project that uses any two of phone sensors, external APIs or OS
   integration, as accepted by the course's instructor.
 
-## Schedule
+## Activities
 
 We've got a fairly regular schedule:
 
-- assignments are released on Fridays
-- lectures on Mondays, introducing you to important course materials
-- workgroups on Mondays, where coding demonstrations are given
-- tutoring on Fridays, where you can get help from classmates and staff
-- all deadlines are on Fridays
+*Assignments* are released on Fridays. You can work on these in the weekend or in the week thereafter. In the first half of the course, the assignments help you practice with important ideas and of course with the programming platform that you are learning.
+
+*Lectures* take place on Mondays at 11:00, with the exception of the first Monday. Lectures introduce you to course materials, to new concepts and allow you to interact with the staff.
+
+*Workgroups* are held on Mondays at 15:00. Coding demonstrations are given so you can get a head start with your assignments. Workgroups are led by the teaching assistants, so this is also the perfect place to get feedback on your work and ask questions.
+
+*Lab* is open on Fridays at 11:00, where ususally all staff is available. This is the core place to work on and finish your assignments and confer with your classmates on progress and understanding. 
+
+*Deadlines* are all on Friday evenings, starting on the very first Friday of the course. There are no late days except in cases of emergency.
 
 These are the main activities during the course:
 
 | week | class                      | design                | platform   | project          |  
 | ---: | -------------------------- | --------------------- | ---------- | ---------------- |  
-|    1 | platform intro (Thursday!) | design principles     | first app  |                  |  
+|    1 | (only workgroup and lab!)  | design principles     | first app  |                  |  
 |    2 | layouts                    | interaction design    | second app |                  |  
 |    3 | multiple screens           | definition, usability | third app  | simple game play |  
 |    4 | data sources               | users                 | fourth app | users            |  
@@ -79,6 +83,8 @@ These are the main activities during the course:
 |    6 | project design review      |                       |            |                  |  
 |    7 | code quality               |                       |            | refactoring      |  
 |    8 | class review               |                       |            |                  |  
+
+The schedule can still be changed!
 
 ## Books
 

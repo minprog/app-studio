@@ -7,9 +7,9 @@ regularly with instructor and fellow students, you should be able to make it!
 
 Grading specification:
 
-- homework participation: 20%
-- graded design review: 30%
-- programming project and report: 50%
+- homework participation: 40%
+- graded design review: 20%
+- programming project and report: 40%
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's

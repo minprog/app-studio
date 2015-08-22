@@ -23,4 +23,4 @@ Do all exercises as required, and create a Git repository to store your answers.
 
 ## Assessment
 
-This assignment counts towards 2 of the points you can earn for doing exercises! Your submission will only be scored in terms of *scope*: have you done everything that is required?
+This assignment counts towards the points you can earn for doing exercises! Your submission will only be scored in terms of *scope*: have you done everything that is required?

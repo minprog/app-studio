@@ -4,17 +4,18 @@ This first week, you'll need to start learning the programming language that you
 
 ## iOS
 
-To be determined.
+Complete these tutorials:
+
+- the [Swift tour](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html#//apple_ref/doc/uid/TP40014097-CH2-ID1) from Apple
+- the Swift object-orientation tutorial from [Ray Wenderlich](http://www.raywenderlich.com/81952/intro-object-oriented-design-swift-part-1)
+
+Be sure to do the tutorials by coding along and trying everything from the text.
 
 ## Android
 
-### Exercises for Wednesday
+From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--11.
 
-From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--6.
-
-### Exercises for Friday
-
-From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 7--11.
+Be sure to do the tutorials by coding along and trying everything from the text.
 
 ## Submit instructions
 
@@ -22,4 +23,4 @@ Do all exercises as required, and create a Git repository to store your answers.
 
 ## Assessment
 
-This assignment counts towards 2 of the points you can earn for doing exercises! One point for the first part, and a second point for the rest of it. Your submission will only be scored in terms of *scope*: have you done everything that is required?
+This assignment counts towards 2 of the points you can earn for doing exercises! Your submission will only be scored in terms of *scope*: have you done everything that is required?

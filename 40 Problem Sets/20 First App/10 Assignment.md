@@ -6,17 +6,17 @@ Before working on this or any assignment, you will need to set up *Android Studi
 
 ## Assignment Description
 
-*Flexibility* Compared to earlier course, the assignment specs for this class will be much more relaxed and vague. The idea is to encourage you to use your creativity to build something that sounds interesting to you, rather than forcing you to produce exactly a certain app or outcome. Some assignments may have some constraints or fixed aspects, but even these can be somewhat flexible if you have a neat idea that falls outside the guidelines.
+*Flexibility* --- Compared to earlier courses, the assignment specs for this class will be much more relaxed and vague. The idea is to encourage you to use your creativity to build something that sounds interesting to you, rather than forcing you to produce exactly a certain app or outcome. Some assignments may have some constraints or fixed aspects, but even these can be somewhat flexible if you have a neat idea that falls outside the guidelines.
 
-*Constraints* For this first assignment, we'll leave things very open-ended. You can make any Android app you want and submit it to receive credit. We'd prefer to see an app that has the following qualities:
+*Constraints* --- For this first assignment, we'll leave things very open-ended. You can make any app you want and submit it to receive credit. We'd prefer to see an app that has the following qualities:
 
-- Your app should be set up as an Android Studio project, so it can easily be opened/run/graded by others.
+- Your app should be set up as an Android Studio or Xcode project, so it can easily be opened/run/graded by others.
 
-- Your app should use at least 4 widgets/views on the screen. (Example: three Buttons and a TextView, ...)
+- Your app should use at least 4 widgets/views on the screen. For example: three Buttons and a TextView.
 
-- Your app should use at least 2 different kinds of widgets. (Example: Button, TextView, EditText, ...)
+- Your app should use at least 2 different kinds of widgets. For example: Button, TextView, EditText, ... .
 
-- Your app should respond to at least two different events. (Example: clicks on two different buttons.)
+- Your app should respond to at least two different events. For example: clicks on two different buttons.
 
 - Your app's design should change at least some aspect of the physical appearance and styling of some widgets. For example, make a text view have a larger or bold font, or make a button appear in a blue color.
 
@@ -30,7 +30,7 @@ Before working on this or any assignment, you will need to set up *Android Studi
         the user to pick the larger number.  Perfect for Berkeley students!
         Note: Runs best on big Android tablets because of 1000dp font choice.
 
-*Suggestions* Outside of the constraints above, you can do anything you want! Again, we're trying to let you be creative here. Your app does not need to be totally unique; if you have an existing idea that you want to replicate, or if you and a friend want to make the same kind of app, please go ahead.
+*Suggestions* --- Outside of the constraints above, you can do anything you want! Again, we're trying to let you be creative here. Your app does not need to be totally unique; if you have an existing idea that you want to replicate, or if you and a friend want to make the same kind of app, please go ahead.
 
 If you are not feeling very inspired and want some suggestions of what to make, here are a few ideas. Some of the ideas below are trickier than others or use material we haven't covered yet, so you'd have to do your own digging.
 
@@ -46,10 +46,10 @@ If you are not feeling very inspired and want some suggestions of what to make, 
 
 - Rock-Paper-Scissors: The human and computer players each pick an option of Rock, Paper, or Scissors. The computer's choice is made randomly. Paper beats Rock; Scissors beat Paper; and Rock beats Scissors. Keep track of the human player's score against the computer over time.
 
-We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. These assignments, as well as this class in general, are meant to be low-stress and fun. If you want help, please feel free to show your code to others or ask for help in our online Piazza forum. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. If you work on your solution for roughly 2 hours and are still not done, you can turn it in and we will award you credit. You can do it!
+We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. If you work on your solution for roughly 4 hours and are still not done, you can turn it in and we will award you credit. You can do it!
 
 ## Turnin and Grading
 
-Instructions for turning in this program can be found on the class web site. After programs are turned in, you will be asked to peer-evaluate another student's submission. Details will be provided later.
+Put your project on GitHub in a public repository. After programs are turned in, you will be asked to peer-evaluate another student's submission. Details will be provided later.
 
-Your submission will be graded quickly by simply running it and evaluating its functionality. It does not need to be perfect or bug-free to receive credit. Your code will not be graded on style, but we still encourage you to follow good overall coding style for your own sake. If you want to see some good examples of proper Java coding style, consult the Style Guide linked from the Homework web page.
+Your submission will be graded quickly by simply running it and evaluating its functionality. It does not need to be perfect or bug-free to receive credit. Your code will not be graded on style, but we still encourage you to follow good overall coding style for your own sake. If you want to see some good examples of proper Java/Swift coding style, consult an online style guide.

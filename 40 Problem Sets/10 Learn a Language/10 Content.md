@@ -4,18 +4,11 @@ This first week, you'll need to start learning the programming language that you
 
 ## iOS
 
-Complete these tutorials:
-
-- the [Swift tour](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html#//apple_ref/doc/uid/TP40014097-CH2-ID1) from Apple
-- the Swift object-orientation tutorial from [Ray Wenderlich](http://www.raywenderlich.com/81952/intro-object-oriented-design-swift-part-1)
-
-Be sure to do the tutorials by coding along and trying everything from the text.
+Complete the Swift object-orientation tutorial from [Ray Wenderlich](http://www.raywenderlich.com/81952/intro-object-oriented-design-swift-part-1). Be sure to do the tutorial by coding along and trying everything from the text.
 
 ## Android
 
-From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--11.
-
-Be sure to do the tutorials by coding along and trying everything from the text.
+From the Java for C programmers [tutorial](http://www.davin.50webs.com/research/1999/tsj4cp.html), please complete exercises 1--11. Be sure to do the tutorials by coding along and trying everything from the text.
 
 ## Submit instructions
 

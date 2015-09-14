@@ -23,8 +23,9 @@ If you don't like our suggested assignment ideas listed on the following pages o
         NumberGame 2.05 - This app shows two numbers on the screen and asks
         the user to pick the larger number.  Perfect for Berkeley students!
 
-As always, these assignments, as well as this class in general, are meant to be low-stress and fun. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. ￼￼￼￼￼
-### Suggestion 1: Mad Libs
+As always, these assignments, as well as this class in general, are meant to be low-stress and fun. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints.
+
+## Suggestion 1: Mad Libs
 
 [Here are some files to use as resources!](madlibs-files.zip)
 
@@ -66,4 +67,4 @@ If you want your app to play background music with the MediaPlayer class, we als
 
 If you want to implement a rating bar of stars like the one shown in our screenshots, look into Android's `RatingBar` view class. You can place a `RatingBar` into a layout and interact with it in Java code by calling its getRating method. If you want to trigger an event when the user clicks the stars in the rating bar, it's a bit trickier than attaching an `onClick` handler on a Button. You'd need to attach the listener in the Java code instead of in the XML; look into the rating bar's method `setOnRatingBarChangeListener` for more details; or, for simpler coding, you can have a separate "Submit" button that sends the user back to the main activity.
 
-If you want to practice using the Android camera, you could make an option for the user to make a profile for themselves and let them take a photo as part of the profile creation.
+If you want to practice using the camera, you could make an option for the user to make a profile for themselves and let them take a photo as part of the profile creation.

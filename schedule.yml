@@ -1,25 +1,26 @@
 Week 1:
+    'Introduction to Design': '/design/introduction-to-design'
     'Voorbereiding iOS': '/ios/learn-swift'
     'Voorbereiding Android': '/android/learn-java'
     'Werkcollege [maandag 15:00]':
-    'Introduction to Design': '/design/introduction-to-design'
     'Learn Git': '/psets/learn-git'
     'Learn a Language': '/psets/learn-a-language'
     'First App': '/psets/first-app'
     'Deadline [vrijdagavond]':
 Week 2:
+    'Design: users and apps': '/design/users-and-apps'
     'Voorbereiding iOS': '/ios/layouts'
     'Voorbereiding Android': '/android/layouts'
     'Hoor/werkcollege [maandag 11:00]':
-    'Design: users and apps': '/design/users-and-apps'
     'Werkcollege [maandag 15:00]':
     'App: layouts': '/psets/layouts'
     'Deadline [vrijdagavond]':
 Week 3:
+    'Design: users and apps': '/design/simplicity'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
+    'Project: requirements': '/project/requirements'
     'Hoor/werkcollege [maandag 11:00]':
-    'Design: users and apps': '/design/simplicity'
     'Werkcollege [maandag 15:00]':
-    'App: multiple screens': '/psets/multiple-activities'
-    'Deadline [vrijdagavond]':
+    'App: multiple screens [deadline: vrijdag]': '/psets/multiple-activities'
+    'Project: proposal [deadline: vrijdag]': '/project/proposal'

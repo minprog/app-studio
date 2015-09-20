@@ -11,7 +11,8 @@ Your submission will be graded quickly by simply running it and evaluating its f
 If you don't like our suggested assignment ideas listed on the following pages of this document, or if you prefer to do something unique of your own, please feel free to do so. Whether you do our suggestions or your own, we'd prefer to see an app that has the following qualities:
 
 - Your app should be set up as an Android Studio project, so it can easily be opened/run/graded by others.
-- Your app should use at least 2 different activities or at least 2 fragments.
+- Your app should use at least 2 different activities/view controllers or at least 2 fragments.
+- At least one of the controllers should incorporate a list!
 - Your app should gracefully handle rotation from portrait to landscape orientation.
 - Along with your app, please turn in a file named **README.md** that contains your name and e-mail address along with the name of your app and a very brief description of it, along with any special instructions that the user might need to know in order to use it properly (if there are any). For example:
 
@@ -64,6 +65,8 @@ This suggestion is only practical if you did the "Mad Libs" program in a previou
 If you didn't do Mad Libs previously, you can still do this option, but you'd need to implement the Mad Libs assignment first, which might take too much time. It's up to you.
 
 ## Suggestion 3: Friendsr with Fragments or Size Classes
+
+This one can only be done when agreed upon by the teacher!
 
 If you previously did the Friendsr dating app, modify it to use fragments (Android) or [size classes](https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_adaptive_sizes/chapters/AboutAdaptiveSizeDesign.html) (iOS) so that when the screen is rotated into landscape orientation, it shows the details about the user in the same activity, rather than jumping into a new activity. When the app is in portrait mode, it should follow the old behavior of having the user list and user details be separate activities.
 

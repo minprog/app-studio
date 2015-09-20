@@ -2,25 +2,24 @@ Week 1:
     'Introduction to Design': '/design/introduction-to-design'
     'Voorbereiding iOS': '/ios/learn-swift'
     'Voorbereiding Android': '/android/learn-java'
-    'Werkcollege [maandag 15:00]':
     'Learn Git': '/psets/learn-git'
     'Learn a Language': '/psets/learn-a-language'
     'First App': '/psets/first-app'
-    'Deadline [vrijdagavond]':
 Week 2:
     'Design: users and apps': '/design/users-and-apps'
     'Voorbereiding iOS': '/ios/layouts'
     'Voorbereiding Android': '/android/layouts'
-    'Hoor/werkcollege [maandag 11:00]':
-    'Werkcollege [maandag 15:00]':
     'App: layouts': '/psets/layouts'
-    'Deadline [vrijdagavond]':
 Week 3:
-    'Design: users and apps': '/design/simplicity'
+    'Design: simplicity': '/design/simplicity'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
     'Project: requirements': '/project/requirements'
-    'Hoor/werkcollege [maandag 11:00]':
-    'Werkcollege [maandag 15:00]':
-    'App: multiple screens [deadline: vrijdag]': '/psets/multiple-activities'
-    'Project: proposal [deadline: vrijdag]': '/project/proposal'
+    'App: multiple screens': '/psets/multiple-activities'
+    'Project: proposal': '/project/proposal'
+Week 4:
+    'Design: Human Factors': '/design/human-factors'
+    'Voorbereiding iOS': '/ios/table-views'
+    'Voorbereiding Android': '/android/lists-and-fragments'
+    'App: Lists': '/psets/lists-and-advanced-layout'
+    'Project: Design Doc': '/project/design-document'

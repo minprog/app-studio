@@ -5,7 +5,7 @@ Are you having problems with the questions? Use a dictionary, discuss the
 question you might have. It is required that you provide your own answers,
 however!
 
-- Evaluate the quiality of this week's app using relevant concepts in chapters five, six and seven of Cadence & Slang.
+- Evaluate the quiality of this week's app using a choice of concepts in chapters five and six of Cadence & Slang.
 
 Requirements:
 

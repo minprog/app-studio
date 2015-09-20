@@ -1,10 +1,10 @@
-# The Human behind the User
+# Human Factors
 
-This week, we'll finish reading Cadence and Slang and you are going to write a review of a single app in terms of the ideas in the book.
+This week, we'll finish reading Cadence and Slang and you are going to write a review of a single app in terms of the ideas in the book. Chapters five and six are most relevant.
 
 ## This week's app: Trello
 
-This week's assignment concerns the Trello app. If you do not have it, make sure you get it.
+This week's assignment concerns the Trello app. If you do not have it, make sure you get it and experiment with it.
 
 <https://trello.com/platforms>
 

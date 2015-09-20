@@ -1,4 +1,4 @@
-# Lists and advanced layout
+# Lists
 
 The purpose of this assignment is to practice the material from the past few weeks, such as apps that display lists, read data from files, perform text-to-speech or speech-to-text operations, and/or use fragments. As with past assignments, we'll suggest some ideas for programs you could write to practice layout. We will list several suggestions, but you only need to write one app to submit.
 

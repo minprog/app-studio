@@ -1,4 +1,4 @@
-## Design document
+# Design document
 
 This milestone consists of delivering a technical design for your app. It
 should convey the way your app fits into the platform you are building on, and

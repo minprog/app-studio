@@ -14,9 +14,9 @@ design doc might be:
 
     The idea is that there is one sketch for each controller of the app. This time, interactions are not relevant, but more so the specific controls that are needed on each screen, including tabs, menus, etc..
 
-* An overview of model classes, private data for each class, and *public* methods (and their return types and/or arguments) that you've decided to implement.
+* An overview of model classes, private data for each class, and *public* methods (and their return types and/or arguments) that you've decided to implement. See [this page](http://www.agilemodeling.com/artifacts/classDiagram.htm) for a head start!
 
-* A list of any APIs and frameworks that have not yet been named in the above, along with a description of what these will be used for. What kind of APIs do you need in the model classes?
+* A list of any APIs and frameworks that have not yet been named in the above, along with a description of what these will be used for. What kind of APIs do you need in the model classes? Maybe for persistence?
 
 Be sure to update your README if you have made some incompatible decisions in
 your design document. During the course, you can update all documentation at any time.

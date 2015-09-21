@@ -76,9 +76,9 @@ These are the main activities during the course:
 | week | class                      | design                | platform   | project          |  
 | ---: | -------------------------- | --------------------- | ---------- | ---------------- |  
 |    1 | (only workgroup and lab!)  | design principles     | first app  |                  |  
-|    2 | layouts                    | interaction design    | second app |                  |  
-|    3 | multiple screens           | definition, usability | third app  | simple game play |  
-|    4 | data sources               | users                 | fourth app | users            |  
+|    2 | layouts                    | user and apps         | second app |                  |  
+|    3 | multiple screens           | simplicity | third app  | simple game play |  
+|    4 | data sources               | human factors         | fourth app | users            |  
 |    5 | project definition         |                       |            | highscores       |  
 |    6 | project design review      |                       |            |                  |  
 |    7 | code quality               |                       |            | refactoring      |  

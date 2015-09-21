@@ -73,16 +73,16 @@ We've got a fairly regular schedule:
 
 These are the main activities during the course:
 
-| week | class                      | design                | platform   | project          |  
-| ---: | -------------------------- | --------------------- | ---------- | ---------------- |  
-|    1 | (only workgroup and lab!)  | design principles     | first app  |                  |  
-|    2 | layouts                    | user and apps         | second app |                  |  
-|    3 | multiple screens           | simplicity | third app  | simple game play |  
-|    4 | data sources               | human factors         | fourth app | users            |  
-|    5 | project definition         |                       |            | highscores       |  
-|    6 | project design review      |                       |            |                  |  
-|    7 | code quality               |                       |            | refactoring      |  
-|    8 | class review               |                       |            |                  |  
+| week | class                      | design            | platform   | project          |  
+| ---: | -------------------------- | ----------------- | ---------- | ---------------- |  
+|    1 | (only workgroup and lab!)  | design principles | first app  |                  |  
+|    2 | layouts, MVC               | user and apps     | second app | understand the game |  
+|    3 | sketching                  | simplicity        | third app  | sketch UX        |  
+|    4 | "business" modeling        | human factors     | fourth app | design doc + build UI |  
+|    5 |                            |                   |            | build models + connect to UI |  
+|    6 | code quality               |                   |            | users + high scores |  
+|    7 | code reviews               |                   |            | refactoring      |  
+|    8 |                            |                   |            |                  |  
 
 The schedule can still be changed!
 

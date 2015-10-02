@@ -1,35 +1,30 @@
-As with any beta, your project's beta should be feature-complete, even though
-it may have some bugs. Per the syllabus, it will be evaluated primarily along
-axes of scope, design, and style (whereas your project's release will be
-evaluated primarily along those axes as well as correctness).
+# Beta version
 
-When ready to submit your beta, only one member of your two-person team should
-follow the steps below. Let's call the team member who'll be submitting
-"Alice" and the team member who won't be submitting "Bob". For the purposes
-of submitting, it doesn't matter which of you are which: even if you were
-Alice for your Design Doc and Style Guide, you can still be Bob this time; and
-vice versa.
+As with any software beta release, your project's beta should be
+feature-complete, even though it may have some bugs. Broadly speaking:
 
-* Ensure that you (Alice) have the latest version of everything, including, if
+- a fully playable game with a real word list
+- entering names etc.
+- high scores
+- requirements such as restoring the game state if the app is killed
+
+The following stuff isn't required, though:
+
+- bug-free gameplay
+- good coding style
+- efficient algorithms
+- user interface layout etc.
+
+## Tagging your beta release
+
+Git allows you to *tag* specific versions of your code as a release. This way, you can share these different versions with the public. GitHub also has a special page listing releases of your project.
+
+* Ensure that you have the latest version of everything, including, if
   applicable, your database.
 
 * Add to the top of the `README` instructions that explain, in succinct steps,
   how your instructor and classmates can get your project up and running in
-  their own computer. Odds are those instructions will resemble the below,
-  where **alice** is your actual Github username:
-
-		# clone repo
-		git clone git@github.com:alice/project0.git alice
-
-		# make sure all gems are there
-		cd alice
-		bundle
-
-		# initialize and seed database
-		rake db:setup
-	
-		# start server
-		rails s
+  their own computer.
 
 * Commit your changes to the README:
 
@@ -40,15 +35,9 @@ vice versa.
   <https://github.com/alice/project0>, where **alice** is your actual GitHub
   username.
 
-* Ask Bob to follow your README's instructions inside of his own environment, to
-  ensure they're 100% correct. If he's able to get your project up and running
-  at `http://localhost:3000/`, where alice is still your actual GitHub
-  username, odds are your README's instructions are correct! If incorrect,
-  though, make (and push) any changes to your README as needed.
-
 * "Tag" your official submission as follows:
 
-		cd project0
+		cd project
 		git tag --force beta
 		git push --tags
 

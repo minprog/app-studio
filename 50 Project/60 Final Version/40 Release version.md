@@ -1,4 +1,4 @@
-# Final release
+# Final version
 
 To submit your final, you need to follow these steps:
 

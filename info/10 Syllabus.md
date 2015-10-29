@@ -1,6 +1,6 @@
 # Native App Studio
 
-*Edition: September 2015, still under construction*
+*Edition: November--December 2015, still under construction*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -42,7 +42,7 @@ need to have a laptop capable of running Xcode or Android Studio.
   the course's instructor, where everyone will help each other to make sense of
   the course's requirements.
 
-* Students are expected to watch all lectures, read all provided materials and
+* Students are expected to attend all lectures, read all provided materials and
   to submit all required projects, as specified below.
   
 * Students are expected to hand in one programming project invidiually, but
@@ -63,28 +63,24 @@ We've got a fairly regular schedule:
 
 *Assignments* are released on Fridays. You can work on these in the weekend or in the week thereafter. In the first half of the course, the assignments help you practice with important ideas and of course with the programming platform that you are learning.
 
-*Lectures* take place on Mondays at 11:00, with the exception of the first Monday. Lectures introduce you to course materials, to new concepts and allow you to interact with the staff.
+*Lectures* take place on Mondays at 11:00. Lectures introduce you to course materials and new concepts. In the second part of lecture, coding demonstrations are given so you can get a head start with your assignments.
 
-*Workgroups* are held on Mondays at 15:00. Coding demonstrations are given so you can get a head start with your assignments. Workgroups are led by the teaching assistants, so this is also the perfect place to get feedback on your work and ask questions.
-
-*Lab* is open on Fridays at 11:00, where ususally all staff is available. This is the core place to work on and finish your assignments and confer with your classmates on progress and understanding. 
+*Lab* is open on Fridays at 11:00, where ususally all staff is available. This is the place to work on and finish your assignments and confer with your classmates and teaching assistants on progress and understanding. 
 
 *Deadlines* are all on Friday evenings, starting on the very first Friday of the course. There are no late days except in cases of emergency.
 
-These are the main activities during the course:
+These are the main activities during the course (these will probably be changed):
 
-| week | class                      | design            | platform   | project          |  
-| ---: | -------------------------- | ----------------- | ---------- | ---------------- |  
-|    1 | (only workgroup and lab!)  | design principles | first app  |                  |  
-|    2 | layouts, MVC               | user and apps     | second app | understand the game |  
-|    3 | sketching                  | simplicity        | third app  | sketch UX        |  
-|    4 | "business" modeling        | human factors     | fourth app | design doc + build UI |  
-|    5 |                            |                   |            | build models + connect to UI |  
-|    6 | code quality               |                   |            | users + high scores |  
-|    7 | code reviews               |                   |            | refactoring      |  
-|    8 |                            |                   |            |                  |  
-
-The schedule can still be changed!
+| week | class               | design            | platform   | project                      |  
+| ---: | ------------------- | ----------------- | ---------- | ---------------------------- |  
+|    1 | introduction        | design principles | first app  |                              |  
+|    2 | layouts, MVC        | user and apps     | second app | understand the game          |  
+|    3 | sketching           | simplicity        | third app  | sketch UX                    |  
+|    4 | "business" modeling | human factors     | fourth app | design doc + build UI        |  
+|    5 |                     |                   |            | build models + connect to UI |  
+|    6 | code quality        |                   |            | users + high scores          |  
+|    7 | code reviews        |                   |            | refactoring                  |  
+|    8 |                     |                   |            |                              |  
 
 ## Books
 

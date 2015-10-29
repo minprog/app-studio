@@ -5,7 +5,7 @@ your final grade. Non-effort in any of these will lead to a failing grade for
 the course, regardless of compensation. But if you do the work and interact
 regularly with instructor and fellow students, you should be able to make it!
 
-Grading specification:
+Grading specification (will be changed):
 
 - homework participation: 40%
 - graded design review: 20%
@@ -33,6 +33,8 @@ These parts of the course will earn you points for homework participation:
 
 - each of the five programming exercises for your platform
 - each of the three design review exercises
+- code reviews
+- design reviews
 
 ## Design review
 

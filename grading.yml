@@ -7,7 +7,7 @@ calculation:
 design:
     type: integer
     grades:
-        design: 1
+        des4: 1
 
 project:
     type: integer

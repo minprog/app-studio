@@ -10,7 +10,7 @@ design:
         des4: 1
 
 project:
-    type: integer
+    type: float
     grades:
         project: 1
 

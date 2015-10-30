@@ -1,0 +1,26 @@
+calculation:
+    normal:
+        design: 20
+        project: 40
+        passes: 40
+
+design:
+    type: integer
+    grades:
+        design: 1
+
+project:
+    type: integer
+    grades:
+        project: 1
+
+passes:
+    type: pass
+    grades:
+        des1: 1
+        des2: 1
+        des3: 1
+        app1: 1
+        app2: 1
+        app3: 1
+        app4: 1

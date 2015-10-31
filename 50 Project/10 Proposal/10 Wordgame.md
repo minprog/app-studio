@@ -143,7 +143,7 @@ app. The overall design and aesthetics of this app are ultimately up to you but
 we require that your app meet some requirements. All other details are left to
 your own creativity and interpretation.
 
-## Features
+## Requirements
 
 * Immediately upon launch, gameplay must start (unless the app was simply backgrounded, in which case gameplay, if in progress prior to backgrounding, should resume).
 

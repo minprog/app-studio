@@ -21,6 +21,9 @@ Martijn Stegeman
 Gracia Redder  
 *teaching assistant, Android*
 
+Hella Haanstra  
+*teaching assistant, Android*
+
 Julian Jansen  
 *teaching assistant, iOS*
 
@@ -71,16 +74,16 @@ We've got a fairly regular schedule:
 
 These are the main activities during the course (these will probably be changed):
 
-| week | class               | design            | platform   | project                      |  
-| ---: | ------------------- | ----------------- | ---------- | ---------------------------- |  
-|    1 | introduction        | design principles | first app  |                              |  
-|    2 | layouts, MVC        | user and apps     | second app | understand the game          |  
-|    3 | sketching           | simplicity        | third app  | sketch UX                    |  
-|    4 | "business" modeling | human factors     | fourth app | design doc + build UI        |  
-|    5 |                     |                   |            | build models + connect to UI |  
-|    6 | code quality        |                   |            | users + high scores          |  
-|    7 | code reviews        |                   |            | refactoring                  |  
-|    8 |                     |                   |            |                              |  
+| week | class                   | design            | platform   | project                      |  
+| ---: | ----------------------- | ----------------- | ---------- | ---------------------------- |  
+|    1 | introduction            | design principles | first app  |                              |  
+|    2 | MVC, layouts, sketching | user and apps     | second app | understand and sketch        |  
+|    3 | "business" modeling     | simplicity        | third app  | design doc                   |  
+|    4 | code quality 1          | human factors     | fourth app | build UI                     |  
+|    5 | code quality 2          |                   |            | build models + connect to UI |  
+|    6 | code quality 3          |                   |            | users + high scores          |  
+|    7 | code quality 4          |                   |            | refactoring                  |  
+|    8 |                         |                   |            |                              |  
 
 ## Books
 

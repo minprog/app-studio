@@ -5,10 +5,10 @@ your final grade. Non-effort in any of these will lead to a failing grade for
 the course, regardless of compensation. But if you do the work and interact
 regularly with instructor and fellow students, you should be able to make it!
 
-Grading specification (will be changed):
+Grading specification:
 
-- homework participation: 40%
-- graded design review: 20%
+- homework participation: 20%
+- graded design evaluation: 40%
 - programming project and report: 40%
 
 A student must ordinarily meet all deadlines in order to be eligible for a

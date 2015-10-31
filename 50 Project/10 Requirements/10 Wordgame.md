@@ -43,9 +43,7 @@ will not just implement Hangman. (Hangman is boring.) You will implement...
 
 Wait for it...
 
-*Evil* Hangman
-
-## Evil Hangman
+## *Evil* Hangman
 
 Evil Hangman is quite like Hangman, except that the computer cheats. Rather
 than pick, say, a seven-letter word at the game's start, the computer instead

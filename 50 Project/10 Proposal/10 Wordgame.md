@@ -147,75 +147,38 @@ your own creativity and interpretation.
 
 * Immediately upon launch, gameplay must start (unless the app was simply backgrounded, in which case gameplay, if in progress prior to backgrounding, should resume).
 
-* Your app’s front side must display placeholders (e.g., hyphens) for yet-unguessed letters that make clear the word’s length.
+* Your app must inform the user of all relevant state for the current game: open letter positions, guessed letters, guesses left, and so on.
 
-* Your app’s front side must inform the user (either numerically or graphically) how many incorrect guesses he or she can still make before losing.
-
-* Your app’s front side must somehow indicate to the user which letters he or she has (or, if you prefer, hasn’t) guessed yet.
-
-* The user must be able to input guesses via an on-screen keyboard.
+* The user must be able to input guesses via an on-screen keyboard which needn't necessarily be the standard keyboard.
 
 * Your app must only accept as valid input single alphabetical characters
   (case-insensitively). Invalid input (e.g., multiple characters, no
   characters, characters already inputted, punctuation, etc.) should be ignored
   (silently or with some sort of alert) but not penalized.
 
-* Your app’s front side must have a title (e.g., Hangman) or logo as well as two buttons: one that flips the UI around to the app's flipside, the other of which starts a new game.
+* Your app's front side must have a title (e.g., Hangman) or logo as well as navigation to go to the app's settings and to start a new game.
 
 * If the user guesses every letter in some word before running out of chances,
   he or she should be somehow congratulated, and gameplay should end (i.e., the
   game should ignore any subsequent keyboard input). If the user fails to guess
   every letter in some word before running out of chances, he or she should be
-  somehow consoled, and gameplay should end. The front side’s two buttons
+  somehow consoled, and gameplay should end. The front side's two buttons
   should continue to operate.
 
 * A user must be able to configure three settings: the length of words to be
   guessed (the allowed range for which must be $$[1, n]$$, where $$n$$ is the
-  length of the longest word in `words.plist`); the maximum number of incorrect
-  guesses allowed (the allowed range for which must be $$[1, 26]$$); and
-  whether or not to be evil. By default, your app must be evil. But if the user
-  opts to disable evil, gameplay should occur in a traditional, non-evil way,
-  whereby the app must choose a word pseudorandomly from the start and stay
-  committed to that word until the game’s end.
+  length of the longest word in `words.plist` or `words.xml`); the maximum
+  number of incorrect guesses allowed (the allowed range for which must be
+  $$[1, 26]$$); and whether or not to be evil. By default, your app must be
+  evil. But if the user opts to disable evil, gameplay should occur in a
+  traditional, non-evil way, whereby the app must choose a word pseudorandomly
+  from the start and stay committed to that word until the game's end.
 
 * When settings are changed, they should only take effect for new games, not one already in progress, if any.
 
-* Your app must maintain a history of high scores that’s displayed anytime a
+* Your app must maintain a history of high scores that's displayed anytime a
   game is won or lost. We leave the definition of "high scores" to you, but you
   should somehow rank the results of at least 10 games (assuming at least 10
   games have been won), displaying for each the word guessed and the number of
   mistakes made (which is presumably low). The history of high scores should
   persist even when your app is backgrounded or force-quit.
-
-## Implementation details
-
-* The layout of your user interface should work on both tablets and phones, in portrait and landscape modes.
-
-* You must use the contents of `words.plist` (iOS) or `words.xml` (Android) as your universe of possible words. You're welcome, but not required, to transform it into some other format (e.g., SQLite).
-
-* You must implement your app’s two strategies for gameplay (evil and non-evil) in two separate model classes called EvilGameplay and GoodGameplay (in files called EvilGameplay.{h,m} and GoodGameplay.{h,m}, respectively) both of which must implement a protocol called GameplayDelegate (which must be declared in a file called GameplayDelegate.h). In other words, based on whether evil is enabled or disabled, your app should pass messages to an instance of one class or the other.
-
-* You must implement your app's two strategies for gameplay (evil and non-evil) in two separate model classes called EvilGame and GoodGame, both of which must implement a protocol/interface called GameplayDelegate. In other words, based on whether evil is enabled or disabled, your app should pass messages to an instance of one class or the other.
-
-* Your app must come with default values for the app's three settings; those defaults should be set through a PreferenceActivity.
-
-* Your app must come with default values for the flipside’s two settings; those defaults should be set in NSUserDefaults with registerDefaults:. Anytime the user changes those settings, the new values should be stored immediately in NSUserDefaults (so that changes are not lost if the application is terminated).
-
-* On iOS, those defaults should be set in `NSUserDefaults`. On Android, those defaults should be set in `SharedPreferences`.
-
-* You must implement each of the flipside’s numeric settings with a UISlider. Each slider should be accompanied by at least one UILabel that reports its current value (as an integer).
-
-* You must implement the flipside’s evil toggle with a UISwitch.
-
-* You must obtain a user’s guesses via a UITextField (and the on-screen keyboard that accompanies it). For the sake of aesthetics, you are welcome, but not required, to keep that UITextField hidden (so long as the on-screen keyboard works). You are also welcome, but not required, to respond to user’s keypresses instantly, without waiting for them to hit return or the like, in which case textField:shouldChangeCharactersInRange:replacementString in the UITextFieldDelegate protocol might be of some interest.
-
-* You must implement the display of high scores in a UIViewController called HistoryViewController (in files called HistoryViewController.{h,m,xib}) that presents itself at game’s end via a UIModalTransitionStyleCoverVertical transition. You must also declare a HistoryViewControllerDelegate protocol (in HistoryViewController.h) that MainViewController implements, much like FlipsideViewController.h declares FlipsideViewControllerDelegate.
-
-* You must implement methods with which to store and retrieve high scores in a model called History(asbycreatingHistory.{h,m}files). Youmuststorehighscorespersistently,as in a property list (other than words.plist) or in some other format (e.g., SQLite).
-
-* You must implement unit tests for your models.
-
-* Your app must work within the iPhone 5.1 Simulator; you need not test it on
-  actual hardware. However, if you or your partner owns an iPad, iPhone, or
-  iPod touch, and you'd like to install your app on it, see
-  https://manual.cs50.net/iOS for instructions.

@@ -10,11 +10,11 @@ Week 2:
     'Voorbereiding iOS': '/ios/layouts'
     'Voorbereiding Android': '/android/layouts'
     'App: layouts': '/psets/layouts'
+    'Project: requirements': '/project/requirements'
 Week 3:
     'Design: simplicity': '/design/simplicity'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
-    'Project: requirements': '/project/requirements'
     'App: multiple screens': '/psets/multiple-activities'
     'Project: proposal': '/project/proposal'
 Week 4:

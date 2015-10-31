@@ -18,8 +18,22 @@ however!
    - Do not simply cite someone else's definition of affordance.
    - Do not just choose a definition. You must be able to defend your choice and wording!
 
-4. List five *constraints* that you think the creators of the app have used to determine the app's shape.
+4. List three *constraints* that you think the creators of the app have used to determine the app's shape. Illustrate with concrete examples from the app.
 
-5. What exactly is a *concept*?
+5. Make a table of all *concepts* in both chapters. The text contains quite a few concepts that can be used to discuss the quality of an app (e.g., *monotony* - we can discuss the monotony of some app). Include a short definition or few keywords that help you remember the definition of each concept. It does *not* have to be completely correct, though.
 
-6. Make a list of 10 very important *concepts* in both chapters. The text contains quite a few concepts that can be used to discuss the quality of an app (e.g., *monotony*). Include a short definition or few keywords that help you remember the definition of each concept. It does *not* have to be completely correct, though. Rate them 1-10 on how easy it would be to use the concept in building an app.
+   Some of the concepts/attributes can take a lot of work when designing a really good app. Rate the concepts 1-10 on how much work it would be to account for that concept in creating an app.
+
+   Hint: the book contains a lot of advice ("The product's setup process should exemplify its quality"). Those are not concepts.
+
+   Hint: some paragraphs are not about application quality but about stuff around it. E.g., paragraph 1.10 is about marketing. We will not discuss these.
+
+## Assessment
+
+You work will be graded pass/fail on *clarity* and *thoroughness*.
+
+- Use correct spelling and grammar. If that's not really your thing, best to get outside help in writing well!
+
+- Think about the usability of your document: someone will have to read it, and it's your job to make that easy!
+
+- The ultimate goal is to make sure you read well, understand how good apps are made and what you can do to improve. Show in your answers that you have learned.

@@ -133,5 +133,7 @@ selected `---E` instead). But, again, that's okay. You are welcome, but not
 required, to implement a more sophisticated algorithm than that prescribed
 here; just make clear in some comments how yours happens to work.
 
-As for how to divide a list of words into equivalence classes
-programmatically, well, we'll leave that as a challenge for you!
+For this project, you will be provided with a `words.plist` (for use on iOS)
+and a `words.xml` (for use on Android) to serve as the universe of potential
+words for your game. As for how to divide a list of words into equivalence
+classes programmatically, well, we'll leave that as a challenge for you!

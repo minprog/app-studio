@@ -9,7 +9,7 @@ your own creativity and interpretation.
 
 * Immediately upon launch, gameplay must start (unless the app was simply backgrounded, in which case gameplay, if in progress prior to backgrounding, should resume).
 
-* Your app must inform the user of all relevant state for the current game: open letter positions, guessed letters, guesses left, and so on.
+* Your app must inform the user of all relevant state for the current game: open letter positions, guessed letters, guesses left, and so on. Be creative on this aspect! If unsure about how to proceed, study some Hangman games that are available in the app store.
 
 * The user must be able to input guesses via an on-screen keyboard which needn't necessarily be the standard keyboard.
 

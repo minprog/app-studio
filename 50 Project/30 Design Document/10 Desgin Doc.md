@@ -23,6 +23,6 @@ your design document. During the course, you can update all documentation at any
 
 Add the design doc to your project on GitHub as a file named `DESIGN.md`. Like
 the README, the design doc should be written in Markdown, so check out the
-[syntax] again if needed. Put images in the same directory and embed them in your document.
+[syntax] again if needed. Put images in a separate directory and embed them in your document.
 
 [syntax]: http://daringfireball.net/projects/markdown/syntax

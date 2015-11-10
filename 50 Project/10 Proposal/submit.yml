@@ -1,2 +1,6 @@
 name: project
 url: true
+dependent_grades:
+    - pr-prop
+    - pr-desn
+    - pr-beta

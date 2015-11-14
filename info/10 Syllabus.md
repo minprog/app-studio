@@ -74,16 +74,16 @@ We've got a fairly regular schedule:
 
 These are the main activities during the course (these will probably be changed):
 
-| week | class                   | design            | platform   | project                      |  
-| ---: | ----------------------- | ----------------- | ---------- | ---------------------------- |  
-|    1 | introduction            | design principles | first app  |                              |  
-|    2 | MVC, layouts, sketching | user and apps     | second app | understand and sketch        |  
-|    3 | "business" modeling     | simplicity        | third app  | design doc                   |  
-|    4 | code quality 1          | human factors     | fourth app | build UI                     |  
-|    5 | code quality 2          |                   |            | build models + connect to UI |  
-|    6 | code quality 3          |                   |            | users + high scores          |  
-|    7 | code quality 4          |                   |            | refactoring                  |  
-|    8 |                         |                   |            |                              |  
+| week | class                   | design            | platform   | project                        |  
+| ---: | ----------------------- | ----------------- | ---------- | ------------------------------ |  
+|    1 | introduction            | design principles | first app  |                                |  
+|    2 | MVC, layouts, sketching | user and apps     | second app | understand and sketch          |  
+|    3 | "business" modeling     | simplicity        | third app  | design doc                     |  
+|    4 | code quality 1          | human factors     | fourth app | build basic gameplay           |  
+|    5 | code quality 2          |                   |            | extract models + connect to UI |  
+|    6 | code quality 3          |                   |            | users + high scores            |  
+|    7 | code quality 4          |                   |            | refactoring                    |  
+|    8 |                         |                   |            |                                |  
 
 ## Books
 

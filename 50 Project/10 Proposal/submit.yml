@@ -1,6 +1,2 @@
 name: project
 url: true
-dependent_grades:
-    - "pprop"
-    - "pdesn"
-    - "pbeta"

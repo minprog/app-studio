@@ -1,18 +1,9 @@
 calculation:
     normal:
-        design: 20
+        passes: 20
+        design: 40
+        milestones: 0
         project: 40
-        passes: 40
-
-design:
-    type: integer
-    grades:
-        des4: 1
-
-project:
-    type: float
-    grades:
-        project: 1
 
 passes:
     type: pass
@@ -24,3 +15,22 @@ passes:
         app2: 1
         app3: 1
         app4: 1
+
+design:
+    type: integer
+    grades:
+        des4: 1
+
+milestones:
+    type: pass
+    grades:
+        prop: 1
+        ddoc: 1
+        game: 1
+        full: 1
+        modl: 1
+
+project:
+    type: float
+    grades:
+        project: 1

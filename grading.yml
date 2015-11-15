@@ -24,11 +24,11 @@ design:
 milestones:
     type: pass
     grades:
-        prop: 1
-        ddoc: 1
-        game: 1
-        full: 1
-        modl: 1
+        proposal: 1
+        design: 1
+        gameplay: 1
+        fullgame: 1
+        models: 1
 
 project:
     type: float

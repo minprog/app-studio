@@ -1,9 +1,9 @@
 calculation:
     normal:
         passes: 20
-        design: 40
+        design: 20
         milestones: 0
-        project: 40
+        project: 60
 
 passes:
     type: pass

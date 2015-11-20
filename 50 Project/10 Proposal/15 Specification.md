@@ -11,7 +11,7 @@ your own creativity and interpretation.
 
 * Your app must inform the user of all relevant state for the current game: open letter positions, guessed letters, guesses left, and so on. Be creative on this aspect! If unsure about how to proceed, study some Hangman games that are available in the app store.
 
-* The user must be able to input guesses via an on-screen keyboard which needn't necessarily be the standard keyboard.
+* The user must be able to input guesses via an on-screen keyboard.
 
 * Your app must only accept as valid input single alphabetical characters
   (case-insensitively). Invalid input (e.g., multiple characters, no

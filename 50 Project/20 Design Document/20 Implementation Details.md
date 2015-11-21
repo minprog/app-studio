@@ -4,7 +4,7 @@
 
 * You must use the contents of `words.plist` (iOS) or `words.xml` (Android) as your universe of possible words. You're welcome, but not required, to transform it into some other format (e.g., SQLite).
 
-* You must implement your app's two strategies for gameplay (evil and non-evil) in two separate model classes called EvilGameplay and GoodGameplay both of which must implement a protocol (Swift) or interface (Java) called Gameplay. In other words, based on whether evil is enabled or disabled, your app should pass messages to an instance of one class or the other.
+* You must implement your app's two strategies for gameplay (evil and non-evil) in two separate model classes called `EvilGameplay` and `GoodGameplay` both of which must implement a protocol (Swift) or interface (Java) called `Gameplay`. In other words, based on whether evil is enabled or disabled, your app should pass messages to an instance of one class or the other.
 
 * Your app must come with default values for the app's three settings; those defaults should be set through a PreferenceActivity (Android) or a separate view controller (iOS). Those defaults should be set in `NSUserDefaults` with `registerDefaults:` (iOS) or as an `android:defaultValue` in a `SharedPreferences` XML file (Android).
 

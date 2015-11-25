@@ -6,7 +6,7 @@ we require that your app meet some requirements. All other details are left to
 your own creativity and interpretation.
 
 - Download [`small.plist.zip`](small.plist.zip)   and [`words.plist.zip`](words.plist.zip).
-- Download [`small.xml.tar.gz`](small.xml.tar.gz) and [`words.plist.zip`](words.xml.tar.gz).
+- Download [`small.xml.tar.gz`](small.xml.tar.gz) and [`words.xml.tar.gz`](words.xml.tar.gz).
 
 ## Requirements
 

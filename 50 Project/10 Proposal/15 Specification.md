@@ -5,6 +5,9 @@ app. The overall design and aesthetics of this app are ultimately up to you but
 we require that your app meet some requirements. All other details are left to
 your own creativity and interpretation.
 
+- Download [`small.plist.zip`](small.plist.zip)   and [`words.plist.zip`](words.plist.zip).
+- Download [`small.xml.tar.gz`](small.xml.tar.gz) and [`words.plist.zip`](words.xml.tar.gz).
+
 ## Requirements
 
 * Immediately upon launch, gameplay must start (unless the app was simply backgrounded, in which case gameplay, if in progress prior to backgrounding, should resume).

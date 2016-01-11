@@ -8,5 +8,4 @@ We'll be reading about the design of applications in Nick D.'s epic (but small) 
 
 ## Reading
 
-* Nick Disabato, *Cadence & Slang*, chapter 1: *Empathy & Kindness*
 * Nick Disabato, *Cadence & Slang*, chapter 2: *Consistency & Character*

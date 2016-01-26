@@ -46,9 +46,11 @@ need to have a laptop capable of running Xcode or Android Studio.
 
 ## Design track
 
+*Only available in the February-March period.*
+
 The first part of this course is the design track, where we'll dive into understanding what good apps are, how we can discover good app concepts and how we can create apps that users are eager to use again and again.
 
-To complete this part of the course, you will need to attend weekly workshop sessions (*only available in the February-March period*), usually on Mondays at 15:00. Some of the work will be done in class and there is regular sharing of work by way of informal presentations.
+To complete this part of the course, you will need to attend weekly workshop sessions, usually on Mondays at 15:00. Some of the work will be done in class and there is regular sharing of work by way of informal presentations.
 
 Topics by week are:
 
@@ -66,9 +68,11 @@ All assignments are released on Mondays and are due by the next Monday, at 13:00
 
 ## Technical track
 
+*Available both in February-March and in April-May.*
+
 The second part of this course is the technical track, where we find ourselves struggling a little bit with the huge iOS and Android platforms. We'll try to understand how these platforms are designed and what parts we should get to know and what parts we can ignore.
 
-This part consists first and foremost of a lot of programming work, done by you! Every student will need to get acquainted with the platform of their choice and create lots of small apps. (*This part is available both in February-March as well as in April-May.*)
+This part consists first and foremost of a lot of programming work, done by you! Every student will need to get acquainted with the platform of their choice and create lots of small apps.
 
 Topics by week are:
 

@@ -1,18 +1,20 @@
+Preview:
+    'User research [design]': '/design/user-research'
 Week 1:
-    'Introduction to Design': '/design/introduction-to-design'
-    'Voorbereiding iOS': '/ios/learn-swift'
-    'Voorbereiding Android': '/android/learn-java'
+    'User research [design]': '/design/user-research'
+    'iOS: learn Swift': '/ios/learn-swift'
+    'Android: learn Java': '/android/learn-java'
     'Learn Git': '/psets/learn-git'
     'Learn a Language': '/psets/learn-a-language'
     'First App': '/psets/first-app'
 Week 2:
-    'Design: users and apps': '/design/users-and-apps'
+    'Data analysis [design]': '/design/analysis'
     'Voorbereiding iOS': '/ios/layouts'
     'Voorbereiding Android': '/android/layouts'
     'App: layouts': '/psets/layouts'
     'Project: proposal': '/project/proposal'
 Week 3:
-    'Design: simplicity': '/design/simplicity'
+    'Problem definition [design]': '/design/problem-definition'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
     'App: multiple screens': '/psets/multiple-activities'

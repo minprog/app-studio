@@ -1,6 +1,6 @@
 # Native App Studio
 
-*Edition: November--December 2015, still under construction*
+*Edition: Spring 2016 (still under construction)*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -21,17 +21,14 @@ Martijn Stegeman
 Gracia Redder  
 *teaching assistant, Android*
 
-Hella Haanstra  
-*teaching assistant, Android*
-
 Julian Jansen  
 *teaching assistant, iOS*
 
 ## Prerequisites
 
 Programming 1 and 2 or equivalent, as decided by the courses' instructors. You
-will need to be comfortable in programming, plus have some experience with
-memory management, runtime analysis, data structures and algorithms. You will
+will need to be comfortable with programming, plus have some experience with
+memory management, runtime analysis, design patterns, data structures and algorithms. You will
 need to have a laptop capable of running Xcode or Android Studio.
 
 ## Expectations
@@ -41,49 +38,53 @@ need to have a laptop capable of running Xcode or Android Studio.
   to learn Android can use any platform that Android Studio runs on and should
   have access to an Android phone or tablet.
 
-* Students are expected to attend all but one weekly workgroup sessions led by
-  the course's instructor, where everyone will help each other to make sense of
-  the course's requirements.
-
 * Students are expected to attend all lectures, read all provided materials and
   to submit all required projects, as specified below.
   
-* Students are expected to hand in one programming project invidiually, but
-  with generous help of teammates, if needed. You are expected to help your
-  teammates with the programming assignments, if needed. Do mind the
-  collaboration policies!
-
-* Students are expected to use discussions with the course's instructor to
+* Students are expected to use discussions with the course's instructor and teaching assistants to
   improve the technical and functional designs of all projects.
 
-* Students of Artificial Intelligence are expected to define their own
-  programming project that uses any two of phone sensors, external APIs or OS
-  integration, as accepted by the course's instructor.
+## Design track
 
-## Activities
+The first part of this course is the design track, where we'll dive into understanding what good apps are, how we can discover good app concepts and how we can create apps that users are eager to use again and again.
 
-We've got a fairly regular schedule:
+To complete this part of the course, you will need to attend weekly workshop sessions (*only available in the February-March period*), usually on Mondays at 15:00. Some of the work will be done in class and there is regular sharing of work by way of informal presentations.
 
-*Assignments* are released on Fridays. You can work on these in the weekend or in the week thereafter. In the first half of the course, the assignments help you practice with important ideas and of course with the programming platform that you are learning.
+Topics by week are:
 
-*Lectures* take place on Mondays at 11:00. Lectures introduce you to course materials and new concepts. In the second part of lecture, coding demonstrations are given so you can get a head start with your assignments.
+| week | topic                             |  
+| ---: | --------------------------------- |  
+|    1 | user research                     |  
+|    2 | data analysis                     |  
+|    3 | problem definition                |  
+|    4 | interaction design                |  
+|    5 | user testing                      |  
+|    6 | interaction design critique       |  
+|    7 | interaction design group critique |  
 
-*Lab* is open on Fridays at 11:00, where ususally all staff is available. This is the place to work on and finish your assignments and confer with your classmates and teaching assistants on progress and understanding. 
+All assignments are released on Mondays and are due by the next Monday, at 13:00. Some of the assignments have to be handed in individually, and other are handed in by a single representative per group.
 
-*Deadlines* are all on Friday evenings, starting on the very first Friday of the course. There are no late days except in cases of emergency.
+## Technical track
 
-These are the main activities during the course (these will probably be changed):
+The second part of this course is the technical track, where we find ourselves struggling a little bit with the huge iOS and Android platforms. We'll try to understand how these platforms are designed and what parts we should get to know and what parts we can ignore.
 
-| week | class                   | design            | platform   | project                        |  
-| ---: | ----------------------- | ----------------- | ---------- | ------------------------------ |  
-|    1 | introduction            | design principles | first app  |                                |  
-|    2 | MVC, layouts, sketching | user and apps     | second app | understand and sketch          |  
-|    3 | "business" modeling     | simplicity        | third app  | design doc                     |  
-|    4 | code quality 1          | human factors     | fourth app | build basic gameplay           |  
-|    5 | code quality 2          |                   |            | extract models + connect to UI |  
-|    6 | code quality 3          |                   |            | users + high scores            |  
-|    7 | code quality 4          |                   |            | refactoring                    |  
-|    8 |                         |                   |            |                                |  
+This part consists first and foremost of a lot of programming work, done by you! Every student will need to get acquainted with the platform of their choice and create lots of small apps. (*This part is available both in February-March as well as in April-May.*)
+
+Topics by week are:
+
+| week | topic            |  
+| ---: | ---------------- |  
+|    1 | a basic app      |  
+|    2 | multiple screens |  
+|    3 | ?                |  
+|    4 | ?                |  
+|    5 | ?                |  
+|    6 | ?                |  
+|    7 | ?                |  
+
+All assignments are released on Mondays and are due by the next Monday, at 13:00. All of these assignments have to be handed in individually, but you are supposed to help other students out generously during the course.
+
+To assist you with programming, there will be an introductory demo every Monday at 13:00 and the lab will be open on Fridays between 13:00 and 17:00.
 
 ## Books
 

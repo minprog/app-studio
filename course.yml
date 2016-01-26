@@ -1,7 +1,7 @@
 course:
     title: Native App Studio
     short: App Studio
-    submit: Native2015
+    submit: Native2015S
     mail: help@mprog.nl
 
 acknowledgements:
@@ -11,6 +11,6 @@ acknowledgements:
 license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 links:
-    '<i class="glyphicon glyphicon-equalizer"></i> Rooster': 'https://datanose.nl/#course[41663]'
+    '<i class="glyphicon glyphicon-equalizer"></i> Rooster': 'https://datanose.nl/#course[46004]'
     '<i class="glyphicon glyphicon-sunglasses"></i> Slack': 'https://mprog.slack.com/'
     '<i class="glyphicon glyphicon-education"></i> Studiegids': 'http://studiegids.uva.nl/xmlpages/page/2015-2016/zoek-vak/vak/22110'

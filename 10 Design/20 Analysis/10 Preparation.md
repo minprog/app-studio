@@ -12,4 +12,5 @@ Karl Ulrich, [*Design: creation of artifacts in society*](http://opim.wharton.up
 
 * chapter 1: *Introduction to Design*
 * chapter 2: *Problem Solving and Design*
-
+* chapter 3: *Design Problem Definition*
+* chapter 4: *Exploration*

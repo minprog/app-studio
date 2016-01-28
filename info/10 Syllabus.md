@@ -76,15 +76,15 @@ This part consists first and foremost of a lot of programming work, done by you!
 
 Topics by week are:
 
-| week | topic            |  
-| ---: | ---------------- |  
-|    1 | a basic app      |  
-|    2 | multiple screens |  
-|    3 | ?                |  
-|    4 | ?                |  
-|    5 | ?                |  
-|    6 | ?                |  
-|    7 | ?                |  
+| week | topic                   |  
+| ---: | ----------------------- |  
+|    1 | linking views with code |  
+|    2 | screen layouts          |  
+|    3 | multiple controllers    |  
+|    4 | lists and data          |  
+|    5 | data persistence        |  
+|    6 | object modeling         |  
+|    7 | more object modeling    |  
 
 All assignments are released on Mondays and are due by the next Monday, at 13:00. All of these assignments have to be handed in individually, but you are supposed to help other students out generously during the course.
 

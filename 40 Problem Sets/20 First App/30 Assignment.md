@@ -50,7 +50,7 @@ We recommend you do something simple for this first program since you will have 
 
 ## Turnin and Grading
 
-Put your project on GitHub in a public repository. After programs are turned in, you will be asked to peer-evaluate another student's submission. Details will be provided later.
+Put your first app project on GitHub in a public repository. After programs are turned in, you will be asked to peer-evaluate another student's submission.
 
 Your submission will be graded quickly by simply running it and evaluating its functionality. It does not need to be perfect or bug-free to receive credit. Your code will not be graded on style, but we still encourage you to follow good overall coding style for your own sake. If you want to see some good examples of proper Java/Swift coding style, consult an online style guide.
 

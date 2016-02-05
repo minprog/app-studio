@@ -6,9 +6,11 @@ This week we will cover background information about the Android platform, and l
 
 First, read chapters 1--3 from *Learning Android*, which will get you in the mood!
 
-## Demonstration
+## Tutorials to get you started
 
-Based on [Creating a simple app](http://web.stanford.edu/class/cs193a/lectures/introduction.pdf). [Code](http://web.stanford.edu/class/cs193a/lectures/01/lecture-code-01.zip).
+When first opening Android Studio, it has already generated a lot of files for you. To get a better understanding of how your Android project is organised, read [this](http://www.tutorialspoint.com/android/android_hello_world_example.htm) (short) explanation on the anatomy of the Android application. If you haven’t created a Hello World! application yet, you can follow the guidelines in here. Otherwise, just make sure you understand the differences in the files noted. 
+
+For this week’s app you are asked to implement a few different widgets. Don’t know where to start? [This](http://developer.android.com/training/basics/firstapp/building-ui.html) official Android tutorial takes you through all the small steps to create a basic *user interface (UI)*. 
 
 ## Helpful videos
 

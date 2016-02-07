@@ -16,4 +16,4 @@ Do install *Xcode* before coming to class!
 
 ## This week's demonstration
 
-![embed](https://vimeo.com/153877689)
+![embed](https://player.vimeo.com/video/153877689)

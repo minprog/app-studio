@@ -2,13 +2,13 @@ Preview:
     'User research [design]': '/design/user-research'
 Week 1:
     'User research [design]': '/design/user-research'
-    '---':
+    '---': '---'
     'Problem Set 0: First App': '/psets/first-app'
     'iOS resources': '/ios/learn-swift'
     'Android resource': '/android/learn-java'
 Week 2:
     'Data analysis [design]': '/design/analysis'
-    '---':
+    '---': '---'
     'Voorbereiding iOS': '/ios/layouts'
     'Voorbereiding Android': '/android/layouts'
     'App: layouts': '/psets/layouts'

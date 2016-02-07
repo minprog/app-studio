@@ -14,6 +14,6 @@ Please prepare by reading chapters 1--4 from *Introducing iOS 8*, which gets you
 
 Do install *Xcode* before coming to class!
 
-## Demonstration
+## This week's demonstration
 
-Based on [WordCollage](http://swifteducation.github.io/teaching_app_development_with_swift/wordcollage.html).
+![embed](https://vimeo.com/153877689)

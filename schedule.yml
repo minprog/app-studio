@@ -7,25 +7,18 @@ Week 1:
     'iOS resources': '/ios/learn-swift'
     'Android resource': '/android/learn-java'
 Week 2:
-    'Data analysis [design]': '/design/analysis'
+    'What is design? [design]': 
     '---': '---'
-    'Voorbereiding iOS': '/ios/layouts'
-    'Voorbereiding Android': '/android/layouts'
-    'App: layouts': '/psets/layouts'
-    'Project: proposal': '/project/proposal'
+    'Problem Set 1: Layouts': '/psets/layouts'
+    'iOS resources': '/ios/layouts'
+    'Android resources': '/android/layouts'
 Week 3:
     'Problem definition [design]': '/design/problem-definition'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
     'App: multiple screens': '/psets/multiple-activities'
-    'Project: design doc': '/project/design-document'
 Week 4:
     'Design: Human Factors': '/design/human-factors'
     'Voorbereiding iOS': '/ios/table-views'
     'Voorbereiding Android': '/android/lists-and-fragments'
     'App: Lists': '/psets/lists'
-    'Project: basic gameplay': '/project/basic-gameplay'
-Week 5:
-    'Project: Model classes': '/project/model-classes'
-Week 6:
-    'Project: Beta version': '/project/beta-version'

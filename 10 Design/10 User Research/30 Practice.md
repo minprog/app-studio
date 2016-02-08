@@ -39,6 +39,8 @@ teach methods for analyzing these notes and arriving at new concept ideas based 
 
 > *Note!* Please do not discuss potential application ideas with your team or what you think the data might be telling you. This will be the focus of the next class.
 
+A note on informed consent: you should inform your users about the study prior to starting the interview or diary study.  Make it clear that all names will be anonymized, that this study is for a class project, and that there are no anticipated risks for participating.  If you are audio/video recording, make sure they know that. Also make it clear that they can stop or skip a question at any time if they are uncomfortable. Some templates for forms can be found here.
+
 ## Assesment
 
 You must individually submit a PDF with evidence of your work. You should of course share your research questions and probably methods, but every team member should submit their own readable photos of post-it notes, as specified below.

@@ -7,18 +7,20 @@ Week 1:
     'iOS resources': '/ios/learn-swift'
     'Android resource': '/android/learn-java'
 Week 2:
-    'What is design? [design]': 
+    'What is design? [design]': '/design/introduction-to-design'
     '---': '---'
     'Problem Set 1: Layouts': '/psets/layouts'
     'iOS resources': '/ios/layouts'
     'Android resources': '/android/layouts'
 Week 3:
-    'Problem definition [design]': '/design/problem-definition'
+    'Analysis [design]': '/design/analysis'
+    '---': '---'
+    'Problem Set 2: multiple screens': '/psets/multiple-screens'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
-    'App: multiple screens': '/psets/multiple-activities'
 Week 4:
     'Design: Human Factors': '/design/human-factors'
+    '---': '---'
+    'Problem Set 3: Lists': '/psets/lists'
     'Voorbereiding iOS': '/ios/table-views'
     'Voorbereiding Android': '/android/lists-and-fragments'
-    'App: Lists': '/psets/lists'

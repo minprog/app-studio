@@ -1,6 +1,6 @@
 # Your first app
 
-This first week, you'll learn a new programming language (again!). Choose either *Java* for Android or *Swift* for iOS development. 
+This first week, you'll learn a new programming language (again!). Choose either *Java* for Android or *Swift* for iOS development.
 
 For *Swift*, download Xcode from the App Store [here](https://itunes.apple.com/nl/app/xcode/id497799835?mt=12)
 

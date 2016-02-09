@@ -37,3 +37,5 @@ On *iOS*, you can set whether or not an image (or any other view) is visible on
 the screen by setting its `hidden` property in the Xcode designer, and/or by
 calling its `hidden` property in your Swift code. The `hidden` method accepts a
 boolean.
+
+*Requirement*: your app has to support rotation of the user interface! Most phones support portrait as well as landscape orientation. Make sure that you accomodate this by positioning the user interface elements correctly in both orientations.

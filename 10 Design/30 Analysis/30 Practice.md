@@ -1,9 +1,6 @@
 # Design practice: affinity analysis and proposal #
 
-The proposal for your new app contains two parts: the written proposal and the oral
-presentation in class.
-
-## Written Proposal
+In class, you've done an affinity analysis. Now, take some time to tidy it all up and make photos to document your work. Then, brainstorm concrete ideas for which you can find evidence in the data that these are viable!
 
 Imagine you need to convince your stakeholders of investing time and money into the production of your app, and write this document as a proposal for developing your application. What is the scope of your app? What purpose does it serve? What design decisions did you make and more importantly: based on what did you make them? What does the timeline of the development of this app look like?
 
@@ -56,20 +53,13 @@ possible to the reference.
 
 ## Oral Presentation
 
-Each group will have 5-10 minutes to present their project proposal. All presentation materials must
-be in a Google Presentation and linked from this Google Doc. Be sure to set the sharing preferences for your presentation to “Anyone with the link”
-
-Focus on your domain area, the insights gained from your field study, and the concept for the
-application motivated by how it derives from data from your study.
+Each group will have 5-10 minutes to present their project proposal. Focus on
+your domain area, the insights gained from your field study, and the concept
+for the application motivated by how it derives from data from your study.
 
 ## Assessment
 
-
-# Design practice: inductive analysis
-
-In class, you've done an affinity analysis. Now, take some time to tidy it all up and make photos to document your work. Then, brainstorm concrete ideas for which you can find evidence in the data that these are viable!
-
-## Assessment
+Documentation of the affinity analysis:
 
 1. The affinity is organized in a 3-level hierarchy:
 
@@ -95,44 +85,37 @@ In class, you've done an affinity analysis. Now, take some time to tidy it all u
     - 2-4 ideas (5)
     - 0-1 ideas (0)
 
+The proposal document:
 
+1. Related Work: Discusses relevant existing products/apps
 
+    - Greater than 3 citations to existing products/apps (5)
+    - 1-3 references to existing products/apps (2)
+    - No reference to existing products/apps (0)
 
-1. Related Work: Discusses relevant papers from the ACM Digital Library
+2. Research Questions
 
-- Greater than 3 citations from CHI, Ubicomp, Pervasive, UIST, TOCHI, PUC, etc. (10)
-- 1 to 3 references from ACM sources (5)
-- No academic references (0)
+    - Discussion of the research questions that led to the study (5)
+    - No discussion of the research questions (0)
 
-2. Related Work: Discusses relevant existing products/apps
+3. Study Methods
 
-- Greater than 3 citations to existing products/apps (5)
-- 1-3 references to existing products/apps (2)
-- No reference to existing products/apps (0)
+    - Description of study methods (5)
+    - No description of study methods (0)
 
-3. Research Questions
+4. Study Findings
 
-- Discussion of the research questions that led to the study (5)
-- No discussion of the research questions (0)
+    - Description of study findings (5)
+    - No description of study findings (0)
 
-4. Study Methods
+5. Application concept
 
-- Description of study methods (5)
-- No description of study methods (0)
+    - Concept is fully motivated by explicit findings from the study (10)
+    - Less than two sentences about how concept came from data (5)
+    - Concept is not movtivated by explicit findings (0)
 
-5. Study Findings
+6. Concept description
 
-- Description of study findings (5)
-- No description of study findings (0)
-
-6. Application concept
-
-- Concept is fully motivated by explicit findings from the study (10)
-- Less than two sentences about how concept came from data (5)
-- Concept is not movtivated by explicit findings (0)
-
-7. Concept description
-
-- Description is complete: how the app will be built and designed (10)
-- Description leaves questions open to the reader (5)
-- Description is rather vague (0)
+    - Description is complete: how the app will be built and designed (10)
+    - Description leaves questions open to the reader (5)
+    - Description is rather vague (0)

@@ -41,7 +41,7 @@ __Tasks and milestones__
 : show a Gantt chart which divides the life of the project into definable
 tasks (vertical axis) over time in weeks (horizontal axis). You should decide on how long you think the development proces (with all its aspects) would take, which you will then devide into tasks and milestones. 
 
-[This link] (http://en.wikipedia.org/wiki/Software_development_process) is a good guideline for getting familiar with software development processes. There are several major development activities (planning, implementation, testing, documenting, deployment and maintenace), and several major development models. Please take a look at the Wikipedia page.
+[This link](http://en.wikipedia.org/wiki/Software_development_process) is a good guideline for getting familiar with software development processes. There are several major development activities (planning, implementation, testing, documenting, deployment and maintenace), and several major development models. Please take a look at the Wikipedia page.
 
 __References__
 : must contain ACM DL references of related work). Scientific literature can support for example design decisions, or the motivation of your project.

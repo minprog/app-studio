@@ -14,7 +14,7 @@ calculation:
         tech: 65
 
 tech:
-    type: pass
+    type: float
     grades:
         app1: 1
         app2: 1
@@ -25,7 +25,7 @@ tech:
         app7: 1
 
 design:
-    type: integer
+    type: float
     grades:
         des1: 1
         des2: 1

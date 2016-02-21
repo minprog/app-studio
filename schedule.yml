@@ -13,13 +13,13 @@ Week 2:
     'iOS resources': '/ios/layouts'
     'Android resources': '/android/layouts'
 Week 3:
-    'Analysis [design]': '/design/analysis'
+    'Analysis [design]': '/design/affinity-analysis'
     '---': '---'
     'Problem Set 2: multiple screens': '/psets/multiple-screens'
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
 Week 4:
-    'Design: Human Factors': '/design/human-factors'
+    'Design: Human Factors': '/design/sketching'
     '---': '---'
     'Problem Set 3: Lists': '/psets/lists'
     'Voorbereiding iOS': '/ios/table-views'

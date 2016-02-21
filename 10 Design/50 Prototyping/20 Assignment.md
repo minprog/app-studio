@@ -1,22 +1,11 @@
-# Design practice: prototyping
+# Design practice: prototyping (group)
 
-This assignment will complete the initial design that was started in class. You should finish your
-flow model to cover all of the screens that you plan to implement as a part of your semester
-project. Then you should create a paper prototype wireframe of all screens in detail. Each screen
-should be on a separate paper and all text-input or other selections should be blank or their
-default settings. You should create separate cutouts for any overlays/prompts.
+*Report due: next week.*
 
-You also must think of three to four main use cases of your application that you would like to test
-in class next week. These should cover the common use cases of the application as well as anything
-that you are having a hard time designing or where you think that users might have difficulties.
+Last week and this week, you will work, as a group, on implementing a paper prototype and formally
+evaluating it with a group of testers. Your most important task is to document this process.
 
-All screens and overlays should be brought to class next week for a usability trial that will be
-conducted at the start of class. Each group will have team members from other groups try their
-application by “using” the paper prototype for each of the identified use cases. One team member
-will be responsible for acting as “the phone” changing the screens and overlays as the “user”
-interacts with the paper.
-
-The deliverable document should contain the following aspects:
+The deliverable document, due *next week*, should contain the following aspects:
 
 - Models: a model that explains the concept of your application
 - Use cases: what are the key path scenarios (primary actions and pathways through the system)?
@@ -24,13 +13,18 @@ The deliverable document should contain the following aspects:
 - Screen design: wireframes. 
 - Video material of your usability testing (of the most most important findings).
 - Description of the most important findings.
-- Description of how you have solved/are going to solve these issues. 
+- Description of how you have solved/are going to solve these issues.
 
 ## Assessment
 
-The goal of prototyping is to understand if you (the designer) and the user understand each other. A subquestion that needs answering in this research-based designing is the following: is this indeed an useful application that solves a problem for a certain group of users. This question is not easily answered by performing tests. Questions you can answer however are: "Are there unexpected aspects of this application that make it less useful?"
+The goal of prototyping is to understand if you (the designer) and the user understand each other.
+A question that needs answering in this research-based designing is the following: is this indeed
+an useful application that solves a problem for a certain group of users. This question is not
+easily answered by performing tests. Questions you can answer however are: "Are there unexpected
+aspects of this application that make it less useful?"
 
-The assessment is based on 7 topics: 5 topics that need to be described and two questions that need to be justified:
+The assessment is based on 7 topics: 5 topics that need to be described and two questions that need
+to be justified:
 
 * The context of the application (model)
 * Description of the scheme that you used to test (use cases, screens and structure)

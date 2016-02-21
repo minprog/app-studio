@@ -12,25 +12,16 @@ The final two assignments rely on you having a grasp of what interaction design 
 
 ## Class questions
 
-We will discuss the questions below in class, so think about the answers and make sure you are prepared.
+We will discuss the questions below in class, so think about the answers and make sure you are prepared. *Submit short versions of your answers as your assignment for this week.*
 
-1. In paragraph 2.2, the *user experience* is defined as comprising of *interactions*, *paths* and *steps*. Hierarchically present the full UX of this week's app  on 1 page of paper, using short descriptions.
+We will only check if you have actually done the work. The discussion next week may be used to obtain feedback on your answers.
 
-2. In paragraph 2.8, the *context* of apps is discussed. How is this week's app consistent with the norms prescribed by the *context*? Give 5 examples of where it is and isn't, and explain how it differs. Propose alternatives for the examples where it isn't (so you'd better have a couple of those, too).
+1. In paragraph 2.8, the *context* of apps is discussed. An important property of context is that it is usually very different for different products. Give three examples of context that are highly relevant to mobile apps.
 
-3. Does this week's have *affordances*? Why, how, where, when? Can you improve on this app's affordances? To make your answer understandable, you probably have to explicitly state a definition of "affordance", or the parts that are relevant to your answer. Make sure you deeply understand the definition that you write down. If you have the feeling that you do not yet understand what an affordance is, do research to better understand it. Discuss with the teacher before submitting if needed.
+2. Give an example of an affordance that is typically present in a university classroom. Give two examples of *types* of affordances that can be found in mobile apps.
 
-   Hints:
+3. List three *constraints* that you think the creators of the app have used to determine the app's shape. Illustrate with concrete examples from the app.
 
-   - Do not simply cite someone else's definition of affordance.
-   - Do not just choose a definition. You must be able to defend your choice and wording!
+4. The book contains a lot of advice. Some headings tell you to design in a particular way or pose constraints on how to proceed. Some of the advice is targeted at the design *process*. Other advice concerns the *product* that you are designing. Provide a list of 5 pieces of advice and include for each an argument as to why that advice particularly applies to app design.
 
-4. List three *constraints* that you think the creators of the app have used to determine the app's shape. Illustrate with concrete examples from the app.
-
-5. Make a table of all *concepts* in both chapters. The text contains quite a few concepts that can be used to discuss the quality of an app (e.g., *monotony* - we can discuss the monotony of some app). Include a short definition or few keywords that help you remember the definition of each concept. It does *not* have to be completely correct, though.
-
-   Some of the concepts/attributes can take a lot of work when designing a really good app. Rate the concepts 1-10 on how much work it would be to account for that concept in creating an app.
-
-   Hint: the book contains a lot of advice ("The product's setup process should exemplify its quality"). Those are not concepts.
-
-   Hint: some paragraphs are not about application quality but about stuff around it. E.g., paragraph 1.10 is about marketing. We will not discuss these.
+5. The book also contains a lot of interesting terminology. There are many concepts that have a particular name in interaction design, and to reason about interaction design, it is important to know what many of these concepts mean. Give a list of 5 concepts with a definition *in your own words*.

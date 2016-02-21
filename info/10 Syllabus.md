@@ -54,15 +54,15 @@ To complete this part of the course, you will need to attend weekly workshop ses
 
 Topics by week are:
 
-| week | topic                             |  
-| ---: | --------------------------------- |  
-|    1 | user research                     |  
-|    2 | data analysis                     |  
-|    3 | problem definition                |  
-|    4 | interaction design                |  
-|    5 | user testing                      |  
-|    6 | interaction design critique       |  
-|    7 | interaction design group critique |  
+| week | topic                  | in class           |  
+| ---: | ---------------------- | ------------------ |  
+|    1 | user research          | introduction       |  
+|    2 | introduction to design | affinity analysis  |  
+|    3 | affinity analysis      | *no class*         |  
+|    4 | use cases              | sketching workshop |  
+|    5 | prototyping            | prototype testing  |  
+|    6 | design critique        | discussion         |  
+|    7 | design critique 2      | discussion         |  
 
 All assignments are released on Mondays and are due by the next Monday, at 13:00. Some of the assignments have to be handed in individually, and other are handed in by a single representative per group.
 

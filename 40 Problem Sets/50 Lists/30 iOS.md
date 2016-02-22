@@ -6,7 +6,7 @@ It's also good to have a way to remove items from the list. You could achieve th
 
 ![](todo_ios.png)
 
-Figure: User swiping on third list item to delete it
+Figure: User swiping on the third list item to delete it.
 
 Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file. 
 

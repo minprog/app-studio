@@ -2,11 +2,11 @@
 
 Write a simple to-do list app that has a `Table View` of tasks that the user needs to complete. Initially the app is empty and has nothing in the to-do list. But if the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added to the top or bottom of the list.
 
-It's also good to have a way to remove items from the list. You could achieve this with the "didDeselectRowAtIndexPath" function to remove an item when that item is clicked on by the user. Or if you want to try something slightly different, try making it remove an item when the user performs a "long click" (pressing and holding the mouse on an item). You can do this by setting a "long press gesture recognizer".
+It's also good to have a way to remove items from the list. You could achieve this with the "commitEditingStyle" delegate function. 
 
 ![](todo_ios.png)
 
-Figure: User long-clicking on second list item to delete it
+Figure: User swiping on third list item to delete it
 
 Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file. 
 

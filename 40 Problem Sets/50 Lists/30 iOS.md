@@ -2,7 +2,7 @@
 
 Write a simple to-do list app that has a `Table View` of tasks that the user needs to complete. Initially the app is empty and has nothing in the to-do list. But if the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added to the top or bottom of the list.
 
-It's also good to have a way to remove items from the list. You could achieve this with the "commitEditingStyle" delegate function. 
+It's also good to have a way to remove items from the list. You could achieve this with the `commitEditingStyle` delegate function. 
 
 ![](todo_ios.png)
 
@@ -34,7 +34,7 @@ To make a more robust app, you should also consider saving the state of the to-d
         // Error handling here.
     }
 
-To split a textfile into an array of string, use this code. Make sure you understand it! 
+To split a textfile into an array of strings, use this code. Make sure you understand it! 
 
 	let textArray = text.characters.split{$0 == " " || $0 == "\r\n"}.map(String.init)
 

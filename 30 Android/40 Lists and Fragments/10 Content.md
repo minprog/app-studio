@@ -1,17 +1,19 @@
-# Lists and Fragments
+# Lists and Read From File
 
-This week we will talk about: text-to-speech and speech-to-text in an app; lists and more advanced GUI widgets; designing for different device sizes and features; and fragments.
+This week we will talk about populating, modifying and displaying lists. We will also see how to read from and write to files.  
 
-## Demonstration
+## Tutorials to get you started
 
-Based on [Text to Speech](http://web.stanford.edu/class/cs193a/lectures/text-to-speech.pdf), [Lists](http://web.stanford.edu/class/cs193a/lectures/lists.pdf), [Fragments](http://web.stanford.edu/class/cs193a/lectures/fragments.pdf). [Code](http://web.stanford.edu/class/cs193a/lectures/05/lecture-code-05-InsultList.zip). [Code](http://web.stanford.edu/class/cs193a/lectures/05/lecture-code-05-FragmentFun.zip).
+Unsure about where to get started with this week's assignment? [This](http://www.journaldev.com/9247/android-listview-example-tutorial) tutorial provides a simple basis for your app's ListView.
+
+To be able to save your list to the device's storage, you should check out [this](http://www.journaldev.com/9383/android-internal-storage-example-tutorial) tutorial. Pay close attention to the explanation provided, don't just blindly copy the contents!
+
+Finally, for the more comfortable, a [tutorial](http://inducesmile.com/android-tutorials-for-nigerian-developer/android-text-to-speech-tutorial/) on converting text to speech.
 
 ## Helpful Videos
 
 Note: these videos are not even a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
 
-* Derek Banas, [Making an Android App](https://www.youtube.com/watch?v=Mjjuk3Fac84&index=10&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
+* Derek Banas, [ListViews](https://www.youtube.com/watch?v=rhj4_KBD6BQ&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=5)
 
-* Derek Banas, [Themes and styles](https://www.youtube.com/watch?v=W3xHIN15hP8&index=11&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
-
-* Derek Banas, [SharedPreferences](https://www.youtube.com/watch?v=1DOeLy26hOE&index=19&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
+* Derek Banas, [Text to speech](https://www.youtube.com/watch?v=ympxfKM4Uec&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=18)

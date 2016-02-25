@@ -34,7 +34,7 @@ To make a more robust app, you should also consider saving the state of the to-d
         // Error handling here.
     }
 
-To split a textfile into an array of strings, use this code. Make sure you understand it! 
+To split a textfile into an array of strings, use this code. Make sure you understand it by reading the [Apple documentation on closures](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html "Closures")! 
 
 	let textArray = text.characters.split{$0 == " " || $0 == "\r\n"}.map(String.init)
 

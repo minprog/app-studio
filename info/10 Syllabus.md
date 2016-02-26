@@ -21,8 +21,8 @@ Martijn Stegeman
 Gracia Redder  
 *teaching assistant, Android*
 
-Hella Haanstra
-*teaching assistent, Android*
+Hella Haanstra  
+*teaching assistant, Android*
 
 Julian Jansen  
 *teaching assistant, iOS*

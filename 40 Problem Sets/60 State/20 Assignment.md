@@ -1,6 +1,10 @@
 ## Assignment
 
 ![](todo.png)
+Figure: Android
+
+![](todo_ios.png)
+Figure: iOS Master-Detail application
 
 You now have an application where a user can manage todo items: they can add items and remove them. The structure is still fairly simple, and now it's time to create a 2.0 version of your app. There will be one big new feature: having multiple separate lists of todo items. There are a few challenges to go through:
 

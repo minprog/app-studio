@@ -1,5 +1,5 @@
 # Table Views
 
-## Demonstration
+## This week's demonstration
 
-Based on [Journal](http://swifteducation.github.io/teaching_app_development_with_swift/journal.html).
+![embed](https://player.vimeo.com/video/156380245)

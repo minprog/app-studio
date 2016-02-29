@@ -27,7 +27,7 @@ interacts with the paper.
 
 The deliverable document should eventually contain the following aspects:
 
-- Structure and flows of your application.
+- Structure of your application.
 - Screen design: wireframes. 
 - Use cases: what are the key path scenarios (primary actions and pathways through the system)?
 

@@ -19,8 +19,12 @@ Week 3:
     'Voorbereiding iOS': '/ios/multiple-controllers'
     'Voorbereiding Android': '/android/multiple-activities'
 Week 4:
-    'Design: Human Factors': '/design/use-cases'
+    'Design: Use cases': '/design/use-cases'
     '---': '---'
     'Problem Set 3: Lists': '/psets/lists'
     'Voorbereiding iOS': '/ios/table-views'
     'Voorbereiding Android': '/android/lists-and-fragments'
+Week 5:
+    'Design: Prototyping': '/design/prototyping'
+    '---': '---'
+    'Problem Set 4: State': '/psets/state'

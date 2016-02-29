@@ -10,7 +10,7 @@ Figure: User swiping on the third list item to delete it.
 
 Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file. 
 
-To make a more robust app, you should also consider saving the state of the to-do list when the app is exited and re-entered later. If you want to make the app as robust as possible, you'd want to make it also save the to-do list to the device's storage so that it will survive a reboot. To do this, you'd need to write code that reads/writes files to the system's internal storage:
+You must make the app as robust as possible, so make it save the to-do list to the device's storage so that it will survive a reboot. To do this, you'd need to write code that reads/writes files to the system's internal storage:
 
     if let directory: String = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
         

@@ -12,7 +12,7 @@ If the items in your to-do list are stored into an `ArrayList`, by default the a
 
 To fix this, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter` to tell it that the underlying array list has changed. To be able to do this, of course, you'll have to save your `ArrayList` and your `ArrayAdapter` as private fields inside your activity.
 
-Make sure that the app doesn't forget your to-do items when you rotate the screen back and forth from portrait to landscape mode. To make a more robust app, you should also consider saving the state of the to-do list when the app is exited and re-entered later. Use a `Bundle` to save the list's data. If you want to make the app as robust as possible, you'd want to make it also save the to-do list to the device's storage so that it will survive a reboot. To do this, you'd need to write code that reads/writes files to the system's internal storage:
+Make sure that the app doesn't forget your to-do items when you rotate the screen back and forth from portrait to landscape mode. Use a `Bundle` to save the list's data. To make a more robust app, you'll want to make it also save the to-do list to the device's storage so that it will survive a reboot. To do this, you'd need to write code that reads/writes files to the system's internal storage:
 
     // write to a file
     PrintStream out = new PrintStream(openFileOutput("filename.txt", MODE_PRIVATE));

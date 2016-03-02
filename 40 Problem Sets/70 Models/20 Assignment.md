@@ -19,3 +19,9 @@ Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the clas
 - `TodoManager`
 
     A singleton class that groups some common functionality. It contains the list of `TodoList`s for your application, and it has two functions that are reponsible for persistence of the lists between application runs: `readTodos` and `writeTodos`.
+
+## Notes
+
+- You do not need to support all suggested fields for `TodoItem`. It does need to have `title` and `completed` fields.
+- The user interface should clearly represent whether a todo item has been marked as "done".
+- As usual, your app needs to support landscape and portrait orientations.

@@ -25,3 +25,4 @@ Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the clas
 - You do not need to support all suggested fields for `TodoItem`. It does need to have `title` and `completed` fields.
 - The user interface should clearly represent whether a todo item has been marked as "done".
 - As usual, your app needs to support landscape and portrait orientations.
+- Don't forget to use the naming convention of the language that you use. This could be different from the UML diagram.

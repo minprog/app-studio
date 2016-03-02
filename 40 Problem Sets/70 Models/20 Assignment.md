@@ -4,7 +4,9 @@ We will be doing one final 3.0 version of the todo list app. This time, we are g
 
 Most likely, much of your important code now resides in one or more controllers (ViewControllers/Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
 
-Here are the classes we think you should make, along with their responsibilities:
+Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the classes we think you should make, along with their responsibilities.
+
+![](todomanager.png)
 
 - `TodoItem`
 

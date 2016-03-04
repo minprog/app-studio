@@ -34,7 +34,7 @@ You must make the app as robust as possible, so make it save the to-do list to t
         // Error handling here.
     }
 
-To split a textfile into an array of strings, use this code. Make sure you understand it by reading the [Apple documentation on closures](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html "Closures")! And for further information on map() (and flatMap()) read this blog post on ["What do map() and flatMap() really do?"](http://sketchytech.blogspot.nl/2015/06/swift-what-do-map-and-flatmap-really-do.html "map()")!. 
+To split a textfile into an array of strings, use this code. Make sure you understand it by reading the [Apple documentation on closures](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html "Closures")! And for further information on map() (and flatMap()) read this blog post on ["What do map() and flatMap() really do?"](http://sketchytech.blogspot.nl/2015/06/swift-what-do-map-and-flatmap-really-do.html "map()"). 
 
 	let textArray = text.characters.split{$0 == " " || $0 == "\r\n"}.map(String.init)
 

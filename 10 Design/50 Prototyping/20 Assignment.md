@@ -29,8 +29,11 @@ to be justified:
 * The measurements (videos)
 * The results (findings)
 * The conclusions (how to solve the findings)
-* Why did you choose those specific use cases (what do they say about the use of the application as a whole)?
-* To what extend do the results support your conclusions?
+
+Questions:
+
+1. Why did you choose those specific use cases (what do they say about the use of the application as a whole)?
+2. To what extend do the results support your conclusions?
 
 Therefore, the following aspects/sections must be present in your report:
 
@@ -67,7 +70,7 @@ Solutions:
 - 10 pt: clear adaptation of conceptual model and/or use cases as a result of findings
 - 0 pt: only textual description and/or not grounded in findings
 
-Justification for questions:
+Justification for questions (1 and 2 above):
 
 - 20 pt: both questions have correct and clear answers
 - 10 pt: one question has a correct and clear answer

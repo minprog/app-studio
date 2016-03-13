@@ -6,5 +6,6 @@ Some suggestions for finding APIs:
 
 - <https://opendatanederland.org>
 - <https://github.com/caesar0301/awesome-public-datasets>
+- <http://www.programmableweb.com/apis/directory>
 
 Other than that, your app must be non-trivial. For example, there should be some browsing, searching or other interesting interaction.

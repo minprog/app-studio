@@ -1,4 +1,4 @@
-# State restoration and multiple todo lists
+# API driven application
 
 Goals:
 

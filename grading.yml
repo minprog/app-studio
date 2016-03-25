@@ -1,6 +1,7 @@
 formulas:
     des1: (scope / 60.0 * 9 + 1).round(1)
     des3: (scope / 80.0 * 9 + 1).round(1)
+    des5: (scope / 70.0 * 9 + 1).round(1)
     app1: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
     app2: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
     app3: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)

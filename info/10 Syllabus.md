@@ -1,4 +1,4 @@
-# Native App Studio
+![](app-studio.png){:style="max-width:400px"}
 
 *Edition: Spring 2016 (still under construction)*
 

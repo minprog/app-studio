@@ -39,9 +39,15 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has several accessories and body parts that can be placed on it, such as eyes, nose, mouth, ears, hat, shoes, and so on.
 
+Initially your app should display only the toy's body, but if the user checks/unchecks any of the checkboxes below the toy, the corresponding body part or accessory should appear/disappear.
+
+The way to display the various body parts is to create a separate view for each part, and lay them out so that they are superimposed on top of each other. The checkboxes should align themselves into a grid of rows and columns.
+
 (thanks to Victoria Kirst for original assignment idea and images!)
 
 ## Requirements
+
+Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
 - You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface.
 
@@ -55,14 +61,7 @@ Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has 
 
 3. New project - name: martijn-week1
 
-
-## Building the app
-
-We will provide you with [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**, and so on.
-
-1. Initially your image view should display only the toy's body, but if the user checks/unchecks any of the checkboxes below the toy, the corresponding body part or accessory should appear/disappear.
-
-2. The way to display the various body parts is to create a separate view for each part, and lay them out so that they are superimposed on top of each other. The checkboxes should align themselves into a grid of rows and columns.
+4. We will provide you with [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**, and so on.
 
 ## Implementation details (Android)
 

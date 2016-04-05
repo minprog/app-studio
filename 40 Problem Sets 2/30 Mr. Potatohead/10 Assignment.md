@@ -1,4 +1,4 @@
-# Layouts
+# Mr. Potatohead
 
 *Due: Sunday night, April 17, 2016.*
 
@@ -12,8 +12,8 @@
 
 ## Preparation
 
-- Link to iOS week 1 information page
-- Link to Android week 1information page
+- TODO Link to iOS week 1 information page
+- TODO Link to Android week 1 information page
 
 ## Assessment
 

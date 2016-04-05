@@ -69,7 +69,7 @@ You can set whether or not an image (or any other widget) is visible on the scre
 
 ## Implementation details (iOS)
 
-You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` method accepts a boolean.
+You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
 
 ## How to submit
 

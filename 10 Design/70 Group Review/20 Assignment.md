@@ -1,7 +1,7 @@
 # Homework
 
 Evaluate this week's app using Nielsen's [Usability heuristics for user interface design](http://www.nngroup.com/articles/ten-usability-heuristics/
-). List about 10 problems with the user interface. You do not have to cover all heuristics.
+). List 10 problems with the user interface. You do not have to cover all heuristics.
 
 ## Format
 

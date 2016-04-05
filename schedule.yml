@@ -30,3 +30,14 @@ Week 5:
     'Problem Set 4: State': '/psets/state'
     'Voorbereiding iOS': '/ios/state-restoration'
     'Voorbereiding Android': '/android/state-restoration'
+Week 6:
+    'Design: Interaction Design': '/design/interaction-design'
+    '---': '---'
+    'Problem Set 5: Models': '/psets/models'
+    'Voorbereiding iOS': '/ios/models'
+    'Voorbereiding Android': '/android/models'
+Week 7:
+    'Design: Group Review': '/design/group-review'
+    '---': '---'
+    'Problem Set 6: APIs': '/psets/apis'
+    'Voorbereiding iOS': '/ios/apis'

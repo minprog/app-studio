@@ -8,7 +8,7 @@ Please prepare for this week by reading chapter 6 and 7 from *Introducing iOS 8*
 
 ##  The UIStackView tutorial as referred to during the demonstration.
 
-![embed](https://www.youtube.com/watch?v=O0llR7sfrkc)
+![embed](https://www.youtube.com/embed/O0llR7sfrkc)
 
 ## This week's demonstration
 

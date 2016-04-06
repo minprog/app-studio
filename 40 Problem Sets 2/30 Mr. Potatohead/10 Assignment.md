@@ -77,5 +77,3 @@ You can set whether or not an image (or any other view) is visible on the screen
 2. Commit and push.
 3. Download zip file from GitHub and check if it still works.
 4. Paste the GitHub repo URL below, in the textbox!
-
-Julian moet zijn Git video nog losknippen.

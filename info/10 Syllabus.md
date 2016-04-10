@@ -95,5 +95,8 @@ To assist you with programming, there will be an introductory demo every Monday 
 
 ## Books
 
+#### Before you buy, take a look at the bookshelf in A1.30
+
 - Marko Gargenta and Masumi Nakamura, [*Learning Android*](http://shop.oreilly.com/product/0636920023456.do)
+- Matt Neuburg, [*iOS 9 Programming Fundamentals with Swift*](http://shop.oreilly.com/product/0636920044345.do)
 - [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)

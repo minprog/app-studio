@@ -96,4 +96,4 @@ To assist you with programming, there will be an introductory demo every Monday 
 ## Books
 
 - Marko Gargenta and Masumi Nakamura, [*Learning Android*](http://shop.oreilly.com/product/0636920023456.do)
-- Steve Derico, [*Introducing iOS 8*](http://shop.oreilly.com/product/0636920034247.do)
+- [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)

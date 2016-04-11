@@ -4,11 +4,9 @@
 
 ## Objectives
 
-- Practice with Git.
 - Create a first app!
+- Practice with Git.
 - Use layouts to design your user interface.
-- Connect the user interface to your code.
-- Support multiple screen orientations in your app.
 
 ## Preparation
 

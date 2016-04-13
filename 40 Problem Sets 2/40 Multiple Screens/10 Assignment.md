@@ -85,7 +85,7 @@ To pass stuff around in your app, you can use an `Intent`. The Android documenta
 
 ## Implementation details (iOS)
 
-Hier gaat Julian iets vet gaafs schrijven, joe. 
+To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you could use a navigation controller.
 
 ## How to submit
 

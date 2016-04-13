@@ -1,3 +1,13 @@
+# State restoration and multiple todo lists
+
+*Due: Sunday night, May 8, 2016.*
+
+## Objectives
+
+- Practice with restoring the application's state after killing it
+- Making your app more complex by introducing multiple lists
+- optionally, allowing users to edit todo's
+
 ## Assignment
 
 ![](todo.png)

@@ -57,6 +57,10 @@ Here is the text of **madlib1_tarzan.txt**, to give you an idea of the Mad Lib f
     Cheetah. He is supposed to be able to speak to elephants and <plural-noun>
     . In the movies, Tarzan is played by <person's-name> .
 
+The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, if you want a head start toward implementing this particular option, we'll give you a file (see below) that you can optionally use as a building block (recommended). If you put the **Story class** into your project, you can construct a `Story` object and pass it an input stream or Scanner and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The Story object has other methods for filling in the placeholders later. If you use this helper object, you can focus more on the important parts of this assignment and less on the string / text processing parts. Or if you want to try to write the story parsing logic yourself, that is fine.
+
+[files for Android](madlibs-files.zip) , [files for iOS](????)
+
 ## Requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
@@ -75,11 +79,13 @@ Your task is to build an app according to the description above. On top of that,
 
 3. Download the provided files and paste them into your project (recommended).  
 
-## Implementation details
+## Implementation details (Android)
 
-The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, if you want a head start toward implementing this particular option, we'll give you a file (see below) that you can optionally use as a building block (recommended). If you put the **Story class** into your project, you can construct a `Story` object and pass it an input stream or Scanner and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The Story object has other methods for filling in the placeholders later. If you use this helper object, you can focus more on the important parts of this assignment and less on the string / text processing parts. Or if you want to try to write the story parsing logic yourself, that is fine.
+To pass stuff around in your app, you can use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
 
-[files for Android](madlibs-files.zip) , [files for iOS](????)
+## Implementation details (iOS)
+
+Hier gaat Julian iets vet gaafs schrijven, joe. 
 
 ## How to submit
 

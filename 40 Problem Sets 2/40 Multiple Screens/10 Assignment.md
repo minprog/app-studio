@@ -8,10 +8,12 @@
 - Pass data between Activities
 - Support multiple screen rotations
 
+The purpose of this assignment is to practice the material from the past few weeks, such as apps with multiple screens, apps that handle instance state and data.
+
 ## Preparation
 
-- On Android: read about [Multiple Activities](/android/multiple-activities)
-- On iOS: read about [Multiple Controllers](/ios/multiple-controllers)
+- On Android: Read about [Multiple Activities](/android/multiple-activities)
+- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers)
 
 ## Assessment
 

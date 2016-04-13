@@ -12,4 +12,4 @@ Please prepare for this week by reading chapter 6 and 7 from *Introducing iOS 8*
 
 ## This week's demonstration
 
-![embed](https://player.vimeo.com/video/154638783)
+![embed](https://player.vimeo.com/video/162678819)

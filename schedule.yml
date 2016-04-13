@@ -41,3 +41,30 @@ Week 7:
     '---': '---'
     'Problem Set 6: APIs': '/psets/apis'
     'Voorbereiding iOS': '/ios/apis'
+Week 1s:
+    'Problem Set 0: Mr. Potatohead': '/psets-2/mr-potatohead'
+    '---': '---'
+    'iOS: Learn Swift': '/ios/learn-swift'
+    'iOS: Layouts': '/ios/layouts'
+    'Android: Learn Java': '/android/learn-java'
+    'Android: Layouts': '/android/layouts'
+Week 2s:
+    'Problem Set 1: Mad Libs': '/psets-2/mad-libs'
+    '---': '---'
+    'iOS: Multiple Controllers': '/ios/multiple-controllers'
+    'Android: Multiple Controllers': '/android/multiple-activities'
+Week 3s:
+    'Problem Set 3: Lists': '/psets/lists'
+    'Voorbereiding iOS': '/ios/table-views'
+    'Voorbereiding Android': '/android/lists-and-fragments'
+Week 4s:
+    'Problem Set 4: State': '/psets/state'
+    'Voorbereiding iOS': '/ios/state-restoration'
+    'Voorbereiding Android': '/android/state-restoration'
+Week 5s:
+    'Problem Set 5: Models': '/psets/models'
+    'Voorbereiding iOS': '/ios/models'
+    'Voorbereiding Android': '/android/models'
+Week 6s:
+    'Problem Set 6: APIs': '/psets/apis'
+    'Voorbereiding iOS': '/ios/apis'

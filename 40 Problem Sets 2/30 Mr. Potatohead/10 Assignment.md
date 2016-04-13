@@ -4,16 +4,14 @@
 
 ## Objectives
 
-- Practice with Git.
 - Create a first app!
+- Practice with Git.
 - Use layouts to design your user interface.
-- Connect the user interface to your code.
-- Support multiple screen orientations in your app.
 
 ## Preparation
 
-- TODO Link to iOS week 1 information page
-- TODO Link to Android week 1 information page
+- On Android: [Learn Java](/android/learn-java) and read about [Layouts](/android/layouts)
+- On iOS: [Learn Swift](/ios/learn-swift) and read about [Layouts](/ios/layouts)
 
 ## Assessment
 
@@ -43,7 +41,7 @@ Initially your app should display only the toy's body, but if the user checks/un
 
 The way to display the various body parts is to create a separate view for each part, and lay them out so that they are superimposed on top of each other. The checkboxes should align themselves into a grid of rows and columns.
 
-(thanks to Victoria Kirst for original assignment idea and images!)
+(thanks to Victoria Kirst for the original assignment idea and images!)
 
 ## Requirements
 
@@ -55,13 +53,13 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. To get started, you'll make a Git repository to manage your code. ...
+1. To get started, create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
-2. Start Android/Xcode.
+2. Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
 
-3. New project - name: martijn-week1
+3. Create a new project, using this pattern as a name: `studentname-pset0`.
 
-4. We will provide you with [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**, and so on.
+4. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
 
 ## Implementation details (Android)
 
@@ -73,7 +71,10 @@ You can set whether or not an image (or any other view) is visible on the screen
 
 ## How to submit
 
-1. Add README with screenshot and a brief description (markdown).
-2. Commit and push.
-3. Download zip file from GitHub and check if it still works.
-4. Paste the GitHub repo URL below, in the textbox!
+1. Add a `README.md` with screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
+
+2. Commit and push one last time (hopefully!).
+
+3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
+
+4. When all is set, paste the GitHub repo URL below, in the textbox!

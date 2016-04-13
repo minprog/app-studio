@@ -1,6 +1,16 @@
 # Multiple Screens
 
+*Due: Sunday night, April 24, 2016.*
+
+## Objectives
+
+- File reading
+- Pass data between Activities
+- Support multiple screen rotations
+
 The purpose of this assignment is to practice the material from the past few weeks, such as apps with multiple screens, apps that handle instance state and data.
+
+## Preparation
 
 ## Grading
 

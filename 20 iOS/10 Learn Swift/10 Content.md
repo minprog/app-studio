@@ -13,7 +13,3 @@ Swift is quite a new language. It was introduced in June 2014 by Apple and posit
 Please prepare by reading chapters 1--4 from *Introducing iOS 8*, which gets you acquainted with Swift and Xcode.
 
 Do install *Xcode* before coming to class!
-
-## This week's demonstration
-
-![embed](https://player.vimeo.com/video/153877689)

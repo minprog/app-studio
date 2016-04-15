@@ -59,8 +59,6 @@ Here is the text of **madlib1_tarzan.txt**, to give you an idea of the Mad Lib f
 
 The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, if you want a head start toward implementing this particular option, we'll give you a file (see below) that you can optionally use as a building block (recommended). If you put the **Story class** into your project, you can construct a `Story` object and pass it an *input stream or Scanner* and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The Story object has other methods for filling in the placeholders later. If you use this helper object, you can focus more on the important parts of this assignment and less on the string / text processing parts. Or if you want to try to write the story parsing logic yourself, that is fine.
 
-**of geven we hier te veel weg?**
-
 [files for Android](madlibs-files.zip) , [files for iOS](????)
 
 ## Requirements

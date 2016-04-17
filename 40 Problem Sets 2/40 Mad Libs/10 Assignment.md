@@ -39,7 +39,7 @@ The screenshots below indicate a possible flow of the UI for an app that impleme
 
 ![](madlibs.png)
 
-Here is the text of **madlib1_tarzan.txt**, to give you an idea of the Mad Lib format:
+The text files represent placeholders as tokens that start and end with `<` `>` brackets, like `<adjective>` or `<proper-noun>`. Here is the text of **madlib1_tarzan.txt**, to give you an idea of the Mad Lib format:
 
     One of the most <adjective> characters in fiction is named "Tarzan of the
     <plural-noun> ." Tarzan was raised by a/an <noun> and lives in the
@@ -57,9 +57,7 @@ The code for reading the story text file, breaking it apart, looking for the pla
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- Your app should choose one of the five provided text files at random. The text file represents placeholders as tokens that start and end with `<` `>` brackets, like `<adjective>` or `<proper-noun>`.
-
-- The placeholders must be presented to the user as an on-screen list, where they can choose on of the items and fill in a word. This list should get its data from a separate class.
+- Your app should provide a choice to the user to start with one of five stories, using a standard list control. Every time the list is presented, the options should be randomized.
 
 - Your app should be built using the `Story` class, which you will pass a reference to the file that you open in a controller.
 

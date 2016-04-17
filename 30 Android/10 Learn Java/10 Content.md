@@ -23,3 +23,7 @@ Note: the videos below are only about a year old, but already slightly out of da
 * Derek Banas, [Android Intro](https://www.youtube.com/watch?v=ef-6NZjBtW0&index=3&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
 
 * Derek Banas, [Layout, user input, toasts](https://www.youtube.com/watch?v=kmsB_P2xbus&index=4&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
+
+## Code Style
+
+As mentioned after the demonstration, Google has specific guidelines on Android code style. The documentation can be found [here](https://source.android.com/source/code-style.html). Note the message at the top: "Contributions to Android that do not adhere to these rules are generally not accepted". Be sure to read it through!

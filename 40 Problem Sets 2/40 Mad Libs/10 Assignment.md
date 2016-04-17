@@ -10,8 +10,8 @@
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities).
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
+- On Android: Read about [Multiple Activities](/android/multiple-activities) and [Lists](/android/lists).
+- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers) and [Table Views](/ios/table-views).
 
 ## Assessment
 

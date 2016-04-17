@@ -1,5 +1,3 @@
 # API's
 
-## This week's demonstration
-
-![embed](https://player.vimeo.com/video/158922183)
+Chapter 24 from *Programming iOS 9* concerns Basic Networking. 

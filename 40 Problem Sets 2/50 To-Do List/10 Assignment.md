@@ -1,6 +1,6 @@
 # To-Do List App
 
-*Due: Sunday night, May 1st, 2016.*
+*Due: Sunday night, May 8, 2016.*
 
 ## Objectives
 

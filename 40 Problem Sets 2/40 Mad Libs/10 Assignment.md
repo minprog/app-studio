@@ -4,16 +4,14 @@
 
 ## Objectives
 
-- File reading
-- Pass data between Activities
-- Support multiple screen rotations
-
-The purpose of this assignment is to practice the material from the past few weeks, such as apps with multiple screens, apps that handle instance state and data.
+- Parse text files containing information for your app.
+- Pass data between controllers.
+- Populate a list from a separate class.
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities)
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers)
+- On Android: Read about [Multiple Activities](/android/multiple-activities).
+- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
 
 ## Assessment
 
@@ -31,17 +29,13 @@ Design
 Style
 : To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
-All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
+All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## Mad Libs
+## Fun with apps
 
-"Mad Libs" are short stories that have blanks called placeholders to be filled in. In the non-computerized version of this game, one person asks a second person to fill in each of the placeholders without the second person knowing the overall story. Once all placeholders are filled in, the second person is shown the resulting silly story.
+"Mad Libs" are short stories that have blanks called placeholders to be filled in. In the non-computerized version of this game, you ask someone to fill in each of the placeholders without telling them anything about the overall story. Once all placeholders are filled in, you show them the resulting silly story.
 
-Write an app that reads in a Mad Lib from a text file in a specific format. The text file represents placeholders as tokens that start and end with `<` `>` brackets, like `<adjective>` or `<proper-noun>`.
-
-Once the user has typed in replacements for all these placeholders, the completed story is shown on the screen.
-
-The screenshots below indicate a possible flow of the UI for such an app. Our flow has three activities: An initial "welcome" screen explaining the app, then a screen that repeatedly prompts the user to fill in placeholders, then a third activity to display the completed story. Of course you don't need to exactly match our sample's UI, but it may give you ideas.
+The screenshots below indicate a possible flow of the UI for an app that implements this game. It has three screens: a "welcome" screen explaining the app, then a screen that repeatedly prompts the user to fill in placeholders. Once the user has typed in replacements for all these placeholders, the completed story is shown on the screen. Of course you don't need to exactly match our sample's UI, but it may give you ideas.
 
 ![](madlibs.png)
 
@@ -57,35 +51,47 @@ Here is the text of **madlib1_tarzan.txt**, to give you an idea of the Mad Lib f
     Cheetah. He is supposed to be able to speak to elephants and <plural-noun>
     . In the movies, Tarzan is played by <person's-name> .
 
-The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, if you want a head start toward implementing this particular option, we'll give you a file (see below) that you can optionally use as a building block (recommended). If you put the **Story class** into your project, you can construct a `Story` object and pass it an *input stream or Scanner* and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The Story object has other methods for filling in the placeholders later. If you use this helper object, you can focus more on the important parts of this assignment and less on the string / text processing parts. Or if you want to try to write the story parsing logic yourself, that is fine.
-
-[files for Android](madlibs-files.zip) , [files for iOS](????)
+The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, we'll give you a file (see below) that you should use as a building block. If you add the `Story` class to your project, you can construct a `Story` object and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The `Story` class has other methods for filling in the placeholders later. By using this helper object, you can focus more on the important parts of this assignment and less on the string processing parts.
 
 ## Requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- Your app should read a file and look for placeholders as specified above.
+- Your app should choose one of the five provided text files at random.
+
+- The text file represents placeholders as tokens that start and end with `<` `>` brackets, like `<adjective>` or `<proper-noun>`. These placeholders must be presented to the user as an on-screen list.
+
+- The list for placeholders should get its data from a separate class.
+
+- Your app should be built using the `Story` class which you will pass a reference to the file that you opened in a controller.
 
 - Your app should prompt for user input and use that input to complete the story.
 
-- Your app should support rotation of the user interface, just like last week.
+- Your app should support rotation of the user interface.
 
 ## Getting started
 
-1. Create a new empty GitHub repository.
+1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
-2. Create a new project, using this pattern as a name: `studentname-pset1`.
+2. Create a new project, using this pattern as a name: `studentname-pset2`.
 
-3. Download the provided files and paste them into your project (recommended).  
+3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
 
 ## Implementation details (Android)
 
-To pass stuff around in your app, you can use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
+To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
+
+Lists on Android are backed by a `Adapter` object. This is a separate class in your application that has only one task: providing data for a particular list. [This tutorial](http://www.vogella.com/tutorials/AndroidListView/article.html) provides some more detail on creating custom `Adapters`.
+
+When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `Scanner` object to the constructor of the `Story` class.
 
 ## Implementation details (iOS)
 
-To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you could use a navigation controller.
+To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+
+Lists on iOS are backed by a `TableViewDelegate` object. This is a separate class in your application that has only one task: providing data for a particular list. [This tutorial](https://www.weheartswift.com/how-to-make-a-simple-table-view-with-ios-8-and-swift/) provides some more detail on implementing a `TableViewDelegate`. Note: you must create a separate class to act as a delegate!
+
+When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
 
 ## How to submit
 
@@ -95,4 +101,4 @@ To pass stuff around in your app, you can use the 'prepareForSegue' method. For 
 
 3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
 
-4. When all is set, paste the GitHub repo URL below, in the textbox!
+4. When all is set, paste the GitHub repo URL in the textbox, below!

@@ -10,8 +10,8 @@
 
 ## Preparation
 
-- On Android: [Learn Java](/android/learn-java) and read about [Layouts](/android/layouts)
-- On iOS: [Learn Swift](/ios/learn-swift) and read about [Layouts](/ios/layouts)
+- On Android: [Learn Java](/android/learn-java) and read about [Layouts](/android/layouts).
+- On iOS: [Learn Swift](/ios/learn-swift) and read about [Layouts](/ios/layouts).
 
 ## Assessment
 
@@ -29,7 +29,7 @@ Design
 Style
 : To what extent is your code readable (i.e., commented and indented with variables aptly named)?
 
-All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
+All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ## A first app
 

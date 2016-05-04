@@ -35,9 +35,6 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 You now have an application where a user can manage todo items: they can add items and remove them. The structure is still fairly simple, and now it's time to create a 2.0 version of your app. There will be one big new feature: having multiple separate lists of todo items. And this time, we are going to make the code design more object-oriented.
 
-![](todo.png)
-Figure: Android
-
 ![](todo_ios.png)
 Figure: iOS Master-Detail application
 

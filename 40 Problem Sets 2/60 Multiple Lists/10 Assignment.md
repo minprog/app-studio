@@ -49,6 +49,8 @@ Your task is to build an app according to the description above. On top of that,
 
 - The user interface should clearly represent whether a todo item has been marked as "done".
 
+- The user must be able to delete items, as well as lists.
+
 - Make sure that the app will always start *exactly* where the user left off in the app (state restoration).
 
 - Your app should support, in a user-friendly way, rotation of the device.

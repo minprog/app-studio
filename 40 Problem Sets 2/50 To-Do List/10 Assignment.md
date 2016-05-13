@@ -33,13 +33,13 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## I forgot to do...
 
-This week you will write a simple to-do list app that has a list of tasks that the user needs to complete. Initially the app contains three sample to-do items that explain how the app works. If the user types text into a bottom input field and clicks an *Add* button, the new item will be added to the top or bottom of the list. Of course, users must be able to check off or delete items, as well!
+This week you will write a simple to-do list app that has a list of tasks that the user needs to complete. Initially the app contains three sample to-do items that explain how the app works. If the user types text into a bottom input field and clicks an *Add* button, the new item will be added to the top or bottom of the list. Of course, users must be able to check off *and* delete items, as well!
 
 ## Requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- There are various methods to achieve deleting or checking off. It is up to you to present this in a user-friendly manner.
+- There are various methods to achieve deleting and checking off. It is up to you to present this in a user-friendly manner.
 
 - You must make the app as robust as possible: todos must be saved in a database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
 

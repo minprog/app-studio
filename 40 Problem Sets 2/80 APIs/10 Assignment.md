@@ -1,5 +1,7 @@
 # Build Your Own!
 
+*Due: Sunday night, 22 May, 2016*
+
 ## Objectives
 
 - Understand how to use APIs to get structured open data.
@@ -42,7 +44,7 @@ Some suggestions for finding APIs:
 
 - Concur your app proposal with the TA's to ensure the scope is sufficient.
 
-- Implement HTTP-requests in your application. 
+- Implement HTTP-requests in your application.
 
 ## Getting started
 

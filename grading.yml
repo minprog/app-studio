@@ -18,12 +18,10 @@ calculation:
 tech:
     type: float
     grades:
-        app1: 1
         app2: 1
         app3: 1
         app4: 1
         app5: 1
-        app6: 1
         app7: 1
 
 design:

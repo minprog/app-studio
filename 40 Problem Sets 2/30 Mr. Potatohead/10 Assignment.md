@@ -53,7 +53,7 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create a new project, using this pattern as a name: `studentname-pset0`.
+1. Create a new project, using this pattern as a name: `studentname-pset1`.
 
 2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
 

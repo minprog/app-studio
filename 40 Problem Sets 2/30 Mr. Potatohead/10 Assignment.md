@@ -53,9 +53,15 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create a new project, using this pattern as a name: `studentname-pset1`.
+1. For iOS: first create an empty GitHub repository to manage your code.
 
-2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+2. Create a new project, using this pattern as a name: `studentname-pset1`. 
+
+3. Share your project on GitHub.
+
+4. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+
+5. Remember to commit and push all important changes you make! 
 
 ## Implementation details (Android)
 

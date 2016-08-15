@@ -10,7 +10,7 @@
 
 ## Preparation
 
-- On Android: [Learn Java](/android/learn-java) and read about [Layouts](/android/layouts).
+- On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio] (https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
 - On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](ios/xcode) and read about [Layouts](/ios/layouts).
 
 ## Assessment
@@ -33,7 +33,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## A first app
 
-![Screenshot of Mr. Potato Head](potato.png){:.inline}
+![Screenshot of Mr. Potato Head](potato.png)
 
 Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has several accessories and body parts that can be placed on it, such as eyes, nose, mouth, ears, hat, shoes, and so on.
 

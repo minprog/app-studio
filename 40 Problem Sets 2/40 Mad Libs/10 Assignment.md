@@ -64,13 +64,17 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. For iOS: create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
 2. Create a new project, using this pattern as a name: `studentname-pset2`.
 
-3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+3. Share your project on GitHub. 
 
-4. Carefully read the provided code. What does it do? What do you still need to implement? 
+4. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+
+5. Carefully read the provided code. What does it do? What do you still need to implement? 
+
+6. Remember to commit and push all important changes you make! 
 
 ## Implementation details (Android)
 

@@ -9,7 +9,7 @@
 - Use layouts to design your user interface.
 
 ## Preparation
-
+- Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
 - On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio] (https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
 - On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](ios/xcode) and read about [Layouts](/ios/layouts).
 
@@ -53,13 +53,9 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. To get started, create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. Create a new project, using this pattern as a name: `studentname-pset0`.
 
-2. Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
-
-3. Create a new project, using this pattern as a name: `studentname-pset0`.
-
-4. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
 
 ## Implementation details (Android)
 

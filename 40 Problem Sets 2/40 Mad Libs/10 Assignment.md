@@ -6,12 +6,11 @@
 
 - Parse text files containing information for your app.
 - Pass data between controllers.
-- Populate a list from a separate class.
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities) and [Lists](/android/lists).
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers) and [Table Views](/ios/table-views).
+- On Android: Read about [Multiple Activities](/android/multiple-activities).
+- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
 
 ## Assessment
 
@@ -57,8 +56,6 @@ The code for reading the story text file, breaking it apart, looking for the pla
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- Your app should provide a choice to the user to start with one of five stories, using a standard list control. Every time the list is presented, the options should be randomized.
-
 - Your app should be built using the `Story` class, which you will pass a reference to the file that you open in a controller.
 
 - Your app should prompt for user input and use that input to complete the story.
@@ -67,25 +64,27 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. For iOS: create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
 2. Create a new project, using this pattern as a name: `studentname-pset2`.
 
-3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+3. Share your project on GitHub. 
+
+4. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+
+5. Carefully read the provided code. What does it do? What do you still need to implement? 
+
+6. Remember to commit and push all important changes you make! 
 
 ## Implementation details (Android)
 
 To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
-
-Lists on Android are backed by a `Adapter` object. This is a separate class in your application that has only one task: providing data for a particular list. [This tutorial](http://www.vogella.com/tutorials/AndroidListView/article.html) provides some more detail on creating custom `Adapters`.
 
 When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `Scanner` object to the constructor of the `Story` class.
 
 ## Implementation details (iOS)
 
 To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
-
-Lists on iOS are backed by a `TableViewDelegate` object. This is a separate class in your application that has only one task: providing data for a particular list. [This tutorial](https://www.weheartswift.com/how-to-make-a-simple-table-view-with-ios-8-and-swift/) provides some more detail on implementing a `TableViewDelegate`. Note: you must create a separate class to act as a delegate!
 
 When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
 

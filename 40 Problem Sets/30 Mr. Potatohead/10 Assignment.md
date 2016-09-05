@@ -1,6 +1,6 @@
 # Mr. Potatohead
 
-*Due: Sunday night, April 17, 2016.*
+*Due: Monday, September 12 at 13:00.*
 
 ## Objectives
 
@@ -10,7 +10,7 @@
 
 ## Preparation
 - Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
-- On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio] (https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
+- On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio](https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
 - On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](/ios/xcode) and read about [Layouts](/ios/layouts).
 
 ## Assessment

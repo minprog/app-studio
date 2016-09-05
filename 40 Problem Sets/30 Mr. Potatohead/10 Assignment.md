@@ -1,6 +1,6 @@
 # Mr. Potatohead
 
-*Due: Monday, September 12 at 13:00.*
+*Due: Monday, 12 September at 13:00.*
 
 ## Objectives
 
@@ -9,9 +9,9 @@
 - Use layouts to design your user interface.
 
 ## Preparation
-- Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
+- Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835) for iOS, and open the development enviroment.
 - On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio](https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
-- On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](/ios/xcode) and read about [Layouts](/ios/layouts).
+- On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](/ios/xcode) and get familiar with [Layouts](/ios/layouts).
 
 ## Assessment
 
@@ -57,11 +57,11 @@ Your task is to build an app according to the description above. On top of that,
 
 5. Remember to commit and push all important changes you make! 
 
-## Implementation details (Android)
+## Hints (Android)
 
 You can set whether or not an image (or any other widget) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
 
-## Implementation details (iOS)
+## Hints (iOS)
 
 You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
 

@@ -1,6 +1,6 @@
 # Mr. Potatohead
 
-*Due: Sunday night, April 17, 2016.*
+*Due: Monday, September 12 at 13:00.*
 
 ## Objectives
 
@@ -9,9 +9,9 @@
 - Use layouts to design your user interface.
 
 ## Preparation
-
-- On Android: [Learn Java](/android/learn-java) and read about [Layouts](/android/layouts).
-- On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](ios/xcode) and read about [Layouts](/ios/layouts).
+- Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
+- On Android: [Learn Java and get started with Android Studio](/android/learn-java), learn how to [connect GitHub to Android Studio](https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285) and read about [Layouts](/android/layouts).
+- On iOS: [Learn Swift](/ios/learn-swift), learn how to [connect GitHub to Xcode](/ios/xcode) and read about [Layouts](/ios/layouts).
 
 ## Assessment
 
@@ -23,17 +23,11 @@ Scope
 Correctness
 : To what extent is your code consistent with our specifications and free of bugs?
 
-Design
-: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style
-: To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ## A first app
 
-![Screenshot of Mr. Potato Head](potato.png){:.inline}
+![Screenshot of Mr. Potato Head](potato.png)
 
 Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has several accessories and body parts that can be placed on it, such as eyes, nose, mouth, ears, hat, shoes, and so on.
 
@@ -53,13 +47,15 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. To get started, create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. For iOS: first create an empty GitHub repository to manage your code.
 
-2. Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835), and open the development enviroment.
+2. Create a new project, using this pattern as a name: `studentname-pset1`. 
 
-3. Create a new project, using this pattern as a name: `studentname-pset0`.
+3. Share your project on GitHub.
 
 4. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+
+5. Remember to commit and push all important changes you make! 
 
 ## Implementation details (Android)
 

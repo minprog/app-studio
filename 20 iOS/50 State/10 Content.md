@@ -4,4 +4,4 @@
 
 - [Work with View Controllers](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/Lesson4.html)
 
-- [Tutorial](http://www.raywenderlich.com/1914/nscoding-tutorial-for-ios-how-to-save-your-app-data) on how to save your App Data.
+- [Tutorial](https://www.raywenderlich.com/117471/state-restoration-tutorial) on state restoration.

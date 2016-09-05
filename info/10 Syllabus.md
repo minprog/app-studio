@@ -1,6 +1,6 @@
 ![](app-studio.png){:style="width:400px"}
 
-*Edition: Spring 2016 (still under construction)*
+*Edition: Fall 2016 (still under construction)*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -31,14 +31,14 @@ Hella Haanstra
 
 You need to have finished Programming 1 and 2, or equivalent, as decided by the
 course's instructor. You need to be comfortable with programming, plus have
-some experience with memory management, runtime analysis, design patterns, and
-basic data structures and algorithms. You need to have a laptop capable of
-running either Xcode or Android Studio.
+some experience with memory management, runtime analysis, design patterns,
+databases, and basic data structures and algorithms. You need to have a laptop
+capable of running either Xcode or Android Studio.
 
 ## Expectations
 
-* Students are expected to attend all lectures, read all provided materials and
-  to submit all required projects, as specified below.
+* Students are expected to attend all seminars, read all provided materials and
+  to submit all seven problem sets, as specified below.
   
 * Students are expected to use discussions with the course's instructor and
   teaching assistants to improve the technical and functional designs of all
@@ -48,13 +48,13 @@ running either Xcode or Android Studio.
   OS 10.11) as well as an iPad, iPhone, or iPod touch.
 
 * Students wanting to learn Android can use any platform that Android Studio
-  runs on and should have access to an Android phone or tablet.
+  runs on as well as an Android phone or tablet.
 
 ## Schedule
 
 We'll learn about mobile software development by understand how mobile platforms are designed and what parts we should get to know and what parts we can ignore. This course requires you to do a lot of programming! Every student will need to get acquainted with the platform of their choice and create lots of small apps.
 
-Topics by week are:
+Topics by week, subject to change, are:
 
 | week | topic                   |  
 | ---: | ----------------------- |  
@@ -66,9 +66,9 @@ Topics by week are:
 |    6 | object modeling         |  
 |    7 | more object modeling    |  
 
-All assignments are released on Mondays and are due by the next Monday at 11:00. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
+All assignments are released on Mondays and are due by the next Monday at 13:00. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
 
-Each Monday at 13:00, we'll kick off the week with an introductory demo, showing you how to get started quickly. On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
+Each Monday at 15:00, we'll kick off the week with an introductory demo, showing you how to get started quickly. On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
 
 ## Books
 

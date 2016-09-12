@@ -76,13 +76,13 @@ Your task is to build an app according to the description above. On top of that,
 
 6. Remember to commit and push all important changes you make! 
 
-## Implementation details (Android)
+## Tips (Android)
 
 To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
 
 When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `Scanner` object to the constructor of the `Story` class.
 
-## Implementation details (iOS)
+## Tips (iOS)
 
 To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
 

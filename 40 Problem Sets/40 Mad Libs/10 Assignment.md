@@ -1,6 +1,6 @@
 # Mad Libs
 
-*Due: Sunday night, April 24, 2016.*
+*Due: Monday, 19 September 2016 at 13:00.*
 
 ## Objectives
 

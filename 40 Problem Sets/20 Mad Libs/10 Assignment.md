@@ -22,12 +22,6 @@ Scope
 Correctness
 : To what extent is your code consistent with our specifications and free of bugs?
 
-Design
-: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style
-: To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ## Fun with apps

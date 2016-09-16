@@ -9,7 +9,7 @@
 
 ## Preparation
 
-- On Android: Read about [Persistence](/android/persistence) and [List](/android/lists).
+- On Android: Read about [Persistence](/android/persistence) and [Lists](/android/lists).
 - On iOS: Read about [Table Views](/ios/table-views).
 
 ## Assessment

@@ -9,8 +9,8 @@
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities).
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
+- On Android: Read about [Persistence](/android/persistence) and [List](/android/lists).
+- On iOS: Read about [Table Views](/ios/table-views).
 
 ## Assessment
 
@@ -38,7 +38,7 @@ Style
 
 Remember that movie? It came out last year and you really really wanted to see it, and up until now, you totally forgot to watch it. A perfect problem to tackle with a small but powerful app!
 
-Create an app that will help users remind which movies to watch and present this in a simple, elegant user interface. Users should be able to search for movies, read descriptions and view poster art, as well as add such titles to a list of movies to watch. And of course, they should be able to remove titles from the list as well!
+Create an app that will help users remember which movies to watch and present this in a simple, elegant user interface. Users should be able to search for movies, read descriptions and view poster art, as well as add such titles to a list of movies to watch. And of course, they should be able to remove titles from the list as well!
 
 ![](watch.png)
 

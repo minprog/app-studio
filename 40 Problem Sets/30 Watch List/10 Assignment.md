@@ -82,13 +82,15 @@ Your task is to build an app according to the description above. On top of that,
 
 To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
 
-When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `Scanner` object to the constructor of the `Story` class.
-
 ## Tips (iOS)
 
 To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
 
-When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
+Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
+
+Learn more about [guards in Swift](http://ericcerney.com/swift-guard-statement/).
+
+Converting HTTP to HTTPS (when supported by the server) can be done by inserting an 's' into the string.
 
 ## How to submit
 

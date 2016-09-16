@@ -84,7 +84,9 @@ To pass stuff around in your app, you should use an `Intent`. The Android docume
 
 ## Tips (iOS)
 
-To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+To pass stuff around in your app, you can use the `prepareForSegue` method. For back navigation in your app, you should use a navigation controller.
+
+You can learn more about basic networking by reading chapter 24 of "Programming iOS 9" by Matt Neuburg (you can find this book on the shelf in A1.16).
 
 Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
 

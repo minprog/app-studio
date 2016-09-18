@@ -9,8 +9,8 @@
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities).
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
+- On Android: Read about [Persistence](/android/persistence) and [Lists](/android/lists).
+- On iOS: Read about [Table Views](/ios/table-views).
 
 ## Assessment
 
@@ -38,7 +38,7 @@ Style
 
 Remember that movie? It came out last year and you really really wanted to see it, and up until now, you totally forgot to watch it. A perfect problem to tackle with a small but powerful app!
 
-Create an app that will help users remind which movies to watch and present this in a simple, elegant user interface. Users should be able to search for movies, read descriptions and view poster art, as well as add such titles to a list of movies to watch. And of course, they should be able to remove titles from the list as well!
+Create an app that will help users remember which movies to watch and present this in a simple, elegant user interface. Users should be able to search for movies, read descriptions and view poster art, as well as add such titles to a list of movies to watch. And of course, they should be able to remove titles from the list as well!
 
 ![](watch.png)
 
@@ -51,6 +51,8 @@ How do you create a UI that fits well into the platform you're using? Peruse the
 - For iPhone, check out the [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/)
 
 - For Android, check out the [Material Design Documentation](https://developer.android.com/design/index.html)
+	- especially [the components section](https://material.google.com/components/bottom-navigation.html) (find more about lists, for example, in the sidebar)
+	- and [the patterns section](https://material.google.com/patterns/confirmation-acknowledgement.html) (find more about navigation, for example, in the sidebar)
 
 Each of these guides provides clear recommendations of how apps are supposed to look and behave for users. If apps behave consistently with other apps, this makes them easier to learn for the user. Make sure you use these guides to choose appropriate user interface elements; for example, how should a search function normally work on your platform?
 
@@ -62,7 +64,7 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should use standard list views combined with an adapter (Android) or delegation (iOS).
 
-- Your app should save and persist the list of movies using ... (Android) or `NSUserDefaults` (iOS).
+- Your app should save and persist the list of movies using `SharedPreferences` (Android) or `NSUserDefaults` (iOS).
 
 - The app's back navigation should always be simple.
 

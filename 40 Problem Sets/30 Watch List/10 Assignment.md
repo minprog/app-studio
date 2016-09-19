@@ -42,7 +42,7 @@ Create an app that will help users remember which movies to watch and present th
 
 ![](watch.png)
 
-But where do you get these movie titles, descriptions and poster art? There's a great resource for that: the [OMDb API](http://omdbapi.com). Make sure your app works by getting information from this API. 
+But where do you get these movie titles, descriptions and poster art? There's a great resource for that: the [OMDb API](http://omdbapi.com). Make sure your app works by getting information from this API. Be creative and make use of the information provided by the API (actors, director, year, rating etc.)!
 
 ## Designing the user interface
 
@@ -86,7 +86,9 @@ To pass stuff around in your app, you should use an `Intent`. The Android docume
 
 ## Tips (iOS)
 
-To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+To pass stuff around in your app, you can use the `prepareForSegue` method. For back navigation in your app, you should use a navigation controller.
+
+You can learn more about basic networking by reading chapter 24 of "Programming iOS 9" by Matt Neuburg (you can find this book on the shelf in A1.16).
 
 Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
 

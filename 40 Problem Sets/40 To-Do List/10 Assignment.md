@@ -1,6 +1,6 @@
-# Problem Set 3: To-do list
+# To-do List
 
-*Due: Sunday night, May 8, 2016.*
+*Due: Monday, 3 October at 13:00.*
 
 ## Objectives
 

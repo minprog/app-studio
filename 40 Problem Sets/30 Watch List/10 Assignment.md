@@ -26,7 +26,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## Peer Assessment
 
-In additional to the above, your work will also be reviewed by a fellow student. To do this, pair up with one other student, and provide each other with tips to enhance the design and style of your code. Add the results in a file called **REVIEW.md** in your code repository.
+In additional to the above, your work will also be reviewed by a fellow student. Instructions for the review will be made available next week.
 
 Design
 : To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?

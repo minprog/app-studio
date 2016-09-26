@@ -18,7 +18,11 @@ To do this, follow these steps:
 
 - Then, explicitly tell your partner where you think the code could be improved. Use this [grading sheet](rubric.pdf) and systematically go through all of the aspects that are listed.
 
-- Your partner (not you) should note opportunities for improvement in a file called `REVIEW.md`. This file should be added to the GitHub repository of the project.
+- Your partner (not you, you just talk) should note opportunities for improvement in a file called `REVIEW.md`. This file should be added to the GitHub repository of the project. Make at least ten points, including for each the following elements:
+
+	- Aspect of code quality (comments, decomposition, etc.)
+	- Where in your code are examples of good/bad quality
+	- How to improve next time
 
 - Finally, switch roles with your partner, and have them review *your* code!  The goal is that you learn about your own code and to try to incorporate the feedback in your next project.
 

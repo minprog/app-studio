@@ -74,7 +74,7 @@ Your task is to build an app according to the description above. On top of that,
 
 1. For iOS: create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
-2. Create a new project, using this pattern as a name: `studentname-pset2`.
+2. Create a new project, using this pattern as a name: `studentname-pset3`.
 
 3. Share your project on GitHub. 
 

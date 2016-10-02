@@ -23,13 +23,17 @@ Scope
 Correctness
 : To what extent is your code consistent with our specifications and free of bugs?
 
+All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
+
+## Peer Assessment
+
+In additional to the above, your work will also be reviewed by a fellow student. Instructions for the review will be made available next week.
+
 Design
 : To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
 
 Style
 : To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
-All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
 
 ## I forgot to do...
 
@@ -49,9 +53,9 @@ Your task is to build an app according to the description above. On top of that,
 
 1. Create a new empty GitHub repository.
 
-2. Create a new project, using this pattern as a name: `studentname-pset3`.
+2. Create a new project, using this pattern as a name: `studentname-pset4`.
 
-## Implementation details (Android)
+## Tips (Android)
 
 The todos should be displayed as a `ListView` of tasks that the user needs to complete. If the user types text into a bottom `EditText` and clicks an *Add* button, the new item will be added.
 
@@ -65,7 +69,7 @@ If the items in your to-do list are stored into an `ArrayList`, the app's GUI wo
 
 Use a `Bundle` to save the list's data during rotation.
 
-## Implementation details (iOS)
+## Tips (iOS)
 
 The to-dos will be displayed as a `Table View` of tasks that the user needs to complete. If the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added.
 

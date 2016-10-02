@@ -1,12 +1,12 @@
 # Many To-Do Lists
 
-*Due: Sunday night, May 15, 2016.*
+*Due: Monday, 10 October at 13:00.*
 
 ## Objectives
 
 - Making your app more complex by introducing multiple lists
 - Separate concerns
-- Implement a *Singleton*
+- Implement a *singleton*
 
 ## Preparation
 
@@ -23,12 +23,6 @@ Scope
 Correctness
 : To what extent is your code consistent with our specifications and free of bugs?
 
-Design
-: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style
-: To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course’s heads.
 
 ## ...a lot of things
@@ -39,11 +33,12 @@ You now have an application where a user can manage todo items: they can add ite
 Figure: iOS Master-Detail application
 
 ## Requirements
+
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
 - You will need to add a new screen for showing the different lists that are in the app, as well as a screen for adding a new list.
 
-- You must implement a Singleton for the lists (see below).
+- You must implement a singleton for managing the lists (see below).
 
 - Every to-do item needs to have *at least* `title` and `completed` fields, additional fields may be implemented as well.
 
@@ -59,9 +54,9 @@ Your task is to build an app according to the description above. On top of that,
 
 1. Create a new empty GitHub repository.
 
-2. Create a new project, using this pattern as a name: `studentname-pset4`.
+2. Create a new project, using this pattern as a name: `studentname-pset5`.
 
-# Implementation details
+# Tips
 
 Most likely, much of your important code now resides in one or more controllers (ViewControllers/Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
 

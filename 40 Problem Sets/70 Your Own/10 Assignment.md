@@ -1,6 +1,6 @@
 # Build Your Own!
 
-*Working App Due: Thursday night, 20 October, 2016*
+*Working App Due: Thursday night, 20 October, 2016*  
 *Refactoring Due: Thursday night, 27 October, 2016*
 
 ## Objectives

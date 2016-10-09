@@ -43,9 +43,11 @@ Some suggestions for finding APIs:
 ## Requirements
 
 - The app concept should be centered around a live open data API.
-- Some user data should be persisted on the phone (favorites, etc.).
-- Even if killed, the app should generally resume in the same state as before.
 - External data should be retrieved using HTTP-requests.
+- Some user data should be persisted on the phone (favorites, etc.).
+- Firebase should be used to save user data.
+- Not all external data needs to be saved on the phone once retrieved.
+- Even if killed, the app should generally resume in the same state as before.
 - Code should be organized well (keeping in mind a separation of concerns).
 - Code should be documented well (comments as well as READMEs).
 - Discuss your app proposal with the TAs to ensure the scope is sufficient.

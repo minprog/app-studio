@@ -32,9 +32,13 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## Assignment
 
-So, this is the final assignment and your best chance to make something of your own! There is one important constraint, however: the application concept should be based on a public API with open data. It should also be a "live" API, where you can do requests from your app for more data; for example, using JSON.
+So, this is the final assignment and your best chance to make something of your own! There are two important constraints, however:
 
-Some suggestions for finding APIs:
+- The application concept should be based on a public API with open data. It should also be a "live" API, where you can do requests from your app for more data; for example, using JSON.
+
+- The application should use Firebase as a database backend to store one or more types of data. Firebase should be integrated in the app as intended by official documentation.
+
+Some suggestions for finding interesting APIs:
 
 - <https://opendatanederland.org>
 - <https://github.com/caesar0301/awesome-public-datasets>
@@ -50,7 +54,8 @@ Some suggestions for finding APIs:
 - Even if killed, the app should generally resume in the same state as before.
 - Code should be organized well (keeping in mind a separation of concerns).
 - Code should be documented well (comments as well as READMEs).
-- Discuss your app proposal with the TAs to ensure the scope is sufficient.
+
+Discuss your app proposal with the TAs to ensure the scope is sufficient!
 
 ## Peer review
 

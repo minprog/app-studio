@@ -1,11 +1,11 @@
 # Build Your Own!
 
-*Due: Sunday night, 22 May, 2016*
+*Working App Due: Thursday night, 20 October, 2016*
+*Refactoring Due: Thursday night, 27 October, 2016*
 
 ## Objectives
 
 - Understand how to use APIs to get structured open data.
-- Practice with doing HTTP requests in apps.
 - Practice with making your own app from scratch.
 
 ## Preparation
@@ -32,7 +32,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## Assignment
 
-So, this is the final week and your best chance to make something of your own! There is one important constraint, however: the application concept should be based on a public API with open data. It should also be a "live" API, where you can do requests from your app for more data; for example, using JSON.
+So, this is the final assignment and your best chance to make something of your own! There is one important constraint, however: the application concept should be based on a public API with open data. It should also be a "live" API, where you can do requests from your app for more data; for example, using JSON.
 
 Some suggestions for finding APIs:
 
@@ -42,15 +42,23 @@ Some suggestions for finding APIs:
 
 ## Requirements
 
-- Concur your app proposal with the TA's to ensure the scope is sufficient.
+- The app concept should be centered around a live open data API.
+- Some user data should be persisted on the phone (favorites, etc.).
+- Even if killed, the app should generally resume in the same state as before.
+- External data should be retrieved using HTTP-requests.
+- Code should be organized well (keeping in mind a separation of concerns).
+- Code should be documented well (comments as well as READMEs).
+- Discuss your app proposal with the TAs to ensure the scope is sufficient.
 
-- Implement HTTP-requests in your application.
+## Peer review
+
+Although the app will be graded by the staff, you are required to perform a code review with one other student, in class, after the first deadline. The results of the review should be documented in a file called `REVIEW.md`. You are expected to use the results of this review to improve your code before submitting the final version.
 
 ## Getting started
 
 1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
-2. Create a new project, using this pattern as a name: `studentname-pset5`.
+2. Create a new project, using this pattern as a name: `studentname-pset6`.
 
 ## How to submit
 

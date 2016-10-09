@@ -38,13 +38,9 @@ So, this is the final assignment and your best chance to make something of your 
 
 - The application should use Firebase as a database backend to store one or more types of data. Firebase should be integrated in the app as intended by official documentation.
 
-Some suggestions for finding interesting APIs:
-
-- <https://opendatanederland.org>
-- <https://github.com/caesar0301/awesome-public-datasets>
-- <http://www.programmableweb.com/apis/directory>
-
 ## Requirements
+
+This is the full set of requirements that we ask you to accommodate when designing and implementing your app:
 
 - The app concept should be centered around a live open data API.
 - External data should be retrieved using HTTP-requests.
@@ -56,6 +52,14 @@ Some suggestions for finding interesting APIs:
 - Code should be documented well (comments as well as READMEs).
 
 Discuss your app proposal with the TAs to ensure the scope is sufficient!
+
+## APIs
+
+Here are some suggestions for finding interesting APIs:
+
+- <https://opendatanederland.org>
+- <https://github.com/caesar0301/awesome-public-datasets>
+- <http://www.programmableweb.com/apis/directory>
 
 ## Peer review
 

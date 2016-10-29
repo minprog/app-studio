@@ -20,7 +20,7 @@ We now move to setting up Android Studio. Because developing Android Apps makes 
 
 Once Android Studio is set up, it walks you through the steps towards creating your first *Hello World* app!
 
-### Java
+### Java syntax
 
 With Android app development comes a programming language: Java. Luckily for us, Java has a lot in common with Python and therefore the basics will hold no secrets for you there. However, some syntax is slightly different compared to other languages you know, so take a quick look at [Java Basics for Android Development](http://blog.teamtreehouse.com/java-basics-for-android-development-part-2) to make sure you get the syntax right. 
 

@@ -8,7 +8,7 @@ First, read chapters 1--3 from *Learning Android*, which will get you in the moo
 
 ## About the material
 
-You've downloaded Android Studio, but now what? Luckily, the itnernet offers a lot of walkthroughs and tutorials and we have selected a few to guide you through the upcoming weeks. Note that while these tutorials are intended as guidelines, we recommend that you read them all through.
+You've downloaded Android Studio, but now what? Luckily, the internet offers a lot of walkthroughs and tutorials and we have selected a few to guide you through the upcoming weeks. Note that while these tutorials are intended as guidelines, we recommend that you read them all through.
 
 ## Tutorials to get you started
 

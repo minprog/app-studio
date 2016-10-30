@@ -53,15 +53,6 @@ grades:
             style: integer
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
-    app7:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
 
 calculation:
     normal:
@@ -75,4 +66,3 @@ tech:
         app4: 1
         app5: 1
         app6: 1
-        app7: 1

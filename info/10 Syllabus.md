@@ -66,7 +66,7 @@ Topics by week, subject to change, are:
 |    6 | object modeling         |  
 |    7 | more object modeling    |  
 
-All assignments are released on Mondays and are due by the next Monday at 13:00. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
+All assignments are released on Mondays and are due by the next Friday at any time. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
 
 Each Monday at 15:00, we'll kick off the week with an introductory demo, showing you how to get started quickly. On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
 

@@ -27,6 +27,12 @@ Julian Jansen
 Hella Haanstra  
 *teaching assistant, Android (2nd term)*
 
+Renske Talsma  
+*teaching assistant, Android (2nd term)*
+
+Bob Oey  
+*teaching assistant, iOS (2nd term)*
+
 ## Prerequisites
 
 You need to have finished Programming 1 and 2, or equivalent, as decided by the

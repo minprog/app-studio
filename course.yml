@@ -4,6 +4,11 @@ course:
     submit: Native2016F
     mail: help@mprog.nl
 
+ask:
+    hands: true
+    slack: '#hands_apps'
+
+
 acknowledgements:
     - 'Based on CS164 http://cs164.tv/ (Copyright &copy; 2012 – 2013, David J. Malan, License: Creative Commons BY-NC-SA)'
     - 'Based on CS193P materials from Stanford University and Marty Stepp. Licensed under Creative Commons Attribution 2.5 License.'

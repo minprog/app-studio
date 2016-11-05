@@ -1,6 +1,6 @@
 # Mad Libs
 
-*Due: Monday, 19 September 2016 at 13:00.*
+*Due: Friday, 11 November 2016 at any time.*
 
 ## Objectives
 

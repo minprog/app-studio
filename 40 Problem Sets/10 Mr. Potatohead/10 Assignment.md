@@ -1,6 +1,6 @@
 # Mr. Potatohead
 
-*Due: Monday, 12 September at 13:00.*
+*Due: Friday, 4 November, at any time.*
 
 ## Objectives
 
@@ -15,7 +15,7 @@
 
 ## Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
+Your work on this problem set will be evaluated along two axes primarily.
 
 Scope
 : To what extent does your code implement the features required by our specification?

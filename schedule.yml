@@ -3,6 +3,11 @@ Week 1:
 Week 2:
     'Problem Set 2: Mad Libs': '/psets/mad-libs'
 Week 3:
-    'Problem Set 3: To-do List': '/psets-2/to-do-list'
+    'Problem Set 3: Watch List': '/psets/watch-list'
 Week 4:
-    'Problem Set 4: Multiple Lists': '/psets-2/multiple-lists'
+    'Problem Set 4: To-do List': '/psets/to-do-list'
+    "Code Review of Problem Set 3": "/guides/code-reviews"
+Week 5:
+    'Problem Set 5: Many Lists': '/psets/many-lists'
+Week 6-7-8:
+    'Problem Set 6: Your Own': '/psets/your-own'

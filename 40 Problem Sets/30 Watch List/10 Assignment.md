@@ -1,6 +1,6 @@
 # Watch List
 
-*Due: Monday, 26 September 2016 at 13:00.*
+*Due: Friday, 18 November 2016 at any time.*
 
 ## Objectives
 

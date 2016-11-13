@@ -1,6 +1,17 @@
 # Persistence
 
-Follow [this](http://www.journaldev.com/9412/android-shared-preferences-example-tutorial) tutorial to get an even better understanding of how SharedPreferences works.
+This week we will learn how to save data in order to provide a more complete user experience.
 
-Additionally, a short [explanation](http://www.quicktips.in/handling-activity-state-using-saved-instance-state-bundle/) on SavedInstanceState.
+## Tutorials to get you started
 
+To get a better understanding of how SharedPreferences works, read this tutorial [with examples](http://www.journaldev.com/9412/android-shared-preferences-example-tutorial).
+
+![Saving Data](http://imgur.com/Q1vUnys)
+
+Additionally, a short [explanation](http://www.quicktips.in/handling-activity-state-using-saved-instance-state-bundle/) on SavedInstanceState should get you started on Bundlesqqqqqq.
+
+## Helpful Videos
+
+Note: the videos below are only about a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
+
+* Derek Banas, [Saving Data](https://youtu.be/1DOeLy26hOE)

@@ -6,9 +6,9 @@ This week we will learn how to save data in order to provide a more complete use
 
 To get a better understanding of how SharedPreferences works, read this tutorial [with examples](http://www.journaldev.com/9412/android-shared-preferences-example-tutorial).
 
-![Saving Data](http://imgur.com/Q1vUnys)
+![Saving Data](http://i.imgur.com/Q1vUnys.png)
 
-Additionally, a short [explanation](http://www.quicktips.in/handling-activity-state-using-saved-instance-state-bundle/) on SavedInstanceState should get you started on Bundlesqqqqqq.
+Additionally, a short [explanation](http://www.quicktips.in/handling-activity-state-using-saved-instance-state-bundle/) on SavedInstanceState should get you started on Bundles.
 
 ## Helpful Videos
 

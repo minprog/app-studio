@@ -60,7 +60,7 @@ capable of running either Xcode or Android Studio.
 
 ## Schedule
 
-We'll learn about mobile software development by understand how mobile platforms are designed and what parts we should get to know and what parts we can ignore. This course requires you to do a lot of programming! Every student will need to get acquainted with the platform of their choice and create lots of small apps.
+We'll learn about mobile software development by understand how mobile platforms are designed and what parts we should get to know and what parts we can ignore. This course requires you to do a lot of programming! Every student will need to get acquainted with the platform of their choice and create many small apps.
 
 Topics by week, subject to change, are:
 
@@ -75,7 +75,11 @@ Topics by week, subject to change, are:
 
 All assignments are released on Mondays (or earlier) and are due by the next Friday---at any time. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
 
-Each Monday at 15:00, we'll kick off the week with an introductory demo, showing you how to get started quickly. On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
+Each Monday at 15:00, we'll kick off the week with an introductory demo, showing you how to get started quickly.
+
+On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
+
+Attendance is generally mandatory.
 
 ## Grades
 
@@ -90,6 +94,8 @@ The course is not graded on a curve. The course does not have pre-determined
 cutoffs for final grades. Each student's final grade is individually determined
 after input from the teaching staff. Prior experience, remarkable effort, and
 upward trending may be considered.
+
+A retake of the final assignment is offered to students who have handed in all weekly assignments on time and have had each of those checked off in the week following submission. The deadline for the retake is generally one week after final grades are published.
 
 ## Books
 

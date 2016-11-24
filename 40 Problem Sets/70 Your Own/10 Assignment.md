@@ -44,9 +44,9 @@ This is the full set of requirements that we ask you to accommodate when designi
 
 - The app concept should be centered around a live open data API.
 - External data should be retrieved using HTTP-requests.
-- Some user data should be persisted on the phone (favorites, etc.).
-- Firebase should be used to save user data.
-- Not all external data needs to be saved on the phone once retrieved.
+- Very small user data should be persisted on the phone (name?, favorites?, etc.).
+- Firebase should be used to save other user data.
+- Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once.
 - Even if killed, the app should generally resume in the same state as before.
 - Code should be organized well (keeping in mind a separation of concerns).
 - Code should be documented well (comments as well as READMEs).

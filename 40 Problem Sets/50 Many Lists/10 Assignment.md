@@ -1,6 +1,6 @@
 # Many To-Do Lists
 
-*Due: Monday, 10 October at 13:00.*
+*Due: Friday, 2 December, at any time.*
 
 ## Objectives
 

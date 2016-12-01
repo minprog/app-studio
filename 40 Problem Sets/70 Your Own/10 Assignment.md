@@ -2,9 +2,9 @@
 
 *Working App Due: Friday 9 December, at any time.*  
 
-*Peer Review Due: **Tuesday** 13 December, at any time.*
+*Peer Review Due:* **Tuesday** *13 December, at any time.*
 
-* **Final Deadline**: Friday 16 December, at any time.*
+**Final Deadline**: *Friday 16 December, at any time.*
 
 ## Objectives
 

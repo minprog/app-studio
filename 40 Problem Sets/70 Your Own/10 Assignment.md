@@ -1,7 +1,10 @@
 # Build Your Own!
 
-*Working App Due: Thursday night, 20 October, 2016*  
-*Refactoring Due: Thursday night, 27 October, 2016*
+*Working App Due: Friday 9 December, at any time.*  
+
+*Peer Review Due:* **Tuesday** *13 December, at any time.*
+
+*Final Deadline: Friday 16 December, at any time.*
 
 ## Objectives
 
@@ -36,7 +39,7 @@ So, this is the final assignment and your best chance to make something of your 
 
 - The application concept should be based on a public API with open data. It should also be a "live" API, where you can do requests from your app for more data; for example, using JSON.
 
-- The application should use Firebase as a database backend to store one or more types of data. Firebase should be integrated in the app as intended by official documentation.
+- The application should use [Firebase](https://firebase.google.com/) as a database backend to store one or more types of data. Firebase should be integrated in the app as intended by official documentation.
 
 ## Requirements
 

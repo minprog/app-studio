@@ -13,6 +13,7 @@
 
 ## Preparation
 
+- On Android: Read about [API's](/android/apis).
 - On iOS: Read about [API's](/ios/apis).
 
 ## Assessment

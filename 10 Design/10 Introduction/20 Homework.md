@@ -15,9 +15,12 @@ And now about the app you chose:
 5. Do you think the app's designer understands the problem well? What are clues in the app's functionality to evidence presence or absence of understanding?
 
 6. One important part of the design process is exploring alternatives. This can range from developing another product altogether to changing particular details within the product's design. What alternatives may the creator of this app have considered?
+{: start="3"}
 
-8. Prepare and submit one discussion question about the chapters above. We will discuss some of these in class.
-{:start=3}
+Finally,
+
+7. Prepare and submit one discussion question about the chapters above. We will discuss some of these in class.
+{: start="7"}
 
 Aim for ~50-150 words per answer. Include a representative screenshot of the app in your document. The document has to be submitted, below, as a PDF.
 

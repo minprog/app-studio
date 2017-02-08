@@ -1,6 +1,4 @@
-![](app-studio.png){:style="width:400px"}
-
-*Edition: Fall 2016 (still under construction)*
+*Edition: Spring 2017*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -18,24 +16,15 @@ Martijn Stegeman
 *instructor*  
 <help@mprog.nl>
 
-Gracia Redder  
-*teaching assistant, Android*
-
-Julian Jansen  
-*teaching assistant, iOS*
-
+Tim van Elsloo  
 Hella Haanstra  
-*teaching assistant, Android (2nd term)*
-
-Renske Talsma  
-*teaching assistant, Android (2nd term)*
-
-Bob Oey  
-*teaching assistant, iOS (2nd term)*
+Gracia Redder  
+Caitlin Schäffers  
+Renske Talsma
 
 ## Prerequisites
 
-You need to have finished Programming 1 and 2, or equivalent, as decided by the
+You need to have finished Programming 1 and 2, or equivalent as decided by the
 course's instructor. You need to be comfortable with programming, plus have
 some experience with memory management, runtime analysis, design patterns,
 databases, and basic data structures and algorithms. You need to have a laptop
@@ -43,8 +32,8 @@ capable of running either Xcode or Android Studio.
 
 ## Expectations
 
-* Students are expected to attend all seminars, read all provided materials and
-  to submit all six problem sets, as specified below.
+* Students are expected to attend all Monday seminars, read all provided
+  materials and submit all six problem sets, as specified below.
 
 * Students are expected to kickstart the weekly assignments early, so as to make optimal use of lab and teacher time.
   
@@ -52,36 +41,32 @@ capable of running either Xcode or Android Studio.
   assistants to improve the technical and functional designs of all
   projects.
 
-* Students wanting to learn iOS programming are expected to have a Mac (running
-  OS 10.11) as well as an iPad, iPhone, or iPod touch.
+## What to do
 
-* Students wanting to learn Android can use any platform that Android Studio
-  runs on as well as an Android phone or tablet.
+We'll learn about mobile software development by understanding how mobile platforms are designed and what parts we should get to know and what parts we can ignore. We will separately study the theory of design as applied to mobile software development.
 
-## Schedule
+Every week, you will create one mobile app, each one making use of the new concepts introduced that week. You'll also have written and oral design assignments. Topics by week are:
 
-We'll learn about mobile software development by understand how mobile platforms are designed and what parts we should get to know and what parts we can ignore. This course requires you to do a lot of programming! Every student will need to get acquainted with the platform of their choice and create many small apps.
+| assigned | due | programming             | design           |  
+| -------: | --: | ----------------------- | ---------------- |  
+|        1 |   2 | linking views with code | introduction     |  
+|        2 |   3 | screen layouts          | solving problems |  
+|        3 |   4 | multiple controllers    | ...              |  
+|        4 |   5 | lists and data          | ...              |  
+|        5 |   6 | data persistence        | ...              |  
+|        6 |   7 | object modeling         | ...              |  
 
-Topics by week, subject to change, are:
+All programming assignments are released on Wednesdays and are due by the next Wednesday---at any time. All of such assignments have to be handed in individually, but you are expected to generously help other students during the course.
 
-| week | topic                   |  
-| ---: | ----------------------- |  
-|    1 | linking views with code |  
-|    2 | screen layouts          |  
-|    3 | multiple controllers    |  
-|    4 | lists and data          |  
-|    5 | data persistence        |  
-| 6--7 | object modeling         |  
+All design assignments are released on Wednesdays and are due by the next Monday, before class. We will provide detailed feedback on each other's assignments in class, so be sure to bring a printed version. 
 
-All assignments are released on Mondays (or earlier) and are due by the next Friday---at any time. All of these assignments have to be handed in individually, but you are expected to generously help other students during the course.
+On Tuesdays (11-13 Android, 13-15 iOS) and Fridays (13-15 iOS/Android), lab hours will be available to you in order to get help with your assignments.
 
-Each Monday at 15:00, we'll kick off the week with an introductory demo, showing you how to get started quickly.
-
-On Tuesdays and Fridays, lab hours will be available to you for getting help with your assignments.
-
-Attendance is generally mandatory.
+Attendance for the class on Monday is mandatory to get credit for the design part of the course.
 
 ## Grades
+
+*This section is in development and will be finalized in week 2. What will not change is that the programming part will account for 65% of the final grade and the design part will count for 35%. The programming part needs to be finished completely, or the course can not be passed.*
 
 A student must ordinarily meet all deadlines in order to be eligible for a
 passing grade unless granted an exception in writing by the course's instructor.
@@ -95,11 +80,11 @@ cutoffs for final grades. Each student's final grade is individually determined
 after input from the teaching staff. Prior experience, remarkable effort, and
 upward trending may be considered.
 
-A retake of the final assignment is offered to students who have handed in all weekly assignments on time and have had each of those checked off in the week following submission. The deadline for the retake is generally one week after final grades are published.
+Retake policy. Likely: no retakes.
 
 ## Books
 
-No books are required for this course, but the books in the list below will be referenced from time to time to indicate useful sections.
+No books are required for this course, but the programming books below may be referenced from time to time to indicate useful sections.
 
 - Marko Gargenta and Masumi Nakamura, [*Learning Android*](http://shop.oreilly.com/product/0636920023456.do)
 

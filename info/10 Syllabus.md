@@ -34,8 +34,8 @@ capable of running either Xcode or Android Studio.
 
 ## Expectations
 
-* Students are expected to attend all Monday seminars, read all provided
-  materials and submit all six problem sets, as specified below.
+* Students are expected to participate in all Monday seminars, read all provided
+  materials, implement six projects and submit six written assignments, as specified below.
 
 * Students are expected to kickstart the weekly assignments early, so as to make optimal use of lab and teacher time.
   
@@ -64,7 +64,7 @@ All design assignments are released on Wednesdays and are due by the next Monday
 
 On Tuesdays (11-13 Android, 13-15 iOS) and Fridays (13-15 iOS/Android), lab hours will be available to you in order to get help with your assignments.
 
-Attendance for the class on Monday is mandatory to get credit for the design part of the course.
+Attendance for the class on Monday is mandatory to get credit for the design assignment of that week.
 
 ## Grades
 

@@ -1,10 +1,11 @@
 # Mad Libs
 
-*Due: Friday, 11 November 2016 at any time.*
+*Due: Wednesday, 22 February, at any time.*
 
 ## Objectives
 
 - Parse text files containing information for your app.
+- Practice with using multiple controllers.
 - Pass data between controllers.
 
 ## Preparation

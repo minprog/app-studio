@@ -1,4 +1,4 @@
-# Learn Java
+# Getting Started
 
 This week we will cover background information about the Android platform, and learn enough basics to create our first simple app.
 
@@ -35,3 +35,11 @@ Note: the videos below are only about a year old, but already slightly out of da
 ## Code Style
 
 Google has specific guidelines on Android code style. The documentation can be found [here](https://source.android.com/source/code-style.html). Note the message at the top: "Contributions to Android that do not adhere to these rules are generally not accepted". Be sure to read it through!
+
+## Connecting GitHub
+
+[Video](https://www.youtube.com/watch?v=xQwAIwiQ_KE&feature=youtu.be&t=285)
+
+## Creating your first app
+
+Be sure to do the official [Building your first app](https://developer.android.com/training/basics/firstapp/index.html) tutorial!

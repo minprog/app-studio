@@ -1,16 +1,14 @@
-# Introduction to Design
+# Solving Problems
 
-Watch the video below and then read Karl Ulrich's book to get acquanted with many of the ideas and words that are important when writing and thinking about design.
-
-![videoplayer](http://d396qusza40orc.cloudfront.net/design/recoded_videos%2F1a.%20What%20is%20Design-sep2012%20%5B3e88bfde%5D%20.mp4)
-
-(This video is the first from a fun course [on Coursera](https://www.coursera.org/course/design) by Karl Ulrich.)
+Last week, we explored what design is, and how problem solving and design relate. This week, we'll look at clearly defining design problems and exploring the solution space.
 
 ## Reading
 
 Karl Ulrich, [*Design: creation of artifacts in society*](http://opim.wharton.upenn.edu/~ulrich/designbook.html).
 
-* chapter 1: *Introduction to Design*
-* chapter 2: *Problem Solving and Design*
 * chapter 3: *Design Problem Definition*
 * chapter 4: *Exploration*
+
+## Assessment
+
+The questions below will be the topic of our next class on Monday. Students will read and comment on each other's work. <strong>Bring a printed copy of your report!</strong> After class, the reports will be collected and graded: 0pt, 1pt (pass), 2pt (brilliant) per question. Good feedback by a peer can also be awarded 1pt.

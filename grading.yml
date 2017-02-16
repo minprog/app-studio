@@ -53,6 +53,12 @@ grades:
             style: integer
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
+    des1:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
 
 calculation:
     normal:

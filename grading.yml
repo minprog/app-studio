@@ -1,22 +1,8 @@
 grades:
     app1:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
+        type: pass
     app2:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
+        type: pass
     app3:
         type: float
         subgrades:

@@ -1,6 +1,7 @@
 # Many To-Do Lists
 
-*Due: Friday, 2 December, at any time.*
+*First deadline: Tuesday, 14 March, during class (2 points).*
+*Second deadline: Tuesday, 21 March, during class (1 point).*
 
 ## Objectives
 

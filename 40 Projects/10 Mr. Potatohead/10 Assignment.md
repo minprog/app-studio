@@ -1,6 +1,7 @@
 # Mr. Potatohead
 
-*Due: Wednesday, 15 February, at any time.*
+*First deadline: Wednesday, 15 February, at any time (2 points).*  
+*Second deadline: Friday, 24 February, during class (1 point).*
 
 ## Objectives
 

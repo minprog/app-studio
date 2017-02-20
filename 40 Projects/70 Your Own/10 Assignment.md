@@ -1,10 +1,7 @@
 # Build Your Own!
 
-*Working App Due: Friday 9 December, at any time.*  
-
-*Peer Review Due:* **Tuesday** *13 December, at any time.*
-
-*Final Deadline: Friday 16 December, at any time.*
+*First deadline: Tuesday, 21 March, during class (2 points).*
+*Second deadline: Tuesday, 28 March, by appointment (1 point).*
 
 ## Objectives
 

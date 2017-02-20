@@ -1,6 +1,7 @@
 # Watch List
 
-*Due: Friday, 18 November 2016 at any time.*
+*First deadline: Tuesday, 28 February, during class (2 points).*
+*Second deadline: Tuesday, 7 March, during class (1 point).*
 
 ## Objectives
 

@@ -49,14 +49,14 @@ We'll learn about mobile software development by understanding how mobile platfo
 
 Every week, you will create one mobile app, each one making use of the new concepts introduced that week. You'll also have written and oral design assignments. Topics by week are:
 
-| assigned | due | programming             | design           |  
-| -------: | --: | ----------------------- | ---------------- |  
-|        1 |   2 | linking views with code | introduction     |  
-|        2 |   3 | screen layouts          | solving problems |  
-|        3 |   4 | multiple controllers    | ...              |  
-|        4 |   5 | lists and data          | ...              |  
-|        5 |   6 | data persistence        | ...              |  
-|        6 |   7 | object modeling         | ...              |  
+| assigned |    due |  due 2 | programming             | due |  design                      |  
+| -------: | -----: | -----: | ----------------------- | ---: | --------------------------- |  
+|        1 | 15 Feb | 24 Feb | linking views with code | 13 Feb | introduction                |  
+|        2 | 24 Feb | 28 Feb | screen layouts          | 20 Feb | exploring problem solutions |  
+|        3 | 28 Feb |  7 Mar | multiple controllers    | 27 Feb | ...                         |  
+|        4 |  7 Mar | 14 Mar | lists and data          | 6 Mar | ...                         |  
+|        5 | 14 Mar | 21 Mar | data persistence        | 13 Mar | ...                         |  
+|        6 | 21 Mar | 28 Mar | object modeling         | 20 Mar | ...                         |  
 
 All programming assignments are released on Wednesdays and are due by the next Wednesday---at any time. All of such assignments have to be handed in individually, but you are expected to generously help other students during the course.
 

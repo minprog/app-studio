@@ -1,6 +1,6 @@
 # Mad Libs
 
-*First deadline: Friday, 24 February, during class (2 points).*
+*First deadline: Friday, 24 February, during class (2 points).*  
 *Second deadline: Tuesday, 28 February, during class (1 point).*
 
 ## Objectives

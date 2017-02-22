@@ -1,6 +1,6 @@
 # To-do List
 
-*First deadline: Tuesday, 7 March, during class (2 points).*
+*First deadline: Tuesday, 7 March, during class (2 points).*  
 *Second deadline: Tuesday, 14 March, during class (1 point).*
 
 ## Objectives

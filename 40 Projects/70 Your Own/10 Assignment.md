@@ -1,6 +1,6 @@
 # Build Your Own!
 
-*First deadline: Tuesday, 21 March, during class (2 points).*
+*First deadline: Tuesday, 21 March, during class (2 points).*  
 *Second deadline: Tuesday, 28 March, by appointment (1 point).*
 
 ## Objectives

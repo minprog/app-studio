@@ -100,7 +100,7 @@ No books are required for this course, but the programming books below may be re
 
 - [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
-# Collaboration
+## Collaboration
 
 All work that you do toward fulfillment of this course's expectations must be
 your own work. You may read and comment upon classmates' code toward
@@ -115,7 +115,7 @@ but you may not communicate in Swift, Java, or Objective-C and such languages.
 If in doubt as to the appropriateness of some discussion, contact the course's
 heads.
 
-## Quoting sources
+### Quoting sources
 
 You may turn to the web for instruction beyond the course's lectures and
 sections, for references, and for solutions to technical difficulties, but not
@@ -125,7 +125,7 @@ do discover outside of the course's lectures and sections (even while
 respecting these constraints) and then integrate into your own work may be
 considered academic dishonesty.
 
-## Regulations
+### Regulations
 
 All forms of academic dishonesty are dealt with harshly. In all cases we follow
 the directives regarding fraud and plagiarism of the University of Amsterdam

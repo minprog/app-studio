@@ -16,13 +16,7 @@
 
 ## Assessment
 
-Your work on this problem set will be evaluated along four axes primarily.
-
-Scope
-: To what extent does your code implement the features required by our specification?
-
-Correctness
-: To what extent is your code consistent with our specifications and free of bugs?
+Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
 
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 

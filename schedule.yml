@@ -1,15 +1,18 @@
 Week 1:
-    'Project 1: Mr. Potatohead [due Wednesday]': '/projects/mr-potatohead'
-    'Writing 1: Introduction to design [due Monday]': '/design/introduction'
+    'Project 1: Mr. Potatohead': '/projects/mr-potatohead'
+    'Writing 1: Introduction to design': '/design/introduction'
 Week 2:
-    'Project 2: Mad Libs [due Wednesday]': '/projects/mad-libs'
-    'Writing 2: Solving Problems [due Monday]': '/design/solving-problems'
+    'Project 2: Mad Libs': '/projects/mad-libs'
+    'Writing 2: Solving Problems': '/design/solving-problems'
 Week 3:
-    'Problem Set 3: Watch List': '/psets/watch-list'
+    'Project 3: Watch List': '/psets/watch-list'
+    'Writing 3: Solving Problems': '/design/solving-problems'
 Week 4:
-    'Problem Set 4: To-do List': '/psets/to-do-list'
-    "Code Review of Problem Set 3": "/guides/code-reviews"
+    'Project 4: To-do List': '/psets/to-do-list'
+    'Writing 4: Solving Problems': '/design/solving-problems'
 Week 5:
-    'Problem Set 5: Many Lists': '/psets/many-lists'
-Week 6-7-8:
-    'Problem Set 6: Your Own': '/psets/your-own'
+    'Project 5: Many Lists': '/psets/many-lists'
+    'Writing 5: Solving Problems': '/design/solving-problems'
+Week 6:
+    'Project 6: Your Own': '/psets/your-own'
+    'Writing 6: Solving Problems': '/design/solving-problems'

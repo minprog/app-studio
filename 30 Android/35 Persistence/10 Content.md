@@ -12,6 +12,4 @@ Additionally, a short [explanation](http://www.quicktips.in/handling-activity-st
 
 ## Helpful Videos
 
-Note: the videos below are only about a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
-
 * Derek Banas, [Saving Data](https://youtu.be/1DOeLy26hOE)

@@ -68,12 +68,18 @@ Attendance for the class on Monday is mandatory to get credit for the design ass
 
 ## Grades
 
-*This section is in development and will be finalized in week 2. What will not change is that the programming part will account for 65% of the final grade and the design part will count for 35%. The programming part needs to be finished completely, or the course can not be passed.*
+Final grades for the course comprise three major parts:
 
-A student must ordinarily meet all deadlines in order to be eligible for a
+| part               | percentage | notes                                   |  
+| ------------------ | ---------: | --------------------------------------- |  
+| design writing     |        35% | out of 6 points, weekly assignments     |  
+| projects           |        35% | out of 12 points, depending on deadline |  
+| final project code |        30% | code quality grade 1-10                 |  
+
+With each assignment, criteria for assessment are specified.
+
+A student must ordinarily submit all work in order to be eligible for a
 passing grade unless granted an exception in writing by the course's instructor.
-
-The final assignment in weeks 6--7 will be assessed by a team of teachers, the result of which will be your final grade for the course. Other assignments will be checked for completion. With each assignment, criteria for assessment are specified.
 
 Feedback can be obtained in class while checking off previous assignments on Tuesdays. You are encouraged to clearly ask for feedback that you need to improve your future work.
 
@@ -82,7 +88,7 @@ cutoffs for final grades. Each student's final grade is individually determined
 after input from the teaching staff. Prior experience, remarkable effort, and
 upward trending may be considered.
 
-Retake policy. Likely: no retakes.
+No retakes are possible of any part of the course.
 
 ## Books
 

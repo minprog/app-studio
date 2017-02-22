@@ -23,16 +23,6 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## Peer Assessment
-
-In additional to the above, your work will also be reviewed by a fellow student. Instructions for the review will be made available next week.
-
-Design
-: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style
-: To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
 ## Helpful reminders
 
 Remember that movie? It came out last year and you really really wanted to see it, and up until now, you totally forgot to watch it. A perfect problem to tackle with a small but powerful app!

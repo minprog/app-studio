@@ -20,16 +20,6 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## Peer Assessment
-
-In additional to the above, your work will also be reviewed by a fellow student. Instructions for the review will be made available next week.
-
-Design
-: To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?
-
-Style
-: To what extent is your code readable (i.e., commented and indented with variables aptly named)?
-
 ## I forgot to do...
 
 This week you will write a simple to-do list app that has a list of tasks that the user needs to complete. Initially the app contains three sample to-do items that explain how the app works. If the user types text into a bottom input field and clicks an *Add* button, the new item will be added to the top or bottom of the list. Of course, users must be able to check off *and* delete items, as well!

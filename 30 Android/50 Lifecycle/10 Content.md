@@ -1,6 +1,8 @@
-# State Restoration
+# Activity lifecycle
 
-This week we will cover your app's state restoration more thoroughly and focus on the Activity Lifecycle.
+Activities can be loaded and unloaded, but often we would like to restore the *state* of the screen whenever an activity is re-displayed. For example, when rotating an Android device, much of the current activity is reloaded. Some of the screen state is preserved automatically, but other state has to be preserved manually.
+
+![embed](https://player.vimeo.com/video/206083320)
 
 ## Tutorials to get you started
 
@@ -9,7 +11,3 @@ Handling the Activity Lifecycle is a very important part in the development proc
 ![Basic Lifecycle](https://developer.android.com/images/training/basics/basic-lifecycle-savestate.png)
 
 If everything still seems vague, you can turn to [this](https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle/) tutorial. Do note that this one is very similar to the one above.
-
-## Helpful Videos
-
-No videos for this one, but do check out the videos from previous weeks for e.g. sending data to other activities.

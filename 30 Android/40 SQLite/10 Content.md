@@ -2,7 +2,7 @@
 
 This week we will see how to use a SQLite database.
 
-![SQLite](https://iworkautomation.com/numbers/gfx/sqlite-logo.png)
+![embed](https://player.vimeo.com/video/206083134)
 
 ## Tutorials to get you started
 

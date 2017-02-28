@@ -3,6 +3,11 @@
 *First deadline: Wednesday, 15 February, at any time (2 points).*  
 *Second deadline: Friday, 24 February, during class (1 point).*
 
+## Staff todo
+
+- Introduce SaveInstanceState (Android) to support rotation
+- Equiv in iOS?
+
 ## Objectives
 
 - Create a first app!

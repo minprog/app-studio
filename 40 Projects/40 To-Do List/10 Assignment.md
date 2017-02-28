@@ -11,8 +11,8 @@
 
 ## Preparation
 
-- On Android: read about [SQLite](/android/sqlite) and [State restoration](/android/state).
-- On iOS: watch the demo about [SQLite](/ios/sqlite) and [State restoration](/ios/state).
+- On Android: read about [SQLite](/android/sqlite), the [activity life cycle](/android/state) and [data persistence](/android/persistence).
+- On iOS: watch the demo about [SQLite](/ios/sqlite) and [state restoration](/ios/state).
 
 ## Assessment
 
@@ -42,29 +42,29 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Tips (Android)
 
-The todos should be displayed as a `ListView` of tasks that the user needs to complete. If the user types text into a bottom `EditText` and clicks an *Add* button, the new item will be added.
+- The todos should be displayed as a `ListView` of tasks that the user needs to complete. If the user types text into a bottom `EditText` and clicks an *Add* button, the new item will be added.
 
-A common way to allow deletion in lists is to respond when the user performs a "long click" (pressing and holding on an item). You can do this by calling the `setOnItemLongClickListener` method of your list and passing an anonymous `AdapterView.OnItemLongClickListener` instance. Android Studio can help you auto-generate the skeletons of these anonymous listener classes if you press *Ctrl-Space* in the editor at the right place in the code.
+- A common way to allow deletion in lists is to respond when the user performs a "long click" (pressing and holding on an item). You can do this by calling the `setOnItemLongClickListener` method of your list and passing an anonymous `AdapterView.OnItemLongClickListener` instance. Android Studio can help you auto-generate the skeletons of these anonymous listener classes if you press *Ctrl-Space* in the editor at the right place in the code.
 
-![Screenshot from Android](todo.png)
+	![Screenshot from Android](todo.png)
 
-Figure: User long-clicking on second list item to delete it
+	*Figure: User long-clicking on second list item to delete it*
 
-If the items in your to-do list are stored into an `ArrayList`, the app's GUI won't notice when you add or remove an item from the list. That is, you'll modify the `ArrayList` state but the graphical list on the screen won't update to match. To fix this, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter` to tell it that the underlying array list has changed. To be able to do this, of course, you'll have to save your `ArrayList` and your `ArrayAdapter` as private fields inside your activity.
+- If the items in your to-do list are stored into an `ArrayList`, the app's GUI won't notice when you add or remove an item from the list. That is, you'll modify the `ArrayList` state but the graphical list on the screen won't update to match. To fix this, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter` to tell it that the underlying array list has changed. To be able to do this, of course, you'll have to save your `ArrayList` and your `ArrayAdapter` as private fields inside your activity.
 
-Use a `Bundle` to save the list's data during rotation.
+- Use a `Bundle` to save the list's data during rotation.
 
 ## Tips (iOS)
 
-The to-dos will be displayed as a `Table View` of tasks that the user needs to complete. If the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added.
+- The to-dos will be displayed as a `Table View` of tasks that the user needs to complete. If the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added.
 
-It's also good to have a way to remove items from the list. You could achieve this with the `commitEditingStyle` delegate function.
+- It's also good to have a way to remove items from the list. You could achieve this with the `commitEditingStyle` delegate function.
 
-![Screenshot from iOS](todo_ios.png)
+	![Screenshot from iOS](todo_ios.png)
 
-Figure: User swiping on the third list item to delete it.
+	*Figure: User swiping on the third list item to delete it.*
 
-Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file.
+- Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file.
 
 ## How to submit
 

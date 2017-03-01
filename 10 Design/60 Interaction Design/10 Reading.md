@@ -5,4 +5,3 @@ This week, we'll finish reading Cadence and Slang and you are going to write a r
 - Nick Disabato, Cadence & Slang, chapter 5: Perceived Accomplishment
 - Nick Disabato, Cadence & Slang, chapter 6: Cognitive Cost
 - Nick Disabato, Cadence & Slang, chapter 7: Cultural Norms
-

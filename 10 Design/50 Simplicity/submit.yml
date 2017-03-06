@@ -1,3 +1,4 @@
 name: des4
-required:
-    - week4.pdf
+files:
+    required:
+        - week4.pdf

@@ -12,6 +12,10 @@ You can define a couple of *business object* classes in your app, which define s
 
 Creating a separate class for handling the database connection can make it easier to change the design of the application later on; for example, you could change from SQLite to an online database provider by changing only the helper class.
 
+- First: creating a singleton:
+
+![embed](https://player.vimeo.com/video/207305975)
+
 - Why creating a database helper singleton helps remedy [memory leaks](http://www.androiddesignpatterns.com/2012/05/correctly-managing-your-sqlite-database.html).
 
 - Tutorial: how to implement a [database helper](http://guides.codepath.com/android/local-databases-with-sqliteopenhelper).

@@ -1,5 +1,9 @@
 # Model classes
 
+## Business objects
+
+You can define a couple of *business object* classes in your app, which define some of ideas from your app's domain. For example, in a student grade database, you would probably need **Student** and **Grade** classes.
+
 - What are [business objects](https://en.wikipedia.org/wiki/Business_object)?
 
 - Creating model classes [efficiently](http://stackoverflow.com/questions/14206434/android-do-we-have-to-manually-create-model-classes) in Android Studio.

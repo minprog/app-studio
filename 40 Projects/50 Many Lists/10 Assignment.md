@@ -20,30 +20,30 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## ...a lot of things
+## Background
 
-You now have an application where a user can manage todo items: they can add items and remove them. The structure is still fairly simple, and now it's time to create a 2.0 version of your app. There will be one big new feature: having multiple separate lists of todo items. And this time, we are going to make the code design more object-oriented.
+This week's project builds on what you created last week. You already have an application where a user can manage todo items. The structure is still fairly simple, and now it's time to create a 2.0 version. There will be one big new feature: having multiple separate lists of todo items. And this time, we are going to make the code design more object-oriented.
 
 ![](todo_ios.png)
 Figure: iOS Master-Detail application
 
 ## Requirements
 
-Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
+Your task is to build an app according to the description above. In addition, there are some specific requirements that you must take into account:
 
 - You will need to add a new screen for showing the different lists that are in the app, as well as a screen for adding a new list.
-
-- You must implement a singleton for managing the lists (see below).
 
 - Every to-do item needs to have *at least* `title` and `completed` fields, additional fields may be implemented as well.
 
 - The user interface should clearly represent whether a todo item has been marked as "done".
 
-- The user must be able to delete items, as well as lists.
+- The user must be able to delete single items, as well as whole lists.
 
 - Make sure that the app will always start *exactly* where the user left off in the app (state restoration).
 
 - Your app should support, in a user-friendly way, rotation of the device.
+
+- You must implement a singleton for managing the lists (see below).
 
 ## Getting started
 
@@ -51,13 +51,15 @@ Your task is to build an app according to the description above. On top of that,
 
 2. Create a new project, using this pattern as a name: `studentname-pset5`.
 
-# Tips
+3. Copy any code that you need from your old project.
+
+## Tips
 
 Most likely, much of your important code now resides in one or more controllers (ViewControllers/Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
 
 Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the classes we think you should make, along with their responsibilities.
 
-![](todomanager.png)
+![](todomanager.png){:.inline}
 
 - `TodoItem`
 

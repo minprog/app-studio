@@ -11,8 +11,8 @@
 
 ## Preparation
 
-- On Android: read about [Models](/android/models), [State](/android/state) and [Fragments](/android/fragments).
-- On iOS: read about [Models](/ios/models) and [State](/ios/state).
+- On Android: read about [Models](/android/models) and, if needed, [SQLite](/android/sqlite).
+- On iOS: read about [Models](/ios/models) and, if needed, [SQLite](/ios/sqlite).
 
 ## Assessment
 
@@ -57,10 +57,6 @@ Your task is to build an app according to the description above. In addition, th
 
 Most likely, much of your important code now resides in one or more controllers (ViewControllers/Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
 
-Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the classes we think you should make, along with their responsibilities.
-
-![](todomanager.png){:.inline}
-
 - `TodoItem`
 
     Stores data for a single todo item. This class is very simple and looks a little bit like a `struct` in C. The class variables (such as `title`) should not be `public`, but `private`. Where needed, you can expose the variables through getters and setters.
@@ -71,9 +67,9 @@ Here is a [UML](https://en.wikipedia.org/wiki/Class_diagram) diagram of the clas
 
 - `TodoManager`
 
-    A singleton class that groups some common functionality. It contains the list of `TodoList`s for your application, and it has two functions that are reponsible for persistence of the lists between application runs: `readTodos` and `writeTodos`.
+    A class that groups some common functionality. It contains the list of `TodoList`s for your application, and it handles all communication with the database.
 
-Don't forget to use the naming convention of the language that you use. This could be different from the UML diagram.
+On Android, use the approach from this [blog post](http://www.androiddesignpatterns.com/2012/05/correctly-managing-your-sqlite-database.html) to create your TodoManager.
 
 ## How to submit
 

@@ -8,6 +8,8 @@ You can define a couple of *business object* classes in your app, which define s
 
 - Creating model classes [efficiently](http://stackoverflow.com/questions/14206434/android-do-we-have-to-manually-create-model-classes) in Android Studio.
 
+![embed](https://player.vimeo.com/video/207789065)
+
 ## Creating a database helper class
 
 Creating a separate class for handling the database connection can make it easier to change the design of the application later on; for example, you could change from SQLite to an online database provider by changing only the helper class.

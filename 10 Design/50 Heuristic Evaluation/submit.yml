@@ -1,3 +1,4 @@
 name: des5
-required:
-    - week5.pdf
+files:
+    required:
+        - week5.pdf

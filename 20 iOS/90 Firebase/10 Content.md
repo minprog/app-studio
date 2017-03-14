@@ -9,3 +9,6 @@ Twee belangrijke onderdelen van Firebase zijn:
 - het toestaan van gebruikerslogins; dit zou je zelf kunnen coden via de centrale database, maar Firebase heeft een aantal features om dit makkelijker te maken
 
 ![embed](https://player.vimeo.com/video/194484295)
+
+
+[^1]: <https://www.chriswatterston.com/blog/my-there-no-cloud-sticker>

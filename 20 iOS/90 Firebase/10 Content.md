@@ -1,6 +1,6 @@
 ### Firebase
 
-![](/android/firebase/cloud.png)[^1]
+![](/course/30%20Android/90%20Firebase/cloud.png)[^1]
 
 Twee belangrijke onderdelen van Firebase zijn:
 

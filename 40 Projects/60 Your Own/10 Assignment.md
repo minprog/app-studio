@@ -22,7 +22,7 @@ All students must ordinarily submit this and all other problem sets to be eligib
 
 ## Code quality assessment
 
-Aside from this, your work on this problem set will be evaluated on code quality. Use [/guides/better-code-hub] to ensure that your code is clean and well!
+Aside from this, your work on this problem set will be evaluated on code quality. Use [Better Code Hub](/guides/better-code-hub) to ensure that your code is clean and well! **But, it's only a tool.** Keep in mind that assessment will happen on these criteria:
 
 Design
 : To what extent is your code written well (i.e., clearly, efficiently, elegantly, and/or logically)?

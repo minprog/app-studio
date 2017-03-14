@@ -11,8 +11,8 @@
 
 ## Preparation
 
-- On Android: Read about [API's](/android/apis).
-- On iOS: Read about [API's](/ios/apis).
+- On Android: Read about [Firebase](/android/firebase).
+- On iOS: Read about [Firebase](/ios/firebase).
 
 ## Assessment
 
@@ -43,6 +43,7 @@ So, this is the final assignment and your best chance to make something of your 
 This is the full set of requirements that we ask you to accommodate when designing and implementing your app:
 
 - Firebase must be used to save user data.
+- Firebase may be used to allow user logins, but data may also be shared between phones without requiring logins.
 - Very small user data must be persisted on the phone, so as to provide a responsive app in case of network problems.
 - Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once.
 - Even if killed, the app should generally resume in the same state as before.

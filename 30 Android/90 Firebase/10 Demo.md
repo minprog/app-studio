@@ -1,6 +1,6 @@
 # Firebase
 
-![](cloud.png)
+![](cloud.png)[^1]
 
 Twee belangrijke onderdelen van Firebase zijn:
 
@@ -15,3 +15,5 @@ Filmpje volgt!
 ## Logins
 
 ![embed](https://player.vimeo.com/video/208276322)
+
+[^1]: <https://www.chriswatterston.com/blog/my-there-no-cloud-sticker>

@@ -68,7 +68,7 @@ You can find the Markdown code under settings:
 
 ## Note
 
-A high Better Code Hub score does not automatically result in a high course grade. Your project is graded along more dimensions than code quality. Consult the rubric you have used during the code reviews and find the overlapping criterica with Better Code Hub.
+A high Better Code Hub score does not automatically result in a high course grade. Your project is graded along more dimensions than can be analyzed by BCH. Consult the rubric you have used during the code reviews and find the overlapping criteria with Better Code Hub.
 
 ## Help
 

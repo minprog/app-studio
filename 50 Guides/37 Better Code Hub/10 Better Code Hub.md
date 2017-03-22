@@ -25,29 +25,25 @@ First do an initial analysis of your repository, so the "Analysis configuration"
 
 This might look like:
 
-`exclude:`
-
-`- /mylibrary/src/.*`
-
-`component_depth: 1`
-
-`languages:`
-
-`- java`
+	exclude:
+	- /mylibrary/src/.*
+	component_depth: 1
+	languages:
+	- java
 
 ## Rank
 
-![BCH Grade](grade.png)
+![BCH Grade](grade.png){:style="max-width:50%;"}
 
 ## Task list
 
 Create a task list of problem sections in your code. You can use the task list tool within Better Code Hub:
 
-![BCH Task list](tasklist.png)
+![BCH Task list](tasklist.png){:style="max-width:20%;"}
 
 See which tasks have the highest impact on the guideline. (Not all problems have to be fixed.) By selecting the tasks, the guideline gives you a prediction:
 
-![BCH Guideline](guideline.png)
+![BCH Guideline](guideline.png){:style="max-width:60%;"}
 
 See how the green bar moved past the yellow line after selecting a task.
 
@@ -68,7 +64,7 @@ And add the Better Code Hub status badge to the bottom of your **README.MD** (so
 
 You can find the Markdown code under settings:
 
-![BCH Settings](settings.png)
+![BCH Settings](settings.png){:style="max-width:50%;"}
 
 ## Note
 

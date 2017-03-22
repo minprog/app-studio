@@ -21,7 +21,7 @@ Better Code Hub analyses all the code that is in your repository. This might inc
 
 First do an initial analysis of your repository, so the "Analysis configuration" option becomes available. Than you can exclude these files by making a **.bettercodehub.yml** in the root of your repository. The code that goes into this file, can be generated under "Analysis configuration" under "Settings" in Better Code Hub:
 
-![BCH Config](yml.png)
+![BCH Config](yml.png){:style="max-width:80%;"}
 
 This might look like:
 

@@ -32,63 +32,75 @@ some experience with memory management, runtime analysis, design patterns,
 databases, and basic data structures and algorithms. You need to have a laptop
 capable of running either Xcode or Android Studio.
 
-## Expectations
-
-* Students are expected to participate in all Monday seminars, read all provided
-  materials, implement six projects and submit six written assignments, as specified below.
-
-* Students are expected to kickstart the weekly assignments early, so as to make optimal use of lab and teacher time.
-  
-* Students are expected to use discussions with the course's instructors and
-  assistants to improve the technical and functional designs of all
-  projects.
-
 ## What to do
 
 We'll learn about mobile software development by understanding how mobile platforms are designed and what parts we should get to know and what parts we can ignore. We will separately study the theory of design as applied to mobile software development.
 
-Every week, you will create one mobile app, each one making use of the new concepts introduced that week. You'll also have written and oral design assignments. Topics by week are:
+- Every week, you will create one **mobile app**, each one making use of the new concepts introduced that week.
 
-| assigned |    due |  due 2 | programming             | due |  design                      |  
-| -------: | -----: | -----: | ----------------------- | ---: | --------------------------- |  
-|        1 | 15 Feb | 24 Feb | linking views with code | 13 Feb | introduction                |  
-|        2 | 24 Feb | 28 Feb | screen layouts          | 20 Feb | exploring problem solutions |  
-|        3 | 28 Feb |  7 Mar | multiple controllers    | 27 Feb | ...                         |  
-|        4 |  7 Mar | 14 Mar | lists and data          | 6 Mar | ...                         |  
-|        5 | 14 Mar | 21 Mar | data persistence        | 13 Mar | ...                         |  
-|        6 | 21 Mar | 28 Mar | object modeling         | 20 Mar | ...                         |  
+- You are expected to **kickstart** the weekly assignments early, so as to make optimal use of lab and teacher time.
 
-All programming assignments are released on Wednesdays and are due by the next Wednesday---at any time. All of such assignments have to be handed in individually, but you are expected to generously help other students during the course.
+- **Lab hours** are available to you in order to get help with your assignments. You are expected to attend most, if not all, of the scheduled hours.
 
-All design assignments are released on Wednesdays and are due by the next Monday, before class. We will provide detailed feedback on each other's assignments in class, so be sure to bring a printed version. 
+- You are expected to use **discussions** with the course's instructors and assistants to improve the technical and functional designs of all projects.
 
-On Tuesdays (11-13 Android, 13-15 iOS) and Fridays (13-15 iOS/Android), lab hours will be available to you in order to get help with your assignments.
+- All assignments have to be handed in **individually**, but you are expected to generously help other students during the course. 
 
-Attendance for the class on Monday is mandatory to get credit for the design assignment of that week.
+- You'll also have **written** design assignments. Attendance in class on Monday is mandatory to get credit for the design assignment of that week.
 
 ## Grades
 
 Final grades for the course comprise three major parts:
 
-| part               | percentage | notes                                   |  
-| ------------------ | ---------: | --------------------------------------- |  
-| design writing     |        35% | out of 6 points, weekly assignments     |  
-| projects           |        35% | out of 12 points, depending on deadline |  
-| final project code |        30% | code quality grade 1-10                 |  
+| part               | percentage | grading                |  
+| ------------------ | ---------: | ---------------------- |  
+| design writing     |        35% | score out of 5 points  |  
+| projects           |        35% | score out of 12 points |  
+| final project code |        30% | grade 1--10            |  
 
-With each assignment, criteria for assessment are specified.
+A student must submit the final project in order to be eligible for a passing grade, unless granted
+an exception in writing by the course's instructor. No retakes are possible for any part of the
+course.
 
-A student must ordinarily submit all work in order to be eligible for a
-passing grade unless granted an exception in writing by the course's instructor.
+### Design writing
 
-Feedback can be obtained in class while checking off previous assignments on Tuesdays. You are encouraged to clearly ask for feedback that you need to improve your future work.
+In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. You are to take to class a printed version of your answers to these questions. Class dates are:
 
-The course is not graded on a curve. The course does not have pre-determined
-cutoffs for final grades. Each student's final grade is individually determined
-after input from the teaching staff. Prior experience, remarkable effort, and
-upward trending may be considered.
+| no | class date | note                     |  
+| -: | ---------: | ------------------------ |  
+|  1 |      3 Apr | first class, no deadline |  
+|  2 |     10 Apr |                          |  
+|  3 |      1 May |                          |  
+|  4 |      8 May |                          |  
+|  5 |     15 May |                          |  
+|  6 |     22 May |                          |  
 
-No retakes are possible of any part of the course.
+In class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
+
+- 0 points: no clear effort or quite unreadable language
+- 1 point: a clear effort where answers show that you have read the text (expected level)
+- 2 points: excellent answers that show close reading and making connections between texts
+
+No more than 5 points can be obtained in total. Points cannot be earned without being present.
+
+### Projects
+
+Programming assignments build up quickly over the weeks, which is why it is not recommended to skip any of the assignments. To get points for an assignment, you simply have to demonstrate the functioning app and its source code during class. A fully functional app, implemented according to the requirements, can earn you either 2 or 1 points, according to the deadlines below:
+
+| no | assignment topic        | 2 point deadline | 1 point deadline |  
+| -: | ----------------------- | ---------------: | ---------------: |  
+|  1 | linking views with code |           11 Apr |           13 Apr |  
+|  2 | screen layouts          |           18 Apr |           20 Apr |  
+|  3 | multiple controllers    |            2 May |            4 May |  
+|  4 | lists and data          |            9 May |           11 May |  
+|  5 | data persistence        |           16 May |           18 May |  
+|  6 | object modeling         |           23 May |    (Mon)  29 Mar |  
+
+Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
+
+### Final project
+
+The last programming assignment will be checked off as usual, but its code will be subject to a close inspection on style, design and other factors of quality.
 
 ## Books
 

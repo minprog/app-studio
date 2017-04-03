@@ -37,7 +37,7 @@ With Android app development comes a programming language: Java. Luckily for us,
 </div>
 </div>
 
-.
+<div class="vimeoBadge clear"></div>
 
 ## Helpful videos
 

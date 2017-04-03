@@ -55,8 +55,8 @@ Final grades for the course comprise three major parts:
 | part               | percentage | grading                |  
 | ------------------ | ---------: | ---------------------- |  
 | design writing     |        35% | score out of 5 points  |  
-| projects           |        35% | score out of 12 points |  
-| final project code |        30% | grade 1--10            |  
+| projects           |        45% | score out of 12 points |  
+| final project code |        20% | grade 1--10            |  
 
 A student must submit the final project in order to be eligible for a passing grade, unless granted
 an exception in writing by the course's instructor. No retakes are possible for any part of the

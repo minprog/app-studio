@@ -106,7 +106,7 @@ The last programming assignment will be checked off as usual, but its code will 
 
 No books are required for this course, but the programming books below may be referenced from time to time to indicate useful sections.
 
-- Ed Burnette, [*Hello, Android*](https://pragprog.com/book/eband4/hello-android)
+- Marko Gargenta and Masumi Nakamura, [*Learning Android*](https://pragprog.com/book/eband4/hello-android)
 
 - Matt Neuburg, [*iOS 10 Programming Fundamentals with Swift*](http://shop.oreilly.com/product/0636920055211.do)
 

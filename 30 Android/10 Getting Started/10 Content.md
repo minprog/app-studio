@@ -18,24 +18,13 @@ With Android app development comes a programming language: Java. Luckily for us,
 
 ## Demos
 
+- <iframe src="https://player.vimeo.com/video/211268587" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<div class="media">
-<div class="media-left">
-<iframe src="https://player.vimeo.com/video/211268587" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<div class="media-body">
-<h4 class="media-heading">Een nieuw project opzetten</h4>
-Hoe start je een nieuw project in Android Studio? Waar moet je op letten bij de instellingen en hoe zit een project in elkaar?
-</div>
-<div class="media-left">
-<iframe src="https://player.vimeo.com/video/211286086" width="300" height="200" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<div class="media-body">
-<h4 class="media-heading">Een bestaand project van GitHub importeren</h4>
-Als je (bijvoorbeeld van een stukke computer) een project op GitHub hebt staan, kun je dit importeren in een versie kopie van Android Studio.
-</div>
-</div>
+	Hoe start je een nieuw project in Android Studio? Waar moet je op letten bij de instellingen en hoe zit een project in elkaar?
 
+- <iframe src="https://player.vimeo.com/video/211286086" width="300" height="200" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+	Als je (bijvoorbeeld van een stukke computer) een project op GitHub hebt staan, kun je dit importeren in een versie kopie van Android Studio.
 
 
 ## Helpful videos

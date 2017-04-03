@@ -26,10 +26,6 @@ Hoe start je een nieuw project in Android Studio? Waar moet je op letten bij de 
 
 Heb je een nieuw project gemaakt en wil je het publiceren op GitHub? Doet het via Android Studio.
 
-<iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-Gebruik maken van layouts en van onClick.
-
 <iframe src="https://player.vimeo.com/video/211286086" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Als je (bijvoorbeeld van een stukke computer) een project op GitHub hebt staan, kun je dit importeren in een versie kopie van Android Studio.

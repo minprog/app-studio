@@ -40,31 +40,29 @@ The way to display the various body parts is to create a separate view for each 
 
 ## Requirements
 
-Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
+Your task is to build an app according to the description above. Besides that, there are some specific requirements to take into account:
 
-- You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface.
+- You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface. On iOS, you must use `UIStackView`s, and on Android, you must use `LinearLayout`s.
 
 - Your app should support rotation of the user interface! Most phones support portrait as well as landscape. Users expect most apps to work in either orientation. Make sure that you accomodate this by positioning the user interface elements correctly in both orientations.
 
+- Upon rotation, user's data must be preserved. If the user has enabled, for example, the nose, it should still be enabled after rotating.
+
 ## Getting started
 
-1. For iOS: first create an empty GitHub repository to manage your code.
+1. Create a new project, using this pattern as a name: `studentname-pset1`.
 
-2. Create a new project, using this pattern as a name: `studentname-pset1`. 
+2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
 
-3. Share your project on GitHub.
+3. Remember to commit and push all important changes you make! 
 
-4. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+## Hints
 
-5. Remember to commit and push all important changes you make! 
+- **Android:** You can set whether or not an image (or any other widget) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
 
-## Hints (Android)
+- **Android:** You can preserve user data by using a `savedInstanceState` object.
 
-You can set whether or not an image (or any other widget) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
-
-## Hints (iOS)
-
-You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
+- **iOS:** You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
 
 ## How to submit
 
@@ -74,4 +72,4 @@ You can set whether or not an image (or any other view) is visible on the screen
 
 3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
 
-4. When all is set, paste the GitHub repo URL below, in the textbox!
+4. When all is set, paste the GitHub repo URL in the textbox, below!

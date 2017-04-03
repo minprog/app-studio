@@ -1,8 +1,6 @@
 # Layouts
 
-This week we will cover how to lay out a GUI (*Graphical User Interface*) in Android, as well as much more about many GUI widgets and events that they can handle. We will also briefly touch on the Android action bar.
-
-## Readings
+## Reading
 
 Read chapters 5--7 from *Learning Android*.
 
@@ -16,11 +14,8 @@ In addition to layouts, the Android Action Bar (AKA *App Bar*) is an important p
 
 ![Android Action Bar](https://developer.android.com/images/training/appbar/appbar_sheets.png)
 
+## Demos
 
-## Helpful Videos
+<iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Note: the videos below are only about a year old, but already slightly out of date. If you can't find some part of Android Studio or something isn't working, please confer with your classmates or send an e-mail!
-
-* Derek Banas, [How to make Android apps](https://www.youtube.com/watch?v=ef-6NZjBtW0&index=3&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
-
-* Derek Banas, [Layout, user input, toasts](https://www.youtube.com/watch?v=kmsB_P2xbus&index=4&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh)
+Gebruik maken van layouts en van onClick.

@@ -20,7 +20,7 @@ With Android app development comes a programming language: Java. Luckily for us,
 
 <div class="media">
 <div class="media-left">
-<iframe src="https://player.vimeo.com/video/211286086" width="640" height="400" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/211286086" width="300" height="200" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 <div class="media-body">
 <h4 class="media-heading">Media heading</h4>

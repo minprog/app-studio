@@ -19,13 +19,13 @@ With Android app development comes a programming language: Java. Luckily for us,
 ## Demos
 
 <div class="media">
-  <div class="media-left">
+<div class="media-left">
 <iframe src="https://player.vimeo.com/video/211286086" width="640" height="400" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-    ...
-  </div>
+</div>
+<div class="media-body">
+<h4 class="media-heading">Media heading</h4>
+...
+</div>
 </div>
 
 

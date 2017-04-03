@@ -22,9 +22,21 @@ With Android app development comes a programming language: Java. Luckily for us,
 
 Hoe start je een nieuw project in Android Studio? Waar moet je op letten bij de instellingen en hoe zit een project in elkaar?
 
-<iframe src="https://player.vimeo.com/video/211286086" width="320" height="200" class="media-object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/211286081" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Heb je een nieuw project gemaakt en wil je het publiceren op GitHub? Doet het via Android Studio.
+
+<iframe src="https://player.vimeo.com/video/211268580" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Gebruik maken van layouts en van onClick.
+
+<iframe src="https://player.vimeo.com/video/211286086" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Als je (bijvoorbeeld van een stukke computer) een project op GitHub hebt staan, kun je dit importeren in een versie kopie van Android Studio.
+
+<iframe src="https://player.vimeo.com/video/211268572" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Een link opzetten met GitHub via de command line.
 
 
 ## Helpful videos

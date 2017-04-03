@@ -3,11 +3,6 @@
 *2-point deadline: Tuesday, 11 April, during class.*  
 *1-point deadline: Thursday, 13 April, during class.*
 
-## Staff todo
-
-- Introduce SaveInstanceState (Android) to support rotation
-- Equiv in iOS?
-
 ## Objectives
 
 - Create a first app!
@@ -16,7 +11,6 @@
 
 ## Preparation
 
-- Install [Android Studio](https://developer.android.com/sdk/index.html) or [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835).
 - On Android: [Learn Java and get started with Android Studio](/android/getting-started) and read about [Layouts](/android/layouts).
 - On iOS: [Learn Swift](/ios/getting-started) and get familiar with [Layouts](/ios/layouts).
 

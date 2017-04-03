@@ -77,7 +77,7 @@ In preparation for each of the Monday seminars, a reading assignment will be rel
 
 In class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
 
-- 0 points: no clear effort or quite unreadable language
+- 0 points: less than clear effort or quite unreadable language
 - 1 point: a clear effort where answers show that you have read the text (expected level)
 - 2 points: excellent answers that show close reading and making connections between texts
 

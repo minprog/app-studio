@@ -1,7 +1,7 @@
 # Mr. Potatohead
 
-*First deadline: Wednesday, 15 February, at any time (2 points).*  
-*Second deadline: Friday, 24 February, during class (1 point).*
+*2-point deadline: Tuesday, 11 April, during class.*  
+*1-point deadline: Thursday, 13 April, during class.*
 
 ## Staff todo
 

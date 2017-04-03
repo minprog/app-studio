@@ -12,9 +12,14 @@ We now move to setting up Android Studio. Because developing Android Apps makes 
 
 Once Android Studio is set up, it walks you through the steps towards creating your first *Hello World* app!
 
-## Java syntax
+## Learning Java
 
-With Android app development comes a programming language: Java. Luckily for us, Java has a lot in common with Python and therefore the basics will hold no secrets for you there. However, some syntax is slightly different compared to other languages you know, so take a quick look at [Java Basics for Android Development](http://blog.teamtreehouse.com/java-basics-for-android-development-part-2) to make sure you get the syntax right. 
+With Android app development comes a programming language: Java. Luckily for us, Java has a lot in common with Python and therefore the basics will hold no secrets for you there. However, some syntax is slightly different compared to other languages you know.
+
+- Read [Java Basics for Android Development](http://blog.teamtreehouse.com/java-basics-for-android-development-part-2) to make sure you get the syntax right.
+
+- Watch this video from Derek Banas: [Java basics](https://www.youtube.com/watch?v=WPvGqX-TXP0&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=2)
+
 
 ## Demos
 
@@ -34,10 +39,6 @@ Als je (bijvoorbeeld van een stukke computer) een project op GitHub hebt staan, 
 
 Een link opzetten met GitHub via de command line.
 
-
-## Helpful videos
-
-* Derek Banas, [Java basics](https://www.youtube.com/watch?v=WPvGqX-TXP0&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=2)
 
 ## Code Style
 

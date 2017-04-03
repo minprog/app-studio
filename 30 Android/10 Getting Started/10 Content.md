@@ -37,6 +37,8 @@ With Android app development comes a programming language: Java. Luckily for us,
 </div>
 </div>
 
+.
+
 ## Helpful videos
 
 * Derek Banas, [Java basics](https://www.youtube.com/watch?v=WPvGqX-TXP0&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=2)

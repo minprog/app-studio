@@ -12,6 +12,8 @@ This week, we'll finish reading Cadence and Slang and you are going to write a r
 
 ## Assignment
 
+https://www.nngroup.com/articles/discount-usability-20-years/
+
 Evaluate this week's app using Nielsen's [Usability heuristics for user interface design](http://www.nngroup.com/articles/ten-usability-heuristics/
 ). List <strong>10 problems</strong> with the user interface. You do not have to cover all heuristics!
 

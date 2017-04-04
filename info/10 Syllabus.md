@@ -64,18 +64,17 @@ course.
 
 ### Design writing
 
-In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. You are to take to class a printed version of your answers to these questions. Class dates are:
+In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. Besides handing it in by the deadline, you are to take to class a printed version of your answers to these questions. Deadlines are:
 
-| no | class date | note                     |  
+| no | deadline   | note                     |  
 | -: | ---------: | ------------------------ |  
-|  1 |      3 Apr | first class, no deadline |  
-|  2 |     10 Apr |                          |  
-|  3 |      1 May |                          |  
-|  4 |      8 May |                          |  
-|  5 |     15 May |                          |  
-|  6 |     22 May |                          |  
+|  1 |      9 Apr |                          |  
+|  2 |     31 Apr |                          |  
+|  3 |      7 May |                          |  
+|  4 |     14 May |                          |  
+|  5 |     21 May |                          |  
 
-In class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
+Before and in class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
 
 - 0 points: less than clear effort or quite unreadable language
 - 1 point: a clear effort where answers show that you have read the text (expected level)

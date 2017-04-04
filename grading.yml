@@ -71,6 +71,8 @@ grades:
             points: integer
         calculation: points
         hide_calculated: true
+    code:
+        type: float
 
 calculation:
     normal:

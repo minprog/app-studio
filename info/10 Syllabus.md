@@ -64,18 +64,17 @@ course.
 
 ### Design writing
 
-In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. You are to take to class a printed version of your answers to these questions. Class dates are:
+In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. Besides handing it in by the deadline, you are to take to class a printed version of your answers to these questions. Deadlines are:
 
-| no | class date | note                     |  
+| no | deadline   | note                     |  
 | -: | ---------: | ------------------------ |  
-|  1 |      3 Apr | first class, no deadline |  
-|  2 |     10 Apr |                          |  
-|  3 |      1 May |                          |  
-|  4 |      8 May |                          |  
-|  5 |     15 May |                          |  
-|  6 |     22 May |                          |  
+|  1 |      9 Apr |                          |  
+|  2 |     31 Apr |                          |  
+|  3 |      7 May |                          |  
+|  4 |     14 May |                          |  
+|  5 |     21 May |                          |  
 
-In class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
+Before and in class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
 
 - 0 points: less than clear effort or quite unreadable language
 - 1 point: a clear effort where answers show that you have read the text (expected level)
@@ -106,11 +105,11 @@ The last programming assignment will be checked off as usual, but its code will 
 
 No books are required for this course, but the programming books below may be referenced from time to time to indicate useful sections.
 
-- Marko Gargenta and Masumi Nakamura, [*Learning Android*](https://pragprog.com/book/eband4/hello-android)
+- Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
 
 - Matt Neuburg, [*iOS 10 Programming Fundamentals with Swift*](http://shop.oreilly.com/product/0636920055211.do)
 
-- [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
+- Apple, [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
 ## Collaboration
 

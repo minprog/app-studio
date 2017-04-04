@@ -105,11 +105,11 @@ The last programming assignment will be checked off as usual, but its code will 
 
 No books are required for this course, but the programming books below may be referenced from time to time to indicate useful sections.
 
-- Marko Gargenta and Masumi Nakamura, [*Learning Android*](https://pragprog.com/book/eband4/hello-android)
+- Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
 
 - Matt Neuburg, [*iOS 10 Programming Fundamentals with Swift*](http://shop.oreilly.com/product/0636920055211.do)
 
-- [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
+- Apple, [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
 ## Collaboration
 

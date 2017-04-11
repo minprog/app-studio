@@ -21,7 +21,7 @@
 
 Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
 
-All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ## Helpful reminders
 

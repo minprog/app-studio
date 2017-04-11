@@ -11,14 +11,14 @@
 
 ## Preparation
 
-- On Android: Read about [Multiple Activities](/android/multiple-activities).
+- On Android: Practice [Java](/android/java) and read about [Multiple Activities](/android/multiple-activities).
 - On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
 
 ## Assessment
 
 Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
 
-All students must ordinarily submit this and all other problem sets to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ## Fun with apps
 
@@ -50,7 +50,9 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should prompt for user input and use that input to complete the story.
 
-- Your app should support rotation of the user interface.
+- Your app should properly support rotation of the user interface.
+
+- Your app should provide proper back navigation. When showing the final story, going "back" should immediately return to the start screen, instead of allowing to change words etc.
 
 ## Getting started
 

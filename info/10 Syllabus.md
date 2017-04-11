@@ -89,13 +89,15 @@ Programming assignments build up quickly over the weeks, which is why it is not 
 | no | assignment topic        | 2 point deadline | 1 point deadline |  
 | -: | ----------------------- | ---------------: | ---------------: |  
 |  1 | linking views with code |           11 Apr |           13 Apr |  
-|  2 | screen layouts          |           18 Apr |           20 Apr |  
-|  3 | multiple controllers    |            2 May |            4 May |  
-|  4 | lists and data          |            9 May |           11 May |  
-|  5 | data persistence        |           16 May |           18 May |  
-|  6 | object modeling         |           23 May |    (Mon)  29 Mar |  
+|  2 | multiple controllers    |           18 Apr |           20 Apr |  
+|  3 | lists and APIs          |            2 May |            4 May |  
+|  4 | state and databases     |            9 May |           11 May |  
+|  5 | model classes           |           16 May |           18 May |  
+|  6 | online databases        |           23 May |    (Mon)  29 Mar |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
+
+All students must ordinarily submit all programming projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 ### Final project
 

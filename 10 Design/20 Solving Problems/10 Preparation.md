@@ -15,16 +15,18 @@ The questions below will be the topic of our next class on Monday. Students will
 
 ## Questions
 
-The questions below will concern any app you choose, as long it is on your phone and you can test it. Preferably, choose an app that you really like or one that is really "meh" to you. Provide a screen shot and a paragraph description of the application. Use the concepts from the readings to answer the following questions:
+The assignment below will concern any app you choose (not the same as last week), as long it is on your phone and you can test it. Preferably, choose an app that you really like or one that is really "meh" to you. Provide a screen shot and a paragraph description of the application. Use the concepts from the readings to answer the following questions:
 
-1. What market segments can you define for this app? In other words, does it serve different *kinds* of people? Give elaborate descriptions of at least three different segments.
+- Make a list of needs that could apply to this app. Model it after exhibit 3-6 in the book. Reminder: "needs" are not features!
 
-2. List examples of needs that could be fulfilled for the three example segments served by this app. Have a look at competing apps to come up with needs that may not be fulfilled by the app you chose.
+Note: if the question seem hard to answer for your chosen app, choose another one.
 
-Now, imagine an app that aims to provide travellers with interesting places to visit around their current location.
+Secondly, imagine a yet-to-be designed app that aims to provide travellers with interesting places to visit around their current location.
 
-3. Describe a grammar for such an app. Feel free to define a number of discrete options that make interesting differences in the potential design of the app.
+- Create a detailed representation of the design space for such an app. Feel free to define a number of discrete options that make interesting differences in the potential design of the app.
 
-	Use a visual/hierarchical representation in your answer so readers can quickly understand what you're thinking of. This might take a few tries to do in a nice way.
+	Use a visual or hierarchical representation in your answer so readers can quickly understand what you're thinking of. This might take a few tries to do in a nice way.
+	
+	Bonus point if you create a clear representation like "shed world" and provide a brief but convincing argument about why you chose the various elements of your tuple.
 
-Aim for ~100-300 words per answer. Note: if the questions seem hard to answer for your chosen app, choose another one.
+Looking at both assignments, it is probably safe to say the each of those should fill a sheet of paper (or more). Feel free to draw your answers instead of typing them.

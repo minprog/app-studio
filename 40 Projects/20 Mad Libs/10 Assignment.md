@@ -1,18 +1,18 @@
 # Mad Libs
 
-*First deadline: Friday, 24 February, during class (2 points).*  
-*Second deadline: Tuesday, 28 February, during class (1 point).*
+*2-point deadline: Tuesday, 18 April, during class.*  
+*1-point deadline: Thursday, 20 April, during class.*
 
 ## Objectives
 
 - Parse text files containing information for your app.
-- Practice with using multiple controllers.
+- Practice with the use of multiple controllers.
 - Pass data between controllers.
 
 ## Preparation
 
 - On Android: Practice [Java](/android/java) and read about [Multiple Activities](/android/multiple-activities).
-- On iOS: Read about [Multiple Controllers](/ios/multiple-controllers).
+- On iOS: Practice [Swift](/ios/swift) and read about [Multiple Controllers](/ios/multiple-controllers).
 
 ## Assessment
 
@@ -46,13 +46,15 @@ The code for reading the story text file, breaking it apart, looking for the pla
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- Your app should be built using the `Story` class, which you will pass a reference to the file that you open in a controller.
+- Your app should be built using the `Story` class.
 
-- Your app should prompt for user input and use that input to complete the story.
+- Your app should properly display on devices of various dimensions.
 
 - Your app should properly support rotation of the user interface.
 
-- Your app should provide proper back navigation. When showing the final story, going "back" should immediately return to the start screen, instead of allowing to change words etc.
+- Your app should provide proper back navigation. In this case, when showing the final story, going "back" should immediately return to the start screen, instead of allowing to change words etc. In the concept of the game it makes no sense to be able to change the words.
+
+- For back navigation in your app, your app must use the standard back button (Android) or a navigation controller (iOS).
 
 ## Getting started
 
@@ -68,17 +70,21 @@ Your task is to build an app according to the description above. On top of that,
 
 6. Remember to commit and push all important changes you make! 
 
-## Tips (Android)
+## Android tips
 
-To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
+- To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this.
 
-When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `Scanner` object to the constructor of the `Story` class.
+- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass a `Scanner` object to the constructor of the `Story` class.
 
-## Tips (iOS)
+- On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
 
-To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+## iOS tips
 
-When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
+- To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+
+- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass a `String` object to the constructor of the `Story` class.
+
+- On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [the Apple docs](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html) to find out how.
 
 ## How to submit
 

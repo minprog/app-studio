@@ -1,7 +1,7 @@
 # Multiple Controllers
 
-Chapter 5 from *Introducing iOS 9* helps you understand multi-screen apps.
+- Read the [View Controller Programming Guide](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/) from Apple.
 
-# This week's demonstration
+- Check out the demo below.
 
-![embed](https://player.vimeo.com/video/163546696)
+![embed](https://player.vimeo.com/video/212707339)

@@ -50,13 +50,15 @@ Your task is to build an app according to the description above. Besides that, t
 
 3. Remember to commit and push all important changes you make! 
 
-## Hints
+## Android tips
 
-- **Android:** You can set whether or not an image (or any other widget) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
+- You can set whether or not an image (or any other control) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
 
-- **Android:** You can preserve user data by using a `savedInstanceState` object.
+- You can preserve user data by using a `savedInstanceState` object.
 
-- **iOS:** You can set whether or not an image (or any other view) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
+## iOS tips
+
+- You can set whether or not an image (or any other control) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
 
 ## How to submit
 

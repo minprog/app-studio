@@ -66,13 +66,13 @@ course.
 
 In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. Besides handing it in by the deadline, you are to take to class a printed version of your answers to these questions. Deadlines are:
 
-| no | deadline   | note                     |  
-| -: | ---------: | ------------------------ |  
-|  1 |      9 Apr |                          |  
-|  2 |     31 Apr |                          |  
-|  3 |      7 May |                          |  
-|  4 |     14 May |                          |  
-|  5 |     21 May |                          |  
+| no |     deadline |  
+| -: | -----------: |  
+|  1 | Sun    9 Apr |  
+|  2 | Sun   30 Apr |  
+|  3 | Sun    7 May |  
+|  4 | Sun   14 May |  
+|  5 | Sun   21 May |  
 
 Before and in class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
 

@@ -4,17 +4,17 @@ Week 1:
 Week 2:
     'Project 2: Mad Libs': '/projects/mad-libs'
     'Writing 2: Solving Problems': '/design/solving-problems'
-Week 3:
+Week 3-4:
     'Project 3: Watch List': '/projects/watch-list'
-    'Writing 3: Style and Design': '/design/style-and-design'
-Week 4:
-    'Project 4: To-do List': '/projects/to-do-list'
-    'Writing 4: Simplicity': '/design/simplicity'
+    'Writing 2: Solving Problems': '/design/solving-problems'
 Week 5:
-    'Project 5: Many Lists': '/projects/many-lists'
-    'Writing 5: Heuristic evaluation': '/design/heuristic-evaluation'
+    'Project 4: To-do List': '/projects/to-do-list'
+    'Writing 3: Style and Design': '/design/style-and-design'
 Week 6:
+    'Project 5: Many Lists': '/projects/many-lists'
+    'Writing 4: Simplicity': '/design/simplicity'
+Week 7:
     'Project 6: Your Own': '/projects/your-own'
-    'Writing 6: Evaluation II': '/design/evaluation-ii'
+    'Writing 5: Heuristic evaluation': '/design/heuristic-evaluation'
     'Better Code Hub': '/guides/better-code-hub'
     'Code Review': '/guides/code-reviews'

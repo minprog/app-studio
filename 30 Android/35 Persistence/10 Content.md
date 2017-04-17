@@ -10,7 +10,6 @@ To get a better understanding of how SharedPreferences works, read this tutorial
 
 [![Saving Data](http://i.imgur.com/Q1vUnys.png)](https://developer.android.com/training/basics/data-storage/shared-preferences.html)
 
-Additionally, a short [explanation](http://www.quicktips.in/handling-activity-state-using-saved-instance-state-bundle/) on SavedInstanceState should get you started on Bundles.
 
 ## Helpful Videos
 

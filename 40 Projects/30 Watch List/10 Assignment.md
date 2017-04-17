@@ -10,12 +10,8 @@
 
 ## Preparation
 
-- On Android:
-	- Watch the [AsyncTask](/android/asynctask) demo.
-	- Read about [Persistence](/android/persistence) and [Lists](/android/lists).
-- On iOS:
-	- Watch the [demo](/ios/table-views).
-	- Read about [Table Views](/ios/table-views).
+- On Android: [AsyncTask](/android/asynctask), [Persistence](/android/persistence) and [Lists](/android/lists).
+- On iOS: [Table Views](/ios/table-views).
 
 ## Assessment
 
@@ -49,15 +45,17 @@ Each of these guides provides clear recommendations of how apps are supposed to 
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- Your app should support rotation of the user interface.
+- Your app should properly display on devices of various dimensions.
+
+- Your app should properly support rotation of the user interface.
+
+- Your app's back navigation should always be simple.
 
 - Your app should use standard list views combined with an adapter (Android) or delegation (iOS).
 
 - Your app should save and persist the list of movies using `SharedPreferences` (Android) or `NSUserDefaults` (iOS).
 
-- The app's back navigation should always be simple.
-
-- No need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
+Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
 
 ## Getting started
 
@@ -71,19 +69,17 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Tips (Android)
 
-To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this. For back navigation in your app, you should use the hardware back button, not implement one in the UI.
+- If you need to handle events other than `onClick`, you might need to implement a listener class. Do not use an anonymous listener class (as is often used on Stack Overflow)! Instead, use a named listener class. [Here's an example](http://www.fredosaurus.com/notes-java/GUI/events/inner_class_listener.html).
 
 ## Tips (iOS)
 
-To pass stuff around in your app, you can use the `prepare(for segue: UIStoryboardSegue, sender: Any?)` method. For back navigation in your app, you should use a navigation controller.
+- You can learn more about basic networking by reading chapter 24 of "Programming iOS 9" by Matt Neuburg (you can find this book on the shelf in A1.16).
 
-You can learn more about basic networking by reading chapter 24 of "Programming iOS 9" by Matt Neuburg (you can find this book on the shelf in A1.16).
+- Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
 
-Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
+- Learn more about [guards in Swift](http://ericcerney.com/swift-guard-statement/).
 
-Learn more about [guards in Swift](http://ericcerney.com/swift-guard-statement/).
-
-Converting HTTP to HTTPS (when supported by the server) can be done by inserting an 's' into the string.
+- Converting HTTP to HTTPS (when supported by the server) can be done by inserting an 's' into the string.
 
 ## How to submit
 

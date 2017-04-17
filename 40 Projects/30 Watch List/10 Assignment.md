@@ -47,13 +47,15 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should properly display on devices of various dimensions.
 
-- Your app should properly support rotation of the user interface.
+- Your app should properly support rotation of the user interface (no data loss).
 
 - Your app's back navigation should always be simple.
 
-- Your app should use standard list views combined with an adapter (Android) or delegation (iOS).
+- Your app should use standard list views combined with an adapter (Android) or table views with delegation (iOS).
 
 - Your app should save and persist the list of movies using `SharedPreferences` (Android) or `NSUserDefaults` (iOS).
+
+- Listeners may not be anonymous (see Android Tips).
 
 Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
 

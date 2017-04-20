@@ -53,7 +53,7 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should use standard list views combined with an adapter (Android) or table views with delegation (iOS).
 
-- Your app should save and persist the list of movies using `SharedPreferences` (Android) or `NSUserDefaults` (iOS).
+- Your app should save and persist the list of movies using `SharedPreferences` (Android) or `UserDefaults` (iOS).
 
 - Listeners may not be anonymous (see Android Tips).
 

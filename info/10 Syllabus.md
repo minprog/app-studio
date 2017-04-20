@@ -18,11 +18,10 @@ Martijn Stegeman
 *instructor*  
 <help@mprog.nl>
 
-Tim van Elsloo  
-Hella Haanstra  
-Gracia Redder  
+Tim van Elsloo 
 Caitlin Schäffers  
 Renske Talsma
+Marijn Jansen
 
 ## Prerequisites
 
@@ -88,12 +87,12 @@ Programming assignments build up quickly over the weeks, which is why it is not 
 
 | no | assignment topic        | 2 point deadline | 1 point deadline |  
 | -: | ----------------------- | ---------------: | ---------------: |  
-|  1 | linking views with code |      Tue  11 Apr |      Tue  13 Apr |  
-|  2 | multiple controllers    |      Tue  18 Apr |      Tue  20 Apr |  
-|  3 | lists and APIs          |      Tue   2 May |      Tue   4 May |  
-|  4 | state and databases     |      Tue   9 May |      Tue  11 May |  
-|  5 | model classes           |      Tue  16 May |      Tue  18 May |  
-|  6 | online databases        |      Tue  23 May |      Mon  29 Mar |  
+|  1 | linking views with code |      Tue  11 Apr |      Thu  13 Apr |  
+|  2 | multiple controllers    |      Tue  18 Apr |      Thu  20 Apr |  
+|  3 | lists and APIs          |      Tue   2 May |      Thu   4 May |  
+|  4 | state and databases     |      Tue   9 May |      Thu  11 May |  
+|  5 | model classes           |      Tue  16 May |      Thu  18 May |  
+|  6 | online databases        |      Tue  23 May |      Mon  29 May |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
 

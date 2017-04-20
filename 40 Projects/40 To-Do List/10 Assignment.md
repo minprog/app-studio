@@ -11,7 +11,7 @@
 
 ## Preparation
 
-- On Android: read about [SQLite](/android/sqlite), the [activity life cycle](/android/lifecycle) and [data persistence](/android/persistence).
+- On Android: read about [SQLite](/android/sqlite) and the [activity life cycle](/android/state).
 - On iOS: watch the demo about [SQLite](/ios/sqlite) and [state restoration](/ios/state).
 
 ## Assessment

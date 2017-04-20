@@ -11,7 +11,7 @@
 ## Preparation
 
 - On Android: [AsyncTask](/android/asynctask), [Persistence](/android/persistence) and [Lists](/android/lists).
-- On iOS: [Table Views](/ios/table-views).
+- On iOS: [Table Views](/ios/table-views) and [Persistence](/ios/persistence).
 
 ## Assessment
 

@@ -75,10 +75,6 @@ Note: no need to use the API in an efficient manner. Normally, you would cache a
 
 ## Tips (iOS)
 
-- You can learn more about basic networking by reading chapter 24 of "Programming iOS 9" by Matt Neuburg (you can find this book on the shelf in A1.16).
-
-- Read more about [loading images from an URL](http://stackoverflow.com/questions/24231680/loading-image-from-url) and [Grand Central Dispatch](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html).
-
 - Learn more about [guards in Swift](http://ericcerney.com/swift-guard-statement/).
 
 - Converting HTTP to HTTPS (when supported by the server) can be done by inserting an 's' into the string.

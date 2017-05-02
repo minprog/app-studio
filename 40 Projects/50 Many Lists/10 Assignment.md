@@ -8,6 +8,7 @@
 - Making your app more complex by introducing multiple lists
 - Separate concerns
 - Implement a *singleton*
+- Use [Better Code Hub](/guides/better-code-hub) to ensure that your code is clean and well!
 
 ## Preparation
 

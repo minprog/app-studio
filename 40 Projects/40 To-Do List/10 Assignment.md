@@ -8,6 +8,7 @@
 - Save data between sessions.
 - Make sure that your app returns to the previous screen, no matter what.
 - Use SQLite.
+- Use [Better Code Hub](/guides/better-code-hub) to ensure that your code is clean and well!
 
 ## Preparation
 

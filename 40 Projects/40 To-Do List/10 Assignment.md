@@ -5,15 +5,15 @@
 
 ## Objectives
 
-- Save data between sessions.
+- Save app data between sessions.
 - Make sure that your app returns to the previous screen, no matter what.
 - Use SQLite.
-- Use [Better Code Hub](/guides/better-code-hub) to ensure that your code is clean and well!
+- Clean up your code.
 
 ## Preparation
 
-- On Android: read about [SQLite](/android/sqlite) and the [activity life cycle](/android/state).
-- On iOS: watch the demo about [SQLite](/ios/sqlite) and [state restoration](/ios/state).
+- On Android: read about [SQLite](/android/sqlite), the [activity life cycle](/android/state) and [Better Code Hub](/guides/better-code-hub).
+- On iOS: watch the demo about [SQLite](/ios/sqlite), [state restoration](/ios/state) and [Better Code Hub](/guides/better-code-hub).
 
 ## Assessment
 
@@ -21,19 +21,25 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## I forgot to do...
+## The things I really ought to do
 
-This week you will write a simple to-do list app that has a list of tasks that the user needs to complete. Initially the app contains three sample to-do items that explain how the app works. If the user types text into a bottom input field and clicks an *Add* button, the new item will be added to the top or bottom of the list. Of course, users must be able to check off *and* delete items, as well!
+This week you will write a simple to-do list app that has a list of tasks that the user needs to complete. Initially the app contains three sample to-do items that explain how the app works. If the user types text into a bottom input field and clicks an *Add* button, the new item will be added to the top or bottom of the list. Of course, users must be able to mark items as "done", and delete them as well!
 
 ## Requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
-- There are various methods to achieve deleting and checking off. It is up to you to present this in a user-friendly manner.
+- Your app should properly display on devices of various dimensions.
 
-- You must make the app as robust as possible: todos must be saved in a database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
+- Your app should properly support rotation of the user interface (no data loss).
 
-- Your app should support, in a user-friendly way, rotation of the device.
+- Your app's back navigation should always be simple.
+
+- To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
+
+- Your app should properly return to the last screen viewed, even if killed for some reason.
+
+- Your app's readme should show the [Better Code Hub](/guides/better-code-hub) badge. No need to refactor your code, though!
 
 ## Getting started
 
@@ -43,29 +49,19 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Tips (Android)
 
-- The todos should be displayed as a `ListView` of tasks that the user needs to complete. If the user types text into a bottom `EditText` and clicks an *Add* button, the new item will be added.
+- The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
 
-- A common way to allow deletion in lists is to respond when the user performs a "long click" (pressing and holding on an item). You can do this by calling the `setOnItemLongClickListener` method of your list and passing an anonymous `AdapterView.OnItemLongClickListener` instance. Android Studio can help you auto-generate the skeletons of these anonymous listener classes if you press *Ctrl-Space* in the editor at the right place in the code.
+- Allow deletion of items through a "long click" (pressing and holding on an item). Use the  `setOnItemLongClickListener` method of your list. Do not use anonymous listeners!
 
-	![Screenshot from Android](todo.png)
-
-	*Figure: User long-clicking on second list item to delete it*
-
-- If the items in your to-do list are stored into an `ArrayList`, the app's GUI won't notice when you add or remove an item from the list. That is, you'll modify the `ArrayList` state but the graphical list on the screen won't update to match. To fix this, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter` to tell it that the underlying array list has changed. To be able to do this, of course, you'll have to save your `ArrayList` and your `ArrayAdapter` as private fields inside your activity.
+- To update the list whenever your data changes, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter`.
 
 - Use a `Bundle` to save the list's data during rotation.
 
 ## Tips (iOS)
 
-- The to-dos will be displayed as a `Table View` of tasks that the user needs to complete. If the user types text into a bottom `Text Field` and clicks an Add button, the new item will be added.
+- The to-dos should be displayed as a `Table View` of tasks that the user needs to complete.
 
-- It's also good to have a way to remove items from the list. You could achieve this with the `commitEditingStyle` delegate function.
-
-	![Screenshot from iOS](todo_ios.png)
-
-	*Figure: User swiping on the third list item to delete it.*
-
-- Make sure you connect your table view with the datasource and delegate from the Storyboard to your Swift-file.
+- Allow deletion of items with the `commitEditingStyle` delegate function.
 
 ## How to submit
 

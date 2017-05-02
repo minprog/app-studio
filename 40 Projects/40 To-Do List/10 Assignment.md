@@ -51,17 +51,17 @@ Your task is to build an app according to the description above. On top of that,
 
 - The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
 
-- Allow deletion of items through a "long click" (pressing and holding on an item). Use the  `setOnItemLongClickListener` method of your list. Do not use anonymous listeners!
+- To-do items should be displayed in the list view as custom views. Design these to be able to display an item text as well as a check mark.
 
-- To update the list whenever your data changes, you have to call the method `notifyDataSetChanged()` on your `ArrayAdapter`.
-
-- Use a `Bundle` to save the list's data during rotation.
+- Allow deletion of items through a "long click" (pressing and holding on an item). Use the `setOnItemLongClickListener` method of your list. However, do not use anonymous listeners!
 
 ## Tips (iOS)
 
 - The to-dos should be displayed as a `Table View` of tasks that the user needs to complete.
 
-- Allow deletion of items with the `commitEditingStyle` delegate function.
+- To-do items should be displayed in the table view as custom (prototype) cells. Design these to be able to display an item text as well as a check mark.
+
+- Allow deletion of items with the [`commitEditingStyle`](https://www.ioscreator.com/tutorials/delete-rows-table-view-ios8-swift) delegate function.
 
 ## How to submit
 

@@ -14,7 +14,7 @@ The questions below will be the topic of our next class on Monday. Students will
 
 1. The book contains a lot of advice. Some paragraphs tell you to design in a particular way or pose constraints on how to proceed. Now, some of the advice is targeted at the design *process*, while other advice concerns the *product* that you are designing. Provide a list of 5 pieces of advice (not mentioned in questions below) and include for each an argument as to why and how that advice applies to app design *(100-200 words, skip anything that does not apply to app design)*.
 
-2. Disabato discusses product's initial state. Download two apps of similar purpose (that you normally do not use) and discuss difference between their initial state *(100-200 words, use bullet points, but show your depth of understanding)*.
+2. Disabato discusses product's *initial state*. Download two apps of similar purpose (that you normally do not use) and discuss difference between their initial state *(100-200 words, use bullet points, but show your depth of understanding)*.
 
 3. In paragraph 2.8, the *context* of apps is discussed. An important property of context is that it is usually very different for different products. Describe three examples of context that are highly relevant to mobile apps.
 

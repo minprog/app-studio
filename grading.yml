@@ -1,64 +1,86 @@
 grades:
     app1:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
     app2:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
     app3:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
     app4:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
     app5:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
     app6:
-        type: float
+        type: integer
         subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+            points: integer
+        calculation: points
         hide_calculated: true
+    des1:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    des2:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    des3:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    des4:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    des5:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    des6:
+        type: integer
+        subgrades:
+            points: integer
+        calculation: points
+        hide_calculated: true
+    code:
+        type: float
 
 calculation:
     normal:
-        tech: 1
+        projects: 35
+        design: 35
+        code: 30
 
-tech:
+projects:
     grades:
         app1: 1
         app2: 1
@@ -66,3 +88,16 @@ tech:
         app4: 1
         app5: 1
         app6: 1
+
+design:
+    grades:
+        des1: 1
+        des2: 1
+        des3: 1
+        des4: 1
+        des5: 1
+        des6: 1
+
+code:
+    grades:
+        code: 1

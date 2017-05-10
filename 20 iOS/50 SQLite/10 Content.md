@@ -10,4 +10,4 @@ Take a look at [this](https://github.com/stephencelis/SQLite.swift) repository t
 
 ## This week's demonstration
 
-![embed](https://player.vimeo.com/video/164134435)
+![embed](https://player.vimeo.com/video/193512695)

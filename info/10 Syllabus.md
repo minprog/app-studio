@@ -18,9 +18,9 @@ Martijn Stegeman
 *instructor*  
 <help@mprog.nl>
 
-Tim van Elsloo 
+Tim van Elsloo  
 Caitlin Schäffers  
-Renske Talsma
+Renske Talsma  
 Marijn Jansen
 
 ## Prerequisites

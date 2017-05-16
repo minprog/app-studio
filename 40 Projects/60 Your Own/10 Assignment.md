@@ -1,8 +1,8 @@
 # Build Your Own!
 
-*First deadline: Tuesday, 21 March, during class (2 points).*  
-*Second deadline: Tuesday, 28 March, by appointment (1 point).*  
-*Code quality deadline: Tuesday, 28 March, anytime.*
+*2-point functional deadline: Tuesday, 23 May, during class.*  
+*1-point functional deadline: Monday, 29 May, during class.*  
+*Code Quality deadline: Monday, 29 May.*
 
 ## Objectives
 

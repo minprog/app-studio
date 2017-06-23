@@ -1,8 +1,5 @@
 # Watch List
 
-*First deadline: Tuesday, 2 May, during class (2 points).*  
-*Second deadline: Tuesday, 4 May, during class (1 point).*
-
 ## Objectives
 
 - Practice with user interface design.
@@ -56,6 +53,11 @@ Your task is to build an app according to the description above. On top of that,
 - Your app should save and persist the list of movies using `SharedPreferences` (Android) or `UserDefaults` (iOS).
 
 - Listeners may not be anonymous (see Android Tips).
+
+- Users should be able to search for movies, read descriptions and view poster art.
+
+- Your watchlist may not allow users to add duplicate movies and must notify the user elegantly. 
+
 
 Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
 

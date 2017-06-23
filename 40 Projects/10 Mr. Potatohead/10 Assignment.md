@@ -1,8 +1,5 @@
 # Mr. Potatohead
 
-*2-point deadline: Tuesday, 11 April, during class.*  
-*1-point deadline: Thursday, 13 April, during class.*
-
 ## Objectives
 
 - Create a first app!
@@ -54,7 +51,7 @@ Your task is to build an app according to the description above. Besides that, t
 
 - You can set whether or not an image (or any other control) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
 
-- You can preserve user data by using a `savedInstanceState` object.
+- You can preserve user data by using the `onSaveInstanceState()` method. 
 
 ## iOS tips
 

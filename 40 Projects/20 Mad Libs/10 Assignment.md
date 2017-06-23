@@ -1,8 +1,5 @@
 # Mad Libs
 
-*2-point deadline: Tuesday, 18 April, during class.*  
-*1-point deadline: Thursday, 20 April, during class.*
-
 ## Objectives
 
 - Parse text files containing information for your app.
@@ -47,6 +44,8 @@ The code for reading the story text file, breaking it apart, looking for the pla
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
 - Your app should be built using the `Story` class.
+
+- The user should be allowed to  either pick one of the stories, or have it randomly selected.
 
 - Your app should properly display on devices of various dimensions.
 

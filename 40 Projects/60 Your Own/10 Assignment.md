@@ -1,9 +1,5 @@
 # Build Your Own!
 
-*2-point functional deadline: Tuesday, 23 May, during class.*  
-*1-point functional deadline: Monday, 29 May, during class.*  
-*Code Quality deadline: Monday, 29 May.*
-
 ## Objectives
 
 - Understand how to use APIs to get structured open data.
@@ -46,7 +42,7 @@ This is the full set of requirements that we ask you to accommodate when designi
 
 - Firebase must be used to save user data.
 - Firebase may be used to allow user logins, but data may also be shared between phones without requiring logins.
-- Very small user data must be persisted on the phone, so as to provide a responsive app in case of network problems.
+- If practical, very small user data must be persisted on the phone, so as to provide a responsive app in case of network problems.
 - Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once.
 - Even if killed, the app should generally resume in the same state as before.
 - Code should be organized well (keeping in mind the advice from Better Code Hub).

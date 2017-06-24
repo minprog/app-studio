@@ -1,8 +1,5 @@
 # Many To-Do Lists
 
-*2-point deadline: Tuesday, 16 May, during class.*  
-*1-point deadline: Thursday, 18 May, during class.*
-
 ## Objectives
 
 - Making your app more complex by introducing multiple lists
@@ -32,19 +29,19 @@ Figure: iOS Master-Detail application
 
 Your task is to build an app according to the description above. In addition, there are some specific requirements that you must take into account:
 
-- You will need to add a new screen for showing the different lists that are in the app, as well as a screen for adding a new list.
-
-- Every to-do item needs to have *at least* `title` and `completed` fields, additional fields may be implemented as well.
-
-- The user interface should clearly represent whether a todo item has been marked as "done".
+- You will need to add a new screen for showing the different lists that are in the app, as well as a screen for adding a new list. You must do this using a fragment (Android) or TODO (iOS).
 
 - The user must be able to delete single items, as well as whole lists.
+
+- Users must be able to mark items as complete and delete them, but also edit their contents!
 
 - Make sure that the app will always start *exactly* where the user left off in the app (state restoration).
 
 - Your app should support, in a user-friendly way, rotation of the device.
 
 - You must implement a singleton for managing the lists (see below).
+
+
 
 ## Getting started
 

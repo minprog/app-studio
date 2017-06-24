@@ -1,8 +1,5 @@
 # To-do List
 
-*First deadline: Tuesday, 7 March, during class (2 points).*  
-*Second deadline: Tuesday, 14 March, during class (1 point).*
-
 ## Objectives
 
 - Save app data between sessions.
@@ -35,7 +32,15 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app's back navigation should always be simple.
 
+- To-dos must be represented in your code by a model class. 
+
+- Every to-do item needs to have *at least* `title` and `completed` fields, additional fields may be implemented as well.
+
+- The user interface should clearly represent whether a todo item has been marked as "done".
+
 - To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
+
+- Users must be able to mark items as complete and delete them.
 
 - Your app should properly return to the last screen viewed, even if killed for some reason.
 

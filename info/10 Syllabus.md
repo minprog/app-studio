@@ -1,6 +1,4 @@
-# Native App Studio
-
-*Edition: Spring 2017*
+# Native App Studio<br><small>Studiewijzer / Syllabus</small><br><small>Fall 2017</small>
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -18,8 +16,6 @@ Martijn Stegeman
 *instructor*  
 <help@mprog.nl>
 
-Tim van Elsloo  
-Caitlin Schäffers  
 Renske Talsma  
 Marijn Jansen
 
@@ -33,7 +29,7 @@ capable of running either Xcode or Android Studio.
 
 ## What to do
 
-We'll learn about mobile software development by understanding how mobile platforms are designed and what parts we should get to know and what parts we can ignore. We will separately study the theory of design as applied to mobile software development.
+We'll learn about mobile software development by understanding how mobile platforms are designed and what parts we should get to know and what parts we can ignore.
 
 - Every week, you will create one **mobile app**, each one making use of the new concepts introduced that week.
 
@@ -45,41 +41,18 @@ We'll learn about mobile software development by understanding how mobile platfo
 
 - All assignments have to be handed in **individually**, but you are expected to generously help other students during the course. 
 
-- You'll also have **written** design assignments. Attendance in class on Monday is mandatory to get credit for the design assignment of that week.
-
 ## Grades
 
 Final grades for the course comprise three major parts:
 
 | part               | percentage | grading                |  
 | ------------------ | ---------: | ---------------------- |  
-| design writing     |        35% | score out of 5 points  |  
-| projects           |        45% | score out of 12 points |  
+| projects           |        80% | score out of 12 points |  
 | final project code |        20% | grade 1--10            |  
 
 A student must submit the final project in order to be eligible for a passing grade, unless granted
 an exception in writing by the course's instructor. No retakes are possible for any part of the
 course.
-
-### Design writing
-
-In preparation for each of the Monday seminars, a reading assignment will be released. The assignment is accompanied by an assortment of questions. Besides handing it in by the deadline, you are to take to class a printed version of your answers to these questions. Deadlines are:
-
-| no |     deadline |  
-| -: | -----------: |  
-|  1 | Sun    9 Apr |  
-|  2 | Sun   30 Apr |  
-|  3 | Sun    7 May |  
-|  4 | Sun   14 May |  
-|  5 | Sun   21 May |  
-
-Before and in class, students will read and comment on each others' answers, and difficult questions will be discussed. After, the printouts will be collected for marking:
-
-- 0 points: less than clear effort or quite unreadable language
-- 1 point: a clear effort where answers show that you have read the text (expected level)
-- 2 points: excellent answers that show close reading and making connections between texts
-
-No more than 5 points can be obtained in total. Points cannot be earned without being present.
 
 ### Projects
 
@@ -87,20 +60,20 @@ Programming assignments build up quickly over the weeks, which is why it is not 
 
 | no | assignment topic        | 2 point deadline | 1 point deadline |  
 | -: | ----------------------- | ---------------: | ---------------: |  
-|  1 | linking views with code |      Tue  11 Apr |      Thu  13 Apr |  
-|  2 | multiple controllers    |      Tue  18 Apr |      Thu  20 Apr |  
-|  3 | lists and APIs          |      Tue   2 May |      Thu   4 May |  
-|  4 | state and databases     |      Tue   9 May |      Thu  11 May |  
-|  5 | model classes           |      Tue  16 May |      Thu  18 May |  
-|  6 | online databases        |      Tue  23 May |      Mon  29 May |  
+|  1 | linking views with code |      Thu   7 Sep |      Mon  11 Sep |  
+|  2 | multiple controllers    |      Thu  14 Sep |      Mon  18 Sep |  
+|  3 | lists and APIs          |      Thu  21 Sep |      Mon  25 Sep |  
+|  4 | state and databases     |      Thu  28 Sep |      Mon   2 Oct |  
+|  5 | model classes           |      Thu   5 Oct |      Mon   9 Oct |  
+|  6 | online databases        |      Mon  16 Oct |      Thu  19 Oct |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
 
-All students must ordinarily submit all programming projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must submit all programming projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
 ### Final project
 
-The last programming assignment will be checked off as usual, but its code will be subject to a close inspection on style, design and other factors of quality.
+The last programming assignment will be checked off as usual, but its *code* and its *user interface* will be subject to a close inspection on style, design and other factors of quality.
 
 ## Books
 

@@ -1,4 +1,6 @@
-# Native App Studio<br><small>Syllabus / Studiewijzer</small><br><small>Fall 2017</small>
+# Native App Studio
+
+## Syllabus, Fall 2017
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -10,53 +12,62 @@ everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
 
-## Staff
+## Getting Started
 
-Martijn Stegeman  
-*instructor*  
-<help@mprog.nl>
+- Check if your [personal timetable](https://datanose.nl/) shows App Studio
+- Read the remainder of this syllabus
+- Practice object-oriented concepts in Java or Swift
+- Create your first app
+- If in doubt, contact the course's heads at <help@mprog.nl>
 
-Renske Talsma  
-Marijn Jansen
+## Expectations
+
+You are expected to complete all provided exercises, attend all programming labs, submit five fully working practice apps, as well as a final project.
 
 ## Prerequisites
 
-You need to have finished Programming 1 and 2, or equivalent as decided by the
-course's instructor. You need to be comfortable with programming, plus have
-some experience with memory management, runtime analysis, design patterns,
-databases, and basic data structures and algorithms. You need to have a laptop
+Programming 1 and 2, or equivalent, as decided by the course's instructor. You need to be
+comfortable with programming, plus have some experience with memory management, runtime analysis,
+design patterns, databases, and basic data structures and algorithms. You need to have a laptop
 capable of running either Xcode or Android Studio.
 
-## What to do
+## Asking Questions
 
-We'll learn about mobile software development by understanding how mobile platforms are designed and what parts we should get to know and what parts we can ignore.
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above.
 
-- Every week, you will create one **mobile app**, each one making use of the new concepts introduced that week.
-
-- You are expected to **kickstart** the weekly assignments early, so as to make optimal use of lab and teacher time.
-
-- **Lab hours** are available to you in order to get help with your assignments. You are expected to attend most, if not all, of the scheduled hours.
-
-- You are expected to use **discussions** with the course's instructors and assistants to improve the technical and functional designs of all projects.
-
-- All assignments have to be handed in **individually**, but you are expected to generously help other students during the course. 
+Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
 
 ## Grades
 
-Final grades for the course comprise three major parts:
+All students must ordinarily submit all problem sets and take the quiz in
+order to be eligible for a satisfactory grade unless granted an exception in
+writing by the course's heads.
 
-| part               | percentage | grading                |  
-| ------------------ | ---------: | ---------------------- |  
-| projects           |        80% | score out of 12 points |  
-| final project code |        20% | grade 1--10            |  
+Final grades are determined using the following weights:
 
-A student must submit the final project in order to be eligible for a passing grade, unless granted
-an exception in writing by the course's instructor. No retakes are possible for any part of the
-course.
+|                    | percentage | notes                                                |  
+| ------------------ | ---------: | ---------------------------------------------------- |  
+| exercises          |        20% | completion of all exercises as demonstrated in class |  
+| projects           |        80% | score out of 12 points                               |  
+| final project code |        20% | grade 1--10                                          |  
 
-### Projects
+No retakes are possible for any part of the course.
 
-Programming assignments build up quickly over the weeks, which is why it is not recommended to skip any of the assignments. To get points for an assignment, you simply have to demonstrate the functioning app and its source code during class. A fully functional app, implemented according to the requirements, can earn you either 2 or 1 points, according to the deadlines below:
+## Exercises ##
+
+Most of the projects contain references to exercise materials, aimed to help you understand some of the new ideas needed to complete the project.
+
+## Office Hours ##
+
+Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the offical time tables.
+
+## Tutoring ##
+
+For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course’s staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
+
+## Projects
+
+To get points for an assignment, you simply have to demonstrate the functioning app and its source code during class. A fully functional app, implemented according to the requirements, can earn you either 2 or 1 points, according to the deadlines below:
 
 | no | assignment topic        | 2 point deadline | 1 point deadline |  
 | -: | ----------------------- | ---------------: | ---------------: |  
@@ -71,13 +82,13 @@ Feedback can be obtained in class while checking off assignments. You are encour
 
 All students must submit all programming projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
-### Final project
+## Final project
 
 The last programming assignment will be checked off as usual, but its *code* and its *user interface* will be subject to a close inspection on style, design and other factors of quality.
 
 ## Books
 
-No books are required for this course, but the programming books below may be referenced from time to time to indicate useful sections.
+No books are required for this course, but the books below may provide additional learning material.
 
 - Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
 
@@ -112,10 +123,9 @@ considered academic dishonesty.
 
 ### Regulations
 
-All forms of academic dishonesty are dealt with harshly. In all cases we follow
-the directives regarding fraud and plagiarism of the University of Amsterdam
-and of the examination board of the Computer Science BSc programme. Find them
-here in [English] and [Dutch].
+All forms of academic dishonesty are dealt with harshly. In all cases we follow the directives
+regarding fraud and plagiarism of the University of Amsterdam and of the Computer Science BSc
+programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://student.uva.nl/az/a-z-lijst/a-z-lijst/content/folder/fraude-plagiaat-en-bronvermelding/plagiaat-en-fraude.html
 [English]: http://student.uva.nl/en/az/a-z/a-z/content/folder/plagiarism-and-fraud/plagiarism-and-fraud.html

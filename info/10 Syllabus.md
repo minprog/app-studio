@@ -57,7 +57,7 @@ Final grades are determined using the following weights:
 | guided projects | 60% |
 | final project   | 20% |
 
-Students must complete all guided projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
+Students must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
 No retakes are possible for any part of the course. You may, however, re-take the course as a whole in a next semester.
 

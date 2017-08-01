@@ -27,9 +27,9 @@ You are expected to complete all provided exercises, attend all programming labs
 ## Prerequisites
 
 Programming 1 and 2, or equivalent, as decided by the course's instructor. You need to be
-comfortable with programming, plus have some experience with memory management, runtime analysis,
-design patterns, databases, and basic data structures and algorithms. You need to have a laptop
-capable of running either Xcode or Android Studio.
+comfortable with memory management, runtime analysis, design patterns, databases, and basic data
+structures and algorithms. You also need to have a laptop capable of running either Xcode or Android
+Studio.
 
 ## Asking Questions
 
@@ -45,46 +45,53 @@ writing by the course's heads.
 
 Final grades are determined using the following weights:
 
-|                    | percentage | notes                                                |  
-| ------------------ | ---------: | ---------------------------------------------------- |  
-| exercises          |        20% | completion of all exercises as demonstrated in class |  
-| projects           |        80% | score out of 12 points                               |  
-| final project code |        20% | grade 1--10                                          |  
+#### Android
 
-No retakes are possible for any part of the course.
+| exercises       | 10% |
+| guided projects | 70% |
+| final project   | 20% |
 
-## Exercises ##
+#### iOS
 
-Most of the projects contain references to exercise materials, aimed to help you understand some of the new ideas needed to complete the project.
+| exercises       | 20% |
+| guided projects | 60% |
+| final project   | 20% |
 
-## Office Hours ##
+Students must complete all guided projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
-Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the offical time tables.
+No retakes are possible for any part of the course. You may, however, re-take the course as a whole in a next semester.
 
-## Tutoring ##
+## Tutorials
 
-For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course’s staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
+To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. Points can be earned by completing the tutorials and showing the results during office hours.
 
-## Projects
+## Guided projects
 
-To get points for an assignment, you simply have to demonstrate the functioning app and its source code during class. A fully functional app, implemented according to the requirements, can earn you either 2 or 1 points, according to the deadlines below:
+Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours.
 
-| no | assignment topic        | 2 point deadline | 1 point deadline |  
-| -: | ----------------------- | ---------------: | ---------------: |  
-|  1 | linking views with code |      Thu   7 Sep |      Mon  11 Sep |  
-|  2 | multiple controllers    |      Thu  14 Sep |      Mon  18 Sep |  
-|  3 | lists and APIs          |      Thu  21 Sep |      Mon  25 Sep |  
-|  4 | state and databases     |      Thu  28 Sep |      Mon   2 Oct |  
-|  5 | model classes           |      Thu   5 Oct |      Mon   9 Oct |  
-|  6 | online databases        |      Mon  16 Oct |      Thu  19 Oct |  
+| no | 2 point deadline | 1 point deadline |  
+| -: | ---------------: | ---------------: |  
+|  1 |      Thu   7 Sep |      Mon  11 Sep |  
+|  2 |      Thu  14 Sep |      Mon  18 Sep |  
+|  3 |      Thu  21 Sep |      Mon  25 Sep |  
+|  4 |      Thu  28 Sep |      Mon   2 Oct |  
+|  5 |      Thu   5 Oct |      Mon   9 Oct |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
 
-All students must submit all programming projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
-
 ## Final project
 
-The last programming assignment will be checked off as usual, but its *code* and its *user interface* will be subject to a close inspection on style, design and other factors of quality.
+In the last few weeks of the course, you will implement a final project. Much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
+
+**Deadline**: 19 Oct 2017 at 23:59.
+
+## Office Hours
+
+Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the offical time tables.
+
+## Tutoring
+
+For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course's staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
 
 ## Books
 

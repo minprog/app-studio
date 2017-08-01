@@ -39,9 +39,7 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 ## Grades
 
-All students must ordinarily submit all problem sets and take the quiz in
-order to be eligible for a satisfactory grade unless granted an exception in
-writing by the course's heads.
+You must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
 Final grades are determined using the following weights:
 
@@ -57,9 +55,7 @@ Final grades are determined using the following weights:
 | guided projects | 60% |
 | final project   | 20% |
 
-Students must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
-
-No retakes are possible for any part of the course. You may, however, re-take the course as a whole in a next semester.
+No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
 ## Tutorials
 

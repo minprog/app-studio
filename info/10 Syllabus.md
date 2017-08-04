@@ -77,7 +77,7 @@ Feedback can be obtained in class while checking off assignments. You are encour
 
 ## Final project
 
-In the last few weeks of the course, you will implement a final project. Much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
+In the last few weeks of the course, you will implement a final project. You will receive a set of requirements for the app. However, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
 
 **Deadline**: 19 Oct 2017 at 23:59.
 

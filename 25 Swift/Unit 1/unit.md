@@ -39,6 +39,8 @@ For all units, you will work on the book "App Development with Swift", which you
 - Know how to create a new iOS project
 - Know a couple of shortcuts
 
+**Watch:** The ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
+
 ## 6. Building, running and debugging an app
 
 - Know how to get an app running on your own iOS device

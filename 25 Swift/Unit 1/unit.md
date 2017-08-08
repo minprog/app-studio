@@ -69,6 +69,9 @@ This lesson contains a "debug your first app" lab. You must complete the lab and
 
 **Demonstrate:** the complete and working app
 
+Your app needs to be on GitHub! Watch the video below to see how to create an Xcode project that lives on GitHub.
+
+![embed](https://player.vimeo.com/video/161756276)
 
 
 

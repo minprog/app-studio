@@ -43,14 +43,6 @@ You must complete all guided projects and a final project to be eligible for a s
 
 Final grades are determined using the following weights:
 
-#### Android
-
-| exercises       | 10% |
-| guided projects | 70% |
-| final project   | 20% |
-
-#### iOS
-
 | exercises       | 20% |
 | guided projects | 60% |
 | final project   | 20% |
@@ -60,6 +52,14 @@ No retakes are possible for any part of the course. You may re-take the course a
 ## Tutorials
 
 To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. Points can be earned by completing the tutorials and showing the results during office hours.
+
+| no |    deadline |  
+| -: | ----------: |  
+|  1 | Thu   7 Sep |  
+|  2 | Thu  14 Sep |  
+|  3 | Thu  21 Sep |  
+|  4 | Thu  28 Sep |  
+|  5 | Thu   5 Oct |  
 
 ## Guided projects
 

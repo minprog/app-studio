@@ -40,7 +40,7 @@ We'll now show you how to create your first Android Studio project. What are thi
 
 ## Sharing your project on GitHub
 
-In order to be able to check your code, your project's source code should be avaiable to us on GitHub.  Not only does this allow us to check your submission, it also grants you the possibility to keep a track record of changes to your code, provided that you commit (and push) to GitHub regularly. This way, you can document changes to your application which allow you to better understand bugs in your code and also revert back to a previous version, should you need it. You can do this in various ways. 
+In order to be able to check your code, your project's source code should be available to us on GitHub.  Not only does this allow us to check your submission, it also grants you the possibility to keep a track record of changes to your code, provided that you commit (and push) to GitHub regularly. This way, you can document changes to your application which allow you to better understand bugs in your code and also revert back to a previous version, should you need it. You can do this in various ways. 
 
 You can share an Android Studio project on GitHub using Android Studio's integrated version control. 
 <iframe src="https://player.vimeo.com/video/211286081" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

@@ -1,3 +1,3 @@
 # Listeners
-TODO
 
+For this exercise, we will take a look at the various ways we can use to implement an event listener in Android Studio. During this course, you will be asked to implement your listeners in such a way that they are not anonymous, but consist of their own class. This encourages understanding of what the listener actually does and makes it easier to read through your code. It also allows you to use the same listener multiple times, as you can just call another instance of the listener class when needed. If you want to read more about listeners, take a look at the documentation [here](https://developer.android.com/guide/topics/ui/ui-events.html). 

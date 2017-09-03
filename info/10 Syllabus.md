@@ -49,7 +49,7 @@ Final grades are determined using the following weights:
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
-## Tutorials
+## Exercises
 
 To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. Points can be earned by completing the tutorials and showing the results during office hours.
 

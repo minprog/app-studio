@@ -11,4 +11,4 @@ Your goal in this exercise is to implement a non-anonymous listener in your guid
 			}
 		}
 
-Other activities can now instantiate this class and set the listener on for example, a button or other view in your activity. You can declare the listener class within your activity, or make a separate `.java` file for it.  Within the `onClick(View view)` method you can now decide what your app should do when the `View` is clicked. 
+Other activities can now instantiate this class and set the listener on for example, a button or other view in your activity. You can declare the listener class within your activity, or make a separate `.java` file for it.  Within the `onClick(View view)` method you can now decide what your app should do when the `View` is clicked. For more info on the inner class listener and the advantages it gives, you can check out [this](http://www.fredosaurus.com/notes-java/GUI/events/inner_class_listener.html) link. 

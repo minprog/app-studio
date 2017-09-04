@@ -7,7 +7,6 @@ You can find the exercise PDF [here](http://www.davin.50webs.com/research/1999/e
 
 The needed Java files needed to complete the exercise can be found [here](http://www.davin.50webs.com/research/1999/tsj4cp.html) as well (PersonTest.java). 
 
-
 ## Tips
 To compile your java file to a .class file, use:
 `javac YourJavaFileName.java`

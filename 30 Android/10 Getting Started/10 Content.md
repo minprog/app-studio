@@ -2,28 +2,6 @@
 
 This week we will cover background information about the Android platform, and learn enough basics to create our first simple app. With Android app development comes a programming language: Java. Luckily for us, Java has a lot in common with Python and therefore the basics will hold no secrets for you there. However, some syntax is slightly different compared to other languages you know.
 
-## Java Exercises
-
-In order to have a smooth start creating your own applications for the Android platform, we're first going to do some basic Java exercises which will familiarize you with Java syntax and concepts related to object oriented programming. 
-
-- Read [Java Basics for Android Development](http://blog.teamtreehouse.com/java-basics-for-android-development-part-2) to make sure you get the syntax right.
-
-- Watch this video from Derek Banas: [Java basics](https://www.youtube.com/watch?v=WPvGqX-TXP0&list=PLGLfVvz_LVvSPjWpLPFEfOCbezi6vATIh&index=2)
-
-Now you can practice with Java using the [exercises found here](http://www.davin.50webs.com/research/1999/tsj4cp.html). The following exercises are recommended or mandatory. Don't hesitate to ask questions about concepts that you find confusing. It's important that you understand the basics as these will help you greatly when you start creating actual applications.
-
-|       | Exercise	#				    | Todo                      |
-|----	|-------------------------------|-------------------------	|
-| 2  	| Classes                      	| Everything              	|
-| 3  	| Parameters and return values 	| Everything              	|
-| 4  	| References                   	| Optional                	|
-| 5  	| Public vs. Private           	| Optional                	|
-| 6  	| Static vs. Non-static        	| Just subquestion 7      	|
-| 11 	| Inheritance                  	| Everything              	|
-| 14 	| Interfaces                   	| More advanced, optional 	|
-
-
-
 ## Setting up Android Studio
 
 We now move to setting up Android Studio. Because developing Android Apps makes use of various *Developing Tools*, you need to install them first. Thus, in order to do that, follow this [Beginning Android Development](https://www.raywenderlich.com/120177/beginning-android-development-tutorial-installing-android-studio) tutorial on setting up Android Studio.

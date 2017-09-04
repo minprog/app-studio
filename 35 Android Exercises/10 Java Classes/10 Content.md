@@ -5,7 +5,7 @@ Read this PDF and complete the questions. To run the Java programs you will crea
 
 You can find the exercise PDF [here](http://www.davin.50webs.com/research/1999/egs/q2.pdf)
 
-The needed Java files needed to complete the exercise can be found [here](http://www.davin.50webs.com/research/1999/tsj4cp.html) as well. 
+The needed Java files needed to complete the exercise can be found [here](http://www.davin.50webs.com/research/1999/tsj4cp.html) as well (PersonTest.java). 
 
 
 ## Tips

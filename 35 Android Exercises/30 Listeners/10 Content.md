@@ -6,7 +6,7 @@ It also allows you to use the same listener multiple times when it has to perfor
 
 Your goal in this exercise is to implement a non-anonymous listener in your guided project of this week. This means that your listener needs to be declared in its own class, like so for example, if you were to implement a listener of the `onClick` type: 
 
-```java
+```
 public class myListener implements View.OnClickListener {
     @Override
     public void onClick(View view) {

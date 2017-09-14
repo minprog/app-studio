@@ -1,18 +1,19 @@
 Week 1:
     'Project 1: Mr. Potatohead': '/projects/mr-potatohead'
-    'Writing 1: Introduction to design': '/design/introduction'
 Week 2:
+    'Exercise: Listeners': '/android-exercises/listeners'
+    'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
     'Project 2: Mad Libs': '/projects/mad-libs'
-    'Writing 2: Solving Problems': '/design/solving-problems'
-Week 3-4:
+Week 3:
     'Project 3: Watch List': '/projects/watch-list'
-    'Writing 2: Solving Problems': '/design/solving-problems'
-Week 5:
+Week 4:
     'Project 4: To-do List': '/projects/to-do-list'
-    'Writing 3: Style and Design': '/design/style-and-design'
-Week 6:
+Week 5:
     'Project 5: Many Lists': '/projects/many-lists'
-    'Writing 4: Simplicity': '/design/simplicity'
+Week 6:
+    'Project 6: Your Own': '/projects/your-own'
+    'Better Code Hub': '/guides/better-code-hub'
+    'Code Review': '/guides/code-reviews'
 Week 7:
     'Project 6: Your Own': '/projects/your-own'
     'Writing 5: Heuristic evaluation': '/design/heuristic-evaluation'

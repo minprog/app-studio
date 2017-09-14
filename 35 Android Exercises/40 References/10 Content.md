@@ -1,6 +1,6 @@
 # References
-TODO
 
+This week we will look at how references are done in Java. It will help you understand how classes, instances, objects and methods can relate to each other. While improving your understanding of Java, this will help you to keep understanding the structure of your app as well, as they become more complex and contain more and more activities and (model) classes as the course progresses. Understanding how things come together can be a great help when debugging your code too!
 
 You can find the exercise PDF [here](http://www.davin.50webs.com/research/1999/egs/q4.pdf)
 

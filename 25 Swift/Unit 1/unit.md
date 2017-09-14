@@ -10,7 +10,7 @@ In some respects, Swift is a bit different from most programming languages. The 
 
 For all units, you will work on the book "App Development with Swift", which you can get for free in the iBooks Store. iBooks should be available on your Mac or on your iPad---but if it isn't, simply download it from the App Store.
 
-**Get:** [The book from the iBook Store.](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996?l=en&mt=11)
+**Get:** [The book from the iBook Store.](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996)
 
 ## 1. Introduction to Swift and Playgrounds
 

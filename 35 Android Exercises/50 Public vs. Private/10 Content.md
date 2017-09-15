@@ -1,6 +1,6 @@
 # Public vs. Private
 
-Variables and methods in Java can have different 
+This week we will focus on the different access rights that methods and variables can have in Java. This will matter once the scope of your apps gets bigger and you work with more different activities and Java classes. Sometimes you don't want certain variables from a class to be accessed outside it, for example. 
 
 You can find the exercise PDF [here](http://www.davin.50webs.com/research/1999/egs/q5.pdf)
 There is no need to complete question 10. 

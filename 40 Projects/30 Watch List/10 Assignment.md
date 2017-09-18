@@ -24,7 +24,7 @@ Create an app that will help users remember which movies to watch and present th
 
 ![](watch.png)
 
-But where do you get these movie titles, descriptions and poster art? There's a great resource for that: the [OMDb API](http://omdbapi.com). Make sure your app works by getting information from this API. Be creative and make use of the information provided by the API (actors, director, year, rating etc.)!
+But where do you get these movie titles, descriptions and poster art? There's a great resource for that: the [movie database](https://www.themoviedb.org/documentation/api) Make sure your app works by getting information from this API. Be creative and make use of the information provided by the API (for example the actors, director, year, rating etc.)!
 
 ## Designing the user interface
 

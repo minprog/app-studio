@@ -1,4 +1,4 @@
-# Watch List
+# Listen List
 
 ## Objectives
 
@@ -16,15 +16,21 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## Helpful reminders
+## What to do
+Create an app that will help users remember which songs to listen to and present this in a simple, elegant user interface. Users should be able to search for songs, read other information about the song such as artist, album, as well as add such songs to a list of songs to listen to. And of course, they should be able to remove songs from the list as well!
 
-Remember that movie? It came out last year and you really really wanted to see it, and up until now, you totally forgot to watch it. A perfect problem to tackle with a small but powerful app!
+## API
 
-Create an app that will help users remember which movies to watch and present this in a simple, elegant user interface. Users should be able to search for movies, read descriptions and view poster art, as well as add such titles to a list of movies to watch. And of course, they should be able to remove titles from the list as well!
+To get this information, we will make use of the Last FM API.
+To use this API, you will first have to register, so that you can obtain an API key: https://www.last.fm/api/account/create
 
-![](watch.png)
+The documentation for the API can be found [here](https://www.last.fm/api/intro). For example, the artist search and track search could be of interest to you!
 
-But where do you get these movie titles, descriptions and poster art? There's a great resource for that: the [OMDb API](http://omdbapi.com). Make sure your app works by getting information from this API. Be creative and make use of the information provided by the API (actors, director, year, rating etc.)!
+A typical API request might look like this: `http://ws.audioscrobbler.com/2.0/?method=track.search&track=Believe&api_key=YOUR_API_KEY&format=json`. Keep in mind we have to specify the JSON format, as the standard return format of this API is XML, not JSON. 
+
+Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
+
+Do try to not overload the API with requests though, as this might get you blocked from usage.
 
 ## Designing the user interface
 
@@ -48,18 +54,18 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app's back navigation should always be simple.
 
-- Your app should use standard list views combined with an adapter (Android) or table views with delegation (iOS).
+- Your app should use standard list views combined with an adapter.
 
-- Your app should save and persist the list of movies using `SharedPreferences` (Android) or `UserDefaults` (iOS).
+- Your app should save and persist the list of movies using `SharedPreferences`.
 
-- Listeners may not be anonymous (see Android Tips).
+- Listeners may not be anonymous as of now, see the exercise about Listeners.
 
-- Users should be able to search for movies, read descriptions and view poster art.
+- Users should be able to search for songs as well as artists.
 
-- Your watchlist may not allow users to add duplicate movies and must notify the user elegantly. 
+- Your "to listen" list may not allow users to add duplicate songs and must notify the user elegantly. 
 
 
-Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it!
+
 
 ## Getting started
 

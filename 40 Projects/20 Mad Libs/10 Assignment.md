@@ -73,7 +73,7 @@ Your task is to build an app according to the description above. On top of that,
 
 - To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this.
 
-- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass a `Scanner` object to the constructor of the `Story` class.
+- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class.
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
 

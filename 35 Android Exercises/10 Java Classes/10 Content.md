@@ -1,7 +1,8 @@
 # Java Classes
 
-Java is programming language that makes use of objects and classes. You might be familiar with this, or this might be new to you. In this exercise we tackle the basics of classes in Java. 
-Read this PDF and complete the questions. To run the Java programs you will create during the exercises, you can use the Cloud9 or CS50 IDE. 
+Java is programming language that makes use of objects and classes. You might be familiar with this, or this might be new to you. For a very short introduction to the basics of Java, consult [this])http://docs.oracle.com/javase/tutorial/java/concepts/index.html) page. Furthermore, we have selected some exercises to help you understand the language even better. In this exercise we tackle the basics of classes in Java. 
+
+Read this PDF and complete the questions. To run the Java programs you will create during the exercises, you can use the Cloud9 or CS50 IDE or another IDE capable of compiling and running Java files. 
 
 You can find the exercise PDF [here](http://www.davin.50webs.com/research/1999/egs/q2.pdf)
 

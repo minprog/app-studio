@@ -4,7 +4,7 @@ For this exercise, we will take a look at the various ways we can use to impleme
 
 It also allows you to use the same listener multiple times when it has to perform similar tasks, as you can just call another instance of the listener class when needed. If you want to read more about listeners, take a look at the documentation [here](https://developer.android.com/guide/topics/ui/ui-events.html) or [here](http://tekeye.uk/android/examples/code-android-event-listeners). 
 
-Your goal in this exercise is to implement a non-anonymous listener in your guided project of this week. This means that your listener needs to be declared in its own class, like so for example, if you were to implement a listener of the `onClick` type: 
+Your goal in this exercise is to implement a non-anonymous listener in your guided project of this week and also following weeks. As per now, it's no longer allowed to use anonymous listeners in your project. This means that your listener needs to be declared in its own class, like so for example, if you were to implement a listener of the `onClick` type: 
 
 ```
 public class myListener implements View.OnClickListener {

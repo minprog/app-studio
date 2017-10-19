@@ -13,4 +13,4 @@ Download and install [Xcode 9](https://itunes.apple.com/nl/app/xcode/id497799835
 
 For all units, you will work on the book ["App Development with Swift"](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996), which you can get for free in the iBooks Store. iBooks should be available on your Mac or on your iPad---but if it isn't, simply download it from the App Store.
 
-Make sure u are using the latest version of the book (Swift 4 edition)
+Make sure you are using the latest version of the book (Swift 4 edition)

@@ -12,32 +12,64 @@ everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
 
-## Getting Started
+## Table of Contents
+
+- [Getting Started](#gettingstarted)
+- [Expectations](#expectations)
+- [Prerequisites](#prerequisites)
+- [Staff & Asking questions](#staff)
+- [Grades & Deadlines](#grades)
+	* [Exercises](#exercises)
+	* [Guided Projects](#projects)
+	* [Final Project](#final)
+- [Office Hours](#officehours)
+- [Tutoring](#tutoring)
+- [Books](#books)
+- [Collaboration](#collaboration)
+	* [Quoting Sources](#quoting)
+	* [Regulations](#regulations)
+
+## 0. Getting Started <a name="gettingstarted"></a>
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio
 - Read the remainder of this syllabus
 - Practice object-oriented concepts in Java or Swift
-- Create your first app
-- If in doubt, contact the course's heads at <help@mprog.nl>
+- Create your first app!
+- If in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant
 
-## Expectations
+## 1. Expectations <a name="expectations"></a>
 
 You are expected to complete all provided exercises, attend all programming labs, submit five fully working practice apps, as well as a final project.
 
-## Prerequisites
+## 2. Prerequisites <a name="prerequisites"></a>
 
 Programming 1 and 2, or equivalent, as decided by the course's instructor. You need to be
 comfortable with memory management, runtime analysis, design patterns, databases, and basic data
 structures and algorithms. You also need to have a laptop capable of running either Xcode or Android
 Studio.
 
-## Asking Questions
+## 3. Staff & Asking Questions <a name="staff"></a>
 
-The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above.
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor at the lab. Below you will find a list of the courses's instructors:
 
-Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
+Martijn Stegeman
+*instructor* <help@mprog.nl>
 
-## Grades
+Renske Talsma
+*teaching assistant (Android)*
+
+Julia Anten
+*teaching assistant (Android)*
+
+Marijn Jansen
+*teaching assistant (iOS)*
+
+Emma Hokken
+*teaching assistant (iOS)*
+
+
+
+## 4. Grades & Deadlines <a name="grades"></a>
 
 You must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
@@ -49,9 +81,12 @@ Final grades are determined using the following weights:
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
-## Exercises
 
-To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. Points can be earned by completing the tutorials and showing the results during office hours.
+### 4.1 Exercises <a name="exercises"></a>
+
+To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
+
+**You must complete your exercise of the week in order to be eligible for points when handing in your guided project!**
 
 | no |    deadline |  
 | -: | ----------: |  
@@ -61,9 +96,9 @@ To learn the specifics of iOS or Android, tutorials are offered. Earlier in the 
 |  4 | Thu  28 Sep |  
 |  5 | Thu   5 Oct |  
 
-## Guided projects
+### 4.2 Guided projects <a name="projects"></a>
 
-Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours.
+Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. Keep in mind that in order to be eligible for points, you must have uploaded your project on GitHub and have completed the exercise of that week as well.
 
 | no | 2 point deadline | 1 point deadline |  
 | -: | ---------------: | ---------------: |  
@@ -73,25 +108,25 @@ Each week, you will create an app using the concepts from exercises and tutorial
 |  4 |      Thu  28 Sep |      Mon   2 Oct |  
 |  5 |      Thu   5 Oct |      Mon   9 Oct |  
 
-Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work.
+Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work, this also includes code quality!
 
-## Final project
+### 4.3 Final project <a name="final"></a>
 
-In the last few weeks of the course, you will implement a final project. You will receive a set of requirements for the app. However, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
+In the last few weeks of the course, you will implement a final project. You will receive a set of requirements for the app. However, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality. During these weeks, there are no exercises to be completed. 
 
-**Deadline**: 19 Oct 2017 at 23:59.
+**Deadline**: TODO
 
-## Office Hours
+## 5. Office Hours <a name="officehours"></a>
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the offical time tables.
 
-## Tutoring
+## 6. Tutoring <a name="tutoring"></a>
 
 For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course's staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
 
-## Books
+## 7. Books <a name="books"></a>
 
-No books are required for this course, but the books below may provide additional learning material.
+No books are required for this course apart from the iBook required for the iOS course, but the books below may provide additional learning material.
 
 - Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
 
@@ -99,7 +134,7 @@ No books are required for this course, but the books below may provide additiona
 
 - Apple, [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
-## Collaboration
+## 8. Collaboration <a name="collaboration"></a>
 
 All work that you do toward fulfillment of this course's expectations must be
 your own work. You may read and comment upon classmates' code toward
@@ -114,7 +149,7 @@ but you may not communicate in Swift, Java, or Objective-C and such languages.
 If in doubt as to the appropriateness of some discussion, contact the course's
 heads.
 
-### Quoting sources
+### 8.1 Quoting sources <a name="quoting"></a>
 
 You may turn to the web for instruction beyond the course's lectures and
 sections, for references, and for solutions to technical difficulties, but not
@@ -124,7 +159,7 @@ do discover outside of the course's lectures and sections (even while
 respecting these constraints) and then integrate into your own work may be
 considered academic dishonesty.
 
-### Regulations
+### 8.2 Regulations <a name="regulations"></a>
 
 All forms of academic dishonesty are dealt with harshly. In all cases we follow the directives
 regarding fraud and plagiarism of the University of Amsterdam and of the Computer Science BSc

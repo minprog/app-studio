@@ -156,9 +156,7 @@ For students who avail themselves of the course's other resources but still find
 
 ### Android
 
-No books are required for students of the Android platform, but the books below may provide additional learning material.
-
-- Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
+No books are required for students of the Android platform, but the following book may provide additional learning material: Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
 
 ### iOS
 

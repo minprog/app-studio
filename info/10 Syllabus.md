@@ -104,7 +104,7 @@ No retakes are possible for any part of the course. You may re-take the course a
 
 To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
 
-TODO You do not have to hand in your exercises, but you have to show to an assistant that you have completed them. This can also be done before the deadline, of course! 
+These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/git) repository.
 
 | no |   deadline |  
 | -: | ---------: |  
@@ -118,7 +118,7 @@ TODO You do not have to hand in your exercises, but you have to show to an assis
 
 ### 4.2 Guided projects 
 
-Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. Keep in mind that in order to be eligible for points, you must have uploaded your project on GitHub and have completed the exercise of that week as well.
+Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. Keep in mind that in order to be eligible for points, you must have uploaded your project on [GitHub](https://apps.mprog.nl/android/git) before the deadline. 
 
 | no | 2 point deadline | 1 point deadline |  
 | -: | ---------------: | ---------------: |  

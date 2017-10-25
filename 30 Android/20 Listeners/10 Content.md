@@ -1,10 +1,10 @@
 # Listeners
 
-For this exercise, we will take a look at the various ways we can use to implement an event listener in Android Studio. During this course, you will be asked to implement your listeners in such a way that they are not anonymous, but consist of their own class. This encourages understanding of what the listener actually does and makes it easier to read through your code. 
+This week, we will take a look at the various ways we can use to implement an event listener in Android Studio. During this course, you will be asked to implement your listeners in such a way that they are not anonymous, but consist of their own class. This encourages understanding of what the listener actually does and makes it easier to read through your code. 
 
 It also allows you to use the same listener multiple times when it has to perform similar tasks, as you can just call another instance of the listener class when needed. If you want to read more about listeners, take a look at the documentation [here](https://developer.android.com/guide/topics/ui/ui-events.html) or [here](http://tekeye.uk/android/examples/code-android-event-listeners). 
 
-Your goal in this exercise is to implement a non-anonymous listener in your guided project of this week and also following weeks. As per now, it's no longer allowed to use anonymous listeners in your project. This means that your listener needs to be declared in its own class, like so for example, if you were to implement a listener of the `onClick` type: 
+Your goal is to implement a non-anonymous listener in your guided project of this week and also following weeks. As per now, it's no longer allowed to use anonymous listeners in your project. This means that your listener needs to be declared in its own class, like so for example, if you were to implement a listener of the `onClick` type: 
 
 ```
 public class myListener implements View.OnClickListener {

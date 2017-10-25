@@ -1,5 +1,9 @@
+Week 0:
+    'Preparations: Install Android Studio': '/android/getting-started'
+    'Preparations: Learn to use Git': '/android/git'
 Week 1:
-    'Project 1: Mr. Potatohead': '/projects/mr-potatohead'
+    'Project : Mr. Potatohead': '/projects/mr-potatohead'
+    'Exercise : Java Classes': '/android-exercises/classes'
 Week 2:
     'Exercise: Listeners': '/android-exercises/listeners'
     'Exercise: Parameters': '/android-exercises/parameters-and-return-values'

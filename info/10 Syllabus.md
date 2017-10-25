@@ -60,23 +60,18 @@ Studio.
 The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor at the lab. Below you will find a list of the courses's instructors:
 
 Martijn Stegeman
-
 *instructor* <help@mprog.nl>
 
 Renske Talsma
-
 *teaching assistant (Android)*
 
 Julia Anten
-
 *teaching assistant (Android)*
 
 Marijn Jansen
-
 *teaching assistant (iOS)*
 
 Emma Hokken
-
 *teaching assistant (iOS)*
 
 
@@ -107,7 +102,7 @@ These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/
 
 | no |   deadline |  
 | -: | ---------: |  
-|  1 | Mon 30 Okt |  
+|  1 | Mon 30 Oct |  
 |  2 | Mon  6 Nov |  
 |  3 | Mon 13 Nov |  
 |  4 | Mon 20 Nov |  
@@ -143,7 +138,7 @@ In the last few weeks of the course, you will implement a final project. You wil
 
 ## 5. Office Hours 
 
-Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the offical time tables.
+Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 
 <a name="tutoring"></a>
 

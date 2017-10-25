@@ -26,8 +26,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 - [Tutoring](#tutoring)
 - [Books](#books)
 - [Collaboration](#collaboration)
-	* [Quoting Sources](#quoting)
-	* [Regulations](#regulations)
+
 
 <a name="gettingstarted"></a>
 
@@ -104,7 +103,7 @@ No retakes are possible for any part of the course. You may re-take the course a
 
 To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
 
-These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/git) repository.
+These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/git) repository. You are encouraged to take a look at the exercises before the lab session on monday, so that you can make optimal use of your time during the lab session. 
 
 | no |   deadline |  
 | -: | ---------: |  
@@ -118,7 +117,9 @@ These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/
 
 ### 4.2 Guided projects 
 
-Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. Keep in mind that in order to be eligible for points, you must have uploaded your project on [GitHub](https://apps.mprog.nl/android/git) before the deadline. 
+Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. 
+
+Keep in mind that in order to be eligible for points, you must have uploaded your project on [GitHub](https://apps.mprog.nl/android/git) and have committed and pushed any final changes before you show it to us. 
 
 | no | 2 point deadline | 1 point deadline |  
 | -: | ---------------: | ---------------: |  
@@ -187,9 +188,8 @@ but you may not communicate in Swift, Java, or Objective-C and such languages.
 If in doubt as to the appropriateness of some discussion, contact the course's
 heads.
 
-<a name="quoting"></a>
 
-### 8.1 Quoting sources 
+### Quoting sources 
 
 You may turn to the web for instruction beyond the course's lectures and
 sections, for references, and for solutions to technical difficulties, but not
@@ -199,9 +199,8 @@ do discover outside of the course's lectures and sections (even while
 respecting these constraints) and then integrate into your own work may be
 considered academic dishonesty.
 
-<a name="regulations"></a>
 
-### 8.2 Regulations
+### Regulations
 
 All forms of academic dishonesty are dealt with harshly. In all cases we follow the directives
 regarding fraud and plagiarism of the University of Amsterdam and of the Computer Science BSc

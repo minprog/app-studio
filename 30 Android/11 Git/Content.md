@@ -2,7 +2,7 @@
 
 Git is a version control system that allows you to track any changes you make to your code, and also undo them if necessary. In order to be able to check your code, your project's source code should be available to us on GitHub. Not only does this allow us to check your submission, it also grants you the possibility to keep a track record of changes to your code, provided that you commit (and push) to GitHub regularly. This way, you can document changes to your application which allow you to better understand bugs in your code and also revert back to a previous version, should you need it. You can do this in various ways. 
 
-To use GitHub, you will need to make an account. This account can then be used to create repositories, and this is where your project's code will be stored! Below you will find various means on how to put your project on GitHub. You will also need to [download](https://desktop.github.com/) Git.
+To use GitHub, you will need to make an account. This account can then be used to create repositories, and this is where your project's code will be stored! Below you will find various means on how to put your project on GitHub. You will also need to [download](https://git-scm.com/download/win) Git if you are on Windows. If you are using Mac, Git should already be included with your shell environment. If on Linux and Git is not yet present, you can install git on Ubuntu/Debian using `sudo apt install git`. If you have trouble with setup or installation, don't hesitate to speak to an assistant during the labs. 
 
 ## Sharing your project on GitHub
 
@@ -16,7 +16,7 @@ You can also do the reverse and open an existing project on GitHub using Android
 <iframe src="https://player.vimeo.com/video/211286086" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  <br>
  
-If the above does not work or you prefer to work in the terminal, you can also use the command line to set up a link with GitHub. Note that for this you will need the Git Shell or a similar environment. 
+If the above does not work or you prefer to work in the terminal, you can also use the command line to set up a link with GitHub. Note that for this you will need the Git Shell or a similar environment.
 <iframe src="https://player.vimeo.com/video/211268572" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  <br>
  

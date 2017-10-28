@@ -2,27 +2,21 @@
 
 Git is a version control system that allows you to track any changes you make to your code, and also undo them if necessary. In order to be able to check your code, your project's source code should be available to us on GitHub. Not only does this allow us to check your submission, it also grants you the possibility to keep a track record of changes to your code, provided that you commit (and push) to GitHub regularly. This way, you can document changes to your application which allow you to better understand bugs in your code and also revert back to a previous version, should you need it. You can do this in various ways. 
 
-To use GitHub, you will need to make an account. This account can then be used to create repositories, and this is where your project's code will be stored! Below you will find various means on how to put your project on GitHub. You will also need to [download](https://desktop.github.com/) Git.
+To use GitHub, you will need to make an account. This account can then be used to create repositories, and this is where your project's code will be stored! Below you will find various means on how to put your project on GitHub. You will also need to [download](https://git-scm.com/download/win) Git if you are on Windows. If you are using Mac, Git should already be included with your shell environment. If on Linux and Git is not yet present, you can install git on Ubuntu/Debian using `sudo apt install git`. If you have trouble with setup or installation, don't hesitate to speak to an assistant during the labs. 
 
-## Creating a repository
-For your Java exercises you will need to create a repository to hand in your code. To help you, we have composed a small guide that takes you through the process of doing so.
+## Sharing your project on GitHub
 
-
-
-
-## Sharing your Android Studio project on GitHub
-
-As mentioned before, you will need to create repositories to hold your app's code as well. Luckily, this has been thought of and you can share an Android Studio project on GitHub using Android Studio's integrated version control. 
+You can share an Android Studio project on GitHub using Android Studio's integrated version control. 
 <iframe src="https://player.vimeo.com/video/211286081" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  <br>
  
-Sometimes, you will encounter an error in Android Studio which says that the git executable cannot be found. To solve this, you can go through the `File > Settings > Version Control > Git` menu in Android Studio, find the Git section and manually select the `git.exe` on your system.
+Sometimes, you will encounter an error in Android Studio which says that the git executable cannot be found. To solve this, you can go through the `File -> Settings` menu in Android Studio, find the Git section and manually select the `git.exe` on your system.
  
 You can also do the reverse and open an existing project on GitHub using Android Studio. This could come in handy if you are working from different computers and want to progress your app on your desktop instead of your laptop, for example.
 <iframe src="https://player.vimeo.com/video/211286086" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  <br>
  
-If the above does not work or you prefer to work in the terminal, you can also use the command line to set up a link with GitHub for your project. Note that for this you will need the Git Shell or a similar environment. 
+If the above does not work or you prefer to work in the terminal, you can also use the command line to set up a link with GitHub. Note that for this you will need the Git Shell or a similar environment.
 <iframe src="https://player.vimeo.com/video/211268572" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  <br>
  

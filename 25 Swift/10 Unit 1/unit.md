@@ -1,12 +1,10 @@
 # Getting started with app development
 
-Get started using Swift, a brand new language for developing apps on iOS. And get to know Playgrounds, a great place to explore using Swift! Finally, build your very first app. 
+We'll now start using the book you downloaded in [preparations](/swift/preparations). Please also download the [files](https://developer.apple.com/go/?id=app-dev-swift-student) required to complete the exercises.
 
 ## Language exercises
 
 In some respects, Swift is a bit different from most programming languages. The lessons offer to learn everything from the ground up. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
-
-You downloaded the book in [preparations](/swift/preparations). Now, also download the [required files](https://developer.apple.com/go/?id=app-dev-swift-student) to complete the exercises.
 
 1. Introduction to Swift and Playgrounds
 
@@ -32,14 +30,20 @@ You downloaded the book in [preparations](/swift/preparations). Now, also downlo
 	- Know how to specify number ranges
 	- Know how to use the ternary operator
 
+*How to get points:* as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the four chapters!
+
 ## Getting to know Xcode
+
+Next up are four chapters about Xcode. You will get a lot of detail about how to use it, including the names of many of the tools that you need.
+
+We expect that you work through the text and accompanying exercises. If you ask a question in class for which we know the answer to be in these chapters, we will ask you to read them (again).
 
 5. Xcode
 
 	- Know how to create a new iOS project
 	- Know a couple of shortcuts
 
-	**Watch:** The ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
+	(You might also watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.)
 
 6. Building, running and debugging an app
 
@@ -47,28 +51,22 @@ You downloaded the book in [preparations](/swift/preparations). Now, also downlo
 	- Know how to deal with some of the warnings and errors you may get
 	- Know how to step through code using the debugger
 
-	This lesson contains a "debug your first app" lab. You must complete the lab and show that you have done so!
-
-	**Demonstrate:** Debug your first app
-
 7. Documentation
 
 	- Know how to look up documentation using the Quick Help feature
 	- Know how to read further documentation in the help browser
-
-	**Demonstrate:** Use documentation ("What is a view's frame?")
 
 8. Interface Builder basics
 
 	- Know where to find some of the inspectors like the "Attributes" inspector
 	- Know how to create outlets and actions using the Assistant Editor
 
-	**Demonstrate:** Use interface builder
-
 ## Guided Project: Light
 
-**Demonstrate:** the complete and working app
+At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and put it on GitHub.
 
-Your app needs to be on GitHub! Watch the video below to see how to create an Xcode project that lives on GitHub.
+*How to get points:* show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+
+Watch the video below to see how to create an Xcode project on GitHub.
 
 ![embed](https://player.vimeo.com/video/161756276)

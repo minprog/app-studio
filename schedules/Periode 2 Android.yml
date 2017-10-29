@@ -1,8 +1,9 @@
 Week 0:
     'Preparations: Install Android Studio': '/android/getting-started'
-    'Preparations: Learn to use Git': '/android/git'
 Week 1:
+    'Preparations: Install Android Studio': '/android/getting-started'
     'Exercise : Java Classes': '/android-exercises/classes'
+    'Preparations: Learn to use Git': '/android/git'
     'Project : Mr. Potatohead': '/projects/mr-potatohead'
 Week 2:
     'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
@@ -17,11 +18,6 @@ Week 5:
     'Exercise: Static vs. non-static': '/android-exercises/static-vs-non-static'
     'Project 5: Many Lists': '/projects/many-lists'
 Week 6:
-    'Project 6: Your Own': '/projects/your-own'
-    'Better Code Hub': '/guides/better-code-hub'
-    'Code Review': '/guides/code-reviews'
-    'Code Style Guide': 'https://source.android.com/source/code-style'
-Week 7:
     'Project 6: Your Own': '/projects/your-own'
     'Better Code Hub': '/guides/better-code-hub'
     'Code Review': '/guides/code-reviews'

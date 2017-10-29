@@ -39,6 +39,10 @@ Your task is to build an app according to the description above. Besides that, t
 
 - Upon rotation, user's data must be preserved. If the user has enabled, for example, the nose, it should still be enabled after rotating.
 
+## Creating your first project
+
+<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ## Getting started
 
 1. Create a new project, using this pattern as a name: `studentname-pset1`.

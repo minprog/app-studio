@@ -47,14 +47,14 @@ grades:
         type: pass
     pr6:
         type: pass
-    code:
+    final:
         type: float
 
 calculation:
     normal:
-        projects: 35
-        design: 35
-        code: 30
+        exercises: 20
+        projects: 60
+        final: 20
 
 projects:
     grades:
@@ -65,7 +65,7 @@ projects:
         app5: 1
         app6: 1
 
-practice:
+exercises:
     grades:
         pr1: 1
         pr2: 1
@@ -74,6 +74,6 @@ practice:
         pr5: 1
         pr6: 1
 
-code:
+final:
     grades:
-        code: 1
+        final: 1

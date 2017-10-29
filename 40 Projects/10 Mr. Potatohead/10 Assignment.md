@@ -8,7 +8,7 @@
 
 ## Preparation
 
-- On Android: [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state).
+- On Android: [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state). And, learn about [Git](/android/git)
 - On iOS: [Learn Swift](/ios/getting-started), read about [Layouts](/ios/layouts) and [State](/ios/state).
 
 ## Assessment

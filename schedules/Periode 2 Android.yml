@@ -2,8 +2,7 @@ Week 0:
     'Preparations: Install Android Studio': '/android/getting-started'
 Week 1:
     'Preparations: Install Android Studio': '/android/getting-started'
-    'Exercise : Java Classes': '/android-exercises/classes'
-    'Preparations: Learn to use Git': '/android/git'
+    'Exercise: Java Classes': '/android-exercises/classes'
     'Project : Mr. Potatohead': '/projects/mr-potatohead'
 Week 2:
     'Exercise: Parameters': '/android-exercises/parameters-and-return-values'

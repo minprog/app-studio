@@ -12,7 +12,7 @@ everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
 
-## Table of Contents
+## Table of contents
 
 - [Getting started](#gettingstarted)
 - [Expectations](#expectations)

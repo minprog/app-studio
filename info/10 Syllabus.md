@@ -14,15 +14,15 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## Table of Contents
 
-- [Getting Started](#gettingstarted)
+- [Getting started](#gettingstarted)
 - [Expectations](#expectations)
 - [Prerequisites](#prerequisites)
-- [Staff & Asking questions](#staff)
-- [Grades & Deadlines](#grades)
+- [Asking questions](#staff)
+- [What to do](#grades)
 	* [Exercises](#exercises)
-	* [Guided Projects](#projects)
-	* [Final Project](#final)
-- [Office Hours](#officehours)
+	* [Guided projects](#projects)
+	* [Final project](#final)
+- [Office hours](#officehours)
 - [Tutoring](#tutoring)
 - [Books](#books)
 - [Collaboration](#collaboration)
@@ -30,7 +30,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 <a name="gettingstarted"></a>
 
-## 0. Getting Started 
+## 0. Getting started 
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio
 - Read the remainder of this syllabus
@@ -123,7 +123,7 @@ In the last two weeks of the course, you will implement a final project. While y
 
 <a name="officehours"></a>
 
-## 5. Office Hours 
+## 5. Office hours 
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 

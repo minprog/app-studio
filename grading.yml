@@ -36,17 +36,17 @@ grades:
         calculation: points
         hide_calculated: true
     pr1:
-        type: boolean
+        type: pass
     pr2:
-        type: boolean
+        type: pass
     pr3:
-        type: boolean
+        type: pass
     pr4:
-        type: boolean
+        type: pass
     pr5:
-        type: boolean
+        type: pass
     pr6:
-        type: boolean
+        type: pass
     des1:
         type: integer
         subgrades:

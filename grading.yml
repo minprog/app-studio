@@ -35,6 +35,18 @@ grades:
             points: integer
         calculation: points
         hide_calculated: true
+    pr1:
+        type: boolean
+    pr2:
+        type: boolean
+    pr3:
+        type: boolean
+    pr4:
+        type: boolean
+    pr5:
+        type: boolean
+    pr6:
+        type: boolean
     des1:
         type: integer
         subgrades:
@@ -89,14 +101,14 @@ projects:
         app5: 1
         app6: 1
 
-design:
+practice:
     grades:
-        des1: 1
-        des2: 1
-        des3: 1
-        des4: 1
-        des5: 1
-        des6: 1
+        pr1: 1
+        pr2: 1
+        pr3: 1
+        pr4: 1
+        pr5: 1
+        pr6: 1
 
 code:
     grades:

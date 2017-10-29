@@ -30,7 +30,7 @@ In some respects, Swift is a bit different from most programming languages. The 
 	- Know how to specify number ranges
 	- Know how to use the ternary operator
 
-*How to get points:* as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the four chapters!
+**How to get points:** as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the four chapters!
 
 ## Getting to know Xcode
 
@@ -65,7 +65,7 @@ We expect that you work through the text and accompanying exercises. If you ask 
 
 At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and put it on GitHub.
 
-*How to get points:* show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+**How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
 
 Watch the video below to see how to create an Xcode project on GitHub.
 

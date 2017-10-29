@@ -12,17 +12,17 @@ everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
 
-## Table of Contents
+## Table of contents
 
-- [Getting Started](#gettingstarted)
+- [Getting started](#gettingstarted)
 - [Expectations](#expectations)
 - [Prerequisites](#prerequisites)
-- [Staff & Asking questions](#staff)
-- [Grades & Deadlines](#grades)
+- [Asking questions](#staff)
+- [What to do](#grades)
 	* [Exercises](#exercises)
-	* [Guided Projects](#projects)
-	* [Final Project](#final)
-- [Office Hours](#officehours)
+	* [Guided projects](#projects)
+	* [Final project](#final)
+- [Office hours](#officehours)
 - [Tutoring](#tutoring)
 - [Books](#books)
 - [Collaboration](#collaboration)
@@ -30,7 +30,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 <a name="gettingstarted"></a>
 
-## 0. Getting Started 
+## 0. Getting started 
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio
 - Read the remainder of this syllabus
@@ -42,7 +42,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## 1. Expectations 
 
-You are expected to complete all provided exercises, attend all programming labs, submit five fully working practice apps, as well as a final project.
+You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
 
 <a name="prerequisites"></a>
 
@@ -55,34 +55,21 @@ Studio.
 
 <a name="staff"></a>
 
-## 3. Staff & Asking Questions 
+## 3. Asking Questions 
 
-The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor at the lab. Below you will find a list of the courses's instructors:
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff in the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor in the lab. Below you will find a list of the courses's instructors:
 
-Martijn Stegeman
-*instructor* <help@mprog.nl>
-
-Renske Talsma
-*teaching assistant (Android)*
-
-Julia Anten
-*teaching assistant (Android)*
-
-Marijn Jansen
-*teaching assistant (iOS)*
-
-Emma Hokken
-*teaching assistant (iOS)*
-
+- Martijn Stegeman, *instructor* <help@mprog.nl>
+- Renske Talsma, *teaching assistant (Android)*
+- Julia Anten, *teaching assistant (Android)*
+- Marijn Jansen, *teaching assistant (iOS)*
+- Emma Hokken, *teaching assistant (iOS)*
 
 <a name="grades"></a>
 
-## 4. Grades & Deadlines 
+## 4. What to do
 
-Every week, a new exercise and new guided project will be made available. In the last two weeks, during the final project you will create an app of your own. 
-The current exercise and guided project can be found in the "Current" menu atop the website. 
-
-You must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
+Every week, exercises and a programming project will be made available. In the final two weeks, you will create an app of your own design instead. Find all assignments in the "Current" menu atop this website. 
 
 Final grades are determined using the following weights:
 
@@ -90,15 +77,17 @@ Final grades are determined using the following weights:
 | guided projects | 60% |
 | final project   | 20% |
 
+You must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
+
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
 <a name="exercises"></a>
 
 ### 4.1 Exercises 
 
-To learn the specifics of iOS or Android, tutorials are offered. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
+Exercises help you learn the ropes of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
 
-These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/git) repository. You are encouraged to take a look at the exercises before the lab session on monday, so that you can make optimal use of your time during the lab session. 
+You can earn points for completing exercises early in the week. To earn points, complete the exercises and push your answers to a GitHub repository. You are encouraged to review the week's exercises before office hours on Monday, so as to make optimal use of your time during the lab session.
 
 | no |   deadline |  
 | -: | ---------: |  
@@ -112,9 +101,7 @@ These exercises will have to pushed to a [GitHub](https://apps.mprog.nl/android/
 
 ### 4.2 Guided projects 
 
-Each week, you will create an app using the concepts from exercises and tutorials. Points can be earned by completing the guided projects and showing the fully functioning application during office hours. 
-
-Keep in mind that in order to be eligible for points, you must have uploaded your project on [GitHub](https://apps.mprog.nl/android/git) and have committed and pushed any final changes before you show it to us. 
+Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
 
 | no | 2 point deadline | 1 point deadline |  
 | -: | ---------------: | ---------------: |  
@@ -130,13 +117,13 @@ Feedback can be obtained in class while checking off assignments. You are encour
 
 ### 4.3 Final project 
 
-In the last few weeks of the course, you will implement a final project. You will receive a set of requirements for the app. However, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality. During these weeks, there are no exercises to be completed. 
+In the last two weeks of the course, you will implement a final project. While you will receive a set of requirements for the app, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
 
 **Deadline**: Friday, 15 December 23:59, or just a little bit later.
 
 <a name="officehours"></a>
 
-## 5. Office Hours 
+## 5. Office hours 
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 
@@ -152,7 +139,7 @@ For students who avail themselves of the course's other resources but still find
 
 ### Android
 
-No books are required for students of the Android platform, but the following book may provide additional learning material: Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/)
+No books are required for students of the Android platform, but the following book may provide additional learning material: Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/).
 
 ### iOS
 

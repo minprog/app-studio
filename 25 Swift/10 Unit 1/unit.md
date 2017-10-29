@@ -1,83 +1,67 @@
 # Getting started with app development
 
-Get started using Swift, a brand new language for developing apps on iOS. Get to know Playgrounds, a great place to explore using Swift! Also, build your very first app.
+We'll now start using the book you downloaded in [preparations](/swift/preparations). Please also download the [files](https://developer.apple.com/go/?id=app-dev-swift-student) required to complete the exercises.
 
-In some respects, Swift is a bit different from most programming languages. The lessons offer to learn everything from the ground up. Feel free to skip some of the parts about the programming language, but make sure that you know exactly how to write correct Swift code!
+## Language exercises
 
-## 0. Getting the book
+In some respects, Swift is a bit different from most programming languages. The lessons offer to learn everything from the ground up. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
-![](app-dev-with-swift.jpeg){:.inline}
+1. Introduction to Swift and Playgrounds
 
-For all units, you will work on the book "App Development with Swift", which you can get for free in the iBooks Store. iBooks should be available on your Mac or on your iPad---but if it isn't, simply download it from the App Store.
+	- Know how to use the interactive Swift REPL on the Terminal
+	- Know how to create a new Playground in Xcode and how to output stuff
 
-**Get:** [The book from the iBook Store.](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996)
+2. Constants, variables and data types
 
-## 1. Introduction to Swift and Playgrounds
+	- Know how to declare variables and constants
+	- Know how to specify a variable type
+	- Know how to declare a variable without specifiying the type explicitly
+	- Know about the Swift conventions for naming variables and constants
 
-- Know how to use the interactive Swift REPL on the Terminal
-- Know how to create a new Playground in Xcode and how to output stuff
+3. Operators
 
-## 2. Constants, variables and data types
+	- Know how to write expressions
+	- Know how to convert numeric types
 
-- Know how to declare variables and constants
-- Know how to specify a variable type
-- Know how to declare a variable without specifiying the type explicitly
-- Know about the Swift conventions for naming variables and constants
+4. Control flow
 
-## 3. Operators
+	- Know how to write if-else if-else statements
+	- Know how to write switch statements
+	- Know how to specify number ranges
+	- Know how to use the ternary operator
 
-- Know how to write expressions
-- Know how to convert numeric types
+**How to get points:** as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the four chapters!
 
-## 4. Control flow
+## Getting to know Xcode
 
-- Know how to write if-else if-else statements
-- Know how to write switch statements
-- Know how to specify number ranges
-- Know how to use the ternary operator
+Next up are four chapters about Xcode. You will get a lot of detail about how to use it, including the names of many of the tools that you need.
 
-## 5. Xcode
+We expect that you work through the text and accompanying exercises. If you ask a question in class for which we know the answer to be in these chapters, we will ask you to read them (again).
 
-- Know how to create a new iOS project
-- Know a couple of shortcuts
+5. Xcode
 
-**Watch:** The ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
+	- Know how to create a new iOS project
+	- Know a couple of shortcuts
+	- (You might also watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.)
 
-## 6. Building, running and debugging an app
+6. Building, running and debugging an app
 
-- Know how to get an app running on your own iOS device
-- Know how to deal with some of the warnings and errors you may get
-- Know how to step through code using the debugger
+	- Know how to get an app running on your own iOS device
+	- Know how to deal with some of the warnings and errors you may get
+	- Know how to step through code using the debugger
 
-This lesson contains a "debug your first app" lab. You must complete the lab and show that you have done so!
+7. Documentation
 
-**Demonstrate:** Debug your first app
+	- Know how to look up documentation using the Quick Help feature
+	- Know how to read further documentation in the help browser
 
-## 7. Documentation
+8. Interface Builder basics
 
-- Know how to look up documentation using the Quick Help feature
-- Know how to read further documentation in the help browser
+	- Know where to find some of the inspectors like the "Attributes" inspector
+	- Know how to create outlets and actions using the Assistant Editor
 
-**Demonstrate:** Use documentation ("What is a view's frame?")
+## Guided Project: Light
 
-## 8. Interface Builder basics ##
+At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
 
-- Know where to find some of the inspectors like the "Attributes" inspector
-- Know how to create outlets and actions using the Assistant Editor
-
-**Demonstrate:** Use interface builder
-
-## Guided Project: Light ##
-
-**Demonstrate:** the complete and working app
-
-Your app needs to be on GitHub! Watch the video below to see how to create an Xcode project that lives on GitHub.
-
-![embed](https://player.vimeo.com/video/161756276)
-
-
-
-
-
-
-
+**How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!

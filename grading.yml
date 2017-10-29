@@ -35,50 +35,26 @@ grades:
             points: integer
         calculation: points
         hide_calculated: true
-    des1:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des2:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des3:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des4:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des5:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des6:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    code:
+    pr1:
+        type: pass
+    pr2:
+        type: pass
+    pr3:
+        type: pass
+    pr4:
+        type: pass
+    pr5:
+        type: pass
+    pr6:
+        type: pass
+    final:
         type: float
 
 calculation:
     normal:
-        projects: 35
-        design: 35
-        code: 30
+        exercises: 20
+        projects: 60
+        final: 20
 
 projects:
     grades:
@@ -89,15 +65,15 @@ projects:
         app5: 1
         app6: 1
 
-design:
+exercises:
     grades:
-        des1: 1
-        des2: 1
-        des3: 1
-        des4: 1
-        des5: 1
-        des6: 1
+        pr1: 1
+        pr2: 1
+        pr3: 1
+        pr4: 1
+        pr5: 1
+        pr6: 1
 
-code:
+final:
     grades:
-        code: 1
+        final: 1

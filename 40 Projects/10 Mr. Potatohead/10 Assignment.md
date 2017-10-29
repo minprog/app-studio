@@ -8,7 +8,7 @@
 
 ## Preparation
 
-- On Android: [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state).
+- On Android: [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state). And, learn about [Git](/android/git)
 - On iOS: [Learn Swift](/ios/getting-started), read about [Layouts](/ios/layouts) and [State](/ios/state).
 
 ## Assessment
@@ -38,6 +38,10 @@ Your task is to build an app according to the description above. Besides that, t
 - Your app should support rotation of the user interface! Most phones support portrait as well as landscape. Users expect most apps to work in either orientation. Make sure that you accomodate this by positioning the user interface elements correctly in both orientations.
 
 - Upon rotation, user's data must be preserved. If the user has enabled, for example, the nose, it should still be enabled after rotating.
+
+## Creating your first project
+
+<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Getting started
 

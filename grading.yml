@@ -47,42 +47,6 @@ grades:
         type: pass
     pr6:
         type: pass
-    des1:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des2:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des3:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des4:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des5:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
-    des6:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
-        hide_calculated: true
     code:
         type: float
 

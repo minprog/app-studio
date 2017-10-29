@@ -63,10 +63,6 @@ We expect that you work through the text and accompanying exercises. If you ask 
 
 ## Guided Project: Light
 
-At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and put it on GitHub.
+At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
 
 **How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
-
-Watch the video below to see how to create an Xcode project on GitHub.
-
-![embed](https://player.vimeo.com/video/161756276)

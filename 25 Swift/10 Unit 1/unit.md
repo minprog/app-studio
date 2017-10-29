@@ -42,8 +42,7 @@ We expect that you work through the text and accompanying exercises. If you ask 
 
 	- Know how to create a new iOS project
 	- Know a couple of shortcuts
-
-	(You might also watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.)
+	- (You might also watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.)
 
 6. Building, running and debugging an app
 

@@ -1,15 +1,16 @@
 Week 0:
     'Install or upgrade Xcode': '/swift/preparations'
 Week 1:
-    'Unit 1: Getting started with App Development': '/swift/unit-1'
+    'Install or upgrade Xcode': '/swift/preparations'
+    'Unit 1 assignments': '/swift/unit-1'
 Week 2:
-    'Unit 2: Introduction to UIKit': '/swift/unit-2'
+    'Unit 2 assignments': '/swift/unit-2'
 Week 3:
-    'Unit 3: Navigation and Workflows': '/swift/unit-3'
+    'Unit 3 assignments': '/swift/unit-3'
 Week 4:
-    'Unit 4: Tables and Persistence': '/swift/unit-4'
+    'Unit 4 assignments': '/swift/unit-4'
 Week 5:
-    'Unit 5: Working With the Web': '/swift/unit-5'
+    'Unit 5 assignments': '/swift/unit-5'
 Week 6:
     'Unit 1: Getting started': '/swift/unit-1'
 Week 7:

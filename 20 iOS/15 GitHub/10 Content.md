@@ -24,7 +24,3 @@ Choose your account (or Add a GitHub account...), add a repository name, be sure
 
 **Note:** A good repository name is for example `MarijnJansen-Unit1-Light`
 ![](step4.png)
-
-We also made a short video instructing you how to create a new project in Xcode with Git and GitHub.
-
-![embed](https://player.vimeo.com/video/161756276)

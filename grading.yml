@@ -45,8 +45,6 @@ grades:
         type: pass
     pr5:
         type: pass
-    pr6:
-        type: pass
     final:
         type: float
 
@@ -72,7 +70,6 @@ exercises:
         pr3: 1
         pr4: 1
         pr5: 1
-        pr6: 1
 
 final:
     grades:

@@ -51,7 +51,7 @@ grades:
         type: float
 
 calculation:
-    normal:
+    eindcijfer:
         exercises: 20
         projects: 60
         final: 20

@@ -3,31 +3,31 @@ grades:
         type: integer
         subgrades:
             points: integer
-        calculation: points/2.0+1
+        calculation: points/2.0*9.0+1
         hide_calculated: true
     app2:
         type: integer
         subgrades:
             points: integer
-        calculation: points/2.0+1
+        calculation: points/2.0*9.0+1
         hide_calculated: true
     app3:
         type: integer
         subgrades:
             points: integer
-        calculation: points/2.0+1
+        calculation: points/2.0*9.0+1
         hide_calculated: true
     app4:
         type: integer
         subgrades:
             points: integer
-        calculation: points/2.0+1
+        calculation: points/2.0*9.0+1
         hide_calculated: true
     app5:
         type: integer
         subgrades:
             points: integer
-        calculation: points/2.0+1
+        calculation: points/2.0*9.0+1
         hide_calculated: true
     app6:
         type: float

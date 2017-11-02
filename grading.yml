@@ -52,7 +52,7 @@ calculation:
         finproj: 20
 
 projects:
-    grades:
+    submits:
         app1: 1
         app2: 1
         app3: 1
@@ -60,7 +60,7 @@ projects:
         app5: 1
 
 exercises:
-    grades:
+    submits:
         pr1: 1
         pr2: 1
         pr3: 1
@@ -68,5 +68,5 @@ exercises:
         pr5: 1
 
 finproj:
-    grades:
+    submits:
         app6: 1

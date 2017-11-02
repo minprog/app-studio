@@ -60,6 +60,7 @@ projects:
         app5: 1
 
 exercises:
+    type: pass
     submits:
         pr1: 1
         pr2: 1

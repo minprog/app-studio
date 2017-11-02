@@ -36,15 +36,15 @@ grades:
         calculation: points
         hide_calculated: true
     pr1:
-        type: pass
+        type: integer
     pr2:
-        type: pass
+        type: integer
     pr3:
-        type: pass
+        type: integer
     pr4:
-        type: pass
+        type: integer
     pr5:
-        type: pass
+        type: integer
     final:
         type: float
 

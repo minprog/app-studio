@@ -3,45 +3,45 @@ grades:
         type: integer
         subgrades:
             points: integer
-        calculation: points
+        calculation: points/9.0+1
         hide_calculated: true
     app2:
         type: integer
         subgrades:
             points: integer
-        calculation: points
+        calculation: points/9.0+1
         hide_calculated: true
     app3:
         type: integer
         subgrades:
             points: integer
-        calculation: points
+        calculation: points/9.0+1
         hide_calculated: true
     app4:
         type: integer
         subgrades:
             points: integer
-        calculation: points
+        calculation: points/9.0+1
         hide_calculated: true
     app5:
         type: integer
         subgrades:
             points: integer
-        calculation: points
+        calculation: points/9.0+1
         hide_calculated: true
     app6:
         type: float
         hide_calculated: true
     pr1:
-        type: integer
+        type: pass
     pr2:
-        type: integer
+        type: pass
     pr3:
-        type: integer
+        type: pass
     pr4:
-        type: integer
+        type: pass
     pr5:
-        type: integer
+        type: pass
     final:
         type: float
 

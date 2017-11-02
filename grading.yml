@@ -30,10 +30,7 @@ grades:
         calculation: points
         hide_calculated: true
     app6:
-        type: integer
-        subgrades:
-            points: integer
-        calculation: points
+        type: float
         hide_calculated: true
     pr1:
         type: integer
@@ -52,7 +49,7 @@ calculation:
     eindcijfer:
         exercises: 20
         projects: 60
-        final: 20
+        finproj: 20
 
 projects:
     grades:
@@ -70,6 +67,6 @@ exercises:
         pr4: 1
         pr5: 1
 
-final:
+finproj:
     grades:
-        final: 1
+        app6: 1

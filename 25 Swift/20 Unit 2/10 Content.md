@@ -1,59 +1,62 @@
 # Introduction to UIKit
 
-## 1. Strings
+## Language exercises
 
-- Know how to use Strings in Swift
+Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
-## 2. Functions
+1. Strings
 
-- Know how to declare and use functions
+	- Know how to use Strings in Swift
 
-## 3. Structures
+2. Functions
 
-- Know how to create and user strucs
+	- Know how to declare and use functions
 
-## 4. Classes, Inheritance
+3. Structures
 
-- Know how to create a class and user inheritance
+	- Know how to create and user structs
 
-## 5. Collections
+4. Classes, Inheritance
 
-- Know what types of collections you can use in swift
-- Know which type of collection to use
+	- Know how to create a class and user inheritance
 
-## 6. Loops
+5. Collections
 
-- Know the different types of loops
+	- Know what types of collections you can use in swift
+	- Know which type of collection to use
 
-## 7. Introduction to UIKit
+6. Loops
 
-- Know how to change the appearance of common views in apps
-- Know hoe to change the appearance of common controls in apps
+	- Know the different types of loops
 
-**Demonstrate:** UIKit Survey
+**How to get points:** as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the six chapters!
 
-## 8. Displaying Data
+## Getting to know UIKit
 
-- Know how to change fill your UI with data
+7. Introduction to UIKit
 
-**Demonstrate: ** Tutorial Screen 
+	- Know how to change the appearance of common views in apps
+	- Know how to change the appearance of common controls in apps
 
-# 9. Controls In Action
+8. Displaying Data
 
-- Know how to bind controls to your code
+	- Know how to change fill your UI with data
 
-**Demonstrate:** Basic Interactions
 
-# 10. Auto Layout and Stack Views
+9. Controls In Action
 
-- Know how to use auto Layout
-- Know how to use Stack Views
-- Know how to create you own constraints
+	- Know how to bind controls to your code
 
-**Demonstrate:** Calculator
 
-# Guided Project: Apple Pie
+10. Auto Layout and Stack Views
 
-**Demonstrate:** the complete and working app
+	- Know how to use auto Layout
+	- Know how to use Stack Views
+	- Know how to create you own constraints
 
-Your app needs to be on GitHub!
+
+## Guided Project: Apple Pie
+
+t the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
+
+**How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!

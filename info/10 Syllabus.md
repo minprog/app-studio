@@ -89,19 +89,43 @@ Exercises help you learn the ropes of programming iOS or Android. Earlier in the
 
 You can earn points for completing exercises early in the week. To earn points, complete the exercises and push your answers to a GitHub repository. You are encouraged to review the week's exercises before office hours on Monday, so as to make optimal use of your time during the lab session.
 
-| no |   deadline |  
-| -: | ---------: |  
-|  1 | Mon 30 Oct |  
-|  2 | Mon  6 Nov |  
-|  3 | Mon 13 Nov |  
-|  4 | Mon 20 Nov |  
-|  5 | Mon 27 Nov |  
+#### Period 1
+
+| no |    deadline |  
+| -: | ----------: |  
+|  1 | Thu   7 Sep |  
+|  2 | Thu  14 Sep |  
+|  3 | Thu  21 Sep |  
+|  4 | Thu  28 Sep |  
+|  5 | Thu   5 Oct |  
+
+#### Period 2
+
+| no |    deadline |  
+| -: |  ---------: |  
+|  1 |  Mon 30 Oct |  
+|  2 |  Mon  6 Nov |  
+|  3 |  Mon 13 Nov |  
+|  4 |  Mon 20 Nov |  
+|  5 |  Mon 27 Nov |  
 
 <a name="projects"></a>
 
 ### 4.2 Guided projects 
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
+
+#### Period 1
+
+| no | 2 point deadline | 1 point deadline |  
+| -: | ---------------: | ---------------: |  
+|  1 |      Thu   7 Sep |      Mon  11 Sep |  
+|  2 |      Thu  14 Sep |      Mon  18 Sep |  
+|  3 |      Thu  21 Sep |      Mon  25 Sep |  
+|  4 |      Thu  28 Sep |      Mon   2 Oct |  
+|  5 |      Thu   5 Oct |      Mon   9 Oct |  
+
+#### Period 2
 
 | no | 2 point deadline | 1 point deadline |  
 | -: | ---------------: | ---------------: |  

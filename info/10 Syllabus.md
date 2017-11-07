@@ -143,7 +143,8 @@ Feedback can be obtained in class while checking off assignments. You are encour
 
 In the last two weeks of the course, you will implement a final project. While you will receive a set of requirements for the app, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
 
-**Deadline**: Friday, 15 December 23:59, or just a little bit later.
+- **Deadline Period 1:** 19 Oct 2017 at 23:59.
+- **Deadline Period 2:** Friday, 15 December 23:59, or just a little bit later.
 
 <a name="officehours"></a>
 

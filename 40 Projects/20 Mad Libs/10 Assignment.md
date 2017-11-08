@@ -8,8 +8,7 @@
 
 ## Preparation
 
-- On Android: Practice [Java](/android/java) and read about [Multiple Activities](/android/multiple-activities).
-- On iOS: Practice [Swift](/ios/swift) and read about [Multiple Controllers](/ios/multiple-controllers).
+- Practice [Java](/android/java) and read about [Multiple Activities](/android/multiple-activities).
 
 ## Assessment
 
@@ -53,21 +52,19 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should provide proper back navigation. In this case, when showing the final story, going "back" should immediately return to the start screen, instead of allowing to change words etc. In the concept of the game it makes no sense to be able to change the words.
 
-- For back navigation in your app, your app must use the standard back button (Android) or a navigation controller (iOS).
+- For back navigation in your app, your app must use the standard back button (Android).
 
 ## Getting started
 
-1. For iOS: create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. Create a new project, using this pattern as a name: `studentname-pset2`.
 
-2. Create a new project, using this pattern as a name: `studentname-pset2`.
+2. Share your project on GitHub. 
 
-3. Share your project on GitHub. 
+3. Download the provided files ([Android](madlibs_android.zip)) and import them into your project.
 
-4. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+4. Carefully read the provided code. What does it do? What do you still need to implement? 
 
-5. Carefully read the provided code. What does it do? What do you still need to implement? 
-
-6. Remember to commit and push all important changes you make! 
+5. Remember to commit and push all important changes you make! 
 
 ## Android tips
 
@@ -76,14 +73,6 @@ Your task is to build an app according to the description above. On top of that,
 - When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class.
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
-
-## iOS tips
-
-- To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
-
-- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass a `String` object to the constructor of the `Story` class.
-
-- On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [the Apple docs](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html) to find out how.
 
 ## How to submit
 

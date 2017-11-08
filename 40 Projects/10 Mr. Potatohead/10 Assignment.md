@@ -8,8 +8,7 @@
 
 ## Preparation
 
-- On Android: [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state). And, learn about [Git](/android/git)
-- On iOS: [Learn Swift](/ios/getting-started), read about [Layouts](/ios/layouts) and [State](/ios/state).
+- [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state). And, learn about [Git](/android/git)
 
 ## Assessment
 
@@ -33,9 +32,9 @@ The way to display the various body parts is to create a separate view for each 
 
 Your task is to build an app according to the description above. Besides that, there are some specific requirements to take into account:
 
-- You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface. On iOS, you must use `UIStackView`s, and on Android, you must use `LinearLayout`s.
+- You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface. You must use `LinearLayout`s.
 
-- Your app should support rotation of the user interface! Most phones support portrait as well as landscape. Users expect most apps to work in either orientation. Make sure that you accomodate this by positioning the user interface elements correctly in both orientations.
+- Your app should support rotation of the user interface! Most phones support portrait as well as landscape. Users expect most apps to work in either orientation. Make sure that you accommodate this by positioning the user interface elements correctly in both orientations.
 
 - Upon rotation, user's data must be preserved. If the user has enabled, for example, the nose, it should still be enabled after rotating.
 
@@ -56,10 +55,6 @@ Your task is to build an app according to the description above. Besides that, t
 - You can set whether or not an image (or any other control) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
 
 - You can preserve user data by using the `onSaveInstanceState()` method. 
-
-## iOS tips
-
-- You can set whether or not an image (or any other control) is visible on the screen by setting its `hidden` property in the Xcode designer, and/or by calling its `hidden` property in your Swift code. The `hidden` property accepts a boolean.
 
 ## How to submit
 

@@ -23,7 +23,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 ![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
 
 ## API
-The API we will use for this assignment is available at: TODO
+The API we will use for this assignment is available at: http://resto.mprog.nl/
 
 The following endpoints are available in this API:
 

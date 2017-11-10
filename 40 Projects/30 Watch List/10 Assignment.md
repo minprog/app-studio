@@ -74,7 +74,7 @@ Your task is to build an app according to the description above. On top of that,
 4. Remember to commit and push all important changes you make! 
 
 
-## Tips (Android)
+## Tips
 
 - If you need to handle events other than `onClick`, you might need to implement a listener class. Do not use an anonymous listener class (as is often used on Stack Overflow)! Instead, use a named listener class. [Here's an example](http://www.fredosaurus.com/notes-java/GUI/events/inner_class_listener.html).
 

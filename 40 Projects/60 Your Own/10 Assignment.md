@@ -45,7 +45,7 @@ This is the full set of requirements that we ask you to accommodate when designi
 - If practical, very small user data must be persisted on the phone, so as to provide a responsive app in case of network problems.
 - Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once.
 - Even if killed, the app should generally resume in the same state as before.
-- Code should be organized well (keeping in mind the advice from Better Code Hub).
+- Code should be organised well (keeping in mind the advice from Better Code Hub).
 - Code should be documented well (comments as well as READMEs).
 
 Discuss your app proposal with the TAs to ensure the scope is sufficient!

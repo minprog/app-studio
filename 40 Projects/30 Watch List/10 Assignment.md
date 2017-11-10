@@ -23,14 +23,14 @@ Create an app that will help users look at a restaurant's menu and compose an or
 ![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
 
 ## API
-The API we will use for this assignment is available at: https://resto.mprog.nl/
+The API we will use for this assignment is available at: [https://resto.mprog.nl/](https://resto.mprog.nl/)
 
 The following endpoints are available in this API:
 
-* /categories: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key, "categories," in the JSON.
-* /menu: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key, "items," with the JSON.
-* /order: A POST to this endpoint with the collection of menu item id values will submit the order and will return a response with the estimated time before the order will be ready. The IDs you send need to be be contained with JSON data under the key, menuIds. When you parse the JSON, an estimate of the time before the order is ready will be under the key, "preparation_time".
-* /images:
+* `/categories`: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key, "categories," in the JSON.
+* `/menu`: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key, "items," with the JSON.
+* `/order`: A POST to this endpoint with the collection of menu item id values will submit the order and will return a response with the estimated time before the order will be ready. The IDs you send need to be be contained with JSON data under the key, menuIds. When you parse the JSON, an estimate of the time before the order is ready will be under the key, "preparation_time".
+* `/images`: Will return the URL of an image, if available. Make sure to check for 404's!
 
 ### Setting up a connection with the API
 

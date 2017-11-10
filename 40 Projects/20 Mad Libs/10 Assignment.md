@@ -72,6 +72,8 @@ Your task is to build an app according to the description above. On top of that,
 
 - When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class.
 
+- You can load in text files using an `getAssets()` or `getResources()` among other things. Up to you to find out what suits you best (perhaps with some help of Google)! 
+
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
 
 ## How to submit

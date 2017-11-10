@@ -8,30 +8,32 @@
 
 ## Preparation
 
-- On Android: [AsyncTask](/android/asynctask), [Persistence](/android/persistence) and [Lists](/android/lists).
+- On Android: [Persistence](/android/persistence) and [Lists](/android/lists).
 
 
 ## Assessment
-
 Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 
 ## What to do
-Create an app that will help users remember which songs to listen to and present this in a simple, elegant user interface. Users should be able to search for songs, read other information about the song such as artist, album, as well as add such songs to a list of songs to listen to. And of course, they should be able to remove songs from the list as well!
+Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
 
+![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
 
 ## API
+The API we will use for this assignment is available at: TODO
 
-How are we going to get a list of songs? To get this information, we will make use of the Last FM API. To use this API, you will first have to [register](https://www.last.fm/api/account/create), so that you can obtain an API key: 
+The following endpoints are available in this API:
 
-The documentation for the API can be found [here](https://www.last.fm/api/intro). For example, the artist search and track search could be of interest to you! No need to perform any user authentication.
+* /categories: A GET request to this endpoint will return an array of strings of the categories in menu.json. The array will be available under the key, "categories," in the JSON.
+* /menu: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key, "items," with the JSON.
+* /order: A POST to this endpoint with the collection of menu item id values will submit the order and will return a response with the estimated time before the order will be ready. The IDs you send need to be be contained with JSON data under the key, menuIds. When you parse the JSON, an estimate of the time before the order is ready will be under the key, "preparation_time".
 
-A typical API request might look like this: `http://ws.audioscrobbler.com/2.0/?method=track.search&track=Believe&api_key=YOUR_API_KEY&format=json`. Keep in mind we have to specify the JSON format as we are parsing JSON in our asynctask, as the standard return format of this API is XML, not JSON.
+### Setting up a connection with the API
 
-Note: no need to use the API in an efficient manner. Normally, you would cache all data that you get from the API, so not to overload it with duplicate requests as your user browses the app. For now, you can simply request the data again whenever you need it! Do try to not overload the API with requests though, as this might get you blocked from usage.
-
+To set up a connection with the API, we will make use of the [Volley Library](https://developer.android.com/training/volley/index.html) for Android. To make this work you will need to add a depedency to your app's `build.gradle` file, as per so: `compile 'com.android.volley:volley:1.0.0'` This will allow you to use the libary's functionalities in your app. You can follow the guide and example code on using a `newRequestQueue` on [this](https://developer.android.com/training/volley/simple.html) in order to set up your connection with the API. If everything goes well, you can now do something useful with your API response in the `onResponse` method!
 
 ## Designing the user interface
 
@@ -54,13 +56,11 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should use standard list views combined with an adapter.
 
-- Your app should save and persist the list of movies using `SharedPreferences`.
+- Your app should save and persist the list of recipes using `SharedPreferences`.
 
-- Listeners may not be anonymous as of now, see the exercise about Listeners.
+- Listeners may not be anonymous as of now, see the [resource about Listeners](/android/listeners).
 
-- Users should be able to search for songs as well as artists.
-
-- Your "to listen" list may not allow users to add duplicate songs and must notify the user elegantly. 
+- Your recipe list may not allow users to add duplicate songs and must notify the user elegantly.
 
 
 ## Getting started
@@ -69,9 +69,9 @@ Your task is to build an app according to the description above. On top of that,
 
 2. Create a new project, using this pattern as a name: `studentname-pset3`.
 
-3. Share your project on GitHub. 
+3. Share your project on GitHub.
 
-4. Remember to commit and push all important changes you make! 
+4. Remember to commit and push all important changes you make!
 
 
 ## Tips (Android)

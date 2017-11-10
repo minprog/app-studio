@@ -9,6 +9,10 @@ Week 2:
     'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
     'Project 2: Mad Libs': '/projects/mad-libs' 
 Week 3:
+<<<<<<< HEAD
+    'Project 3: Restaurant': '/projects/restaurant'
+=======
+>>>>>>> upstream/master
     'Exercise: References': '/android-exercises/references'
     'Project 3: Restaurant': '/projects/restaurant'
 Week 4:

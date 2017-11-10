@@ -20,7 +20,9 @@ All students must ordinarily submit this and all other projects to be eligible f
 ## What to do
 Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
 
-![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
+![Recipe App](rec1.png) ![Recipe App](rec2.png) 
+
+![Recipe App](rec3.png)
 
 ## API
 The API we will use for this assignment is available at: [https://resto.mprog.nl/](https://resto.mprog.nl/)
@@ -35,6 +37,8 @@ The following endpoints are available in this API:
 ### Setting up a connection with the API
 
 To set up a connection with the API, we will make use of the [Volley Library](https://developer.android.com/training/volley/index.html) for Android. To make this work you will need to add a dependency to your app's `build.gradle` file, as per so: `compile 'com.android.volley:volley:1.0.0'` This will allow you to use the libary's functionalities in your app. You can follow the guide and example code on using a `newRequestQueue` on [this](https://developer.android.com/training/volley/simple.html) in order to set up your connection with the API. If everything goes well, you can now do something useful with your API response in the `onResponse` method!
+
+For some interaction with the API, you will need to use `POST` instead of `GET`. For this you can use the [Volley Library](https://developer.android.com/training/volley/simple.html) as well!
 
 ## Designing the user interface
 
@@ -76,6 +80,10 @@ Your task is to build an app according to the description above. On top of that,
 ## Tips
 
 - If you need to handle events other than `onClick`, you might need to implement a listener class. Do not use an anonymous listener class (as is often used on Stack Overflow)! Instead, use a named listener class. [Here's an example](http://www.fredosaurus.com/notes-java/GUI/events/inner_class_listener.html).
+
+- If you have trouble getting what you need from your JSON reponses, consider having them formatted by a [JSON formatter](https://jsonformatter.curiousconcept.com/). 
+
+- To use the JSON responses in your code, Android has some nifty built in functionality on which you can find the docs [here](https://developer.android.com/reference/org/json/package-summary.html).
 
 
 ## How to submit

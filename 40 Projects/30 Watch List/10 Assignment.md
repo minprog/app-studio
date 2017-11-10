@@ -18,7 +18,7 @@ All students must ordinarily submit this and all other projects to be eligible f
 
 
 ## What to do
-Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
+Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
 
 ![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
 
@@ -27,7 +27,7 @@ The API we will use for this assignment is available at: http://resto.mprog.nl/
 
 The following endpoints are available in this API:
 
-* /categories: A GET request to this endpoint will return an array of strings of the categories in menu.json. The array will be available under the key, "categories," in the JSON.
+* /categories: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key, "categories," in the JSON.
 * /menu: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key, "items," with the JSON.
 * /order: A POST to this endpoint with the collection of menu item id values will submit the order and will return a response with the estimated time before the order will be ready. The IDs you send need to be be contained with JSON data under the key, menuIds. When you parse the JSON, an estimate of the time before the order is ready will be under the key, "preparation_time".
 
@@ -56,11 +56,9 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should use standard list views combined with an adapter.
 
-- Your app should save and persist the list of recipes using `SharedPreferences`.
+- Your app should save and persist the list of dishes in the order using `SharedPreferences`.
 
 - Listeners may not be anonymous as of now, see the [resource about Listeners](/android/listeners).
-
-- Your recipe list may not allow users to add duplicate songs and must notify the user elegantly.
 
 
 ## Getting started

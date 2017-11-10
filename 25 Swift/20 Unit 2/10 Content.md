@@ -42,11 +42,9 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 	- Know how to change fill your UI with data
 
-
 9. Controls In Action
 
 	- Know how to bind controls to your code
-
 
 10. Auto Layout and Stack Views
 
@@ -54,9 +52,14 @@ Feel free to skip some of the parts about the programming language, but make sur
 	- Know how to use Stack Views
 	- Know how to create you own constraints
 
-
 ## Guided Project: Apple Pie
 
-t the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
+At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
 
-**How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+**How to get points:** [submit](#submit) your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+
+<a id="submit"></a>
+
+### How to submit
+
+You can submit your GitHub-link [here](/projects/mad-libs#submit-content), you can ignore everything else on this page, use it only for submitting your link.

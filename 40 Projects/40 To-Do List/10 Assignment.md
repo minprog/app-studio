@@ -9,8 +9,7 @@
 
 ## Preparation
 
-- On Android: read about [SQLite](/android/sqlite), the [activity life cycle](/android/state) and [Better Code Hub](/guides/better-code-hub).
-- On iOS: watch the demo about [SQLite](/ios/sqlite), [state restoration](/ios/state) and [Better Code Hub](/guides/better-code-hub).
+- Read about [SQLite](/android/sqlite), the [activity life cycle](/android/state) and [Better Code Hub](/guides/better-code-hub).
 
 ## Assessment
 
@@ -52,7 +51,7 @@ Your task is to build an app according to the description above. On top of that,
 
 2. Create a new project, using this pattern as a name: `studentname-pset4`.
 
-## Tips (Android)
+## Tips
 
 - The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
 
@@ -61,16 +60,6 @@ Your task is to build an app according to the description above. On top of that,
 - Allow marking of items as done by responding to a simple tap on the item itself.
 
 - Allow deletion of items through a "long click" (pressing and holding on an item). Use the `setOnItemLongClickListener` method of your list. However, do not use anonymous listeners!
-
-## Tips (iOS)
-
-- The to-dos should be displayed as a `Table View` of tasks that the user needs to complete.
-
-- To-do items should be displayed in the table view as custom (prototype) cells. Design these to be able to display an item text as well as a check mark.
-
-- Allow marking of items as done by responding to a simple tap on the item itself.
-
-- Allow deletion of items with the `commitEditingStyle` delegate function ([link](https://www.ioscreator.com/tutorials/delete-rows-table-view-ios8-swift)).
 
 ## How to submit
 

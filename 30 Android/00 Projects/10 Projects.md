@@ -7,6 +7,7 @@ By completing the units on this page, you'll learn about the Android platform fo
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
 To get started, follow the instructions on these pages from the Android website:
+
 - [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
 - [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
 - [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
@@ -34,6 +35,7 @@ In this unit, you'll learn about references in Java and about creating apps that
     - [Storage](/android/storage)
     - [Model classes](/android/models)
     - [Back navigation](/android/backnav) (TODO)
+    - [Designing effective navigation](https://developer.android.com/training/design-navigation/index.html)
 - Make [Mad Libs](/projects/mad-libs).
 
 ## Unit 3
@@ -48,6 +50,7 @@ In this unit, you'll learn about interfaces in Java and about making lists of in
     - [List views](/android/lists)
     - [Volley](/android/volley) library
     - [Persistence](/android/persistence)
+    - [Snackbar](https://material.io/guidelines/components/snackbars-toasts.html)
 - Make the [Restaurant](/projects/restaurant) app.
 
 ## Unit 4
@@ -60,6 +63,7 @@ In this unit, you'll learn about exceptions and inheritance in Java, and you are
 - Learn about Android:
     - [SQLite](/android/sqlite)
     - [Activity life cycle](/android/state)
+    - [Empty state](https://material.io/guidelines/patterns/empty-states.html)
 - Learn about writing good code:
     - [Better Code Hub](/guides/better-code-hub)
 - Make [To-do List](/projects/to-do-list).

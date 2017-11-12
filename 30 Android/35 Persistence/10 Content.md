@@ -7,7 +7,7 @@ Usually, there is some data is important to save for later; for example, setting
 - Per-activity: `getPreferences()`
 - Per-app: `getSharedPreferences()`
 
-Use `getPreferences()` for storing information that is specific to one single `Activity`. The other one, `getSharedPreferences()` is used to store information that might be used in multiple activities. For example, a *user id* may be needed in many activities to request user information from a server.
+Use `getPreferences()` for storing information that is specific to one single `Activity`. The other one, `getSharedPreferences()`, is used to store information that might be used in multiple activities. For example, a *user id* may be needed in many activities to request user information from a server.
 
 To save preferences, you'll need to open an `Editor` object:
 

@@ -28,8 +28,10 @@ In this unit, you'll learn about methods in Java and about creating apps that ha
 In this unit, you'll learn about objects in Java and about making lists of information in Android. The project is an app that allows you to order some stuff off the menu in a restaurant!
 
 - Learn about [references](/android-exercises/references) in Java.
-- Learn about [persistence](/android/persistence).
+- Learn about [listeners](/android/listeners).
 - Learn about [lists](/android/lists).
+- Learn about [volley](/android/volley).
+- Learn about [persistence](/android/persistence).
 - Make the [Restaurant](/projects/restaurant) app.
 
 ## Unit 4

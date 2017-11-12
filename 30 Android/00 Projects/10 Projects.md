@@ -29,6 +29,8 @@ In this unit, you'll learn about methods in Java and about creating apps that ha
 - Learn about Android:
     - [Multiple activities](/android/multiple-activities)
     - [Storage](/android/storage)
+    - [Model classes](/android/models)
+    - [Back navigation](/android/backnav) (TODO)
 - Make [Mad Libs](/projects/mad-libs).
 
 ## Unit 3
@@ -67,7 +69,7 @@ In this unit, you'll learn about static variables and about model classes. The a
     - [Type information](http://www.davin.50webs.com/research/1999/egs/q12.pdf)
     - [Polymorphism](http://www.davin.50webs.com/research/1999/egs/q13.pdf)
 - Learn about Android:
-    - [Models](/android/models) classes
+    - [Model classes](/android/models)
     - [SQLite](/android/sqlite), if needed
 - Learn about writing good code:
     - [Better Code Hub](/guides/better-code-hub)

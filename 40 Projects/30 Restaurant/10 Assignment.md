@@ -11,9 +11,9 @@
 ## Preparation
 
 - Learn about [Listeners](/android/listeners).
-- Learn about [Persistence](/android/persistence).
 - Learn about [Lists](/android/lists).
 - Learn about [Volley](/android/volley).
+- Learn about [Persistence](/android/persistence).
 
 
 ## Assessment
@@ -27,11 +27,7 @@ All students must ordinarily submit this and all other projects to be eligible f
 
 Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
 
-<p style="max-width:auto;">
-
 ![Recipe App](rec1.png) ![Recipe App](rec2.png) ![Recipe App](rec3.png)
-
-</p>
 
 
 ## Restaurant API
@@ -72,13 +68,17 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
+1. Create a GitHub project and a new Android Studio project.
 
-2. Create a new project, using this pattern as a name: `studentname-pset3`.
+2. Design the three screens of the user interface.
 
-3. Share your project on GitHub.
+3. Try to load the restaurant categories from the server into an `ArrayList` and link this list to the `ListView`.
 
-4. Remember to commit and push all important changes you make!
+4. Add a listener for clicking one of the categories, which sends the user to the next screen.
+
+5. Load and display the menu for the appropriate category in another `ListView`.
+
+6. If lost after this, discuss your next steps with any of the staff!
 
 
 ## Tips

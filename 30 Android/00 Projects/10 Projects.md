@@ -59,7 +59,7 @@ In this unit, you'll learn about interfaces in Java and about making lists of in
 
 ## Unit 4
 
-In this unit, you'll learn about exceptions and inheritance in Java, and you are going to use databases in your app for the first time! The app that you're making is a very useful to-do list app.
+In this unit, you'll learn about exceptions and inheritance in Java, and you are going to use databases in your app for the first time! The app that you're making is a very serious but very useful to-do list app.
 
 - Practice with Java:
     - [Exceptions](http://www.davin.50webs.com/research/1999/egs/q10.pdf)

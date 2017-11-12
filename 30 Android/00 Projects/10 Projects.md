@@ -6,22 +6,26 @@ By completing the units on this page, you'll learn about the Android platform fo
 
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
-To get started, follow the instructions on these pages from the Android website:
+1. To get started, follow the instructions on these pages from the Android website:
 
-- [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
-- [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
-- [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
+    - [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
+    - [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
+    - [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
 
-Note: in the tutorial above, you got a sneak peek at the new programming language called Kotlin! However, this course uses Java for developing apps. From now on, when creating your projects, leave the "Kotlin" and "C++" options unchecked.
+    Note: in the tutorial above, you got a sneak peek at the new programming language called Kotlin! However, this course uses Java for developing apps. From now on, when creating your projects, leave the "Kotlin" and "C++" options unchecked.
 
-- Practice with Java:
+2. Every unit contains exercises for the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
+
     - [Methods, properties and constructors](/android-exercises/classes)
     - [Parameters and return values](/android-exercises/parameters-and-return-values)
-- Learn about Android:
+
+3. Before making an app, there is some explanation about the parts of Android that you will probably need to go on. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+
     - [Widgets](/android/widgets) (TODO)
     - [Layouts](/android/layouts)
     - [State](/android/state)
-- Make [Mr. Potatohead](/projects/mr-potatohead).
+
+4. Now you are ready to make your first app, [Mr. Potatohead](/projects/mr-potatohead).
 
 ## Unit 2
 

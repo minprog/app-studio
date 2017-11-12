@@ -83,4 +83,13 @@ In this unit, you'll learn about using Firebase, which is an online database fro
     - [Essential design principles](https://developer.apple.com/videos/play/design/802/)
 - Learn about Android:
     - [Firebase](/android/firebase) for making "online" apps
+- Choose one of these to implement in your final app:
+    - [Sound effects]()
+    - [Camera]()
+    - [Text-to-speech]()
+    - [Graphics]()
+    - [Maps]()
+    - [Gestures]()
+    - [Notifications]()
+    - [Services]()
 - Finally, make [Your own app](/projects/your-own).

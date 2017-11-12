@@ -4,7 +4,7 @@ By completing the units on this page, you'll learn about the Android platform fo
 
 ## Unit 1
 
-In this unit, you'll be introduced to writing *classes* in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
+In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
 - Follow the instructions on these pages from the Android website:
     - [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
@@ -21,7 +21,7 @@ In this unit, you'll be introduced to writing *classes* in Java, and of course, 
 
 ## Unit 2
 
-In this unit, you'll learn about methods in Java and about creating apps that have multiple screens. In fact, we have a cute app for you to make, that has fun stories and many screens!
+In this unit, you'll learn about references in Java and about creating apps that have multiple screens. You'll also learn about including resources like text and images in your app. In fact, we have a cute app for you to make, that has fun stories and a couple of screens!
 
 - Practice with Java:
     - [References](/android-exercises/references)
@@ -35,7 +35,7 @@ In this unit, you'll learn about methods in Java and about creating apps that ha
 
 ## Unit 3
 
-In this unit, you'll learn about objects in Java and about making lists of information in Android. The project is an app that allows you to order some stuff off the menu in a restaurant!
+In this unit, you'll learn about interfaces in Java and about making lists of information in Android. You'll also learn about getting information from the internet to make cool apps. The project is an app that allows you to order some stuff off the menu in a restaurant!
 
 - Practice with Java:
     - [Static versus non-static](/android-exercises/static-vs-non-static)
@@ -49,7 +49,7 @@ In this unit, you'll learn about objects in Java and about making lists of infor
 
 ## Unit 4
 
-In this unit, you'll learn about public and private information in classes, and you are going to use databases in your app for the first time! The app that you're making is a useful to-do list app.
+In this unit, you'll learn about exceptions and inheritance in Java, and you are going to use databases in your app for the first time! The app that you're making is a very useful to-do list app.
 
 - Practice with Java:
     - [Exceptions](http://www.davin.50webs.com/research/1999/egs/q10.pdf)
@@ -63,7 +63,7 @@ In this unit, you'll learn about public and private information in classes, and 
 
 ## Unit 5
 
-In this unit, you'll learn about static variables and about model classes. The app that you're making is a continuation of the previous unit. The to-do list app will now support multiple to-do lists!
+In this unit, you'll learn about polymorphism in Java. You're also going to learn about using Fragments for building the user interface. The app that you're making is a continuation of the previous unit. The to-do list app will now support multiple to-do lists!
 
 - Practice with Java:
     - [Type information](http://www.davin.50webs.com/research/1999/egs/q12.pdf)
@@ -71,13 +71,14 @@ In this unit, you'll learn about static variables and about model classes. The a
 - Learn about Android:
     - [Model classes](/android/models)
     - [SQLite](/android/sqlite), if needed
+    - [Fragments](/android/fragments) (TODO)
 - Learn about writing good code:
     - [Better Code Hub](/guides/better-code-hub)
 - Make [Many Lists](/projects/many-lists).
 
 ## Unit 6
 
-In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat! The final project is of your own choosing.
+In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat. The final project is of your own choosing, and there are many other libraries that you can use to make a fun app!
 
 - Learn about design:
     - [Essential design principles](https://developer.apple.com/videos/play/design/802/)

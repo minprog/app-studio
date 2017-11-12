@@ -6,10 +6,13 @@ By completing the units on this page, you'll learn about the Android platform fo
 
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
-- Follow the instructions on these pages from the Android website:
-    - [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
-    - [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
-    - [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
+To get started, follow the instructions on these pages from the Android website:
+- [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
+- [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
+- [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
+
+Note: in the tutorial above, you got a sneak peek at the new programming language called Kotlin! However, this course uses Java for developing apps. From now on, when creating your projects, leave the "Kotlin" and "C++" options unchecked.
+
 - Practice with Java:
     - [Methods, properties and constructors](/android-exercises/classes)
     - [Parameters and return values](/android-exercises/parameters-and-return-values)

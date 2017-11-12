@@ -10,24 +10,33 @@ In this unit, you'll be introduced to writing *classes* in Java, and of course, 
     - [Create an Android project](https://developer.android.com/training/basics/firstapp/creating-project.html)
     - [Run your app](https://developer.android.com/training/basics/firstapp/running-app.html)
     - [Build a simple user interface](https://developer.android.com/training/basics/firstapp/building-ui.html)
-- Learn about and practice with [classes](/android-exercises/classes) in Java.
-- Learn about [layouts](/android/layouts).
-- Learn about [state](/android/state).
+- Practice with Java:
+    - [Methods, properties and constructors](/android-exercises/classes)
+    - [Parameters and return values](/android-exercises/parameters-and-return-values)
+- Learn about Android:
+    - [Widgets](/android/widgets) (TODO)
+    - [Layouts](/android/layouts)
+    - [State](/android/state)
 - Make [Mr. Potatohead](/projects/mr-potatohead).
 
 ## Unit 2
 
 In this unit, you'll learn about methods in Java and about creating apps that have multiple screens. In fact, we have a cute app for you to make, that has fun stories and many screens!
 
-- Learn about [parameters](/android-exercises/parameters-and-return-values) in Java.
-- Learn about making apps with [multiple activities](/android/multiple-activities).
+- Practice with Java:
+    - [References](/android-exercises/references)
+    - [Public and private](/android-exercises/public-vs-private)
+- Learn about Android:
+    - [Multiple activities](/android/multiple-activities)
 - Make [Mad Libs](/projects/mad-libs).
 
 ## Unit 3
 
 In this unit, you'll learn about objects in Java and about making lists of information in Android. The project is an app that allows you to order some stuff off the menu in a restaurant!
 
-- Practice with [references](/android-exercises/references) in Java.
+- Practice with Java:
+    - [Static versus non-static](/android-exercises/static-vs-non-static)
+    - [Interfaces](http://www.davin.50webs.com/research/1999/egs/q14.pdf)
 - Learn about Android:
     - [Listeners](/android/listeners)
     - [List views](/android/lists)
@@ -39,16 +48,24 @@ In this unit, you'll learn about objects in Java and about making lists of infor
 
 In this unit, you'll learn about public and private information in classes, and you are going to use databases in your app for the first time! The app that you're making is a useful to-do list app.
 
-- Learn about [public and private](/android-exercises/public-vs-private) in Java.
-- Learn about [SQLite](/android/sqlite) and the [activity life cycle](/android/state).
+- Practice with Java:
+    - [Exceptions](http://www.davin.50webs.com/research/1999/egs/q10.pdf)
+    - [Inheritance](http://www.davin.50webs.com/research/1999/egs/q11.pdf)
+- Learn about Android:
+    - [SQLite](/android/sqlite)
+    - [Activity life cycle](/android/state)
 - Make [To-do List](/projects/to-do-list).
 
 ## Unit 5
 
 In this unit, you'll learn about static variables and about model classes. The app that you're making is a continuation of the previous unit. The to-do list app will now support multiple to-do lists!
 
-- Learn about [static](/android-exercises/static-vs-non-static) vs. non-static in Java.
-- Learn about [models](/android/models) and, again, [SQLite](/android/sqlite).
+- Practice with Java:
+    - [Type information](http://www.davin.50webs.com/research/1999/egs/q12.pdf)
+    - [Polymorphism](http://www.davin.50webs.com/research/1999/egs/q13.pdf)
+- Learn about Android:
+    - [Models](/android/models) classes
+    - [SQLite](/android/sqlite), if needed
 - Make [Many Lists](/projects/many-lists).
 
 ## Unit 6

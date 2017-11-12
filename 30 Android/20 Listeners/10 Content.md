@@ -2,7 +2,7 @@
 
 Almost all controls on a screen can fire **events**. When a user taps a button, for example, it fires an `onClick` event. In your activities, you can handle some of these events in order to provide a fully functional app.
 
-## Simple listeners
+## Simple event handlers
 
 If all you're interested in is catching `onClick` events, then you can take the easy way out. In your layout, you might specify in the `onClick` property the name of a method in your activity that will be called when the object is clicked (tapped):
 

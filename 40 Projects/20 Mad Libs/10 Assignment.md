@@ -44,6 +44,8 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should be built using the `Story` class.
 
+    <iframe src="https://player.vimeo.com/video/212705221?portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 - The user should be allowed to  either pick one of the stories, or have it randomly selected.
 
 - Your app should properly display on devices of various dimensions.

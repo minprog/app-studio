@@ -11,5 +11,3 @@ This week we will talk about the lifecycle of an activity in Android as it is cr
 ![embed](https://player.vimeo.com/video/212705216)
 
 ![embed](https://player.vimeo.com/video/212705211)
-
-![embed](https://player.vimeo.com/video/212705221)

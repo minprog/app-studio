@@ -28,6 +28,7 @@ In this unit, you'll learn about methods in Java and about creating apps that ha
     - [Public and private](/android-exercises/public-vs-private)
 - Learn about Android:
     - [Multiple activities](/android/multiple-activities)
+    - [Storage](/android/storage)
 - Make [Mad Libs](/projects/mad-libs).
 
 ## Unit 3

@@ -37,7 +37,7 @@ For example, to create a different layout in landscape mode, you can add a new l
 - place a copy of your activity's layout XML file there
 - modify it as needed to represent the differences
 
-![](layoutxml.png){:.inline}
+![Screen shot of adding layout XML file](layoutxml.png)
 
 ## Action bar
 

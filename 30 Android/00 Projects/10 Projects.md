@@ -27,11 +27,12 @@ In this unit, you'll learn about methods in Java and about creating apps that ha
 
 In this unit, you'll learn about objects in Java and about making lists of information in Android. The project is an app that allows you to order some stuff off the menu in a restaurant!
 
-- Learn about [references](/android-exercises/references) in Java.
-- Learn about [listeners](/android/listeners).
-- Learn about [lists](/android/lists).
-- Learn about [volley](/android/volley).
-- Learn about [persistence](/android/persistence).
+- Practice with [references](/android-exercises/references) in Java.
+- Learn about Android:
+    - [Listeners](/android/listeners)
+    - [List views](/android/lists)
+    - [Volley](/android/volley) library
+    - [Persistence](/android/persistence)
 - Make the [Restaurant](/projects/restaurant) app.
 
 ## Unit 4
@@ -55,5 +56,6 @@ In this unit, you'll learn about static variables and about model classes. The a
 In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat! The final project is of your own choosing.
 
 - Make [Your own app](/projects/your-own).
+- Learn about [Essential design principles](https://developer.apple.com/videos/play/design/802/).
 - Learn about [Firebase](/android/firebase) for making "online" apps.
 - Use [Better Code Hub](/guides/better-code-hub) for your code.

@@ -56,8 +56,8 @@ Once you have an adapter, you can attach it to your list by calling the `setAdap
 
 If you want your list to look different than the default appearance (just a text string for each line), you must:
 
-– write a short layout XML file describing the layout for each row
-– write a subclass of `ArrayAdapter` that overrides the `getView` method to describe what view must be returned for each row
+- write a short layout XML file describing the layout for each row
+- write a subclass of `ArrayAdapter` that overrides the `getView` method to describe what view must be returned for each row
 
 Example of a layout:
 

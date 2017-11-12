@@ -2,7 +2,7 @@
 
 By completing the units on this page, you'll learn about the Android platform for making apps. Usually, Android apps are written using the Java programming language. Each unit contains some Java exercises to help you understand the syntax and teach you about object-oriented programming. We assume that you have previous programming experience in C or Python.
 
-## Unit 1
+## Unit 1: Getting Started
 
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
@@ -27,7 +27,7 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
 
 4. Now you are ready to make your first app, [Mr. Potatohead](/projects/mr-potatohead).
 
-## Unit 2
+## Unit 2: Activities and Navigation
 
 In this unit, you'll learn about references in Java and about creating apps that have multiple screens. You'll also learn about including resources like text and images in your app. In fact, we have a cute app for you to make, that has fun stories and a couple of screens!
 
@@ -42,7 +42,7 @@ In this unit, you'll learn about references in Java and about creating apps that
     - [Designing effective navigation](https://developer.android.com/training/design-navigation/index.html)
 - Make [Mad Libs](/projects/mad-libs).
 
-## Unit 3
+## Unit 3: Lists
 
 In this unit, you'll learn about interfaces in Java and about making lists of information in Android. You'll also learn about getting information from the internet to make cool apps. The project is an app that allows you to order some stuff off the menu in a restaurant!
 
@@ -57,7 +57,7 @@ In this unit, you'll learn about interfaces in Java and about making lists of in
     - [Snackbar](https://material.io/guidelines/components/snackbars-toasts.html)
 - Make the [Restaurant](/projects/restaurant) app.
 
-## Unit 4
+## Unit 4: Databases
 
 In this unit, you'll learn about exceptions and inheritance in Java, and you are going to use databases in your app for the first time! The app that you're making is a very serious but very useful to-do list app.
 
@@ -72,7 +72,7 @@ In this unit, you'll learn about exceptions and inheritance in Java, and you are
     - [Better Code Hub](/guides/better-code-hub)
 - Make [To-do List](/projects/to-do-list).
 
-## Unit 5
+## Unit 5: Fragments
 
 In this unit, you'll learn about polymorphism in Java. You're also going to learn about using Fragments for building the user interface. The app that you're making is a continuation of the previous unit. The to-do list app will now support multiple to-do lists!
 
@@ -87,7 +87,7 @@ In this unit, you'll learn about polymorphism in Java. You're also going to lear
     - [Better Code Hub](/guides/better-code-hub)
 - Make [Many Lists](/projects/many-lists).
 
-## Unit 6
+## Unit 6: Prototyping Apps
 
 In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat. The final project is of your own choosing, and there are many other libraries that you can use to make a fun app!
 

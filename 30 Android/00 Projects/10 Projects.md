@@ -55,6 +55,8 @@ In this unit, you'll learn about public and private information in classes, and 
 - Learn about Android:
     - [SQLite](/android/sqlite)
     - [Activity life cycle](/android/state)
+- Learn about writing good code:
+    - [Better Code Hub](/guides/better-code-hub)
 - Make [To-do List](/projects/to-do-list).
 
 ## Unit 5
@@ -67,6 +69,8 @@ In this unit, you'll learn about static variables and about model classes. The a
 - Learn about Android:
     - [Models](/android/models) classes
     - [SQLite](/android/sqlite), if needed
+- Learn about writing good code:
+    - [Better Code Hub](/guides/better-code-hub)
 - Make [Many Lists](/projects/many-lists).
 
 ## Unit 6
@@ -75,8 +79,6 @@ In this unit, you'll learn about using Firebase, which is an online database fro
 
 - Learn about design:
     - [Essential design principles](https://developer.apple.com/videos/play/design/802/)
-- Learn about writing good code:
-    - [Better Code Hub](/guides/better-code-hub)
 - Learn about Android:
     - [Firebase](/android/firebase) for making "online" apps
 - Finally, make [Your own app](/projects/your-own).

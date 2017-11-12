@@ -73,7 +73,10 @@ In this unit, you'll learn about static variables and about model classes. The a
 
 In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat! The final project is of your own choosing.
 
-- Make [Your own app](/projects/your-own).
-- Learn about [Essential design principles](https://developer.apple.com/videos/play/design/802/).
-- Learn about [Firebase](/android/firebase) for making "online" apps.
-- Use [Better Code Hub](/guides/better-code-hub) for your code.
+- Learn about design:
+    - [Essential design principles](https://developer.apple.com/videos/play/design/802/)
+- Learn about writing good code:
+    - [Better Code Hub](/guides/better-code-hub)
+- Learn about Android:
+    - [Firebase](/android/firebase) for making "online" apps
+- Finally, make [Your own app](/projects/your-own).

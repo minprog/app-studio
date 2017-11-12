@@ -52,6 +52,16 @@ Once you have an adapter, you can attach it to your list by calling the `setAdap
     ListView list = (ListView) findViewById(R.id.mylist);
     list.setAdapter(myAdapter);
 
+## List events
+
+Unfortunately, list views do no support the simple `onClick` event, like buttons do. To catch events, you will need to create a listener class that `implements AdapterView.OnItemClickListener` and responds to one or more of the following events:
+
+- Listener for when an item in the list has been clicked: `setOnItemClickListener(AdapterView.OnItemClickListener)`
+
+- Listener for when an item in the list has been clicked and held: setOnItemLongClickListener(AdapterView.OnItemLongClickListener)
+
+- Listener for when an item in the list has been selected: setOnItemSelectedListener(AdapterView.OnItemSelectedListener)
+
 ## Custom list layouts
 
 If you want your list to look different than the default appearance (just a text string for each line), you must:

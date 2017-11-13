@@ -17,7 +17,7 @@ To understand this problem, consider the following pseudocode for an activity:
         }
     }
 
-Normally, if you perform actions in the `onCreate` method, the screen of the activity is not displayed correctly until everything is done. The HTTP request is waiting for a response and only then the button is changed and finally, the activity becomes visible and the user can interact with it.
+Normally, if you perform actions in the `onCreate` method, the screen of the activity is not displayed correctly until everything is done. The HTTP request is waiting for a response, and only when it is received, the button is changed and finally, the activity becomes visible and the user can interact with it.
 
 That's why Volley works **asynchronously**. This means that whenever you send a request to Volley, it will do this independently, while the rest of your code runs. For example, in the code above, when `onCreate` is run:
 

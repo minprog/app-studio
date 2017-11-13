@@ -110,9 +110,9 @@ Let's have a look at the response listener:
         }
     }
 
-What this does is create a **new instance** of the `Response.Listener` class, and providing an implementation for the `onResponse` method. This method is called as soon as the data is received from the web server that you tried to reach.
+What this does is create a **new instance** of the `Response.Listener` class, and providing an implementation for the `onResponse` method. This method is called as soon as the data is received from the web server.
 
-Mind you, the new instance is created, but it is not assigned to a variable. That's why this thing is called an **anonymous listener**. In Android, anonymous listeners are used very often. The thruth is that we don't like it much, because it makes code very confusing. If you have time, try to de-anonymize your listeners as described in the text about [listeners](/android/listeners).
+Mind you, the new instance is created, but it is not assigned to a variable. That's why this thing is called an **anonymous listener**. In Android, anonymous listeners are used very often. The thruth is that we don't like it much, because it makes code very confusing. If you have time, try to de-anonymize your listeners as described in the text about [listeners](/android/listeners). But: make your code work first, and only then try to make it nice!
 
 ## References
 

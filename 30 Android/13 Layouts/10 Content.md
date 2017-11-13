@@ -5,7 +5,7 @@ First some terminology of **graphical user interfaces** in Android:
 - An **activity** is a single screen that appears in your app. Essentially, these are the fundamental units into which developers decompose their application ideas.
 
 - Activities are composed of **view**s:
-    - **widgets**: controls that the user can interact with
+    - **controls**: views that the user can interact with, like buttons
     - **layouts**: invisible view that manages the positions of other views
 
 - When our users interact with controls, **events** may trigger, representing for example key presses, mouse clicks or scrolling actions. Some controls have very specific types of **events**. You can attach **event handers** to specific events. This makes a connection between the layout and your code.

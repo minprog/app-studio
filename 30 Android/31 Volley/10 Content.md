@@ -23,7 +23,7 @@ That's why Volley works **asynchronously**. This means that whenever you send a 
 
 - the request will be sent off without waiting on a response;
 - the button will get its new text;
-- and the activity will then be displayed immediately.
+- the activity will be displayed immediately.
 
 ## Configuration
 

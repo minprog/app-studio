@@ -1,6 +1,6 @@
 # Volley
 
-To set up a connection with an online API, you can use the [Volley Library](https://developer.android.com/training/volley/index.html). It can be used to send requests to a web server. Doing that immediately presents us with a problem: the server might not respond as swiftly as expected, and will make our app slow and unresponsive.
+To set up a connection with an online API, you can use the [Volley Library](https://developer.android.com/training/volley/index.html). It can be used to send HTTP requests to a web server. Sending HTTP requests immediately presents us with a problem: the server might not respond immediately, and waiting for the response may make our app slow and unresponsive.
 
 Consider the following pseudocode for an activity:
 

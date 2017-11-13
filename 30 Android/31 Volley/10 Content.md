@@ -10,7 +10,7 @@ Consider the following pseudocode for an activity:
         {
             super.onCreate()
             
-            ...<send http request>...
+            ...<send http request with Volley>...
             
             button = findViewById(R.id.button);
             button.text = "Click Me";

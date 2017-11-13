@@ -52,5 +52,5 @@ At the end of the chapter, you'll find a Guided Project to make a very simple ap
 
 ### How to submit
 
-You can submit your GitHub-link [here](projects/restaurant#submit-content), you can ignore 
+You can submit your GitHub-link [here](/projects/restaurant#submit-content), you can ignore 
 everything else on this page, use it only for submitting your link.

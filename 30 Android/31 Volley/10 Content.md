@@ -2,7 +2,7 @@
 
 To set up a connection with an online API, you can use the [Volley Library](https://developer.android.com/training/volley/index.html). It can be used to send HTTP requests to a web server. Sending HTTP requests immediately presents us with a problem: the server might not respond immediately, and waiting for the response may make our app slow and unresponsive.
 
-Consider the following pseudocode for an activity:
+To understand this problem, consider the following pseudocode for an activity:
 
     class MainActivity
     {
@@ -10,14 +10,16 @@ Consider the following pseudocode for an activity:
         {
             super.onCreate()
             
-            ...<send http request with Volley>...
+            ...<send http request>...
             
             button = findViewById(R.id.button);
             button.text = "Click Me";
         }
     }
 
-Usually, if you perform actions in the `onCreate` method, the screen of the activity is not displayed correctly until everything is done. That's why Volley works **ansynchronously**. This means that whenever you send a request to Volley, it will do this independently, while the rest of your code runs. For example, in the code above, when `onCreate` is run:
+Normally, if you perform actions in the `onCreate` method, the screen of the activity is not displayed correctly until everything is done. The HTTP request is waiting for a response and only then the button is changed and finally, the activity becomes visible and the user can interact with it.
+
+That's why Volley works **asynchronously**. This means that whenever you send a request to Volley, it will do this independently, while the rest of your code runs. For example, in the code above, when `onCreate` is run:
 
 - the request will be sent off without waiting on a response;
 - the button will get its new text;

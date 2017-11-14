@@ -20,7 +20,7 @@ There is a special kind of model class, which is the **business object**. These 
         public int vintage;
     }
 
-Now, in reality, you may want to add some logic to these classes, a constructor for example, and getters and setters, which can together make sure that the objects of this particular class are actually valid. In the following example, the instance variables are *private** and it is impossible to create an instance of the `Wine` class without providing a `name` and a `vintage`.
+Now, in reality, you may want to add some logic to these classes, a constructor for example, and getters and setters, which can together make sure that the objects of this particular class are actually valid. In the following example, the instance variables are *private* and it is impossible to create an instance of the `Wine` class without providing a `name` and a `vintage`.
 
     public class Wine
     {

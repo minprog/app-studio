@@ -44,7 +44,7 @@ Now, in reality, you may want to add some logic to these classes, a constructor 
         }
     }
 
-## Demonstratie
+## Demonstration video
 
 ![embed](https://player.vimeo.com/video/207789065)
 

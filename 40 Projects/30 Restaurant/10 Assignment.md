@@ -41,6 +41,7 @@ The following **endpoints** are available:
 * `/order`: A POST to this endpoint with the collection of menu item id values will submit the order and will return a response with the estimated time before the order will be ready. The IDs you send need to be be contained with JSON data under the key, menuIds. When you parse the JSON, an estimate of the time before the order is ready will be under the key "preparation_time".
 * `/images`: Will return the URL of an image. Make sure to handle 404 errors correctly!
 
+Tip: try the API in your webbrowser. Enter the address of the `categories` endpoint and see how it responds.
 
 ## Functional requirements
 

@@ -9,7 +9,9 @@
 
 ## Preparation
 
-- Read about [SQLite](/android/sqlite), the [activity life cycle](/android/state) and [Better Code Hub](/guides/better-code-hub).
+- [Models](/android/models)
+- [SQLite](/android/sqlite)
+- [Better Code Hub](/guides/better-code-hub)
 
 ## Assessment
 
@@ -50,6 +52,24 @@ Your task is to build an app according to the description above. On top of that,
 1. Create a new empty GitHub repository.
 
 2. Create a new project, using this pattern as a name: `studentname-pset4`.
+
+## Tips
+
+Most likely, much of your important code now resides in one or more controllers (Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
+
+- `TodoItem`
+
+    Stores data for a single todo item. This class is very simple and looks a little bit like a `struct` in C. The class variables (such as `title`) should not be `public`, but `private`. Where needed, you can expose the variables through getters and setters.
+
+- `TodoList`
+
+    Stores data for a single todo list. That means that each instance of this class contains many `TodoItem`s! The class variables (such as `title`) should not be `public`, but `private`. Where needed, you can expose the variables through getters and setters.
+
+- `TodoManager`
+
+    A class that groups some common functionality. It contains the list of `TodoList`s for your application, and it handles all communication with the database.
+
+On Android, use the approach from this [blog post](http://www.androiddesignpatterns.com/2012/05/correctly-managing-your-sqlite-database.html) to create your TodoManager.
 
 ## Tips
 

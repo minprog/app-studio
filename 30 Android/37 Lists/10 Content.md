@@ -34,7 +34,7 @@ Upon request, the `Adapter` will provide the list with **views for each row**. I
 
 ## Array adapters
 
-There are a couple of simple adapters that you might use, where you don't even have to write code to load the data. Instead, you provide the adapter with a reference to some data structure, and the adapter manages requesting entries from that structure by itself. One example is the `ArrayAdapter`, which only needs a reference to an array to work correctly:
+There are a couple of simple adapters that you might use, where you don't even have to write code to load the data. Instead, you provide the adapter with a reference to some data structure, and the adapter manages requesting entries from that structure by itself. One example is the `ArrayAdapter`, where the data source is an array.
 
     ArrayAdapter<String> name =
         new ArrayAdapter<String>(activity, layout, array);

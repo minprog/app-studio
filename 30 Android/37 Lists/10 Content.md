@@ -26,11 +26,11 @@ In your layout, you can then set the `entries` property of the list, which autom
 
 ## Dynamic lists
 
-More often, the information in a list should be loaded dynamically, for example when presenting search results, or when data needs to be loaded from a web server. To do that, we will use the list view in conjuction with an `Adapter`.
+More often, the information in a list should be loaded dynamically, for example when presenting search results, or when data needs to be loaded from a web server. To do that, we will use the list view in conjuction with an `Adapter` that gets the data from a data source.
 
 ![](listview-adapter.jpeg)
 
-Upon request, the `Adapter` will provide the list with **views for each row**. If a list is loaded and on the screen, and the user slowly scrolls upward, a new row becomes visible. Just before showing it, the list view asks the `Adapter` to provide a `View` containing information for a single row in the list. At the other end of the list, rows disappear on the edge of the screen. The views for these rows are automatically handed back to the adapter to re-use. That way, it is possible to show a very long list using a limited number of `View` objects.
+Upon request, the `Adapter` will provide the list with **views for each row**. If a list is loaded and on the screen, and the user slowly scrolls upward, a new row becomes visible. Just before showing it, the list view asks the `Adapter` to provide a `View` containing information for a single row in the list. The adapter takes a view and fills it with data from the data source. At the other end of the list, rows disappear on the edge of the screen. The views for these rows are automatically handed back to the adapter to re-use. That way, it is possible to show a very long list using a limited number of `View` objects.
 
 ## Array adapters
 

@@ -12,7 +12,7 @@ This is the class that we will use to help us manage our database. We will const
         // room for plenty of code...    
     }
 
-#### Constructor
+### Constructor
 The constructor is used to create a new instance of our subclass. In the constructor, we set the context (usually an `Activity`),  the name of our database, optionally the cursor factory (this is not needed for now), and the database version.
 
 The database version is important because sometimes you will want to change your database schema, because you added a column or a table. When doing so you need to somehow notify your database that something has changed. The version number is used to keep track of this and typically starts at 1.
@@ -23,7 +23,7 @@ The database version is important because sometimes you will want to change your
         super(context, DB_NAME, null, DB_VERSION);
     }
 
-#### onCreate
+### onCreate
 This method is called when there is no database yet, for example when the app is run for the first time, and we need to have one created. The `onCreate` method received a `SQLiteDataBase` object, in this case called `db`, that we can now use.
 
     public void onCreate(SQLiteDatabase db) {
@@ -59,7 +59,7 @@ Our `onCreate()` then could look something like the snippet below. We take our `
         db.execSQL("create table myContacts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, phoneNumber INTEGER);");
     }
 
-#### onUpgrade
+### onUpgrade
 We call this method when we made a new database schema and the old version of the database does not match this new schema. This could for example be the case when we added a whole new table, added a column, changed the value type of a column or changed a table or column's name. Basically, any change to the table and column structure of the database means a change in the schema and warrants a call to `onUpgrade()`. Usually when we do this, we also want to delete all data previously in the database, because with the changed structure the old data no longer "fits".
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -71,4 +71,4 @@ As you can see in the snippet above, the `onUpgrade()` method takes three argume
 
 As mentioned before, when upgrading our database it's a good idea to remove all the old data so that we start with a clean slate, so to speak. In our example with the contacts table, this is done by executing the SQL query `DROP TABLE IF EXISTS contacts`. By executing this query, we simply tell our database to delete the table that goes by the name `contacts`(if it exists). Obviously, if you have multiple tables in your database, it's a good idea to delete all of them by executing multiple queries.
 
-Now, if we are upgrading our database to a new schema, your `onCreate()` and the queries you execute in it should also have been changed to reflect this change. Thus, after deleting our old tables, we want to call `onCreate()` ourselves to recreate our database with the new schema we specified. 
+Now, if we are upgrading our database to a new schema, your `onCreate()` and the queries you execute in it should also have been changed to reflect this change. Thus, after deleting our old tables, we want to call `onCreate()` ourselves to recreate our database with the new schema we specified.

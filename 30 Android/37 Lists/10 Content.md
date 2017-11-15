@@ -1,5 +1,7 @@
 # Lists
 
+![Screenshot of Android phone with app based on listview](screen.png){:.inline}
+
 Almost every app will use `ListView`s to present information. Sometimes it's search results, sometimes it's just a simple choice of options for the user to choose from.
 
 ## Static lists
@@ -24,15 +26,15 @@ In your layout, you can then set the `entries` property of the list, which autom
 
 ## Dynamic lists
 
-More often, the information in a list should be loaded dynamically, for example when presenting search results, or when data needs to be loaded from a web server.
+More often, the information in a list should be loaded dynamically, for example when presenting search results, or when data needs to be loaded from a web server. To do that, we will use the list view in conjuction with an `Adapter`.
 
-Let's write an example. We're going to use the same list of operating systems, but in a **raw resource**, which means that we will have to load the information into the list via our own code.
+![](listview-adapter.jpeg)
 
-## Adapters
+Upon request, the `Adapter` will provide the list with **views for each row**. If a list is loaded and on the screen, and the user slowly scrolls upward, a new row becomes visible. Just before showing it, the list view asks the `Adapter` to provide a `View` containing information for a single row in the list. At the other end of the list, rows disappear on the edge of the screen. The views for these rows are automatically handed back to the adapter to re-use. That way, it is possible to show a very long list using a limited number of `View` objects.
 
-We can use an `Adapter` to help fill the listview with entries. The most important function of an `Adapter` is to provide information about list items on request. This allows a list view to work efficiently, by only requesting information about items that are (almost) visible on screen. It's even possible to write an adapter that accesses an online database of say, 1.000 movies, and present these in a list, without loading everything from the network at once.
+## Array adapters
 
-There are a couple of simple adapters that you might use, where you don't have to write code to load the data. Instead, you provide the adapter with a reference to some data structure, and the adapter manages requesting entries from that structure by itself. One example is the `ArrayAdapter`, which only needs a reference to an array to work correctly:
+There are a couple of simple adapters that you might use, where you don't even have to write code to load the data. Instead, you provide the adapter with a reference to some data structure, and the adapter manages requesting entries from that structure by itself. One example is the `ArrayAdapter`, which only needs a reference to an array to work correctly:
 
     ArrayAdapter<String> name =
         new ArrayAdapter<String>(activity, layout, array);

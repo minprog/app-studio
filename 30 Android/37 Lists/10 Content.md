@@ -1,6 +1,6 @@
 # Lists
 
-![Screenshot of Android phone with app based on listview](screen.png){:.inline}
+![Screenshot of Android phone with app based on listview](screen.png){:.inline style="width:30%"}
 
 Almost every app will use `ListView`s to present information. Sometimes it's search results, sometimes it's just a simple choice of options for the user to choose from.
 

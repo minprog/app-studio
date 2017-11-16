@@ -79,6 +79,8 @@ We're going to create a business object class called `TodoItem` to represent the
 - Implement `onCreate()`: write code that creates a table called `todos` with columns `title` and `completed`. Add code that creates three sample to-do items for testing purposes.
 - Implement `onUpdate()`: write code that drops the table and recreates it by calling `onCreate()`.
 
+Tip: use zeroes and ones for the boolean `completed` in the database!
+
 ## Step 4: Make it a singleton
 
 We'll convert the `TodoDatabase` class into a Singleton.
@@ -90,11 +92,17 @@ We'll convert the `TodoDatabase` class into a Singleton.
 
         TodoDatabase db = TodoDatabase.getInstance(getApplicationContext());
 
+You project should now compile and run successfully, though data is not yet displayed.
+
 ## Step 5: Write the select method
 
-- Create layout for list item with checkbox, label
-- TodoDatabase.select -> Cursor
-- https://thinkandroid.wordpress.com/2010/01/09/simplecursoradapters-and-listviews/
+- Write `selectAll()` in `TodoDatabase`. Do a raw `SELECT * FROM todos` query and return the `Cursor`.
+- Create a new layout `row_todo.xml`.
+- Create a new class `TodoAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public TodoAdapter(Context context, Cursor cursor)`.
+- Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
+- In the `onCreate()` of the `MainActivity`, use the `TodoDatabase` to get all records from the database, make a new `TodoAdapter` and link the `ListView` to the adapter.
+
+The app should now display all example to-dos from the database!
 
 ## Step 6: Write the insert method
 

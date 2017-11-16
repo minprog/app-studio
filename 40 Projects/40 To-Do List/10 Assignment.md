@@ -68,6 +68,7 @@ We're going to create a business object class called `TodoItem` to represent the
 - Name your class `TodoItem`. You do not need to change the other options.
 - Now add `private` instance variables called `title` and `completed`, using appropriate types (discuss with your neighbors what the best type would be for each field).
 - Create a constructor and getter methods, like in the [readings](/android/models).
+- Also create a setter method called `setCompleted(boolean completed)` to make sure that we can change each item's status later on.
 
 ## Step 3: Create the database class
 
@@ -80,8 +81,14 @@ We're going to create a business object class called `TodoItem` to represent the
 
 ## Step 4: Make it a singleton
 
-- Singleton
-- `getApplicationContext()` when calling, because always the same context
+We'll convert the `TodoDatabase` class into a Singleton.
+
+- First, make the constructor `private` instead of `public`.
+- Then, add a private **static** variable called `instance` of type `TodoDatabase`. This is where the unique instance of the class is stored, once made.
+- Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters, and storing that in `instance`.
+- To ensure that everything is in order, place the following line at the bottom of your `MainActivity`'s `onCreate()` method:
+
+        TodoDatabase db = TodoDatabase.getInstance(getApplicationContext());
 
 ## Step 5: Write the select method
 

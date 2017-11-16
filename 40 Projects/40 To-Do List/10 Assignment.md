@@ -25,7 +25,7 @@ This week you will write a simple to-do list app that has a list of tasks that t
 
 ![Screen shot of the to-do list app](todo.png)
 
-## Requirements
+## Functional requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
 
@@ -33,55 +33,70 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should properly support rotation of the user interface (no data loss).
 
-- Your app's back navigation should always be simple.
-
-- To-dos must be represented in your code by a model class. 
-
 - Every to-do item needs to have *at least* `title` and `completed` fields, additional fields may be implemented as well.
 
-- The user interface should clearly represent whether a todo item has been marked as "done".
-
-- To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
+- The user interface should clearly represent whether a todo item has been marked as "done" (using a custom list view layout).
 
 - Users must be able to mark items as complete and delete them.
-
-- Your app should properly return to the last screen viewed, even if killed for some reason.
-
-- Your app's readme should show the [Better Code Hub](/guides/better-code-hub) badge. No need to refactor your code, though!
-
-## Getting started
-
-1. Create a new empty GitHub repository.
-
-2. Create a new project, using this pattern as a name: `studentname-pset4`.
-
-## Tips
-
-Most likely, much of your important code now resides in one or more controllers (Activities). However, if we move some of this code into separate classes, the whole codebase can become more understandable. This is the principle of *separation of concerns*. The "ideal" of this principle is to have each class be responsible for one single thing. In practice, we usually don't take it that far.
-
-- `TodoItem`
-
-    Stores data for a single todo item. This class is very simple and looks a little bit like a `struct` in C. The class variables (such as `title`) should not be `public`, but `private`. Where needed, you can expose the variables through getters and setters.
-
-- `TodoList`
-
-    Stores data for a single todo list. That means that each instance of this class contains many `TodoItem`s! The class variables (such as `title`) should not be `public`, but `private`. Where needed, you can expose the variables through getters and setters.
-
-- `TodoManager`
-
-    A class that groups some common functionality. It contains the list of `TodoList`s for your application, and it handles all communication with the database.
-
-On Android, use the approach from this [blog post](http://www.androiddesignpatterns.com/2012/05/correctly-managing-your-sqlite-database.html) to create your TodoManager.
-
-## Tips
-
-- The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
-
-- To-do items should be displayed in the list view as custom views. Design these to be able to display an item text as well as a check mark.
 
 - Allow marking of items as done by responding to a simple tap on the item itself.
 
 - Allow deletion of items through a "long click" (pressing and holding on an item). Use the `setOnItemLongClickListener` method of your list. However, do not use anonymous listeners!
+
+## Technical requirements
+
+- The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
+
+- To-dos must be represented in your code by a model class. 
+
+- To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
+
+- Your app's readme should show the [Better Code Hub](/guides/better-code-hub) badge. No need to refactor your code, though!
+
+## Step 1: Getting started
+
+- Create a new empty GitHub repository.
+- Create a new Android studio project and link it to the repository.
+- Design the `MainActivity`, adding a `ListView`, and a `EditText` with a `Button`.
+- Make sure the layout works for small and large phones.
+
+## Step 2: Create a model class
+
+We're going to create a business object class called `TodoItem` to represent the items on the to-do list.
+
+- Go to **File** > **New** > **Java Class**.
+- Name your class `TodoItem`. You do not need to change the other options.
+- Now add `private` instance variables called `title` and `completed`, using appropriate types (discuss with your neighbors what the best type would be for each field).
+- Create a constructor and getter methods, like in the [readings](/android/models).
+
+## Step 3: Create the database class
+
+- `TodoDatabase` << SQLiteOpenHelper
+- `onCreate()` -> 3 sample todo items for testing
+- `onUpdate()` -> drop it
+
+## Step 4: Make it a singleton
+
+- Singleton
+- `getApplicationContext()` when calling, because always the same context
+
+## Step 5: Write the select method
+
+- Create layout for list item with checkbox, label
+- TodoDatabase.select -> Cursor
+- https://thinkandroid.wordpress.com/2010/01/09/simplecursoradapters-and-listviews/
+
+## Step 6: Write the insert method
+
+- TodoDatabase.insert(TodoItem)
+
+## Step 7: Write the update method
+
+- TodoDatabase.update(position, TodoItem)
+
+## Step 8: Write the delete method
+
+- TodoDatabase.delete(position)
 
 ## How to submit
 

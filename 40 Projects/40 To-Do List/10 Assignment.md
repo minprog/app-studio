@@ -71,9 +71,12 @@ We're going to create a business object class called `TodoItem` to represent the
 
 ## Step 3: Create the database class
 
-- `TodoDatabase` << SQLiteOpenHelper
-- `onCreate()` -> 3 sample todo items for testing
-- `onUpdate()` -> drop it
+- Go to **File** > **New** > **Java Class**.
+- Name the class `TodoDatabase` and fill in the superclass `android.database.sqlite.SQLiteOpenHelper`. Press OK to create the file.
+- The file can't compile at this moment, because we haven't provided implementations for the required methods. Press **CTRL-I** to open up the **Implement Methods** dialog. Two methods are already selected: press OK.
+- Finally, we need to create the right constructor for our class. Then press **CTRL-O** to open up the **Override Methods** dialog. Choose the simplest constructor (the topmost) and press OK.
+- Implement `onCreate()`: write code that creates a table called `todos` with columns `title` and `completed`. Add code that creates three sample to-do items for testing purposes.
+- Implement `onUpdate()`: write code that drops the table and recreates it by calling `onCreate()`.
 
 ## Step 4: Make it a singleton
 

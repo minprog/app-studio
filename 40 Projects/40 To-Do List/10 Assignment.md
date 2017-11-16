@@ -79,7 +79,7 @@ We're going to create a business object class called `TodoItem` to represent the
 - Implement `onCreate()`: write code that creates a table called `todos` with columns `title` and `completed`. Add code that creates three sample to-do items for testing purposes.
 - Implement `onUpdate()`: write code that drops the table and recreates it by calling `onCreate()`.
 
-Tip: use zeroes and ones for the boolean `completed` in the database!
+Tip: use 0 (false) and 1 (true) as values for booleans in the database!
 
 ## Step 4: Make it a singleton
 

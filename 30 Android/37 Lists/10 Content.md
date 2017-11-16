@@ -64,6 +64,8 @@ Unfortunately, list views do no support the simple `onClick` event, like buttons
 
 - Listener for when an item in the list has been selected: setOnItemSelectedListener(AdapterView.OnItemSelectedListener)
 
+Tip: when implementing the `onItemLongClick` method for long clicks, you need to return `true` if you performed an action in response to the long click. Otherwise, Android will run the normal click listener, too.
+
 ## Custom list layouts
 
 If you want your list to look different than the default appearance (just a text string for each line), you must:

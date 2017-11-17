@@ -43,17 +43,17 @@ Your task is to build an app according to the description above. On top of that,
 
 - Allow deletion of items through a "long click" (pressing and holding on an item). Use the `setOnItemLongClickListener` method of your list. However, do not use anonymous listeners!
 
-## Technical requirements
+<!-- ## Technical requirements
 
 - The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
 
-<!-- - To-dos must be represented in your code by a model class.  -->
+- To-dos must be represented in your code by a model class.
 
 - To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
 
-- Your app's readme should show the [Better Code Hub](/guides/better-code-hub) badge. No need to refactor your code, though!
+- Your app's readme should show the [Better Code Hub](/guides/better-code-hub) badge. No need to refactor your code, though! -->
 
-## Technical design
+## Class design
 
 We'll keep the app pretty simple, structure-wise. There is only one activity, and we create two helper classes.
 

@@ -9,7 +9,7 @@
 
 ## Preparation
 
-- [Models](/android/models)
+<!-- - [Models](/android/models) -->
 - [SQLite](/android/sqlite)
 
 ## Assessment
@@ -46,7 +46,7 @@ Your task is to build an app according to the description above. On top of that,
 
 - The to-dos should be displayed as a `ListView` of tasks that the user needs to complete.
 
-- To-dos must be represented in your code by a model class. 
+<!-- - To-dos must be represented in your code by a model class.  -->
 
 - To-dos must be saved in a SQLite database so as to ensure that to-do items survive when the app is killed or the phone rebooted.
 

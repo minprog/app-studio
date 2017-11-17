@@ -1,16 +1,12 @@
 # Unit 4. Tables and Persistence
 
-## Language exercises
+## Exercises
 
 Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
 1. Protocols
 	- Know how to implement a protocol
 	- Know how to define you own protocol
-
-**How to get points:** as soon as you have finished exercises in Swift Playgrounds, demonstrate your results to your TA.
-
-## iOS exercises
 
 2. App Anatomy and Life Cycle
 	- Know how the different stated of an app work
@@ -41,6 +37,12 @@ Feel free to skip some of the parts about the programming language, but make sur
 9. Building Complex Input Screens
 	- Know how to create workflows for input
 	- Know how to user a date picker
+
+**How to get points:**
+
+- Show that you have done (most of the) "protocols" Playground.
+- Show that you have done the "Favorite ahtletes" lab.
+- Show that you have done the "Remember your emojis" lab.
 
 ## Guided Project: List
 

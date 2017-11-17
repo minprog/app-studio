@@ -1,5 +1,5 @@
+## SQLite
 
-## What is SQLite?
 Android SQLite is a lightweight database that you can use to store data on your Android Device. SQL stands for structured query language and is a way to communicate with databases. The SQLite database is a relational database and makes use of tables with rows and columns. To store our data, we will create our own table structure. A table could for example contain "books", with columns referring to each book's ISBN, title, author etc. The contents of this table could then be rendered into a ListView or displayed in some other way.
 
 

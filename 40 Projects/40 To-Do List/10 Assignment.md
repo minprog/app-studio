@@ -11,6 +11,7 @@
 
 <!-- - [Models](/android/models) -->
 - [SQLite](/android/sqlite)
+- [Singleton](/android/singleton)
 
 ## Assessment
 

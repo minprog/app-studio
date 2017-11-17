@@ -128,7 +128,7 @@ Don't forget to call `updateData()`!
 - In the database class, add a public method `delete()` which accepts a `long id`. Call `delete()` on the database, providing the needed parameters.
 - In your `ItemClickListener`, call your new `update()` method.
 
-Everything should work now! Feel free to add features that seem appropriate for this app.
+Everything should work now!
 
 ## Step 9: Better Code Hub
 

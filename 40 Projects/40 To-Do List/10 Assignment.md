@@ -126,7 +126,7 @@ Don't forget to call `updateData()`!
 - Add an `OnItemLongClickListener` private subclass to your `MainActivity`.
 - In `onCreate()`, add a new instance of your subclass to the `ListView` via `setOnItemLongClickListener()`.
 - In the database class, add a public method `delete()` which accepts a `long id`. Call `delete()` on the database, providing the needed parameters.
-- In your `ItemClickListener`, call your new `update()` method.
+- In your `ItemClickListener`, call your new `delete()` method.
 
 Everything should work now!
 

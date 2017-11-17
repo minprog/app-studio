@@ -109,7 +109,7 @@ To make sure that the list view always displays the most up-to-date information 
 - You will need access to the database, as well as to the adapter. Add private instance variables to your class: `TodoDatabase db` and `TodoAdapter adapter`.
 - In your `onCreate()` you already create an instance of the `TodoDatabase` and of the `TodoAdapter`. Change the code to save these instances to the instance variables that we just created.
 - Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
-- Call your new method from `insert()`, and every time you add a new item, it should be displayed immediately!
+- Call your new method right after calling `insert()` from the button `onClick` handler, and every time you add a new item, it should be displayed immediately!
 
 ## Step 7: Write the update method
 

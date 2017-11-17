@@ -99,9 +99,12 @@ You project should now compile and run successfully, though data is not yet disp
 ## Step 4: Write the select method
 
 - Write `selectAll()` in `TodoDatabase`. First, use `getWritableDatabase()` to open up the connection. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
-- Create a new layout `row_todo.xml`.
+- Create a new layout `row_todo.xml`, which will be used to render each row in our list view. As such, it needs to contain controls for at least the title of a to-do item, as wel as something to show if the to-do has been completed or not.
 - Create a new class `TodoAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public TodoAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made.
-- Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor. You can call `view.findViewById()` to get references to the elements.
+- Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
+     - Use `Cursor.getInt(columnIndex)` to retrieve the value of one column as an integer.
+     - Use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
+     - Call `view.findViewById()` to get references to the controls in the row layout.
 - In the `onCreate()` of the `MainActivity`, use the `TodoDatabase` to get all records from the database, make a new `TodoAdapter` and link the `ListView` to the adapter.
 
 The app should now display all example to-dos from the database!

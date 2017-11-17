@@ -9,17 +9,14 @@ Week 2:
     'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
     'Project 2: Mad Libs': '/projects/mad-libs' 
 Week 3:
-<<<<<<< HEAD
     'Project 3: Restaurant': '/projects/restaurant'
-=======
->>>>>>> upstream/master
     'Exercise: References': '/android-exercises/references'
     'Project 3: Restaurant': '/projects/restaurant'
 Week 4:
     'Exercise: Public vs. Private': '/android-exercises/public-vs-private'
+    'Exercise: Static vs. non-static': '/android-exercises/static-vs-non-static'
     'Project 4: To-do List': '/projects/to-do-list'
 Week 5:
-    'Exercise: Static vs. non-static': '/android-exercises/static-vs-non-static'
     'Project 5: Many Lists': '/projects/many-lists'
 Week 6:
     'Project 6: Your Own': '/projects/your-own'

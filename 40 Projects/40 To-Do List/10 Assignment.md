@@ -61,6 +61,7 @@ We'll keep the app pretty simple, structure-wise. There is only one activity, an
 - The activity contains a `ListView` which, as before, uses an `Adapter` to generate the rows, but this time, we'll write our own adapter class.
 - The activity also uses a database, which we will embed in a special `TodoDatabase` class. That class will have methods that specifically handle the data for to-do items.
 - One important function of the database class is querying the database for all current to-do items, so as to fill the list. The query results are passed to our adapter via a `Cursor`.
+- We do not implement the `Cursor` class ourselves, but instead rely on the standard `Cursor` class that Android provides.
 - Although this app only uses a single activity, the database class is made as a **singleton**, which allows us to keep the database connection as the user navigates our app.
 
 ## Step 1: Getting started

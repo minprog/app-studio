@@ -128,7 +128,7 @@ To make sure that the list view always displays the most up-to-date information 
 
 ## Step 7: Write the update method
 
-- Add an `OnItemClickListener` private subclass to your `MainActivity`.
+- Add an `OnItemClickListener` private subclass to your `MainActivity` (see last week's explanation on [private listener classes](https://apps.mprog.nl/android/listeners)).
 - In `onCreate()`, add a new instance of your subclass to the `ListView` via `setOnItemClickListener()`.
 - In the database class, add a public method `update()` which accepts a `long id` and an updated completed status for some item.
 - In the `update()` method, get a reference to the writable database. Create a `ContentValues` object that contains the new value for `completed`. Then call `update()` on the database. Tip: use the `whereClause` to specify which record you want to update: `"_id = " + id`.

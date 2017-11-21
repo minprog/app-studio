@@ -48,9 +48,7 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
 
-**How to get points:** [submit](#submit) your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
-
-<a id="submit"></a>
+**How to get points:** submit your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
 
 ### How to submit
 

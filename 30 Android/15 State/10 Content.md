@@ -40,6 +40,8 @@ To restore those values, add another override:
 
 ![embed](https://player.vimeo.com/video/206083320)
 
+Note: In newer versions of Android Studio, other versions of `onSaveInstanceState` and `onRestoreInstanceState` exist, that take multiple arguments. Make sure that you use the exact declaration as shown above, or it will not work!
+
 ## Saving data from your own classes
 
 Normally, you can only store standard data types into a `Bundle`. The `Bundle` class defines methods like `putBoolean`, `putInt`, `putString` etc. However, it is possible to make your own class **serializable**, which allows its data to be stored in a `Bundle`, too.

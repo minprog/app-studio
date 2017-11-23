@@ -79,7 +79,7 @@ We'll keep the app pretty simple, structure-wise. There is only one activity, an
 - Finally, we need to create the right constructor for our class. Then press **CTRL-O** to open up the **Override Methods** dialog. Choose the simplest constructor (the topmost) and press OK.
 - Implement `onCreate()`: write code that creates a table called `todos` with columns `title` and `completed`. Also add an `_id` column of type `INTEGER PRIMARY KEY`. Execture the SQL using the `sqliteDatabase.execSQL()` method.
 - Add code in `onCreate()` that creates three sample to-do items for testing purposes.
-- Implement `onUpdate()`: write code that drops the table and recreates it by calling `onCreate()`.
+- Implement `onUpgrade()`: write code that drops the table and recreates it by calling `onCreate()`.
 
 Tip: use 0 (false) and 1 (true) as values for booleans in the database!
 

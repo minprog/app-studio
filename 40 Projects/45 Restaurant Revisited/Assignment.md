@@ -19,6 +19,7 @@ Guides available from the first implementation of Restaurant:
 Guides specifically for Restaurant Revisited:
 - Learn about [Models](/android/models)
 - Learn about [SQLite](/android/sqlite)
+
 <!-- - Learn about [Interface Design](/android/todo).
 - Learn about [Action Bar](/android/todo).
 - Learn about [Fragments](/android/todo). -->
@@ -51,7 +52,6 @@ Create an app that will help users look at a restaurant's menu and compose an or
 ## Step 3: Designing our Fragments' User Interface
 - Determine what content should be shown in each `Fragment` of your app.
 - Add the appropriate layout elements to your fragments' `fragment_name.xml` files, such as a `ListView` for the one that will hold our list of available dishes.
-- Make sure that the
 
 ## Step 4: Connect a Fragment to your Activity
 - Your `MainActivity` will need a layout to hold a `Fragment`. Add a `FrameLayout` within your parent layout in `activity_main.xml`. This is the container layout that we will use to display our fragments. Make sure to give this layout an `android:id` property, for example `fragment_container`, because we will need this later!
@@ -60,6 +60,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
         if (findViewById(R.id.fragment_container) != null) {
             // some more code will follow soon...
         }
+
 - Now that we know the container layout for our `Fragment` exists, we can attach it to our activity using the `FragmentManager` class. This fragmentmanager allows you to add and replace fragments easily and keep track of which fragments you have added to your activity using a String as a tag/label.
 
         FragmentManager fm = getFragmentManager();
@@ -74,11 +75,8 @@ Create an app that will help users look at a restaurant's menu and compose an or
 ## Step 5: Managing multiple Fragments
 - Coming Soon
 
-## Step 6: Showing Data in our Fragment
-- Coming Soon
-
-## Step 7: Communication between your Fragments and Activity
-- Coming Soon
+## Step 6: Communication between your Fragments and Activity
+- To ensure communication between your `Activity` and `Fragment` instance, we will make use of an `Interface` class. 
 
 ## Step XX: Creating the database classes
 To store our user's order, we will use a SQLite table. This allows us to easily store all data: the product id, name, price and amount ordered.

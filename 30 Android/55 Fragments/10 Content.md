@@ -46,10 +46,13 @@ This method also receives the `Bundle` object, so can also be used to restore st
             return view;
         }
 
-In your standard generated code, the inflated view is directly returned. If you want to initialize your other views, you can store it in a variable as in the code above, and then return it at the end.
+In your standard generated code, the inflated view is directly returned. If you want to initialize your other views, you can store it in a variable as in the code above (`View view`), and then return it at the end.
 
 ### onSaveInstanceState()
 `onSaveInstanceState()` behaves similarly to the `Activity` version and can be used to retain your fragment's state upon rotation, for example. Just put the things you want to keep in the `Bundle`, as per usual.
 
 ### onRestore()
 `onRestore()` is called after the layout as been managed by `onCreateView()`, so it can be used to restore the state of views as well, because these have been safely (re)initialized. The `Fragment` class does not have `onRestoreInstanceState`, so restoration of your state is managed slightly differently because of this.
+
+
+## Communicating with the Activity

@@ -134,6 +134,8 @@ To make sure that the list view always displays the most up-to-date information 
 - In the `update()` method, get a reference to the writable database. Create a `ContentValues` object that contains the new value for `completed`. Then call `update()` on the database. Tip: use the `whereClause` to specify which record you want to update: `"_id = " + id`.
 - In your `ItemClickListener`, call your new `update()` method.
 
+Tip: if you are using a checkbox control to display the items' completed status, this checkbox will interfere with the click events of the list (it will capture the events and your listeners will not trigger). To prevent this, set the `clickable` and `focusable` properties of the checkbox to `false`. Because the list items are still clickable and focusable, your listeners will now work!
+
 Don't forget to call `updateData()`!
 
 ## Step 8: Write the delete method

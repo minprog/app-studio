@@ -39,12 +39,14 @@ Create an app that will help users look at a restaurant's menu and compose an or
 2. Add CategoriesFragment based on ListFragment.
 3. Use Volley to load categories from website, connect to list with `this.setListAdapter()`.
 4. Prepare `MainActivity` for first fragment:
+
         getFragmentManager()
                 .beginTransaction()
                 .replace(R.id.fragment_container, new CategoriesFragment())
                 .commit();
 5. Create MenuFragment based on ListFragement for showing menu based on category.
 6. Override onListItemClick for CategoriesFragment to go to MenuFragment:
+
         MenuFragment menuFragment = new MenuFragment();
         Bundle args = new Bundle();
         args.putString("category", s);
@@ -58,6 +60,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 7. Use Volley to load menu from website.
 8. Add `OrderFragment` inheriting from `DialogFragment` for showing order.
 9. Add OptionsMenu to the `MainActivity`:
+
         public boolean onCreateOptionsMenu(Menu menu) {
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.actions, menu);
@@ -70,6 +73,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
             }
         }
 10. Handle clicking **cancel** in `OrderFragment`:
+
         Button b = (Button) v.findViewById(R.id.cancel_button);
         b.setOnClickListener(this);
 

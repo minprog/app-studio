@@ -1,6 +1,5 @@
 # Restaurant Revisited
 
-
 ## Objectives
 
 - Practice with user interface design.
@@ -33,6 +32,10 @@ Create an app that will help users look at a restaurant's menu and compose an or
 
 ![](app.png)
 
+## Requirements  
+TODO probably still need these?
+
+<!--
 1. New project with Blank Activity
 2. Add CategoriesFragment based on ListFragment.
 3. Use Volley to load categories from website, connect to list with `this.setListAdapter()`.
@@ -84,7 +87,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 4. Add OrderDatabase and OrderAdapter like in the TodoApp.
 5. Allow adding items to order in MenuFragment.
 6. Allow placing order and clearing db in OrderFragment.
-
+-->
 
 
 ## Step 1: Getting started
@@ -137,7 +140,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 - Make sure that your `MainActivity` attaches this fragment on startup.
 - In the `CategoriesFragment`, use [Volley](/android/volley) to load categories from the API, and store these in a list.
 - You can connect your list to your `ListView` in the fragment by simply using `this.setListAdapter()` because the whole fragment counts as a list.
-- Override the onclick method for `CategoriesFragment` to go to `MenuFragment`, and pass on the category that was clicked:
+- Override the onclick method for `CategoriesFragment` to go to `MenuFragment`, and pass on the category that was clicked by adding it to a `Bundle`, and setting this bundle as the arguments of `MenuFragment`:
 
         MenuFragment menuFragment = new MenuFragment();
         Bundle args = new Bundle();

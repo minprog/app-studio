@@ -35,6 +35,8 @@ All students must ordinarily submit this and all other projects to be eligible f
 
 Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface.
 
+![](app.png)
+
 1. New project with Blank Activity
 2. Add CategoriesFragment based on ListFragment.
 3. Use Volley to load categories from website, connect to list with `this.setListAdapter()`.

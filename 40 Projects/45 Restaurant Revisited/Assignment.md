@@ -35,6 +35,61 @@ All students must ordinarily submit this and all other projects to be eligible f
 
 Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface.
 
+![](app.png)
+
+1. New project with Blank Activity
+2. Add CategoriesFragment based on ListFragment.
+3. Use Volley to load categories from website, connect to list with `this.setListAdapter()`.
+4. Prepare `MainActivity` for first fragment:
+
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, new CategoriesFragment())
+                .commit();
+5. Create MenuFragment based on ListFragement for showing menu based on category.
+6. Override onListItemClick for CategoriesFragment to go to MenuFragment:
+
+        MenuFragment menuFragment = new MenuFragment();
+        Bundle args = new Bundle();
+        args.putString("category", s);
+        menuFragment.setArguments(args);
+
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, menuFragment)
+                .addToBackStack(null)
+                .commit();
+7. Use Volley to load menu from website.
+8. Add `OrderFragment` inheriting from `DialogFragment` for showing order.
+9. Add OptionsMenu to the `MainActivity`:
+
+        public boolean onCreateOptionsMenu(Menu menu) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.actions, menu);
+            return super.onCreateOptionsMenu(menu);
+        }
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.place_order:
+                    ...
+            }
+        }
+10. Handle clicking **cancel** in `OrderFragment`:
+
+        Button b = (Button) v.findViewById(R.id.cancel_button);
+        b.setOnClickListener(this);
+
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                ...
+            }
+        }
+4. Add OrderDatabase and OrderAdapter like in the TodoApp.
+5. Allow adding items to order in MenuFragment.
+6. Allow placing order and clearing db in OrderFragment.
+
+
 
 ## Step 1: Getting started
 - Create a new empty GitHub repository.

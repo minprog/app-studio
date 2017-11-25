@@ -89,7 +89,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 
 ## Step 1: Getting started
 - Create a new empty GitHub repository.
-- Create a new Android studio project and link it to the repository.
+- Create a new Android studio project starting with a blank activity and link it to the repository.
 - Keep your previous code of Restaurant close, if you have it! You are allowed to reuse your previously implemented functionality.
 
 ## Step 2: Creating our MainActivity
@@ -152,7 +152,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 
 
 ## Step 7: Functionalities of MenuFragment
-- Extract the category that was clicked on. You can use the `Bundle` item that the `onCreate()` in the `MenuFragment` receives to do so.
+- Extract the category that was clicked on. You can do so by calling`getArguments()` in the `onCreate()` of MenuFragment, which returns a `Bundle`.
 - In the fragment, once again use [Volley](/android/volley) to download the menu data from the API.
 - Using our onclick method, extract the data necessary to store the item clicked in an order, as clicking the items in the `MenuFragment` should add them to the order. The adding of items itself will be handled later, using our database which we implement further down the road.
 

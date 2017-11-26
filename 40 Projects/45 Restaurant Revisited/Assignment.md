@@ -212,7 +212,7 @@ Try out your app and make sure the order summary shows up! You can dismiss the f
 
 ## Step 8: Create the database classes
 
-To store our users' orders, we will use a [SQLite][/android/sqlite] table. This allows us to store the relevant data: id, name, price and amount ordered.
+To store our users' orders, we will use a [SQLite](/android/sqlite) table. This allows us to store the relevant data: id, name, price and amount ordered.
 
 Create `RestoDatabase` and `RestoAdapter` classes like you did in the To-Do List app. The methods in the database class may be a little different:
 

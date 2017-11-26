@@ -147,17 +147,17 @@ Add another fragment called `MenuFragment`, using the steps outlined earlier. Ma
 
 Use CTRL-O to override the `onListItemClick` method in `CategoriesFragment`. Use the following code to go to `MenuFragment`, and pass on the category that was clicked by adding it to a `Bundle`, and setting this bundle as the arguments of `MenuFragment`:
 
-        MenuFragment menuFragment = new MenuFragment();
-        
-        Bundle args = new Bundle();
-        args.putString("category", s);
-        menuFragment.setArguments(args);
+    MenuFragment menuFragment = new MenuFragment();
+    
+    Bundle args = new Bundle();
+    args.putString("category", s);
+    menuFragment.setArguments(args);
 
-        getFragmentManager()
-                .beginTransaction()
-                .replace(R.id.fragment_container, menuFragment)
-                .addToBackStack(null)
-                .commit();
+    getFragmentManager()
+            .beginTransaction()
+            .replace(R.id.fragment_container, menuFragment)
+            .addToBackStack(null)
+            .commit();
 
 See that code for replacing the fragment? It's almost the same as in step 2, but this time we use the promise interface, which allows us to chain all methods to each other, without creating all those temporary variables. Also, we added a call to `addToBackStack()`, which makes sure that our users can use their phones' back buttons to navigate back.
 
@@ -208,7 +208,7 @@ Now, our order overview is a special type of fragment, which will not **replace*
 
 Try out your app and make sure the order summary shows up! You can dismiss the fragment by tapping outside of it.
 
-## Step 8: Creating the database classes
+## Step 8: Create the database classes
 
 To store our users' orders, we will use a [SQLite][/android/sqlite] table. This allows us to store the relevant data: id, name, price and amount ordered.
 

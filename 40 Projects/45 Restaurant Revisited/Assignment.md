@@ -10,11 +10,13 @@
 ## Preparation
 
 Guides available from the first implementation of Restaurant:
+
 - Learn about [Listeners](/android/listeners).
 - Learn about [Lists](/android/lists).
 - Learn about [Volley](/android/volley).
 
 Guides specifically for Restaurant Revisited:
+
 - Learn about [Models](/android/models)
 - Learn about [SQLite](/android/sqlite)
 - Learn about [Fragments](/android/fragments)

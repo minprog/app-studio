@@ -28,12 +28,14 @@ All students must ordinarily submit this and all other projects to be eligible f
 
 ## What to do
 
-Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface.
+Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items and the total price of the order! All of this should be done using an elegant and simple user interface.
 
 ![](app.png)
 
 ## Requirements  
-TODO probably still need these?
+
+- Your app should work and look like in the description and the screen shots above.
+- Your app should have simple but elegant layouts that work well on a variety of phone sizes.
 
 <!--
 1. New project with Blank Activity
@@ -91,58 +93,62 @@ TODO probably still need these?
 
 
 ## Step 1: Getting started
+
+Tip: keep your previous code of Restaurant close, if you have it! You are allowed to reuse your previously implemented functionality. However, you must start a new project for this new version.
+
 - Create a new empty GitHub repository.
-- Create a new Android studio project starting with a blank activity and link it to the repository.
-- Keep your previous code of Restaurant close, if you have it! You are allowed to reuse your previously implemented functionality.
+- Create a new Android studio project, starting with a blank activity.
+- Link your project to the repository.
 
-## Step 2: Creating our MainActivity
+## Step 2: Displaying categories
 
-- Create a `MainActivity`, but do not add any widgets such as buttons, views etc. to your layout yet, as these will be contained in our fragments.
-- We will now create three fragments, one to hold the list of categories, one for our menu items and one to hold the current order and "submit order" functionality.
+If you haven't read the guide on `Fragments` yet, you can find it [here](/android/fragments). Android ships with a couple of specialized `Fragment` subclasses. In this case, we'll use a `ListFragment` to show the menu categories, like in our earlier Restaurant app.
 
-## Step 3: Creating our Fragments
-- The three fragments we will create are: `CategoriesFragment`, `MenuFragment` and `OrderFragment`.
-- If you haven't read the guide on `Fragments` yet, you can find it [here](/android/fragments).
-- For our app, we will make use of lists. Luckily there are fragments with list functionality built in available.
-- We will now slowly add the needed functionality ourselves, so that we don't end up with mountains of pre-generated but hard to understand code.
-- To create such a `ListFragment`, go to **New > Fragment > Fragment (Blank)** and uncheck the boxes for "Include fragment factory methods" and "Interface Callbacks".
-- Take a quick look at your newly generated code and read through the comments to get some idea of what you still have to do.
-- You should have a `Fragment` class with a constructor and `onCreateView()`, and also a layout XML file associated with your newly created fragment.
+- Create a fragment class called `CategoriesFragment`, go to **File > New > Fragment > Fragment (Blank)** and uncheck the boxes for "Include fragment factory methods" and "Interface Callbacks". (Do not use Fragment (List), or you end up with mountains of pre-generated but hard to understand code.)
 
-## Step 4: Adding the ListFragment functionality
-- What we are now going to do is change it to a `ListFragment`. Do this by changing `extends Fragment` to `extends ListFragment` in Fragment class declaration.
-- Add the appropriate layout elements to your fragment's `fragment_name.xml` files. The `ListFragment` of course needs a `ListView` to work properly.
-- Make sure to give this `ListView` the identifier property `android:id="@+id/android:list"`, this is required for the fragment to work.
-- We will now override the `onItemClick` method that comes with the `ListFragment` to add our own functionality later using `CTRL+O`.
-- You can also override `onCreate()`, because chances are you will want to use this method as well later on, for example to start a method to get data from the API.
-- Repeat these steps to create another fragment that will hold the code for our menu items, instead of the categories.
+You should have a `Fragment` class with a constructor and `onCreateView()`, and also a layout XML file associated with your newly created fragment. Take a quick look at your newly generated code and read through the comments to get some idea of what you still have to do.
 
+- Delete the empty constructor for this `Fragment`. According to the documentation, fragments should have no constructors.
+- Now, change the class to a `ListFragment` by changing `extends Fragment` to `extends ListFragment` in the class declaration.
 
-## Step 5: Connecting our first fragment to MainActivity
-- Your `MainActivity` will need a layout to hold a `Fragment`. Add a `FrameLayout` within your parent layout in `activity_main.xml`. This is the container layout that we will use to display our fragments. Make sure to give this layout an `android:id` property, for example `fragment_container`, because we will need this later!
-- In your `MainActivity`'s `onCreate()` method, we will now attach our `Fragment` to the activity. We will do so using a few steps.
-- First, we want to guarantee that the container layout we added in `activity_main.xml` that we try to put our `Fragment` in exists, so we perform a check using an `if` statement, like so:
+Important note: when adding imports using Android Studio, choose `android.app.ListFragment` instead of `android.support.v4.app.ListFragment`. The latter is used for backwards compatibility, when running apps on very old phones. We'll keep it simple and use the "modern" fragments.
 
-        if (findViewById(R.id.fragment_container) != null) {
-            // some more code will follow soon...
-        }
+- A `ListFragment` depends on the existence of a list view in the layout file, so add a list view to `fragment_categories.xml`. Make sure to assign `android:list` as the identifier of the list view.
+- Use CTRL-O to override the `onCreate()` method.
+- In `onCreate()`, add code based on the Volley library to load the categories from the <https://resto.mprog.nl> web server.
+- In a `ListFragment`, you must use the `this.setListAdapter()` method to connect an adapter to the list. Do not attach it to the list directly, as you did in a previous version of the Restaurant app, because in this case, the `ListFragment` is responsible for making sure everything stays in sync.
 
-- Now that we know the container layout for our `Fragment` exists, we can attach it to our activity using the `FragmentManager` class. This fragmentmanager allows you to add and replace fragments easily and keep track of which fragments you have added to your activity using a String as a tag/label.
+## Step 3: Connect the initial fragment to the activity
+
+`MainActivity` needs some simple changes to accommodate showing fragments.
+
+- Open `activity_main.xml` in **Text** mode. In the XML, change the `ConstraintLayout` tag to a `FrameLayout` (that kind of layout is ideally suited for displaying just a single element, in this case the fragments).
+- Now switch to **Design** mode, select the `FrameLayout` in the preview, and assign it the ID `fragment_container`.
+
+In your `MainActivity`'s `onCreate()` method, we will now attach our `Fragment` to the activity. To do this, Android provides a **fragment manager**, which allows adding and replacing fragments, while keeping track of all fragments using tags.
+
+<!-- checking for fragment_container using findViewById is not needed if we are certain it's there -->
+
+- In the `onCreate()` method of `MainActivity`, use the fragment manager to load the fragment:
 
         FragmentManager fm = getFragmentManager();
         YourFragmentClass fragment = new YourFragmentClass();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.fragment_container, fragment, "ATagForYourFragment");
+        ft.replace(R.id.fragment_container, fragment, "categories");
         ft.commit();
 
+Your app should now work! Try it out and ask for help debugging if needed.
 
-## Step 6: Functinalities of CategoriesFragment
-- Make sure that your `MainActivity` attaches this fragment on startup.
-- In the `CategoriesFragment`, use [Volley](/android/volley) to load categories from the API, and store these in a list.
-- You can connect your list to your `ListView` in the fragment by simply using `this.setListAdapter()` because the whole fragment counts as a list.
-- Override the onclick method for `CategoriesFragment` to go to `MenuFragment`, and pass on the category that was clicked by adding it to a `Bundle`, and setting this bundle as the arguments of `MenuFragment`:
+## Step 4: Displaying the menu
+
+Add another fragment called `MenuFragment`, using the steps outlined earlier. Make sure it can load the menu items from the server (in the next step, we'll explain how to pass the menu category from the first activity to the second).
+
+## Step 5: Linking from a category to the menu
+
+Use CTRL-O to override the `onListItemClick` method in `CategoriesFragment`. Use the following code to go to `MenuFragment`, and pass on the category that was clicked by adding it to a `Bundle`, and setting this bundle as the arguments of `MenuFragment`:
 
         MenuFragment menuFragment = new MenuFragment();
+        
         Bundle args = new Bundle();
         args.putString("category", s);
         menuFragment.setArguments(args);
@@ -153,49 +159,108 @@ TODO probably still need these?
                 .addToBackStack(null)
                 .commit();
 
+See that code for replacing the fragment? It's almost the same as in step 2, but this time we use the promise interface, which allows us to chain all methods to each other, without creating all those temporary variables. Also, we added a call to `addToBackStack()`, which makes sure that our users can use their phones' back buttons to navigate back.
 
-## Step 7: Functionalities of MenuFragment
-- Extract the category that was clicked on. You can do so by calling`getArguments()` in the `onCreate()` of MenuFragment, which returns a `Bundle`.
-- In the fragment, once again use [Volley](/android/volley) to download the menu data from the API.
-- Using our onclick method, extract the data necessary to store the item clicked in an order, as clicking the items in the `MenuFragment` should add them to the order. The adding of items itself will be handled later, using our database which we implement further down the road.
+In `MenuFragment`, override `onCreate()`. You can get access to the bundle using this line:
 
-## Step 8: Creating our OrderFragment TODO
-- Add `OrderFragment` inheriting from `DialogFragment` for showing order.
-- Add OptionsMenu to the `MainActivity`:
+    Bundle arguments = this.getArguments();
 
-        public boolean onCreateOptionsMenu(Menu menu) {
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.actions, menu);
-            return super.onCreateOptionsMenu(menu);
+Use that bundle to load the right menu items. Try your app to make sure everything works as expected!
+
+## Step 6: Add the order overview fragment
+
+For presenting the final order to the user, we'll use a **dialog fragment**, as shown in the third screen shot above. Unfortunately, there is no fragment type that combines the dialog functionality with that of a list view, so we'll need to handle this list view manually.
+
+- Add a new class `OrderFragment`. Change it into a `DialogFragment`.
+- Create the layout for this fragment. Don't forget to assign an ID to the list view.
+
+## Step 7: Add a button to the action bar to show the order
+
+The Android action bar has plenty of space to show an "order overview" button. To add such a button, first create a menu resource file:
+
+- Go to **File > New > Android Resource File**.
+- Use `actions` as the file name and **menu** as the resource type. Press OK.
+- Add a Menu Item to the menu, and give it an `id`, `title` and choose an appropriate icon.
+- For `showAsAction`, choose `always`.
+
+You can load this menu resource by overriding `onCreateOptionsMenu` in the `MainActivity`:
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+To handle events for the menu, override `onOptionsItemSelected`:
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.place_order:
+                ...
         }
-        public boolean onOptionsItemSelected(MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.place_order:
-                    ...
-            }
-        }
-- Handle clicking **cancel** in `OrderFragment`:
+    }
+
+Now, our order overview is a special type of fragment, which will not **replace** the menu fragment, but instead will be shown on top of it. To show a dialog fragment, use the following code:
+
+    FragmentTransaction ft = getFragmentManager().beginTransaction();
+    OrderFragment fragment = new OrderFragment();
+    fragment.show(ft, "dialog");
+
+Try out your app and make sure the order summary shows up! You can dismiss the fragment by tapping outside of it.
+
+## Step 8: Creating the database classes
+
+To store our users' orders, we will use a [SQLite][/android/sqlite] table. This allows us to store the relevant data: id, name, price and amount ordered.
+
+Create `RestoDatabase` and `RestoAdapter` classes like you did in the To-Do List app. The methods in the database class may be a little different:
+
+- We'd like to have an `addItem()` method that adds one dish to the order (saving name, price etc.). But if the dish is already in the order, it just has to increment the amount already in the database.
+- We'd like to have a `clear()` method that removes all order items from the database.
+
+## Step 9: Wire up the database
+
+- Override `onListItemClick` in the `MenuFragment` and call the database to add the item to the order.
+- Override `onViewStateRestored` in the `OrderFragment` to get all items from the database and link an `OrderAdapter` to the list view.
+
+Check if the list is loading correctly!
+
+## Step 10: Allow submitting the order
+
+As a final step for creating the functionality, we need to add handlers for the "Cancel" and "Place order" buttons in the `OrderFragment`.
+
+- Add `implements View.OnClickListener` to the class definition.
+- In the `onCreateView()` method, assign the class as the click listener for the cancel button:
 
         Button b = (Button) v.findViewById(R.id.cancel_button);
         b.setOnClickListener(this);
 
+- Do the same for the place order button.
+- Create the event handler method:
+
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
-                ...
+                case ...
             }
         }
+- Think about what steps need to be taken when a user clicks the "Place order" button.
 
-## Step 9: Connecting OrderFragment to our activity
-- TODO
+## Step 11: Clean up your code
 
-## Step 10: Creating the database classes
-To store our user's order, we will use a [SQLite][/android/sqlite] table. This allows us to easily store all data: the product id, name, price and amount ordered.
+- Make sure there are no anonymous listeners in your code.
+- Add comments to your code.
+- Delete any empty methods.
 
-- Create a class `RestoDatabase` inheriting from `android.database.sqlite.SQLiteOpenHelper`.
-- Use **CTRL-I** to add `onCreate()` and `onUpgrade()`. Add code to create the `order_items` table (in `onCreate`) and to drop it (in `onUpgrade`).
-- Use **CTRL-O** to add the constructor.
-- Make the class into a singleton (following instructions from [To-Do List step 3](https://apps.mprog.nl/projects/to-do-list) if needed).
-- Add a `selectAll()` method that returns a `Cursor` for all `order_items`.
-- Add an `addItem()` method which accepts `id`, `name`, `price` and adds the item to the database with `amount` set to 1. If there is already a record for the menu item, it should not add a new record, but instead update the existing record, incrementing the `amount`.
-- Add a `clear()` method which removes all lines from the order.
+## Step 12: Better Code Hub
+
+If everything is in order, the code that you wrote should be pretty simple! A couple of classes, each not too long. Let's confirm this by using [Better Code Hub](/guides/better-code-hub). Connect the project to the site and add the code quality badge to your app's `README` on GitHub. If something seems seriously wrong, ask a teacher how to improve!
+
+## How to submit
+
+1. Add a `README.md` with a **normally-sized and easily viewed** screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
+
+2. Commit and push one last time (hopefully!).
+
+3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
+
+4. When all is set, paste the GitHub repo URL below, in the textbox!

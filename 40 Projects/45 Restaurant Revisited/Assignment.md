@@ -99,7 +99,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 Tip: keep your previous code of Restaurant close, if you have it! You are allowed to reuse your previously implemented functionality. However, you must start a new project for this new version.
 
 - Create a new empty GitHub repository.
-- Create a new Android studio project, starting with a blank activity.
+- Create a new Android studio project, starting with a Empty Activity.
 - Link your project to the repository.
 
 ## Step 2: Displaying categories
@@ -113,7 +113,7 @@ You should have a `Fragment` class with a constructor and `onCreateView()`, and 
 - Delete the empty constructor for this `Fragment`. According to the documentation, fragments should have no constructors.
 - Now, change the class to a `ListFragment` by changing `extends Fragment` to `extends ListFragment` in the class declaration.
 
-Important note: when adding imports using Android Studio, choose `android.app.ListFragment` instead of `android.support.v4.app.ListFragment`. The latter is used for backwards compatibility, when running apps on very old phones. We'll keep it simple and use the "modern" fragments.
+Important note: when adding imports using Android Studio, choose `android.support.v4.app.ListFragment`. This version of fragments is used for backwards compatibility, when running apps on very old phones --- but even if not supporting those phones, other parts will force use to use that version anyway.
 
 - A `ListFragment` depends on the existence of a list view in the layout file, so add a list view to `fragment_categories.xml`. Make sure to assign `android:list` as the identifier of the list view.
 - Use CTRL-O to override the `onCreate()` method.
@@ -133,7 +133,7 @@ In your `MainActivity`'s `onCreate()` method, we will now attach our `Fragment` 
 
 - In the `onCreate()` method of `MainActivity`, use the fragment manager to load the fragment:
 
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         YourFragmentClass fragment = new YourFragmentClass();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragment_container, fragment, "categories");
@@ -155,7 +155,7 @@ Use CTRL-O to override the `onListItemClick` method in `CategoriesFragment`. Use
     args.putString("category", s);
     menuFragment.setArguments(args);
 
-    getFragmentManager()
+    getSupportFragmentManager()
             .beginTransaction()
             .replace(R.id.fragment_container, menuFragment)
             .addToBackStack(null)
@@ -204,7 +204,7 @@ To handle events for the menu, override `onOptionsItemSelected`:
 
 Now, our order overview is a special type of fragment, which will not **replace** the menu fragment, but instead will be shown on top of it. To show a dialog fragment, use the following code:
 
-    FragmentTransaction ft = getFragmentManager().beginTransaction();
+    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
     OrderFragment fragment = new OrderFragment();
     fragment.show(ft, "dialog");
 

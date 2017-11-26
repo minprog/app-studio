@@ -37,6 +37,7 @@ Create an app that will help users look at a restaurant's menu and compose an or
 
 - Your app should work and look like in the description and the screen shots above.
 - Your app should have simple but elegant layouts that work well on a variety of phone sizes.
+- Your app should be made according to the steps below.
 
 <!--
 1. New project with Blank Activity

@@ -22,7 +22,7 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
 3. Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
 
     - [Views](/android/views)
-    - [Layouts](/androids/layouts)
+    - [Layouts](/android/layouts)
     - [State](/android/state)
 
 4. Now you are ready to make your first app, [Mr. Potatohead](/projects/mr-potatohead).

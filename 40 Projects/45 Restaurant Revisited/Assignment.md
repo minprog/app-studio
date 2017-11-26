@@ -17,7 +17,6 @@ Guides available from the first implementation of Restaurant:
 
 Guides specifically for Restaurant Revisited:
 
-- Learn about [Models](/android/models)
 - Learn about [SQLite](/android/sqlite)
 - Learn about [Fragments](/android/fragments)
 

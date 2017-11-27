@@ -155,7 +155,7 @@ Use CTRL-O to override the `onListItemClick` method in `CategoriesFragment`. Use
     args.putString("category", s);
     menuFragment.setArguments(args);
 
-    getSupportFragmentManager()
+    getFragmentManager()
             .beginTransaction()
             .replace(R.id.fragment_container, menuFragment)
             .addToBackStack(null)

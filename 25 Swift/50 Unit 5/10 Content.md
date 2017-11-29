@@ -27,7 +27,6 @@ This week you will learn how to get content from the web and make use of API's.
 **How to get points:**
 
 - Show that you have done (most of the) "closure" Playground.
-- Show that you have done (most of the) "extension" Playground.
 - Show that you have done the "Enter to win a contest" lab.
 
 ## Guided Project: Restaurant
@@ -36,7 +35,7 @@ At the end of the chapter, you'll find a Guided Project to make a very simple ap
 
 **How to get points:** submit your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
 
-## Bugfixes
+### Bugfixes
 
 - In the `submitOrder` method, make sure to declare the variable `data` with the following type:
 

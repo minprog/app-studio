@@ -27,6 +27,7 @@ This week you will learn how to get content from the web and make use of API's.
 **How to get points:**
 
 - Show that you have done (most of the) "closure" Playground.
+- Show that you have done (most of the) "extension" Playground.
 - Show that you have done the "Enter to win a contest" lab.
 
 ## Guided Project: Restaurant

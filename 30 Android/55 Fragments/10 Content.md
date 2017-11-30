@@ -26,7 +26,7 @@ In the `Fragment` class, there are methods that are similar to that of an activi
 
 
 ### onCreateView()
-`onCreateView()` is called when your fragment needs to display its layout to the user and is thus concerend with the xml and the views stored in it. From the activity that attaches the fragment it receives the container layout, which is the used to tell this method where to inflate the layout of the fragment itself.
+`onCreateView()` is called when your fragment needs to display its layout to the user and is thus concerned with the xml and the views stored in it. From the activity that attaches the fragment it receives the container layout, which is the used to tell this method where to inflate the layout of the fragment itself.
 
 This method creates and returns the root view of your fragment, which is important, because calls to `findViewById` will need to use this root view in order to find the views that are contained in your fragment layout xml. In this method you can now safely initialize your views!
 

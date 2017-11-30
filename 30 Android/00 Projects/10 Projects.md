@@ -17,11 +17,11 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
 2. Every unit contains exercises for the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
 
     - [Methods, properties and constructors](/android-exercises/classes)
-    - [Parameters and return values](/android-exercises/parameters-and-return-values)
+    - [Inheritance](/android-exercises/inheritance)
 
-3. Before making an app, there is some explanation about the parts of Android that you will probably need to go on. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+3. Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
 
-    - [Widgets](/android/widgets) (TODO)
+    - [Views](/android/views)
     - [Layouts](/android/layouts)
     - [State](/android/state)
 

@@ -35,6 +35,12 @@ At the end of the chapter, you'll find a Guided Project to make a very simple ap
 
 **How to get points:** submit your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
 
-### How to submit
+### Bugfixes
 
-You can submit your GitHub-link [here](/projects/many-lists#submit-content), you can ignore everything else on this page, use it only for submitting your link.
+- In the `submitOrder` method, make sure to declare the variable `data` with the following type:
+
+        let data: [String: [Int]] = ...
+
+## How to submit
+
+You can submit your GitHub-link [here](/projects/restaurant-revisited#submit-content), you can ignore everything else on this page, use it only for submitting your link.

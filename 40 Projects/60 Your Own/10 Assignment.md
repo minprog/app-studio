@@ -33,22 +33,23 @@ Style
 So, this is the final assignment and your best chance to make something of your own! There are two important constraints, however:
 
 - The application must use [Firebase](https://firebase.google.com/) as a database backend to store one or more types of data. Firebase should be integrated in the app as intended by official documentation.
-
-- The application concept may be based (but does not have to be) on a public API with open data. This should be a "live" API, where you can do requests from your app for more data; for example, using JSON.
+- The application is a variation of one of these two concepts:
+    - App allows showing items from an API, including details. Users can "favorite" certain items, and favorites lists are shared between users of the app.
+    - App offers quiz/trivia questions from an API. Users can answer questions and earn karma. Scores are shared between different users of the app
 
 ## Requirements
 
 This is the full set of requirements that we ask you to accommodate when designing and implementing your app:
 
 - Firebase must be used to save user data.
-- Firebase may be used to allow user logins, but data may also be shared between phones without requiring logins.
+- Firebase must be used to allow user logins, but data may also be shared between phones without requiring logins.
 - If practical, very small user data must be persisted on the phone, so as to provide a responsive app in case of network problems.
-- Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once.
+- Not all data from the API needs to be saved on the phone once retrieved, it may be requested more than once (mind limits set by the API provider!).
 - Even if killed, the app should generally resume in the same state as before.
 - Code should be organised well (keeping in mind the advice from Better Code Hub).
-- Code should be documented well (comments as well as READMEs).
+- Code should be documented well (comments, variable names, as well as READMEs).
 
-Discuss your app proposal with the TAs to ensure the scope is sufficient!
+Check your app proposal with the TAs to ensure the scope is sufficient!
 
 ## APIs
 
@@ -57,16 +58,19 @@ Here are some suggestions for finding interesting APIs:
 - <https://opendatanederland.org>
 - <https://github.com/caesar0301/awesome-public-datasets>
 - <http://www.programmableweb.com/apis/directory>
+- ... or search for trivia/quiz APIs using your favorite engine.
 
 ## Peer review
 
-Although the app will be graded by the staff, you are required to perform a code review with one other student, in class, after the first deadline. The results of the review should be documented in a file called `REVIEW.md`. You are expected to use the results of this review to improve your code before submitting the final version.
+Although the app will be graded by the staff, you are required to perform a code review with one other student. The results of the review should be documented in a file called `REVIEW.md`. You are expected to use the results of this review to improve your code before submitting the final version.
 
 ## Getting started
 
 1. Create an empty [GitHub](https://www.github.com/) repository to manage your code.
 
-2. Create a new project, using this pattern as a name: `studentname-pset6`.
+2. Create a new project.
+
+3. You're on your own now!
 
 ## How to submit
 

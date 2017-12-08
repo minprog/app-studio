@@ -16,6 +16,7 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
 
 2. Every unit contains exercises for the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
 
+    - Start with an [overview of Java](https://www.youtube.com/watch?v=UaxRRO9175A)
     - [Methods, properties and constructors](/android-exercises/classes)
     - [Inheritance](/android-exercises/inheritance)
 

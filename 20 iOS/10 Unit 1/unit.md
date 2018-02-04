@@ -72,6 +72,6 @@ Now you are ready to make your first app! At the end of the chapter, you'll find
 
 ## Handing in
 
-[Put your app on GitHub!](/ios/github)
+[Put your app on GitHub!](/ios-reference/github)
 
 **How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!

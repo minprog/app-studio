@@ -22,4 +22,10 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
     - [Layouts](/android/layouts)
     - [State](/android/state)
 
-4. Now you are ready to make your first app, [Mr. Potatohead](/projects/mr-potatohead).
+## Project
+
+Now you are ready to make your first app! You can choose between two projects:
+
+- **Guided project: [Mr. Potatohead](/guided/mr-potatohead)** takes you step-by-step through making your first app. You'll probably choose this one if you haven't built applications on a platform before.
+
+- **Unguided project: [First App](/projects/first-app)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!

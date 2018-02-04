@@ -15,7 +15,6 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 ## Table of contents
 
 - [Getting started](#gettingstarted)
-- [Expectations](#expectations)
 - [Prerequisites](#prerequisites)
 - [Asking questions](#staff)
 - [What to do](#grades)
@@ -31,17 +30,13 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## Getting started 
 
+You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
+
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio
 - Read the remainder of this syllabus
 - Practice object-oriented concepts in Java or Swift
 - Create your first app!
 - If in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant
-
-<a name="expectations"></a>
-
-## Expectations 
-
-You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
 
 <a name="prerequisites"></a>
 
@@ -56,7 +51,13 @@ Studio.
 
 ## Asking questions 
 
-The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff in the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor in the lab. Below you will find a list of the courses's instructors:
+The course's staff consists of your instructor and many teaching assistants. Due to the size of the course, we can't usually respond to email inquiries about your assignments.
+
+- You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
+
+- Please register for this course's Slack chat. You will be invited after you login and register on this website.
+
+Below you will find a list of the courses's instructors:
 
 - Martijn Stegeman, *instructor* <help@mprog.nl>
 - Renske Talsma, *teaching assistant (Android)*
@@ -73,10 +74,7 @@ Every week, exercises and a programming project will be made available. Final gr
 | exercises | 20% |
 | projects  | 80% |
 
-
-## Deadlines
-
-For both exercises and projects, there are six weekly deadlines.
+For both exercises and projects, there are six weekly deadlines:
 
 | no |    deadline |  
 | -: | ----------: |  

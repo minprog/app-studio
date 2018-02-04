@@ -101,6 +101,10 @@ Let's now design the interface. We will try to mimic the picture at the top of t
     ![](attributes.png)
 
     For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose "View all attributes" all the way down the Attributes sidebar.
+    
+    Tip: use the component tree to select the image views. You can even select multiple views and set the attributes for all of them:
+    
+    ![](component.png)
 
 6.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot from this assignment.
 
@@ -117,11 +121,35 @@ First, some final setup. Checkboxes can *do* something when clicked. Select one 
 
 3.  Now try your app! Run it on your phone or in the simulator. Your app should log something whenever you click one of the checkboxes. If not, ask for help!
 
+Now, every single checkbox is connected to the same method. How do we figure out which one it is? We only have a single clue: the parameter `View v`. This parameter is a **reference** to our checkbox view on the screen (the one that was clicked). It is of type `View`, which is a superclass of `CheckBox`. It does not support all of the methods that `Checkbox` has.
 
+1.  To access all methods from the `CheckBox`, we have to cast the parameter. Create a temporary variable to hold the `CheckBox`:
 
-## Android tips
+        CheckBox checkbox = (CheckBox) v;
 
-- You can set whether or not an image (or any other control) is visible on the screen by setting its `android:visibility` property in the XML, and/or by calling its `setVisibility` method in your Java code. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility` method if you need to check whether a widget is currently visible.
+    As you might remember, putting a type between rounded brackets will **cast** something to that type (if possible!). The important part: we are absolutely sure that we connected the `checkClicked()` method only to checkboxes, so this is a safe thing to do!
+
+2.  Now that we have a variable of type CheckBox, we can call the method `getText()` on it. Remember from the layout that you set the `text` property of each checkbox? This is the same.
+
+3.  To get the text of a checkbox as a simple `String`, call `checkbox.getText().toString()`. That's it! Oh, and to find out if the checkbox is checked or not, use the `isChecked()` method.
+
+Finally, we need to be able to switch some of the images on and off, depending on the state of the checkboxes. 
+
+1.  To set the visibility, you will need a reference to the image view that you would like to manipulate. Here's a sample:
+
+        ImageView image = (ImageView) findViewById(R.id.arms);
+
+    The idea (no pun intended) of `findViewById()` is that you specify the **R**esource id of your image view. When running on the phone, the Android system will then find it for you on the screen and provide you with a reference.
+    
+    What ID should you provide? This depends on the name that you have set for the view. Currently, your imageviews may have uninformative names such as `imageView2`. Best to head to the layout designer, click each of the image views, and set an appropriate name in the attributes sidebar. Tip: use the component tree to select each of the views.
+
+2.  As soon as you have a reference to one of the images, you can set whether or not it (or any other control) is visible on the screen by calling its `setVisibility()` method. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility()` method if you need to check whether a widget is currently visible.
+
+## Finishing the app
+
+There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though!
+
+## Preserving state
 
 - You can preserve user data by using the `onSaveInstanceState()` method. 
 

@@ -1,6 +1,6 @@
 # Native App Studio
 
-## Syllabus, Fall 2017
+## Syllabus, Spring 2018
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -21,7 +21,6 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 - [What to do](#grades)
 	* [Exercises](#exercises)
 	* [Guided projects](#projects)
-	* [Final project](#final)
 - [Office hours](#officehours)
 - [Tutoring](#tutoring)
 - [Books](#books)
@@ -30,7 +29,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 <a name="gettingstarted"></a>
 
-## 0. Getting started 
+## Getting started 
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio
 - Read the remainder of this syllabus
@@ -40,13 +39,13 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 <a name="expectations"></a>
 
-## 1. Expectations 
+## Expectations 
 
 You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
 
 <a name="prerequisites"></a>
 
-## 2. Prerequisites 
+## Prerequisites 
 
 Programming 1 and 2, or equivalent, as decided by the course's instructor. You need to be
 comfortable with memory management, runtime analysis, design patterns, databases, and basic data
@@ -55,7 +54,7 @@ Studio.
 
 <a name="staff"></a>
 
-## 3. Asking Questions 
+## Asking questions 
 
 The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff in the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above. Due to the size of the course, we can’t usually respond to email inquiries about your assignments. You are encouraged to speak to a student assistant or the instructor in the lab. Below you will find a list of the courses's instructors:
 
@@ -67,100 +66,79 @@ The course's staff consists of your instructor and many teaching assistants. You
 
 <a name="grades"></a>
 
-## 4. What to do
+## What to do
 
-Every week, exercises and a programming project will be made available. In the final two weeks, you will create an app of your own design instead. Find all assignments in the "Current" menu atop this website. 
+Every week, exercises and a programming project will be made available. Final grades are determined using the following weights:
 
-Final grades are determined using the following weights:
+| exercises | 20% |
+| projects  | 80% |
 
-| exercises       | 20% |
-| guided projects | 60% |
-| final project   | 20% |
-
-You must complete all guided projects and a final project to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
+You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
 <a name="exercises"></a>
 
-### 4.1 Exercises 
+### Exercises 
 
-Exercises help you learn the ropes of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to complex parts of the programming platform, allowing you to make more interesting applications. 
+Exercises help you learn the ropes of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications. 
 
 You can earn points for completing exercises early in the week. To earn points, complete the exercises and push your answers to a GitHub repository. You are encouraged to review the week's exercises before office hours on Monday, so as to make optimal use of your time during the lab session.
 
-#### Period 1
+#### Period 4
 
 | no |    deadline |  
 | -: | ----------: |  
-|  1 | Thu   7 Sep |  
-|  2 | Thu  14 Sep |  
-|  3 | Thu  21 Sep |  
-|  4 | Thu  28 Sep |  
-|  5 | Thu   5 Oct |  
-
-#### Period 2
-
-| no |    deadline |  
-| -: |  ---------: |  
-|  1 |  Mon 30 Oct |  
-|  2 |  Mon  6 Nov |  
-|  3 |  Mon 13 Nov |  
-|  4 |  Mon 20 Nov |  
-|  5 |  Mon 27 Nov |  
+|  1 | Thu   8-Feb |  
+|  2 | Thu  15-Feb |  
+|  3 | Thu  22-Feb |  
+|  4 | Thu   1-Mar |  
+|  5 | Thu   8-Mar |  
+|  6 | Thu  15-Mar |  
 
 <a name="projects"></a>
 
-### 4.2 Guided projects 
+### Guided projects 
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
 
-#### Period 1
+| no |    deadline |  
+| -: | ----------: |  
+|  1 | Mon  12-Feb |  
+|  2 | Mon  19-Feb |  
+|  3 | Mon  26-Feb |  
+|  4 | Mon   5-Mar |  
+|  5 | Mon  12-Mar |  
+|  6 | Mon  19-Mar |  
 
-| no | 2 point deadline | 1 point deadline |  
-| -: | ---------------: | ---------------: |  
-|  1 |      Thu   7 Sep |      Mon  11 Sep |  
-|  2 |      Thu  14 Sep |      Mon  18 Sep |  
-|  3 |      Thu  21 Sep |      Mon  25 Sep |  
-|  4 |      Thu  28 Sep |      Mon   2 Oct |  
-|  5 |      Thu   5 Oct |      Mon   9 Oct |  
+Points will be awarded during a review in class:
 
-#### Period 2
-
-| no | 2 point deadline | 1 point deadline |  
-| -: | ---------------: | ---------------: |  
-|  1 |      Fri   3 Nov |      Mon   6 Nov |  
-|  2 |      Fri  10 Nov |      Mon  13 Nov |  
-|  3 |      Fri  17 Nov |      Mon  20 Nov |  
-|  4 |      Fri  24 Nov |      Mon  27 Nov |  
-|  5 |      Fri   1 Dec |      Mon   4 Dec |  
+| pts | description                                                                          |  
+| --: | ------------------------------------------------------------------------------------ |  
+|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   3 | Reasonable quality, but lots of room for improvement.                                |  
+|   2 | The app works mostly but really lacks in quality.                                    |  
+|   1 | Clearly some effort went into it, but it does not really work.                       |  
+|   0 | Not submitted or very incomplete.                                                    |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work, this also includes code quality!
 
-<a name="final"></a>
-
-### 4.3 Final project 
-
-In the last two weeks of the course, you will implement a final project. While you will receive a set of requirements for the app, much of the design is left up to you, giving you an opportunity to show the skills that you gained in earliers weeks. In particular, the final project will be assessed on such factors as user interface design and code quality.
-
-- **Deadline Period 1:** 19 Oct 2017 at 23:59.
-- **Deadline Period 2:** Friday, 15 December 23:59, or just a little bit later.
-
 <a name="officehours"></a>
 
-## 5. Office hours 
+## Office hours 
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 
 <a name="tutoring"></a>
 
-## 6. Tutoring 
+## Tutoring 
 
 For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course's staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
 
 <a name="books"></a>
 
-## 7. Books 
+## Books 
 
 ### Android
 
@@ -180,7 +158,7 @@ The books below may provide additional learning material:
 
 <a name="collaboration"></a>
 
-## 8. Collaboration
+## Collaboration
 
 All work that you do toward fulfillment of this course's expectations must be
 your own work. You may read and comment upon classmates' code toward

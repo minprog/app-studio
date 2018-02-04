@@ -14,9 +14,10 @@ To run Java programs, you need to have Java installed. You might already have it
 
 ## Exercises
 
-- **How to get points:** Complete the exercises in [this PDF](http://www.davin.50webs.com/research/1999/egs/q2.pdf). Refer to the course's homepage for deadlines!  
+- Download [PersonTest.java](PersonTest.java).
 
-- Download the Java files needed to complete the exercise [here](http://www.davin.50webs.com/research/1999/tsj4cp.html) (PersonTest.java).
+- Complete the exercises in [this PDF](q2.pdf).
+
 
 ## Tips
 

@@ -48,12 +48,12 @@ If you are not feeling very inspired and want some suggestions of what to make, 
 
 We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. If you work on your solution for roughly 4 hours and are still not done, you can turn it in and we will award you credit. You can do it!
 
-## Turnin and Grading
+## How to submit
 
-Put your first app project on GitHub in a public repository. After programs are turned in, you will be asked to peer-evaluate another student's submission.
+1. Add a `README.md` with screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
 
-Your submission will be graded quickly by simply running it and evaluating its functionality. It does not need to be perfect or bug-free to receive credit. Your code will not be graded on style, but we still encourage you to follow good overall coding style for your own sake. If you want to see some good examples of proper Java/Swift coding style, consult an online style guide.
+2. Commit and push your code [per the instructions](/android/git).
 
-## Assessment
+3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
 
-This assignment counts towards the points you can earn for doing exercises!
+4. When all is set, paste the GitHub repo URL in the textbox, below!

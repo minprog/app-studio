@@ -20,7 +20,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 - [Asking questions](#staff)
 - [What to do](#grades)
 	* [Exercises](#exercises)
-	* [Guided projects](#projects)
+	* [Projects](#projects)
 - [Office hours](#officehours)
 - [Tutoring](#tutoring)
 - [Books](#books)

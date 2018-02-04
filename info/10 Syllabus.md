@@ -104,18 +104,6 @@ You can earn points for completing exercises early in the week. To earn points, 
 ### Guided projects 
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
- 
-
-Points will be awarded during a review in class:
-
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app works mostly but really lacks in quality.                                    |  
-|   1 | Clearly some effort went into it, but it does not really work.                       |  
-|   0 | Not submitted or very incomplete.                                                    |  
 
 Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work, this also includes code quality!
 

@@ -8,6 +8,7 @@
 
 ## Reference
 
+- [Layouts](/android-reference/layout)
 - [State](/android-reference/state)
 - [Git](/android-reference/git)
 
@@ -168,6 +169,16 @@ You can use the `Bundle` to save items. This same bundle will be delivered to yo
     ... = savedInstanceState.getString("name");
 
 Now, your task is to save the `visibility` state of all `ImageViews`. Which get/put method seems appropriate to do this? Google "android bundle" to get a list of all get/put methods.
+
+## Some ideas
+
+You may have some time left to make your app a bit better. Here are a few ideas:
+
+- As you made a new project, your activity was embedded in a `ConstraintLayout`. This type of layout can be used to make sure that your app looks nice on a variety of screens. Check out the [documentation](https://developer.android.com/training/constraint-layout/index.html) and make this work!
+
+- Even with the ConstraintLayout, supporting rotation is quite hard. In landscape mode, Mr. Potatohad should probably be to the left and the checkboxes in a grid to the right. You might use two layouts for portrait and landscape, respectively, to fix this. And because you alrealy implemented `onSaveInstanceState`, it will save state, even when changing layouts! See our [State](/android-reference/state) page for info on how to add two layouts.
+
+- Think about how you can make the code for `checkboxClicked()` as tiny as possible.
 
 ## How to submit
 

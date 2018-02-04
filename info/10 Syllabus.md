@@ -73,6 +73,20 @@ Every week, exercises and a programming project will be made available. Final gr
 | exercises | 20% |
 | projects  | 80% |
 
+
+## Deadlines
+
+For both exercises and projects, there are six weekly deadlines.
+
+| no |    deadline |  
+| -: | ----------: |  
+|  1 | Fri   9-Feb |  
+|  2 | Fri  16-Feb |  
+|  3 | Fri  23-Feb |  
+|  4 | Fri   2-Mar |  
+|  5 | Fri   9-Mar |  
+|  6 | Fri  16-Mar |  
+
 You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
@@ -85,31 +99,12 @@ Exercises help you learn the ropes of programming iOS or Android. Earlier in the
 
 You can earn points for completing exercises early in the week. To earn points, complete the exercises and push your answers to a GitHub repository. You are encouraged to review the week's exercises before office hours on Monday, so as to make optimal use of your time during the lab session.
 
-#### Period 4
-
-| no |    deadline |  
-| -: | ----------: |  
-|  1 | Thu   8-Feb |  
-|  2 | Thu  15-Feb |  
-|  3 | Thu  22-Feb |  
-|  4 | Thu   1-Mar |  
-|  5 | Thu   8-Mar |  
-|  6 | Thu  15-Mar |  
-
 <a name="projects"></a>
 
 ### Guided projects 
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
-
-| no |    deadline |  
-| -: | ----------: |  
-|  1 | Mon  12-Feb |  
-|  2 | Mon  19-Feb |  
-|  3 | Mon  26-Feb |  
-|  4 | Mon   5-Mar |  
-|  5 | Mon  12-Mar |  
-|  6 | Mon  19-Mar |  
+ 
 
 Points will be awarded during a review in class:
 

@@ -12,21 +12,6 @@
 - [State](/android-reference/state)
 - [Git](/android-reference/git)
 
-## Assessment
-
-Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
-
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app works mostly but really lacks in quality.                                    |  
-|   1 | Clearly some effort went into it, but it does not really work.                       |  
-|   0 | Not submitted or very incomplete.                                                    |  
-
-All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
-
 ## Background
 
 ![Screenshot of Mr. Potato Head](potato.png)

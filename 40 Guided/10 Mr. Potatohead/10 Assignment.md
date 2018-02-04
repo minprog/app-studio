@@ -16,7 +16,7 @@ Your work on this problem set will be checked for full completion of the assignm
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## A first app
+## Background
 
 ![Screenshot of Mr. Potato Head](potato.png)
 
@@ -74,10 +74,35 @@ For this project, we'll only work with the two most important files in your Andr
 
 ![](file-browser.png)
 
+No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**. Let's add those to the project.
 
-2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
+1. Just for a second, switch to the Project View using this dropdown:
 
-3. Remember to commit and push all important changes you make! 
+    ![](project-view.png)
+
+2. Navigate to app -> src -> main -> res -> drawable. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
+
+3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images from your app.
+
+## Creating the user interface
+
+Let's now design the interface. We will try to mimic the picture at the top of this assignment as closely as possible.
+
+1.  Double-click `activity_main.xml` in the project browser to open it. 
+
+2.  Your view currently contains a `Label` with the text `Hello World!`. Click it and press delete to remove it from the screen.
+
+3.  Now go to the Palette (remember where? it was in the video!). Drag an `ImageView` from the Palette to the screen layout. Immediately, a dialog pops up, allowing you to choose one of the `.png` files that you just added to the project. Start with the body!
+
+4.  The image will resize to take up more of the screen. Reposition it to make it look right. Make sure to allow a bit of space along the borders. Android Studio should help you a little to keep nice margins.
+
+5.  Make sure all the images are the same size and positioned right on top of each other. Currently, you can see all of them, but we'll make sure they are invisible when the app starts. Find the Attributes sidebar like in the screen shot below:
+
+    ![](attributes.png)
+
+    For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose "View all attributes" all the way down the Attributes sidebar.
+
+
 
 ## Android tips
 

@@ -1,4 +1,4 @@
-# iOS Preparations
+# iOS: Introduction
 
 We will use the latest versions of Xcode and Swift to develop iOS apps. You will need a Macbook running at least macOS Sierra!
 

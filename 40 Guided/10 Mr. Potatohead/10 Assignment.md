@@ -102,6 +102,21 @@ Let's now design the interface. We will try to mimic the picture at the top of t
 
     For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose "View all attributes" all the way down the Attributes sidebar.
 
+6.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot from this assignment.
+
+
+## Connecting everything with code
+
+First, some final setup. Checkboxes can *do* something when clicked. Select one of the checkboxes, and in the attributes sidebar find the `onClick` attribute. Enter `checkClicked` as its value: this is the name of the method that will be called whenever someone selects or unselects the checkbox. Do this for all checkboxes.
+
+1.  Now, switch to the code. Double-click `MainActivity` in the project browser.
+
+2.  Add a method `checkClicked()` to the activity class:
+
+    ![](checkClicked.png)
+
+3.  Now try your app! Run it on your phone or in the simulator. Your app should log something whenever you click one of the checkboxes. If not, ask for help!
+
 
 
 ## Android tips

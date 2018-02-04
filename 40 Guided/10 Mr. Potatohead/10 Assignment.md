@@ -39,10 +39,6 @@ The way to display the various body parts is to create a separate view for each 
 
 (thanks to Victoria Kirst for the original assignment idea and images!)
 
-## Creating your first project
-
-<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 ## Getting started
 
 1.  Create a new Android studio project, using these settings:

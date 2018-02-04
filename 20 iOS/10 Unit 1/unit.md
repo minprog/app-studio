@@ -60,8 +60,18 @@ We expect that you work through the text and accompanying exercises. If you ask 
 	- Know where to find some of the inspectors like the "Attributes" inspector
 	- Know how to create outlets and actions using the Assistant Editor
 
-## Guided Project: Light
 
-At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
+## Project
+
+Now you are ready to make your first app! At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. You can, however, choose to make your own app:
+
+- **Guided project: Light** takes you step-by-step through making your first app. You'll probably choose this one if you haven't built applications on a platform before.
+
+- **Unguided project: [First App](/projects/first-app)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+
+
+## Handing in
+
+[Put your app on GitHub!](/ios/github)
 
 **How to get points:** show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!

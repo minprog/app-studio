@@ -1,6 +1,6 @@
 # Native App Studio
 
-## Syllabus, Spring 2018
+## Syllabus, spring 2018
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course

@@ -6,13 +6,23 @@
 - Practice with Git.
 - Use layouts to design your user interface.
 
-## Preparation
+## Reference
 
-- [Learn Java and get started with Android Studio](/android/getting-started), read about [Layouts](/android/layouts) and [State](/android/state). And, learn about [Git](/android/git)
+- [State](/android-reference/state)
+- [Git](/android-reference/git)
 
 ## Assessment
 
 Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
+
+| pts | description                                                                          |  
+| --: | ------------------------------------------------------------------------------------ |  
+|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   3 | Reasonable quality, but lots of room for improvement.                                |  
+|   2 | The app works mostly but really lacks in quality.                                    |  
+|   1 | Clearly some effort went into it, but it does not really work.                       |  
+|   0 | Not submitted or very incomplete.                                                    |  
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
@@ -24,19 +34,9 @@ Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has 
 
 Initially your app should display only the toy's body, but if the user checks/unchecks any of the checkboxes below the toy, the corresponding body part or accessory should appear/disappear.
 
-The way to display the various body parts is to create a separate view for each part, and lay them out so that they are superimposed on top of each other. The checkboxes should align themselves into a grid of rows and columns.
+The way to display the various body parts is to create a separate view for each part, and lay them out so that they are superimposed on top of each other.
 
 (thanks to Victoria Kirst for the original assignment idea and images!)
-
-## Requirements
-
-Your task is to build an app according to the description above. Besides that, there are some specific requirements to take into account:
-
-- You should design the layout of your app using several nested views, in order to achieve a visually pleasant user interface. You must use `LinearLayout`s.
-
-- Your app should support rotation of the user interface! Most phones support portrait as well as landscape. Users expect most apps to work in either orientation. Make sure that you accommodate this by positioning the user interface elements correctly in both orientations.
-
-- Upon rotation, user's data must be preserved. If the user has enabled, for example, the nose, it should still be enabled after rotating.
 
 ## Creating your first project
 

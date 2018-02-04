@@ -70,6 +70,11 @@ Your project files should now be visible on Github like in the picture below. If
 
 ## Really getting started
 
+For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the project sidebar:
+
+![](file-browser.png)
+
+
 2. No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**.
 
 3. Remember to commit and push all important changes you make! 

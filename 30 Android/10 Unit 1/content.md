@@ -19,9 +19,9 @@ Each unit contains exercises to help you master the Java language. If you alread
 
 Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
 
-- [Views](/android/views)
-- [Layouts](/android/layouts)
-- [State](/android/state)
+- [Views](/android-reference/views)
+- [Layouts](/android-reference/layouts)
+- [State](/android-reference/state)
 
 ## Project
 

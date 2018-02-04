@@ -149,9 +149,25 @@ Finally, we need to be able to switch some of the images on and off, depending o
 
 There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though!
 
-## Preserving state
+## Supporting rotation
 
-- You can preserve user data by using the `onSaveInstanceState()` method. 
+There's a bug in your app! Because of how Android works, your layout may be reloaded whenever you leave your app, switch to another app, and then return. This way, memory usage can be kept low. Your layout may also be reloaded as the phone is rotated. However, even though your checkboxes will be automatically reloaded in the same state as you left them (checked/unchecked), your image views will not!
+
+You can preserve this state by using the `onSaveInstanceState()` method. It is a method that you can optionally override in your activity. 
+
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState); // always call super
+        outState.putInt("name", value);
+        outState.putString("name", value);
+        ...
+    }
+
+You can use the `Bundle` to save items. This same bundle will be delivered to you when the layout is reloaded. Actually, that bundle was already in your activity! It is a parameter to the `onCreate()` method. So in `onCreate()`, you can use some methods to **restore** the state of your views:
+
+    ... = savedInstanceState.getInt("name");
+    ... = savedInstanceState.getString("name");
+
+Now, your task is to save the `visibility` state of all `ImageViews`. Which get/put method seems appropriate to do this? Google "android bundle" to get a list of all get/put methods.
 
 ## How to submit
 

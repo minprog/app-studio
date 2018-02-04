@@ -12,7 +12,8 @@ Each unit contains exercises to help you master the Java language. If you alread
 
 - Start with an [overview of Java](https://www.youtube.com/watch?v=UaxRRO9175A). Make notes!
 - Do the exercises on [Methods, properties and constructors](/java-exercises/classes)
-- Do the exercises on [Inheritance](/java-exercises/inheritance)
+- Do the exercises on [Parameters and return values](/java-exercises/parameters-and-return-values)
+- Do the exercises on [References](/java-exercises/references)
 
 ## Android explanation
 

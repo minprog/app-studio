@@ -2,6 +2,7 @@
 
 Java is programming language that makes use of objects and classes. You might be familiar with this idea, or it might be slightly new to you. For a very short introduction to the basics of Java, consult [this](http://docs.oracle.com/javase/tutorial/java/concepts/index.html) page.
 
+
 ## Installing Java
 
 To run Java programs, you need to have Java installed. You might already have it on your own computer, but if not, use the following instructions to be able to use Java online:
@@ -12,19 +13,24 @@ To run Java programs, you need to have Java installed. You might already have it
 
 - You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace. If not, do just email your instructor to inquire!
 
+
 ## Exercises
 
 - Download [PersonTest.java](PersonTest.java).
-
 - Complete the exercises in [this PDF](q2.pdf).
 
 
 ## Tips
 
-- To compile your java file to a `.class` file, use: `javac YourJavaFileName.java`
+- To compile your java file to a `.class` file, use this command on the terminal:
 
-- You can run your program using: `java YourJavaFileName`
+        javac YourJavaFileName.java
+
+- You can run your program using:
+
+        java YourJavaFileName
 
 - If you have trouble getting your Java programs to run in the IDE, try:
-	- `sudo apt-get update`
-	- `sudo apt-get install default-jdk`
+
+    	sudo apt-get update
+    	sudo apt-get install default-jdk

@@ -21,5 +21,5 @@ This week we will take a more in depth look at methods, the functions of Java. W
 
 - If you have trouble getting your Java programs to run in the IDE, try:
 
-    	sudo apt-get update
-    	sudo apt-get install default-jdk
+        sudo apt-get update
+        sudo apt-get install default-jdk

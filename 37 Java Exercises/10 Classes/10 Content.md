@@ -32,5 +32,5 @@ To run Java programs, you need to have Java installed. You might already have it
 
 - If you have trouble getting your Java programs to run in the IDE, try:
 
-    	sudo apt-get update
-    	sudo apt-get install default-jdk
+        sudo apt-get update
+        sudo apt-get install default-jdk

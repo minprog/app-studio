@@ -21,5 +21,5 @@ This week we will look at how references are done in Java. It will help you unde
 
 - If you have trouble getting your Java programs to run in the IDE, try:
 
-    	sudo apt-get update
-    	sudo apt-get install default-jdk
+        sudo apt-get update
+        sudo apt-get install default-jdk

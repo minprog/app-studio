@@ -45,3 +45,9 @@ Completing the exercises can earn you 1 point per week. The project will be chec
 |   2 | The app mostly works but really lacks in quality.                                    |  
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
+
+This week, we will look at the following quality aspects:
+
+- layout, margins, compatibility with multiple phone sizes
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends

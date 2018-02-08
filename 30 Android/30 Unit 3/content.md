@@ -12,3 +12,9 @@ In this unit, you'll learn about interfaces in Java and about making lists of in
     - [Persistence](/android/persistence)
     - [Snackbar](https://material.io/guidelines/components/snackbars-toasts.html)
 - Make the [Restaurant](/projects/restaurant) app.
+
+
+
+## Submit
+
+Submit at [Unit 3](/submit/unit-1).

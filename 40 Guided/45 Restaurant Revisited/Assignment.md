@@ -256,13 +256,3 @@ As a final step for creating the functionality, we need to add handlers for the 
 ## Step 12: Better Code Hub
 
 If everything is in order, the code that you wrote should be pretty simple! A couple of classes, each not too long. Let's confirm this by using [Better Code Hub](/guides/better-code-hub). Connect the project to the site and add the code quality badge to your app's `README` on GitHub. If something seems seriously wrong, ask a teacher how to improve!
-
-## How to submit
-
-1. Add a `README.md` with a **normally-sized and easily viewed** screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
-
-2. Commit and push one last time (hopefully!).
-
-3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
-
-4. When all is set, paste the GitHub repo URL below, in the textbox!

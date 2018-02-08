@@ -47,13 +47,3 @@ If you are not feeling very inspired and want some suggestions of what to make, 
 - Rock-Paper-Scissors: The human and computer players each pick an option of Rock, Paper, or Scissors. The computer's choice is made randomly. Paper beats Rock; Scissors beat Paper; and Rock beats Scissors. Keep track of the human player's score against the computer over time.
 
 We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. If you work on your solution for roughly 4 hours and are still not done, you can turn it in and we will award you credit. You can do it!
-
-## How to submit
-
-1. Add a `README.md` with screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
-
-2. Commit and push your code [per the instructions](/android/git).
-
-3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
-
-4. When all is set, paste the GitHub repo URL in the textbox, below!

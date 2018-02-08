@@ -51,3 +51,10 @@ This week, we will look at the following quality aspects:
 - layout, margins, compatibility with multiple phone sizes
 - basic code quality such as comments, names, consistency and design
 - easy to use, no odds and ends
+
+
+## Submit
+
+Submit at [Unit 1](/submit/unit-1).
+
+

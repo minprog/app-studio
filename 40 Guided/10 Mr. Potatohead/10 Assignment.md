@@ -160,13 +160,3 @@ You may have some time left to make your app a bit better. Here are a few ideas:
 - Even with the ConstraintLayout, supporting rotation is quite hard. In landscape mode, Mr. Potatohad should probably be to the left and the checkboxes in a grid to the right. You might use two layouts for portrait and landscape, respectively, to fix this. And because you alrealy implemented `onSaveInstanceState`, it will save state, even when changing layouts! See our [State](/android-reference/state) page for info on how to add two layouts.
 
 - Think about how you can make the code for `checkboxClicked()` as tiny as possible.
-
-## How to submit
-
-1. Add a `README.md` with screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
-
-2. Commit and push your code [per the instructions](/android/git).
-
-3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
-
-4. When all is set, paste the GitHub repo URL in the textbox, below!

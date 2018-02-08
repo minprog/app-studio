@@ -77,13 +77,3 @@ Your task is to build an app according to the description above. On top of that,
 - You can load in text files using an `getAssets()` or `getResources()` among other things. Up to you to find out what suits you best (perhaps with some help of Google)! 
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
-
-## How to submit
-
-1. Add a `README.md` with screenshot and a brief description. Use Markdown to format your README, as supported by GitHub. The screenshot must be uploaded to your GitHub repository first! Do that nice and clean in a separate folder called `doc`.
-
-2. Commit and push one last time (hopefully!).
-
-3. Check if your project actually works for other developers! Go to the GitHub webpage for your repository and use the "Download zip" button. Unpack that zip somewhere unusual (your Desktop maybe?) and try to open and run the project.
-
-4. When all is set, paste the GitHub repo URL in the textbox, below!

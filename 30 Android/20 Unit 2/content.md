@@ -12,3 +12,9 @@ In this unit, you'll learn about references in Java and about creating apps that
     - [Back navigation](/android/backnav) (TODO)
     - [Designing effective navigation](https://developer.android.com/training/design-navigation/index.html)
 - Make [Mad Libs](/projects/mad-libs).
+
+
+
+## Submit
+
+Submit at [Unit 2](/submit/unit-1).

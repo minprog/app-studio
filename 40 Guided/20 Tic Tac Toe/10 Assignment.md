@@ -18,7 +18,7 @@ If you want a simpler implementation, you can write your code as though two huma
 
 ## Getting started
 
-1.  Create a new Android studio project, using these settings:
+1.  Create a new Android studio project called **TicTacToe**, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
@@ -29,32 +29,89 @@ If you want a simpler implementation, you can write your code as though two huma
 
     Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
 
-4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". You can find the URL on the Github project you just created:
-
-    ![find the git url on the github website for the project you just created](git-url.png)
+4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin".
 
 5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files". Make sure all checkboxes are selected, enter a commit message `Initial project` and then press the **commit** button. Turn off code analysis.
 
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
-Your project files should now be visible on Github like in the picture below. If not, ask for help!
-
-![](git-files.png)
+Your project files should now be visible on Github. If not, ask for help!
 
 
-## Creating the game
+## Creating the user interface
 
+Let's create the basic UI first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridLayout` for the button grid.
 
-- create the 2 enums
+1.  You can only replace the **root layout** for a screen by editing the underlying XML file. Use the tabs at the bottom of the layout editor to switch to **text mode**:
 
-- create `public class GamePlay`
+    ![](switch-text.png)
 
-        int BOARD_SIZE = 3;
-        int[][] board;
+2.  On the second line, delete the `android.support.constraint.ConstraintLayout` and replace it by `LinearLayout`. The closing tag on the last line should be updated automatically.
 
-        Boolean playerOneTurn;
-        int movesPlayed;
-        Boolean gameOver;
+3.  Switch back to **design mode**. Select the LinearLayout in the component tree and set its `orientation` attribute to vertical. This way, it will distribute all embedded views over the height of the screen.
 
-- 
+4.  Delete the `TextView` that may still be inside the layout. Now go to the palette, select **layouts** and drag a `GridLayout` from there onto the `LinearLayout`, either in the component tree or in the designer.
+
+5.  Add 9 buttons to the GridLayout. Also, add 1 button directly to the LinearLayout, below the grid. Don't worry if that last button is currently invisible.
+
+6.  Let's make all buttons the same size. Select all buttons in the component tree and set these properties:
+
+    - Set `layout_width` to `100dp`
+    - Set `layout_height` to `100dp`
+
+7.  Currently, the buttons are aligned to the left together with the GridLayout. Set the GridLayout's `layout_width` to `wrap_content`. This makes sure the layout is about 300dp wide. We can then center it in the containing layout by setting `layout_gravity` to `center`.
+
+8.  Now, we'd like to have the reset button take up as little space as possible, while still being fully visible:
+
+    ![](button.png)
+
+    To do that, select the `GridLayout` and set its `layout_weight` to 1. It works like this: because the reset button has no `layout_weight`, its size is determined by its `layout_width` and `layout_height` properties. In this case, they're set to `wrap_content`, which makes the button as small as possible. Besides, we gave the grid a weight of 1, which means that the *rest* of the height will be assigned to it. (We could add another element of weight 1 to the linear layout, and the height would have been evenly split between the grid and that other element.)
+
+9.  Finally, add an `onClick` handler to each of the grid buttons. Select them all in the component tree to do that. Name the handler `tileClicked`. Also, set the reset button's `onClick` to a handler called `resetClicked`.
+
+This finalizes the user interface.
+
+## Communication between activity and game
+
+We'll create a Game class later on, but first, we'll define two enums to specify the **game state**.
+
+1.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
+
+2.  In the `GameState` enum, add the following constants:
+
+        PLAYER_ONE,
+        PLAYER_TWO,
+        DRAW,
+        IN_PROGRESS
+
+3.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
+
+4.  In the `GameState` enum, add the following constants:
+
+        BLANK,
+        CROSS,
+        CIRCLE,
+        INVALID
+
+## The game
+
+1.  Go to **File > New > New Java Class...**. Enter the name `Game` and kind `Class`. Leave other settings unchanged and press OK.
+
+2.  We need a board! Atop the class, declare a constant and a variable to hold the board:
+
+        final private int BOARD_SIZE = 3;
+        private Tile[][] board;
+
+    See that our board is an array of `Tile`s? Each tile can be one of the states that is specified in `Tile.java`. Also, we'll need to have some variables that keep count:
+
+        private Boolean playerOneTurn;  // true if player 1's turn, false if player 2's turn
+        private int movesPlayed;
+        private Boolean gameOver;
+
+3.  Let's make a constructor. When creating a new game, the above fields have to be initialized to sensible values. Press **Cmd-N** or **Ctrl-N**, which pops up some choices for generating code. Choose `constructor`. Then choose "Select None", which means that our new constructor does not have any parameters. Add the following defaults:
+
+        board = new Tile[BOARD_SIZE][BOARD_SIZE];
+        playerOneTurn = true;
+        gameOver = false;
+        movesPlayed = 0;
 

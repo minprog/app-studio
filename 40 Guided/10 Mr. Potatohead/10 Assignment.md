@@ -6,12 +6,6 @@
 - Practice with Git.
 - Use layouts to design your user interface.
 
-## Reference
-
-- [Layouts](/android-reference/layout)
-- [State](/android-reference/state)
-- [Git](/android-reference/git)
-
 ## Background
 
 ![Screenshot of Mr. Potato Head](potato.png)

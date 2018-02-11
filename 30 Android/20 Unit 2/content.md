@@ -10,9 +10,11 @@ Each unit contains exercises to help you master the Java language. If you alread
 - [Static versus non-static](/java-exercises/static-vs-non-static)
 - [Inheritance](/java-exercises/inheritance)
 
+Also, [read about](https://www.leepoint.net/oop/enums/enums.html) `enum`s in Java. Understand when and how to use these.
+
 ## Android explanation
 
-Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building **model classes**. You can use model classes to represent the core of what you're app is really about.
+Before making an app, you'll find some explanation about the parts of Android. In this unit, we focus on the basics of building **model classes**. You can use model classes to represent the core of what you're app is really about.
 
 - [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
 - [Model classes](/android-reference/models)
@@ -21,9 +23,15 @@ Before making an app, you'll find some explanation about the parts of Android th
 
 Now you are ready to make your first app! You can choose between two projects:
 
+TBA
+
+<!--
+
 - **Guided project: [Tic Tac Toe](/guided/tic-tac-toe)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
 - **Unguided project: [First App](/projects/evil-hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+
+-->
 
 ## Getting credit
 

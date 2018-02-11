@@ -4,7 +4,6 @@ In this unit, you'll learn about exceptions and inheritance in Java, and you are
 
 - Practice with Java:
     - [Exceptions](http://www.davin.50webs.com/research/1999/egs/q10.pdf)
-    - [Inheritance](http://www.davin.50webs.com/research/1999/egs/q11.pdf)
 - Learn about Android:
     - [SQLite](/android/sqlite)
     - [Activity life cycle](/android/state)

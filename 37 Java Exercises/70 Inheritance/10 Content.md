@@ -1,6 +1,6 @@
 # Inheritance
 
-Sometimes classes of things overlap. Consider biological taxonomies: in one particular taxonomy, Metazoa is a class containing almost all animals. Eumetazoa can be subdivided into Radiata and Bilateria, where Radiata are radially symmetric animals (such as jellyfish) and Bilateria are bilaterally symmetric animals (such as tigers). However, both classes of animals share their basic cell structure, which, among other things, includes a cell nucleus. In other words, both classes *inherit* a property from a superclass.
+Sometimes classes of things overlap. Consider biological taxonomies: in one particular taxonomy, Metazoa is a class containing almost all animals. Eumetazoa can be subdivided into Radiata and Bilateria, where Radiata are radially symmetric animals (such as jellyfish) and Bilateria are bilaterally symmetric animals (such as tigers). However, both classes of animals share their basic cell structure, which, among other things, includes a cell nucleus. In other words, both classes *inherit* a property from a superclass. In turn, this property differentiates those classes from some other classes, like bacteria.
 
 
 ## Exercises

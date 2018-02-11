@@ -6,7 +6,6 @@ In this unit, you'll learn about polymorphism in Java. You're also going to lear
     - [Type information](http://www.davin.50webs.com/research/1999/egs/q12.pdf)
     - [Polymorphism](http://www.davin.50webs.com/research/1999/egs/q13.pdf)
 - Learn about Android:
-    - [Model classes](/android/models)
     - [SQLite](/android/sqlite), if needed
     - [Fragments](/android/fragments) (TODO)
 - Learn about writing good code:

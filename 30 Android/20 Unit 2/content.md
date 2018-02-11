@@ -1,6 +1,6 @@
 # Unit 2: Activities and Navigation
 
-In this unit, you'll learn about references in Java and about creating apps that have multiple screens. You'll also learn about including resources like text and images in your app. In fact, we have a cute app for you to make, that has fun stories and a couple of screens!
+In this unit, you'll learn about classes in Java and how to model your app into different classes.
 
 ## Exercises
 
@@ -12,10 +12,10 @@ Each unit contains exercises to help you master the Java language. If you alread
 
 ## Android explanation
 
-Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building **model classes**. You can use model classes to represent the core of what you're app is really about.
 
 - [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
-- [Model classes](/android/models)
+- [Model classes](/android-reference/models)
 
 ## Project
 

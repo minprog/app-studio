@@ -10,7 +10,13 @@ All things considered, Android applications are pretty big in terms of source co
 
     ![](android view classes.png)
 
--   **Models.** These are classes that concern the data that's interesting to the user. For example in a wine collector's app, there may be many classes that represent wines, locations, vineyards, and more. Model classes might also contain important algorithms that belong to your app, for example if you make an app that can add visual effects to photos. You haven't come across many model classes as of yet, but that's about to change!
+    Now, important to remember about view classes is that your almost never write them yourself! These classes are part of the platform, and you should be able to make just about any app without creating new view classes. It is possible, though, for example when you would like to create buttons that look very different from the standard buttons.
+
+-   **Models.** These are classes that concern the data that's interesting to the user. For example in a wine collector's app, there may be many classes that represent wines, locations, wine houses, and more.
+
+    ![](wine classes.png)
+
+    Model classes might also contain important algorithms that belong to your app, for example if you make an app that can add visual effects to photos. You haven't come across many model classes as of yet, but that's about to change!
 
 Technically, this description of things deviates a little from the original idea of the MVC pattern. However, the point is that you can think of your code as being divided among three types of classes. This helps you more easily form a mental model of your own code.
 

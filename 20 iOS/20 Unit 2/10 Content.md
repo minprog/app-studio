@@ -18,11 +18,14 @@ Feel free to skip some of the parts about the programming language, but make sur
 9. Controls In Action
 10. Auto Layout and Stack Views
 
+
 ## Project
 
-Now you are ready to make your first app! At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. You can, however, choose to make your own app:
+You can choose between two projects:
 
-TBA
+- **Guided project: Apple Pie** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
+
+- **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
 
 
 **How to get points:** [submit](#submit) your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!

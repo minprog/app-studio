@@ -19,19 +19,15 @@ Before making an app, you'll find some explanation about the parts of Android. I
 - [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
 - [Model classes](/android-reference/models)
 
+
 ## Project
 
-Now you are ready to make your first app! You can choose between two projects:
-
-TBA
-
-<!--
+You can choose between two projects:
 
 - **Guided project: [Tic Tac Toe](/guided/tic-tac-toe)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
-- **Unguided project: [First App](/projects/evil-hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+- **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
 
--->
 
 ## Getting credit
 

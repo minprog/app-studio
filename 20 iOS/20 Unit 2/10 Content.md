@@ -47,9 +47,9 @@ Completing the exercises can earn you 1 point per week. The project will be chec
 
 This week, we will look at the following quality aspects:
 
-- layout, margins, compatibility with multiple phone sizes
-- basic code quality such as comments, names, consistency and design
-- easy to use, no odds and ends
+- (from last week) layout, margins, compatibility with multiple phone sizes
+- (from last week) basic code quality such as comments, names, consistency and design
+- (from last week) easy to use, no odds and ends
 - level of separation between game code and user interface code
 
 ## Submit

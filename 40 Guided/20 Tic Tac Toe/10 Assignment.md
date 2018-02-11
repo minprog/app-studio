@@ -189,3 +189,15 @@ To fully restore the game, you will have to add methods to the `Game` class to e
 ## Finishing up
 
 As always, consider this week's assessment criteria and make sure your app works well and the code looks nice.
+
+
+## Some ideas
+
+Here are some ideas for improving on this project:
+
+- Let your user play against the computer. This requires changes to the Game class, but also to your activity.
+
+- (Very advanced) Allow the user to choose either a two-player game or play against the computer. Keep the separation between the game class(es) and the activity.
+
+- Remove the reset button and provide a reset option in the activity bar menu instead, using [this tutorial](https://www.journaldev.com/9357/android-actionbar-example-tutorial).
+

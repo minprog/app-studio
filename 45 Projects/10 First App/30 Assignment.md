@@ -46,4 +46,4 @@ If you are not feeling very inspired and want some suggestions of what to make, 
 
 - Rock-Paper-Scissors: The human and computer players each pick an option of Rock, Paper, or Scissors. The computer's choice is made randomly. Paper beats Rock; Scissors beat Paper; and Rock beats Scissors. Keep track of the human player's score against the computer over time.
 
-We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints. If you work on your solution for roughly 4 hours and are still not done, you can turn it in and we will award you credit. You can do it!
+We recommend you do something simple for this first program since you will have a lot of new syntax and features to get used to. If you want help, please feel free to show your code to others or ask for help on Slack. Feel free to make an app as simple or as complex as you like, relative to your familiarity level and time constraints.

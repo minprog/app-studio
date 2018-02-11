@@ -6,7 +6,9 @@ All things considered, Android applications are pretty big in terms of source co
 
 -   **Views.** These are classes that are reponsible for displaying data on screen. Many of these classes have already been written for you: `ListView` would be one of them, as well as `Button`. But, as you learned earlier in the course, `LinearLayout` is also a type of view: it manages the layout of other views.
 
-    ![](uitree.png)
+    Take the following tree of view classes. At the top of the hierarchy is `View`, which defines anything that represents some screen element. Then, there is `TextView`, which defines almost anything on screen that has text in it: not only the `ExitText` where users can enter text, but also `Button`, which (all things considered) is just a couple of words with a fancy border. Next to that, we have `ViewGroup`, which is a kind of view that can *contain* other views. Of note are the layouts that you use when creating a screen for an Android project. Finally, a bit of an outlier is the `WebView`, which is not intended to contain other views, but nevertheless behaves a little bit like a layout.
+
+    ![](android view classes.png)
 
 -   **Models.** These are classes that concern the data that's interesting to the user. For example in a wine collector's app, there may be many classes that represent wines, locations, vineyards, and more. Model classes might also contain important algorithms that belong to your app, for example if you make an app that can add visual effects to photos. You haven't come across many model classes as of yet, but that's about to change!
 

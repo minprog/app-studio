@@ -79,10 +79,10 @@ We'll create a Game class later on, but first, we'll define two enums to specify
 
 2.  In the `GameState` enum, add the following constants:
 
+        IN_PROGRESS,
         PLAYER_ONE,
         PLAYER_TWO,
         DRAW,
-        IN_PROGRESS
 
 3.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
 
@@ -93,7 +93,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         CIRCLE,
         INVALID
 
-## The game
+## The game (model class)
 
 1.  Go to **File > New > New Java Class...**. Enter the name `Game` and kind `Class`. Leave other settings unchanged and press OK.
 
@@ -108,10 +108,84 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         private int movesPlayed;
         private Boolean gameOver;
 
-3.  Let's make a constructor. When creating a new game, the above fields have to be initialized to sensible values. Press **Cmd-N** or **Ctrl-N**, which pops up some choices for generating code. Choose `constructor`. Then choose "Select None", which means that our new constructor does not have any parameters. Add the following defaults:
+3.  Let's make a constructor. When creating a new game, the above fields have to be initialized to sensible values. Press **Cmd-N** or **Ctrl-N**, which pops up some choices for generating code. Choose `constructor`. Then choose "Select None", which means that our new constructor does not have any parameters. Add the following initializers:
 
         board = new Tile[BOARD_SIZE][BOARD_SIZE];
+        for(int i=0; i<BOARD_SIZE; i++)
+            for(int j=0; j<BOARD_SIZE; j++)
+                board[i][j] = Tile.BLANK;
+
         playerOneTurn = true;
         gameOver = false;
-        movesPlayed = 0;
 
+4.  Finally (for now), the Game class should definitely have a method that allows a user to "play". In this case, the current user can choose any unused place to place their square or circle. Define a method `draw` to handle that:
+
+        public Tile draw(int row, int column) {
+
+    Now, what should this method do? Let us help you scaffold that:
+    
+    - It has to retrieve the current value of the board at position (row, column).
+    - If that place is still blank, we can go ahead and fill it.
+        - if the current player is player one, fill it with a cross
+        - if the current player is player two, fill it with a croos
+        - in either case, make sure the other played gets the turn
+        - also in both cases, make sure to return Tile.CROSS or Tile.CIRCLE to allow the UI to update
+    - If that place isn't blank, it's an invalid move! Just return Tile.INVALID.
+
+## The controller
+
+Next up, head to `MainActivity.java`.
+
+1.  Atop the class, add a variable for holding the game:
+
+        Game game;
+
+2.  We'll initialize the game in `onCreate()`. Add the following line to the bottom of that method:
+
+        game = new Game();
+
+3.  First, set up a method that will process tile clicks:
+
+        public void tileClicked(View view) {
+
+    What should this method do? Let us help you out there:
+    
+    - It has to translate the button into the right coordinates. Use `int id = view.getId();` to find out which button it is, and (temporarily) store the corresponding `row` and `column`.
+
+    - It has to feed those coordinates to the `Game`s `draw` method:
+    
+            Tile tile = game.draw(row, column);
+
+    - Depending on the outcome of the `draw` method, it has to update the selected button. Here's a starter:
+
+            switch(tile) {
+                case CROSS:
+                    // do something
+                    break;
+                case CIRCLE:
+                    // do something
+                    break;
+                case INVALID:
+                    // do something different
+                    break;
+            }
+
+4.  Create the method `resetClicked()` for the reset button. Here, we can simply throw away the old game and create a new one:
+
+        game = new Game();
+
+    But don't forget to reset the UI as well!
+
+## More features
+
+Make sure your game works as expected before continuing. Then, it's time to add state preservation to the app, in case it is backgrounded or rotated. Refer to [last week's doc](/android-reference/state) for more info.
+
+Specifically, make sure that your `Game` class is augmented with `implements Serializable`. You can then simply save the current game instance in your `onSaveInstanceState()` method. As before, you can reload the saved game in `onCreate()`.
+
+Tip: press **Ctrl-O** to popup the **Override Methods** dialog, type a few characters `onsave...` and press ENTER to create your `onSaveInstanceState()` method.
+
+To fully restore the game, you will have to add methods to the `Game` class to ensure that you can find our the state of each tile.
+
+## Finishing up
+
+As always, consider this week's assessment criteria and make sure your app works well and the code looks nice.

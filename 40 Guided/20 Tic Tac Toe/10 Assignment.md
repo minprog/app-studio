@@ -87,9 +87,9 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         PLAYER_TWO,
         DRAW,
 
-3.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
+3.  Go to **File > New > New Java Class...**. Enter the name `Tile` and kind `Enum`. Leave other settings unchanged and press OK.
 
-4.  In the `GameState` enum, add the following constants:
+4.  In the `Tile` enum, add the following constants:
 
         BLANK,
         CROSS,

@@ -111,7 +111,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         private int movesPlayed;
         private Boolean gameOver;
 
-3.  Let's make a constructor. When creating a new game, the above fields have to be initialized to sensible values. Press **Cmd-N** or **Ctrl-N**, which pops up some choices for generating code. Choose `constructor`. Then choose "Select None", which means that our new constructor does not have any parameters. Add the following initializers:
+3.  Let's make a constructor. When creating a new game, the above fields have to be initialized to sensible values. Press **Cmd-N** or **Alt-Insert**, which pops up some choices for generating code. Choose `constructor`. Then choose "Select None", which means that our new constructor does not have any parameters. Add the following initializers:
 
         board = new Tile[BOARD_SIZE][BOARD_SIZE];
         for(int i=0; i<BOARD_SIZE; i++)

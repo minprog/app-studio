@@ -16,6 +16,7 @@ Also, [read about](https://www.leepoint.net/oop/enums/enums.html) `enum`s in Jav
 
 Before making an app, you'll find some explanation about the parts of Android. In this unit, we focus on the basics of building **model classes**. You can use model classes to represent the core of what you're app is really about.
 
+- [Layouts](/android-reference/layouts)
 - [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
 - [Model classes](/android-reference/models)
 

@@ -42,6 +42,9 @@ Your project files should now be visible on Github. If not, ask for help!
 
 Let's create the basic UI first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridLayout` for the button grid.
 
+<iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 1.  You can only replace the **root layout** for a screen by editing the underlying XML file. Use the tabs at the bottom of the layout editor to switch to **text mode**:
 
     ![](switch-text.png)
@@ -194,6 +197,8 @@ As always, consider this week's assessment criteria and make sure your app works
 ## Some ideas
 
 Here are some ideas for improving on this project:
+
+- Use nice large pictures of crosses/circles instead of text in the buttons. Add the pictures as resources (like in Mr. Potatohead).
 
 - Let your user play against the computer. This requires changes to the Game class, but also to your activity.
 

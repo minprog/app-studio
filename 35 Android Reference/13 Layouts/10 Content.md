@@ -1,6 +1,5 @@
 # Layouts
 
-
 <iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Tutorials to get you started

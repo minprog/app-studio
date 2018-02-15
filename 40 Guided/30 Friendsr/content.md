@@ -68,28 +68,51 @@ Make sure the layout looks nice by fiddling with the `layout_gravity` parameter 
 Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
 
 
-## Modeling friends
+### Modeling friends
 
 Now that the user interfaces are all set, let's create a simple model class to contain data about our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
 
 The Friend model will be held in its own Java class, so wel are going to create a new Java file using *File > New > Java Class*. We will call this class `Friend`. In the dialog, specify that you want to use `Serializable` (or `java.io.Serializable`) as an interface. This will later allow us to store objects of the `Friend` type on our device more easily. You can leave all other settings unchanged. 
 
-You are not presented with your empty `Friend` class, so time to add some fields to it!
+You are not presented with your empty `Friend` class, so time to add some fields to it! Within your class, declare fields to store the name and bio of a user. These should probably of the type `String`. Also, we will need a `float` to keep track of the rating, because the `RatingBar` widget uses a float by default. Finally, we want to keep track of an id that points to a drawable, to be able to show an image. This id will be of type `int`. You should now have something like this:
 
-- class Friend
-- maken met File > New > Java Class, specificeer interface Serializable
-- dan fields maken
-- dan CTRL-N/Alt-Ins om de constructor te maken (selecteer alle fields behalve rating?)
-- dan zelfde om de getters en setters te maken (selecteer alles)
-- open vraag: heeft name een setter nodig? in deze app niet denk ik!
+        public class Friend implements Serializable {
+            String name, bio;
+            int drawableId;
+            float rating;
+        }
 
-## Creating some sample friends
+Our class also needs a constructor, which we can now easily generate using `Alt + Insert`. As our constructor fields, we want to set the `name`, `bio` and `drawableId`, but not the rating. Using the same shortcut, we can also generate getters and setters for all of our fields. 
 
-- resources/plaatjes
-- instantiëren van een aantal mensen in de mainactivity
+Does something like the `name` field really need a setter though? Think about at what point you determine the contents of the name field. 
 
+
+### Creating some sample friends
+
+Of course, we will now need to create some friends to show in our app later. In `MainActivity`, we will declare our objects of type `Friend` using the model class and constructor we just made. 
+
+In order to do this, we will need to locate the drawable image files that we are going to use as well. 
+
+1. Just for a second, switch to the Project View using this dropdown:
+
+    ![](project-view.png)
+
+2. Navigate to app -> src -> main -> res -> drawable. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
+
+3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images in your app.
+
+Since the constructor takes the drawable's ID, not an ImageView itself, we need to do some extra magic, as just passing `R.id.drawable_name` will not work. The following line of code will return the correct ID in the shape of an `int`. Of course, substitute "drawable_name" for the name of your image. You can leave everything else unchanged. 
+
+        getResources().getIdentifier("drawable_name", "drawable", getPackageName())
+
+Using this format, you can instantiate as many `Friend` objects as you would like. However, to show them efficiently, we need to add them to an `ArrayList` as well. Since we are storing `Friend` objects, you can instantiate a list that is suitable to hold these kind of objects using:
+
+        ArrayList<Friend> aListName = new ArrayList<>();
+
+You can now easily add items to your list using `aListName.add()`. Of course, there are other ways to instantiate a list that holds `Friend` objects instead of adding them after creation. Up to you to choose and find out. 
 
 ## Creating an adapter
+Now that we have our list, we need a way to pair the list of `Friend` objects with the UI that we created in step one. The missing connection will be made through an adapter. 
 
 - File > New > Java Class
 - public class GridListAdapter extends ArrayAdapter
@@ -97,7 +120,7 @@ You are not presented with your empty `Friend` class, so time to add some fields
 - ctrl-N constructor, degene waar je een list aan kunt meegeven
 - Ctrl-O override tik "getview" en ENTER
 
-## Connecting the adapter to the gridview
+### Connecting the adapter to the GridView
 
 TBA
 

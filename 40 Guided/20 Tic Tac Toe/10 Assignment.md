@@ -23,7 +23,7 @@ If you want a simpler implementation, you can write your code as though two huma
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
 
-2.  Create a new, empty repository on the Github website. Name your repository `Mr Potatohead`.
+2.  Create a new, empty repository on the Github website. Name your repository `Tic Tac Toe`.
 
 3.  Now, add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 

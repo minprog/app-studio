@@ -244,19 +244,58 @@ We now added the clicked `Friend` object to the intent, so it will be passed on 
         Intent intent = getIntent();
         Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend_key");
 
-Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?).
+Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?). Now that we have access to the `retrievedFriend` variable, we have access to all the information of that particular `Friend` object again, so their name, bio, photo and rating. You can use this information to render the correct things on the screen with the layout we created before. 
 
 
 ### Storing the rating data in SharedPreferences
 
-TBA
+Hmm, now that your app is up and running, you must have noticed something. The ratings are not being kept! Time to do something about that using Android's `SharedPreferences`. These are meant to store small amounts of data on the device and allow information to persist even when closing down the app or switching off your phone.
 
+`SharedPreferences` also makes use of key-value pairs, again using a `String` as the key and then storing the value with the key as a label, so you can easily retrieve it later. You can access the `SharedPreferences` by calling:
 
+        SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+
+You can have multiple `SharedPreferences` files, so you can give individual ones a name as well, we will just call ours `"settings"`, as per default. The `MODE_PRIVATE` bit refers to the access rights of the file: the default mode, where the created file can only be accessed by the calling application.
+
+We can now add things to the `SharedPreferences` by calling methods on our variable `prefs`, to generate an `Editor`:
+
+        SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
+The `Editor` allows you to edit the file and store values in there. The two lines above can also be simplified to one line where we directly grab the editor:
+
+        SharedPreferences.Editor editor = getSharedPreferences("settings", MODE_PRIVATE).edit();
+
+The `editor` variable now allows you to call various methods, like `putInt()`, `putString()` and `putFloat()`, all of which take two arguments, the key under which to store the value (think about what that should probably be in our case), and the value itself. When done adding values to the editor, don't forget to call `editor.apply()` or `editor.commit()` to save the changes. 
+
+Now you need to determine when to store the rating. Chances are the `OnRatingBarChangeListener` will be quite useful, because it will fire the `onRatingChanged()` everytime someone touches the ratingbar. You can implement your own `OnRatingBarChangeListener` inner class the same way you did with the `OnItemClickListener`. The creation of inner classes for listeners is a design pattern that will be repeated many more times with listeners of various kinds, so if in doubt be sure to ask.
+
+ 
+### Retrieving values from SharedPreferences
+Just storing the data is something, but if we don't do anything with it to restore our rating's state, we might as well do nothing. Your `ProfileActivity` still needs to somehow check whether any rating should be restored, and if so extract it from `SharedPreferences`.
+
+        SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+        String aStoredString = prefs.getString(..., ...);
+
+You can access SharedPreferences the same way as when you write data to it. Then, you can use methods like `getString()` to retrieve the data you stored. These methods take two arguments. The first argument is the key under which `SharedPreferences` should look to see if the value is present. This should of course be the same key that you used to store the value. 
+
+The second argument is for the case where there is nothing that belongs to that key: the default value. This allows you to easily check whether there is any saved data, because if getString() (or any of the other methods) returns that default value, it means there was no data in `SharedPreferences` for the supplied key.
+
+        SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+        String aStoredString = prefs.getString("example_key", null);
+ 
+        if(aStoredString != null) {
+            // we have something stored under "example_key"
+        }
+        else {
+            // there is nothing stored under "example_key"
+        }
+
+It is entirely possible that there is no rating for some users: if the user opens the app for the first time, none of the users would be rated. So when restoring the rating from `SharedPreferences` this default value can help us check whether there is something to restore, or that the user has simply not been rated yet and the rating bar can stay blank.
 
 ## Finishing up
 
 As always, consider this week's assessment criteria and make sure your app works well and the code looks nice. Think about the names of your variables and comments. Are the names clear and consistent, your comments useful and concise?
-
 
 ## Some ideas
 
@@ -265,6 +304,4 @@ Here are some ideas for improving on this project:
 - Allow people to create or edit a profile, and change their bio or name (or perhaps both).
 - Allow people to leave messages on profiles, and make sure they persist through rebooting the app or phone. 
 - Let people like profiles and keep track of how many times a profile has been liked.
-
-
-
+- Gracefully implement rotation of the device, adding a landscape variation and preserving data. 

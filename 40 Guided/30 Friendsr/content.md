@@ -61,105 +61,106 @@ Let's create the basic UI that we should see when we open the app first: head to
 
 Now that the user interfaces are all set, let's create a simple model class to contain data about our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
 
-1. The Friend model will be held in its own Java class, so we are going to create a new Java file. Make sure your mouse pointer is somewhere in the file tree on the left and use *File > New > Java Class*. We will call this class `Friend`. 
+1. The Friend model will be held in its own Java class. First, select `MainActivity` in the browser on the left and then choose **File > New > Java Class**.
 
-2. In the dialog, specify that you want to use `Serializable` (or `java.io.Serializable`) as an interface. This will later allow us to store objects of the `Friend` type on our device more easily. You can leave all other settings unchanged. 
+2. We will call the class `Friend`. In the dialog, also specify that you want to use the `Serializable` (or `java.io.Serializable`) interface. This will allow us to store `Friend` objects on the device more easily. You can leave all other settings unchanged.
+
+    (If Android Studio offers to add the new file to the git repository, feel free to do so.)
 
 3. You are now presented with your empty `Friend` class, so time to add some fields to it! Within your class, declare fields to store the name and bio of a user. These should probably of the type `String`. Also, we will need a `float` to keep track of the rating, because the `RatingBar` widget uses a float by default. Finally, we want to keep track of an id that points to a drawable, to be able to show an image. This id will be of type `int`. You should now have something like this:
 
         public class Friend implements Serializable {
-            String name, bio;
-            int drawableId;
-            float rating;
+            private String name, bio;
+            private int drawableId;
+            private float rating;
         }
 
-5. Our class also needs a constructor, which we can now easily generate using `Alt + Insert`. As our constructor fields, we want to set the `name`, `bio` and `drawableId`, but not the rating. Using the same shortcut, we can also generate getters and setters for all of our fields. 
+    Note that the names of the fields are grey currently: this means that the fields aren't used anywhere useful, yet. But this will come soon!
+
+5. Our class also needs a constructor, which we can now easily generate using **Alt+Insert** or **Cmd+N**. As our constructor fields, we want to set the `name`, `bio` and `drawableId`, but not the rating.
+
+6. Although our fields are currently `private`, we should be able to read the values using a getter. Using the same shortcut as the previous step, add getters for all fields.
+
+7. Finally, go to that menu once more, and add a setter for the `rating` field. We are going to allow the user to change the rating within the app, so we should be able to change the rating through this setter!
 
 
-### Creating some sample friends
+## Creating some sample friends
 
-Of course, we will now need to create some friends to show in our app later. In `MainActivity`, we will declare our objects of type `Friend` using the model class and constructor we just made. 
-
-In order to do this, we will need to locate the drawable image files that we are going to use as well. 
+We'll need to create some friends to show in our app later. We are going to instantiate some `Friend` objects in `MainActivity`. But first, let's add some cute images with photos of our friends.
 
 1. Just for a second, switch to the Project View using this dropdown:
 
     ![](project-view.png)
 
-2. Navigate to *app > src > main > res > drawable*. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
+2. Navigate to the `app` > `src` > `main` > `res` > `drawable` folder. Drag the downloaded image files into that folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
 
 3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images in your app.
 
-Since the constructor takes the drawable's ID, not an ImageView itself, we need to do some extra magic, as just passing `R.id.drawable_name` will not work. The following line of code will return the correct ID in the shape of an `int`. Of course, substitute "drawable_name" for the name of your image. You can leave everything else unchanged. 
+ 
+Let's make an `ArrayList` of sample friends in `MainActivity`. Since we are storing `Friend` objects, declare the list as follows:
 
-        getResources().getIdentifier("drawable_name", "drawable", getPackageName())
+    ArrayList<Friend> friends = new ArrayList<>();
 
-Using this format, you can instantiate as many `Friend` objects as you would like. However, to show them efficiently, we need to add them to an `ArrayList` as well. Since we are storing `Friend` objects, you can instantiate a list that is suitable to hold these kind of objects using:
+Your task is to write code in the `onCreate()` for adding all friends. You can add items to the list using the `add()` method. This method requires a `Friend` object. Here's how to create a friend with a reference to its picture:
 
-        ArrayList<Friend> aListName = new ArrayList<>();
+    new Friend("Tyrion", "Lord Tyrion Lannister is the younger brother of Cersei and Jaime Lannister.", R.drawable.tyrion)
 
-You can now easily add items to your list using `aListName.add()`. Of course, there are other ways to instantiate a list that holds `Friend` objects instead of adding them after creation. Up to you to choose and find out. 
+
+## Adding a layout for the grid view
+
+Because a `GridView` is just the container for our items, the layout for the items themselves will be defined elsewhere. Let's create a new layout file.
+
+- Go to the `layout` folder, right click on it, and use **New > Layout resource file** to create a file called `grid_item.xml`.
+
+- For the root element, specify `LinearLayout`. No need to change other options.
+
+- We have some wishes as to what the items on our grid should look like. Ideally, we would want to show at least a picture and the name of our friend. Add those to the layout.
+
+Tip: add some padding to your layout! Click "Show more attributes" if needed. Add padding to the root `LinearLayout`, something like 12dp (12 device pixels). You can also add padding to views within the layout, to make sure the views don't stick together too much.
+
 
 ## Creating an adapter
 
+Now might be a good time to try building and running your app. If any errors pop up, try to solve those first and ask for help! Otherwise, the app is pretty boring! Even though we have a Grid View in the main layout, it doesn't show anything.
 
-### Designing our grid items
-
-Of course we have some wishes as to what the items on our grid should look like. Ideally, we would want at least the picture of the person concerned and their name to be shown. Because a `GridView` is just the container for our items, the layout for the items themselves will be defined elsewhere. For this, we will create a new layout file. Go to the `layout` folder and use *right click > New > Layout resource file* to create a file called `grid_item.xml`. Change the root element to `LinearLayout` and leave everything else unchanged. 
-
-
-
-Now that we have our list, we need a way to pair the list of `Friend` objects with the UI that we created in step one. The missing connection will be made through an adapter. The adapter will connect the list of data to the `GridView` in which we want to show the data. To do this, we will create our very own `ArrayAdapter`. 
+To fix this, we need a way to pair the list of `Friend` objects with the grid layout. The missing connection will be made through an **adapter**. The adapter will be responsible for providing layout items for the grid view, and filling those with data from the `ArrayList` of friends. Let's create an `ArrayAdapter`.
 
 Because we have a custom `Friend` class, we will have to tell our `ArrayAdapter` how to treat each instance of `Friend` in order to render it correctly in the `GridView`. Remember the layout file we created before, `grid_item.xml`? This layout file will be used to tell the adapter what to render for each item in our list. Follow the steps below to create the adapter class.
 
-1. Once again, make sure you are somewhere in the Android file tree and go to *File > New > Java Class* and create a class called *FriendsAdapter*.
+- Make sure you have selected something in the Android browser, go to **File > New > Java Class** and create a class called `FriendsAdapter`. We will use `ArrayAdapter` as the superclass, which ensures that we don't have to write all adapter code ourselves.
 
-2. Choose ArrayAdapter as the superclass, this will make sure we have all the methods and functionality needed.
+Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
 
-3. Change the declaration of the class to contain `ArrayAdapter<Friend>` like so: `                public class FriendsAdapter extends ArrayAdapter<Friend>`.
+- Change the declaration of the class to contain `ArrayAdapter<Friend>` like so: `                public class FriendsAdapter extends ArrayAdapter<Friend>`.
 
-4. Generate the appropriate constructor using `CTRL+O` and choose the constructor that takes the context, a resource id of type integer and a list of items as its arguments. 
+- Generate a constructor using `CTRL+O`: choose the constructor that takes context, a resource id of type integer and a list of items `List<T>` as its arguments.
 
-5. When you have generated your constructor, edit the parameters to reflect the type of your list, which is an `ArrayList<Friend>`.
+- When you have generated your constructor, change the parameters to reflect the type of your list, which is an `ArrayList<Friend>`.
 
-6. Finally, hit `CTRL+O` one more time to override the method `getView()` which is where we will determine what should be shown on the screen for each item in our list. 
+- Finally, hit `CTRL+O` one more time to override `getView()` (find it in the list), which is the method where we will determine what should be shown on the screen for each item in our list. 
 
-### Populating the views                
-In our `getView()` method, we will populate each `View` element (as declared in `grid_item.xml`) to show the appropriate data. We probably want to show at least the name and picture in our grid, so first we need to find the appropriate `ImageView` and `TextView` to do so.
+Take a look at the `getView()` method that was just generated. This method is called for every item in your list (which, in our case, is an object of type `Friend`). The method gets three arguments, of which the first two are the most important. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
 
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        return super.getView(position, convertView, parent);
+We'd like to load a specific layout and show the data we're interested in. This is where that happens. For reasons of efficiency, the layouts in a list are recycled. As we scroll up, views from the top (that disappear) are moved to the bottom to show new data. As the grid is shown for the first time, however, we'll need to load the layout for each new grid item.
+
+Replace the `return super.getView...` by the following code:
+
+    if (convertView == null) {
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
     }
+    return convertView;
 
-Take a look at the `getView()` method above. This method is called for every item in your list (which in our case is an instance of type `Friend`). In this method, we define what should happen for each list item layout wise. The method gets three arguments, of which the first two are the most important. The first argument `int position` indicates which item in the list is currently being processed by `getView()`. So for the first item this would be 0, the second 1, you get it.
+Notice that convertView is inflated from `R.layout.list_item`, which represents our `list_item.xml`. Even better, we can gain access to the views in the layout we just loaded. You can call `convertView.findViewById()`, just like you would do in an activity.
 
-The super method for now just returns the unaltered `convertView`, but we of course want to alter it to show the appropriate data. We will do so by inflating a new `View` if none exists, and otherwise alter the existing one. This will make our code look something like this:
+Now, we have access to the appropriate views but still need to determine what to show in it. When the adapter is first instantiated, we get access to the list of friends (via the constructor). Better then, to create a `private` instance variable called `friends`, and in the constructor, save the reference to the list to that variable!
 
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
-        if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
-        }
-
-        // do something with the views in convertView. 
-
-        return convertView;
-    }
-
-Notice how convertView is inflated from `R.layout.list_item`, which represents our `list_item.xml`? Now you can access the views in `convertView`, like your `ImageView` and `TextView` by using `findViewById()`, just like you would do in any other place. 
-
-Bear in mind though that you first have to 'index' into `convertView` to access the views in your `list_item.xml`, so to speak, so call `convertView.findViewById()` to access the views. This is needed because the reference to the layout is stored in the `convertView` variable. 
-
-Now, we have access to the appropriate views but still need to determine what to show in it. Since the list of friends is passed to the adapter through the constructor, and we have access to the the current item that is being rendered by `getView()` through its `position` parameter, we can combine these two to get the info that we need!
+Then, as soon as `getView()` is called, we can access the `friends` variable to get the appropriate information from the list, using the `position`!
 
 Finally, note that instead of returning the standard result of calling `super()`, we now return our altered `convertView`. What do you think would happen if we forgot to return `convertView` at the end and still returned the result of the `super()` call? And what would happen if we called `super()` first and then altered `convertView` after that?
 
 
 
-### Connecting the adapter to the GridView and the list. 
+## Connecting the adapter to the GridView and the list. 
 
 Now that our adapter is (hopefully) set up correctly, we still need to link it to the GridView. Our adapter now contains the logic of transforming the list we feed to it into the right layout views, but right now it's not connected to anything.
 

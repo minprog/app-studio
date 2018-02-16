@@ -5,15 +5,15 @@
 - Practice with adapter views
 - Work with navigation in apps
 - Use multiple activities
-- Store small data on the device
+- Store small amounts of data on the device
 
 ## Background
 
-For this app, you will create an social friends/dating app that allows you to view people's profiles and some information about them. When the user first loads the app, it will show a list of available users.  The user can click on each one to see a bigger photo and get more information about that user. On the screen is a way to rate the user. It could for example look something like this:
+For this app, you will create an social friends app that allows you to view people's profiles and some information about them. When the user first loads the app, it will show a list of available users. The user can click on each one to see a bigger photo and get more information about that user. On the screen is a way to rate the user. It could for example look something like this:
 
 ![App Example](friendsrimage0.png) ![App Example](friendsrimage1.gif) ![App Example](friendsrimage2.png)
 
-Of course this app will be an incomplete experience: you don't need to allow people to create profiles, and you can just show a fixed set of people's profiles that never changes. It does not need to do everything that an app like Facebook or Tinder can do.
+Of course this app will be an incomplete experience: you don't need to allow people to create profiles, and you can just show a fixed set of people's profiles that never changes. It does not need to do everything that an app like Facebook can do. If you don't want to supply your own images you can download a set of Game of Thrones characters [here] TODO.
 
 To create this app, we will make use of two *Activities* e.g. screens in our app, one that shows a list with an overview of all people available in the app, and another that is triggered when we click on one of these people which provides more details and a bigger profile picture.
 

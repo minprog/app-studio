@@ -32,9 +32,14 @@ The ratings we give to each of the app's profile's will be stored using `SharedP
 
     Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
 
-4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin".
+4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". The URL should look like this: <https://github.com/stgm/Friendsr.git> (you can find a link to your URL on the GitHub website where you just created a repository).
 
-5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files". Make sure all checkboxes are selected, enter a commit message `Initial project` and then press the **commit** button. Turn off code analysis.
+5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github.
+    - Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen.
+    - There, you should see a long list of "unversioned files". Make sure all checkboxes are selected
+    - Enter a commit message `Initial project`.
+    - Turn off code analysis.
+    - Finally, press the **commit** button.
 
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
@@ -43,20 +48,16 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## First Activity: Creating the user interface
 
-### The overview screen
-Let's create the basic UI that we should see when we open the app first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` (remember how?) and then use a `GridView` to show all of our users on a grid. 
-
-Views like `GridView` and `ListView` are designed as containers for *lists* of items. So in our `activity_main.xml` Design tab, head for the Palette and choose *Containers*. There you should be able to select a `GridView` and add it to your layout. If done correctly, your design should now show an example grid of items, something like the image below. You can tweak the attributes of the `GridView` to show more or less items on a row or have more space between items. Take a look at `numColumns`, `stretchMode` (`spacingWidthUniform` seems like a nice and clean solution) and see if you can tweak it to look how you want. You are not forced to copy the example, so if you feel like 4 columns is the way to go: power to you!
+Let's create the basic UI that we should see when we open the app first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridView` to show all of our users on a grid. 
 
 ![Layout Placeholder Example](layoutimage0.png)
 
+- In the XML, change the `ConstraintLayout` with a `LinearLayout` (remember how?). Also, delete the text view that's already in there.
+- In the designer, head for the Palette and choose **Containers**. There you should be able to select a `GridView` and add it to your layout. If done correctly, your design should now show an example grid of items, something like the image above.
+- You can tweak the attributes of the `GridView` to show more or less items on a row or have more space between items. Take a look at `numColumns`, `stretchMode` (`spacingWidthUniform` seems like a nice and clean solution) and see if you can tweak it to look how you want. Feel free to deviate from the example. If 4 columns is the way to go: power to you!
 
 
-### Designing our grid items
-
-Of course we have some wishes as to what the items on our grid should look like. Ideally, we would want at least the picture of the person concerned and their name to be shown. Because a `GridView` is just the container for our items, the layout for the items themselves will be defined elsewhere. For this, we will create a new layout file. Go to the `layout` folder and use *right click > New > Layout resource file* to create a file called `grid_item.xml`. Change the root element to `LinearLayout` and leave everything else unchanged. 
-
-### Modeling friends
+## Modeling friends
 
 Now that the user interfaces are all set, let's create a simple model class to contain data about our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
 
@@ -100,6 +101,14 @@ Using this format, you can instantiate as many `Friend` objects as you would lik
 You can now easily add items to your list using `aListName.add()`. Of course, there are other ways to instantiate a list that holds `Friend` objects instead of adding them after creation. Up to you to choose and find out. 
 
 ## Creating an adapter
+
+
+### Designing our grid items
+
+Of course we have some wishes as to what the items on our grid should look like. Ideally, we would want at least the picture of the person concerned and their name to be shown. Because a `GridView` is just the container for our items, the layout for the items themselves will be defined elsewhere. For this, we will create a new layout file. Go to the `layout` folder and use *right click > New > Layout resource file* to create a file called `grid_item.xml`. Change the root element to `LinearLayout` and leave everything else unchanged. 
+
+
+
 Now that we have our list, we need a way to pair the list of `Friend` objects with the UI that we created in step one. The missing connection will be made through an adapter. The adapter will connect the list of data to the `GridView` in which we want to show the data. To do this, we will create our very own `ArrayAdapter`. 
 
 Because we have a custom `Friend` class, we will have to tell our `ArrayAdapter` how to treat each instance of `Friend` in order to render it correctly in the `GridView`. Remember the layout file we created before, `grid_item.xml`? This layout file will be used to tell the adapter what to render for each item in our list. Follow the steps below to create the adapter class.

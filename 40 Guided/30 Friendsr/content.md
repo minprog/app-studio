@@ -179,7 +179,73 @@ Additionally, because we are using the weight to determine the size relative to 
 
 ### Connecting the two Activities
 
-Now that the `ProfileActivity` if finished look wise, we want to add functionality to it as well. But first we must think about 
+Now that the `ProfileActivity` if finished look wise, we want to add functionality to it as well. But first we must think about how we are going to get there. We will somehow have to listen for click events on the `GridView` items in `MainActivity` and then go to the ProfileActivity, all while remembering which `Friend` was clicked, so we can show the appropriate data.
+
+To add a listener for clicks on our `GridView`, we will create our own `OnItemClickListener` class (not to be confused with the `OnClickListener`, since we are really listening to clicks on the separate sub-_items_ here, not clicks on the layout view as a whole). 
+
+1. Go to your `MainActivity` class and create a new private inner class called `MyOnItemClickListener`. Inner class means that the class will actually be inside your `MainActivity` class, not in a separate file:
+
+        public class MainActivity extends AppCompatActivity {
+
+            private class ThisIsAnInnerClass {
+                // inner class content
+            }
+        }
+
+2. Add the interface to the class by typing `implements OnItemClickListener` behind the name of your class. It will probably jump to show `AdapterView.OnItemClickListener` as you finish typing: this is okay. This will make red wriggly lines appear, because now your class made a promise, so to speak, to implement the functionality of an `OnItemClickListener`, but it does not do that just yet!
+
+3. When inside your inner class, press `CTRL+I` to show the dialog of methods to implement. This should just show one method: `onItemClick()`. Hit enter and the red wriggly lines should now disappear as you are presented with your own override:
+
+        private class MyOnItemClickListener implements AdapterView.OnItemClickListener {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // handle your clicks here
+            }
+        }
+
+
+Now, you can handle clicks inside the `onItemClick` method, which will be called when an item on the `GridView` is clicked, as soon as the click listener is actually connected to the `GridView`. 
+
+In `MainActivity`, find where you look up the GridView element with `findViewById()` and set the listener on the GridView by creating a new instance of your `MyOnItemClickListener` class and using `setOnItemClickListener()` with the class instance as its argument. 
+
+Test your implementation by making the `OnItemClickListener` do something simple, like logging something to the console or making a toast appear. This should happen every time an item in your `GridView` is clicked.
+
+
+### Extract what actually was clicked on
+The whole idea of the OnItemClickListener was to recognize exactly which sub-item of our layout was clicked, but as of now that is not happening yet. However, all tools to do this are present. When taking a look at the `onItemClick()` method, notice that this method has 4 arguments that will be passed on to it when it's invoked.
+
+We will make use of the `adapterView` argument, which holds a reference to the parent view with all the items, combined with the `int i`, which tells us the position. You can call the method `getItemAtPosition(i)` on the `adapterView`, which then will give you what item is present on that position in the parent layout behind the scenes. 
+
+This is what we want, because we made a list of `Friend` objects that are now being rendered by our adapter. So if we call getItemAtPosition, we will get back a `Friend` object that we can the use to pass on to the second activity. 
+
+        Friend clickedFriend = (Friend) adapterView.getItemAtPosition(i);
+
+Notice the (Friend)? This is called *casting* and is necessary because `getItemAtPosition()` does not actually return a `Friend` object yet, but a generic Java Object. So if we want to put it in a variable of type `Friend` it will need to be cast to that type first. When working with custom model class objects, this is something that is often needed, but luckily very simple to do. 
+
+
+### Creating an Intent
+Now that we have access to which `Friend` item was actually clicked, we want to pass this information to the next activity. To direct the user from one activity to another, Android makes use of the `Intent` class. An `Intent` typically looks something like this:
+
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        startActivity(intent);
+
+It specifies the context where we are coming from, in this case `MainActivity.this` and also tells the intent where to go next, which is the `ProfileActivity.class` bit. A special thing to pay attention to with an `Intent` is that you still need to fire it. We have now just created the intent on the first line, but this in itself does nothing yet in terms of starting another activity. 
+
+For the intent to execute, you need to call `startActivity(intent)` as well. This is practical, because sometimes you might want to add some information to the intent that you want passed on between activities (like in this case which `Friend` was clicked) before you fire the intent. 
+
+Remember that we made the `Friend` model class implement `Serializable`? This was done so that you can now easily pass `Friend` objects with intents. Adding something to an `Intent` is done with key-value pairs, with the key (which is just a `String`) allowing you to retrieve the value from the intent in the next activity. In our case, the intent might look something like this:
+
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        intent.putExtra("clicked_friend_key", clickedFriend);
+        startActivity(intent);
+
+We now added the clicked `Friend` object to the intent, so it will be passed on `ProfileActivity` and we can extract it using the key *"clicked_friend_key"*. Extraction is very simple as well, in the `onCreate()` of the second activity, you can simply use `getIntent()` and then extract the value from the intent using the key you provided when you created the intent:
+
+        Intent intent = getIntent();
+        Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend_key");
+
+Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?).
+
 
 ### Storing the rating data in SharedPreferences
 

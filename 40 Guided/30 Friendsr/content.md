@@ -56,24 +56,14 @@ Views like `GridView` and `ListView` are designed as containers for *lists* of i
 
 Of course we have some wishes as to what the items on our grid should look like. Ideally, we would want at least the picture of the person concerned and their name to be shown. Because a `GridView` is just the container for our items, the layout for the items themselves will be defined elsewhere. For this, we will create a new layout file. Go to the `layout` folder and use *right click > New > Layout resource file* to create a file called `grid_item.xml`. Change the root element to `LinearLayout` and leave everything else unchanged. 
 
-
-## Second Activity: Creating the user interface
-
-To create a second activity, make sure your mouse pointer is somewhere in the Android file structure on the left and go to *File > New > Activity > Empty Activity* and create `ProfileActivity`, which will contain the detailed view of our users. If everything went well, you should now also have a `activity_profile.xml` file in your layout directory. This is where we will design the layout of our second activity.
-
-For this activity, we want to show the profile picture, a rating bar plus some `TextView` elements to show the name and information of our users. Change the root layout to `LinearLayout` again (this just fits with what we want to achieve much better) and add the widgets. 
-
-Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. 
-
-Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
-
-
 ### Modeling friends
 
 Now that the user interfaces are all set, let's create a simple model class to contain data about our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
 
-1. The Friend model will be held in its own Java class, so we are going to create a new Java file using *File > New > Java Class*. We will call this class `Friend`. 
+1. The Friend model will be held in its own Java class, so we are going to create a new Java file. Make sure your mouse pointer is somewhere in the file tree on the left and use *File > New > Java Class*. We will call this class `Friend`. 
+
 2. In the dialog, specify that you want to use `Serializable` (or `java.io.Serializable`) as an interface. This will later allow us to store objects of the `Friend` type on our device more easily. You can leave all other settings unchanged. 
+
 3. You are now presented with your empty `Friend` class, so time to add some fields to it! Within your class, declare fields to store the name and bio of a user. These should probably of the type `String`. Also, we will need a `float` to keep track of the rating, because the `RatingBar` widget uses a float by default. Finally, we want to keep track of an id that points to a drawable, to be able to show an image. This id will be of type `int`. You should now have something like this:
 
         public class Friend implements Serializable {
@@ -95,7 +85,7 @@ In order to do this, we will need to locate the drawable image files that we are
 
     ![](project-view.png)
 
-2. Navigate to app -> src -> main -> res -> drawable. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
+2. Navigate to *app > src > main > res > drawable*. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
 
 3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images in your app.
 
@@ -115,10 +105,15 @@ Now that we have our list, we need a way to pair the list of `Friend` objects wi
 Because we have a custom `Friend` class, we will have to tell our `ArrayAdapter` how to treat each instance of `Friend` in order to render it correctly in the `GridView`. Remember the layout file we created before, `grid_item.xml`? This layout file will be used to tell the adapter what to render for each item in our list. Follow the steps below to create the adapter class.
 
 1. Once again, make sure you are somewhere in the Android file tree and go to *File > New > Java Class* and create a class called *FriendsAdapter*.
+
 2. Choose ArrayAdapter as the superclass, this will make sure we have all the methods and functionality needed.
+
 3. Change the declaration of the class to contain `ArrayAdapter<Friend>` like so: `                public class FriendsAdapter extends ArrayAdapter<Friend>`.
+
 4. Generate the appropriate constructor using `CTRL+O` and choose the constructor that takes the context, a resource id of type integer and a list of items as its arguments. 
+
 5. When you have generated your constructor, edit the parameters to reflect the type of your list, which is an `ArrayList<Friend>`.
+
 6. Finally, hit `CTRL+O` one more time to override the method `getView()` which is where we will determine what should be shown on the screen for each item in our list. 
 
 ### Populating the views                
@@ -164,18 +159,27 @@ Now that our adapter is (hopefully) set up correctly, we still need to link it t
         FriendsAdapter myAdapter = new FriendsAdapter(..., ..., ...);
 
 2. The `FriendsAdapter` class constructor takes in a `Context` object, which you can pass on as simply `this` or `getApplicationContext()`. 
+
 3. Then, it needs a reference to the layout file it should use, which in our case probably is `R.layout.list_item`. 
+
 4. Finally, the list of `Friend` objects itself needs to be passed to the constructor as well.
+
 5. Now that you have instantiated your adapter, you can set it on your `GridView`. Use `findViewById` on your `GridView` as you would on any other view and call `setAdapter()` on it with your freshly made adapter! 
 
 
 ## Creating the ProfileActivity
 
-TBA
+Now that we have the first activity with the grid and friends set up, we still need to add content to the `ProfileActivity`. To create a second activity, make sure your mouse pointer is somewhere in the Android file structure on the left and go to *File > New > Activity > Empty Activity* and create `ProfileActivity`, which will contain the detailed view of our users. If everything went well, you should now also have a `activity_profile.xml` file in your layout directory. This is where we will design the layout of our second activity.
+
+For this activity, we want to show the profile picture, a rating bar plus some `TextView` elements to show the name and information of our users. Change the root layout to `LinearLayout` again (this just fits with what we want to achieve much better) and add the widgets. 
+
+Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. 
+
+Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
 
 ### Connecting the two Activities
 
-TBA
+Now that the `ProfileActivity` if finished look wise, we want to add functionality to it as well. But first we must think about 
 
 ### Storing the rating data in SharedPreferences
 

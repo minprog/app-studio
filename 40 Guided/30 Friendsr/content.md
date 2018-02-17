@@ -187,49 +187,50 @@ Now that the adapter class has been (hopefully) set up correctly, we still have 
 This was the final step for showing our initial screen with a grid of friends. Test your app now, and ask for help if something doesn't work as expected.
 
 
-## Creating the ProfileActivity
+## Creating a new activity
 
-Now that we have the first activity with the grid and friends set up, we still need to add content to the `ProfileActivity`. To create a second activity, make sure your mouse pointer is somewhere in the Android file structure on the left and go to *File > New > Activity > Empty Activity* and create `ProfileActivity`, which will contain the detailed view of our users. If everything went well, you should now also have a `activity_profile.xml` file in your layout directory. This is where we will design the layout of our second activity.
+As you can see in the screenshots above, we'll make a detail screen where friends are shown full-screen.
 
-For this activity, we want to show the profile picture, a rating bar plus some `TextView` elements to show the name and information of our users. Change the root layout to `LinearLayout` again (this just fits with what we want to achieve much better) and add the widgets. 
+- To create a second activity, select one of your existing Java classes in the browser and choose **File > New > Activity > Empty Activity**. Name it `ProfileActivity`.
+
+- If everything went well, you should now also have a `activity_profile.xml` file in your layout directory. This is where we will design the layout of our second activity.
+
+- We'd like to show the profile picture, a rating bar, as well as some `TextView` elements to show the name and information of our users. But before adding those, change the root layout to `LinearLayout` again (this just fits with what we want to achieve much better).
 
 Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. 
 
 Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
 
 
-### Connecting the two Activities
+### Connecting the two activities
 
-Now that the `ProfileActivity` if finished look wise, we want to add functionality to it as well. But first we must think about how we are going to get there. We will somehow have to listen for click events on the `GridView` items in `MainActivity` and then go to the ProfileActivity, all while remembering which `Friend` was clicked, so we can show the appropriate data.
+Our goal is now to have a user click on one of the friends in the grid, and navigate to the second activity. This second activity should, of course, provide details on the friend that was selected, and no one else!
 
 To add a listener for clicks on our `GridView`, we will create our own `OnItemClickListener` class (not to be confused with the `OnClickListener`, since we are really listening to clicks on the separate sub-_items_ here, not clicks on the layout view as a whole). 
 
-1. Go to your `MainActivity` class and create a new private inner class called `MyOnItemClickListener`. Inner class means that the class will actually be inside your `MainActivity` class, not in a separate file:
+1. Go to your `MainActivity` (not the `ProfileActivity`!) code and write a new private inner class called `GridItemClickListener`. **Inner class** means that the class will actually be inside your `MainActivity` class, not in a separate file:
 
         public class MainActivity extends AppCompatActivity {
-
-            private class ThisIsAnInnerClass {
-                // inner class content
+            .
+            .
+            .
+            private class ThisIsAnInnerClass implements ... {
+                ...
             }
+            .
+            .
+            .
         }
 
 2. Add the interface to the class by typing `implements OnItemClickListener` behind the name of your class. It will probably jump to show `AdapterView.OnItemClickListener` as you finish typing: this is okay. This will make red wriggly lines appear, because now your class made a promise, so to speak, to implement the functionality of an `OnItemClickListener`, but it does not do that just yet!
 
-3. When inside your inner class, press `CTRL+I` to show the dialog of methods to implement. This should just show one method: `onItemClick()`. Hit enter and the red wriggly lines should now disappear as you are presented with your own override:
+3. With your text cursor place inside the inner class, press **Ctrl+I** to show the **Implement Method** dialog. There is only one choice: `onItemClick()`. Hit enter and the red wriggly lines should now disappear as the method is placed in the class.
 
-        private class MyOnItemClickListener implements AdapterView.OnItemClickListener {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // handle your clicks here
-            }
-        }
+4. Finally, connect this listener to the `GridView`. Somewhere in the `onCreate()` method of `MainActivity`, perform these steps:
+    - Get a reference to the grid view using `GridView gv = findViewById(R.id.grid);`
+    - Call the `setOnItemClickListener()` method on the view, providing a `new GridItemClickListener()` as the argument.
 
-
-Now, you can handle clicks inside the `onItemClick` method, which will be called when an item on the `GridView` is clicked, as soon as the click listener is actually connected to the `GridView`. 
-
-In `MainActivity`, find where you look up the GridView element with `findViewById()` and set the listener on the GridView by creating a new instance of your `MyOnItemClickListener` class and using `setOnItemClickListener()` with the class instance as its argument. 
-
-Test your implementation by making the `OnItemClickListener` do something simple, like logging something to the console or making a toast appear. This should happen every time an item in your `GridView` is clicked.
+At this point, test your code by putting a log message inside the `onItemClick()` method of your listener class. The log should be shown every time an item in your `GridView` is clicked (it is shown in the **Run** tab, which you may need to open using ![](run.png)).
 
 
 ### Extract what actually was clicked on
@@ -246,6 +247,7 @@ Notice the (Friend)? This is called *casting* and is necessary because `getItemA
 
 
 ### Creating an Intent
+
 Now that we have access to which `Friend` item was actually clicked, we want to pass this information to the next activity. To direct the user from one activity to another, Android makes use of the `Intent` class. An `Intent` typically looks something like this:
 
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);

@@ -96,14 +96,11 @@ We'll need to create some friends to show in our app later. We are going to inst
 
 3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images in your app.
 
- 
 Let's make an `ArrayList` of sample friends in `MainActivity`. Since we are storing `Friend` objects, declare the list as follows:
 
     ArrayList<Friend> friends = new ArrayList<>();
 
-Your task is to write code in the `onCreate()` for adding all friends. You can add items to the list using the `add()` method. This method requires a `Friend` object. Here's how to create a friend with a reference to its picture:
-
-    new Friend("Tyrion", "Lord Tyrion Lannister is the younger brother of Cersei and Jaime Lannister.", R.drawable.tyrion)
+Your task is to write code in the `onCreate()` for adding all friends. You can add items to the list using the `add()` method. This method requires you to provide a `Friend` object.
 
 
 ## Adding a layout for the grid view
@@ -118,63 +115,75 @@ Because a `GridView` is just the container for our items, the layout for the ite
 
 Tip: add some padding to your layout! Click "Show more attributes" if needed. Add padding to the root `LinearLayout`, something like 12dp (12 device pixels). You can also add padding to views within the layout, to make sure the views don't stick together too much.
 
+> Now might be a good time to try building and running your app. If any errors pop up, try to solve those first and ask for help. Otherwise, the app is pretty boring! Even though we have a grid view in the main layout, it doesn't show anything.
 
-## Creating an adapter
 
-Now might be a good time to try building and running your app. If any errors pop up, try to solve those first and ask for help! Otherwise, the app is pretty boring! Even though we have a Grid View in the main layout, it doesn't show anything.
+## Creating an adapter class
 
-To fix this, we need a way to pair the list of `Friend` objects with the grid layout. The missing connection will be made through an **adapter**. The adapter will be responsible for providing layout items for the grid view, and filling those with data from the `ArrayList` of friends. Let's create an `ArrayAdapter`.
+To fix this, we need a way to pair the list of `Friend` objects with the grid layout. The missing connection will be made through an **adapter**. The adapter will be responsible for providing grid items for the grid view. It does this by loading a layout and filling the views in that layout with data from our list of friends. Let's create it.
 
-Because we have a custom `Friend` class, we will have to tell our `ArrayAdapter` how to treat each instance of `Friend` in order to render it correctly in the `GridView`. Remember the layout file we created before, `grid_item.xml`? This layout file will be used to tell the adapter what to render for each item in our list. Follow the steps below to create the adapter class.
+Make sure you have selected one of your Java classes in the Android browser, then go to **File > New > Java Class** and create a class called `FriendsAdapter`. We will use `ArrayAdapter` as the superclass, which provide much of the functionality of using data from an `ArrayList` to fill our grid items.
 
-- Make sure you have selected something in the Android browser, go to **File > New > Java Class** and create a class called `FriendsAdapter`. We will use `ArrayAdapter` as the superclass, which ensures that we don't have to write all adapter code ourselves.
+> Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
 
-Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
+- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like this:
 
-- Change the declaration of the class to contain `ArrayAdapter<Friend>` like so: `                public class FriendsAdapter extends ArrayAdapter<Friend>`.
+        public class FriendsAdapter extends ArrayAdapter<Friend>
+
+   This tells Java that our list is supposed to be a list of `Friend` objects, specifically.
 
 - Generate a constructor using `CTRL+O`: choose the constructor that takes context, a resource id of type integer and a list of items `List<T>` as its arguments.
 
-- When you have generated your constructor, change the parameters to reflect the type of your list, which is an `ArrayList<Friend>`.
+- When you have generated your constructor, change the parameters to reflect the type of your list, which is an `ArrayList<Friend>` instead of `List<Friend>`.
 
 - Finally, hit `CTRL+O` one more time to override `getView()` (find it in the list), which is the method where we will determine what should be shown on the screen for each item in our list. 
 
-Take a look at the `getView()` method that was just generated. This method is called for every item in your list (which, in our case, is an object of type `Friend`). The method gets three arguments, of which the first two are the most important. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
+Take a look at the `getView()` method that was just generated. This method will be called every time a new grid item is to be displayed (for example, when scrolling). The method gets three arguments. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
 
 We'd like to load a specific layout and show the data we're interested in. This is where that happens. For reasons of efficiency, the layouts in a list are recycled. As we scroll up, views from the top (that disappear) are moved to the bottom to show new data. As the grid is shown for the first time, however, we'll need to load the layout for each new grid item.
 
 Replace the `return super.getView...` by the following code:
 
     if (convertView == null) {
-        convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.grid_item, parent, false);
     }
+    
     return convertView;
 
-Notice that convertView is inflated from `R.layout.list_item`, which represents our `list_item.xml`. Even better, we can gain access to the views in the layout we just loaded. You can call `convertView.findViewById()`, just like you would do in an activity.
+Notice that convertView is **inflated** from `R.layout.grid_item`, which is the layout in the file `grid_item.xml` that we just created. This layout contains a couple of views, that we would like to fill with the appropriate info from our list of friends.
 
-Now, we have access to the appropriate views but still need to determine what to show in it. When the adapter is first instantiated, we get access to the list of friends (via the constructor). Better then, to create a `private` instance variable called `friends`, and in the constructor, save the reference to the list to that variable!
+- When the adapter is instantiated, we get access to the list of friends (via the constructor). Better then, to create a `private` instance variable called `friends`, and in the constructor, save the reference to the list to that variable!
 
-Then, as soon as `getView()` is called, we can access the `friends` variable to get the appropriate information from the list, using the `position`!
+- In `getView()`, you can get access to the layout's views by way of the method `convertView.findViewById()`, just like you would do in an activity. Make sure that you gave the views an ID in the layout designer!
 
-Finally, note that instead of returning the standard result of calling `super()`, we now return our altered `convertView`. What do you think would happen if we forgot to return `convertView` at the end and still returned the result of the `super()` call? And what would happen if we called `super()` first and then altered `convertView` after that?
+- Getting data from the `ArrayList friends` can be done using the `friends.get()` method, providing the index of the `Friend` that we'd like to display.
+
+- To load a `Drawable` image for putting into the `ImageView`, use
+
+        getContext().getResources().getDrawable(...resource id of the image...);
+
+    while remembering that we saved resource ids for each of our friends in the friends list already!
+
+> Note that instead of returning the standard result of calling `super()`, we now return our altered `convertView`. What do you think would happen if we forgot to return `convertView` at the end and still returned the result of the `super()` call? And what would happen if we called `super()` first and then altered `convertView` after that?
 
 
+## Connecting the adapter to the grid view and the list
 
-## Connecting the adapter to the GridView and the list. 
+Now that the adapter class has been (hopefully) set up correctly, we still have to instantiate it and link it to the `GridView` in our layout.
 
-Now that our adapter is (hopefully) set up correctly, we still need to link it to the GridView. Our adapter now contains the logic of transforming the list we feed to it into the right layout views, but right now it's not connected to anything.
-
-1. First, instantiate your adapter in `MainActivity`, because this is where we want to show our list of friends on the grid. The contstructur will expect three arguments however (depicted by the dots). 
+- First, instantiate your adapter in `MainActivity`, because this is where we want to show our list of friends on the grid. The constructor expects three arguments:
     
-        FriendsAdapter myAdapter = new FriendsAdapter(..., ..., ...);
+        FriendsAdapter adapter = new FriendsAdapter(..., ..., ...);
 
-2. The `FriendsAdapter` class constructor takes in a `Context` object, which you can pass on as simply `this` or `getApplicationContext()`. 
+    1. The `FriendsAdapter` class constructor takes in a `Context` object. Usefully, the activity itself provides context, so you can suffice with `this` as the first argument.
 
-3. Then, it needs a reference to the layout file it should use, which in our case probably is `R.layout.list_item`. 
+    2. Then, it needs a reference to the layout file it should use, which is `R.layout.grid_item` if you indeed named the layout `grid_item.xml`.
 
-4. Finally, the list of `Friend` objects itself needs to be passed to the constructor as well.
+    3. Finally, the list of `Friend` objects itself needs to be passed to the constructor as well.
 
-5. Now that you have instantiated your adapter, you can set it on your `GridView`. Use `findViewById` on your `GridView` as you would on any other view and call `setAdapter()` on it with your freshly made adapter! 
+- Now that you have instantiated your adapter, you can attach it to your `GridView`. Use `findViewById` on your `GridView` as you would on any other view and call the method `setAdapter()` on it with your freshly made adapter!
+
+This was the final step for showing our initial screen with a grid of friends. Test your app now, and ask for help if something doesn't work as expected.
 
 
 ## Creating the ProfileActivity
@@ -186,6 +195,7 @@ For this activity, we want to show the profile picture, a rating bar plus some `
 Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. 
 
 Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
+
 
 ### Connecting the two Activities
 
@@ -222,6 +232,7 @@ Test your implementation by making the `OnItemClickListener` do something simple
 
 
 ### Extract what actually was clicked on
+
 The whole idea of the OnItemClickListener was to recognize exactly which sub-item of our layout was clicked, but as of now that is not happening yet. However, all tools to do this are present. When taking a look at the `onItemClick()` method, notice that this method has 4 arguments that will be passed on to it when it's invoked.
 
 We will make use of the `adapterView` argument, which holds a reference to the parent view with all the items, combined with the `int i`, which tells us the position. You can call the method `getItemAtPosition(i)` on the `adapterView`, which then will give you what item is present on that position in the parent layout behind the scenes. 
@@ -282,6 +293,7 @@ Now you need to determine when to store the rating. Chances are the `OnRatingBar
 
  
 ### Retrieving values from SharedPreferences
+
 Just storing the data is something, but if we don't do anything with it to restore our rating's state, we might as well do nothing. Your `ProfileActivity` still needs to somehow check whether any rating should be restored, and if so extract it from `SharedPreferences`.
 
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
@@ -303,9 +315,11 @@ The second argument is for the case where there is nothing that belongs to that 
 
 It is entirely possible that there is no rating for some users: if the user opens the app for the first time, none of the users would be rated. So when restoring the rating from `SharedPreferences` this default value can help us check whether there is something to restore, or that the user has simply not been rated yet and the rating bar can stay blank.
 
+
 ## Finishing up
 
 As always, consider this week's assessment criteria and make sure your app works well and the code looks nice. Think about the names of your variables and comments. Are the names clear and consistent, your comments useful and concise?
+
 
 ## Some ideas
 

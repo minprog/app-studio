@@ -28,10 +28,6 @@ You can choose between two projects:
 - **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
 
 
-**How to get points:** [submit](#submit) your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
-
-<a id="submit"></a>
-
 ## Getting credit
 
 Make sure that you complete the exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.

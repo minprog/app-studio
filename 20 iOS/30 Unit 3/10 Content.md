@@ -2,55 +2,54 @@
 
 ## Language exercises
 
-1. Optionals (*6 pages*)
-	- Know how to check an optional
-	- Know how to safely unwrap an optional
-
-2. Typecasting and Inspection (*2 pages*)
-	- Know how to use a collection
-	- Know how to downcast an object
-
-3. Guard (*2 pages*)
-	- Know how to use a guard
-
-4. Constant and Variable Scope (*2 pages*)
-	- Know when to use a global and a local variable
-
-5. Enumerations (*2 pages*)
-	- Know how to use an enumeration
-	- Know how to use an enum with a switch statement
-
-**How to get points:** as soon as you have finished (a selection of) exercises in Swift Playgrounds, demonstrate your results to your TA. Make sure that you have done some of the playgrounds from each of the five chapters!
+1. Optionals
+2. Typecasting and Inspection
+3. Guard
+4. Constants and Variable Scope
+5. Enumerations
 
 ## iOS exercises
 
 6. Segues and Navigation Controllers
-	- Know how to create a segue
-	- Know how to add a second view controller
-	- Know how to pass data between view controllers
-
 7. Tab Bar Controllers
-	- Know when to use a tab bar controller
-	- Know how to use a tab bar controller
-
 8. View Controller Life Cycle
-	- Know how the app's life cycle works
-
 9. Building Simple Workflows
-	- Know how to create a good workflow in your app
 
 **Tip:** take a look at the [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
 
 
-## Guided Project: Personality Quiz
+## Project
 
-At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
+You can choose between two projects:
 
-**How to get points:** [submit](#submit) your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+- **Guided project: Personality Quiz** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
-<a id="submit"></a>
+- **Unguided project: [Mad Libs](/projects/mad-libs)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+
+
+## Getting credit
+
+Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+
+Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+
+| pts | description                                                                          |  
+| --: | ------------------------------------------------------------------------------------ |  
+|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   3 | Reasonable quality, but lots of room for improvement.                                |  
+|   2 | The app mostly works but really lacks in quality.                                    |  
+|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
+|   0 | Not submitted or very incomplete.                                                    |  
+
+This week, we will look at the following quality aspects:
+
+- layout, margins, compatibility with multiple phone sizes
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
+- level of separation between "friend" storage and user interface code
 
 
 ## Submit
 
-Submit at [Unit 1](/submit/unit-3).
+Submit at [Unit 3](/submit/unit-3).

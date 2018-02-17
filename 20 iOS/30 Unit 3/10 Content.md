@@ -47,7 +47,7 @@ This week, we will look at the following quality aspects:
 - layout, margins, compatibility with multiple phone sizes
 - basic code quality such as comments, names, consistency and design
 - easy to use, no odds and ends
-- level of separation between "friend" storage and user interface code
+- level of separation between model classes and user interface code
 
 
 ## Submit

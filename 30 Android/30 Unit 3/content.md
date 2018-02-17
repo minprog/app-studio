@@ -1,6 +1,6 @@
 # Unit 3: Lists and adapters
 
-In this unit, you'll learn about interfaces in Java and about making lists of information in Android. You'll also learn about getting information from the internet to make cool apps. The project is an app that allows you to order some stuff off the menu in a restaurant!
+Lists are a staple of mobile user interfaces. Many apps contain lists of items, maybe as search results, but more often than not as the main user interface! On Android, grids and lists offer varying degrees of flexiblity, but they generally work the same as seen from the code.
 
 
 ## Exercises

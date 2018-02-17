@@ -1,20 +1,19 @@
 # Mad Libs
 
+
 ## Objectives
 
 - Parse text files containing information for your app.
 - Practice with the use of multiple controllers.
 - Pass data between controllers.
 
-## Preparation
-
-- Practice [Java](/android/java) and read about [Multiple Activities](/android/multiple-activities).
 
 ## Assessment
 
 Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
 
 All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
 
 ## Fun with apps
 
@@ -38,6 +37,7 @@ The text files represent placeholders as tokens that start and end with `<` `>` 
 
 The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, we'll give you a file (see below) that you should use as a building block. If you add the `Story` class to your project, you can construct a `Story` object and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The `Story` class has other methods for filling in the placeholders later. By using this helper object, you can focus more on the important parts of this assignment and less on the string processing parts.
 
+
 ## Requirements
 
 Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
@@ -56,17 +56,19 @@ Your task is to build an app according to the description above. On top of that,
 
 - For back navigation in your app, your app must use the standard back button (Android).
 
+
 ## Getting started
 
 1. Create a new project, using this pattern as a name: `studentname-pset2`.
 
 2. Share your project on GitHub. 
 
-3. Download the provided files ([Android](madlibs_android.zip)) and import them into your project.
+3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
 
 4. Carefully read the provided code. What does it do? What do you still need to implement? 
 
 5. Remember to commit and push all important changes you make! 
+
 
 ## Android tips
 
@@ -77,3 +79,10 @@ Your task is to build an app according to the description above. On top of that,
 - You can load in text files using an `getAssets()` or `getResources()` among other things. Up to you to find out what suits you best (perhaps with some help of Google)! 
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
+
+
+## iOS tips
+
+To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+
+When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.

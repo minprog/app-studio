@@ -2,6 +2,7 @@
 
 In this unit, you'll learn about classes in Java and how to model your app into different classes.
 
+
 ## Exercises
 
 Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
@@ -11,6 +12,7 @@ Each unit contains exercises to help you master the Java language. If you alread
 - [Inheritance](/java-exercises/inheritance)
 
 Also, [read about](https://www.leepoint.net/oop/enums/enums.html) `enum`s in Java. Understand when and how to use these.
+
 
 ## Android explanation
 
@@ -52,6 +54,7 @@ This week, we will look at the following quality aspects:
 - (from last week) easy to use, no odds and ends
 - level of separation between game code and user interface code
 
+
 ## Submit
 
-Submit at [Unit 2](/submit/unit-1).
+Submit at [Unit 2](/submit/unit-2).

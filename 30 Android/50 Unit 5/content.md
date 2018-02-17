@@ -2,6 +2,12 @@
 
 In this unit, you'll learn about polymorphism in Java. You're also going to learn about using Fragments for building the user interface. The app that you're making is a continuation of the previous unit. The to-do list app will now support multiple to-do lists!
 
+- [Exceptions](/java-exercises/exceptions)
+
+- [Volley](/android/volley) library
+- [Snackbar](https://material.io/guidelines/components/snackbars-toasts.html)
+- [Storage](/android/storage)
+
 - Practice with Java:
     - [Type information](http://www.davin.50webs.com/research/1999/egs/q12.pdf)
     - [Polymorphism](http://www.davin.50webs.com/research/1999/egs/q13.pdf)
@@ -11,6 +17,9 @@ In this unit, you'll learn about polymorphism in Java. You're also going to lear
 - Learn about writing good code:
     - [Better Code Hub](/guides/better-code-hub)
 - Make [Many Lists](/projects/many-lists).
+
+- [Back navigation](/android/backnav) (TODO)
+- [Designing effective navigation](https://developer.android.com/training/design-navigation/index.html)
 
 
 ## Submit

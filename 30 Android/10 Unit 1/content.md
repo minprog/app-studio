@@ -6,6 +6,7 @@ To get started, check out how to create a new Android project:
 
 <iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
 ## Exercises
 
 Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
@@ -15,6 +16,7 @@ Each unit contains exercises to help you master the Java language. If you alread
 - Do the exercises on [Parameters and return values](/java-exercises/parameters-and-return-values)
 - Do the exercises on [References](/java-exercises/references)
 
+
 ## Android explanation
 
 Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
@@ -23,6 +25,11 @@ Before making an app, you'll find some explanation about the parts of Android th
 - [Layouts](/android-reference/layouts)
 - [State](/android-reference/state)
 
+NEW
+
+- [Events](/android-reference/events)
+
+
 ## Project
 
 Now you are ready to make your first app! You can choose between two projects:
@@ -30,6 +37,7 @@ Now you are ready to make your first app! You can choose between two projects:
 - **Guided project: [Mr. Potatohead](/guided/mr-potatohead)** takes you step-by-step through making your first app. You'll probably choose this one if you haven't built applications on a platform before.
 
 - **Unguided project: [First App](/projects/first-app)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+
 
 ## Getting credit
 
@@ -56,5 +64,3 @@ This week, we will look at the following quality aspects:
 ## Submit
 
 Submit at [Unit 1](/submit/unit-1).
-
-

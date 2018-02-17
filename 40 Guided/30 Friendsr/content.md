@@ -202,7 +202,7 @@ Make sure the layout looks nice by fiddling with the `layout_gravity` parameter 
 Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
 
 
-### Connecting the two activities
+## Connecting the two activities
 
 Our goal is now to have a user click on one of the friends in the grid, and navigate to the second activity. This second activity should, of course, provide details on the friend that was selected, and no one else!
 

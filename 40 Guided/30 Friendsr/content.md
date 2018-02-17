@@ -233,37 +233,36 @@ To add a listener for clicks on our `GridView`, we will create our own `OnItemCl
 At this point, test your code by putting a log message inside the `onItemClick()` method of your listener class. The log should be shown every time an item in your `GridView` is clicked (it is shown in the **Run** tab, which you may need to open using ![](run.png)).
 
 
-### Extract what actually was clicked on
+## Extract what actually was clicked on
 
 The whole idea of the OnItemClickListener was to recognize exactly which sub-item of our layout was clicked, but as of now that is not happening yet. However, all tools to do this are present. When taking a look at the `onItemClick()` method, notice that this method has 4 arguments that will be passed on to it when it's invoked.
 
 We will make use of the `adapterView` argument, which holds a reference to the parent view with all the items, combined with the `int i`, which tells us the position. You can call the method `getItemAtPosition(i)` on the `adapterView`, which then will give you what item is present on that position in the parent layout behind the scenes. 
 
-This is what we want, because we made a list of `Friend` objects that are now being rendered by our adapter. So if we call getItemAtPosition, we will get back a `Friend` object that we can the use to pass on to the second activity. 
+This is what we want, because we made a list of `Friend` objects that are now being rendered by our adapter. So if we call `getItemAtPosition()`, we will get back a `Friend` object that we can the use to pass on to the second activity. 
 
-        Friend clickedFriend = (Friend) adapterView.getItemAtPosition(i);
+    Friend clickedFriend = (Friend) adapterView.getItemAtPosition(i);
 
-Notice the (Friend)? This is called *casting* and is necessary because `getItemAtPosition()` does not actually return a `Friend` object yet, but a generic Java Object. So if we want to put it in a variable of type `Friend` it will need to be cast to that type first. When working with custom model class objects, this is something that is often needed, but luckily very simple to do. 
+Try changing your log message to print the `name` of the `Friend` object!
 
-
-### Creating an Intent
+> Notice that `(Friend)`? This is called *casting* and is necessary because `getItemAtPosition()` does not actually return a `Friend` object yet, but a generic Java Object. So if we want to put it in a variable of type `Friend` it will need to be cast to that type first. When working with custom model classes, this is something that is often needed, but luckily very simple to do. 
 
 Now that we have access to which `Friend` item was actually clicked, we want to pass this information to the next activity. To direct the user from one activity to another, Android makes use of the `Intent` class. An `Intent` typically looks something like this:
 
-        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-        startActivity(intent);
+    Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+    startActivity(intent);
 
-It specifies the context where we are coming from, in this case `MainActivity.this` and also tells the intent where to go next, which is the `ProfileActivity.class` bit. A special thing to pay attention to with an `Intent` is that you still need to fire it. We have now just created the intent on the first line, but this in itself does nothing yet in terms of starting another activity. 
-
-For the intent to execute, you need to call `startActivity(intent)` as well. This is practical, because sometimes you might want to add some information to the intent that you want passed on between activities (like in this case which `Friend` was clicked) before you fire the intent. 
+It specifies the context where we are coming from, in this case `MainActivity.this` and also tells the intent where to go next, which is the `ProfileActivity.class`. A special thing to pay attention to with an `Intent` is that you still need to *perform* it. Creating an `Intent` object in itself does nothing yet in terms of starting another activity. 
 
 Remember that we made the `Friend` model class implement `Serializable`? This was done so that you can now easily pass `Friend` objects with intents. Adding something to an `Intent` is done with key-value pairs, with the key (which is just a `String`) allowing you to retrieve the value from the intent in the next activity. In our case, the intent might look something like this:
 
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-        intent.putExtra("clicked_friend_key", clickedFriend);
+        intent.putExtra("clicked_friend", clickedFriend);
         startActivity(intent);
 
-We now added the clicked `Friend` object to the intent, so it will be passed on `ProfileActivity` and we can extract it using the key *"clicked_friend_key"*. Extraction is very simple as well, in the `onCreate()` of the second activity, you can simply use `getIntent()` and then extract the value from the intent using the key you provided when you created the intent:
+We just added the clicked `Friend` object to the intent, so it will be passed on `ProfileActivity` and we can extract it using the key `"clicked_friend"`.
+
+Now, in the `onCreate()` of the second activity, you can simply use `getIntent()` and then extract the value from the intent using the key you provided when you created the intent:
 
         Intent intent = getIntent();
         Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend_key");
@@ -271,15 +270,15 @@ We now added the clicked `Friend` object to the intent, so it will be passed on 
 Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?). Now that we have access to the `retrievedFriend` variable, we have access to all the information of that particular `Friend` object again, so their name, bio, photo and rating. You can use this information to render the correct things on the screen with the layout we created before. 
 
 
-### Storing the rating data in SharedPreferences
+## Storing the rating data in SharedPreferences
 
 Hmm, now that your app is up and running, you must have noticed something. The ratings are not being kept! Time to do something about that using Android's `SharedPreferences`. These are meant to store small amounts of data on the device and allow information to persist even when closing down the app or switching off your phone.
 
-`SharedPreferences` also makes use of key-value pairs, again using a `String` as the key and then storing the value with the key as a label, so you can easily retrieve it later. You can access the `SharedPreferences` by calling:
+`SharedPreferences` again makes use of key-value pairs, using a `String` as the key and then storing the value with the key as a label, so you can easily retrieve it later. You can access your app's `SharedPreferences` by calling:
 
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
 
-You can have multiple `SharedPreferences` files, so you can give individual ones a name as well, we will just call ours `"settings"`, as per default. The `MODE_PRIVATE` bit refers to the access rights of the file: the default mode, where the created file can only be accessed by the calling application.
+You can have multiple `SharedPreferences` files, so you can give individual ones a name as well, we will just call ours `settings`. The `MODE_PRIVATE` bit refers to the access rights of the file: the default mode, where the created file can only be accessed by the calling application and not other applications.
 
 We can now add things to the `SharedPreferences` by calling methods on our variable `prefs`, to generate an `Editor`:
 
@@ -290,12 +289,12 @@ The `Editor` allows you to edit the file and store values in there. The two line
 
         SharedPreferences.Editor editor = getSharedPreferences("settings", MODE_PRIVATE).edit();
 
-The `editor` variable now allows you to call various methods, like `putInt()`, `putString()` and `putFloat()`, all of which take two arguments, the key under which to store the value (think about what that should probably be in our case), and the value itself. When done adding values to the editor, don't forget to call `editor.apply()` or `editor.commit()` to save the changes. 
+The `editor` variable now allows you to call various methods, like `putInt()`, `putString()` and `putFloat()`, all of which take two arguments, the key under which to store the value (think about what that should probably be in our case), and the value itself. When done adding values to the editor, don't forget to call `editor.apply()` to save the changes. 
 
 Now you need to determine when to store the rating. Chances are the `OnRatingBarChangeListener` will be quite useful, because it will fire the `onRatingChanged()` everytime someone touches the ratingbar. You can implement your own `OnRatingBarChangeListener` inner class the same way you did with the `OnItemClickListener`. The creation of inner classes for listeners is a design pattern that will be repeated many more times with listeners of various kinds, so if in doubt be sure to ask.
 
  
-### Retrieving values from SharedPreferences
+## Retrieving values from SharedPreferences
 
 Just storing the data is something, but if we don't do anything with it to restore our rating's state, we might as well do nothing. Your `ProfileActivity` still needs to somehow check whether any rating should be restored, and if so extract it from `SharedPreferences`.
 
@@ -328,7 +327,7 @@ As always, consider this week's assessment criteria and make sure your app works
 
 Here are some ideas for improving on this project:
 
-- Allow people to create or edit a profile, and change their bio or name (or perhaps both).
+- Allow people to create or edit a profile, and change their bio or name (or perhaps both). You'll need to add more setters to the `Friend` class in that case!
 - Allow people to leave messages on profiles, and make sure they persist through rebooting the app or phone. 
 - Let people like profiles and keep track of how many times a profile has been liked.
 - Gracefully implement rotation of the device, adding a landscape variation and preserving data. 

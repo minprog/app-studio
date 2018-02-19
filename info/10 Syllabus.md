@@ -174,3 +174,13 @@ programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://student.uva.nl/az/a-z-lijst/a-z-lijst/content/folder/fraude-plagiaat-en-bronvermelding/plagiaat-en-fraude.html
 [English]: http://student.uva.nl/en/az/a-z/a-z/content/folder/plagiarism-and-fraud/plagiarism-and-fraud.html
+
+
+
+## Acknowledgements
+
+Some of the materials in this course have been based on other courses that were generously published under a creative commons license. Many thanks to:
+
+- Marty Stepp, [CS193 at Stanford](http://cs193a.stanford.edu), published 2015 under a Creative Commons Attribution 2.5 license.
+
+- David Malan, [CS164 at Harvard](http://cs164.tv/2012/spring/), published 2012 under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported license.

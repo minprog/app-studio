@@ -103,6 +103,7 @@ Let's make an `ArrayList` of sample friends in `MainActivity`. Since we are stor
 
 Your task is to write code in the `onCreate()` for adding all friends. You can add items to the list using the `add()` method. This method requires you to provide a `Friend` object.
 
+For the adding of the drawable's ID, you can use `getResources().getIdentifier()` which can provide you with the correct reference to your drawable.
 
 ## Adding a layout for the grid view
 

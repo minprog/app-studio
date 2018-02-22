@@ -70,13 +70,15 @@ Now that the user interfaces are all set, let's create a simple model class to c
 
 3. You are now presented with your empty `Friend` class, so time to add some fields to it! Within your class, declare fields to store the name and bio of a user. These should probably of the type `String`. Also, we will need a `float` to keep track of the rating, because the `RatingBar` widget uses a float by default. Finally, we want to keep track of an id that points to a drawable, to be able to show an image. This id will be of type `int`. You should now have something like this:
 
+~~~ java
         public class Friend implements Serializable {
             private String name, bio;
             private int drawableId;
             private float rating;
         }
+~~~
 
-    Note that the names of the fields are grey currently: this means that the fields aren't used anywhere useful, yet. But this will come soon!
+Note that the names of the fields are grey currently: this means that the fields aren't used anywhere useful, yet. But this will come soon!
 
 5. Our class also needs a constructor, which we can now easily generate using **Alt+Insert** or **Cmd+N**. As our constructor fields, we want to set the `name`, `bio` and `drawableId`, but not the rating.
 
@@ -99,7 +101,9 @@ We'll need to create some friends to show in our app later. We are going to inst
 
 Let's make an `ArrayList` of sample friends in `MainActivity`. Since we are storing `Friend` objects, declare the list as follows:
 
+~~~ java
     ArrayList<Friend> friends = new ArrayList<>();
+~~~
 
 Your task is to write code in the `onCreate()` for adding all friends. You can add items to the list using the `add()` method. This method requires you to provide a `Friend` object.
 
@@ -128,12 +132,12 @@ Make sure you have selected one of your Java classes in the Android browser, the
 
 > Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
 
-- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like this:
+- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like the following snippet of code, this tells Java that our list is supposed to be a list of `Friend` objects, specifically.
 
+~~~ java
         public class FriendsAdapter extends ArrayAdapter<Friend>
-
-   This tells Java that our list is supposed to be a list of `Friend` objects, specifically.
-
+~~~
+    
 - Generate a constructor using `CTRL+O`: choose the constructor that takes context, a resource id of type integer and a list of items `List<T>` as its arguments.
 
 - When you have generated your constructor, change the parameters to reflect the type of your list, which is an `ArrayList<Friend>` instead of `List<Friend>`.
@@ -146,11 +150,13 @@ We'd like to load a specific layout and show the data we're interested in. This 
 
 Replace the `return super.getView...` by the following code:
 
+~~~ java
     if (convertView == null) {
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.grid_item, parent, false);
     }
     
     return convertView;
+~~~
 
 Notice that convertView is **inflated** from `R.layout.grid_item`, which is the layout in the file `grid_item.xml` that we just created. This layout contains a couple of views, that we would like to fill with the appropriate info from our list of friends.
 
@@ -160,11 +166,8 @@ Notice that convertView is **inflated** from `R.layout.grid_item`, which is the 
 
 - Getting data from the `ArrayList friends` can be done using the `friends.get()` method, providing the index of the `Friend` that we'd like to display.
 
-- To load a `Drawable` image for putting into the `ImageView`, use
+- To load a `Drawable` image for putting into the `ImageView`, use the following line of code `getContext().getResources().getDrawable(...resource id of the image...);` while remembering that we saved resource ids for each of our friends in the friends list already!
 
-        getContext().getResources().getDrawable(...resource id of the image...);
-
-    while remembering that we saved resource ids for each of our friends in the friends list already!
 
 > Note that instead of returning the standard result of calling `super()`, we now return our altered `convertView`. What do you think would happen if we forgot to return `convertView` at the end and still returned the result of the `super()` call? And what would happen if we called `super()` first and then altered `convertView` after that?
 
@@ -211,6 +214,8 @@ To add a listener for clicks on our `GridView`, we will create our own `OnItemCl
 
 1. Go to your `MainActivity` (not the `ProfileActivity`!) code and write a new private inner class called `GridItemClickListener`. **Inner class** means that the class will actually be inside your `MainActivity` class, not in a separate file:
 
+~~~ java
+
         public class MainActivity extends AppCompatActivity {
             .
             .
@@ -222,6 +227,7 @@ To add a listener for clicks on our `GridView`, we will create our own `OnItemCl
             .
             .
         }
+~~~
 
 2. Add the interface to the class by typing `implements OnItemClickListener` behind the name of your class. It will probably jump to show `AdapterView.OnItemClickListener` as you finish typing: this is okay. This will make red wriggly lines appear, because now your class made a promise, so to speak, to implement the functionality of an `OnItemClickListener`, but it does not do that just yet!
 
@@ -242,7 +248,9 @@ We will make use of the `adapterView` argument, which holds a reference to the p
 
 This is what we want, because we made a list of `Friend` objects that are now being rendered by our adapter. So if we call `getItemAtPosition()`, we will get back a `Friend` object that we can the use to pass on to the second activity. 
 
+~~~ java
     Friend clickedFriend = (Friend) adapterView.getItemAtPosition(i);
+~~~
 
 Try changing your log message to print the `name` of the `Friend` object!
 
@@ -250,23 +258,29 @@ Try changing your log message to print the `name` of the `Friend` object!
 
 Now that we have access to which `Friend` item was actually clicked, we want to pass this information to the next activity. To direct the user from one activity to another, Android makes use of the `Intent` class. An `Intent` typically looks something like this:
 
+~~~ java
     Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
     startActivity(intent);
+~~~
 
 It specifies the context where we are coming from, in this case `MainActivity.this` and also tells the intent where to go next, which is the `ProfileActivity.class`. A special thing to pay attention to with an `Intent` is that you still need to *perform* it. Creating an `Intent` object in itself does nothing yet in terms of starting another activity. 
 
 Remember that we made the `Friend` model class implement `Serializable`? This was done so that you can now easily pass `Friend` objects with intents. Adding something to an `Intent` is done with key-value pairs, with the key (which is just a `String`) allowing you to retrieve the value from the intent in the next activity. In our case, the intent might look something like this:
 
+~~~ java
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
         intent.putExtra("clicked_friend", clickedFriend);
         startActivity(intent);
+~~~
 
 We just added the clicked `Friend` object to the intent, so it will be passed on `ProfileActivity` and we can extract it using the key `"clicked_friend"`.
 
 Now, in the `onCreate()` of the second activity, you can simply use `getIntent()` and then extract the value from the intent using the key you provided when you created the intent:
 
+~~~ java
         Intent intent = getIntent();
         Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend_key");
+~~~
 
 Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?). Now that we have access to the `retrievedFriend` variable, we have access to all the information of that particular `Friend` object again, so their name, bio, photo and rating. You can use this information to render the correct things on the screen with the layout we created before. 
 
@@ -277,18 +291,24 @@ Hmm, now that your app is up and running, you must have noticed something. The r
 
 `SharedPreferences` again makes use of key-value pairs, using a `String` as the key and then storing the value with the key as a label, so you can easily retrieve it later. You can access your app's `SharedPreferences` by calling:
 
+~~~ java
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+~~~
 
 You can have multiple `SharedPreferences` files, so you can give individual ones a name as well, we will just call ours `settings`. The `MODE_PRIVATE` bit refers to the access rights of the file: the default mode, where the created file can only be accessed by the calling application and not other applications.
 
 We can now add things to the `SharedPreferences` by calling methods on our variable `prefs`, to generate an `Editor`:
 
+~~~ java
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
+~~~
 
 The `Editor` allows you to edit the file and store values in there. The two lines above can also be simplified to one line where we directly grab the editor:
 
+~~~ java
         SharedPreferences.Editor editor = getSharedPreferences("settings", MODE_PRIVATE).edit();
+~~~
 
 The `editor` variable now allows you to call various methods, like `putInt()`, `putString()` and `putFloat()`, all of which take two arguments, the key under which to store the value (think about what that should probably be in our case), and the value itself. When done adding values to the editor, don't forget to call `editor.apply()` to save the changes. 
 
@@ -299,13 +319,16 @@ Now you need to determine when to store the rating. Chances are the `OnRatingBar
 
 Just storing the data is something, but if we don't do anything with it to restore our rating's state, we might as well do nothing. Your `ProfileActivity` still needs to somehow check whether any rating should be restored, and if so extract it from `SharedPreferences`.
 
+~~~ java
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         String aStoredString = prefs.getString(..., ...);
+~~~
 
 You can access SharedPreferences the same way as when you write data to it. Then, you can use methods like `getString()` to retrieve the data you stored. These methods take two arguments. The first argument is the key under which `SharedPreferences` should look to see if the value is present. This should of course be the same key that you used to store the value. 
 
 The second argument is for the case where there is nothing that belongs to that key: the default value. This allows you to easily check whether there is any saved data, because if getString() (or any of the other methods) returns that default value, it means there was no data in `SharedPreferences` for the supplied key.
 
+~~~ java
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         String aStoredString = prefs.getString("example_key", null);
  
@@ -315,6 +338,7 @@ The second argument is for the case where there is nothing that belongs to that 
         else {
             // there is nothing stored under "example_key"
         }
+~~~
 
 It is entirely possible that there is no rating for some users: if the user opens the app for the first time, none of the users would be rated. So when restoring the rating from `SharedPreferences` this default value can help us check whether there is something to restore, or that the user has simply not been rated yet and the rating bar can stay blank.
 

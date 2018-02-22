@@ -210,7 +210,7 @@ Additionally, because we are using the weight to determine the size relative to 
 
 Our goal is now to have a user click on one of the friends in the grid, and navigate to the second activity. This second activity should, of course, provide details on the friend that was selected, and no one else!
 
-To add a listener for clicks on our `GridView`, we will create our own `OnItemClickListener` class (not to be confused with the `OnClickListener`, since we are really listening to clicks on the separate sub-_items_ here, not clicks on the layout view as a whole). 
+To add a listener for clicks on our `GridView`, we will create our own `OnItemClickListener` class (not to be confused with the `OnClickListener`, since we are really listening to clicks on the separate sub-items here, not clicks on the layout view as a whole). 
 
 1. Go to your `MainActivity` (not the `ProfileActivity`!) code and write a new private inner class called `GridItemClickListener`. **Inner class** means that the class will actually be inside your `MainActivity` class, not in a separate file:
 
@@ -332,7 +332,7 @@ The second argument is for the case where there is nothing that belongs to that 
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         String aStoredString = prefs.getString("example_key", null);
  
-        if(aStoredString != null) {
+        if (aStoredString != null) {
             // we have something stored under "example_key"
         }
         else {

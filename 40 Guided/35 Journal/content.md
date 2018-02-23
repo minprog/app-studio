@@ -42,20 +42,21 @@ Here's a general overview of the app architecture. There will be three activitie
 ![](journal.png)
 
 
-## Creating the user interface
+## Creating the basic user interface
 
-First, we will focus on our `MainActivity` which will contain the list of items and a Floating Action Button. Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this better fits our needs: we only want one container view with the Floating Action Button hovering over it. 
+-   First, we will focus on our `MainActivity` which will contain the list of items and a Floating Action Button. Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this better fits our needs: we only want one container view with the Floating Action Button hovering over it. 
 
-Our journal entries will be contained in a list, so we wil need to add a `ListView`, which can be found under the * Container* tab. Then, add a Floating Action Button which is listed under the *Design* tab. Since the Floating Action Button is now (most probably) hovering in the upper left corner, we still need to add some parameters to snap it to the right position. Use the `layout_gravity` parameter combined with `bottom|end` to attach it to the bottom right corner.
+    Our journal entries will be contained in a list, so we wil need to add a `ListView`, which can be found under the * Container* tab. Then, add a Floating Action Button which is listed under the *Design* tab. Since the Floating Action Button is now (most probably) hovering in the upper left corner, we still need to add some parameters to snap it to the right position. Use the `layout_gravity` parameter combined with `bottom|end` to attach it to the bottom right corner.
 
-The second activity should allow the user to input the contents of the journal entry, so you will need several `EditText` elements and probably a button to allow for submission of the entry. 
+-   The second activity should allow the user to input the contents of the journal entry, so you will need several `EditText` elements and probably a button to allow for submission of the entry. 
 
-Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) called `entry_row.xml` and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
+-   Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) called `entry_row.xml` and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
 
-Finally, our third activity should show the full contents of a journal entry in a visually pleasing way. You can build the layout as you want, but all attributes of the entry should be represented.
+-   Finally, our third activity should show the full contents of a journal entry in a visually pleasing way. You can build the layout as you want, but all attributes of the entry should be represented.
 
 
 ## Handling user-interaction
+
 To handle our user's interactions, we will need to add various listeners to our app. First, add a regular `onClick` listener to the Floating Action Button. Make sure that your listener is not anonymous, but uses its own subclass or is declared via the XML `onClick` attribute. Direct the user to the activity to create a journal entry upon clicking the button.
 
 Create another listener for the confirmation button in this activity, but leave its body empty for now as we do not have our database implemented yet. 

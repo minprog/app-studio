@@ -35,6 +35,12 @@ For this app, we will make use of the [Floating Action Button](https://material.
 
 Your project files should now be visible on Github. If not, ask for help!
 
+## Architecture
+
+Here's a general overview of the app architecture. There will be three activities, as well as a couple of classes that handle database access. Specifically, there's a model class, which represents the core concept of this app: a **journal entry**.
+
+![](journal.png)
+
 
 ## Creating the user interface
 

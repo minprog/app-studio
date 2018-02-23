@@ -80,6 +80,7 @@ Let's now add the listeners needed to handle user interactions. Make sure that y
 
 To hold the data of our journal entries, we will create a new class that represents them. This class will be called `JournalEntry` and should have the following fields:
 
+- `id`
 - `title`
 - `content`
 - `mood`
@@ -172,6 +173,30 @@ The app should now display all example entries from the database!
 
 - Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database instance, and call the `insert` method that we just defined.
 
+Your app should now allow you to insert new entries into the database, which should also show up in your `MainActivity` when you go back to it. 
+
+
+## Write the delete method
+- In your database class, write a method that accepts a `long id` as a parameter. 
+- Using this parameter, call a query that removes the entry with that id from the database. Why do you think we are removing by id and not by title, for example?
+- For Android, delete actions are usually tied to long clicking items. Add code to your `OnItemLongClickListener` class from `MainActivity` that deletes the selected item from the database. If unsure how to retrieve what item was clicked, refer to the section 'Extract what actually was clicked on' from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
+
+
+## Make sure the interface stays up to date
+
+To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something. Since we cannot edit items, this mostly applies to deleting items. Why do we not have to call this method when adding items in this case?
+
+- In `MainActivity`, create a `private` method called `updateData()`.
+
+- You will need access to the database, as well as to the adapter. Add private instance variables to your class: `EntryDatabase db` and `EntryAdapter adapter`.
+
+- In your `onCreate()` you already create an instance of the `EntryDatabase` and of the `EntryAdapter`. Change the code to save these instances to the instance variables that we just created.
+
+> When determining the scope of your variables, always ask yourself if the scope in which they are available matches the scope in which they are needed. While sometimes it's efficient to declare a variable for the whole class to use, it's certainly not always necessary.
+
+- Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
+
+- Call your new method right after calling `delete()` from the `OnItemLongClick` implementation.
 
 
 ## Finishing up

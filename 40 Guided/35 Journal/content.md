@@ -42,29 +42,30 @@ First, we will focus on our `MainActivity` which will contain the list of items 
 
 Our journal entries will be contained in a list, so we wil need to add a `ListView`, which can be found under the * Container* tab. Then, add a FAB which is listed under the *Design* tab. Since the FAB is now (most probably) hovering in the upper left corner, we still need to add some parameters to snap it to the right position. Use the `layout_gravity` parameter combined with `bottom|end` to attach it to the bottom right corner.
 
-Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
-
 The second activity should allow the user to input the contents of the journal entry, so you will need several `EditText` elements and probably a button to allow for submission of the entry. 
 
-- Create third activity
+Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
+
+Finally, our third activity should show the full contents of a journal entry in a visually pleasing way. You can build the layout as you want, but all attributes of the entry should be represented.
+
 
 ## Handling user-interaction
+TODO
 - Create onClickhandler FAB
 - Create onClickListener LV
 - Create onClickListener button
 
 
-
 ## Create the Entry model class
-- TODO
+
+To hold the data of our journal entries, we will create a new Java class that represents them. This Java class will be called `Entry` and should have the fields `title`, `content`, `mood` and `timestamp`. Be sure to also generate a constructor, getters and setters for your class. 
 
 
 ## Adding our database
 
 To store our journal entries, we will make use of a SQLite Database. Luckily, support for SQLite is built into Android Studio. To make use of this functionality we will first need to create our own database class:
 
-- Go to **File** > **New** > **Java Class**.
-- Name the class `EntryDatabase` and fill in the superclass `android.database.sqlite.SQLiteOpenHelper`. Press OK to create the file.
+- Create a new java class and name the class `EntryDatabase` and fill in the superclass `android.database.sqlite.SQLiteOpenHelper`. Press OK to create the file.
 - The file can't compile at this moment, because we haven't provided implementations for the required methods. Press **CTRL-I** to open up the **Implement Methods** dialog. Two methods are already selected: press OK.
 - Finally, we need to create the right constructor for our class. Then press **CTRL-O** to open up the **Override Methods** dialog. Choose the simplest constructor (the topmost) and press OK.
 
@@ -92,20 +93,23 @@ If you are unsure about your query, you can verify it using services like [sqlfi
 
 ### Transform our database into a singleton
 
-We'll now convert the `TodoDatabase` class into a Singleton. This means that only one instance of the class can exist at the same time: there can never be multiple instances of the `EntryDatabase` class. Instead of calling the constructor directly, we ask whether there is currently an instance of `EntryDatabase` that exists. If so, this instance will be returned to us. Only if it does not exist yet, it will be created. 
+We'll now convert the `EntryDatabase` class into a Singleton. This means that only one instance of the class can exist at the same time: there can never be multiple instances of the `EntryDatabase` class. Instead of calling the constructor directly, we ask whether there is currently an instance of `EntryDatabase` that exists. If so, this instance will be returned to us. Only if it does not exist yet, it will be created. 
 
 - First, make the constructor `private` instead of `public`.
-- Then, add a private **static** variable called `instance` of type `TodoDatabase`. This is where the unique instance of the class is stored, once made.
+- Then, add a private **static** variable called `instance` of type `EntryDatabase`. This is where the unique instance of the class is stored, once made.
 - Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters (see [SQLite](https://apps.mprog.nl/android/sqlite)), and storing that in `instance`.
 - To ensure that everything is in order, place the following line at the bottom of your `MainActivity`'s `onCreate()` method:
 
-        TodoDatabase db = TodoDatabase.getInstance(getApplicationContext());
+~~~ java
+        EntryDatabase db = EntryDatabase.getInstance(getApplicationContext());
+~~~
 
 You project should now compile and run successfully, though data is not yet displayed.
 
-## Step 4: Write the select method
+### Retrieving data from our database: write the select method
 
-- Write `selectAll()` in `TodoDatabase`. First, use `getWritableDatabase()` to open up the connection. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
+- Write `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
+
 - Create a new layout `row_todo.xml`, which will be used to render each row in our list view. As such, it needs to contain controls for at least the title of a to-do item, as wel as something to show if the to-do has been completed or not.
 - Create a new class `TodoAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public TodoAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
 - Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.

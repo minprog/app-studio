@@ -165,28 +165,13 @@ The app should now display all example entries from the database!
 ## Write the insert method
 
 - First, link the confirmation button in the `EntryActivity` to a new method called `addEntry` through its onClick attribute. 
-- In the database class, add a public method `insert()` which accepts a title and the completed status for a single to-do item.
+- In the database class, add a public method `insert()` which accepts an `Entry` object as its parameter. 
 - In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
-- Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database object, and call the `insert` method that we just defined.
 
+> The [ContentValues](https://developer.android.com/reference/android/content/ContentValues.html) class offers an easy way to bind values to columns for SQLite. It also prevents user input from directly appearing in the SQL string unescaped and unchecked, making your application less vulnerable to SQL injection.
 
-## Make sure the user interface keeps updated
+- Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database instance, and call the `insert` method that we just defined.
 
-TODO: omdat we vanuit een andere activity entries aanmaken, wordt onCreate sowieso opnieuw gecalld en is deze interface update waarschijnlijk overbodig.
-
-To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something.
-
-- In your activity, create a `private` method called `updateData()`.
-
-- You will need access to the database, as well as to the adapter. Add private instance variables to your class: `EntryDatabase db` and `EntryAdapter adapter`.
-
-- In your `onCreate()` you already create an instance of the `EntryDatabase` and of the `EntryAdapter`. Change the code to save these instances to the instance variables that we just created.
-
-> When determining the scope of your variables, always ask yourself if the scope in which they are available matches the scope in which they are needed. While sometimes it's efficient to declare a variable for the whole class to use, it's certainly not always necessary.
-
-- Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
-
-- Call your new method right after calling `insert()` from the button `onClick` handler, and every time you add a new item, it should be displayed immediately!
 
 
 ## Finishing up
@@ -199,3 +184,4 @@ As always, consider this week's assessment criteria and make sure your app works
 - Make sure the app remembers at which point the user was in the listview, so they don't have to rescroll upon rotation or coming back to the list.
 
 - Allow the user to mark certain entries as 'favorites'.
+

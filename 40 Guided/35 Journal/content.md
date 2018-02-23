@@ -151,7 +151,13 @@ You project should now compile and run successfully, though data is not yet disp
 
 ## Write the select method
 
-- Write a method called `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection with the database. Use the method `rawQuery` from that object to run a `SELECT * FROM entries` query and `return` the `Cursor`.
+- Write a method called `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection with the database. Use the method `rawQuery` from that object to run a `SELECT * FROM entries` query and `return` the `Cursor`. 
+
+The `rawQuery` method takes two arguments, the first one is the query with placeholders, the second a string array with the strings that should go in place of the placeholders:
+
+        rawQuery("SELECT id, example_column FROM table WHERE name = ? AND example_column = ?", new String[] {"2", "column_value"});
+
+Of course since we are selecting everything, we have no placeholders or arguments, so the second argument of `rawQuery` can be `null`!
 
 - Use your custom `entry_row.xml` and create a new class `EntryAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public EntryAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
 

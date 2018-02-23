@@ -67,12 +67,13 @@ Here's a general overview of the app architecture. There will be three activitie
 
 ## Handling user-interaction
 
-To handle our user's interactions, we will need to add various listeners to our app. First, add a regular `onClick` listener to the Floating Action Button. Make sure that your listener is not anonymous, but uses its own subclass or is declared via the XML `onClick` attribute. Direct the user to the activity to create a journal entry upon clicking the button.
+Let's now add the listeners needed to handle user interactions. Make sure that your listeners are never anonymous. Either have them use their own inner class (remember how?), or simply define a method to be called via the `onClick` attribute of the layout.
 
-Create another listener for the confirmation button in this activity, but leave its body empty for now as we do not have our database implemented yet. 
+-   Add a regular `onClick` listener to the floating action button. Use an `Intent` to direct the user to another activity to create a journal entry.
 
-Finally, add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener` by creating private inner classes (remember how?). Again you can leave the actual functionality of the listeners for now, as we will implement this later on, when our database is all set up!
+-   Create another listener for the confirmation button in this activity, but leave its body empty for now as we do not have our database implemented yet.
 
+-   Add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener`. Again you can leave the actual functionality of the listeners blank for now, as we will implement this later on, when our database is all set up!
 
 ## Model the journal entries
 

@@ -75,6 +75,7 @@ Let's now add the listeners needed to handle user interactions. Make sure that y
 
 -   Add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener`. Again you can leave the actual functionality of the listeners blank for now, as we will implement this later on, when our database is all set up!
 
+> Note that the method implemented by `OnItemLongClickListener` returns a `boolean`. This boolean indicates whether any further actions should be taken on this layout item after the long click, in other words, whether the regular click should trigger as well. Since we do not want this, we should return `true` at the end of the method implementation, indicating the click was handled by the `onItemLongClick` method and no further action is needed.
 
 ## Model the journal entries
 
@@ -87,6 +88,8 @@ To hold the data of our journal entries, we will create a new class that represe
 - `timestamp`
 
 Also generate a constructor, getters and setters for your class using **Cmd+N**/**Alt+Ins**. (For more detailed instructions, have a look at "Modeling friends" in the [Friendsr](https://apps.mprog.nl/guided/friendsr) project.)
+
+Also, since we want to pass instances of this class using an `Intent`, we want to make the class `implement Serializable` to facilitate this. 
 
 
 ## Creating a database helper
@@ -177,6 +180,7 @@ Your app should now allow you to insert new entries into the database, which sho
 
 
 ## Write the delete method
+
 - In your database class, write a method that accepts a `long id` as a parameter. 
 - Using this parameter, call a query that removes the entry with that id from the database. Why do you think we are removing by id and not by title, for example?
 - For Android, delete actions are usually tied to long clicking items. Add code to your `OnItemLongClickListener` class from `MainActivity` that deletes the selected item from the database. If unsure how to retrieve what item was clicked, refer to the section 'Extract what actually was clicked on' from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
@@ -196,8 +200,16 @@ To make sure that the list view always displays the most up-to-date information 
 
 - Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
 
-- Call your new method right after calling `delete()` from the `OnItemLongClick` implementation.
+- Call your new method right after calling `delete()` from the `OnItemLongClick` implementation, so the new list is rendered, without the deleted item.
 
+
+## Accessing a journal entry's details
+
+Finally, we want to be able to access the content of a journal entry, and not just its title, timestamp and associated mood. 
+
+- In the `onItemClick` of your `ListView`, write code that fires an `Intent` to the third activity that shows the entry details.
+- Add the instance of `Entry` that was clicked on to the intent using a `Bundle`. If unsure how to do this, again refer to the 'Extract what actually was clicked on' section from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
+- In the third activity, retrieve the `Intent` and the associated `Entry` object and show the contents of the entry in the appropriate views.
 
 ## Finishing up
 

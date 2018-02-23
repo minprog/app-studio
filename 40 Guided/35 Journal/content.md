@@ -65,7 +65,14 @@ Finally, add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLo
 
 ## Create the Entry model class
 
-To hold the data of our journal entries, we will create a new Java class that represents them. This Java class will be called `Entry` and should have the fields `title`, `content`, `mood` and `timestamp`. Be sure to also generate a constructor, getters and setters for your class. 
+To hold the data of our journal entries, we will create a new class that represents them. This class will be called `JournalEntry` and should have the following fields:
+
+- `title`
+- `content`
+- `mood`
+- `timestamp`
+
+Also generate a constructor, getters and setters for your class using **Cmd+N**/**Alt+Ins**. (For more detailed instructions, have a look at "Modeling friends" in the [Friendsr](https://apps.mprog.nl/guided/friendsr) project.)
 
 
 ## Adding our database

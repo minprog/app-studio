@@ -75,17 +75,21 @@ Let's now add the listeners needed to handle user interactions. Make sure that y
 
 -   Add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener`. Again you can leave the actual functionality of the listeners blank for now, as we will implement this later on, when our database is all set up!
 
+> Note that the method implemented by `OnItemLongClickListener` returns a `boolean`. This boolean indicates whether any further actions should be taken on this layout item after the long click, in other words, whether the regular click should trigger as well. Since we do not want this, we should return `true` at the end of the method implementation, indicating the click was handled by the `onItemLongClick` method and no further action is needed.
 
 ## Model the journal entries
 
 To hold the data of our journal entries, we will create a new class that represents them. This class will be called `JournalEntry` and should have the following fields:
 
+- `id`
 - `title`
 - `content`
 - `mood`
 - `timestamp`
 
 Also generate a constructor, getters and setters for your class using **Cmd+N**/**Alt+Ins**. (For more detailed instructions, have a look at "Modeling friends" in the [Friendsr](https://apps.mprog.nl/guided/friendsr) project.)
+
+Also, since we want to pass instances of this class using an `Intent`, we want to make the class `implement Serializable` to facilitate this. 
 
 
 ## Creating a database helper
@@ -165,18 +169,28 @@ The app should now display all example entries from the database!
 ## Write the insert method
 
 - First, link the confirmation button in the `EntryActivity` to a new method called `addEntry` through its onClick attribute. 
-- In the database class, add a public method `insert()` which accepts a title and the completed status for a single to-do item.
+- In the database class, add a public method `insert()` which accepts an `Entry` object as its parameter. 
 - In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
-- Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database object, and call the `insert` method that we just defined.
+
+> The [ContentValues](https://developer.android.com/reference/android/content/ContentValues.html) class offers an easy way to bind values to columns for SQLite. It also prevents user input from directly appearing in the SQL string unescaped and unchecked, making your application less vulnerable to SQL injection.
+
+- Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database instance, and call the `insert` method that we just defined.
+
+Your app should now allow you to insert new entries into the database, which should also show up in your `MainActivity` when you go back to it. 
 
 
-## Make sure the user interface keeps updated
+## Write the delete method
 
-TODO: omdat we vanuit een andere activity entries aanmaken, wordt onCreate sowieso opnieuw gecalld en is deze interface update waarschijnlijk overbodig.
+- In your database class, write a method that accepts a `long id` as a parameter. 
+- Using this parameter, call a query that removes the entry with that id from the database. Why do you think we are removing by id and not by title, for example?
+- For Android, delete actions are usually tied to long clicking items. Add code to your `OnItemLongClickListener` class from `MainActivity` that deletes the selected item from the database. If unsure how to retrieve what item was clicked, refer to the section 'Extract what actually was clicked on' from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
 
-To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something.
 
-- In your activity, create a `private` method called `updateData()`.
+## Make sure the interface stays up to date
+
+To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something. Since we cannot edit items, this mostly applies to deleting items. Why do we not have to call this method when adding items in this case?
+
+- In `MainActivity`, create a `private` method called `updateData()`.
 
 - You will need access to the database, as well as to the adapter. Add private instance variables to your class: `EntryDatabase db` and `EntryAdapter adapter`.
 
@@ -186,8 +200,16 @@ To make sure that the list view always displays the most up-to-date information 
 
 - Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
 
-- Call your new method right after calling `insert()` from the button `onClick` handler, and every time you add a new item, it should be displayed immediately!
+- Call your new method right after calling `delete()` from the `OnItemLongClick` implementation, so the new list is rendered, without the deleted item.
 
+
+## Accessing a journal entry's details
+
+Finally, we want to be able to access the content of a journal entry, and not just its title, timestamp and associated mood. 
+
+- In the `onItemClick` of your `ListView`, write code that fires an `Intent` to the third activity that shows the entry details.
+- Add the instance of `Entry` that was clicked on to the intent using a `Bundle`. If unsure how to do this, again refer to the 'Extract what actually was clicked on' section from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
+- In the third activity, retrieve the `Intent` and the associated `Entry` object and show the contents of the entry in the appropriate views.
 
 ## Finishing up
 
@@ -199,3 +221,4 @@ As always, consider this week's assessment criteria and make sure your app works
 - Make sure the app remembers at which point the user was in the listview, so they don't have to rescroll upon rotation or coming back to the list.
 
 - Allow the user to mark certain entries as 'favorites'.
+

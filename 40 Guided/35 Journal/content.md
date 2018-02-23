@@ -63,7 +63,7 @@ Create another listener for the confirmation button in this activity, but leave 
 Finally, add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener` by creating private inner classes (remember how?). Again you can leave the actual functionality of the listeners for now, as we will implement this later on, when our database is all set up!
 
 
-## Create the Entry model class
+## Model the journal entries
 
 To hold the data of our journal entries, we will create a new class that represents them. This class will be called `JournalEntry` and should have the following fields:
 

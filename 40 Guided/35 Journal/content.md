@@ -38,22 +38,23 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## Creating the user interface
 
-First, we will focus on our `MainActivity` which will contain the list of items and a Floating Action Button (from hereon shortened as FAB). Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this better fits our needs: we only want one container view with the FAB hovering over it. 
+First, we will focus on our `MainActivity` which will contain the list of items and a Floating Action Button. Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this better fits our needs: we only want one container view with the Floating Action Button hovering over it. 
 
-Our journal entries will be contained in a list, so we wil need to add a `ListView`, which can be found under the * Container* tab. Then, add a FAB which is listed under the *Design* tab. Since the FAB is now (most probably) hovering in the upper left corner, we still need to add some parameters to snap it to the right position. Use the `layout_gravity` parameter combined with `bottom|end` to attach it to the bottom right corner.
+Our journal entries will be contained in a list, so we wil need to add a `ListView`, which can be found under the * Container* tab. Then, add a Floating Action Button which is listed under the *Design* tab. Since the Floating Action Button is now (most probably) hovering in the upper left corner, we still need to add some parameters to snap it to the right position. Use the `layout_gravity` parameter combined with `bottom|end` to attach it to the bottom right corner.
 
 The second activity should allow the user to input the contents of the journal entry, so you will need several `EditText` elements and probably a button to allow for submission of the entry. 
 
-Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
+Since we also need to show items in our `ListView`, create a new layout resource file (remember how?) called `entry_row.xml` and add the views that will need to be shown for each journal entry. Think about what your list should show. Probably at least the title of the journal entry, paired with the image/emoji representing your mood at the time of creating the entry, and of course a timestamp. For showing the contents of the journal entry, we will use a separate activity. 
 
 Finally, our third activity should show the full contents of a journal entry in a visually pleasing way. You can build the layout as you want, but all attributes of the entry should be represented.
 
 
 ## Handling user-interaction
-TODO
-- Create onClickhandler FAB
-- Create onClickListener LV
-- Create onClickListener button
+To handle our user's interactions, we will need to add various listeners to our app. First, add a regular `onClick` listener to the Floating Action Button. Make sure that your listener is not anonymous, but uses its own subclass or is declared via the XML `onClick` attribute. Direct the user to the activity to create a journal entry upon clicking the button.
+
+Create another listener for the confirmation button in this activity, but leave its body empty for now as we do not have our database implemented yet. 
+
+Finally, add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener` by creating private inner classes (remember how?). Again you can leave the actual functionality of the listeners for now, as we will implement this later on, when our database is all set up!
 
 
 ## Create the Entry model class
@@ -77,10 +78,11 @@ We now have the very basic functionality of our database class, but we still nee
 | 2   | ...   | ...     | ...  | ...       |
 | 3   | ...   | ...     | ...  | ...       |
 
-
 Now that we know what our database structure should look like, we can create the appropriate SQL query to generate the table. A proper SQL query to create a table should contain the name of the table and the names and [data types](https://www.sqlite.org/datatype3.html) of the columns in the table. 
 
         create table TABLE_NAME (COLUMN1_NAME COLUMN1_TYPE, COLUMN2_NAME COLUMN2_TYPE, COLUMN3_NAME COLUMN3_TYPE);
+
+Since we want to keep track of a timestamp, it's practical to make our table automatically generate a timestamp for each journal entry when it's inserted into the database. It should also auto-increment the entry `_id`, since each row should have a unique identifier to be able to retrieve it. 
 
 > Note that due to the structure of the query, you should avoid spaces in your column names. Protected words that denote data types or SQL keywords (such as JOIN, ADD, ACTION, CROSS) should also be avoided as column names, as these might cause your query to be wrongly interpreted. 
 
@@ -90,8 +92,9 @@ If you are unsure about your query, you can verify it using services like [sqlfi
 
 - Implement `onUpgrade()`: write code that drops the entries table (if it exists) and recreates it by calling `onCreate()`. This is so we can start with a clean slate in case we want to, or if we want to change the schema (table structure) of our database later on. 
 
+- Finally, to your `onCreate()`, add some code that creates sample items, so that we can use these to test. 
 
-### Transform our database into a singleton
+## Transform our database into a singleton
 
 We'll now convert the `EntryDatabase` class into a Singleton. This means that only one instance of the class can exist at the same time: there can never be multiple instances of the `EntryDatabase` class. Instead of calling the constructor directly, we ask whether there is currently an instance of `EntryDatabase` that exists. If so, this instance will be returned to us. Only if it does not exist yet, it will be created. 
 
@@ -106,40 +109,43 @@ We'll now convert the `EntryDatabase` class into a Singleton. This means that on
 
 You project should now compile and run successfully, though data is not yet displayed.
 
-### Retrieving data from our database: write the select method
+##  Write the select method
 
-- Write `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
-
-- Create a new layout `row_todo.xml`, which will be used to render each row in our list view. As such, it needs to contain controls for at least the title of a to-do item, as wel as something to show if the to-do has been completed or not.
-- Create a new class `TodoAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public TodoAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
+- Write a method called `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection with the database. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
+- Use your custom `entry_row.xml` and create a new class `EntryAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public EntryAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
 - Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
      - Use `Cursor.getInt(columnIndex)` to retrieve the value of one column as an integer.
      - Use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
      - Call `view.findViewById()` to get references to the controls in the row layout.
-- In the `onCreate()` of the `MainActivity`, use the `TodoDatabase` to get all records from the database, make a new `TodoAdapter` and link the `ListView` to the adapter.
+- In the `onCreate()` of the `MainActivity`, use the `EntryDatabase` to get all records from the database, make a new `EntryAdapter` and link the `ListView` to the adapter.
 
-The app should now display all example to-dos from the database!
+The app should now display all example entries from the database!
 
-## Step 5: Write the insert method
+## Write the insert method
 
-- First, link the button in the `MainActivity` to a new method called `addItem`.
+- First, link the confirmation button in the `EntryActivity` to a new method called `addEntry` through its onClick attribute. 
 - In the database class, add a public method `insert()` which accepts a title and the completed status for a single to-do item.
-- In that method, open a connection to the database (see step 4), and create a new `ContentValues` object. Use the `put` method to add values for `title` and `completed`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`).
-- Now go back to the activity, use `TodoDatabase.getInstance()` to get to the database object, and call the `insert` method that we just defined.
+- In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
+- Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database object, and call the `insert` method that we just defined.
 
-## Step 6: Make sure the user interface keeps updated
+## Make sure the user interface keeps updated
+TODO: omdat we vanuit een andere activity entries aanmaken, wordt onCreate sowieso opnieuw gecalld en is deze interface update waarschijnlijk overbodig.
 
 To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something.
 
 - In your activity, create a `private` method called `updateData()`.
-- You will need access to the database, as well as to the adapter. Add private instance variables to your class: `TodoDatabase db` and `TodoAdapter adapter`.
-- In your `onCreate()` you already create an instance of the `TodoDatabase` and of the `TodoAdapter`. Change the code to save these instances to the instance variables that we just created.
+- You will need access to the database, as well as to the adapter. Add private instance variables to your class: `EntryDatabase db` and `EntryAdapter adapter`.
+- In your `onCreate()` you already create an instance of the `EntryDatabase` and of the `EntryAdapter`. Change the code to save these instances to the instance variables that we just created.
+
+> When determining the scope of your variables, always ask yourself if the scope in which they are available matches the scope in which they are needed. While sometimes it's efficient to declare a variable for the whole class to use, it's certainly not always necessary.
+
 - Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
 - Call your new method right after calling `insert()` from the button `onClick` handler, and every time you add a new item, it should be displayed immediately!
 
-## Step 7: Write the update method
+## Write the update method
+TODO: we doen nu niet echt iets met update. Moeten mensen in staat zijn om hun entries te veranderen?
 
-- Add an `OnItemClickListener` private subclass to your `MainActivity` (see last week's explanation on [private listener classes](https://apps.mprog.nl/android/listeners)).
+- Add an `OnItemClickListener` private subclass to your `MainActivity` (see the explanation on [private listener classes](https://apps.mprog.nl/android/listeners)).
 - In `onCreate()`, add a new instance of your subclass to the `ListView` via `setOnItemClickListener()`.
 - In the database class, add a public method `update()` which accepts a `long id` and an updated completed status for some item.
 - In the `update()` method, get a reference to the writable database. Create a `ContentValues` object that contains the new value for `completed`. Then call `update()` on the database. Tip: use the `whereClause` to specify which record you want to update: `"_id = " + id`.

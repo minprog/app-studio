@@ -65,7 +65,7 @@ Here's a general overview of the app architecture. There will be three activitie
 -   The third activity, called `DetailActivity`, should show the full contents of a journal entry in a visually pleasing way. Build the layout as you like, as long as all four attributes of the entry are represented on-screen.
 
 
-## Handling user-interaction
+## Handling user interaction
 
 Let's now add the listeners needed to handle user interactions. Make sure that your listeners are never anonymous. Either have them use their own inner class (remember how?), or simply define a method to be called via the `onClick` attribute of the layout.
 
@@ -74,6 +74,7 @@ Let's now add the listeners needed to handle user interactions. Make sure that y
 -   Create another listener for the confirmation button in this activity, but leave its body empty for now as we do not have our database implemented yet.
 
 -   Add an `OnItemClickListener` to the `ListView`, as well as an `OnItemLongClickListener`. Again you can leave the actual functionality of the listeners blank for now, as we will implement this later on, when our database is all set up!
+
 
 ## Model the journal entries
 
@@ -87,13 +88,18 @@ To hold the data of our journal entries, we will create a new class that represe
 Also generate a constructor, getters and setters for your class using **Cmd+N**/**Alt+Ins**. (For more detailed instructions, have a look at "Modeling friends" in the [Friendsr](https://apps.mprog.nl/guided/friendsr) project.)
 
 
-## Adding our database
+## Creating a database helper
 
-To store our journal entries, we will make use of a SQLite Database. Luckily, support for SQLite is built into Android Studio. To make use of this functionality we will first need to create our own database class:
+To store our journal entries, we will make use of a SQLite database. Let's create a database helper class for this purpose:
 
-- Create a new java class and name the class `EntryDatabase` and fill in the superclass `android.database.sqlite.SQLiteOpenHelper`. Press OK to create the file.
-- The file can't compile at this moment, because we haven't provided implementations for the required methods. Press **CTRL-I** to open up the **Implement Methods** dialog. Two methods are already selected: press OK.
-- Finally, we need to create the right constructor for our class. Then press **CTRL-O** to open up the **Override Methods** dialog. Choose the simplest constructor (the topmost) and press OK.
+-   Create a new Java class named `EntryDatabase` using the superclass `android.database.sqlite.SQLiteOpenHelper`. This superclass provides a lot of database functionality, but we will need to provide some, too.
+
+-   The file will not compile currently, because we haven't provided implementations for all required methods. Press **CTRL-I** to open up the **Implement Methods** dialog. Two methods are already selected: press OK to add them both.
+
+-   Finally, we need to create the right constructor for our class. Then press **CTRL-O** to open up the **Override Methods** dialog. Choose the simplest constructor (the topmost) and press OK to create it.
+
+
+## Writing database creation methods
 
 We now have the very basic functionality of our database class, but we still need to define what `onCreate()` will do. Since we are going to store our `Entry` objects in the database, we need a table that represents these fields accurately. Our table should look like the example below, with columns that represent each field of our `Entry` model.
 
@@ -119,14 +125,18 @@ If you are unsure about your query, you can verify it using services like [sqlfi
 
 - Finally, to your `onCreate()`, add some code that creates sample items, so that we can use these to test. 
 
-## Transform our database into a singleton
+
+## Transform the helper into a singleton
 
 We'll now convert the `EntryDatabase` class into a Singleton. This means that only one instance of the class can exist at the same time: there can never be multiple instances of the `EntryDatabase` class. Instead of calling the constructor directly, we ask whether there is currently an instance of `EntryDatabase` that exists. If so, this instance will be returned to us. Only if it does not exist yet, it will be created. 
 
-- First, make the constructor `private` instead of `public`.
-- Then, add a private **static** variable called `instance` of type `EntryDatabase`. This is where the unique instance of the class is stored, once made.
-- Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters (see [SQLite](https://apps.mprog.nl/android/sqlite)), and storing that in `instance`.
-- To ensure that everything is in order, place the following line at the bottom of your `MainActivity`'s `onCreate()` method:
+-   First, make the constructor `private` instead of `public`.
+
+-   Then, add a private **static** variable called `instance` of type `EntryDatabase`. This is where the unique instance of the class is stored, once made.
+
+-   Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters (see [SQLite](https://apps.mprog.nl/android/sqlite)), and storing that in `instance`.
+
+-   To ensure that everything is in order, place the following line at the bottom of your `MainActivity`'s `onCreate()` method:
 
 ~~~ java
         EntryDatabase db = EntryDatabase.getInstance(getApplicationContext());
@@ -134,17 +144,23 @@ We'll now convert the `EntryDatabase` class into a Singleton. This means that on
 
 You project should now compile and run successfully, though data is not yet displayed.
 
-##  Write the select method
+
+## Write the select method
 
 - Write a method called `selectAll()` in `EntryDatabase`. First, use `getWritableDatabase()` to open up the connection with the database. Use the method `rawQuery` from that object to run a `SELECT * FROM todos` query and `return` the `Cursor`.
+
 - Use your custom `entry_row.xml` and create a new class `EntryAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public EntryAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
+
 - Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
+
      - Use `Cursor.getInt(columnIndex)` to retrieve the value of one column as an integer.
      - Use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
      - Call `view.findViewById()` to get references to the controls in the row layout.
+
 - In the `onCreate()` of the `MainActivity`, use the `EntryDatabase` to get all records from the database, make a new `EntryAdapter` and link the `ListView` to the adapter.
 
 The app should now display all example entries from the database!
+
 
 ## Write the insert method
 
@@ -153,33 +169,24 @@ The app should now display all example entries from the database!
 - In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
 - Now go back to the activity, use `EntryDatabase.getInstance()` to get to the database object, and call the `insert` method that we just defined.
 
+
 ## Make sure the user interface keeps updated
+
 TODO: omdat we vanuit een andere activity entries aanmaken, wordt onCreate sowieso opnieuw gecalld en is deze interface update waarschijnlijk overbodig.
 
 To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something.
 
 - In your activity, create a `private` method called `updateData()`.
+
 - You will need access to the database, as well as to the adapter. Add private instance variables to your class: `EntryDatabase db` and `EntryAdapter adapter`.
+
 - In your `onCreate()` you already create an instance of the `EntryDatabase` and of the `EntryAdapter`. Change the code to save these instances to the instance variables that we just created.
 
 > When determining the scope of your variables, always ask yourself if the scope in which they are available matches the scope in which they are needed. While sometimes it's efficient to declare a variable for the whole class to use, it's certainly not always necessary.
 
 - Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
+
 - Call your new method right after calling `insert()` from the button `onClick` handler, and every time you add a new item, it should be displayed immediately!
-
-## Write the update method
-TODO: we doen nu niet echt iets met update. Moeten mensen in staat zijn om hun entries te veranderen?
-
-- Add an `OnItemClickListener` private subclass to your `MainActivity` (see the explanation on [private listener classes](https://apps.mprog.nl/android/listeners)).
-- In `onCreate()`, add a new instance of your subclass to the `ListView` via `setOnItemClickListener()`.
-- In the database class, add a public method `update()` which accepts a `long id` and an updated completed status for some item.
-- In the `update()` method, get a reference to the writable database. Create a `ContentValues` object that contains the new value for `completed`. Then call `update()` on the database. Tip: use the `whereClause` to specify which record you want to update: `"_id = " + id`.
-- In your `ItemClickListener`, call your new `update()` method.
-
-
-
-
-
 
 
 ## Finishing up
@@ -188,5 +195,7 @@ As always, consider this week's assessment criteria and make sure your app works
 
 
 ## Some ideas
+
 - Make sure the app remembers at which point the user was in the listview, so they don't have to rescroll upon rotation or coming back to the list.
+
 - Allow the user to mark certain entries as 'favorites'.

@@ -194,7 +194,7 @@ Your app should now allow you to insert new entries into the database, which sho
 
 ## Make sure the interface stays up to date
 
-To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something. Since we cannot edit items, this mostly applies to deleting items. Why do we not have to call this method when adding items in this case?
+To make sure that the list view always displays the most up-to-date information from the database, we are going to update it every time we change something. Since we cannot edit items, this mostly applies to deleting and adding items. 
 
 - In `MainActivity`, create a `private` method called `updateData()`.
 
@@ -204,9 +204,11 @@ To make sure that the list view always displays the most up-to-date information 
 
 > When determining the scope of your variables, always ask yourself if the scope in which they are available matches the scope in which they are needed. While sometimes it's efficient to declare a variable for the whole class to use, it's certainly not always necessary.
 
-- Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you dit in `onCreate()`.
+- Now we can write the body for the method `updateData()`. You can use the method `swapCursor()` on the adapter to put in a new cursor for the updated data. Where do you get that new cursor? Just call `selectAll()` on the database again, as you did in `onCreate()`.
 
 - Call your new method right after calling `delete()` from the `OnItemLongClick` implementation, so the new list is rendered, without the deleted item.
+
+- When adding items, we are coming back from the previous activity, so we probably need to do something in the `MainActivity`'s `onResume()`!
 
 
 ## Accessing a journal entry's details

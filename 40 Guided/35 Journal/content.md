@@ -191,6 +191,8 @@ Your app should now allow you to insert new entries into the database, which sho
 - Using this parameter, call a query that removes the entry with that id from the database. Why do you think we are removing by id and not by title, for example?
 - For Android, delete actions are usually tied to long clicking items. Add code to your `OnItemLongClickListener` class from `MainActivity` that deletes the selected item from the database. If unsure how to retrieve what item was clicked, refer to the section 'Extract what actually was clicked on' from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
 
+Since we have a list of `Cursor` objects in our adapter, the item returned by `getItemAtPosition` is of the type `Cursor`. Then, when you have the cursor object, you can extract the values of the columns like you did in the `bindView()` method of your adapter. 
+
 
 ## Make sure the interface stays up to date
 

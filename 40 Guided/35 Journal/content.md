@@ -219,7 +219,9 @@ Finally, we want to be able to access the content of a journal entry, and not ju
 
 ## Finishing up
 
-As always, consider this week's assessment criteria and make sure your app works well and the code looks nice.
+- Have a look at the class diagram at the top of this assignment. Are all classes present in your project? What's the difference?
+
+- As always, consider this week's assessment criteria and make sure your app works well and the code looks nice.
 
 
 ## Some ideas

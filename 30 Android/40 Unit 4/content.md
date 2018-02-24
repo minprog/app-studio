@@ -27,11 +27,9 @@ We haven't spent too much time on writing better code, but as Android projects a
 
 ## Project
 
-You can choose between two projects:
+There's only one project this week:
 
 - **Guided project: [Journal](/guided/journal)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
-
-- **Unguided project: [Mad Libs](/projects/mad-libs)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
 
 
 ## Getting credit

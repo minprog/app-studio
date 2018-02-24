@@ -234,3 +234,4 @@ Finally, we want to be able to access the content of a journal entry, and not ju
 
 - Allow the user to mark certain entries as 'favorites'.
 
+- Implement state restoration in the other activities as well, so that the selected mood/emoji and contents don't disappear upon rotation or leaving the app.

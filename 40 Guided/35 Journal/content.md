@@ -46,7 +46,9 @@ Here's a general overview of the app architecture. There will be three activitie
 
 -   `MainActivity` will contain the list of items and a floating action button.
 
-    -   Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this allows us to add the few components we need and position those in a very simple way.
+    -   Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this allows us to add the few components we need and position those in a very simple way. 
+
+You might have to add a dependency to your `build.gradle` (Module: app) file located in your Gradle Scripts folder in order to be able to use the `CoordinatorLayout`. At the bottom of the `build.gradle` (Module: app) file, in the `dependencies` section, add: `compile 'com.android.support:design:26.1.0'` and rebuild your project. 
 
     -   Our journal entries will be contained in a list, so add a `ListView`, to be found under the **Container** section of the palette.
     

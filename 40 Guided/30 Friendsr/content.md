@@ -47,6 +47,12 @@ The ratings we give to each of the app's profile's will be stored using `SharedP
 Your project files should now be visible on Github. If not, ask for help!
 
 
+## App architecture
+
+
+![](friendsr.png)
+
+
 ## First Activity: Creating the user interface
 
 Let's create the basic UI that we should see when we open the app first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridView` to show all of our users on a grid. 

@@ -5,12 +5,14 @@
 
 - Practice with user interface design.
 - Practice with presenting information in lists.
+- Learn to use an `interface` to perform a callback.
+- Practice using `Volley`.
 - Practice with online APIs with JSON.
 
 
 ## Background
 
-Create an app that will help users look at a restaurant's menu and compose an order of items, as well as allow them to "submit" the order and receive an estimated waiting time for this order. Of course, they must be able to view the price of items, the total price of the order and be able to remove items from the order as well! All of this should be done using an elegant and simple user interface. Below you will find an idea of how this could look.
+Create an app that will help users look at a restaurant's menu and view the details of the items in the menu. Of course, they must be able to view the price of items, the description and an image as well, all of which should be retrieved from an API. In order to communicate elegantly with the API, the code to do this will be contained in separate classes. This way the code that handles the UI will be separate from the code that retrieves data from the API. 
 
 ![Restaurant App](app.png)
 
@@ -31,7 +33,7 @@ Tip: try the API in your webbrowser. Enter the address of the `categories` endpo
 
 ## Getting started
 
-1.  Create a new Android studio project called **Journal**, using these settings:
+1.  Create a new Android studio project called **Restaurant**, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
     - Start with an Empty Activity which is called `CategoriesActivity` 
     - Leave all other settings unchanged
@@ -53,38 +55,14 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## Architecture
 
-Here's a general overview of the app architecture. There will be three activities, that all make a connection to our online API. There's also a model class for menu items, and an adapter for displaying those on the menu screen.
+Here's a general overview of the app architecture. There will be three activities, two of which make a connection to the online API. There's also a model class for menu items, and an adapter for displaying those on the menu screen.
 
 ![](restaurant-arch.png)
 
 
-## Functional requirements
-
-Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
-
-- Your app should somehow display to the user the current amount of items in the order.
-
-- Your app should persist the list of dishes in the order, even when quitting and re-opening the app.
-
-
-## Technical requirements
-
-- The app must properly display on devices of various dimensions.
-
-- The app must properly support rotation of the user interface (no data loss).
-
-- The app must use the concepts from the "Preparation" section, above.
-
-- The app should use standard `ListViews` combined with an adapter.
-
-- The app's back navigation should always be simple.
-
-- `onClick` and similar listeners may not be "anonymous".
-
-
 ## 1. Showing categories
 
-- First, add a simple List View to your `CategoriesActivity` user interface. Make sure it is well-positioned.
+- First, add a simple ListView to your `CategoriesActivity` user interface. Make sure it is well-positioned.
 
 - Next, create a new class called `CategoriesRequest`, which will load the categories from the server.
 
@@ -97,18 +75,47 @@ Your task is to build an app according to the description above. On top of that,
                 void gotCategoriesError(String message);
             }
 
-    - public void getCategories(Callback activity)
+- Define a method that is called `public void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
 
-        - new `RequestQueue` with the context
+- Within this method, use [`Volley`](https://apps.mprog.nl/android/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
 
-        - new `JsonObjectRequest` with the URL
+        RequestQueue queue = Volley.newRequestQueue(context);
 
-    - **CTRL-O**, onResponse, onErrorResponse
+- Then we will want to create a `JsonObjectRequest`, since the data we want from the API comes in the shape of a JSON object. This can be done through the following lines of code:
 
-    - `onResponse`: je zie in response een array met naam `"categories"`, maak een loop om de namen van deze categories in een `ArrayList<String>` te zetten. Roep `delegate.gotCategories` aan.
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(..., ..., ..., ...);
+        queue.add(jsonObjectRequest);
 
-    - Catch de exception: als error, roep `delegate.gotCategoriesError` aan met `error.getMessage()`.
+The `JsonObjectRequest` takes 4 arguments: the url that the request should be submitted to, a JSON object that should be added to the API call (if any, so this can be null), and two listeners. Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively. 
 
+- To add functionality to these listeners, make your activity implement them:
+        public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
+
+- Use `CTRL + I` to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
+
+- This also means that in your code to generate the `JsonObjectRequest` you can pass `this` (referring to the activity) as the listeners needed for 3rd and 4th argument.
+
+Now that the base code for the listener functionality is present, we still need to actually do something when we receive a response from the API. In the `onResponse` method, we will want to transform the `JSONObject` in our response to an `ArrayList` that holds elements of the `String` type. 
+
+- Look at the formatting of your response (remember you can request the same JSON output in your browser) and create a loop that will extract the categories present in the response. Since they are in a JSON array, chances are you want to use `getJSONArray()` to grab that array.
+
+> Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can always use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
+
+- Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill the `ArrayList<String>` with these items. 
+
+- When the `ArrayList` has been filled, use the reference to the activity that we received earlier as an argument of `getCategories(Callback activity)` to call the method `gotCategories` and pass the list that you just made as an argument. This way the activity will also have access to the list, but only when it's certain that the API call has finished and the list is ready!
+
+As of now, we only report back to the calling activity when we succesfully retrieve data from the API, but this could very well go wrong at some point. It might be tempting to do nothing at all with our `onErrorResponse` method, but it's bad practice to ignore errors and exceptions! 
+
+- In the `onErrorResponse` method, use the reference to the activity to call the other method defined in the interface: `gotCategoriesError`. 
+
+- Since we want to know what the error was, we will pass the contents of the error as a string back to the activity through `gotCategoriesError`. Since the `onErrorResponse` method receives the error that caused the request to fail as its argument, we can use `error.getMessage()` to get these contents. 
+
+> When handling exceptions in apps, it's good to let the user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong is frustrating to use. 
+
+
+
+TODO
 - Terug naar de activity. Voeg `implements CategoriesRequest.Callback` toe. **CTRL-O**. Voeg `gotCategories` en `gotCategoriesError` toe (helemaal onderaan).
 
     - In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).

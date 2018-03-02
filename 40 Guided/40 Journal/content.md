@@ -174,7 +174,7 @@ The app should now display all example entries from the database!
 
 ## Write the insert method
 
-- First, link the confirmation button in the `EntryActivity` to a new method called `addEntry` through its onClick attribute. 
+- First, link the confirmation button in the `InputActivity` to a new method called `addEntry` through its onClick attribute. 
 - In the database class, add a public method `insert()` which accepts an `Entry` object as its parameter. 
 - In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
 

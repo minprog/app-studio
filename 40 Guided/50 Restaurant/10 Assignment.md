@@ -33,10 +33,10 @@ Tip: try the API in your webbrowser. Enter the address of the `categories` endpo
 
 1.  Create a new Android studio project called **Journal**, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
-    - Start with an Empty Activity which is called `MainActivity`
+    - Start with an Empty Activity which is called `CategoriesActivity` 
     - Leave all other settings unchanged
 
-2.  Create a new, empty repository on the Github website. Name your repository `Journal`.
+2.  Create a new, empty repository on the Github website. Name your repository `Restaurant`.
 
 3.  Now, add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 
@@ -53,7 +53,7 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## Architecture
 
-Here's a general overview of the app architecture. There will be three activities, as well as a couple of classes that handle database access. Specifically, there's a model class, which represents the core concept of this app: a **journal entry**.
+Here's a general overview of the app architecture. There will be three activities, that all make a connection to our online API. There's also a model class for menu items, and an adapter for displaying those on the menu screen.
 
 ![](restaurant-arch.png)
 
@@ -82,19 +82,75 @@ Your task is to build an app according to the description above. On top of that,
 - `onClick` and similar listeners may not be "anonymous".
 
 
-## Getting started
+## 1. Showing categories
 
-1. Create a GitHub project and a new Android Studio project.
+- First, add a simple List View to your `CategoriesActivity` user interface. Make sure it is well-positioned.
 
-2. Design the three screens of the user interface.
+- Next, create a new class called `CategoriesRequest`, which will load the categories from the server.
 
-3. Try to load the restaurant categories from the server into an `ArrayList` and link this list to the `ListView`.
+    - The class needs a constructor that accepts a `Context` type parameter. Context is needed for sending the server request.
 
-4. Add a listener for clicking one of the categories, which sends the user to the next screen.
+    - The request will be sent **asynchronously**, so we'll need a way to get back to whoever is trying to send a request. As the request is processed, we will call a method on the class that asked us to do this. This method will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class.
 
-5. Load and display the menu for the appropriate category in another `ListView`.
+            public interface Callback {
+                void gotCategories(ArrayList<String> categories);
+                void gotCategoriesError(String message);
+            }
 
-6. If lost after this, discuss your next steps with any of the staff!
+    - public void getCategories(Callback activity)
+
+        - new `RequestQueue` with the context
+
+        - new `JsonObjectRequest` with the URL
+
+    - **CTRL-O**, onResponse, onErrorResponse
+
+    - `onResponse`: je zie in response een array met naam `"categories"`, maak een loop om de namen van deze categories in een `ArrayList<String>` te zetten. Roep `delegate.gotCategories` aan.
+
+    - Catch de exception: als error, roep `delegate.gotCategoriesError` aan met `error.getMessage()`.
+
+- Terug naar de activity. Voeg `implements CategoriesRequest.Callback` toe. **CTRL-O**. Voeg `gotCategories` en `gotCategoriesError` toe (helemaal onderaan).
+
+    - In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).
+
+    - In `gotCategoriesError`, create a `Toast` message showing the error to your user, so they know wat went wrong (hopefully).
+
+Try out your app now! It should show the categories. Did something go wrong? Maybe you need to add an `INTERNET` permission to your app!
+
+
+## 2. Showing the menu
+
+When someone taps a category in the main screen, the app should load the menu items for that category. We'll use a new activity for this!
+
+- Create `MenuActivity`. Add a list view.
+
+- Now, first make a model class called `MenuItem` with the following fields. Create getters and setters for all fields (Alt+Ins or Ctrl+N).
+
+    - ...
+    - ...
+
+- Just like you did for `CategoriesActivity`, create a request class that will retrieve the menu items for this category. Instead of retrieving a list of strings, make sure that the class provides us with an `ArrayList<MenuItem>`, with all the item fields properly filled from the JSON object.
+
+- In your `CategoriesActivity`, implement `AdapterView.OnItemClickListener` and override (CTRL-O) the `onItemClick` method. In that method, open `MenuActivity` by way of an intent, making sure that you provide via `putExtra` a string with the category name.
+
+- In your `MenuActivity`'s `onCreate`, retrieve the category string and make sure that this string is part of the request for menu items.
+
+- Implement `MenuItemsRequest.Callback` and the `gotMenuItems` method. In this case, we would like to implement a **custom view** for the adapter, which will display as much info about the menu items as possible, including a picture!
+
+Hopefully by now, your app will not only show categories, but menu items as well!
+
+
+## 3. Showing the details
+
+Now, when someone taps an item in the menu, we'd like to show a bit more detail. For this, we'll create a third activity.
+
+- Create `MenuItemActivity`, with a nice layout for all information that we have about a `MenuItem`.
+
+- Connect `MenuActivity` to the `MenuItemActivity` by adding an `OnItemClickListener` to the former's list view, and sending the right `MenuItem` via a `putExtra`.
+
+- In the `MenuItemActivity`, make sure that all information is loaded from the `MenuItem` into the right UI controls.
+
+Done!
 
 
 ## Tips

@@ -77,7 +77,7 @@ Here's a general overview of the app architecture. There will be three activitie
 
 - Define a method that is called `public void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
 
-- Within this method, use [`Volley`](https://apps.mprog.nl/android/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
+- Within this method, use [`Volley`](https://apps.mprog.nl/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
 
         RequestQueue queue = Volley.newRequestQueue(context);
 
@@ -131,12 +131,15 @@ Try out your app now! It should show the categories. Did something go wrong? May
 
 When someone taps a category in the main screen, the app should load the menu items for that category. We'll use a new activity for this!
 
-- Create `MenuActivity`. Add a list view.
+- Create `MenuActivity`. Add a ListView.
 
-- Now, first make a model class called `MenuItem` with the following fields. Create getters and setters for all fields (Alt+Ins or Ctrl+N).
+- Now, first make a model class called `MenuItem` with the following fields. Create getters and setters for all fields (`Alt+Ins` or `Ctrl+N`).
 
-    - ...
-    - ...
+    - name
+    - description
+    - imageUrl
+    - price
+    - category
 
 - Just like you did for `CategoriesActivity`, create a request class that will retrieve the menu items for this category. Instead of retrieving a list of strings, make sure that the class provides us with an `ArrayList<MenuItem>`, with all the item fields properly filled from the JSON object.
 
@@ -167,10 +170,6 @@ Done!
 - Consider viewing the JSON from the server in a [JSON formatter](https://jsonformatter.curiousconcept.com/) to have a better overview of what data is present in the response.
 
 - To use the JSON responses in your code and get the values you need, Android has some nifty built-in functionality on which you can find the docs [here](https://developer.android.com/reference/org/json/package-summary.html).
-
-- To store the order in your app and make sure it persists after it has been killed, you can use `SharedPreferences`. `SharedPreferences` makes use of key-value pairs, so perhaps it could be useful to you to map the name of the dish (as a key) to the amount someone wants to order (the value), with the `putInt()` method. For more on `SharedPreferences`, refer to [this guide](/android/persistence).
-
-- For some interaction with the API, you will need to use `POST` instead of `GET`. For this you can use the [Volley Library](https://developer.android.com/training/volley/simple.html) as well!
 
 
 ## Designing the user interface

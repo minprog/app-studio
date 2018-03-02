@@ -95,6 +95,8 @@ The `JsonObjectRequest` takes 4 arguments: the url that the request should be su
 
 - This also means that in your code to generate the `JsonObjectRequest` you can pass `this` (referring to the activity) as the listeners needed for 3rd and 4th argument.
 
+### React to a response from the API call
+
 Now that the base code for the listener functionality is present, we still need to actually do something when we receive a response from the API. In the `onResponse` method, we will want to transform the `JSONObject` in our response to an `ArrayList` that holds elements of the `String` type. 
 
 - Look at the formatting of your response (remember you can request the same JSON output in your browser) and create a loop that will extract the categories present in the response. Since they are in a JSON array, chances are you want to use `getJSONArray()` to grab that array.
@@ -113,14 +115,14 @@ As of now, we only report back to the calling activity when we succesfully retri
 
 > When handling exceptions in apps, it's good to let the user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong is frustrating to use. 
 
+### Handle the callbacks in CategoriesActivity
+We have our listeners and made them pass on the list of categories or error, but the activity does not implement the functiality to handle the callbacks yet. The methods defined in the `interface` in `CategoriesRequest` need to be implemented by the activity. This way, when the API request is finished or has failed and one of the methods in the interface is called through the activity reference that the `CategoriesRequest` class received, the corresponding methods in the activity are called. The ArrayList with categories can be passed to the activity and we can create and set our adapter as usual. 
 
+- Add `implements CategoriesRequest.Callback` to the class declaration of `CategoriesActivity`. Red wriggly lines now appear, so hit `CTRL+I` to implement the methods that are defined in the `Callback` interface: `gotCategories()` and `gotCategoriesError()`
 
-TODO
-- Terug naar de activity. Voeg `implements CategoriesRequest.Callback` toe. **CTRL-O**. Voeg `gotCategories` en `gotCategoriesError` toe (helemaal onderaan).
+- In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).
 
-    - In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).
-
-    - In `gotCategoriesError`, create a `Toast` message showing the error to your user, so they know wat went wrong (hopefully).
+- In `gotCategoriesError`, create a `Toast` message showing the error to your user, so they know wat went wrong (hopefully).
 
 Try out your app now! It should show the categories. Did something go wrong? Maybe you need to add an `INTERNET` permission to your app!
 

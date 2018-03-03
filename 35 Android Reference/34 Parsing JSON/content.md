@@ -6,7 +6,7 @@ A lot of times when dealing with an API, you will receive a response in JSON for
 
 Consider this response from a given API:
 
-``` json
+``` javascript
         {
             "id": 2894,
             "name": "John Smith",
@@ -89,5 +89,5 @@ The complexity of parsing JSON is often not in the aspects mentioned above, but 
 
 If confused, don't hesitate to grab some pen and paper and make some notes or draw how your JSON structure looks: sometimes it helps to make your data more visual. And the formatter really is your best friend!
 
-Finally, a lot of JSON operations require you to surround them with a `try catch` block. When doing so, make sure to actually print your `JSONexception` to the console: the content of the exception will help you determine what went wrong when your parsing fails. 
+Finally, a lot of JSON operations require you to surround them with a `try catch` block. When doing so, make sure to actually print your `JSONException` to the console: the content of the exception will help you determine what went wrong when your parsing fails. 
 

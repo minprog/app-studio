@@ -14,7 +14,7 @@
 
 Create an app that will help users look at a restaurant's menu and view the details of the items in the menu. Of course, they must be able to view the price of items, the description and an image as well, all of which should be retrieved from an API. In order to communicate elegantly with the API, the code to do this will be contained in separate classes. This way the code that handles the UI will be separate from the code that retrieves data from the API. 
 
-![Restaurant App](app.png)
+![Restaurant App](restaurant-screenshot1.png) ![Restaurant App](restaurant-screenshot2.png) ![Restaurant App](restaurant-screenshot3.png)
 
 
 ## Restaurant API
@@ -25,7 +25,7 @@ The following **endpoints** are available:
 
 * `/categories`: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key "categories" in the JSON.
 * `/menu`: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key "items" in the JSON.
-* `/order`: A POST to this endpoint will submit the order and will return a response with the estimated time before the order will be ready. 
+* `/order`: A POST to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
 * `/images`: Will return the URL of an image. Make sure to handle 404 errors correctly!
 
 Tip: try the API in your webbrowser. Enter the address of the `categories` endpoint and see how it responds.

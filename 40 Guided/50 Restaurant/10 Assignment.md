@@ -62,18 +62,28 @@ Here's a general overview of the app architecture. There will be three activitie
 
 ## 1. Showing categories
 
-- First, add a simple ListView to your `CategoriesActivity` user interface. Make sure it is well-positioned.
+To prepare, add a simple ListView to your `CategoriesActivity` user interface. Make sure it is well-positioned. That's all there is to it! However, to make the app really work, we will need to fill the list with data from the restaurant server.
 
-- Next, create a new class called `CategoriesRequest`, which will load the categories from the server.
+Have a look at the extended diagram below. What we'll be doing is create a specialized request class (`CategoriesRequest`), which downloads data from the server and transforms this to a nice list of strings. Downloading the data is delegated to a `JsonObjectRequest`, which is provided to us by the Android framework.
 
-    - The class needs a constructor that accepts a `Context` type parameter. Context is needed for sending the server request.
+![](restaurant-callback.png)
 
-    - The request will be sent **asynchronously**, so we'll need a way to get back to whoever is trying to send a request. As the request is processed, we will call a method on the class that asked us to do this. This method will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class.
+The general idea is that we should be able to create an object of type `CategoriesRequest`, and call its `getCategories()` method. This will start a download using an object of type `JsonObjectRequest`. Because downloading is never instantly (or it might even fail!), data is not `return`ed, but provided using a **callback method**.
 
-            public interface Callback {
-                void gotCategories(ArrayList<String> categories);
-                void gotCategoriesError(String message);
-            }
+The `JsonObjectRequest` expects to be able to call these two methods:
+
+- `onResponse(response)`, which is called when everything goes as expected, and the `response` parameter will contain a `JSONObject` containing the document
+
+- `onErrorResponse(error)`, which is called when something goes awry, and the `error` parameter will contain a `VolleyError` containing, among other things, an error message
+
+We'll use the same idea for our own `CategoriesRequest` class. It expects to be able two call either of two methods. These methods will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class:
+
+    public interface Callback {
+        void gotCategories(ArrayList<String> categories);
+        void gotCategoriesError(String message);
+    }
+
+- The class needs a constructor that accepts a `Context` type parameter. Context is needed for sending the server request.
 
 - Define a method that is called `public void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
 

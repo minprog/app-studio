@@ -83,9 +83,11 @@ We'll use the same idea for our own `CategoriesRequest` class. It expects to be 
         void gotCategoriesError(String message);
     }
 
-- The class needs a constructor that accepts a `Context` type parameter. Context is needed for sending the server request.
+Now, create the remaining parts of the `CategoriesRequest` class:
 
-- Define a method that is called `public void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
+- Write a constructor that accepts a `Context` type parameter. This context is needed for sending internet requests.
+
+- Define a method `getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
 
 - Within this method, use [`Volley`](https://apps.mprog.nl/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
 
@@ -99,9 +101,10 @@ We'll use the same idea for our own `CategoriesRequest` class. It expects to be 
 The `JsonObjectRequest` takes 4 arguments: the url that the request should be submitted to, a JSON object that should be added to the API call (if any, so this can be null), and two listeners. Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively. 
 
 - To add functionality to these listeners, make your activity implement them:
+
         public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
 
-- Use `CTRL + I` to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
+- Use **CTRL+I** to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
 
 - This also means that in your code to generate the `JsonObjectRequest` you can pass `this` (referring to the activity) as the listeners needed for 3rd and 4th argument.
 

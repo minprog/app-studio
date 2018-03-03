@@ -68,9 +68,7 @@ Have a look at the extended diagram below. What we'll be doing is create a speci
 
 ![](restaurant-callback.png)
 
-The general idea is that we should be able to create an object of type `CategoriesRequest`, and call its `getCategories()` method. This will start a download using an object of type `JsonObjectRequest`. Because downloading is never instantly, data is not instantly returned, but instead provided using a **callback method**.
-
-The `JsonObjectRequest` expects to be able to call these two methods:
+The general idea is that we should be able to create an object of type `CategoriesRequest`, and call its `getCategories()` method. This will start a download using an object of type `JsonObjectRequest`. Because downloading is never instantly, data is not instantly returned, but instead provided using a **callback method**. The `JsonObjectRequest` expects to be able to call these two callback methods:
 
 - `onResponse(response)`, which is called when everything goes as expected, and the `response` parameter will contain a `JSONObject` containing the document
 

@@ -1,11 +1,15 @@
-# Unit 4: APIs
+# Unit 5: Data from the Web
+
+The web is full of data. Some of it, like on newspaper websites, is easy to read for humans but less so for computers. Other data is especially formatted to be easy to read *by computers*. One especially popular format for such data is [JSON](https://www.json.org), which we'll use in this unit.
 
 
 ## Exercises
 
-Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
+You've already done the exercises below, but consider taking a look again.
 
-- TODO
+- [Interfaces](/java-exercises/interfaces)
+
+In this unit, we will be using interfaces to allow activities to define **calback** methods. These methods will be called as soon as data arrives from the web.
 
 
 ## Android explanation

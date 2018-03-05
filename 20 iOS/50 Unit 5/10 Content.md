@@ -23,6 +23,17 @@ There’s only one project this week:
 
 - **Guided project: Restaurant** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
+**Note:** Instead of the local server you can use `https://resto.mprog.nl/`.
+In step 3 you can skip the 'Project Setup' part because the server uses a HTTPS connection.
+So the base url will be (step 4):
+
+~~~swift
+class MenuController {
+    let baseURL = URL(string: "https://resto.mprog.nl/")!”
+}
+~~~
+Bacause this 
+
 
 ## FAQs
 

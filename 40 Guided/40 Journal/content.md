@@ -11,8 +11,9 @@
 
 For this project, you will create an app that represents a journal. In this app, you should be able to view a list of your journal entries, and of course also add new ones. A journal entry should typically consist of at least a few fields, such as the date/timestamp of the entry, the entry contents and some addition, such as an emoji reprenting your mood at the time of the entry. 
 
-For this app, we will make use of the [Floating Action Button](https://material.io/guidelines/components/buttons-floating-action-button.html), which is in accordance with [Material Design](https://material.io/) standards for the Android Platform. The app will consist of three activities, one that holds a list with a possibility to add a new entry. Upon clicking the Floating Action button, the user should be directed to a second activity containing fields that will allow them to add a new journal entry. Finally, a third activity will show details of the selected journal entry, 
+For this app, we will make use of the [Floating Action Button](https://material.io/guidelines/components/buttons-floating-action-button.html), which is in accordance with [Material Design](https://material.io/) standards for the Android Platform. The app will consist of three activities, one that holds a list with a possibility to add a new entry. Upon clicking the Floating Action button, the user should be directed to a second activity containing fields that will allow them to add a new journal entry. Finally, a third activity will show details of the selected journal entry.
 
+![App Example](journal-app1.png) ![App Example](journal-app2.png) ![App Example](journal-app3.png)
 
 ## Getting started
 

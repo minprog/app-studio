@@ -38,6 +38,12 @@ If you want a simpler implementation, you can write your code as though two huma
 Your project files should now be visible on Github. If not, ask for help!
 
 
+## App architecture
+
+
+![](tictactoe-diagram.png)
+
+
 ## Creating the user interface
 
 Let's create the basic UI first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridLayout` for the button grid.

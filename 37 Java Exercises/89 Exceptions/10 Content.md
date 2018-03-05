@@ -1,10 +1,10 @@
-# Polymorphism
+# Exceptions
 
 
 ## Exercises
 
-- First, complete the exercises on [Run-time type info](q12.pdf), for which you'll need [ShapeTest.java](ShapeTest.java).
-- Then, complete the exercises in [this PDF](q13.pdf).
+- Download [BadRandom.class](BadRandom.class) and [Student.java](Student.java).
+- Complete the exercises in [this PDF](q10.pdf).
 
 
 ## Tips

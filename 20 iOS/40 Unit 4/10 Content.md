@@ -1,56 +1,55 @@
-# Unit 4. Tables and Persistence
+# Tables and Persistence
 
-## Exercises
+
+## Language exercises
 
 Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
 1. Protocols
-	- Know how to implement a protocol
-	- Know how to define you own protocol
+
+
+## iOS exercises
 
 2. App Anatomy and Life Cycle
-	- Know how the different stated of an app work
-
 3. Model View Controller
-	- Know how the MVC design pattern can be applied to an app
-
 4. Scroll Views
-	- Know when to use a scroll view
-	- Know how to adjust your view for the keyboard
-
 5. Table Views
-	- Know how to use a table view
-
 6. Intermediate Table Views
-	- Know how to create a custom cell
-	- Know how to add and delete rows from a table view
-
 7. Saving Data
-	- Know how to create an app that can store and load data
-	- Know how to use the NSCoding protocol
-
 8. System View Controllers
-	- Know how to use an alert controller
-	- Know how to use an image picker
-	- Know how to use a Safari vier controller
-
 9. Building Complex Input Screens
-	- Know how to create workflows for input
-	- Know how to user a date picker
 
-**How to get points:**
 
-- Show that you have done (most of the) "protocols" Playground.
-- Show that you have done the "Favorite ahtletes" lab.
-- Show that you have done the "Remember your emojis" lab.
+## Project
 
-## Guided Project: List
+There's only one project this week:
 
-At the end of the chapter, you'll find a Guided Project to make a very simple app in Xcode. Follow the instructions to create that app, and [put it on GitHub](/ios/github).
+- **Guided project: List** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
-**How to get points:** submit your project first, then show your TA that you have created a working app and show it's code on GitHub. Do mind the deadline for each week!
+
+## Getting credit
+
+Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+
+Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+
+| pts | description                                                                          |  
+| --: | ------------------------------------------------------------------------------------ |  
+|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   3 | Reasonable quality, but lots of room for improvement.                                |  
+|   2 | The app mostly works but really lacks in quality.                                    |  
+|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
+|   0 | Not submitted or very incomplete.                                                    |  
+
+This week, we will look at the following quality aspects:
+
+- layout, margins, compatibility with multiple phone sizes
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
+- level of separation between model classes and user interface code
 
 
 ## Submit
 
-Submit at [Unit 1](/submit/unit-4).
+Submit at [Unit 4](/submit/unit-4).

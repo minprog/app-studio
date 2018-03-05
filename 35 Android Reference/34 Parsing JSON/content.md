@@ -6,7 +6,7 @@ A lot of times when dealing with an API, you will receive a response in JSON for
 
 Consider this response from a given API:
 
-``` javascript
+~~~ json
         {
             "id": 2894,
             "name": "John Smith",
@@ -36,7 +36,7 @@ Consider this response from a given API:
                 }        
             ]
         }
-```
+~~~
 
 In this case, the reponse represents a person. Of course your API response might not look like this: depending on the API this could be different things. It could represent one thing, like in this example, but also a list of things. 
 

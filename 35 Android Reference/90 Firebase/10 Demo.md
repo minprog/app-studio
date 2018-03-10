@@ -77,10 +77,15 @@ To connect your app to Firebase, you will need a Google account. If you don't wa
 
 5. To use an authentication provider, you need to enable it in the [Firebase console](https://console.firebase.google.com/). In the console, first select your app, and then head to *Authentication* in the left menu and then choose *Sign-in Method* and enable the sign in methods of your choice.
 
-6. We are now ready to add actual code to our app. The first part of the guide will help you set up this listener. It should be set up in your Activity's `onStart()` method, so that when starting the app for the first time or returning to the activity, the current authentication status of the user will be checked.
+6. We are now ready to add actual code to our app. The first part of the guide will help you set up this listener. It should be set up in your Activity's `onStart()` method, so that when starting the app for the first time or returning to the activity, the current authentication status of the user will be checked. 
 
-7. The second part of the guide helps you set up the necessary means to create a new account. Of course, you can try this code out with a hardcoded username and password, but if you want users to be able to create accounts, then you will need the input fields and a confirmation button, plus of course some verification of the input! Firebase requires that a user's password consists of at least 6 characters, for example.
+7. The second part of the guide helps you set up the necessary means to create a new account. Of course, you can try this code out with a hardcoded username and password, but if you want users to be able to create accounts, then you will need the input fields and a confirmation button, plus of course some verification of the input! Firebase requires that a user's password consists of at least 6 characters, for example. 
 
-8. 
+8. Your app should now be able to handle account creation, but should of course also allow for logging in. Follow the guide in the sidebar. In the example, `updateUI` is just a placeholder method that should update the UI of the app once a user has been logged in or failed to log in, so if you copy paste this code, it will show up in red. You can omit it for testing purposes, but finally your app should of course react to this event appropriately. 
+
+9. If you need to access a user's information, you can always retrieve the current user by using the `getCurrentUser` method. You can for example use this to grab the user's id and write data to the database for this user. 
+
+
+
 
 

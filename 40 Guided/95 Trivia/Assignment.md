@@ -23,8 +23,6 @@ To help you create this app, the architecture that the app should follow has alr
 
 ## Getting started
 
-## Getting started
-
 1.  Create a new Android studio project called **Trivia**, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
     - Start with an Empty Activity
@@ -106,5 +104,8 @@ Firebase's Database is a way of storing data online in a noSQL database that use
             }
         });
 
-9. We have now covered the basics of writing data to Firebase and reading data from Firebase. Of course, these are just very simple examples. For more information on this refer to the [official documentation](https://firebase.google.com/docs/database/android/read-and-write).   
+9. We have now covered the basics of writing data to Firebase and reading data from Firebase. Of course, these are just very simple examples. For more information on this refer to the [official documentation](https://firebase.google.com/docs/database/android/read-and-write). 
+
+
+
 

@@ -32,6 +32,9 @@ grades:
     app6:
         type: float
         hide_calculated: true
+    practice:
+        type: integer
+        hide_calculated: true
     pr1:
         type: pass
     pr2:
@@ -47,9 +50,8 @@ grades:
 
 calculation:
     eindcijfer:
-        exercises: 20
-        projects: 60
-        finproj: 20
+        projects: 80
+        practice: 20
 
 projects:
     submits:
@@ -58,6 +60,10 @@ projects:
         app3: 1
         app4: 1
         app5: 1
+
+practice:
+    submits:
+        practice: 1
 
 exercises:
     type: pass

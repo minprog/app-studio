@@ -31,6 +31,9 @@ grades:
         hide_calculated: true
     app6:
         type: float
+        subgrades:
+            points: integer
+        calculation: points/5.0*9.0+1
         hide_calculated: true
     practice:
         type: integer
@@ -60,6 +63,7 @@ projects:
         app3: 1
         app4: 1
         app5: 1
+        app6: 1
 
 practice:
     submits:

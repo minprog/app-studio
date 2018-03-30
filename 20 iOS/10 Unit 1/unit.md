@@ -1,7 +1,9 @@
 # Getting started with app development
 
-We'll now start using the book you downloaded in [preparations](/swift/preparations). Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
-
+We'll now start using the book you downloaded in [preparations](/swift/preparations). 
+Make sure you have also forked and cloned the playground repository.
+<!--Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
+-->
 ## Language exercises
 
 In some respects, Swift is a bit different from most programming languages. The lessons offer to learn everything from the ground up. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!

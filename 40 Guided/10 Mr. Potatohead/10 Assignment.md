@@ -49,7 +49,7 @@ Your project files should now be visible on Github like in the picture below. If
 ![](git-files.png)
 
 
-## Really getting started
+## Add images to the project
 
 For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the project sidebar:
 

@@ -2,10 +2,6 @@
 
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
-To get started, check out how to create a new Android project:
-
-<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 
 ## Exercises
 
@@ -28,6 +24,10 @@ Before making an app, you'll find some explanation about the parts of Android th
 NEW
 
 - [Events](/android-reference/events)
+
+## Android practice
+
+- [Practice with ConstraintLayout](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html)
 
 
 ## Project

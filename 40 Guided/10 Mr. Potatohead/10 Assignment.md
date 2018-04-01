@@ -1,10 +1,12 @@
 # Mr. Potatohead
 
+
 ## Objectives
 
 - Create a first app!
 - Practice with Git.
 - Use layouts to design your user interface.
+
 
 ## Background
 
@@ -18,7 +20,10 @@ The way to display the various body parts is to create a separate view for each 
 
 (thanks to Victoria Kirst for the original assignment idea and images!)
 
+
 ## Getting started
+
+<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 1.  Create a new Android studio project, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
@@ -62,17 +67,23 @@ No need to create original art! Here's [image files](mr-potato-head-images.zip) 
 
 ## Creating the user interface
 
-Let's now design the interface. We will try to mimic the picture at the top of this assignment as closely as possible.
+Let's now design the interface. Let's aim for this layout:
+
+![](layout.png)
 
 1.  Double-click `activity_main.xml` in the project browser to open it. 
 
 2.  Your view currently contains a `Label` with the text `Hello World!`. Click it and press delete to remove it from the screen.
 
-3.  Now go to the Palette (remember where? it was in the video!). Drag an `ImageView` from the Palette to the screen layout. Immediately, a dialog pops up, allowing you to choose one of the `.png` files that you just added to the project. Start with the body!
+3.  Now go to the Palette (remember where? it was in the video!). Select "Layouts" add drag a `FrameLayout` to the editor. This layout is perfect for stacking our potato images on top of each other.
 
-4.  The image will resize to take up more of the screen. Reposition it to make it look right. Make sure to allow a bit of space along the borders. Android Studio should help you a little to keep nice margins.
+4.  Also add a `GridLayout` to the screen. That one nicely fits the idea of presenting a grid of checkboxes.
 
-5.  Make sure all the images are the same size and positioned right on top of each other. Currently, you can see all of them, but we'll make sure they are invisible when the app starts. Find the Attributes sidebar like in the screen shot below:
+5.  Roughly position both layouts like they are in the picture above. Later, we'll add constraints for automatically positioning them on different screen sizes.
+
+6.  Drag an `ImageView` from the palette to the `FrameLayout`. Immediately, a dialog pops up, allowing you to choose one of the `.png` files that you just added to the project. Start with the body!
+
+7.  Make sure all the images are the same size and positioned right on top of each other. Currently, you can see all of them, but we'll make sure they are invisible when the app starts. Find the Attributes sidebar like in the screen shot below:
 
     ![](attributes.png)
 
@@ -82,7 +93,11 @@ Let's now design the interface. We will try to mimic the picture at the top of t
     
     ![](component.png)
 
-6.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot from this assignment.
+8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot from this assignment.
+
+9.  Finally, we'll need to add constraints. In the component tree, select the `gridLayout` and the `frameLayout`. Right-click and select Chain > Create Vertical Chain. This chain is the basis for automatic layout.
+
+10. Using your experience from the Android Lab about Constraint Layouts, make the screen even better, and try different phone sizes to check that the layout fits nicely!
 
 
 ## Connecting everything with code
@@ -125,6 +140,7 @@ Finally, we need to be able to switch some of the images on and off, depending o
 
 There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though!
 
+
 ## Memory management
 
 There's a bug in your app! Because of how Android works, your layout may be reloaded whenever you leave your app, switch to another app, and then return. This way, memory usage can be kept low. Your layout may also be reloaded as the phone is rotated. However, even though your checkboxes will be automatically reloaded in the same state as you left them (checked/unchecked), your image views will not!
@@ -145,12 +161,11 @@ You can use the `Bundle` to save items. This same bundle will be delivered to yo
 
 Now, your task is to save the `visibility` state of all `ImageViews`. Which get/put method seems appropriate to do this? Google "android bundle" to get a list of all get/put methods.
 
+
 ## Some ideas
 
-You may have some time left to make your app a bit better. Here are a few ideas:
+You may have some time left to make your app a bit better. Here are a few ideas that you can work on:
 
-- As you made a new project, your activity was embedded in a `ConstraintLayout`. This type of layout can be used to make sure that your app looks nice on a variety of screens. Check out the [documentation](https://developer.android.com/training/constraint-layout/index.html) and make this work!
+- Phones can also be rotated to landscape mode. Currently, our layout doesn't work too well for this mode. Mr. Potatohad should probably be to the left and the checkboxes to the right. You can use two layouts for portrait and landscape, respectively, to fix this. In the layout editor, choose "Add landscape layout" to get started.
 
-- Even with the ConstraintLayout, supporting rotation is quite hard. In landscape mode, Mr. Potatohad should probably be to the left and the checkboxes in a grid to the right. You might use two layouts for portrait and landscape, respectively, to fix this. And because you alrealy implemented `onSaveInstanceState`, it will save state, even when changing layouts! See our [State](/android-reference/state) page for info on how to add two layouts.
-
-- Think about how you can make the code for `checkboxClicked()` as tiny as possible.
+- Think about how you can make the code for `checkboxClicked()` as tiny as possible, even when handling such a large a mount of checkboxes.

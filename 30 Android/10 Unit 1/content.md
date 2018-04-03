@@ -2,12 +2,8 @@
 
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
-To get started, check out how to create a new Android project:
 
-<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-## Exercises
+## Java exercises
 
 Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
 
@@ -17,17 +13,19 @@ Each unit contains exercises to help you master the Java language. If you alread
 - Do the exercises on [References](/java-exercises/references)
 
 
-## Android explanation
+## Android practice
 
 Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+
+Read this:
 
 - [Views](/android-reference/views)
 - [Layouts](/android-reference/layouts)
 - [State](/android-reference/state)
 
-NEW
+Do this:
 
-- [Events](/android-reference/events)
+- [Practice with ConstraintLayout](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html)
 
 
 ## Project
@@ -39,11 +37,20 @@ Now you are ready to make your first app! You can choose between two projects:
 - **Unguided project: [First App](/projects/first-app)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
 
 
+## Goals
+
+Our main goal for this course is getting you some in-depth experience on important aspects of creating apps. You'll practice with various techniques every week. In addition, we'd like you to work on **good quality apps**. For this week, you'll be graded on these aspects:
+
+- layout, margins, compatibility with multiple phone sizes
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
+
+
 ## Getting credit
 
 Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
-Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+Completing the exercises/practice can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 
 | pts | description                                                                          |  
 | --: | ------------------------------------------------------------------------------------ |  
@@ -53,12 +60,6 @@ Completing the exercises can earn you 1 point per week. The project will be chec
 |   2 | The app mostly works but really lacks in quality.                                    |  
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
-
-This week, we will look at the following quality aspects:
-
-- layout, margins, compatibility with multiple phone sizes
-- basic code quality such as comments, names, consistency and design
-- easy to use, no odds and ends
 
 
 ## Submit

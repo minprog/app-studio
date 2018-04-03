@@ -1,6 +1,6 @@
 # iOS: Introduction
 
-We will use the latest versions of Xcode and Swift to develop iOS apps. You will need a Macbook running at least macOS Sierra!
+We will use the latest versions of Xcode and Swift to develop iOS apps. You will need a Macbook running at least macOS High Sierra!
 
 - If needed, please upgrade your MacBook to macOS Sierra or High Sierra ([download here](https://itunes.apple.com/nl/app/macos-high-sierra/id1246284741?l=en&mt=12)). This upgrade may take up to 2 hours to complete!
 

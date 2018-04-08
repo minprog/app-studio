@@ -37,6 +37,7 @@ grades:
         hide_calculated: true
     practice:
         type: integer
+        calculation: points/5.0*9.0+1
         hide_calculated: true
     pr1:
         type: pass

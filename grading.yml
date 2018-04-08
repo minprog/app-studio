@@ -37,6 +37,8 @@ grades:
         hide_calculated: true
     practice:
         type: float
+        subgrades:
+            points: integer
         calculation: points/5.0*9.0+1
         hide_calculated: true
     pr1:

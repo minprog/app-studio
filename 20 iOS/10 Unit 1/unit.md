@@ -1,6 +1,6 @@
 # Getting started with app development
 
-We'll now start using the book you downloaded in [preparations](/swift/preparations). 
+We'll now start using the book you downloaded in [preparations](/ios/introduction). 
 Make sure you have also forked and cloned the playground repository.
 <!--Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
 -->

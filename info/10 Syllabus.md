@@ -53,11 +53,9 @@ Studio.
 
 The course's staff consists of your instructor and many teaching assistants. Due to the size of the course, we can't usually respond to email inquiries about your assignments.
 
-- You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
+You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
 
-- Please register for this course's Slack chat. You will be invited after you login and register on this website.
-
-Below you will find a list of the courses's instructors:
+Below you will find a list of the courses's staff:
 
 - Martijn Stegeman, *instructor* <help@mprog.nl>
 - Renske Talsma, *teaching assistant (Android)*

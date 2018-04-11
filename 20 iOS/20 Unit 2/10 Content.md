@@ -13,11 +13,11 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 ## Getting to know UIKit
 
+{:start="7"}
 7. Introduction to UIKit
 8. Displaying Data
 9. Controls In Action
 10. Auto Layout and Stack Views
-
 
 ## Project
 
@@ -30,7 +30,7 @@ You can choose between two projects:
 
 ## Getting credit
 
-Make sure that you complete the exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 

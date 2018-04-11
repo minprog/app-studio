@@ -1,6 +1,5 @@
 # Tables and Persistence
 
-
 ## Language exercises
 
 Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
@@ -10,6 +9,7 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 ## iOS exercises
 
+{:start="2"}
 2. App Anatomy and Life Cycle
 3. Model View Controller
 4. Scroll Views
@@ -18,7 +18,6 @@ Feel free to skip some of the parts about the programming language, but make sur
 7. Saving Data
 8. System View Controllers
 9. Building Complex Input Screens
-
 
 ## Project
 
@@ -29,7 +28,7 @@ There's only one project this week:
 
 ## Getting credit
 
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 

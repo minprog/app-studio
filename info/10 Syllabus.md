@@ -74,14 +74,14 @@ Every week, exercises and a programming project will be made available. Final gr
 
 For both exercises and projects, there are six weekly deadlines:
 
-| no |    deadline |  
-| -: | ----------: |  
-|  1 | Fri   9-Feb |  
-|  2 | Fri  16-Feb |  
-|  3 | Fri  23-Feb |  
-|  4 | Fri   2-Mar |  
-|  5 | Fri   9-Mar |  
-|  6 | Fri  16-Mar |  
+| no |   exercises |     project |  
+| -: | ----------: | ----------: |  
+|  1 | Wed  11-Apr | Fri  13-Apr |  
+|  2 | Wed  18-Apr | Fri  20-Apr |  
+|  3 | Wed  25-Apr | Fri  27-Apr |  
+|  4 | Wed   2-May | Fri   4-May |  
+|  5 | Wed   9-May | Fri  11-May |  
+|  6 | Wed  16-May | Fri  18-May |  
 
 You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 

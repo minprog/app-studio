@@ -78,7 +78,7 @@ For both exercises and projects, there are six weekly deadlines:
 | -: | ----------: | ----------: |  
 |  1 | Wed  11-Apr | Fri  13-Apr |  
 |  2 | Wed  18-Apr | Fri  20-Apr |  
-|  3 | Wed  25-Apr | Fri  27-Apr |  
+|  3 | Wed  25-Apr | Sun  29-Apr |  
 |  4 | Wed   2-May | Fri   4-May |  
 |  5 | Wed   9-May | Fri  11-May |  
 |  6 | Wed  16-May | Fri  18-May |  

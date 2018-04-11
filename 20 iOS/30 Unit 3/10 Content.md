@@ -10,6 +10,7 @@
 
 ## iOS exercises
 
+{:start="6"}
 6. Segues and Navigation Controllers
 7. Tab Bar Controllers
 8. View Controller Life Cycle
@@ -29,7 +30,7 @@ You can choose between two projects:
 
 ## Getting credit
 
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 

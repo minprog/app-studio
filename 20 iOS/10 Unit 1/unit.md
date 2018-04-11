@@ -1,9 +1,7 @@
 # Getting started with app development
 
-We'll now start using the book you downloaded in [preparations](/ios/introduction). 
-Make sure you have also forked and cloned the playground repository.
-<!--Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
--->
+We'll now start using the book you downloaded in [preparations](/ios/introduction).
+Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
 
 ## Language exercises
 
@@ -20,11 +18,11 @@ Next up are four chapters about Xcode. You will get a lot of detail about how to
 
 You might want to watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
 
+{:start="5"}
 5. Xcode
 6. Building, running and debugging an app
 7. Documentation
 8. Interface Builder basics
-
 
 ## Project
 
@@ -37,7 +35,7 @@ Now you are ready to make your first app! At the end of the chapter, you'll find
 
 ## Getting credit
 
-Make sure that you complete the exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 

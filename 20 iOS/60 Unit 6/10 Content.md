@@ -3,7 +3,7 @@
 In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat.
 
 
-## Swift exercises
+## Language exercises
 
 Nothing new!
 

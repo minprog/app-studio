@@ -11,6 +11,7 @@ This week you will learn how to get content from the web and make use of API's.
 
 ## iOS exercises
 
+{:start="3"}
 3. Practical Animation
 4. Working with the Web: HTTP and URL Session
 5. Working with the Web: JSON Serialization
@@ -32,7 +33,7 @@ class MenuController {
     let baseURL = URL(string: "https://resto.mprog.nl/")!”
 }
 ~~~
-Bacause this 
+Bacause this
 
 
 ## FAQs
@@ -44,7 +45,7 @@ Bacause this
 
 ## Getting credit
 
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 

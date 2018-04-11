@@ -11,11 +11,12 @@ This week you will learn how to get content from the web and make use of API's.
 
 ## iOS exercises
 
-3. Practical Animation
-4. Working with the Web: HTTP and URL Session
-5. Working with the Web: JSON Serialization
-6. Working with the Web: Concurrency
-
+<ol start=2>
+    <li> Practical Animation
+    <li> Working with the Web: HTTP and URL Session
+    <li> Working with the Web: JSON Serialization
+    <li> Working with the Web: Concurrency
+</ol>
 
 ## Project
 

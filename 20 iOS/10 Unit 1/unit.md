@@ -2,8 +2,7 @@
 
 We'll now start using the book you downloaded in [preparations](/ios/introduction). 
 Make sure you have also forked and cloned the playground repository.
-<!--Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
--->
+Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
 
 ## Language exercises
 
@@ -20,11 +19,12 @@ Next up are four chapters about Xcode. You will get a lot of detail about how to
 
 You might want to watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
 
-5. Xcode
-6. Building, running and debugging an app
-7. Documentation
-8. Interface Builder basics
-
+<ol start=5>
+    <li> Xcode
+    <li> Building, running and debugging an app
+    <li> Documentation
+    <li> Interface Builder basics
+</ol>
 
 ## Project
 

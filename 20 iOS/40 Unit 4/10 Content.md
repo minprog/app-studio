@@ -9,16 +9,16 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 
 ## iOS exercises
-
-2. App Anatomy and Life Cycle
-3. Model View Controller
-4. Scroll Views
-5. Table Views
-6. Intermediate Table Views
-7. Saving Data
-8. System View Controllers
-9. Building Complex Input Screens
-
+<ol start=2>
+    <li> App Anatomy and Life Cycle
+    <li> Model View Controller
+    <li> Scroll Views
+    <li> Table Views
+    <li> Intermediate Table Views
+    <li> Saving Data
+    <li> System View Controllers
+    <li> Building Complex Input Screens
+</ol>
 
 ## Project
 

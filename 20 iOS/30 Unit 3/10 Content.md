@@ -10,10 +10,12 @@
 
 ## iOS exercises
 
-6. Segues and Navigation Controllers
-7. Tab Bar Controllers
-8. View Controller Life Cycle
-9. Building Simple Workflows
+<ol start=6>
+    <li> Segues and Navigation Controllers
+    <li> Tab Bar Controllers
+    <li> View Controller Life Cycle
+    <li> Building Simple Workflows
+</ol>
 
 **Tip:** take a look at the [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
 

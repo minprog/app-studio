@@ -13,11 +13,12 @@ Feel free to skip some of the parts about the programming language, but make sur
 
 ## Getting to know UIKit
 
-7. Introduction to UIKit
-8. Displaying Data
-9. Controls In Action
-10. Auto Layout and Stack Views
-
+<ol start=7>
+    <li> Introduction to UIKit
+    <li> Displaying Data
+    <li> Controls In Action
+    <li> Auto Layout and Stack Views
+</ol>
 
 ## Project
 

@@ -33,4 +33,4 @@ Your project is now on GitHub in it's inital state.
 
 When you're ready to commit your changes to GitHub, click 'Source Controll' in the menubar and then 'Commit...' (`⌥⌘C`).
 Make sure you'll check the 'Push to remote'-checkbox.
-![](step5.png){:style="height:50%;width:50%"}
+![](step5.png)

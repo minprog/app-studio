@@ -91,7 +91,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         IN_PROGRESS,
         PLAYER_ONE,
         PLAYER_TWO,
-        DRAW,
+        DRAW
 
 3.  Go to **File > New > New Java Class...**. Enter the name `Tile` and kind `Enum`. Leave other settings unchanged and press OK.
 

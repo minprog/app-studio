@@ -207,7 +207,7 @@ As you can see in the screenshots above, we'll make a detail screen where friend
 
 - We'd like to show the profile picture, a rating bar, as well as some `TextView` elements to show the name and information of our users. But before adding those, change the root layout to `LinearLayout` again (this just fits with what we want to achieve much better).
 
-Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. 
+Make sure the layout looks nice by fiddling with the `layout_gravity` parameter to for example make things center aligned. To determine how much space each view should take up on the screen, you can use the `layout_weight` attribute. This attribute allows you to give some views more importance in the sense that they should take up more space on the screen. This could be useful if we want to make the profile picture show up nice and big in comparison with the rest of the content. This works for most views, however for the ratingbart the `layout_weight` property does not behave consistently (it might cut off the stars horizontally), so it's best to omit it. 
 
 Additionally, because we are using the weight to determine the size relative to the rest of the layout, it works better on other phone sizes, as opposed to hard-coding values to determine the size of views. 
 

@@ -61,7 +61,7 @@ Let's create the basic UI that we should see when we open the app first: head to
 
 - In the XML, change the `ConstraintLayout` with a `LinearLayout` (remember how?). Also, delete the text view that's already in there.
 - In the designer, head for the Palette and choose **Containers**. There you should be able to select a `GridView` and add it to your layout. If done correctly, your design should now show an example grid of items, something like the image above.
-- You can tweak the attributes of the `GridView` to show more or less items on a row or have more space between items. Take a look at `numColumns`, `stretchMode` (`spacingWidthUniform` seems like a nice and clean solution) and see if you can tweak it to look how you want. Feel free to deviate from the example. If 4 columns is the way to go: power to you!
+- You can tweak the attributes of the `GridView` to show more or less items on a row or have more space between items. Take a look at `numColumns` and `stretchMode` and see if you can tweak it to look how you want. Feel free to deviate from the example. If 4 columns is the way to go: power to you!
 
 
 ## Modeling friends

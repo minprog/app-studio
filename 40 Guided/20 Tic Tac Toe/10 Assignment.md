@@ -193,7 +193,7 @@ Specifically, make sure that your `Game` class is augmented with `implements Ser
 
 Tip: press **Ctrl-O** to popup the **Override Methods** dialog, type a few characters `onsave...` and press ENTER to create your `onSaveInstanceState()` method.
 
-To fully restore the game, you will have to add methods to the `Game` class to ensure that you can find our the state of each tile.
+To fully restore the game, you will have to add methods to the `Game` class to ensure that you can find out the state of each tile.
 
 ## Finishing up
 

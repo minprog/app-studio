@@ -91,7 +91,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
         IN_PROGRESS,
         PLAYER_ONE,
         PLAYER_TWO,
-        DRAW,
+        DRAW
 
 3.  Go to **File > New > New Java Class...**. Enter the name `Tile` and kind `Enum`. Leave other settings unchanged and press OK.
 
@@ -136,7 +136,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
     - It has to retrieve the current value of the board at position (row, column).
     - If that place is still blank, we can go ahead and fill it.
         - if the current player is player one, fill it with a cross
-        - if the current player is player two, fill it with a croos
+        - if the current player is player two, fill it with a circle
         - in either case, make sure the other played gets the turn
         - also in both cases, make sure to return Tile.CROSS or Tile.CIRCLE to allow the UI to update
     - If that place isn't blank, it's an invalid move! Just return Tile.INVALID.
@@ -193,7 +193,7 @@ Specifically, make sure that your `Game` class is augmented with `implements Ser
 
 Tip: press **Ctrl-O** to popup the **Override Methods** dialog, type a few characters `onsave...` and press ENTER to create your `onSaveInstanceState()` method.
 
-To fully restore the game, you will have to add methods to the `Game` class to ensure that you can find our the state of each tile.
+To fully restore the game, you will have to add methods to the `Game` class to ensure that you can find out the state of each tile.
 
 ## Finishing up
 

@@ -57,7 +57,7 @@ grades:
 calculation:
     eindcijfer:
         projects: 80
-        practice: 20
+        exercises: 20
 
 projects:
     submits:

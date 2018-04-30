@@ -13,6 +13,8 @@ For this project, you will create an app that represents a journal. In this app,
 
 For this app, we will make use of the [Floating Action Button](https://material.io/guidelines/components/buttons-floating-action-button.html), which is in accordance with [Material Design](https://material.io/) standards for the Android Platform. The app will consist of three activities, one that holds a list with a possibility to add a new entry. Upon clicking the Floating Action button, the user should be directed to a second activity containing fields that will allow them to add a new journal entry. Finally, a third activity will show details of the selected journal entry.
 
+You are not forced to use the exact same images (or even restrict yourself to just 4 possible moods), but try and do something nice instead of just plain text to represent the user's mood. 
+
 ![App Example](journal-app1.png) ![App Example](journal-app2.png) ![App Example](journal-app3.png)
 
 ## Getting started
@@ -170,7 +172,7 @@ Of course since we are selecting everything, we have no placeholders or argument
 
 - In the `onCreate()` of the `MainActivity`, use the `EntryDatabase` to get all records from the database, make a new `EntryAdapter` and link the `ListView` to the adapter.
 
-The app should now display all example entries from the database!
+The app should now display all example entries from the database! Think about how you want to represent the mood that is associated with the journal entry. It is stored in the database in plaintext, but in the adapter you can think of a way to show something else, like an image/emoji representing the mood. 
 
 
 ## Write the insert method

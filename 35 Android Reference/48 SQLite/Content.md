@@ -24,7 +24,7 @@ The database version is important because sometimes you will want to change your
     }
 
 ### onCreate
-This method is called when there is no database yet, for example when the app is run for the first time, and we need to have one created. The `onCreate` method received a `SQLiteDataBase` object, in this case called `db`, that we can now use.
+This method is called when there is no database yet, for example when the app is started for the first time, and we need to have one created. The `onCreate` method received a `SQLiteDataBase` object, in this case called `db`, that we can now use.
 
     public void onCreate(SQLiteDatabase db) {
         // now we can use the db object to do stuff

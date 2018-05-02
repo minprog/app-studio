@@ -53,7 +53,7 @@ Here's a general overview of the app architecture. There will be three activitie
 
     -   Our journal entries will be contained in a list, so add a `ListView`, to be found under the **Container** section of the palette.
     
-    -   Then, add a floating action button, which is listed under the **Design** section of the palette. After you have added it, the button is most likely hovering in the upper left corner. Set the `layout_gravity` to `bottom` | + `end` to attach it to the bottom right corner.
+    -   Then, add a floating action button, which is listed under the **Design** section of the palette. After you have added it, the button is most likely hovering in the upper left corner. Set the `layout_gravity` to `bottom` | `end` to attach it to the bottom right corner.
 
 > Setting gravity to `end` instead of `right` ensures that the button will actually be attached to the *left* if used on a phone that is set to a language that is read from right to left, like Arabic. Useful!
 

@@ -25,6 +25,20 @@ There's only one project this week:
 
 - **Guided project: List** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
+### FAQs
+The book provides some code for loading in sample todo's at page 735, however the sampleToDos also need to be stored in the `todos` variable.
+
+~~~swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+ 
+    if let savedToDos = ToDo.loadToDos() {
+        todos = savedToDos
+    } else {
+        todos = ToDo.loadSampleToDos()
+    }
+}
+~~~
 
 ## Getting credit
 

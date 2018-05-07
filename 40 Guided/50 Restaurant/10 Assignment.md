@@ -119,7 +119,7 @@ Now that the base code for the listener functionality is present, we still need 
 
 > Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can always use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
 
-- Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill the `ArrayList<String>` with these items. 
+- Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill the `ArrayList<String> categories` with these items. 
 
 - When the `ArrayList` has been filled, use the reference to the activity that we received earlier as an argument of `getCategories(Callback activity)` to call the method `gotCategories` and pass the list that you just made as an argument. This way the activity will also have access to the list, but only when it's certain that the API call has finished and the list is ready!
 

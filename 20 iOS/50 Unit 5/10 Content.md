@@ -37,6 +37,13 @@ class MenuController {
 
 ## FAQs
 
+- On page 915 in 'Parse the Responses', the second code block starts with `fetchCategories` however is this the code block for `fetchMenuItems`. The first line should be:
+
+~~~swift
+let task = URLSession.shared.dataTask(with: menuURL)
+~~~
+
+- The 'gray image' from page 926 can be downloaded [here](Solid_gray.png).
 - In the `submitOrder` method, make sure to declare the variable `data` with the following type:
 
 ~~~swift

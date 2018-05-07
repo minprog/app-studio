@@ -2,7 +2,6 @@
 
 This week you will learn how to get content from the web and make use of API's.
 
-
 ## Language exercises
 
 1. Closures
@@ -25,23 +24,24 @@ There’s only one project this week:
 - **Guided project: Restaurant** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
 **Note:** Instead of the local server you can use `https://resto.mprog.nl/`.
-In step 3 you can skip the 'Project Setup' part because the server uses a HTTPS connection.
-So the base url will be (step 4):
+
+- In step 1 you can skip the 'Run the Server'.
+- In step 3 you can skip the 'Project Setup' part because the server uses a HTTPS connection.
+- In step 4 the `baseURL` will be:
 
 ~~~swift
 class MenuController {
     let baseURL = URL(string: "https://resto.mprog.nl/")!”
 }
 ~~~
-Bacause this
-
 
 ## FAQs
 
 - In the `submitOrder` method, make sure to declare the variable `data` with the following type:
 
-        let data: [String: [Int]] = ...
-
+~~~swift
+let data: [String: [Int]] = ...
+~~~
 
 ## Getting credit
 

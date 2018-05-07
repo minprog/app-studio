@@ -26,6 +26,8 @@ There's only one project this week:
 - **Guided project: List** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
 ### FAQs
+
+#### Loading Sample ToDos
 The book provides some code for loading in sample todo's at page 735, however the sampleToDos also need to be stored in the `todos` variable.
 
 ~~~swift
@@ -36,6 +38,28 @@ override func viewDidLoad() {
         todos = savedToDos
     } else {
         todos = ToDo.loadSampleToDos()
+    }
+}
+~~~
+
+#### DatePicker show/hide
+
+The book provides some code for hiding the DatePicker, however, the correct IndexPath for the DatePicker is `[1,0]`.
+
+~~~swift
+override func tableView(_ tableView: UITableView, didSelectRowAt
+indexPath: IndexPath) {
+    switch (indexPath) {
+    case [1,0]:
+        isEndDatePickerHidden = !isEndDatePickerHidden
+ 
+        dueDateLabel.textColor =
+        isEndDatePickerHidden ? .black : tableView.tintColor
+ 
+        tableView.beginUpdates()
+        tableView.endUpdates()
+ 
+    default: break
     }
 }
 ~~~

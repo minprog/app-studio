@@ -31,7 +31,7 @@ To make everything work there are two things you need to configure.
 
 - Add a dependency to your app's `build.gradle` file, which will allow you to use the Volley library:
 
-        compile 'com.android.volley:volley:1.0.0'
+        implementation 'com.android.volley:volley:1.0.0'
 
 - In your `AndroidManifest.xml`, declare that you want to connect to the internet:
 

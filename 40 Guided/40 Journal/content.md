@@ -49,11 +49,11 @@ Here's a general overview of the app architecture. There will be three activitie
 
 -   `MainActivity` will contain the list of items and a floating action button.
 
-    -   Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this allows us to add the few components we need and position those in a very simple way. Do this by replacing the opening tag of the root layout (which is probably a `ConstraintLayout`) with `android.support.design.widget.CoordinatorLayout`. If this layout type is not recognised by Android Studio, you might have to add a dependency to your `build.gradle` (Module: app) file located in your Gradle Scripts folder in order to be able to use the `CoordinatorLayout`. At the bottom of the `build.gradle` (Module: app) file, in the `dependencies` section, add: `compile 'com.android.support:design:26.1.0'` and rebuild your project. The `CoordinatorLayout` should now be available for you to use.
+    -   Change the root layout of the `activity_main.xml` file to a `CoordinatorLayout` as this allows us to add the few components we need and position those in a very simple way. Do this by replacing the opening tag of the root layout (which is probably a `ConstraintLayout`) with `android.support.design.widget.CoordinatorLayout`. If this layout type is not recognised by Android Studio, you might have to add a dependency to your `build.gradle` (Module: app) file located in your Gradle Scripts folder in order to be able to use the `CoordinatorLayout`. At the bottom of the `build.gradle` (Module: app) file, in the `dependencies` section, add: `implementation 'com.android.support:design:27.1.1'` and rebuild your project. The `CoordinatorLayout` should now be available for you to use.
 
     -   Our journal entries will be contained in a list, so add a `ListView`, to be found under the **Container** section of the palette.
     
-    -   Then, add a floating action button, which is listed under the **Design** section of the palette. After you have added it, the button is most likely hovering in the upper left corner. Set the `layout_gravity` to `bottom` | + `end` to attach it to the bottom right corner.
+    -   Then, add a floating action button, which is listed under the **Design** section of the palette. After you have added it, the button is most likely hovering in the upper left corner. Set the `layout_gravity` to `bottom` &#124; `end` to attach it to the bottom right corner.
 
 > Setting gravity to `end` instead of `right` ensures that the button will actually be attached to the *left* if used on a phone that is set to a language that is read from right to left, like Arabic. Useful!
 

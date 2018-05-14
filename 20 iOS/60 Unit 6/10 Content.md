@@ -23,6 +23,10 @@ For this app, we will make use of elements that have been covered in previous gu
 
 To get the questions (and answers) needed to build this app, we will make use of an API: [jservice.io](http://jservice.io/). This API allows you to request random questions, for example. Use code from the Restaurant app to get your questions!
 
+## FAQ
+
+If you want to use an HTTP API (non HTTPS) your iOS app needs explicit permission to allow this type of connection.
+Instructions how to set this up can be found on page 902 in the iOS book at "Guided Project: Restaurant - part 3 - Project Setup".
 
 ## Getting credit
 

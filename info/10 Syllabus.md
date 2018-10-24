@@ -32,11 +32,11 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
 
-- Check if your [personal timetable](https://datanose.nl/) shows App Studio
-- Read the remainder of this syllabus
-- Practice object-oriented concepts in Java or Swift
-- Create your first app!
-- If in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant
+- Check if your [personal timetable](https://datanose.nl/) shows App Studio.
+- Come to the first session to get acquainted to the staff.
+- Read the remainder of this syllabus.
+- Practice object-oriented concepts in Java or Swift, and create your first app!
+- When in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant.
 
 <a name="prerequisites"></a>
 
@@ -51,39 +51,46 @@ Studio.
 
 ## Asking questions 
 
-The course's staff consists of your instructor and many teaching assistants. Due to the size of the course, we can't usually respond to email inquiries about your assignments.
+The course's staff consists of your instructor and many teaching assistants. Due to the size of the course, we can't usually respond to e-mail inquiries about your assignments.
 
 You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
 
-Below you will find a list of the courses's staff:
+Below you will find a list of the course's staff:
 
-- Martijn Stegeman, *instructor* <help@mprog.nl>
-- Renske Talsma, *teaching assistant (Android)*
-- Julia Anten, *teaching assistant (Android)*
-- Marijn Jansen, *teaching assistant (iOS)*
-- Emma Hokken, *teaching assistant (iOS)*
+- Martijn Stegeman (instructor)
+- Renske Talsma (Android)
+- Natasja Wezel (Android)
+- Marijn Jansen (iOS)
+- Emma Hokken (iOS)
 
 <a name="grades"></a>
 
 ## What to do
 
-Every week, exercises and a programming project will be made available. Final grades are determined using the following weights:
+Every week, exercises and a project will be made available. Final grades are determined using the following weights:
 
-| exercises | 20% |
-| projects  | 80% |
+| exercises | 10% |
+| projects  | 90% |
 
-For both exercises and projects, there are six weekly deadlines:
+For both exercises and projects, there are seven deadlines:
 
-| no |   exercises |     project |  
-| -: | ----------: | ----------: |  
-|  1 | Wed  11-Apr | Fri  13-Apr |  
-|  2 | Wed  18-Apr | Fri  20-Apr |  
-|  3 | Wed  25-Apr | Sun  29-Apr |  
-|  4 | Wed   2-May | Fri   4-May |  
-|  5 | Wed   9-May | Fri  11-May |  
-|  6 | Wed  16-May | Fri  18-May |  
+| no |     deadline |  
+| -: |  ----------: |  
+|  1 |  Mon   5-Nov |  
+|  2 |  Fri   9-Nov |  
+|  3 |  Wed  14-Nov |  
+|  4 |  Wed  21-Nov |  
+|  5 |  Wed  28-Nov |  
+|  6 |  Wed   5-Dec | 
+|  7 |  Wed  12-Dec | 
 
 You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
+
+Grading takes place portfolio-style. At the end of the course, you will have seven projects on GitHub which you will have created and refined during the weeks after first submitting. To improve and refine, you will need feedback, which you will receive from other students as well as the staff. It's your responsibility to ask for this feedback! Grading will take place after the final portfolio deadline:
+
+| portfolio deadline |
+| ------------------ |
+| Mon 17-Dec 2018    |
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
@@ -91,21 +98,32 @@ No retakes are possible for any part of the course. You may re-take the course a
 
 ### Exercises 
 
-Exercises help you learn the ropes of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications. 
+Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
 
-You can earn points for completing exercises early in the week. To earn points, complete the exercises and push your answers to a GitHub repository. You are encouraged to review the week's exercises before office hours on Monday, so as to make optimal use of your time during the lab session.
+You can earn points for completing exercises early in the week. To earn points, complete the exercises before the deadline and demonstrate to a staff member during office hours.
 
 <a name="projects"></a>
 
 ### Guided projects 
 
-Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the guided projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project on GitHub and have committed and pushed any final changes before you show it to the staff.
+Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project to GitHub and have committed and pushed any final changes before you show it to the staff.
 
-Feedback can be obtained in class while checking off assignments. You are encouraged to clearly ask for feedback that you need to improve your future work, this also includes code quality!
+The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+
+| pts | description                                                                          |  
+| --: | ------------------------------------------------------------------------------------ |  
+|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   3 | Reasonable quality, but lots of room for improvement.                                |  
+|   2 | The app mostly works but really lacks in quality.                                    |  
+|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
+|   0 | Not submitted or very incomplete.                                                    |  
+
+Feedback can be obtained in class while checking off assignments. You are required to ask for feedback that you need to improve your future work!
 
 <a name="officehours"></a>
 
-## Office hours 
+## Office hours
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 

@@ -17,7 +17,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## Getting started 
 
-You are expected to complete the provided exercises, attend most office hours, submit five fully working practice apps, as well as a final project.
+You are expected to complete the provided exercises, attend most office hours, submit seven fully working apps, improve on those apps for your portfolio, and confer with your mentor regularly.
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio.
 - Come to the first session to get acquainted to the staff.
@@ -74,7 +74,7 @@ You must complete all projects to be eligible for a satisfactory grade, unless g
 
 Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
 
-You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours on or before the deadline.
+You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours, on or before the deadline.
 
 
 ### Projects 
@@ -99,7 +99,18 @@ To improve and refine your apps for the final deadline, you will need even more 
 
 ## Office hours
 
-Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
+Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants. Times differ by platform:
+
+| weekday    | Android | iOS    |  
+| ---------- | ------- | ------ |  
+| Mondays    | 10--13  | 11--15 |  
+| Tuesdays   | 11--13  | 13--15 |  
+| Wednesdays | 10--15  | 10--13 |  
+
+
+## Mentoring
+
+You are expected to make an appointment with your assigned mentor on Fridays once every two weeks. Your mentor will help you get started, provide you with additional feedback for your portfolio and can answer most practical questions.
 
 
 ## Tutoring 

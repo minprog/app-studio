@@ -55,8 +55,8 @@ A list of the course's staff:
 
 Every week, exercises and a project will be made available. Exercises get you started, and projects become part of a portfolio of apps. Final grades are determined using the following weights.
 
-| exercises | 15% |
-| projects  | 85% |
+| exercises | 10% |
+| projects  | 90% |
 
 For both exercises and projects, there are seven deadlines. There is also one final deadline for submitting improved versions of your projects for your portfolio.
 

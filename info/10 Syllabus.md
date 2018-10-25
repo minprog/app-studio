@@ -81,7 +81,7 @@ You can earn points for completing exercises. You should demonstrate your finish
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Grading takes place portfolio-style. At the end of the course, you will created have seven projects and refined those during the weeks after first submitting.
 
-To get credit for each project, demonstrate its functionality on or before the deadline. You will receive immediate feedback from the staff and the app's completion will be noted.
+To get credit for each project, demonstrate its functionality on or before that app's deadline. You will receive immediate feedback from the staff and the app's completion will be noted.
 
 Final grading will take place after the final portfolio deadline. Each app will receive a grade according to the following scheme:
 
@@ -130,8 +130,7 @@ The book below may provide additional learning material:
 
 All work that you do toward fulfillment of this course's expectations must be
 your own work. You may read and comment upon classmates' code toward
-fulfillment of projects' code reviews but only for classmates whose code is
-assigned to you by the course's staff for review. You may integrate ideas and
+fulfillment of projects' code reviews but only *after* the deadline for that project has passed and you have signed off your submission. You may integrate ideas and
 techniques that you glean from your reviews of classmates' code and from
 classmates' reviews of your code into your own work, so long as you attribute
 those ideas and techniques back to your classmates, as with comments in your

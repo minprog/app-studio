@@ -3,7 +3,7 @@
 - ding
 {:toc}
 
-## Syllabus, fall 2018
+*Syllabus, Fall 2018*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -38,7 +38,7 @@ structures and algorithms. You also need to have a laptop capable of running eit
 Studio.
 
 
-## Asking questions 
+## Asking questions
 
 The course's staff consists of your instructor and many teaching assistants. You are encouraged to ask questions to the staff. Whenever you are in the lab, feel free to send a help request by using the <i class="fa fa-hand-pointer-o fa-fw"></i> menu, above.
 

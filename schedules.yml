@@ -1,0 +1,47 @@
+Android:
+    Week 0:
+        'Preparations: Install Android Studio': '/android/getting-started'
+    Week 1:
+        'Preparations: Install Android Studio': '/android/getting-started'
+        'Exercise: Java Classes': '/android-exercises/classes'
+        'Project 1: Mr. Potatohead': '/projects/mr-potatohead'
+        'Instructions for GitHub': '/android/git'
+    Week 2:
+        'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
+        'Project 2: Mad Libs': '/projects/mad-libs' 
+    Week 3:
+        'Project 3: Restaurant': '/projects/restaurant'
+        'Exercise: References': '/android-exercises/references'
+        'Project 3: Restaurant': '/projects/restaurant'
+    Week 4:
+        'Exercise: Public vs. Private': '/android-exercises/public-vs-private'
+        'Exercise: Static vs. non-static': '/android-exercises/static-vs-non-static'
+        'Project 4: To-do List': '/projects/to-do-list'
+    Week 5:
+        'Exercise: Polymorphism': '/android-exercises/polymorphism'
+        'Exercise: Interfaces': '/android-exercises/interfaces'
+        'Project 5: Restaurant Revisited': '/projects/restaurant-revisited'
+    Week 6:
+        'Project 6: Your Own': '/projects/your-own'
+        'Better Code Hub': '/guides/better-code-hub'
+        'Code Review': '/guides/code-reviews'
+        'Code Style Guide': 'https://source.android.com/source/code-style'
+
+iOS:
+    Week 0:
+        'Install or upgrade Xcode': '/swift/preparations'
+    Week 1:
+        'Install or upgrade Xcode': '/swift/preparations'
+        'Unit 1 assignments': '/swift/unit-1'
+    Week 2:
+        'Unit 2 assignments': '/swift/unit-2'
+    Week 3:
+        'Unit 3 assignments': '/swift/unit-3'
+    Week 4:
+        'Unit 4 assignments': '/swift/unit-4'
+    Week 5:
+        'Unit 5 assignments': '/swift/unit-5'
+    Week 6:
+        'Project 6: Your Own': '/projects/your-own'
+        'Better Code Hub': '/guides/better-code-hub'
+        'Code Review': '/guides/code-reviews'

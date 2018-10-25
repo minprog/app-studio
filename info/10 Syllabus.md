@@ -51,8 +51,8 @@ A list of the course's staff:
 
 Every week, exercises and a project will be made available. Final grades are determined using the following weights:
 
-| exercises | 10% |
-| projects  | 90% |
+| exercises | 15% |
+| projects  | 85% |
 
 For both exercises and projects, there are seven deadlines:
 
@@ -65,30 +65,29 @@ For both exercises and projects, there are seven deadlines:
 |  5 |  Wed  28-Nov |  
 |  6 |  Wed   5-Dec | 
 |  7 |  Wed  12-Dec | 
+|  P |  Mon  17-Dec | 
 
-You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
-
-Grading takes place portfolio-style. At the end of the course, you will have seven projects on GitHub which you will have created and refined during the weeks after first submitting. To improve and refine, you will need feedback, which you will receive from other students as well as the staff. It's your responsibility to ask for this feedback! Grading will take place after the final portfolio deadline:
-
-| portfolio deadline |
-| ------------------ |
-| Mon 17-Dec 2018    |
-
-No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
+You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
 
 ### Exercises 
 
 Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
 
-You can earn points for completing exercises early in the week. To earn points, complete the exercises before the deadline and demonstrate to a staff member during office hours.
+You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours on or before the deadline.
 
 
-### Guided projects 
+### Projects 
 
-Each week, you will create an app using the concepts introduced in exercises and tutorials. Points can be earned by completing the projects and demonstrating the fully functional application during office hours. In order to be eligible for points, you must have uploaded your project to GitHub and have committed and pushed any final changes before you show it to the staff.
+Each week, you will create an app using the concepts introduced in exercises and tutorials.
 
-The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+Grading takes place portfolio-style. At the end of the course, you will created have seven projects and refined those during the weeks after first submitting.
+
+To get credit for each project, demonstrate its functionality on or before the deadline. You will receive immediate feedback from the staff and the app's completion will be noted.
+
+To improve and refine your apps thereafter, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
+
+Final grading will take place after the final portfolio deadline. Each app will receive a grade according to the following scheme:
 
 | pts | description                                                                          |  
 | --: | ------------------------------------------------------------------------------------ |  

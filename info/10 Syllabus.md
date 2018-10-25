@@ -105,11 +105,11 @@ To improve and refine your apps for the final deadline, you will need even more 
 
 Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants. Times differ by platform:
 
-| weekday    | Android | iOS    |  
-| ---------- | ------- | ------ |  
-| Mondays    | 10--13  | 11--15 |  
-| Tuesdays   | 11--13  | 13--15 |  
-| Wednesdays | 10--15  | 10--13 |  
+| weekday                    | Android | iOS    |  
+| -------------------------- | ------- | ------ |  
+| Mondays                    | 10--13  | 11--15 |  
+| Tuesdays (lightly staffed) | 11--13  | 13--15 |  
+| Wednesdays                 | 10--15  | 10--13 |  
 
 
 ## Mentoring

@@ -67,7 +67,7 @@ For both exercises and projects, there are seven deadlines:
 |  7 |  Wed  12-Dec | 
 |  portfolio |  Mon  17-Dec | 
 
-You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
+You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
 
 
 ### Exercises 

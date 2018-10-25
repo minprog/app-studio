@@ -3,7 +3,7 @@
 - ding
 {:toc}
 
-## Syllabus, spring 2018
+## Syllabus, fall 2018
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course

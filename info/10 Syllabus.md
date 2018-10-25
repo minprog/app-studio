@@ -1,6 +1,9 @@
 # Native App Studio
 
-## Syllabus, spring 2018{:notoc}
+- ding
+{:toc}
+
+## Syllabus, spring 2018
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -11,11 +14,6 @@ programming assignments, and working towards a final project to show off
 everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
-
-## Table of contents
-
-- ding
-{:toc}
 
 ## Getting started 
 

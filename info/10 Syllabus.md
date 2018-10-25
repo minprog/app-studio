@@ -1,6 +1,6 @@
 # Native App Studio
 
-## Syllabus, spring 2018
+## Syllabus, spring 2018{:notoc}
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -14,19 +14,8 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## Table of contents
 
-- [Getting started](#gettingstarted)
-- [Prerequisites](#prerequisites)
-- [Asking questions](#staff)
-- [What to do](#grades)
-	* [Exercises](#exercises)
-	* [Projects](#projects)
-- [Office hours](#officehours)
-- [Tutoring](#tutoring)
-- [Books](#books)
-- [Collaboration](#collaboration)
-
-
-<a name="gettingstarted"></a>
+- ding
+{:toc}
 
 ## Getting started 
 
@@ -38,7 +27,6 @@ You are expected to complete the provided exercises, attend most office hours, s
 - Practice object-oriented concepts in Java or Swift, and create your first app!
 - When in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant.
 
-<a name="prerequisites"></a>
 
 ## Prerequisites 
 
@@ -47,7 +35,6 @@ comfortable with memory management, runtime analysis, design patterns, databases
 structures and algorithms. You also need to have a laptop capable of running either Xcode or Android
 Studio.
 
-<a name="staff"></a>
 
 ## Asking questions 
 
@@ -55,7 +42,7 @@ The course's staff consists of your instructor and many teaching assistants. Due
 
 You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
 
-Below you will find a list of the course's staff:
+A list of the course's staff:
 
 - Martijn Stegeman (instructor)
 - Renske Talsma (Android)
@@ -63,7 +50,6 @@ Below you will find a list of the course's staff:
 - Marijn Jansen (iOS)
 - Emma Hokken (iOS)
 
-<a name="grades"></a>
 
 ## What to do
 
@@ -94,7 +80,6 @@ Grading takes place portfolio-style. At the end of the course, you will have sev
 
 No retakes are possible for any part of the course. You may re-take the course as a whole in a next semester.
 
-<a name="exercises"></a>
 
 ### Exercises 
 
@@ -102,7 +87,6 @@ Exercises teach you the basics of programming iOS or Android. Earlier in the cou
 
 You can earn points for completing exercises early in the week. To earn points, complete the exercises before the deadline and demonstrate to a staff member during office hours.
 
-<a name="projects"></a>
 
 ### Guided projects 
 
@@ -121,39 +105,35 @@ The project will be checked for full completion of the assignment and considerat
 
 Feedback can be obtained in class while checking off assignments. You are required to ask for feedback that you need to improve your future work!
 
-<a name="officehours"></a>
 
 ## Office hours
 
 Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 
-<a name="tutoring"></a>
 
 ## Tutoring 
 
 For students who avail themselves of the course's other resources but still find themselves struggling, the course offers tutoring, to the extent possible, providing opportunities for students to work with the course's staff one-on-one or in particularly small groups. To arrange, contact the course's heads.
 
-<a name="books"></a>
 
 ## Books 
+
 
 ### Android
 
 No books are required for students of the Android platform, but the following book may provide additional learning material: Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/).
 
+
 ### iOS
 
-Students of the iOS platform need to aquire one book in particular:
+Students of the iOS platform need to acquire (for free) one book in particular:
 
-- Apple, [*App Development with Swift*](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996?l=en&mt=11) (Free)
+- [*App Development with Swift*](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996?l=en&mt=11)
 
-The books below may provide additional learning material:
+The book below may provide additional learning material:
 
-- Matt Neuburg, [*iOS 10 Programming Fundamentals with Swift*](http://shop.oreilly.com/product/0636920055211.do)
+- [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
-- Apple, [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
-
-<a name="collaboration"></a>
 
 ## Collaboration
 
@@ -190,7 +170,6 @@ programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://student.uva.nl/az/a-z-lijst/a-z-lijst/content/folder/fraude-plagiaat-en-bronvermelding/plagiaat-en-fraude.html
 [English]: http://student.uva.nl/en/az/a-z/a-z/content/folder/plagiarism-and-fraud/plagiarism-and-fraud.html
-
 
 
 ## Acknowledgements

@@ -53,23 +53,23 @@ A list of the course's staff:
 
 ## What to do
 
-Every week, exercises and a project will be made available. Exercises get you started, and projects become part of a portfolio of apps. Final grades are determined using the following weights.
+Every week, exercises and a project will be made available. Exercises get you started, and projects become part of a portfolio of apps. Final grades are determined using the following weights:
 
 | exercises | 10% |
 | projects  | 90% |
 
 For both exercises and projects, there are seven deadlines. There is also one final deadline for submitting improved versions of your projects for your portfolio.
 
-| number |     deadline |  
-| -- |  ----------: |  
-|  1 |  Mon   5-Nov |  
-|  2 |  Fri   9-Nov |  
-|  3 |  Wed  14-Nov |  
-|  4 |  Wed  21-Nov |  
-|  5 |  Wed  28-Nov |  
-|  6 |  Wed   5-Dec | 
-|  7 |  Wed  12-Dec | 
-|  portfolio |  Mon  17-Dec | 
+| number    |    deadline |  
+| --------- | ----------: |  
+| 1         | Mon   5-Nov |  
+| 2         | Fri   9-Nov |  
+| 3         | Wed  14-Nov |  
+| 4         | Wed  21-Nov |  
+| 5         | Wed  28-Nov |  
+| 6         | Wed   5-Dec |  
+| 7         | Wed  12-Dec |  
+| portfolio | Mon  17-Dec |  
 
 You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
 

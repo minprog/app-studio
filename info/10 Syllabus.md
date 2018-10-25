@@ -94,7 +94,7 @@ Final grading will take place after the final portfolio deadline. Each app will 
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
 
-To improve and refine your apps thereafter, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
+To improve and refine your apps for the final deadline, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
 
 
 ## Office hours

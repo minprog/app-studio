@@ -92,7 +92,7 @@ Final grading will take place after the final portfolio deadline. Each app will 
 | pts | description                                                                          |  
 | --: | ------------------------------------------------------------------------------------ |  
 |   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
+|   4 | Solid quality in use, layout and code. Maybe some trivial error or oversight.        |  
 |   3 | Reasonable quality, but lots of room for improvement.                                |  
 |   2 | The app mostly works but really lacks in quality.                                    |  
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  

@@ -36,9 +36,7 @@ Studio.
 
 ## Asking questions 
 
-The course's staff consists of your instructor and many teaching assistants. Due to the size of the course, we can't usually respond to e-mail inquiries about your assignments.
-
-You are encouraged to speak to a student assistant or the instructor in the lab. Send a help request by using the "Ask" menu, above.
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to ask questions to the staff. Whenever you are in the lab, feel free to send a help request by using the <i class="fa fa-hand-pointer-o fa-fw"></i> menu, above.
 
 A list of the course's staff:
 

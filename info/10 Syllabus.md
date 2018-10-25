@@ -98,12 +98,10 @@ Final grading will take place after the final portfolio deadline. Each app will 
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
 
-Feedback can be obtained in class while checking off assignments. You are required to ask for feedback that you need to improve your future work!
-
 
 ## Office hours
 
-Office hours are opportunities for help with projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
+Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants. Office hours are scheduled in the [official timetable](https://datanose.nl/).
 
 
 ## Tutoring 

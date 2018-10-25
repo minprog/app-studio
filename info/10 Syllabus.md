@@ -18,7 +18,7 @@ iPod Touches, and iPads using Xcode and the iOS SDK.
 
 ## Expectations
 
-You are expected to complete the provided exercises, attend most office hours, submit seven fully working apps, improve on those apps for your portfolio, and confer with your mentor regularly. You are also expected to work on preparations for your final programming project.
+You are expected to complete the provided exercises, attend most office hours, submit seven fully working apps, improve on those apps for your portfolio, and to confer with your mentor regularly. You are also expected to work on preparations for your final programming project.
 
 
 ## Getting started 

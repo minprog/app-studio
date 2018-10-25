@@ -79,13 +79,9 @@ You can earn points for completing exercises. You should demonstrate your finish
 
 ### Projects 
 
-Each week, you will create an app using the concepts introduced in exercises and tutorials.
-
-Grading takes place portfolio-style. At the end of the course, you will created have seven projects and refined those during the weeks after first submitting.
+Each week, you will create an app using the concepts introduced in exercises and tutorials. Grading takes place portfolio-style. At the end of the course, you will created have seven projects and refined those during the weeks after first submitting.
 
 To get credit for each project, demonstrate its functionality on or before the deadline. You will receive immediate feedback from the staff and the app's completion will be noted.
-
-To improve and refine your apps thereafter, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
 
 Final grading will take place after the final portfolio deadline. Each app will receive a grade according to the following scheme:
 
@@ -97,6 +93,8 @@ Final grading will take place after the final portfolio deadline. Each app will 
 |   2 | The app mostly works but really lacks in quality.                                    |  
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
+
+To improve and refine your apps thereafter, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
 
 
 ## Office hours

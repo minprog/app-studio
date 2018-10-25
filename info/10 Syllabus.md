@@ -15,9 +15,13 @@ everything that has been learned. Students learn to write native apps for
 Android using Studio and the Android SDK *or* to write native apps for iPhones,
 iPod Touches, and iPads using Xcode and the iOS SDK.
 
-## Getting started 
 
-You are expected to complete the provided exercises, attend most office hours, submit seven fully working apps, improve on those apps for your portfolio, and confer with your mentor regularly.
+## Expectations
+
+You are expected to complete the provided exercises, attend most office hours, submit seven fully working apps, improve on those apps for your portfolio, and confer with your mentor regularly. You are also expected to work on preparations for your final programming project.
+
+
+## Getting started 
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio.
 - Come to the first session to get acquainted to the staff.

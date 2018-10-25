@@ -60,7 +60,7 @@ Every week, exercises and a project will be made available. Exercises get you st
 
 For both exercises and projects, there are seven deadlines. There is also one final deadline for submitting improved versions of your projects for your portfolio.
 
-| no |     deadline |  
+|  |     deadline |  
 | -: |  ----------: |  
 |  1 |  Mon   5-Nov |  
 |  2 |  Fri   9-Nov |  

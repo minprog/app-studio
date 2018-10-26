@@ -105,8 +105,6 @@ To improve and refine your apps for the final deadline, you will need even more 
 
 On two days, you'll review your peers' apps and have peers review your own creations. This is an excellent opportunity to get feedback on your portfolio.
 
-| day         |  
-| ----------- |  
 | Tue  20-Nov |  
 | Fri  14-Dec |  
 

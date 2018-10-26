@@ -27,7 +27,7 @@ You are expected to complete the provided exercises, attend most office hours, s
 - Read the remainder of this syllabus.
 - Install all required software for [Android](/android/introduction) or [iOS](/ios/introduction).
 - Come to the first session to get acquainted to the staff.
-- When in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant.
+- When in doubt, contact the course's heads at <help@mprog.nl> or speak to your mentor.
 
 
 ## Prerequisites 

@@ -24,9 +24,9 @@ You are expected to complete the provided exercises, attend most office hours, s
 ## Getting started 
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio.
-- Come to the first session to get acquainted to the staff.
 - Read the remainder of this syllabus.
-- Practice object-oriented concepts in Java or Swift, and create your first app!
+- Install all required software for [Android](/android/introduction) or [iOS](/ios/introduction).
+- Come to the first session to get acquainted to the staff.
 - When in doubt, contact the course's heads at <help@mprog.nl> or speak to an assistant.
 
 
@@ -62,7 +62,7 @@ For both exercises and projects, there are seven deadlines. There is also one fi
 
 | number    |    deadline |  
 | --------- | ----------: |  
-| 1         | Mon   5-Nov |  
+| 1         | Fri   2-Nov |  
 | 2         | Fri   9-Nov |  
 | 3         | Wed  14-Nov |  
 | 4         | Wed  21-Nov |  
@@ -99,6 +99,16 @@ Final grading will take place after the final portfolio deadline. Each app will 
 |   0 | Not submitted or very incomplete.                                                    |  
 
 To improve and refine your apps for the final deadline, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
+
+
+## Code reviews
+
+On two days, you'll review your peers' apps and have peers review your own creations. This is an excellent opportunity to get feedback on your portfolio.
+
+| day         |  
+| ----------- |  
+| Tue  20-Nov |  
+| Fri  14-Dec |  
 
 
 ## Office hours

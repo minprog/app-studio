@@ -25,7 +25,7 @@ You are expected to complete the provided exercises, attend most office hours, s
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio.
 - Read the remainder of this syllabus.
-- Install all required software for [Android](/android/introduction) or [iOS](/ios/introduction).
+- Install all required software for [Android](/installation/android) or [iOS](/installation/ios).
 - Come to the first session to get acquainted to the staff.
 - When in doubt, contact the course's heads at <help@mprog.nl> or speak to your mentor.
 
@@ -71,7 +71,7 @@ For both exercises and projects, there are seven deadlines. There is also one fi
 | 7         | Wed  12-Dec |  
 | portfolio | Mon  17-Dec |  
 
-You must complete all projects to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
+You must complete all projects before the deadline to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
 
 
 ### Exercises 

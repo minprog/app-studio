@@ -8,3 +8,7 @@ To check this, click the Apple () menu in the corner of your screen, choose A
 - Download and install version **10** of [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835) from the Mac App Store. This integrated development environment is totally free and includes the ability to run apps on your own iPhone or on a simulator on your Mac.
 
 - In the weeks ahead, you will work through the book [*App Development with Swift*](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996), which you can get in the Apple Book Store. Books should be available on your Mac or on your iPad. Make sure you are using the latest version of the book (Swift 4 edition).
+
+## Troubleshooting
+
+Ran into trouble? Contact the staff! It's important to get started quickly. You only have to do the above once, so get help now and you'll be set for the remainder of the course!

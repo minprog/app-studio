@@ -9,6 +9,8 @@ To check this, click the Apple () menu in the corner of your screen, choose A
 
 - In the weeks ahead, you will work through the book [*App Development with Swift*](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996), which you can get in the Apple Book Store. Books should be available on your Mac or on your iPad. Make sure you are using the latest version of the book (Swift 4 edition).
 
+- Try starting Xcode and creating a new project, then running it in the iPhone simulator.
+
 ## Troubleshooting
 
 Ran into trouble? Contact the staff! It's important to get started quickly. You only have to do the above once, so get help now and you'll be set for the remainder of the course!

@@ -46,7 +46,7 @@ Note: downloading from the website is about 1GB, but after that, Android will ne
 
 - The device will load and boot up, which will take a while. It will then show the home screen, and after some waiting, your new app will show!
 
-    ![](app.png)
+![](app.png)
 
 ## Troubleshooting
 

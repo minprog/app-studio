@@ -1,7 +1,7 @@
 # Getting started with app development
 
 We'll now start using the book you downloaded in [preparations](/ios/introduction).
-Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
+Please also download the [files](http://education-static.apple.com/app-dev-swift/v2.6/resources/student.zip) required to complete the exercises.
 
 ## Language exercises
 

@@ -42,6 +42,11 @@ Our main goal for this course is getting you some in-depth experience on importa
 - easy to use, no odds and ends
 
 
+## Adding to GitHub
+
+[Here](https://apps.mprog.nl/ios-reference/github) you'll find several instructions for adding your project's code to GitHub.
+
+
 ## Grading
 
 *Before* the deadline, complete the exercises and put your finished project on Github. Ask for help if needed!

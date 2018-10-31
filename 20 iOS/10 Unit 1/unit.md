@@ -1,7 +1,6 @@
 # Getting started with app development
 
-We'll now start using the book you downloaded in [preparations](/ios/introduction).
-Please also download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
+Please first download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
 
 
 ## Language exercises
@@ -18,7 +17,7 @@ In some respects, Swift is a bit different from most programming languages. The 
 
 Next up are four chapters about Xcode. You will get a lot of detail about how to use it, including the names of many of the tools that you need. You are expected to through the text and accompanying exercises.
 
-You might want to watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple.
+You might want also to watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple (not during lab times though!).
 
 {:start="5"}
 5. Xcode

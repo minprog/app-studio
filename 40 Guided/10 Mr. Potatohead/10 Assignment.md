@@ -45,6 +45,8 @@ The way to display the various body parts is to create a separate view for each 
     **Note:** some files may be selected while there are still a lot of "unversioned files". Make
     sure to select *all* of the files before continuing.
 
+    ![](commit.png)
+
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
 Your project files should now be visible on Github like in the picture below. All of the files and folders should be there! If not, ask for help!

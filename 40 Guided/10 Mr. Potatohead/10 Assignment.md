@@ -30,9 +30,9 @@ The way to display the various body parts is to create a separate view for each 
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
 
-2.  Create a new, empty repository on the Github website. Name your repository `Mr Potatohead`.
+2.  Go to <https://github.com/new> and create a new, empty repository. Name your repository `Mr Potatohead`. Do not allow it to add a `README`. You may leave all other settings unchanged.
 
-3.  Now, add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
+3.  Add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 
     Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
 
@@ -40,22 +40,25 @@ The way to display the various body parts is to create a separate view for each 
 
     ![find the git url on the github website for the project you just created](git-url.png)
 
-5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files". Make sure all checkboxes are selected, enter a commit message `Initial project` and then press the **commit** button. Turn off code analysis.
+5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files", which should be selected. Enter a commit message `Initial project`, turn off code analysis, and then press the **commit** button.
+
+    **Note:** some files may be selected while there are still a lot of "unversioned files". Make
+    sure to select *all* of the files before continuing.
 
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
-Your project files should now be visible on Github like in the picture below. If not, ask for help!
+Your project files should now be visible on Github like in the picture below. All of the files and folders should be there! If not, ask for help!
 
 ![](git-files.png)
 
 
 ## Add images to the project
 
-For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the project sidebar:
+For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the **project browser**:
 
 ![](file-browser.png)
 
-No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as **body.png**, **ears.png**, **hat.png**. Let's add those to the project.
+No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as `body.png`, `ears.png`, `hat.png`. Let's add those to the project.
 
 1. Just for a second, switch to the Project View using this dropdown:
 
@@ -67,17 +70,20 @@ No need to create original art! Here's [image files](mr-potato-head-images.zip) 
 
 ## Creating the user interface
 
-Let's now design the interface. Let's aim for this layout:
+Let's design the interface:
 
 ![](layout.png)
 
 1.  Double-click `activity_main.xml` in the project browser to open it. 
 
-2.  Your view currently contains a `Label` with the text `Hello World!`. Click it and press delete to remove it from the screen.
+2.  Your layout currently contains a `Label` with the text `Hello World!`. Click it and press delete (backspace) to remove it from the layout.
 
-3.  Now go to the Palette (remember where? it was in the video!). Select "Layouts" add drag a `FrameLayout` to the editor. This layout is perfect for stacking our potato images on top of each other.
+3.  Now go to the Palette (remember where? it was in the video!). Select the "Layouts" category and drag a `FrameLayout` to the editor. This layout is perfect for stacking our potato images on top of each other.
 
 4.  Also add a `GridLayout` to the screen. That one nicely fits the idea of presenting a grid of checkboxes.
+
+    > Note that the activity already contained a `ConstraintLayout`. Now you've added to different
+    types of layout *into* that top-level layout.
 
 5.  Roughly position both layouts like they are in the picture above. Later, we'll add constraints for automatically positioning them on different screen sizes.
 
@@ -87,38 +93,42 @@ Let's now design the interface. Let's aim for this layout:
 
     ![](attributes.png)
 
-    For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose "View all attributes" all the way down the Attributes sidebar.
+    For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose the blue link "View all attributes" all the way down the Attributes sidebar.
     
-    Tip: use the component tree to select the image views. You can even select multiple views and set the attributes for all of them:
+    > Tip: because all images are supposed to be on top of each other, it's hard to select
+    individual items. In that case, you can use the component tree to select the image views. You
+    can even select multiple views and set the attributes for all of them:
     
     ![](component.png)
 
-8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot from this assignment.
+8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot at the top of this assignment.
 
 9.  Finally, we'll need to add constraints. In the component tree, select the `gridLayout` and the `frameLayout`. Right-click and select Chain > Create Vertical Chain. This chain is the basis for automatic layout.
 
-10. Using your experience from the Android Lab about Constraint Layouts, make the screen even better, and try different phone sizes to check that the layout fits nicely!
+10. Using your experience from the Android Lab about constraint layouts, make the screen even better, and try different phone sizes to check that the layout fits nicely for each of them!
 
 
 ## Connecting everything with code
 
-First, some final setup. Checkboxes can *do* something when clicked. Select one of the checkboxes, and in the attributes sidebar find the `onClick` attribute. Enter `checkClicked` as its value: this is the name of the method that will be called whenever someone selects or unselects the checkbox. Do this for all checkboxes.
+First, some final setup. Checkboxes can *do* something when tapped on the phone. Select one of those checkboxes, and in the attributes sidebar find the `onClick` attribute. Select it, and enter `checkClicked` as its value: this is the name of the method that will be called whenever someone selects or unselects the checkbox. Do this for each of the checkboxes.
 
-1.  Now, switch to the code. Double-click `MainActivity` in the project browser.
+1.  Now, switch to the code, by double-clicking `MainActivity` in the Java folder in the project browser.
 
-2.  Add a method `checkClicked()` to the activity class:
+2.  Add a method `checkClicked()` to the activity class and add a `Log` message like this:
 
     ![](checkClicked.png)
 
 3.  Now try your app! Run it on your phone or in the simulator. Your app should log something whenever you click one of the checkboxes. If not, ask for help!
 
-Now, every single checkbox is connected to the same method. How do we figure out which one it is? We only have a single clue: the parameter `View v`. This parameter is a **reference** to our checkbox view on the screen (the one that was clicked). It is of type `View`, which is a superclass of `CheckBox`. It does not support all of the methods that `Checkbox` has.
+Now, every single checkbox is connected to the same method. How do we figure out which one it is? We only have a single clue: the parameter `View v`. This parameter is a **reference** to our checkbox view on the screen (the one that was clicked). However, this parameter is of type `View`, not of type `CheckBox`. It is common (and sometimes needed) to convert this parameter before doing anything else with it.
 
 1.  To access all methods from the `CheckBox`, we have to cast the parameter. Create a temporary variable to hold the `CheckBox`:
 
         CheckBox checkbox = (CheckBox) v;
 
-    As you might remember, putting a type between rounded brackets will **cast** something to that type (if possible!). The important part: we are absolutely sure that we connected the `checkClicked()` method only to checkboxes, so this is a safe thing to do!
+    As you might remember, putting a type between rounded brackets will **cast** something to that type (if possible!).
+    
+    > The important part: we are absolutely sure that we connected the `checkClicked()` method only to checkboxes, so this is a safe thing to do! We may *assume* that the thing in `v` is a `CheckBox`.
 
 2.  Now that we have a variable of type CheckBox, we can call the method `getText()` on it. Remember from the layout that you set the `text` property of each checkbox? This is the same.
 
@@ -162,10 +172,11 @@ You can use the `Bundle` to save items. This same bundle will be delivered to yo
 Now, your task is to save the `visibility` state of all `ImageViews`. Which get/put method seems appropriate to do this? Google "android bundle" to get a list of all get/put methods.
 
 
-## Some ideas
+## Some ideas for extras
 
 You may have some time left to make your app a bit better. Here are a few ideas that you can work on:
 
 - Phones can also be rotated to landscape mode. Currently, our layout doesn't work too well for this mode. Mr. Potatohad should probably be to the left and the checkboxes to the right. You can use two layouts for portrait and landscape, respectively, to fix this. In the layout editor, choose "Add landscape layout" to get started.
 
 - Think about how you can make the code for `checkboxClicked()` as tiny as possible, even when handling such a large a mount of checkboxes.
+

@@ -1,5 +1,7 @@
 # Unit 1: Getting Started
 
+If you missed the installation instructions, there are still [there](/installation/ios)!
+
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
 

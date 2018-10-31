@@ -1,6 +1,8 @@
 # Getting started with app development
 
-Please first download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises.
+If you missed the installation instructions, there are still [there](/installation/ios)!
+
+In the weeks ahead, you will work through the book App Development with Swift, which you can get in the Apple Book Store. Books should be available on your Mac or on your iPad. Make sure you are using the latest version of the book (Swift 4 edition). Please first download the [files](https://developer.apple.com/sample-code/swift/downloads/AppDevelopmentSwift4-Student.zip) required to complete the exercises!
 
 
 ## Language exercises

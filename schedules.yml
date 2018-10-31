@@ -1,11 +1,6 @@
 Android:
-    Week 0:
-        'Preparations: Install Android Studio': '/android/getting-started'
     Week 1:
-        'Preparations: Install Android Studio': '/android/getting-started'
-        'Exercise: Java Classes': '/android-exercises/classes'
-        'Project 1: Mr. Potatohead': '/projects/mr-potatohead'
-        'Instructions for GitHub': '/android/git'
+        'Overview': '/android/unit-1'
     Week 2:
         'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
         'Project 2: Mad Libs': '/projects/mad-libs' 
@@ -28,11 +23,8 @@ Android:
         'Code Style Guide': 'https://source.android.com/source/code-style'
 
 iOS:
-    Week 0:
-        'Install or upgrade Xcode': '/swift/preparations'
     Week 1:
-        'Install or upgrade Xcode': '/swift/preparations'
-        'Unit 1 assignments': '/swift/unit-1'
+        'Overview': '/ios/unit-1'
     Week 2:
         'Unit 2 assignments': '/swift/unit-2'
     Week 3:

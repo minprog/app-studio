@@ -3,25 +3,21 @@
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
 
-## Java exercises
+## Java labs
 
-Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
+Each unit contains exercises to help you master the Java language. It's a recap of basic object-oriented concepts like classes, instantiation etc. If you're already familiar, you should still use the lab to get acquainted to Java-specific syntax.
 
-- Start with an [overview of Java](https://www.youtube.com/watch?v=UaxRRO9175A). Make notes!
-- Do the exercises on [Methods, properties and constructors](/java-exercises/classes)
-- Do the exercises on [Parameters and return values](/java-exercises/parameters-and-return-values)
-- Do the exercises on [References](/java-exercises/references)
+- Go to [Lab 1](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week1/Lab/).
+- Login with your GitHub credentials, which will be used to save your lab between sessions.
 
 
 ## Android practice
 
-Before making an app, you'll find some explanation about the parts of Android that you need to make apps. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+Before making an app, you'll need some explanation about the parts of Android that you need to make it. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
 
-Read this:
+Read and understand this:
 
 - [Views](/android-reference/views)
-- [Layouts](/android-reference/layouts)
-- [State](/android-reference/state)
 
 Do this:
 
@@ -30,11 +26,14 @@ Do this:
 
 ## Project
 
-Now you are ready to make your first app! You can choose between two projects:
+Now you are ready to make your first app, [Mr. Potatohead](/guided/mr-potatohead)! The assignment takes you step-by-step through making it, while introducing elements of the Android Studio IDE and the architecture of Android source code. You will likely run in to practical problems, which you will need to solve before the deadline!
 
-- **Guided project: [Mr. Potatohead](/guided/mr-potatohead)** takes you step-by-step through making your first app. You'll probably choose this one if you haven't built applications on a platform before.
 
-- **Unguided project: [First App](/projects/first-app)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+## Reference
+
+- [Video: supplemental Java introduction](https://www.youtube.com/watch?v=UaxRRO9175A)
+- [Layouts](/android-reference/layouts)
+- [State](/android-reference/state)
 
 
 ## Goals
@@ -46,22 +45,12 @@ Our main goal for this course is getting you some in-depth experience on importa
 - easy to use, no odds and ends
 
 
-## Getting credit
+## Grading
 
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the exercises and put your finished project on Github *before* the deadline. Your project's code needs to be on GitHub before it may be signed off. Ask for help if needed!
 
-Completing the exercises/practice can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
+1. Submit your project's code at [Unit 1](/submit/unit-1).
 
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app mostly works but really lacks in quality.                                    |  
-|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
-|   0 | Not submitted or very incomplete.                                                    |  
+2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
 
-
-## Submit
-
-Submit at [Unit 1](/submit/unit-1).
+3. Next, acquire feedback on your app and improve on it. Improvements should be finished and synced with GitHub before the course's final deadline.

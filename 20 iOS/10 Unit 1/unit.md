@@ -17,7 +17,7 @@ In some respects, Swift is a bit different from most programming languages. The 
 
 ## Getting to know Xcode
 
-Next up are four chapters about Xcode. You will get a lot of detail about how to use it, including the names of many of the tools that you need. You are expected to through the text and accompanying exercises.
+Next up are four chapters about Xcode. You will get a lot of detail about how to use it, including the names of many of the tools that you need. You are expected to work through the text and accompanying exercises.
 
 You might want also to watch the ["Introduction to Xcode"](https://developer.apple.com/videos/play/wwdc2016/413/) video from Apple (not during lab times though!).
 
@@ -49,7 +49,7 @@ Our main goal for this course is getting you some in-depth experience on importa
 
 ## Grading
 
-*Before* the deadline, complete the exercises and put your finished project on Github. Ask for help if needed!
+*Before* the deadline, complete the exercises and put your finished project on GitHub. Ask for help if needed!
 
 1. Submit the link to your project's GitHub repository at [Unit 1](/submit/unit-1).
 

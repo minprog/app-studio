@@ -2,7 +2,7 @@
 
 ## Language exercises
 
-Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
+This week you will learn some essential parts of the Swift language. These chapters learn you how to use object oriented programming in Swift. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
 1. Strings
 2. Functions
@@ -11,7 +11,10 @@ Feel free to skip some of the parts about the programming language, but make sur
 5. Collections
 6. Loops
 
+
 ## Getting to know UIKit
+
+Next up are four chapters about the Interface Builder and UIKit. You will get a lot of detail about how to use it and create great user interfaces. You are expected to work through the text and accompanying exercises.
 
 {:start="7"}
 7. Introduction to UIKit
@@ -19,38 +22,31 @@ Feel free to skip some of the parts about the programming language, but make sur
 9. Controls In Action
 10. Auto Layout and Stack Views
 
+
 ## Project
 
-You can choose between two projects:
+Now you are ready to make your next app! At the end of the chapter, you'll find a Guided Project to make a simple iPad game in Xcode.
 
-- **Guided project: Apple Pie** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
+## Goals
 
-- **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+Our main goal for this course is getting you some in-depth experience on important aspects of creating **good quality** apps. You'll practice with various techniques every week. For this week, make sure you try, as much as possible, to create an app that excels in these respects:
 
-
-## Getting credit
-
-Make sure that you complete the language exercises and put your finished project on [Github](/ios-reference/github) *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
-
-Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
-
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app mostly works but really lacks in quality.                                    |  
-|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
-|   0 | Not submitted or very incomplete.                                                    |  
+- layout, margins, compatibility with multiple tablet sizes
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
 
 
-This week, we will look at the following quality aspects:
+## Adding to GitHub
 
-- (from last week) layout, margins, compatibility with multiple phone sizes
-- (from last week) basic code quality such as comments, names, consistency and design
-- (from last week) easy to use, no odds and ends
-- level of separation between game code and user interface code
+[Here](https://apps.mprog.nl/ios-reference/github) you'll find several instructions for adding your project's code to GitHub.
 
-## Submit
 
-Submit at [Unit 2](/submit/unit-2).
+## Grading
+
+*Before* the deadline, complete the exercises and put your finished project on GitHub. Ask for help if needed!
+
+1. Submit the link to your project's GitHub repository at [Unit 2](/submit/unit-2).
+
+2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
+
+3. Next, acquire feedback on your app and improve on it. Improvements should be finished and synced with GitHub before the course's final deadline.

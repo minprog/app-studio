@@ -1,4 +1,4 @@
-# GitHub in Xcode 9
+# GitHub in Xcode 10
 
 
 ### Preparation: Create a GitHub account
@@ -19,7 +19,7 @@ If you haven't done that you can enable Source control in your menubar.
 Open the "Source Control Navigator" (`⌘2`) and right-click on your project.
 ![](step2.png)
 
-Choose, "Create "Project-name" Remote on GitHub".
+Choose, "Create "Project-name" Remote...".
 ![](step3.png){:style="height:50%;width:50%"}
 
 Choose your account (or Add a GitHub account...), add a repository name, be sure your projects visibility is on public and click Create!
@@ -31,6 +31,6 @@ Your project is now on GitHub in it's inital state.
 
 ## Commiting you changes 
 
-When you're ready to commit your changes to GitHub, click 'Source Controll' in the menubar and then 'Commit...' (`⌥⌘C`).
+When you're ready to commit your changes to GitHub, click 'Source Control' in the menubar and then 'Commit...' (`⌥⌘C`).
 Make sure you'll check the 'Push to remote'-checkbox.
 ![](step5.png)

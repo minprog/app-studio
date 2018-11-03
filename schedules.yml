@@ -1,41 +1,31 @@
 Android:
     Week 1:
-        'Overview': '/android/unit-1'
+        'Overview': '/android/week-1'
     Week 2:
-        'Overview': '/android/unit-2'
-    Week 2:
-        'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
-        'Project 2: Mad Libs': '/projects/mad-libs' 
+        'Overview': '/android/week-2'
     Week 3:
-        'Project 3: Restaurant': '/projects/restaurant'
-        'Exercise: References': '/android-exercises/references'
-        'Project 3: Restaurant': '/projects/restaurant'
+        'Overview': '/android/week-3'
     Week 4:
-        'Exercise: Public vs. Private': '/android-exercises/public-vs-private'
-        'Exercise: Static vs. non-static': '/android-exercises/static-vs-non-static'
-        'Project 4: To-do List': '/projects/to-do-list'
+        'Overview': '/android/week-4'
     Week 5:
-        'Exercise: Polymorphism': '/android-exercises/polymorphism'
-        'Exercise: Interfaces': '/android-exercises/interfaces'
-        'Project 5: Restaurant Revisited': '/projects/restaurant-revisited'
+        'Overview': '/android/week-5'
     Week 6:
-        'Project 6: Your Own': '/projects/your-own'
-        'Better Code Hub': '/guides/better-code-hub'
-        'Code Review': '/guides/code-reviews'
-        'Code Style Guide': 'https://source.android.com/source/code-style'
+        'Overview': '/android/week-6'
+    Week 7:
+        'Overview': '/android/week-7'
 
 iOS:
     Week 1:
-        'Overview': '/ios/unit-1'
+        'Overview': '/ios/week-1'
     Week 2:
-        'Overview': '/ios/unit-2'
+        'Overview': '/ios/week-2'
     Week 3:
-        'Unit 3 assignments': '/swift/unit-3'
+        'Overview': '/ios/week-3'
     Week 4:
-        'Unit 4 assignments': '/swift/unit-4'
+        'Overview': '/ios/week-4'
     Week 5:
-        'Unit 5 assignments': '/swift/unit-5'
+        'Overview': '/ios/week-5'
     Week 6:
-        'Project 6: Your Own': '/projects/your-own'
-        'Better Code Hub': '/guides/better-code-hub'
-        'Code Review': '/guides/code-reviews'
+        'Overview': '/ios/week-6'
+    Week 7:
+        'Overview': '/ios/week-7'

@@ -2,6 +2,8 @@ Android:
     Week 1:
         'Overview': '/android/unit-1'
     Week 2:
+        'Overview': '/android/unit-2'
+    Week 2:
         'Exercise: Parameters': '/android-exercises/parameters-and-return-values'
         'Project 2: Mad Libs': '/projects/mad-libs' 
     Week 3:
@@ -26,7 +28,7 @@ iOS:
     Week 1:
         'Overview': '/ios/unit-1'
     Week 2:
-        'Unit 2 assignments': '/swift/unit-2'
+        'Overview': '/ios/unit-2'
     Week 3:
         'Unit 3 assignments': '/swift/unit-3'
     Week 4:

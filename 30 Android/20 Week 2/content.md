@@ -13,11 +13,7 @@ Each unit contains exercises to help you master the Java language. This week, yo
 
 ## Android explanation
 
-Before making an app, you'll find some explanation about the parts of Android. In this unit, we focus on the basics of building **model classes**. You can use model classes to represent the core of what your app is really about.
-
-- [Layouts](/android-reference/layouts)
-- [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
-- [Model classes](/android-reference/models)
+- Read how [Access modifiers] are used in Android projects.
 
 
 ## What to do
@@ -25,6 +21,13 @@ Before making an app, you'll find some explanation about the parts of Android. I
 Implement [Tic Tac Toe](/guided/tic-tac-toe).
 
 <!-- - **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project! -->
+
+
+## Reference
+
+- [Layouts](/android-reference/layouts)
+- [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
+- [Model classes](/android-reference/models)
 
 
 ## Goals

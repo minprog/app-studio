@@ -13,7 +13,7 @@ Each unit contains exercises to help you master the Java language. This week, yo
 
 ## Android explanation
 
-- Read how [Access modifiers] are used in Android projects.
+- Read how [Access modifiers](/android-reference/modifiers) are used in Android projects.
 
 
 ## What to do

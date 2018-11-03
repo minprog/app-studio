@@ -26,7 +26,7 @@ Do this:
 - [Practice with ConstraintLayout](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html)
 
 
-## Project
+## What to do
 
 Now you are ready to make your first app, [Mr. Potatohead](/guided/mr-potatohead)! The assignment takes you step-by-step through making it, while introducing elements of the Android Studio IDE and the architecture of Android source code. You will likely run in to practical problems, which you will need to solve before the deadline!
 

@@ -18,20 +18,23 @@ If you want a simpler implementation, you can write your code as though two huma
 
 ## Getting started
 
-1.  Create a new Android studio project called **TicTacToe**, using these settings:
+1.  Create a new Android studio project, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
 
-2.  Create a new, empty repository on the Github website. Name your repository `Tic Tac Toe`.
+2.  Go to <https://github.com/new> and create a new, empty repository. Do not allow it to add a `README`. You may leave all other settings unchanged.
 
-3.  Now, add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
+3.  Add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 
     Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
 
-4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin".
+4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". You can find the URL on the Github project you just created.
 
-5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files". Make sure all checkboxes are selected, enter a commit message `Initial project` and then press the **commit** button. Turn off code analysis.
+5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files", which should be selected. Enter a commit message `Initial project`, turn off code analysis, and then press the **commit** button.
+
+    **Note:** some files may be selected while there are still a lot of "unversioned files". Make
+    sure to select *all* of the files before continuing.
 
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
@@ -40,6 +43,11 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## App architecture
 
+We'll create the app like this:
+
+- the code for the user interface is a single activity class called `MainActivity`
+- the code for the game logic is in a separate model class called `Game`
+- we use two `enum`s to communicate the game state between activity and model
 
 ![](tictactoe-diagram.png)
 
@@ -47,6 +55,8 @@ Your project files should now be visible on Github. If not, ask for help!
 ## Creating the user interface
 
 Let's create the basic UI first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridLayout` for the button grid.
+
+Watch the movie to understand how to replace the layout and connect code to buttons.
 
 <iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

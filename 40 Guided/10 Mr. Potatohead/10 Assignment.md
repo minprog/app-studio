@@ -30,7 +30,7 @@ The way to display the various body parts is to create a separate view for each 
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
 
-2.  Go to <https://github.com/new> and create a new, empty repository. Name your repository `Mr Potatohead`. Do not allow it to add a `README`. You may leave all other settings unchanged.
+2.  Go to <https://github.com/new> and create a new, empty repository. Do not allow it to add a `README`. You may leave all other settings unchanged.
 
 3.  Add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 

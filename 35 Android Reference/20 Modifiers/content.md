@@ -27,7 +27,7 @@ While `setText()` can indeed be called on objects of the type `TextView`, the ab
 
 Another things that you need to pay attention to is the location of your files. When working with your own classes in Android, it's important that you place them in the same package as the rest of your code for ease of access. Your Java files will be contained in the directory located under `app > java > com.example.yourname.yourappname`. This is where your `Activity` Java files are located, but model classes like `Student` can be placed here as well! This directory is also visible in Android studio in the menu on the left:
 
-![An image depicting the file tree as shown in Android Studio, with the package folder highlighted](Images/paste-location.png)
+![An image depicting the file tree as shown in Android Studio, with the package folder highlighted](paste-location.png)
 
 The IDE allows for different depictions of the files representing your app. If yours does look different, try switching the mode to 'Android' instead by using the dropdown in the top left corner as shown in the image above. 
 

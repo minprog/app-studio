@@ -3,22 +3,18 @@
 In this unit, you'll learn about classes in Java and how to model your app into different classes.
 
 
-## Java labs
-
-Each unit contains exercises to help you master the Java language. This week, you'll learn about `private` and `public` modifiers, `static`, constants and `enum`s. If you're already familiar, you should still use the lab to get acquainted to Java-specific syntax.
-
-- Go to [Lab 2](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week2/Lab/).
-- Login with your GitHub credentials, which will be used to save your lab between sessions.
-
-
-## Android explanation
-
-- Read how [Access modifiers](/android-reference/modifiers) are used in Android projects.
-
-
 ## What to do
 
-Implement [Tic Tac Toe](/guided/tic-tac-toe).
+1. Learn about Java access modifiers:
+
+    - Go to [Lab 2](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week2/Lab/).
+    - Login with your GitHub credentials, which will be used to save your lab between sessions.
+
+2. Read the Android explainer:
+
+    - Read how [Access modifiers](/android-reference/modifiers) are used in Android projects.
+
+3. Implement [Tic Tac Toe](/guided/tic-tac-toe).
 
 <!-- - **Unguided project: [Hangman](/projects/hangman)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project! -->
 

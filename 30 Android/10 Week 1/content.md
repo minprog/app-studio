@@ -5,30 +5,20 @@ If you missed the installation instructions, there are still [there](/installati
 In this unit, you'll be introduced to writing classes in Java, and of course, you are going to install Android Studio and create your first app! That app will not contain a lot of code, but it's still going to take you some time to get used to the Android Studio IDE!
 
 
-## Java labs
-
-Each unit contains exercises to help you master the Java language. This week, you'll find a recap of basic object-oriented concepts like classes and instantiation. If you're already familiar, you should still use the lab to get acquainted to Java-specific syntax.
-
-- Go to [Lab 1](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week1/Lab/).
-- Login with your GitHub credentials, which will be used to save your lab between sessions.
-
-
-## Android practice
-
-Before making an app, you'll need some explanation about the parts of Android that you need to make it. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
-
-Read and understand this:
-
-- [Views](/android-reference/views)
-
-Do this:
-
-- [Practice with ConstraintLayout](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html)
-
-
 ## What to do
 
-Now you are ready to make your first app, [Mr. Potatohead](/guided/mr-potatohead)! The assignment takes you step-by-step through making it, while introducing elements of the Android Studio IDE and the architecture of Android source code. You will likely run in to practical problems, which you will need to solve before the deadline!
+1. Each unit contains exercises to help you master the Java language. This week, you'll find a recap of basic object-oriented concepts like classes and instantiation. If you're already familiar, you should still use the lab to get acquainted to Java-specific syntax.
+
+    - Go to [Lab 1](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week1/Lab/).
+    - Login with your GitHub credentials, which will be used to save your lab between sessions.
+
+
+2. Before making an app, you'll need some explanation about the parts of Android that you need to make it. In this unit, we focus on the basics of building a **user interface**, or in other words: the screens that the user sees and can touch and interact with.
+
+    - Read about [Views](/android-reference/views)
+    - Practice with  [ConstraintLayout](https://codelabs.developers.google.com/codelabs/constraint-layout/index.html)
+
+3. Now you are ready to make your first app, [Mr. Potatohead](/guided/mr-potatohead)! The assignment takes you step-by-step through making it, while introducing elements of the Android Studio IDE and the architecture of Android source code. You will likely run in to practical problems, which you will need to solve before the deadline!
 
 
 ## Reference

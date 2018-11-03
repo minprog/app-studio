@@ -1,6 +1,6 @@
-# Unit 2: Activities and Navigation
+# Week 2: Activities and Navigation
 
-In this unit, you'll learn about classes in Java and how to model your app into different classes.
+You'll learn about classes in Java and how to model your app into different classes.
 
 
 ## What to do

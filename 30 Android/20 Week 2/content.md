@@ -21,6 +21,8 @@ In this unit, you'll learn about classes in Java and how to model your app into 
 
 ## Reference
 
+You'll need to read these to implement parts of your project:
+
 - [Layouts](/android-reference/layouts)
 - [UML](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/index.html)
 - [Model classes](/android-reference/models)

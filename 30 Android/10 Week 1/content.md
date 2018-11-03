@@ -23,6 +23,8 @@ In this unit, you'll be introduced to writing classes in Java, and of course, yo
 
 ## Reference
 
+You'll need to read these to implement parts of your project:
+
 - [Video: supplemental Java introduction](https://www.youtube.com/watch?v=UaxRRO9175A)
 - [Layouts](/android-reference/layouts)
 - [State](/android-reference/state)

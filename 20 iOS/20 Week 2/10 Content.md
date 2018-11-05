@@ -2,7 +2,7 @@
 
 ## Language exercises
 
-This week you will learn some essential parts of the Swift language. These chapters learn you how to use object oriented programming in Swift. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
+This week you will learn some essential parts of the Swift language. These chapters teach you how to use object oriented programming in Swift. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
 
 1. Strings
 2. Functions

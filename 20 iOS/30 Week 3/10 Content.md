@@ -2,6 +2,8 @@
 
 ## Language exercises
 
+This week you will learn how to work with *optionals*. Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
+
 1. Optionals
 2. Typecasting and Inspection
 3. Guard
@@ -10,47 +12,42 @@
 
 ## iOS exercises
 
+Next up are four chapters about some iOS interfaces and moving between them.
+
 {:start="6"}
 6. Segues and Navigation Controllers
 7. Tab Bar Controllers
 8. View Controller Life Cycle
 9. Building Simple Workflows
 
-**Tip:** take a look at the [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
+**Tip:** Take a look at the [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) these guidelines will help you to create good iOS interfaces.
 
 
 ## Project
 
-You can choose between two projects:
-
-- **Guided project: Personality Quiz** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
-
-- **Unguided project: [Mad Libs](/projects/mad-libs)** gives you a set of requirements with which you make your app. You'll probably choose this one if you have done more than a couple of programming courses. If you don't know how to start, talk to your teacher or switch to the guided project!
+Now you are ready to make your next app! At the end of the chapter, you'll find a Guided Project. This time you'll make a Quiz app to find out something about your personality.
 
 
-## Getting credit
+## Goals
 
-Make sure that you complete the language exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Our main goal for this course is getting you some in-depth experience on important aspects of creating **good quality** apps. You'll practice with various techniques every week. For this week, make sure you try, as much as possible, to create an app that excels in these respects:
 
-Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
-
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app mostly works but really lacks in quality.                                    |  
-|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
-|   0 | Not submitted or very incomplete.                                                    |  
-
-This week, we will look at the following quality aspects:
-
-- layout, margins, compatibility with multiple phone sizes
+- layout, margins, compatibility with multiple tablet sizes
 - basic code quality such as comments, names, consistency and design
 - easy to use, no odds and ends
-- level of separation between model classes and user interface code
 
 
-## Submit
+## Adding to GitHub
 
-Submit at [Unit 3](/submit/unit-3).
+[Here](https://apps.mprog.nl/ios-reference/github) you'll find several instructions for adding your project's code to GitHub.
+
+
+## Grading
+
+*Before* the deadline, complete the exercises and put your finished project on GitHub. Ask for help if needed!
+
+1. Submit the link to your project's GitHub repository at [Unit 3](/submit/unit-3).
+
+2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
+
+3. Next, acquire feedback on your app and improve on it. Improvements should be finished and synced with GitHub before the course's final deadline.

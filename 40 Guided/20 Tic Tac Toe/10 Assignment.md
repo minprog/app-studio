@@ -199,6 +199,18 @@ Next up, head to `MainActivity.java`. From the activity, we'll create an instanc
 
     But don't forget to reset the user interface as well!
 
+## Winning
+
+This two-player game can be won by either player, but it can also result in a *draw*, because neither player has won but all tiles have been claimed. Of course, the "front-end" should provide feedback to the players about this game element. For example, as soon as the game has been "won", the app should accept no further input, except for the ability to reset the game.
+
+To implement this feature, create a new method for the `Game` class:
+
+    public GameState won()
+
+This method should verify the state of the board (has someone won?) and return an appropriate value of the `GameState` enum. One special case is `GameState.IN_PROGRESS`, which is reserved for whenever the game is still ongoing.
+
+This method may be called at any time by the `MainActivity`. Most likely this will be right after each turn. It's up to you to choose how to display the won state in the UI and any other aspects!
+
 ## More features
 
 Make sure your game works as expected before continuing. Then, it's time to add state preservation to the app, in case it is backgrounded or rotated. Refer to [last week's doc](/android-reference/state) for more info.

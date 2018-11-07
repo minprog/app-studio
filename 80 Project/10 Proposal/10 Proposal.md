@@ -68,7 +68,7 @@ Example sketch for a data visualization
 
 Describe the things that you'll have to get in order.
 
-- List the **data sources** that you will use and whether you will need to transform the data before it is usable for your application. The list should include links to where the data sources can be found.
+- List the **data sources** that you will use and whether you will need to transform the data before it is usable for your application. The list should include *links* to where the data sources can be downloaded or accessed.
 
 - List the **external components** (libraries like `d3-tip` or `SQLite`) that you need to implement certain features. Include the names, and if the component is not standard, include a link to its website.
 

@@ -1,16 +1,16 @@
 # Views
 
-To enable interactions between computers and humans, usually some kind of **user interface** is provided. Examples of user interfaces are:
+To enable interactions between computers and humans, usually some kind of **user interface** (UI) is provided. Examples of user interfaces are:
 
 - touch screens that can measure touches by one or more fingers
-- braille devices that output letters using mechincal dots
+- braille devices that output letters using mechanical dots
 - text screens that can present a limited amount of characters
 - graphical screens that can set very small dots to any of millions of colors
 - keyboards that allow users to enter information using one or more discrete buttons
 
-Graphical screens are often used for modern user interfaces. Even a simple device such as a learning thermostat has an advanced screen, albeit tiny, that can present very detailed graphics. Unsurprisingly, programmers are often in the business of creating **graphical user interfaces**.
+Graphical screens are often used for modern user interfaces. Even a simple device such as a learning thermostat has an advanced screen, albeit tiny, that can present very detailed graphics. Unsurprisingly, programmers are often in the business of creating **graphical user interfaces** (GUI).
 
-Android, and many other systems, provide toolkits for creating graphical user interfaces. The first reason to do that, is to ensure that applications on the platform have a consistent look-and-feel, making it easier for users to work with apps from many different developers. The second reason is to make programmers' lifes easier: the toolkits contain many standard components that allow creating almost any user interface. It is therefore uncommon for programmers to write code that actually changes individual pixels on the screen. Instead, this code is hidden in the **components** that can be found in the toolkit.
+Android, and many other systems, provide toolkits for creating GUIs. The first reason is to ensure that applications on the platform have a consistent look-and-feel, making it easier for users to work with apps from many different developers. The second reason is to make programmers' lifes easier: the toolkits contain many standard components that allow creating almost any user interface. It is therefore uncommon for programmers to write code that actually changes individual pixels on the screen. Instead, this code is hidden in the **components** that can be found in the toolkit.
 
 ## Activities
 

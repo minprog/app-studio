@@ -27,3 +27,10 @@ Below is a screenshot of a simple login screen for an Android app. You can see t
 ## Events
 
 When users interact with controls, the framework translates these into **events**. Examples of events are key presses, mouse clicks or swipe gestures. Activities may contain **event handler** methods that define what is supposed to happen whenever such an event is triggered. In the XML layouts, event handlers are identified by their method name, making a direct connection between the layout and the `Activity` code.
+
+![](handler.png)
+
+## Event handling for multiple views
+
+TODO
+

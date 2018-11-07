@@ -91,10 +91,4 @@ After you have pushed all changes to Github, copy the URL of the GitHub page for
 
 Don't commit any code yet! Your repository should be clean for us to read, containing the **README.md**, a **doc** folder (exactly that name), pictures in the **doc** folder, and nothing else.
 
-## What's next
-
-The next step in your project is creating a design document. There, you'll describe how your project will be created according to the rules of the application framework that you're using.
-
-Meanwhile, keep an eye on the **GitHub Issues** for your project. This is where you will get feedback on whether your project is accepted as it is described, or you need to make some changes.
-
 [^1]: *"The problem need not be a pressing societal need, but rather any perceived gap in a situation or experience. For example, the Insalata Caprese is a wonderful artifact, but hardly addresses a problem in the deepest sense of the word. [...] In effect, problem definition is the creation by the designer of an explanation of why the user experiences a gap. This diagnosis can be thought of as an identification of user needs that are not being met in the current state and/or the recognition of criteria for a high-quality solution."*---Karl Ulrich, Design (2011).

@@ -14,7 +14,7 @@ Android, and many other systems, provide toolkits for creating GUIs. The first r
 
 ## Activities
 
-On Android, any single screen in an app is managed by an **activity**. Essentially, activities are the fundamental units into which developers decompose their application ideas. Each activity normally consists of the activity Java class (containing code) and an XML document which defines the layout of the user interface. Here's an example of an app with three screens/activities:
+On Android, any single screen in an app is managed by an **activity**. Essentially, activities are the fundamental units into which developers decompose their application ideas. Each activity normally consists of the activity Java class that contains the code, as well as an XML document which defines the layout of the user interface. Here's an example of an app with three screens/activities:
 
 ![Restaurant App](restaurant-screenshot1.png) ![Restaurant App](restaurant-screenshot2.png) ![Restaurant App](restaurant-screenshot3.png)
 
@@ -26,4 +26,4 @@ Below is a screenshot of a simple login screen for an Android app. You can see t
 
 ## Events
 
-When users interact with controls, **events** may trigger, representing for example key presses, mouse clicks or scrolling actions. Some controls have very specific types of **events**. You can attach **event handers** to specific events. This makes a connection between the layout and your code.
+When users interact with controls, the framework translates these into **events**. Examples of events are key presses, mouse clicks or swipe gestures. Activities may contain **event handler** methods that define what is supposed to happen whenever such an event is triggered. In the XML layouts, event handlers are identified by their method name, making a direct connection between the layout and the `Activity` code.

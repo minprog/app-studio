@@ -1,6 +1,6 @@
 # Project Proposal
 
-Your final project will be based on the platform that you are learning in this course: either Android, iOS or D3/Javascript. To get started with the final project, you'll spent a couple of days building a proposal document. In this document, you'll define what it is that you would like to make and how it connects to a problem in the real world. You may not yet have a clear idea of what you would like to make. In that case, have a look at the [requirements](/project/requirements) which may help you think about good concepts. Also, take note of example visualizations or apps that are presented in your course and think about variations that you might make.
+Your final project will be based on the platform that you are learning in this course: either Android, iOS or D3/Javascript. To get started with the final project, you'll spend a couple of days building a proposal document. In this document, you'll define what it is that you would like to make and how it connects to a problem in the real world. You may not yet have a clear idea of what you would like to make. In that case, have a look at the [requirements](/project/requirements) which may help you think about good concepts. Also, take note of example visualizations or apps that are presented in your course and think about variations that you might make.
 
 
 ## Goal of the document

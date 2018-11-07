@@ -60,6 +60,10 @@ Example sketch for a data visualization
 
 - Mark which features define the *minimum viable product* (MVP) and which parts may be optional to implement.
 
+    A minimum viable product is the product with as least features as possible, which still helps solve the problem for your target audience. We think it's important to clearly define this, because it defines the *minimum* amount of work that you will have to put into the project.
+    
+    Other parts of your project may be optional to implement or "nice to have".
+
 ## Prerequisites
 
 Describe the things that you'll have to get in order.

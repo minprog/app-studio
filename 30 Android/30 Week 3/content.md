@@ -5,12 +5,11 @@ Lists are a staple of mobile user interfaces. Many apps contain lists of items, 
 
 ## What to do
 
-1. Read about [Lists and adapters](/android-reference/lists)
+1. Read the [Lists and adapters](/android-reference/lists) overview
 
-2. Practice with adapters:
+2. Practice in depth with adapters:
 
-    - Go to [Lab 3](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week3/Lab/).
-    - Login with your GitHub credentials, which will be used to save your lab between sessions.
+    - this will be added Friday
 
 3. Implement [Friendsr](/guided/friendsr).
 

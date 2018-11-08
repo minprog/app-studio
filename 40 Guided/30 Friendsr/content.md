@@ -1,5 +1,6 @@
 # Friendsr
 
+
 ## Objectives
 
 - Practice with lists of data
@@ -7,6 +8,7 @@
 - Work with navigation in apps
 - Use multiple activities
 - Store small amounts of data on the device
+
 
 ## Background
 
@@ -20,27 +22,26 @@ To create this app, we will make use of two *Activities* e.g. screens in our app
 
 The ratings we give to each of the app's profile's will be stored using `SharedPreferences` which allows the rating to persist, even when we leave the `Activity` or shut down our app (or phone!) altogether. 
 
+
 ## Getting started
 
-1.  Create a new Android studio project called **Friendsr**, using these settings:
+1.  Create a new Android studio project, using these settings:
     - Choose API 24 (Nougat) unless your own phone has an older operating system
     - Start with an Empty Activity which is called `MainActivity`
     - Leave all other settings unchanged
 
-2.  Create a new, empty repository on the Github website. Name your repository `Friendsr`.
+2.  Go to <https://github.com/new> and create a new, empty repository. Do not allow it to add a `README`. You may leave all other settings unchanged.
 
-3.  Now, add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
+3.  Add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
 
     Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
 
-4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". The URL should look like this: <https://github.com/stgm/Friendsr.git> (you can find a link to your URL on the GitHub website where you just created a repository).
+4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". You can find the URL on the Github project you just created.
 
-5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github.
-    - Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen.
-    - There, you should see a long list of "unversioned files". Make sure all checkboxes are selected
-    - Enter a commit message `Initial project`.
-    - Turn off code analysis.
-    - Finally, press the **commit** button.
+5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files", which should be selected. Enter a commit message `Initial project`, turn off code analysis, and then press the **commit** button.
+
+    **Note:** some files may be selected while there are still a lot of "unversioned files". Make
+    sure to select *all* of the files before continuing.
 
 6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
 
@@ -49,26 +50,34 @@ Your project files should now be visible on Github. If not, ask for help!
 
 ## App architecture
 
+We'll create the app like this:
+
+- there are now *two* activities, one for showing the list, one for showing the details
+- there are `Friend` objects, one for each friend
+- the list of `Friend`s is contained in a special class, the `FriendsAdapter`
+- the `FriendsAdapter` is a subclass of `ArrayAdapter` and can be directly linked to the grid view in the main screen
+
+Study the diagram and the descriptions well before starting to create your app!
 
 ![](friendsr.png)
 
 
-## First Activity: Creating the user interface
+## First activity: creating the user interface
 
 Let's create the basic UI that we should see when we open the app first: head to `activity_main.xml` in your project. As usual, we get a blank screen with a `ConstraintLayout`. This type of layout is not particularly ideal for our purposes. What we'll do is replace it with a `LinearLayout` and then use a `GridView` to show all of our users on a grid. 
 
 ![Layout Placeholder Example](layoutimage0.png)
 
-- In the XML, change the `ConstraintLayout` with a `LinearLayout` (remember how?). Also, delete the text view that's already in there.
-- In the designer, head for the Palette and choose **Containers**. There you should be able to select a `GridView` and add it to your layout. If done correctly, your design should now show an example grid of items, something like the image above.
+- In the XML, change the `ConstraintLayout` to a `LinearLayout` (remember how?). Also, delete the text view that's already in there.
+- In the designer, head for the Palette and choose **Legacy**. There you should be able to select a `GridView` and add it to your layout. If done correctly, your design should now show an example grid of items, something like the image above.
 - You can tweak the attributes of the `GridView` to show more or less items on a row or have more space between items. Take a look at `numColumns` and `stretchMode` and see if you can tweak it to look how you want. Feel free to deviate from the example. If 4 columns is the way to go: power to you!
 
 
 ## Modeling friends
 
-Now that the user interfaces are all set, let's create a simple model class to contain data about our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
+Now that the main screen is all set, let's create a model class to contain data about each of our friends. This model class will contain the info about the friends that show up in the app. We do this so we can keep track of all of the information together, such as their name, picture, rating and information/bio. 
 
-1. The Friend model will be held in its own Java class. First, select `MainActivity` in the browser on the left and then choose **File > New > Java Class**.
+1. The `Friend` model will be held in its own Java class. First, select `MainActivity` in the browser on the left and then choose **File > New > Java Class**.
 
 2. We will call the class `Friend`. In the dialog, also specify that you want to use the `Serializable` (or `java.io.Serializable`) interface. This will allow us to store `Friend` objects on the device more easily. You can leave all other settings unchanged.
 

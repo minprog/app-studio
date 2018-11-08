@@ -1,9 +1,11 @@
 # Tic Tac Toe
 
+
 ## Objectives
 
 - Practice with model classes.
 - Create nice layouts.
+
 
 ## Background
 

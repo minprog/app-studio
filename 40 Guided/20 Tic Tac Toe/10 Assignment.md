@@ -211,9 +211,9 @@ This method should verify the state of the board (has someone won?) and return a
 
 This method may be called at any time by the `MainActivity`. Most likely this will be right after each turn. It's up to you to choose how to display the won state in the UI and any other aspects!
 
-## More features
+## State restoration
 
-Make sure your game works as expected before continuing. Then, it's time to add state preservation to the app, in case it is backgrounded or rotated. Refer to [last week's doc](/android-reference/state) for more info.
+Make sure your game works as expected before continuing. Then, it's time to add state restoration to the app, in case it is backgrounded or rotated. Refer to [last week's doc](/android-reference/state) for more info.
 
 Specifically, make sure that your `Game` class is augmented with `implements Serializable`. You can then simply save the current game instance in your `onSaveInstanceState()` method. As before, you can reload the saved game in `onCreate()`.
 

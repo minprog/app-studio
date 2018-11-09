@@ -9,7 +9,8 @@ Lists are a staple of mobile user interfaces. Many apps contain lists of items, 
 
 2. Practice in depth with adapters:
 
-    - this will be added Friday
+    - Go to [Lab 3](https://lab.cs50.io/stgm/AndroidPractice/labified/Week3/Lab/).
+    - Login with your GitHub credentials, which will be used to save your lab between sessions.
 
 3. Implement [Friendsr](/guided/friendsr).
 

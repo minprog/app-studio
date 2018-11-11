@@ -10,7 +10,7 @@ Functional requirements:
 
 - You are invited to create an app concept of your own choosing, as long as it allows an app of sufficient complexity to be created that doesn't resemble the projects you did in earlier courses (pending approval by the course's instructor).
 
-- The app must implement at the very least 3 separate screens/activities/controllers and be based on a combination of at least 2 online JSON APIs or interesting libraries, any of which you have not used before.
+- The app must implement at the very least 3 separate screens/activities/controllers and be based on a combination of at least 2 online JSON APIs or 1 or 2 interesting libraries, any of which you have not used before. The staff must determine and agree to the complexity of the libraries/APIs and what you want to do with those.
 
 - The product should not be dependent on a user entering lots of information or be an amalgam of several loosely coupled functions.
 

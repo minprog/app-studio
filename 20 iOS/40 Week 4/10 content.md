@@ -1,19 +1,45 @@
 # Madlibs
 
-This week only had a project.
-
 ## Background
 
 “Mad Libs” are short stories that have blanks called placeholders to be filled in. In the non-computerized version of this game, you ask someone to fill in each of the placeholders without telling them anything about the overall story. Once all placeholders are filled in, you show them the resulting silly story.
 
 The screenshots below indicate a possible flow of the UI for an app that implements this game. It has four screens: a “welcome” screen explaining the app, then a screen where the user can chose a story, then a screen that repeatedly prompts the user to fill in placeholders. Once the user has typed in replacements for all these placeholders, the completed story is shown on the final screen. Of course you don’t need to exactly match our sample’s UI, but it may give you ideas.
 
-## Getting Started
+![Screenshots :)](4inARow.jpg)
 
-You don't have to do all the work, we will provide some story-files and a `Story` struct that reads a story-file and when using the provides methods will fill in the placeholders.
+The text files represent placeholders as tokens that start and end with `< >` brackets, like `<adjective>` or `<proper-noun>`. Here is the text of `madlib1_tarzan.txt`, to give you an idea of the Mad Lib format:
+
+```
+One of the most <adjective> characters in fiction is named "Tarzan of the
+<plural-noun> ." Tarzan was raised by a/an <noun> and lives in the
+<adjective> jungle in the heart of darkest <place> . He spends most of his
+time eating <plural-noun> and swinging from tree to <noun> . Whenever he
+gets angry, he beats on his chest and says, " <funny-noise> !" This is his
+war cry. Tarzan always dresses in <adjective> shorts made from the skin of
+a/an <noun> and his best friend is a/an <adjective> chimpanzee named
+Cheetah. He is supposed to be able to speak to elephants and <plural-noun>
+. In the movies, Tarzan is played by <person's-name> .
+```
+
+The code for reading the story text file, breaking it apart, looking for the placeholders, etc. is not part of the assignment. To make the assignment more manageable, we’ll give you a file (see below) that you should use as a building block. If you add the `Story` class to your project, you can construct a `Story` object and it will read the text data from that source, break the text apart, and find the placeholders for you, etc. The `Story` class has other methods for filling in the placeholders later. By using this helper object, you can focus more on the important parts of this assignment and less on the string processing parts.
 You can download these files [here](madlibs_ios.zip)
 
-# FAQ
+## Requirements
+
+Your task is to build an app according to the description above. On top of that, there are some specific requirements to take into account:
+
+- Your app should be built using the `Story` class.
+
+- The user should be allowed to  either pick one of the stories, or have it randomly selected.
+
+- Your app should properly display on devices of various dimensions.
+
+- Your app should properly support rotation of the user interface.
+
+- Your app should provide proper back navigation. In this case, when showing the final story, going "back" should immediately return to the start screen, instead of allowing to change words etc. In the concept of the game it makes no sense to be able to change the words.
+
+## FAQ
 
 Notting yet.
 

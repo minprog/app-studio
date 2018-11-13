@@ -1,18 +1,13 @@
 # Mad Libs
 
+This project is less step-by-step than other projects in this course. Below, you'll find a description of the app that you're supposed to create, as well as some specific constraints and hints that you should employ while building it.
+
 
 ## Objectives
 
 - Parse text files containing information for your app.
 - Practice with the use of multiple controllers.
 - Pass data between controllers.
-
-
-## Assessment
-
-Your work on this problem set will be checked for full completion of the assignment and consideration of all requirements. Demo your application during office hours.
-
-All students must ordinarily submit this and all other projects to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
 
 ## Fun with apps
@@ -76,13 +71,21 @@ Your task is to build an app according to the description above. On top of that,
 
 - When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class.
 
-- You can load in text files using an `getAssets()` or `getResources()` among other things. Up to you to find out what suits you best (perhaps with some help of Google)! 
+- You can add the text files to your project using the following steps:
+
+    - In the project browser, go to the "res" folder
+    - Right click that folder and choose New -> Android Resource Directory
+    - In the popup dialog, choose Resource type: **Raw** and press OK
+    - In the Finder/Explorer, select the text files that you downloaded, and copy them using CTRL+C (Windows) or Cmd-C (Mac)
+    - In Android Studio, select the Raw folder and paste using CTRL+V (Windows) or Cmd-V (Mac)
+    - Allow Android Studio to copy the files
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
 
 
 ## iOS tips
 
-To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+- To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
 
-When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
+- When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
+

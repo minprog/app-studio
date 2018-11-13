@@ -39,9 +39,7 @@ Your task is to build an app according to the description above. On top of that,
 
 - Your app should be built using the `Story` class.
 
-    <iframe src="https://player.vimeo.com/video/212705221?portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-- The user should be allowed to  either pick one of the stories, or have it randomly selected.
+- The user should be allowed to pick one of the stories before starting.
 
 - Your app should properly display on devices of various dimensions.
 
@@ -67,7 +65,7 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Android tips
 
-- To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this.
+<iframe src="https://player.vimeo.com/video/212705221?portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 - You can add the text files to your project using the following steps:
 
@@ -82,7 +80,7 @@ Your task is to build an app according to the description above. On top of that,
 
         InputStream is = getResources().openRawResource(R.raw.madlib0_simple);
 
-- On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
+- Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out more about providing good back navigation.
 
 
 ## iOS tips

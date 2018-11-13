@@ -69,8 +69,6 @@ Your task is to build an app according to the description above. On top of that,
 
 - To pass stuff around in your app, you should use an `Intent`. The Android documentation provides a brief tutorial on this.
 
-- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class.
-
 - You can add the text files to your project using the following steps:
 
     - In the project browser, go to the "res" folder
@@ -79,6 +77,10 @@ Your task is to build an app according to the description above. On top of that,
     - In the Finder/Explorer, select the text files that you downloaded, and copy them using CTRL+C (Windows) or Cmd-C (Mac)
     - In Android Studio, select the Raw folder and paste using CTRL+V (Windows) or Cmd-V (Mac)
     - Allow Android Studio to copy the files
+
+- When creating an instance of the `Story` class you should have already opened the appropriate text file (because this task belongs to the controller). Pass an `InputStream` object to the constructor of the `Story` class. You can create an input stream using the following example:
+
+        InputStream is = getResources().openRawResource(R.raw.madlib0_simple);
 
 - On top of that, when going "back" from the final screen, the user should find herself all the way back at the start screen. Use [Stack Overflow](http://stackoverflow.com/questions/27129353/android-back-navigation) to find out how.
 

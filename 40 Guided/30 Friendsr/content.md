@@ -159,6 +159,10 @@ Make sure you have selected one of your Java classes in the Android browser, the
 
 - Finally, hit `CTRL+O` one more time to override `getView()` (find it in the list), which is the method where we will determine what should be shown on the screen for each item in our list. 
 
+
+> If you get compiler issues because of the `@NonNull` or `@Nullable` annotation, you can remove the `@androidx.annotation.@NonNull` part to fix the compiler errors. It is not necessary for the code, merely a flag like `@Override`. 
+
+
 Take a look at the `getView()` method that was just generated. This method will be called every time a new grid item is to be displayed (for example, when scrolling). The method gets three arguments. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
 
 We'd like to load a specific layout and show the data we're interested in. This is where that happens. For reasons of efficiency, the layouts in a list are recycled. As we scroll up, views from the top (that disappear) are moved to the bottom to show new data. As the grid is shown for the first time, however, we'll need to load the layout for each new grid item.
@@ -181,8 +185,7 @@ Notice that convertView is **inflated** from `R.layout.grid_item`, which is the 
 
 - Getting data from the `ArrayList friends` can be done using the `friends.get()` method, providing the index of the `Friend` that we'd like to display.
 
-- To load a `Drawable` image for putting into the `ImageView`, use the following line of code `getContext().getResources().getDrawable(...resource id of the image...);` while remembering that we saved resource ids for each of our friends in the friends list already!
-
+- To load a `Drawable` image for putting into the `ImageView`, use the following line of code `anImageViewReference.setImageResource(aDrawableId);` while remembering that we saved resource ids for each of our friends in the friends list already!
 
 > Note that instead of returning the standard result of calling `super()`, we now return our altered `convertView`. What do you think would happen if we forgot to return `convertView` at the end and still returned the result of the `super()` call? And what would happen if we called `super()` first and then altered `convertView` after that?
 
@@ -259,12 +262,12 @@ At this point, test your code by putting a log message inside the `onItemClick()
 
 The whole idea of the OnItemClickListener was to recognize exactly which sub-item of our layout was clicked, but as of now that is not happening yet. However, all tools to do this are present. When taking a look at the `onItemClick()` method, notice that this method has 4 arguments that will be passed on to it when it's invoked.
 
-We will make use of the `adapterView` argument, which holds a reference to the parent view with all the items, combined with the `int i`, which tells us the position. You can call the method `getItemAtPosition(i)` on the `adapterView`, which then will give you what item is present on that position in the parent layout behind the scenes. 
+We will make use of the `parent` argument, which holds a reference to the parent view with all the items, combined with the `int position`, which tells us the position. You can call the method `getItemAtPosition(i)` on the `parent`, which then will give you what item is present on that position in the parent layout behind the scenes. 
 
 This is what we want, because we made a list of `Friend` objects that are now being rendered by our adapter. So if we call `getItemAtPosition()`, we will get back a `Friend` object that we can the use to pass on to the second activity. 
 
 ~~~ java
-    Friend clickedFriend = (Friend) adapterView.getItemAtPosition(i);
+    Friend clickedFriend = (Friend) parent.getItemAtPosition(position);
 ~~~
 
 Try changing your log message to print the `name` of the `Friend` object!
@@ -294,7 +297,7 @@ Now, in the `onCreate()` of the second activity, you can simply use `getIntent()
 
 ~~~ java
         Intent intent = getIntent();
-        Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend_key");
+        Friend retrievedFriend = (Friend) intent.getSerializableExtra("clicked_friend");
 ~~~
 
 Of course, you will want to put the result of `getSerializableExtra()` in a variable so that you can do something with it (notice that we are casting it again?). Now that we have access to the `retrievedFriend` variable, we have access to all the information of that particular `Friend` object again, so their name, bio, photo and rating. You can use this information to render the correct things on the screen with the layout we created before. 

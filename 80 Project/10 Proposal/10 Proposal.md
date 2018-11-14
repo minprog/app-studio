@@ -43,13 +43,13 @@ Describe your solution in full detail.
 
 <div class="row">
 <div class="col-xs-6 col-md-3">
-<a href="/course/10%20Milestones/10%20Project%20Proposal/screens-proposal.png" class="thumbnail">
+<a href="/course/80%20Project/10%20Proposal/screens-proposal.png" class="thumbnail">
 ![](screens-proposal.png)
 Example sketch for a mobile app
 </a>
 </div>
 <div class="col-xs-6 col-md-3">
-<a href="/course/10%20Milestones/10%20Project%20Proposal/sketch.jpg" class="thumbnail">
+<a href="/course/80%20Project/10%20Proposal/sketch.jpg" class="thumbnail">
 ![](sketch.jpg)
 Example sketch for a data visualization
 </a>

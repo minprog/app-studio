@@ -1,4 +1,4 @@
-# Unit 5: Working with the Web
+# Week 6: Working with the Web
 
 This week you will learn how to get content from the web and make use of API's.
 

@@ -1,29 +1,30 @@
-# Unit 6: Firebase
+# Unit 5: Data from the Web
 
-In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat.
+The web is full of data. Some of it, like on newspaper websites, is easy to read for humans but less so for computers. Other data is especially formatted to be easy to read *by computers*. One especially popular format for such data is [JSON](https://www.json.org), which we'll use in this unit.
 
 
-## Java exercises
+## Exercises
 
-Nothing new!
+You've already done the exercises below, but consider taking a look again.
+
+- [Interfaces](/java-exercises/interfaces)
+
+In this unit, we will be using interfaces to allow activities to define **callback** methods. These methods will be called as soon as data arrives from the web.
 
 
 ## Android explanation
 
 Before making an app, you'll find some explanation about the parts of Android. To download data from the web, we'll be using the Volley framework. You'll also learn about loading JSON data into your application and extracting interesting information from it.
 
-- [Firebase](/android-reference/firebase) for making "online" apps
-
-The following video may help you (now and in the future) to design your apps with people in mind. The presentation shows some essential ideas on making systems simple and easy to use.
-
-- [Essential design principles](https://developer.apple.com/videos/play/design/802/)
+- [Volley](/android-reference/volley)
+- [Parsing JSON](/android-reference/parsing-json)
 
 
 ## Project
 
 There's only one project this week:
 
-- **Semi-guided project: [Trivia](/guided/trivia)** takes you (partially) step-by-step through making an app.
+- **Guided project: [Restaurant](/guided/restaurant)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
 
 ## Getting credit
@@ -56,19 +57,4 @@ We will look at the following quality aspects:
 
 ## Submit
 
-Submit at [Unit 6](/submit/unit-6).
-
-
-<!--
-
-- Choose one of these to implement in your final app: (TODO)
-    - [Sound effects]()
-    - [Camera]()
-    - [Text-to-speech]()
-    - [Graphics]()
-    - [Maps]()
-    - [Gestures]()
-    - [Notifications]()
-    - [Services]()
-
--->
+Submit at [Unit 5](/submit/unit-5).

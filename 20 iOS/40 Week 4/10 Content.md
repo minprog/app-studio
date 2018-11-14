@@ -1,18 +1,21 @@
-# Week 4: Mad Libs
+# Week 4: Unguided Project
 
-This week do do not follow the book, that means there are no exercises, only an app!
+This week, you'll be making a project from scratch, without many steps to guide you along the week. Your task is to create a good overall design and then implement all functionality.
+
 
 ## What to do
 
-Implement [Mad Libs](/projects/mad-libs)
+Implement [Mad Libs](/projects/mad-libs).
+
 
 ## Goals
 
 Our main goal for this course is getting you some in-depth experience on important aspects of creating **good quality** apps. You'll practice with various techniques every week. For this week, make sure you try, as much as possible, to create an app that excels in these respects:
 
-- layout, margins, compatibility with multiple tablet sizes
+- layout, margins, compatibility with multiple phone sizes
 - basic code quality such as comments, names, consistency and design
 - easy to use, no odds and ends
+- level of separation between game code and user interface code
 
 
 ## Adding to GitHub

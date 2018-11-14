@@ -1,32 +1,30 @@
-# Week 7: Firebase
+# Unit 6: Firebase
 
 In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat.
 
 
-## Language exercises
+## Java exercises
 
 Nothing new!
 
 
-## iOS explanation
+## Android explanation
+
+Before making an app, you'll find some explanation about the parts of Android. To download data from the web, we'll be using the Volley framework. You'll also learn about loading JSON data into your application and extracting interesting information from it.
+
+- [Firebase](/android-reference/firebase) for making "online" apps
 
 The following video may help you (now and in the future) to design your apps with people in mind. The presentation shows some essential ideas on making systems simple and easy to use.
 
 - [Essential design principles](https://developer.apple.com/videos/play/design/802/)
 
-Also read through the final chapter of the book!
 
+## Project
 
-## Project: Trivia
+There's only one project this week:
 
-For this app, we will make use of elements that have been covered in previous guided projects, as well as one new element. Your task is to implement a quiz game that will ask the user trivia questions. When users answer these questions correctly, they should somehow earn points (the algorithm that you use to compute these points is up to you!). After the game has finished, a user should be presented with their earned points for that game round. These points should somehow be contained in a leaderboard, which is stored on Firebase, so that all users can view these scores. Furthermore, a user needs to be able to restart the game, rotation of the user interface should be supported and the app should be well-polished.
+- **Semi-guided project: [Trivia](/guided/trivia)** takes you (partially) step-by-step through making an app.
 
-To get the questions (and answers) needed to build this app, we will make use of an API: [jservice.io](http://jservice.io/). This API allows you to request random questions, for example. Use code from the Restaurant app to get your questions!
-
-## FAQ
-
-If you want to use an HTTP API (non HTTPS) your iOS app needs explicit permission to allow this type of connection.
-Instructions how to set this up can be found on page 902 in the iOS book at "Guided Project: Restaurant - part 3 - Project Setup".
 
 ## Getting credit
 
@@ -56,13 +54,21 @@ We will look at the following quality aspects:
 - more advanced code quality such as the structure of your project, separation of concerns
 
 
-## Some ideas for extra credit
-
-- Create a multiplayer version.
-
-- Allow logging in via Firebase and personalize highscores.
-
-
 ## Submit
 
 Submit at [Unit 6](/submit/unit-6).
+
+
+<!--
+
+- Choose one of these to implement in your final app: (TODO)
+    - [Sound effects]()
+    - [Camera]()
+    - [Text-to-speech]()
+    - [Graphics]()
+    - [Maps]()
+    - [Gestures]()
+    - [Notifications]()
+    - [Services]()
+
+-->

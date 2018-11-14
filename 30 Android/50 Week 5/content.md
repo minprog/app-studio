@@ -1,38 +1,38 @@
-# Unit 5: Data from the Web
-
-The web is full of data. Some of it, like on newspaper websites, is easy to read for humans but less so for computers. Other data is especially formatted to be easy to read *by computers*. One especially popular format for such data is [JSON](https://www.json.org), which we'll use in this unit.
+# Unit 4: Databases
 
 
 ## Exercises
 
-You've already done the exercises below, but consider taking a look again.
+Each unit contains exercises to help you master the Java language. If you already know Java, some of the exercises will not take much time. But defininitely do them anyway!
 
-- [Interfaces](/java-exercises/interfaces)
-
-In this unit, we will be using interfaces to allow activities to define **callback** methods. These methods will be called as soon as data arrives from the web.
+- [Exceptions](/java-exercises/exceptions)
+- [Polymorphism](/java-exercises/polymorphism)
 
 
 ## Android explanation
 
-Before making an app, you'll find some explanation about the parts of Android. To download data from the web, we'll be using the Volley framework. You'll also learn about loading JSON data into your application and extracting interesting information from it.
+Before making an app, you'll find some explanation about the parts of Android. In this unit, we focus on the basics of lists and adapters. Adapters are a specific construct to make displaying large lists very efficient on an otherwise limited-memory device.
 
-- [Volley](/android-reference/volley)
-- [Parsing JSON](/android-reference/parsing-json)
+- [SQLite](/android-reference/sqlite)
+- [Activity life cycle](/android-reference/state)
+- [Empty state](https://material.io/guidelines/patterns/empty-states.html)
+
+
+## Writing better code
+
+We haven't spent too much time on writing better code, but as Android projects are generally somewhat larger than the programs you made in earlier courses, there's new stuff to learn! Let us introduce you to Better Code Hub, which can give you detailed feedback on the structure of your classes.
+
+- [Better Code Hub](/guides/better-code-hub)
 
 
 ## Project
 
 There's only one project this week:
 
-- **Guided project: [Restaurant](/guided/restaurant)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
+- **Guided project: [Journal](/guided/journal)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
 
 ## Getting credit
-
-There are a couple of minimum requirements for submitting your project:
-
-- all project code must be available on a GitHub repository
-- in the root of the GitHub repository, there must be a README.md containing the app description, your name and a screenshot
 
 Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
@@ -47,14 +47,14 @@ Completing the exercises can earn you 1 point per week. The project will be chec
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
 
-We will look at the following quality aspects:
+This week, we will look at the following quality aspects:
 
-- easy to use, no odds and ends
 - layout, margins, compatibility with multiple phone sizes
-- basic code quality such as comments, names, consistency
-- more advanced code quality such as the structure of your project, separation of concerns
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
+- level of separation between model classes and user interface code
 
 
 ## Submit
 
-Submit at [Unit 5](/submit/unit-5).
+Submit at [Unit 4](/submit/unit-4).

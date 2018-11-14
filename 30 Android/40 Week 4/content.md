@@ -1,27 +1,11 @@
-# Week 3: Lists and adapters
+# Week 4: Unguided Project
 
-Lists are a staple of mobile user interfaces. Many apps contain lists of items, maybe as search results, but more often than not as the main user interface! On Android, grids and lists offer varying degrees of flexibility, but they generally work the same as seen from the code.
+This week, you'll be making a project from scratch, without many steps to guide you along the week. Your task is to create a good overall design and then implement all functionality.
 
 
 ## What to do
 
-1. Read the [Lists and adapters](/android-reference/lists) overview
-
-2. Practice in depth with adapters:
-
-    - Go to [Lab 3](https://lab.cs50.io/stgm/AndroidPractice/labified/Week3/Lab/).
-    - Login with your GitHub credentials, which will be used to save your lab between sessions.
-
-3. Implement [Friendsr](/guided/friendsr).
-
-
-## Reference
-
-You'll need to read these to implement parts of your project:
-
-- [Multiple activities](/android-reference/multiple-activities)
-- [Listeners](/android-reference/listeners)
-- [Persistence](/android-reference/persistence)
+Implement [Mad Libs](/projects/mad-libs).
 
 
 ## Goals
@@ -38,7 +22,7 @@ Our main goal for this course is getting you some in-depth experience on importa
 
 *Before* the deadline, complete the exercises and put your finished project on Github. Ask for help if needed!
 
-1. Submit the link to your project's GitHub repository at [Unit 3](/submit/unit-3).
+1. Submit the link to your project's GitHub repository at [Week 4](/submit/unit-4).
 
 2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
 

@@ -89,8 +89,8 @@ Your task is to build an app according to the description above. On top of that,
 
 - When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
 
-        guard let storyPath = Bundle.main.path(forResource: name, ofType: "txt"),
-            let text = try? String(contentsOfFile: storyPath, encoding: .utf8) else { return nil }
+    let storyPath = Bundle.main.path(forResource: name, ofType: "txt")
+    let text = try! String(contentsOfFile: storyPath, encoding: .utf8)
 
 ## Some ideas for extras
 

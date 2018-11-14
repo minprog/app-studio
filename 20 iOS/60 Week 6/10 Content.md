@@ -1,41 +1,58 @@
-# Unit 6: Firebase
+# Unit 5: Working with the Web
 
-In this unit, you'll learn about using Firebase, which is an online database from Google. It allows you to make apps that help people communicate, share information or simply chat.
-
+This week you will learn how to get content from the web and make use of API's.
 
 ## Language exercises
 
-Nothing new!
+1. Closures
+2. Extensions
 
 
-## iOS explanation
+## iOS exercises
 
-The following video may help you (now and in the future) to design your apps with people in mind. The presentation shows some essential ideas on making systems simple and easy to use.
+{:start="3"}
+3. Practical Animation
+4. Working with the Web: HTTP and URL Session
+5. Working with the Web: JSON Serialization
+6. Working with the Web: Concurrency
 
-- [Essential design principles](https://developer.apple.com/videos/play/design/802/)
 
-Also read through the final chapter of the book!
+## Project
 
+There’s only one project this week:
 
-## Project: Trivia
+- **Guided project: Restaurant** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
-For this app, we will make use of elements that have been covered in previous guided projects, as well as one new element. Your task is to implement a quiz game that will ask the user trivia questions. When users answer these questions correctly, they should somehow earn points (the algorithm that you use to compute these points is up to you!). After the game has finished, a user should be presented with their earned points for that game round. These points should somehow be contained in a leaderboard, which is stored on Firebase, so that all users can view these scores. Furthermore, a user needs to be able to restart the game, rotation of the user interface should be supported and the app should be well-polished.
+**Note:** Instead of the local server you can use `https://resto.mprog.nl/`.
 
-To get the questions (and answers) needed to build this app, we will make use of an API: [jservice.io](http://jservice.io/). This API allows you to request random questions, for example. Use code from the Restaurant app to get your questions!
+- In step 1 you can skip the 'Run the Server'.
+- In step 3 you can skip the 'Project Setup' part because the server uses a HTTPS connection.
+- In step 4 the `baseURL` will be:
 
-## FAQ
+~~~swift
+class MenuController {
+    let baseURL = URL(string: "https://resto.mprog.nl/")!”
+}
+~~~
 
-If you want to use an HTTP API (non HTTPS) your iOS app needs explicit permission to allow this type of connection.
-Instructions how to set this up can be found on page 902 in the iOS book at "Guided Project: Restaurant - part 3 - Project Setup".
+## FAQs
+
+- On page 915 in 'Parse the Responses', the second code block starts with `fetchCategories` however is this the code block for `fetchMenuItems`. The first line should be:
+
+~~~swift
+let task = URLSession.shared.dataTask(with: menuURL)
+~~~
+
+- The 'gray image' from page 926 can be downloaded [here](Solid_gray.png).
+- In the `submitOrder` method, make sure to declare the variable `data` with the following type:
+
+~~~swift
+let data: [String: [Int]] = ...
+~~~
 
 ## Getting credit
 
-There are a couple of minimum requirements for submitting your project:
-
-- all project code must be available on a GitHub repository
-- in the root of the GitHub repository, there must be a README.md containing the app description, your name and a screenshot
-
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
+Make sure that you complete the language exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
 
 Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
 
@@ -48,21 +65,14 @@ Completing the exercises can earn you 1 point per week. The project will be chec
 |   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
 |   0 | Not submitted or very incomplete.                                                    |  
 
-We will look at the following quality aspects:
+This week, we will look at the following quality aspects:
 
-- easy to use, no odds and ends
 - layout, margins, compatibility with multiple phone sizes
-- basic code quality such as comments, names, consistency
-- more advanced code quality such as the structure of your project, separation of concerns
-
-
-## Some ideas for extra credit
-
-- Create a multiplayer version.
-
-- Allow logging in via Firebase and personalize highscores.
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
+- level of separation between model classes and user interface code
 
 
 ## Submit
 
-Submit at [Unit 6](/submit/unit-6).
+Submit at [Unit 5](/submit/unit-5).

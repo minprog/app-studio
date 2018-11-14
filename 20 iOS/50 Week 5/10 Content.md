@@ -1,53 +1,67 @@
-# Unit 5: Working with the Web
-
-This week you will learn how to get content from the web and make use of API's.
+# Tables and Persistence
 
 ## Language exercises
 
-1. Closures
-2. Extensions
+Feel free to skip some of the parts about the programming language, but make sure that you know *exactly* how to write correct Swift code!
+
+1. Protocols
 
 
 ## iOS exercises
 
-{:start="3"}
-3. Practical Animation
-4. Working with the Web: HTTP and URL Session
-5. Working with the Web: JSON Serialization
-6. Working with the Web: Concurrency
-
+{:start="2"}
+2. App Anatomy and Life Cycle
+3. Model View Controller
+4. Scroll Views
+5. Table Views
+6. Intermediate Table Views
+7. Saving Data
+8. System View Controllers
+9. Building Complex Input Screens
 
 ## Project
 
-There’s only one project this week:
+There's only one project this week:
 
-- **Guided project: Restaurant** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
+- **Guided project: List** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
 
-**Note:** Instead of the local server you can use `https://resto.mprog.nl/`.
+### FAQs
 
-- In step 1 you can skip the 'Run the Server'.
-- In step 3 you can skip the 'Project Setup' part because the server uses a HTTPS connection.
-- In step 4 the `baseURL` will be:
+#### Loading Sample ToDos
+The book provides some code for loading in sample todo's at page 735, however the sampleToDos also need to be stored in the `todos` variable.
 
 ~~~swift
-class MenuController {
-    let baseURL = URL(string: "https://resto.mprog.nl/")!”
+override func viewDidLoad() {
+    super.viewDidLoad()
+ 
+    if let savedToDos = ToDo.loadToDos() {
+        todos = savedToDos
+    } else {
+        todos = ToDo.loadSampleToDos()
+    }
 }
 ~~~
 
-## FAQs
+#### DatePicker show/hide
 
-- On page 915 in 'Parse the Responses', the second code block starts with `fetchCategories` however is this the code block for `fetchMenuItems`. The first line should be:
-
-~~~swift
-let task = URLSession.shared.dataTask(with: menuURL)
-~~~
-
-- The 'gray image' from page 926 can be downloaded [here](Solid_gray.png).
-- In the `submitOrder` method, make sure to declare the variable `data` with the following type:
+The book provides some code for hiding the DatePicker, however, the correct IndexPath for the DatePicker is `[1,0]`.
 
 ~~~swift
-let data: [String: [Int]] = ...
+override func tableView(_ tableView: UITableView, didSelectRowAt
+indexPath: IndexPath) {
+    switch (indexPath) {
+    case [1,0]:
+        isEndDatePickerHidden = !isEndDatePickerHidden
+ 
+        dueDateLabel.textColor =
+        isEndDatePickerHidden ? .black : tableView.tintColor
+ 
+        tableView.beginUpdates()
+        tableView.endUpdates()
+ 
+    default: break
+    }
+}
 ~~~
 
 ## Getting credit
@@ -75,4 +89,4 @@ This week, we will look at the following quality aspects:
 
 ## Submit
 
-Submit at [Unit 5](/submit/unit-5).
+Submit at [Unit 4](/submit/unit-4).

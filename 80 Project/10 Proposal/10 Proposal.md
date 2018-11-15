@@ -16,7 +16,7 @@ By writing a clear proposal document and getting feedback on it from multiple st
 
 ## Getting started
 
-The proposal document should be written in Markdown so it can be quickly edited, and because it can then be easily reviewed on GitHub by the staff. To start your project, you should create a new empty Github repository. The document should then be saved in the repository as `README.md`.
+The proposal document should be written in Markdown so it can be quickly edited, and because it can then be easily reviewed on GitHub by the staff. To start your project, you should create a new** empty Github repository**. The document should then be saved in the repository as `README.md`.
 
 Below, we list required aspects of your proposal document.
 

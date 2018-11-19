@@ -85,7 +85,9 @@ Your task is to build an app according to the description above. On top of that,
 
 ## iOS tips
 
-- To pass stuff around in your app, you can use the 'prepareForSegue' method. For back navigation in your app, you should use a navigation controller.
+- When importing the filed into your project, be sure you checked the 'Copy items if needed' so you can add these file to your git repository.
+
+- To pass stuff around in your app, you can use the `prepare(for segue)` method. For back navigation in your app, you should use a 'unwind segue'.
 
 - When creating an instance of the `Story` class you should have already opened the appropriate text file. Pass a `String` object to the constructor of the `Story` class.
 

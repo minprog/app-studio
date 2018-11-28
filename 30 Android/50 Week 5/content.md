@@ -27,7 +27,7 @@ Our main goal for this course is getting you some in-depth experience on importa
 - layout, margins, compatibility with multiple phone sizes
 - basic code quality such as comments, names, consistency and design
 - easy to use, no odds and ends
-- level of separation between game code and user interface code
+- level of separation between database code and user interface code
 
 
 ## Grading

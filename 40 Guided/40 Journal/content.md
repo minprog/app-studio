@@ -141,7 +141,7 @@ We'll now convert the `EntryDatabase` class into a Singleton. This means that on
 
 -   Then, add a private **static** variable called `instance` of type `EntryDatabase`. This is where the unique instance of the class is stored, once made.
 
--   Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters (see [SQLite](https://apps.mprog.nl/android/sqlite)), and storing that in `instance`.
+-   Then, add a public **static** method called `getInstance()` which should accept a parameter of type `Context`. This method should return the value of `instance` if available, and otherwise call the constructor that is now private, providing the right parameters (see [SQLite](https://apps.mprog.nl/android-reference/sqlite)), and storing that in `instance`.
 
 -   To ensure that everything is in order, place the following line at the bottom of your `MainActivity`'s `onCreate()` method:
 

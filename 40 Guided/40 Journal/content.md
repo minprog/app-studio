@@ -132,6 +132,7 @@ If you are unsure about your query, you can verify it using services like [sqlfi
 
 - Finally, to your `onCreate()`, add some code that creates sample items, so that we can use these to test. 
 
+> The code in the `onCreate()` method will only be executed the first time the database is created. if you make changes to the schema of your database (like adding columns or changing their names) or changes to the `onCreate()` content, you need to either reinstall your app, delete the app's data from the phone or force a call to `onUpgrade()`.
 
 ## Transform the helper into a singleton
 
@@ -166,9 +167,10 @@ Of course since we are selecting everything, we have no placeholders or argument
 
 - Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
 
-     - Use `Cursor.getInt(columnIndex)` to retrieve the value of one column as an integer.
-     - Use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
-     - Call `view.findViewById()` to get references to the controls in the row layout.
+     - You can use `Cursor.getInt(columnIndex)` to retrieve the value of a column as an integer.
+     - You can use `Cursor.getString(columnIndex)` to retrieve the value of a column as a string.
+     - You can use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
+     - You can call `view.findViewById()` to get references to the controls in the row layout xml.
 
 - In the `onCreate()` of the `MainActivity`, use the `EntryDatabase` to get all records from the database, make a new `EntryAdapter` and link the `ListView` to the adapter.
 
@@ -178,7 +180,7 @@ The app should now display all example entries from the database! Think about ho
 ## Write the insert method
 
 - First, link the confirmation button in the `InputActivity` to a new method called `addEntry` through its onClick attribute. 
-- In the database class, add a public method `insert()` which accepts an `Entry` object as its parameter. 
+- In the database class, add a public method `insert()` which accepts a `JournalEntry` object as its parameter. 
 - In that method, open a connection to the database (see the instructions for select all), and create a new `ContentValues` object. Use the `put` method to add values for `title`, `content` and `mood`. Then, call `insert` on the database connection, passing in the right parameters (`nullColumnHack` may simply be `null`). 
 
 > The [ContentValues](https://developer.android.com/reference/android/content/ContentValues.html) class offers an easy way to bind values to columns for SQLite. It also prevents user input from directly appearing in the SQL string unescaped and unchecked, making your application less vulnerable to SQL injection.

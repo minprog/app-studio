@@ -131,19 +131,19 @@ Now, create the remaining parts of the `CategoriesRequest` class:
 
 ### Receiving and parsing data from the request
 
-Now that the base code for the listener functionality is present, we still need to actually do something useful when we receive a response from the API.
+Now that the base code for the listener functionality is present, we still need to actually do something useful when we receive a response from the API. The data from the web server will be encoded in *JSON*, which can be interpreted using Java, but you'll have to do some conversion.
 
-The data from the web server will be encoded in *JSON*, which can be interpreted using Java, but you'll have to do some conversion, because we would like to our data to be an `ArrayList` that holds elements of the `String` type.
+> When looking at JSON code from the Restaurant server (try it!), it will not be easily readable. You can use a JSON Formatter (there are many available on the web, just Google for it) to structure it and better understand the structure of the response.
 
-- Look at the formatting of your response (remember you can request the same JSON output in your browser) and create a loop that will extract the categories present in the response. Since they are in a JSON array, chances are you want to use `getJSONArray()` to grab that array.
+In the case of the `categories` endpoint, the incoming data is an "object" (dictionary/hash) with a single element. That element's key is `"categories"` and its value is an "array" (list) of strings. We'd like to put those strings into a simple `ArrayList<String>`.
 
-    > Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
+- In `onResponse()` you get immediate access to the top-level object. From that object, we'd like to extract the array named `"categories"`. Use the `response.getJSONArray()` method to do this.
 
-- Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill an `ArrayList<String>` with these items. 
+- Once the JSON array is extracted, you can loop over it to extract the strings that are in it, and put those in an `ArrayList`. Use `getString(int position)` to extract each item. Need to know how many categories there are? Use `length()`.
 
-- When the `ArrayList` has been filled, use the reference to the activity that we received earlier as an argument of `getCategories(Callback activity)` to call the method `gotCategories` and pass the list that you just made as an argument. This way the activity will also have access to the list, but only when it's certain that the API call has finished and the list is ready!
+- When the `ArrayList` has been filled, pass it back to the activity that wanted to have it. In the `getCategories` method, you got an `activity` parameter. Make sure this parameter is saved as an instance variable and then call `gotCategories()` on it from the `onResponse()` method.
 
-As of now, we only report back to the calling activity when we successfully retrieve data from the API, but this could very well go wrong at some point. It might be tempting to do nothing at all with our `onErrorResponse` method, but it's bad practice to ignore errors and exceptions! 
+With the steps above behind us, we now only report back to the calling activity when we successfully retrieve data from the API. However, because this is an internet connection, something could very well go wrong at some point. So, let's report an error in case it occurs!
 
 - In the `onErrorResponse` method, use the reference to the activity to call the other method defined in the interface: `gotCategoriesError`. 
 
@@ -153,15 +153,17 @@ As of now, we only report back to the calling activity when we successfully retr
 
 ### Getting the data into the activity
 
-We have our listeners and made them pass on the list of categories or error, but the activity does not implement the functiality to handle the callbacks yet. The methods defined in the `interface` in `CategoriesRequest` need to be implemented by the activity. This way, when the API request is finished or has failed and one of the methods in the interface is called through the activity reference that the `CategoriesRequest` class received, the corresponding methods in the activity are called. The ArrayList with categories can be passed to the activity and we can create and set our adapter as usual. 
+Theoretically, the `CategoriesRequest` can now be used to retrieve data from the Restaurant server. It will be returned as a simple `ArrayList`. Let's try to do this from the main activity.
 
 - Add `implements CategoriesRequest.Callback` to the class declaration of `CategoriesActivity`. Red wriggly lines now appear, so hit `CTRL+I` to implement the methods that are defined in the `Callback` interface: `gotCategories()` and `gotCategoriesError()`
 
-- In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).
+First off, try out your classes using simple Toast messages (pop-ups) on the screen. Here's an example:
 
-- In `gotCategoriesError`, create a `Toast` message showing the error to your user, so they know wat went wrong (hopefully).
+![](testing.png)
 
-Try out your app now! It should show the categories. Did something go wrong? Maybe you need to add an `INTERNET` permission to your app!
+If everything works correctly, it should display the name of the first category on the screen. Then, create a list view with an `ArrayAdapter` and feed it the `ArrayList`, so all (two) categories will be displayed nicely (remember how to create list views?).
+
+Did something go wrong? Maybe you forgot to add `INTERNET` permission to your app!
 
 
 ## 2. Showing the menu

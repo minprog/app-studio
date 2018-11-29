@@ -118,19 +118,16 @@ Now, create the remaining parts of the `CategoriesRequest` class:
 
     The `JsonObjectRequest` takes 4 arguments:
 
-        - the url that the request should be submitted to (recall which URL?)
-        - data that should be sent with the API call (in this case nothing, so `null`)
-        - and two references to listeners that will handle the response; in this case, the same class will handle the responses, so use `this` to point this out
+    - the url that the request should be submitted to (recall which URL?)
+    - data that should be sent with the API call (in this case nothing, so `null`)
+    - and two references to listeners that will handle the response; in this case, the same class will handle the responses, so use `this` to point this out
         
-    Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively.
+- To make sure that the class can handle the responses, `implement` the required interfaces:
 
-    - To add functionality to these listeners, make your activity implement them:
+        public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
 
-            public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
+- Now use **CTRL+I** to generate the appropriate methods: `onErrorResponse()` and `onResponse()`. 
 
-- Use **CTRL+I** to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
-
-- This also means that in your code to generate the `JsonObjectRequest` you can pass `this` (referring to the activity) as the listeners needed for 3rd and 4th argument.
 
 ### React to a response from the API call
 

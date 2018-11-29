@@ -33,7 +33,7 @@ The following **endpoints** are available:
 
 * `/order`: A POST request to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
 
-    example: https://resto.mprog.nl/order (you can't try a POST request in the web browser)
+    example: https://resto.mprog.nl/order (note: you can't try a POST request in the web browser)
 
 <!--
 
@@ -71,6 +71,11 @@ Here's a general overview of the app architecture. There will be three activitie
 ![](restaurant-arch.png)
 
 
+## Configuration
+
+Add the Volley library to your project using [the instructions on this page](/android-reference/volley).
+
+
 ## 1. Showing categories
 
 To prepare, add a simple ListView to your `CategoriesActivity` user interface. Make sure it is well-positioned. That's all there is to it! However, to make the app really work, we will need to fill the list with data from the restaurant server.
@@ -85,33 +90,43 @@ The general idea is that we should be able to create an object of type `Categori
 
 - `onErrorResponse(error)`, which is called when something goes awry, and the `error` parameter will contain a `VolleyError` containing, among other things, an error message
 
-We'll use the same idea for our own `CategoriesRequest` class. It expects to be able two call either of two methods. These methods will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class:
+We'll use the same idea for our own `CategoriesRequest` class. It expects to be able two call either of two methods. These methods will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class.
 
-    public interface Callback {
-        void gotCategories(ArrayList<String> categories);
-        void gotCategoriesError(String message);
-    }
+- First, create a new Java class called `CategoriesRequest`
+
+- Then, in the class, add the following interface declaration:
+
+        public interface Callback {
+            void gotCategories(ArrayList<String> categories);
+            void gotCategoriesError(String message);
+        }
 
 Now, create the remaining parts of the `CategoriesRequest` class:
 
-- Write a constructor that accepts a `Context` type parameter. This context is needed for sending internet requests.
+- Write a *constructor* that accepts a `Context` type parameter and stores it in a `context` instance variable. We need access to a "context" object to send internet requests.
 
-- Define a method `getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
+- Define a method `void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows which activity to notify.
 
-- Within this method, use [`Volley`](https://apps.mprog.nl/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
+    - Within this method, use [Volley](/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
 
-        RequestQueue queue = Volley.newRequestQueue(context);
+            RequestQueue queue = Volley.newRequestQueue(context);
 
-- Then we will want to create a `JsonObjectRequest`, since the data we want from the API comes in the shape of a JSON object. This can be done through the following lines of code:
+    - Then we will want to create a `JsonObjectRequest`, since the data we want from the API comes in the shape of a JSON object. This can be done through the following lines of code:
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(..., ..., ..., ...);
-        queue.add(jsonObjectRequest);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(..., ..., ..., ...);
+            queue.add(jsonObjectRequest);
 
-The `JsonObjectRequest` takes 4 arguments: the url that the request should be submitted to, a JSON object that should be added to the API call (if any, so this can be null), and two listeners. Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively. 
+    The `JsonObjectRequest` takes 4 arguments:
 
-- To add functionality to these listeners, make your activity implement them:
+        - the url that the request should be submitted to
+        - a JSON object that should be added to the API call (if any, so this can be null)
+        - and two listeners
+        
+    Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively.
 
-        public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
+    - To add functionality to these listeners, make your activity implement them:
+
+            public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
 
 - Use **CTRL+I** to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
 

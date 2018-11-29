@@ -1,4 +1,4 @@
-# Unit 5: Data from the Web
+# Week 6: Data from the Web
 
 The web is full of data. Some of it, like on newspaper websites, is easy to read for humans but less so for computers. Other data is especially formatted to be easy to read *by computers*. One especially popular format for such data is [JSON](https://www.json.org), which we'll use in this unit.
 

@@ -24,16 +24,22 @@ The API we will use for this assignment is available at: https://resto.mprog.nl/
 The following **endpoints** are available:
 
 * `/categories`: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key "categories" in the JSON.
+
+    example: https://resto.mprog.nl/categories
+
 * `/menu`: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key "items" in the JSON.
-* `/order`: A POST to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
+
+    example: https://resto.mprog.nl/menu?category=entrees
+
+* `/order`: A POST request to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
+
+    example: https://resto.mprog.nl/order (note: you can't try a POST request in the web browser)
 
 <!--
 
 * `/images`: Will return the URL of an image. Make sure to handle 404 errors correctly!
 
 -->
-
-Tip: try the API in your webbrowser. Enter the address of the `categories` endpoint (what would the address be?) and see how it responds.
 
 
 ## Getting started
@@ -65,6 +71,11 @@ Here's a general overview of the app architecture. There will be three activitie
 ![](restaurant-arch.png)
 
 
+## Configuration
+
+Add the Volley library to your project using [the instructions on this page](/android-reference/volley).
+
+
 ## 1. Showing categories
 
 To prepare, add a simple ListView to your `CategoriesActivity` user interface. Make sure it is well-positioned. That's all there is to it! However, to make the app really work, we will need to fill the list with data from the restaurant server.
@@ -79,68 +90,80 @@ The general idea is that we should be able to create an object of type `Categori
 
 - `onErrorResponse(error)`, which is called when something goes awry, and the `error` parameter will contain a `VolleyError` containing, among other things, an error message
 
-We'll use the same idea for our own `CategoriesRequest` class. It expects to be able two call either of two methods. These methods will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class:
+We'll use the same idea for our own `CategoriesRequest` class. It expects to be able two call either of two methods. These methods will be predefined in an **interface**, which you need to place at the top of the `CategoriesRequest` class.
 
-    public interface Callback {
-        void gotCategories(ArrayList<String> categories);
-        void gotCategoriesError(String message);
-    }
+- First, create a new Java class called `CategoriesRequest`
+
+- Then, in the class, add the following interface declaration:
+
+        public interface Callback {
+            void gotCategories(ArrayList<String> categories);
+            void gotCategoriesError(String message);
+        }
 
 Now, create the remaining parts of the `CategoriesRequest` class:
 
-- Write a constructor that accepts a `Context` type parameter. This context is needed for sending internet requests.
+- Write a *constructor* that accepts a `Context` type parameter and stores it in a `context` instance variable. We need access to a "context" object to send internet requests.
 
-- Define a method `getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows what activity to notify.
+- Define a method `void getCategories(Callback activity)`. This method will attempt to retrieve the categories from the API, and if succesful, will notify the activity that instantiated the request that it is done through the callback. This is why we pass a reference to the activity as an argument, so that when the API request is done, it knows which activity to notify.
 
-- Within this method, use [`Volley`](https://apps.mprog.nl/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
+    - Within this method, use [Volley](/android-reference/volley) to create a new `RequestQueue`, which takes the context we passed in the constructor as an argument. 
 
-        RequestQueue queue = Volley.newRequestQueue(context);
+            RequestQueue queue = Volley.newRequestQueue(context);
 
-- Then we will want to create a `JsonObjectRequest`, since the data we want from the API comes in the shape of a JSON object. This can be done through the following lines of code:
+    - Then we will want to create a `JsonObjectRequest`, since the data we want from the API comes in the shape of a JSON object. This can be done through the following lines of code:
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(..., ..., ..., ...);
-        queue.add(jsonObjectRequest);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(..., ..., ..., ...);
+            queue.add(jsonObjectRequest);
 
-The `JsonObjectRequest` takes 4 arguments: the url that the request should be submitted to, a JSON object that should be added to the API call (if any, so this can be null), and two listeners. Since we need to know whether the request succeeded or not, we will need to implement two listeners that trigger when the request succeeded or failed, respectively. 
+    The `JsonObjectRequest` takes 4 arguments:
 
-- To add functionality to these listeners, make your activity implement them:
+    - the url that the request should be submitted to (recall which URL?)
+    - data that should be sent with the API call (in this case nothing, so `null`)
+    - and two references to listeners that will handle the response; in this case, the same class will handle the responses, so use `this` to point this out
+        
+- To make sure that the class can handle the responses, `implement` the required interfaces:
 
         public class CategoriesRequest implements Response.Listener<JSONObject>, Response.ErrorListener
 
-- Use **CTRL+I** to generate the appropriate code. You now have two methods in your activity: `public void onErrorResponse(VolleyError error)` and `public void onResponse(JSONObject response)`. Effectively, your activity class now functions as the listener, since the appropriate handler methods are implemented by it. 
+- Now use **CTRL+I** to generate the appropriate methods: `onErrorResponse()` and `onResponse()`. 
 
-- This also means that in your code to generate the `JsonObjectRequest` you can pass `this` (referring to the activity) as the listeners needed for 3rd and 4th argument.
 
-### React to a response from the API call
+### Receiving and parsing data from the request
 
-Now that the base code for the listener functionality is present, we still need to actually do something when we receive a response from the API. In the `onResponse` method, we will want to transform the `JSONObject` in our response to an `ArrayList` that holds elements of the `String` type. 
+Now that the base code for the listener functionality is present, we still need to actually do something useful when we receive a response from the API. The data from the web server will be encoded in *JSON*, which can be interpreted using Java, but you'll have to do some conversion.
 
-- Look at the formatting of your response (remember you can request the same JSON output in your browser) and create a loop that will extract the categories present in the response. Since they are in a JSON array, chances are you want to use `getJSONArray()` to grab that array.
+> When looking at JSON code from the Restaurant server (try it!), it will not be easily readable. You can use a JSON Formatter (there are many available on the web, just Google for it) to structure it and better understand the structure of the response.
 
-> Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can always use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
+In the case of the `categories` endpoint, the incoming data is an "object" (dictionary/hash) with a single element. That element's key is `"categories"` and its value is an "array" (list) of strings. We'd like to put those strings into a simple `ArrayList<String>`.
 
-- Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill an `ArrayList<String>` with these items. 
+- In `onResponse()` you get immediate access to the top-level object. From that object, we'd like to extract the array named `"categories"`. Use the `response.getJSONArray()` method to do this.
 
-- When the `ArrayList` has been filled, use the reference to the activity that we received earlier as an argument of `getCategories(Callback activity)` to call the method `gotCategories` and pass the list that you just made as an argument. This way the activity will also have access to the list, but only when it's certain that the API call has finished and the list is ready!
+- Once the JSON array is extracted, you can loop over it to extract the strings that are in it, and put those in an `ArrayList`. Use `getString(int position)` to extract each item. Need to know how many categories there are? Use `length()`.
 
-As of now, we only report back to the calling activity when we succesfully retrieve data from the API, but this could very well go wrong at some point. It might be tempting to do nothing at all with our `onErrorResponse` method, but it's bad practice to ignore errors and exceptions! 
+- When the `ArrayList` has been filled, pass it back to the activity that wanted to have it. In the `getCategories` method, you got an `activity` parameter. Make sure this parameter is saved as an instance variable and then call `gotCategories()` on it from the `onResponse()` method.
+
+With the steps above behind us, we now only report back to the calling activity when we successfully retrieve data from the API. However, because this is an internet connection, something could very well go wrong at some point. So, let's report an error in case it occurs!
 
 - In the `onErrorResponse` method, use the reference to the activity to call the other method defined in the interface: `gotCategoriesError`. 
 
-- Since we want to know what the error was, we will pass the contents of the error as a string back to the activity through `gotCategoriesError`. Since the `onErrorResponse` method receives the error that caused the request to fail as its argument, we can use `error.getMessage()` to get these contents. 
+- Pass the description of the error as a string back to the activity through `gotCategoriesError`. Use `error.getMessage()` to get it. 
 
-> When handling exceptions in apps, it's good to let the user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong is frustrating to use. 
+> When handling exceptions in apps, it's good to let your user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong will be quite frustrating to use. 
 
-### Handle the callbacks in CategoriesActivity
-We have our listeners and made them pass on the list of categories or error, but the activity does not implement the functiality to handle the callbacks yet. The methods defined in the `interface` in `CategoriesRequest` need to be implemented by the activity. This way, when the API request is finished or has failed and one of the methods in the interface is called through the activity reference that the `CategoriesRequest` class received, the corresponding methods in the activity are called. The ArrayList with categories can be passed to the activity and we can create and set our adapter as usual. 
+### Getting the data into the activity
+
+Theoretically, the `CategoriesRequest` can now be used to retrieve data from the Restaurant server. It will be returned as a simple `ArrayList`. Let's try to do this from the main activity.
 
 - Add `implements CategoriesRequest.Callback` to the class declaration of `CategoriesActivity`. Red wriggly lines now appear, so hit `CTRL+I` to implement the methods that are defined in the `Callback` interface: `gotCategories()` and `gotCategoriesError()`
 
-- In `gotCategories`, create a new `ArrayAdapter<String>` from the list of categories. Attach the adapter to your listview (remember how?).
+First off, try out your classes using simple Toast messages (pop-ups) on the screen. Here's an example:
 
-- In `gotCategoriesError`, create a `Toast` message showing the error to your user, so they know wat went wrong (hopefully).
+![](testing.png)
 
-Try out your app now! It should show the categories. Did something go wrong? Maybe you need to add an `INTERNET` permission to your app!
+If everything works correctly, it should display the name of the first category on the screen. Then, create a list view with an `ArrayAdapter` and feed it the `ArrayList`, so all (two) categories will be displayed nicely (remember how to create list views?).
+
+Did something go wrong? Maybe you forgot to add `INTERNET` permission to your app!
 
 
 ## 2. Showing the menu
@@ -179,13 +202,6 @@ Now, when someone taps an item in the menu, we'd like to show a bit more detail.
 - In the `MenuItemActivity`, make sure that all information is loaded from the `MenuItem` into the right UI controls.
 
 Done!
-
-
-## Tips
-
-- Consider viewing the JSON from the server in a [JSON formatter](https://jsonformatter.curiousconcept.com/) to have a better overview of what data is present in the response.
-
-- To use the JSON responses in your code and get the values you need, Android has some nifty built-in functionality on which you can find the docs [here](https://developer.android.com/reference/org/json/package-summary.html).
 
 
 ## Designing the user interface

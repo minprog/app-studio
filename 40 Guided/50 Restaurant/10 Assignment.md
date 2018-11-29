@@ -129,27 +129,30 @@ Now, create the remaining parts of the `CategoriesRequest` class:
 - Now use **CTRL+I** to generate the appropriate methods: `onErrorResponse()` and `onResponse()`. 
 
 
-### React to a response from the API call
+### Receiving and parsing data from the request
 
-Now that the base code for the listener functionality is present, we still need to actually do something when we receive a response from the API. In the `onResponse` method, we will want to transform the `JSONObject` in our response to an `ArrayList` that holds elements of the `String` type. 
+Now that the base code for the listener functionality is present, we still need to actually do something useful when we receive a response from the API.
+
+The data from the web server will be encoded in *JSON*, which can be interpreted using Java, but you'll have to do some conversion, because we would like to our data to be an `ArrayList` that holds elements of the `String` type.
 
 - Look at the formatting of your response (remember you can request the same JSON output in your browser) and create a loop that will extract the categories present in the response. Since they are in a JSON array, chances are you want to use `getJSONArray()` to grab that array.
 
-> Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can always use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
+    > Some JSON responses can be confusing at first glance, especially if not formatted clearly. You can use a JSON Formatter (there are many available on the web, just Google for it) to show you the data in a more clear manner and help you determine how to extract what you want from it.
 
 - Once the JSON array is extracted, you can loop over it to extract the items in it: the categories we were looking for and fill an `ArrayList<String>` with these items. 
 
 - When the `ArrayList` has been filled, use the reference to the activity that we received earlier as an argument of `getCategories(Callback activity)` to call the method `gotCategories` and pass the list that you just made as an argument. This way the activity will also have access to the list, but only when it's certain that the API call has finished and the list is ready!
 
-As of now, we only report back to the calling activity when we succesfully retrieve data from the API, but this could very well go wrong at some point. It might be tempting to do nothing at all with our `onErrorResponse` method, but it's bad practice to ignore errors and exceptions! 
+As of now, we only report back to the calling activity when we successfully retrieve data from the API, but this could very well go wrong at some point. It might be tempting to do nothing at all with our `onErrorResponse` method, but it's bad practice to ignore errors and exceptions! 
 
 - In the `onErrorResponse` method, use the reference to the activity to call the other method defined in the interface: `gotCategoriesError`. 
 
-- Since we want to know what the error was, we will pass the contents of the error as a string back to the activity through `gotCategoriesError`. Since the `onErrorResponse` method receives the error that caused the request to fail as its argument, we can use `error.getMessage()` to get these contents. 
+- Pass the description of the error as a string back to the activity through `gotCategoriesError`. Use `error.getMessage()` to get it. 
 
-> When handling exceptions in apps, it's good to let the user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong is frustrating to use. 
+> When handling exceptions in apps, it's good to let your user know when something did not go as expected. It's not always needed to show them all the technical details of the error, but an app that silently fails and gives no feedback on what went wrong will be quite frustrating to use. 
 
-### Handle the callbacks in CategoriesActivity
+### Getting the data into the activity
+
 We have our listeners and made them pass on the list of categories or error, but the activity does not implement the functiality to handle the callbacks yet. The methods defined in the `interface` in `CategoriesRequest` need to be implemented by the activity. This way, when the API request is finished or has failed and one of the methods in the interface is called through the activity reference that the `CategoriesRequest` class received, the corresponding methods in the activity are called. The ArrayList with categories can be passed to the activity and we can create and set our adapter as usual. 
 
 - Add `implements CategoriesRequest.Callback` to the class declaration of `CategoriesActivity`. Red wriggly lines now appear, so hit `CTRL+I` to implement the methods that are defined in the `Callback` interface: `gotCategories()` and `gotCategoriesError()`

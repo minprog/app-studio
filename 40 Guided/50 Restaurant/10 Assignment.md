@@ -204,13 +204,6 @@ Now, when someone taps an item in the menu, we'd like to show a bit more detail.
 Done!
 
 
-## Tips
-
-- Consider viewing the JSON from the server in a [JSON formatter](https://jsonformatter.curiousconcept.com/) to have a better overview of what data is present in the response.
-
-- To use the JSON responses in your code and get the values you need, Android has some nifty built-in functionality on which you can find the docs [here](https://developer.android.com/reference/org/json/package-summary.html).
-
-
 ## Designing the user interface
 
 How do you create a UI that fits well into the platform you're using? Peruse the interface guidelines and see. Check out the [Material Design Documentation](https://developer.android.com/design/index.html)

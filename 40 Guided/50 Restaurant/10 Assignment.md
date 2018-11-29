@@ -24,16 +24,22 @@ The API we will use for this assignment is available at: https://resto.mprog.nl/
 The following **endpoints** are available:
 
 * `/categories`: A GET request to this endpoint will return an array of strings of the categories in the menu. The array will be available under the key "categories" in the JSON.
+
+    example: https://resto.mprog.nl/categories
+
 * `/menu`: A GET request to this endpoint will return the full array of menu items, but it can also be combined with the query parameter, category, to return a subset of items. The array will be available under the key "items" in the JSON.
-* `/order`: A POST to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
+
+    example: https://resto.mprog.nl/menu?category=entrees
+
+* `/order`: A POST request to this endpoint will submit the order and will return a response with the estimated time before the order will be ready.
+
+    example: https://resto.mprog.nl/order (you can't try a POST request in the web browser)
 
 <!--
 
 * `/images`: Will return the URL of an image. Make sure to handle 404 errors correctly!
 
 -->
-
-Tip: try the API in your webbrowser. Enter the address of the `categories` endpoint (what would the address be?) and see how it responds.
 
 
 ## Getting started

@@ -3,58 +3,40 @@
 The web is full of data. Some of it, like on newspaper websites, is easy to read for humans but less so for computers. Other data is especially formatted to be easy to read *by computers*. One especially popular format for such data is [JSON](https://www.json.org), which we'll use in this unit.
 
 
-## Exercises
+## Reference
 
-You've already done the exercises below, but consider taking a look again.
-
-- [Interfaces](/java-exercises/interfaces)
-
-In this unit, we will be using interfaces to allow activities to define **callback** methods. These methods will be called as soon as data arrives from the web.
-
-
-## Android explanation
-
-Before making an app, you'll find some explanation about the parts of Android. To download data from the web, we'll be using the Volley framework. You'll also learn about loading JSON data into your application and extracting interesting information from it.
+You'll need to read these before implementing your project.
 
 - [Volley](/android-reference/volley)
 - [Parsing JSON](/android-reference/parsing-json)
 
 
-## Project
+## What to do
 
-There's only one project this week:
+1. Practice with exceptions 😱:
 
-- **Guided project: [Restaurant](/guided/restaurant)** takes you step-by-step through making an app. You'll probably choose this one if you haven't built applications on a platform before.
+    - Go to [Lab 5](https://lab.cs50.io/Vluuks/AndroidPractice/labified/Week5/Lab/).
+    - Login with your GitHub credentials, which will be used to save your lab between sessions.
+
+2. Implement [Restaurant](/guided/restaurant).
 
 
-## Getting credit
+## Goals
 
-There are a couple of minimum requirements for submitting your project:
+Our main goal for this course is getting you some in-depth experience on important aspects of creating **good quality** apps. You'll practice with various techniques every week. For this week, make sure you try, as much as possible, to create an app that excels in these respects:
 
-- all project code must be available on a GitHub repository
-- in the root of the GitHub repository, there must be a README.md containing the app description, your name and a screenshot
-
-Make sure that you complete the exercises and put your finished project on Github *before* the deadline. In the next class session, show your exercises and the working app to one of the staff.
-
-Completing the exercises can earn you 1 point per week. The project will be checked for full completion of the assignment and consideration of all requirements. You can earn points according to the following scheme:
-
-| pts | description                                                                          |  
-| --: | ------------------------------------------------------------------------------------ |  
-|   5 | Exceptional quality in use, layout and code. Probably something extra or unexpected. |  
-|   4 | Solid quality in use, layout and code. Maybe some trivial error.                     |  
-|   3 | Reasonable quality, but lots of room for improvement.                                |  
-|   2 | The app mostly works but really lacks in quality.                                    |  
-|   1 | Clearly, quite a bit of effort went into it, but it does not really work.            |  
-|   0 | Not submitted or very incomplete.                                                    |  
-
-We will look at the following quality aspects:
-
-- easy to use, no odds and ends
 - layout, margins, compatibility with multiple phone sizes
-- basic code quality such as comments, names, consistency
+- basic code quality such as comments, names, consistency and design
+- easy to use, no odds and ends
 - more advanced code quality such as the structure of your project, separation of concerns
 
 
-## Submit
+## Grading
 
-Submit at [Unit 5](/submit/unit-5).
+*Before* the deadline, complete the exercises and put your finished project on Github. Ask for help if needed!
+
+1. Submit the link to your project's GitHub repository at [Unit 6](/submit/unit-6).
+
+2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
+
+3. Next, acquire feedback on your app and improve on it. Improvements should be finished and synced with GitHub before the course's final deadline.

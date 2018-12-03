@@ -8,6 +8,8 @@
 
 ## Background
 
+![](ummmm.gif)
+
 Your assignment is to implement a quiz game that presents trivia questions. Interestingly, there are a couple of Trivia Question APIs on the internet, which provide questions and sometimes answers in JSON format. Great for making an app!
 
 When users answer these questions correctly, they should somehow earn points (the algorithm that you use to compute these points is up to you!). After the game has finished, your user should be able to enter their score into a leader board, which will be shared between all users of the app. 

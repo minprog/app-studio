@@ -58,7 +58,6 @@ Some notes:
 - We drew multiple GamePlay controllers. In case you are making a full-on trivia app, it might support a few "game modes", e.g. single player versus multiple player. But it's not required, so start small!
 - The arrows in the diagram should be read as "uses". For example, the GamePlay controller uses the Trivia helper class, which can provide questions as the game progresses.
 - Feel free to change the design of your classes, but we think that the design as presented above is sensible and should help you get started quickly.
-- We did not explicitly add 
 
 > A note about names. On most platforms, classes should hint at what they **are**. That's why on Android, all activities' names end with `Activity`. On iOS, controllers' names end with `ViewController`. Helper classes' names should end with `Helper` or maybe something more specific. Exception to this rule are model classes, which usually have names that purely refer to the "domain" of the app; in this case, things like `Highscore` or `Question`.
 

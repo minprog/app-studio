@@ -6,7 +6,7 @@ When working with JSON and other API's you'll sometimes find characters like `&a
 
 ### CocoaPods
 
-To install libraries and other dependencies in Swift it is recommended to use a *depencency manages* like [CoacoaPods](https://cocoapods.org).
+To install libraries and other dependencies in Swift it is recommended to use a *dependency manager* like [CoacoaPods](https://cocoapods.org).
 
 Installation is very simple, open a terminal window and execute the following line of code:
 
@@ -19,7 +19,7 @@ CocoaPods is now ready to use!
 Now we are ready to add the library to our project using CocoaPods.
 
 1. Close your project in Xcode
-2. Open a terminal windows in the directory of you app
+2. Open a terminal window in the directory of you app
 3. Execute `pod init` to tell CocoaPods you want to use CocoaPods for this project, this will create a `Podfile`
 4. Open the `Podfile` in your favorite text editor and add the following line to your `Podfile`:
 
@@ -46,11 +46,11 @@ The libraries are now installed, from now on you should open your project with t
 
 ## Using HTMLString
 
-You can import the library with `import HTMLString` on the top of your file press `⌘-B` to build the library.
+You can import the library with `import HTMLString` on the top of your file, press `⌘-B` to build your app so you can use the library.
 
 To remove all the HTML entities from a String, use the `removingHTMLEntities` property.
 
-#### Example
+### Example
 
     import HTMLString
 

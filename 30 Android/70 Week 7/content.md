@@ -16,11 +16,6 @@ You might need these before implementing your project!
 Implement [Trivia](/project/trivia).
 
 
-## Hint
-
-If you want to use an HTTP API (non HTTPS) your iOS app needs explicit permission to allow this type of connection. Instructions how to set this up can be found on page 902 in the iOS book at "Guided Project: Restaurant - part 3 - Project Setup".
-
-
 ## Goals
 
 Our main goal for this course is getting you some in-depth experience on important aspects of creating **good quality** apps. You'll practice with various techniques every week. For this week, make sure you try, as much as possible, to create an app that excels in these respects:

@@ -30,7 +30,7 @@ Our main goal for this course is getting you some in-depth experience on importa
 
 *Before* the deadline, complete the exercises and put your finished project on Github. Ask for help if needed!
 
-1. Submit the link to your project's GitHub repository at [Unit 6](/submit/unit-6).
+1. Submit the link to your project's GitHub repository at [Unit 7](/submit/unit-7).
 
 2. On (or before) the date of the deadline, show your finished exercises **and** the working app to one of the staff.
 

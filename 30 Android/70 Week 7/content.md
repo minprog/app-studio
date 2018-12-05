@@ -13,7 +13,7 @@ You might need these before implementing your project!
 
 ## What to do
 
-Implement [Trivia](/project/trivia).
+Implement [Trivia](/projects/trivia).
 
 
 ## Goals

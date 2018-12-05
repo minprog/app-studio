@@ -5,10 +5,11 @@ Going one step beyond last week's assignment, we will now work with saving data 
 
 ## Reference
 
-You might need these before implementing your project!
+You'll need this for implementing your project:
 
-- [Volley](/android-reference/volley)
-- [Parsing JSON](/android-reference/parsing-json)
+- [HTMLString](/ios-reference/htmlstring)
+
+Also, when needed, refer to earlier chapters in the book!
 
 
 ## What to do

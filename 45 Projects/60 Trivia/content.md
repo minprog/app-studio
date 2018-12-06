@@ -22,7 +22,7 @@ Additionally, [this video lecture](https://developer.apple.com/videos/play/desig
 
 ## Getting trivia questions
 
-To get the questions (and answers) needed to build this app, we will make use of the [Open Trivia DB API](https://opentdb.com/api_config.php). As usual, try the API in your browser. Have a look at the JSON results and analyse what kind of data you get and how you might use it in your app.
+To get the questions (and answers) needed to build this app, we will make use of the [Open Trivia DB API](https://opentdb.com/api_config.php). As before, try the API in your browser (generate an API url on that website and then open the URL in your browser). Have a look at the JSON results and analyse what kind of data you get and how you might use it in your app.
 
 > Note that you will probably not send one request per Trivia question, but instead, retrieve a whole bunch of questions at the start of a game. It's good practice to not make many requests for a very small amount of information.
 

@@ -74,3 +74,9 @@ Again, you can use the class to implement the appropriate listeners:
 
 Once again, use use CTRL+I to generate the appropriate methods: `onErrorResponse()` and `onResponse()`.
 
+
+## References
+
+[Documentation JSONObjectRequest](https://afzaln.com/volley/index.html?com/android/volley/toolbox/JsonObjectRequest.html)
+[Documentation JSONArrayRequest](https://afzaln.com/volley/index.html?com/android/volley/toolbox/JsonArrayRequest.html)
+

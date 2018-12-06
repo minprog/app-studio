@@ -40,13 +40,34 @@ Consider this response from a given API:
 
 In this case, the reponse represents a person. Of course your API response might not look like this: depending on the API this could be different things. It could represent one thing, like in this example, but also a list of things. 
 
-A JSON reponse typically consists of multiple key-value pairs with in a JSON object. The key is the bit before the `:` and is the part that allows you to extract the value that follows from the response. Keys can be mapped to values of different kinds, such as strings, numbers, arrays or other JSON objects.
 
-What is important when attempting to translate a JSON APi response to something usable in your Java code, is to distinguish between JSON *arrays* and JSON *objects*. 
+## Detangling JSON
 
-JSON objects are enclosed by curly braces, and arrays by square brackets. JSON arrays, like the arrays you are used to, can contain multiple values. In the example, the "comments"  key maps to a JSON array of strings. JSON arrays can also hold JSON objects, in the example the "skills" key maps to an array of JSON objects with properties of their own that each depict a certain skill.
+What is important when attempting to translate a JSON API response to something usable in your Java code, is to distinguish between JSON *arrays* and JSON *objects*. 
 
-Depending on the API, the responses can be complex and deeply nested, with objects in arrays in objects and so forth, many layers deep! When the JSON is shown as just a single line of text in your browser or print statement, it can be hard to figure out how to grab the data bits you want. To help with this, it's a good idea to put your JSON response through a [JSON formatter](https://jsonformatter.curiousconcept.com/) to have a better overview of what data is present in the response.
+### JSON Arrays
+JSON Arrays are denoted using the square brackets you are probably familiar with. JSON arrays, like the arrays you are used to, can contain multiple values. In the example of John Smith atop this page, the "comments"  key maps to a JSON array of strings. JSON arrays can also hold JSON objects, in the example the "skills" key maps to an array of JSON objects with properties of their own that each depict a certain skill.
+
+        ["hi", "i am", "an array"]
+        [{"me": "too}, {"yes" : "really"}, {"an array" : "with objects!"}]
+
+### JSON Objects
+JSON Objects are denoted using curly braces. It functions like a dictionary with keys mapped to values. The key is the bit before the `:` and is the part that allows you to extract the value that follows from the response. Keys can be mapped to values of different kinds, such as strings, numbers, arrays or other JSON objects.
+
+        {
+            "name" : "Tim",
+            "age" : 24,
+            "courses" : ["Information Visualization", "Service Oriented Design"],
+            "university" : "University of Amsterdam",
+            "coffee" : {
+                strength : 4,
+                sugar : false,
+                milk : false
+            }
+        
+        }
+
+A JSON reponse typically consists of multiple key-value pairs within a JSON object. Depending on the API, the responses can be complex and deeply nested, with objects in arrays in objects and so forth, many layers deep! When the JSON is shown as just a single line of text in your browser or print statement, it can be hard to figure out how to grab the data bits you want. To help with this, it's a good idea to put your JSON response through a [JSON formatter](https://jsonformatter.curiousconcept.com/) to have a better overview of what data is present in the response.
 
 
 ## Parsing JSON in Android Studio
@@ -58,7 +79,7 @@ You either get a `JSONObject` directly from your API request, or you get a respo
 Once you have the main `JSONObject` present in your code, it becomes easy to extract the values you need, provided that you take the correct "steps" through your JSON data to get there.
 
 
-
+### Extracting values
 Imagine we have the main JSON object from the example present in a variable called `response` and want to extract values from it. If you simply want to extract a value that is present at the topmost level of the JSON, you can use methods like `getString()`, `getInt()` etc. You will need to supply the key of the property in the JSON as the argument. If we wanted to grab the age from the example JSON, it would look like this. 
 
     int personAge = response.getInt("age");
@@ -67,6 +88,7 @@ The same goes for arrays: if we want to extract the array called "comments", the
 
         JSONArray commentArrray = response.getJSONArray("comments");
 
+### Iterating
 The `commentArray` variable now contains all the JSONObjects that we need. Since it's an array, we can iterate over it using a loop and extract the values at each index to do something with them, i.e. print te contents of each entry in the array.
 
         for (int i = 0; i < commentArray.length(); i++) {
@@ -89,5 +111,5 @@ The complexity of parsing JSON is often not in the aspects mentioned above, but 
 
 If confused, don't hesitate to grab some pen and paper and make some notes or draw how your JSON structure looks: sometimes it helps to make your data more visual. And the formatter really is your best friend!
 
-Finally, a lot of JSON operations require you to surround them with a `try catch` block. When doing so, make sure to actually print your `JSONException` to the console: the content of the exception will help you determine what went wrong when your parsing fails. 
+Finally, a lot of JSON operations require you to surround them with a `try catch` block. When doing so, make sure to actually print your `JSONException` to the console: the content of the exception will help you determine what went wrong when your parsing fails. If you search for "json" in the logcat it should show you all JSON-related exceptions.
 

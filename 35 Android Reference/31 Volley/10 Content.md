@@ -114,7 +114,51 @@ Let's have a look at the response listener:
 
 What this does is create a **new instance** of the `Response.Listener` class, and providing an implementation for the `onResponse` method. This method is called as soon as the data is received from the web server.
 
-Mind you, the new instance is created, but it is not assigned to a variable. That's why this thing is called an **anonymous listener**. In Android, anonymous listeners are used very often. The thruth is that we don't like it much, because it makes code very confusing. If you have time, try to de-anonymize your listeners as described in the text about [listeners](/android/listeners). But: make your code work first, and only then try to make it nice!
+Mind you, the new instance is created, but it is not assigned to a variable. That's why this thing is called an **anonymous listener**. In Android, anonymous listeners are used very often. The thruth is that we don't like it much, because it makes code very confusing due to nesting. If you have time, try to de-anonymize your listeners as described in the text about [listeners](/android/listeners). But: make your code work first, and only then try to make it nice!
+
+
+## Post request
+
+Sometimes you want to perform a request that also sends something to the server, a POST or a PUT request. To include parameters that have to be included in the request. These parameters are supplied in the form of a key-value pair. To include the data, the request looks slightly different and it is most practical to create its own inner class for it within your helper class to keep the code legible:
+
+* Create a private class that extends `StringRequest`
+* Use CTRL+O to select the appropriate constructor (4 arguments)
+* Use the same menu to override the method `getParams()` as well
+
+```
+        /*
+            Inner class representing the String request of type POST. Notice the method
+            getParams() that is overridden in this class.
+        */
+        private class PostRequest extends StringRequest  {
+
+            // Constructor
+            public PostRequest(int method, String url, Response.Listener<String> listener, Response.ErrorListener errorListener) {
+                super(method, url, listener, errorListener);
+            }
+
+            // Method to supply parameters to the request
+            @Override
+            protected Map<String, String> getParams() {
+
+                Map<String, String> params = new HashMap<>();
+                params.put("name", "Minor Programmeren");
+                params.put("studentcount", "300");
+                return params;
+            }
+        }
+```
+
+Inside the `getParams()` method, which returns a mapping of keys to values, you create a new hashmap and then add the values to it that you want to include in your post request. In this example, we chose to include the name of the program and the expected student count. This map should then be returned at the end of the method.
+
+The creation and starting of the request itself is similar to that of the regular requests, you invoke the constructor you created for your custom class (in this case `PostRequest`) and supply the right parameters. The response and error listeners can be anonymous, but should probably be implemented by the encapsulating helper class (hence the `this`), to avoid clutter. 
+
+        String url = "sampleurl.com/post";
+        RequestQueue queue = Volley.newRequestQueue(context);
+        PostRequest request = new PostRequest(Request.Method.POST, url, this, this);
+        queue.add(request);
+
+It goes without saying that `Request.Method.POST` can be replaced with `Request.Method.PUT` as well, in order to perform a PUT request.
 
 ## References
 

@@ -1,9 +1,9 @@
 # Volley - Json Requests
 
 ## JsonObjectRequest
-You can use `Volley` to create different kinds of requests. In this example, we will take a look at the `JsonObjectRequest` variant, which as the name already gives away, is a request tailored to retrieve a JSON object of some kind. If unfamiliar with JSON, have a look at the [guide on parsing JSON]() before you continue!
+You can use `Volley` to create different kinds of requests. In this example, we will take a look at the `JsonObjectRequest` variant, which as the name already gives away, is a request tailored to retrieve a JSON object of some kind. If unfamiliar with JSON, have a look at the [guide on parsing JSON](https://apps.mprog.nl/android-reference/parsing-json) before you continue!
 
-A `JsonobjectRequest` is constructed similarly to the standard string request outlined in the [basic `Volley` guide](). We create a requestqueue and add the request to it. 
+A `JsonobjectRequest` is constructed similarly to the standard string request outlined in the [basic `Volley` guide](https://apps.mprog.nl/android-reference/volley). We create a requestqueue and add the request to it. 
 
         String url = "https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple";
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -34,9 +34,10 @@ Finally, it once again takes a regular response listener and an errorlistener as
             }
         );
 
-To avoid anonymous listeners like in the snippet below, it is more elegant to use the implements clause and let the class handle the functionality instead. Often, the same class will handle the responses, so we can use the keyword `this` in the constructor to signify that the class will implement the response methods. 
+To avoid anonymous listeners like in the snippet above, it is more elegant to use the implements clause and let the class handle the functionality instead. Often, the same class will handle the responses, so we can use the keyword `this` in the constructor to signify that the class will implement the response methods. 
 
 To make sure that the class can handle the responses, implement the required interfaces:
+
     public class YourClassName implements Response.Listener<JSONObject>, Response.ErrorListener
 
 Now use CTRL+I to generate the appropriate methods: `onErrorResponse()` and `onResponse()`. They should appear in your class:

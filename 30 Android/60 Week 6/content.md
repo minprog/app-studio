@@ -9,6 +9,7 @@ You'll need to read these before implementing your project.
 
 - [Volley](/android-reference/volley)
 - [Parsing JSON](/android-reference/parsing-json)
+- [Picasso](/android-reference/picasso)
 
 
 ## What to do

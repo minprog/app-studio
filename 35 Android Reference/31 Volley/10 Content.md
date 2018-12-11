@@ -59,7 +59,7 @@ You can create the `RequestQueue` in the `OnCreate()` method of your Activity, a
 In your assignments, you'll find instructions on how to make requests.
 
 
-## Post request
+## POST request
 
 To send information to a server, you'll usually use a POST or PUT request. These "methods" signal the web server that we'd like to send information, which the server can then store or use to perform a search.
 
@@ -90,9 +90,9 @@ The information that we send can take the form of key-value pairs, the POST para
 
 That `getParams()` method will be called as soon as the request is ready to submit to the server. Your task is to create a `HashMap` with the parameters that you would like to send to the server and `return` these.
 
-## Creating the POST request
+## Using the POST request
 
-Creating and starting the request works exactly like other requests.
+Creating and starting the request works like other requests.
 
     String url = "sampleurl.com/post";
     RequestQueue queue = Volley.newRequestQueue(context);

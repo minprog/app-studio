@@ -66,10 +66,9 @@ To send information to a server, you'll usually use a POST or PUT request. These
 The information that we send can take the form of key-value pairs, the POST parameters. To provide these parameters, you'll need to **subclass** a `StringRequest`. To do this, make a new class in your project that looks like this:
 
     /*
-        Inner class representing the String request of type POST. Notice the method
-        getParams() that is overridden in this class.
+        Objects of this class can do POST requests with parameters.
     */
-    private class PostRequest extends StringRequest  {
+    public class PostRequest extends StringRequest  {
 
         // Constructor
         public PostRequest(int method, String url, Response.Listener<String> listener, Response.ErrorListener errorListener) {

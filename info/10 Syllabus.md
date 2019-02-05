@@ -3,7 +3,7 @@
 - ding
 {:toc}
 
-*Syllabus, Fall 2018*
+*Syllabus, Spring 2019*
 
 Today's applications are increasingly mobile. Computers are no longer confined
 to desks and laps but instead live in our pockets and hands. This course
@@ -25,7 +25,7 @@ You are expected to complete the provided exercises, attend most office hours, s
 
 - Check if your [personal timetable](https://datanose.nl/) shows App Studio.
 - Read the remainder of this syllabus.
-- Install all required software for [Android](/installation/android) or [iOS](/installation/ios).
+- Install all required software for [Android](/installation/android).
 - Come to the first session to get acquainted to the staff.
 - When in doubt, contact the course's heads at <help@mprog.nl> or speak to your mentor.
 
@@ -47,47 +47,41 @@ A list of the course's staff:
 - Martijn Stegeman (instructor)
 - Renske Talsma (Android)
 - Natasja Wezel (Android)
-- Marijn Jansen (iOS)
-- Emma Hokken (iOS)
 
 
 ## What to do
 
 Every week, exercises and a project will be made available. Exercises get you started, and projects become part of a portfolio of apps. Final grades are determined using the following weights:
 
-| exercises | 10% |
-| projects  | 90% |
+| exercises | 0% |
+| projects  | 100% |
 
 For both exercises and projects, there are seven deadlines. There is also one final deadline for submitting improved versions of your projects for your portfolio.
 
 | number    |    deadline |  
 | --------- | ----------: |  
-| 1         | Fri   2-Nov |  
-| 2         | Fri   9-Nov |  
-| 3         | Wed  14-Nov |  
-| 4         | Wed  21-Nov |  
-| 5         | Wed  28-Nov |  
-| 6         | Wed   5-Dec |  
-| 7         | Wed  12-Dec |  
-| portfolio | Mon  17-Dec |  
+| 1         | Fri   8-Feb |  
+| 2         | Fri  15-Feb |  
+| 3         | Fri  22-Feb |  
+| 4         | Fri   1-Mar |  
+| 5         | Fri   8-Mar |  
+| 6         | Fri  15-Mar |  
+| 7         | Fri  22-Mar |  
+| portfolio | Tue  26-Mar |  
 
 You must complete all projects before the deadline to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
 
 
-### Exercises 
-
-Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
-
-You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours, on or before the deadline.
-
-
-### Projects 
+### Grades 
 
 Each week, you will create an app using the concepts introduced in exercises and tutorials. Grading takes place portfolio-style. At the end of the course, you will created have seven projects and refined those during the weeks after first submitting.
 
 To get credit for each project, demonstrate its functionality on or before that app's deadline. You will receive immediate feedback from the staff and the app's completion will be noted.
 
-Final grading will take place after the final portfolio deadline. Each app will receive a grade according to the following scheme:
+Final grading will take place twice:
+
+- after 22-Feb, your first three apps will be graded and you'll receive feedback
+- after 26-Mar, the final portfolio deadline, apps 4, 5, 6 and 7 will receive a grade according to the following scheme:
 
 | pts | description                                                                          |  
 | --: | ------------------------------------------------------------------------------------ |  
@@ -101,28 +95,32 @@ Final grading will take place after the final portfolio deadline. Each app will 
 To improve and refine your apps for the final deadline, you will need even more feedback, which you will get from other students as well as the staff. It's your responsibility to ask for this feedback during the course!
 
 
+### Exercises 
+
+Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
+
+You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours, on or before the deadline.
+
+
 ## Code reviews
 
-On two days, you'll review your peers' apps and have peers review your own creations. This is an excellent opportunity to get feedback on your portfolio.
-
-| Tue  20-Nov |  
-| Fri  14-Dec |  
+You'll review your peers' apps and have peers review your own creations. This is an excellent opportunity to get feedback on your portfolio.
 
 
 ## Office hours
 
-Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants. Times differ by platform:
+Office hours are opportunities to work on projects and exercise materials alongside the course's teaching assistants.
 
-| weekday                    | Android | iOS    |  
-| -------------------------- | ------- | ------ |  
-| Mondays                    | 10--13  | 11--15 |  
-| Tuesdays (lightly staffed) | 11--13  | 13--15 |  
-| Wednesdays                 | 10--15  | 10--13 |  
+| weekday  | Android |  
+| -------- | ------: |  
+| Mondays  |  11--13 |  
+| Tuesdays |  11--13 |  
+| Fridays  |   9--11 |  
 
 
 ## Mentoring
 
-You are expected to make an appointment with your assigned mentor on Fridays once every two weeks. Your mentor will help you get started, provide you with additional feedback for your portfolio and can answer most practical questions.
+You are expected to make an appointment with your assigned mentor on Fridays every week. Your mentor will help you get started, provide you with additional feedback for your portfolio and can answer most practical questions.
 
 
 ## Tutoring 
@@ -132,21 +130,7 @@ For students who avail themselves of the course's other resources but still find
 
 ## Books 
 
-
-### Android
-
 No books are required for students of the Android platform, but the following book may provide additional learning material: Bill Phillips, Chris Stewart and Kristin Marsicano, [*Android Programming, the Big Nerd Ranch Guide*](https://www.bignerdranch.com/books/android-programming/).
-
-
-### iOS
-
-Students of the iOS platform need to acquire (for free) one book in particular:
-
-- [*App Development with Swift*](https://itunes.apple.com/nl/book/app-development-with-swift/id1219117996?l=en&mt=11)
-
-The book below may provide additional learning material:
-
-- [*The Swift Programming Language*](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
 
 
 ## Collaboration

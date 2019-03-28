@@ -62,7 +62,7 @@ For this project, we'll only work with the two most important files in your Andr
 
 No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as `body.png`, `ears.png`, `hat.png`. Let's add those to the project.
 
-1. Just for a second, switch to the Project View using this dropdown:
+1. Just for a second, switch to the Project View using this dropdown you can find on the left hand side of your IDE:
 
     ![](project-view.png)
 
@@ -84,8 +84,7 @@ Let's design the interface:
 
 4.  Also add a `GridLayout` to the screen. That one nicely fits the idea of presenting a grid of checkboxes.
 
-    > Note that the activity already contained a `ConstraintLayout`. Now you've added to different
-    types of layout *into* that top-level layout.
+    > Note that the activity already contained a `ConstraintLayout`. Now you've added to different types of layout *into* that top-level layout.
 
 5.  Roughly position both layouts like they are in the picture above. Later, we'll add constraints for automatically positioning them on different screen sizes.
 
@@ -97,22 +96,26 @@ Let's design the interface:
 
     For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose the blue link "View all attributes" all the way down the Attributes sidebar.
     
-    > Tip: because all images are supposed to be on top of each other, it's hard to select
-    individual items. In that case, you can use the component tree to select the image views. You
-    can even select multiple views and set the attributes for all of them:
+    > Tip: because all images are supposed to be on top of each other, it's hard to select individual items. In that case, you can use the component tree to select the image views. You can even select multiple views and set the attributes for all of them:
     
     ![](component.png)
 
-8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to mimic the screen shot at the top of this assignment.
+8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to reflect the body parts that are present in the images.
 
-9.  Finally, we'll need to add constraints. In the component tree, select the `gridLayout` and the `frameLayout`. Right-click and select Chain > Create Vertical Chain. This chain is the basis for automatic layout.
+9.  Finally, we'll need to add constraints. In the component tree, select the `gridLayout` and the `frameLayout`. Right-click and select Chain > Create Vertical Chain. This chain is the basis for an automatic layout.
 
 10. Using your experience from the Android Lab about constraint layouts, make the screen even better, and try different phone sizes to check that the layout fits nicely for each of them!
 
 
 ## Connecting everything with code
 
-First, some final setup. Checkboxes can *do* something when tapped on the phone. Select one of those checkboxes, and in the attributes sidebar find the `onClick` attribute. Select it, and enter `checkClicked` as its value: this is the name of the method that will be called whenever someone selects or unselects the checkbox. Do this for each of the checkboxes.
+First, some final setup. Checkboxes can *do* something when tapped on the phone. In Android, even without programming something, they can be checked on and off visually, but that is not particularly useful if there is no further behaviour attached. 
+
+Select one of those checkboxes, and in the attributes sidebar find the `onClick` attribute. This attribute allows you to attach a method to a view (in this case a checkbox) which you can then use to program specific behaviour that should be executed when someone clicks on it. Select the `onClick` attribute, and enter `checkClicked` as its value: this is the name of the method that will be called whenever someone selects or unselects the checkbox. Do this for each of the checkboxes. 
+
+All of these checkboxes are now connected to the same `checkClicked` method, which we will use to make our program actually do something when someone checks one of them! 
+
+> In Android, there is a separation between the layout files and the program logic. The layout files, which are of the `xml` format are not where you write your actual program. They are a mostly static representation of what the app should look like. In the activities, which are `.java` files, you will actually write code that affects the app's run time behaviour.  
 
 1.  Now, switch to the code, by double-clicking `MainActivity` in the Java folder in the project browser.
 
@@ -124,7 +127,7 @@ First, some final setup. Checkboxes can *do* something when tapped on the phone.
 
 Now, every single checkbox is connected to the same method. How do we figure out which one it is? We only have a single clue: the parameter `View v`. This parameter is a **reference** to our checkbox view on the screen (the one that was clicked). However, this parameter is of type `View`, not of type `CheckBox`. It is common (and sometimes needed) to convert this parameter before doing anything else with it.
 
-1.  To access all methods from the `CheckBox`, we have to cast the parameter. Create a temporary variable to hold the `CheckBox`:
+1.  To access all methods from the `CheckBox` class, we have to cast the parameter. Create a temporary variable to hold the `CheckBox`:
 
         CheckBox checkbox = (CheckBox) v;
 

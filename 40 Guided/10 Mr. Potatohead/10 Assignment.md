@@ -151,7 +151,7 @@ Finally, we need to be able to switch some of the images on and off, depending o
 
 2.  As soon as you have a reference to one of the images, you can set whether or not it (or any other control) is visible on the screen by calling its `setVisibility()` method. The `setVisibility` method accepts a parameter such as `View.VISIBLE` or `View.INVISIBLE`. There is also a `getVisibility()` method if you need to check whether a widget is currently visible.
 
-## Finishing the app
+## Finishing the checkbox management
 
 There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though! It is fine to have a working solution that is slightly inefficient first and improve from there. 
 

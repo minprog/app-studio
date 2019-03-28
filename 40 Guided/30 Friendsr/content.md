@@ -149,7 +149,7 @@ Make sure you have selected one of your Java classes in the Android browser, the
 
 > Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
 
-- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like the following snippet of code, this tells Java that our list is supposed to be a list of `Friend` objects, specifically.
+- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like the following snippet of code, this tells Java that our list we want to use the adapter for is supposed to be a list of `Friend` objects, specifically.
 
 ~~~ java
         public class FriendsAdapter extends ArrayAdapter<Friend>

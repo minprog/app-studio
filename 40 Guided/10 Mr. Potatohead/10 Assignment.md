@@ -153,7 +153,7 @@ Finally, we need to be able to switch some of the images on and off, depending o
 
 ## Finishing the app
 
-There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though!
+There's only a little bit of Java code to write, in order to have each checkbox show and hide the corresponding image. Because we use lots of separate images, expect your code to be slightly inefficient in terms of lines of code! It's up to you how to handle each of the cases. Start simple though! It is fine to have a working solution that is slightly inefficient first and improve from there. 
 
 
 ## Memory management

@@ -22,6 +22,7 @@ You'll need to read these to implement parts of your project:
 - [Multiple activities](/android-reference/multiple-activities)
 - [Listeners](/android-reference/listeners)
 - [Persistence](/android-reference/persistence)
+- [Adapters](https://github.com/Vluuks/AndroidPractice/tree/labified/Week3/Link)
 
 
 ## Goals

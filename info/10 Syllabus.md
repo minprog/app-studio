@@ -80,7 +80,7 @@ To get credit for each project, demonstrate its functionality on or before that 
 
 Final grading will take place twice:
 
-- after 22-Feb, your first three apps will be graded and you'll receive feedback
+- after 22-Feb, your first three apps will be graded and you'll receive feedback (these apps will not be re-graded later)
 - after 26-Mar, the final portfolio deadline, apps 4, 5, 6 and 7 will receive a grade according to the following scheme:
 
 | pts | description                                                                          |  
@@ -97,7 +97,7 @@ To improve and refine your apps for the final deadline, you will need even more 
 
 ### Exercises 
 
-Exercises teach you the basics of programming iOS or Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
+Exercises teach you the basics of programming in Android. Earlier in the course, the exercises focus on learning a new programming language and reinforcing your knowledge of object-oriented design. Later, emphasis shifts to more complex parts of the programming platform, allowing you to make more interesting applications.
 
 You can earn points for completing exercises. You should demonstrate your finished exercises to one of the staff during office hours, on or before the deadline.
 

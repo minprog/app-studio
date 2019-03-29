@@ -60,14 +60,14 @@ For both exercises and projects, there are seven deadlines. There is also one fi
 
 | number    |    deadline |  
 | --------- | ----------: |  
-| 1         | Fri   8-Feb |  
-| 2         | Fri  15-Feb |  
-| 3         | Fri  22-Feb |  
-| 4         | Fri   1-Mar |  
-| 5         | Fri   8-Mar |  
-| 6         | Fri  15-Mar |  
-| 7         | Fri  22-Mar |  
-| portfolio | Tue  26-Mar |  
+| 1         | Thu   4-Apr |  
+| 2         | Thu  11-Apr |  
+| 3         | Thu  18-Apr |  
+| 4         | Thu   2-May |  
+| 5         | Thu   9-May |  
+| 6         | Thu  16-May |  
+| 7         | Thu  23-May |  
+| portfolio | Mon  27-May |  
 
 You must complete all projects before the deadline to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads. Also, no retakes are possible for any part of the course. You may re-take the course as a whole in a later semester.
 
@@ -80,8 +80,8 @@ To get credit for each project, demonstrate its functionality on or before that 
 
 Final grading will take place twice:
 
-- after 22-Feb, your first three apps will be graded and you'll receive feedback (these apps will not be re-graded later)
-- after 26-Mar, the final portfolio deadline, apps 4, 5, 6 and 7 will receive a grade according to the following scheme:
+- after 18-Apr, your first three apps will be graded and you'll receive feedback (these apps will not be re-graded later)
+- after 27-May, the final portfolio deadline, apps 4, 5, 6 and 7 will receive a grade according to the following scheme:
 
 | pts | description                                                                          |  
 | --: | ------------------------------------------------------------------------------------ |  
@@ -114,8 +114,7 @@ Office hours are opportunities to work on projects and exercise materials alongs
 | weekday  | Android |  
 | -------- | ------: |  
 | Mondays  |  11--13 |  
-| Tuesdays |  11--13 |  
-| Fridays  |   9--11 |  
+| Thursday |  11--13 |  
 
 
 ## Mentoring

@@ -163,15 +163,19 @@ The `rawQuery` method takes two arguments, the first one is the query with place
 
 Of course since we are selecting everything, we have no placeholders or arguments, so the second argument of `rawQuery` can be `null`!
 
-- Use your custom `entry_row.xml` and create a new class `EntryAdapter` inheriting from `ResourceCursorAdapter`. Implement a constructor `public EntryAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
+- Use your custom `entry_row.xml` and create a new class `EntryAdapter` inheriting from `ResourceCursorAdapter`. Using the override dialog (`CTRL+O`) implement a constructor `public EntryAdapter(Context context, Cursor cursor)`. Call `super` and pass on the `context` and the `cursor`, and also the `id` of the layout that you just made. Tip: layout IDs start with `R.layout` and not `R.id`!
 
-- Implement the abstract method `bindView()`, which takes a `View` and fills the right elements with data from the cursor.
+- Also override and implement the method `bindView()`, which takes a `View` and fills the right elements with data from the cursor. 
 
-     - You can use `Cursor.getInt(columnIndex)` to retrieve the value of a column as an integer.
-     - You can use `Cursor.getString(columnIndex)` to retrieve the value of a column as a string.
-     - You can use `Cursor.getColumnIndex(name)` to get the column index for a column named `name`.
-     - You can call `view.findViewById()` to get references to the controls in the row layout xml.
+     - You can use `yourCursor.getColumnIndex(name)` to get the column index for a column named `name`.
+     - You can use `yourCursor.getInt(columnIndex)` to retrieve the value of a column that you know the index of as an integer.
+     - You can use `yourCursor.getString(columnIndex)` to retrieve the value of a column that you know the index of as a string.
+     - You can call `view.findViewById()` to get references to the controls in `entry_row.xml`.
 
+If unsure how the adapter works, take a look at earlier projects and their references. While syntax is sometimes different, the general pattern of an adapter is always similar. 
+
+> If you get compiler issues because of the auto generated `@NonNull` or `@Nullable` annotation, you can remove the `@androidx.annotation.@NonNull` part to fix the compiler errors. It is not necessary for the code, merely a flag like `@Override`. 
+     
 - In the `onCreate()` of the `MainActivity`, use the `EntryDatabase` to get all records from the database, make a new `EntryAdapter` and link the `ListView` to the adapter.
 
 The app should now display all example entries from the database! Think about how you want to represent the mood that is associated with the journal entry. It is stored in the database in plaintext, but in the adapter you can think of a way to show something else, like an image/emoji representing the mood. 
@@ -195,6 +199,7 @@ Your app should now allow you to insert new entries into the database, which sho
 - In your database class, write a method that accepts a `long id` as a parameter. 
 - Using this parameter, call a query that removes the entry with that id from the database. Why do you think we are removing by id and not by title, for example?
 - For Android, delete actions are usually tied to long clicking items. Add code to your `OnItemLongClickListener` class from `MainActivity` that deletes the selected item from the database. If unsure how to retrieve what item was clicked, refer to the section 'Extract what actually was clicked on' from the [Friendsr](https://apps.mprog.nl/guided/friendsr) project. 
+
 
 Since we have a list of `Cursor` objects in our adapter, the item returned by `getItemAtPosition` is of the type `Cursor`. Then, when you have the cursor object, you can extract the values of the columns like you did in the `bindView()` method of your adapter. 
 

@@ -12,7 +12,7 @@ There are several ways for the state to be **lost**:
 
 ## A quick hack
 
-A quick way to retain your activity's GUI state on rotation is to set the [`configChanges`](https://developer.android.com/guide/topics/manifest/activity-element.html#config) attribute of the activity in `AndroidManifest.xml`. Mind that this does not solve other cases of state that goes lost!
+A quick way to retain your activity's GUI state on rotation is to set the [`configChanges`](https://developer.android.com/guide/topics/manifest/activity-element.html#config) attribute of the activity in `AndroidManifest.xml`. Mind that this does not solve other cases of state that go lost! It will only keep the lay out state, but not other variables in your Activity that you might have wanted to keep... It is therefore not a suitable solution. 
 
     <activity android:name=".MainActivity"
         android:configChanges="orientation|screenSize"
@@ -20,9 +20,9 @@ A quick way to retain your activity's GUI state on rotation is to set the [`conf
 
 ## Manually saving instance state
 
-The `Activity` class defines two methods that you might **override**, which allow you to save and restore parts of the instance state that you're interested in. Usually, you will save any date that cannot be automatically recreated by the app (such as user input).
+In order to actually preserve state, the `Activity` class defines two methods that you might **override**, (you can use the `CTRL+O` shortcut to do this) which allow you to save and restore parts of the instance state that you're interested in. Usually, you will save any date that cannot be automatically recreated by the app (such as user input).
 
-When you add an override to your activity, you get access to a `Bundle` object, that allows you to save a variety of data types. In this example, we save a hardcoded `true` value:
+When you add an override to your activity, you get access to a `Bundle` object, that allows you to save a variety of data types. In this example, we save a hardcoded `true` value. The value is stored in the bundle under a label, which we have called `"checkedBox"`. This format is common and also called a key-value pair, where `"checkedBox"` is the key and `true` the value. We need this key to later retrieve it when we want to restore our state. 
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -30,7 +30,9 @@ When you add an override to your activity, you get access to a `Bundle` object, 
         outState.putBoolean("checkedBox", true);
     }
 
-To restore those values, add another override:
+`onSaveInstanceState` is called right before the phone screen is going into another state, for example because you turn the screen. After this operation has finished and the phone has transitioned from for example portrait to landscape mode, another method is called, this is the `onRestoreInstanceState` method. Alternatively, since `onCreate()` is called again as well, you can choose to restore state inside `onCreate()`. 
+
+To use `onRestoreInstanceState`() to restore the values you saved before, add another override:
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ To restore those values, add another override:
 
 ![embed](https://player.vimeo.com/video/206083320)
 
-Note: In newer versions of Android Studio, other versions of `onSaveInstanceState` and `onRestoreInstanceState` exist, that take multiple arguments. Make sure that you use the exact declaration as shown above, or it will not work!
+> Note: In newer versions of Android Studio, other versions of `onSaveInstanceState` and `onRestoreInstanceState` exist, that take multiple arguments. Make sure that you use the exact declaration as shown above, or it will not work!
 
 ## Saving data from your own classes
 

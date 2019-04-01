@@ -132,7 +132,9 @@ Because a `GridView` is just the container for our items, the layout for the ite
 
 - For the root element, specify `LinearLayout`. No need to change other options.
 
-- We have some wishes as to what the items on our grid should look like. Ideally, we would want to show at least a picture and the name of our friend. Add those to the layout.
+- We have some wishes as to what the items on our grid should look like. Ideally, we would want to show at least a picture and the name of a friend. Add those to the layout.
+
+This layout file serves as a **template** for the adapter. The picture and text you specify in `grid_item.xml` are the ones that will be rendered when the adapter does not specify something else at run time. But since we will use the adapter to dynamically specify that each rendition of a grid item should contain that friend's specific name and photo, you can just use one of the friends in the xml to see what the layout would look like. 
 
 Tip: add some padding to your layout! Click "Show more attributes" if needed. Add padding to the root `LinearLayout`, something like 12dp (12 device pixels). You can also add padding to views within the layout, to make sure the views don't stick together too much.
 
@@ -147,7 +149,7 @@ Make sure you have selected one of your Java classes in the Android browser, the
 
 > Did you notice that Android classes always have a name that **ends** with the kind of class it is? `MainActivity` and `FriendsAdapter` are examples. However, the `Friend` class is special: it is not of any special Android kind, so it is simply called `Friend`.
 
-- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like the following snippet of code, this tells Java that our list is supposed to be a list of `Friend` objects, specifically.
+- Change the declaration of the class to subclass `ArrayAdapter<Friend>` like the following snippet of code, this tells Java that our list we want to use the adapter for is supposed to be a list of `Friend` objects, specifically.
 
 ~~~ java
         public class FriendsAdapter extends ArrayAdapter<Friend>
@@ -160,12 +162,12 @@ Make sure you have selected one of your Java classes in the Android browser, the
 - Finally, hit `CTRL+O` one more time to override `getView()` (find it in the list), which is the method where we will determine what should be shown on the screen for each item in our list. 
 
 
-> If you get compiler issues because of the `@NonNull` or `@Nullable` annotation, you can remove the `@androidx.annotation.@NonNull` part to fix the compiler errors. It is not necessary for the code, merely a flag like `@Override`. 
+> If you get compiler issues because of the auto generated `@NonNull` or `@Nullable` annotation, you can remove the `@androidx.annotation.@NonNull` part to fix the compiler errors. It is not necessary for the code, merely a flag like `@Override`. 
 
 
-Take a look at the `getView()` method that was just generated. This method will be called every time a new grid item is to be displayed (for example, when scrolling). The method gets three arguments. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
+Take a look at the `getView()` method that was just generated. This method will be called every time a new grid item is to be displayed (for example, when scrolling) and is based on the layout we defined in `grid_item.xml`. The method gets three arguments. The first argument `position` indicates which item in the list we'd like to show. As usual, this position is zero-based.
 
-We'd like to load a specific layout and show the data we're interested in. This is where that happens. For reasons of efficiency, the layouts in a list are recycled. As we scroll up, views from the top (that disappear) are moved to the bottom to show new data. As the grid is shown for the first time, however, we'll need to load the layout for each new grid item.
+We'd like to load a specific layout and show the data we're interested in. This is where that happens. For reasons of efficiency, the layouts in a list are recycled. As we scroll up, views from the top (that disappear) are moved to the bottom to show new data. As the grid is shown for the first time, however, we'll need to load the layout for each new grid item that cannot be recycled.
 
 Replace the `return super.getView...` by the following code:
 

@@ -52,11 +52,11 @@ Your task is to build an app according to the description above. On top of that,
 
 ## Getting started
 
-1. Create a new project, using this pattern as a name: `studentname-pset2`.
+1. Create a new project, called `MadLibs`.
 
 2. Share your project on GitHub. 
 
-3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) and import them into your project.
+3. Download the provided files ([Android](madlibs_android.zip)/[iOS](madlibs_ios.zip)) unzip them and import them into your project.
 
 4. Carefully read the provided code. What does it do? What do you still need to implement? 
 

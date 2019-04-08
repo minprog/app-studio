@@ -62,12 +62,9 @@ Watch the movie to understand how to replace the layout and connect code to butt
 
 <iframe src="https://player.vimeo.com/video/211268580" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+1.  You can replace the type of the **root layout** for a screen by selecting the root layout in the component tree and right clicking it. Then select **Convert view..** and then pick **LinearLayout**. 
 
-1.  You can only replace the **root layout** for a screen by editing the underlying XML file. Use the tabs at the bottom of the layout editor to switch to **text mode**:
-
-    ![](switch-text.png)
-
-2.  On the second line, delete the `android.support.constraint.ConstraintLayout` and replace it by `LinearLayout`. The closing tag on the last line should be updated automatically.
+> If you cannot alter the layout using the technique above (in some older versions of Android Studio) open the text/XML representation of the layout file. On the second line, delete the `android.support.constraint.ConstraintLayout` and replace it by `LinearLayout`. The closing tag on the last line should be updated automatically.
 
 3.  Switch back to **design mode**. Select the LinearLayout in the component tree and set its `orientation` attribute to vertical. This way, it will distribute all embedded views over the height of the screen.
 
@@ -75,7 +72,7 @@ Watch the movie to understand how to replace the layout and connect code to butt
 
 5.  Add 9 buttons to the GridLayout. Also, add 1 button directly to the LinearLayout, below the grid. Don't worry if that last button is currently invisible.
 
-4.  Select the `GridLayout`, click **view all attributes** and set the `columnCount` to 3, so the grid will neatly order the buttons.
+4.  Select the `GridLayout`, click **view all attributes** and set the `columnCount` to 3, so the grid will neatly order the buttons. It might be necessary to also tell the buttons to which row and column they belong, using `layout_row` and `layout_column` respectively. Mind you, they are zero indexed!
 
 6.  Let's also make all buttons the same size. Select all buttons in the component tree and set these properties:
 
@@ -102,7 +99,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
 
 1.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
 
-2.  In the `GameState` enum, add the following constants:
+2.  In the `GameState` enum, copy and paste the snippet below. These will be the constants of this enum, representing the different states of the game. 
 
         IN_PROGRESS,
         PLAYER_ONE,
@@ -111,7 +108,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
 
 3.  Go to **File > New > New Java Class...**. Enter the name `TileState` and kind `Enum`. Leave other settings unchanged and press OK.
 
-4.  In the `TileState` enum, add the following constants:
+4.  In the `TileState` enum, copy and paste the snippet below. These will be the constants of this enum, representing the state of a particular tile.
 
         BLANK,
         CROSS,

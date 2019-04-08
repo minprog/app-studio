@@ -102,7 +102,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
 
 1.  Go to **File > New > New Java Class...**. Enter the name `GameState` and kind `Enum`. Leave other settings unchanged and press OK.
 
-2.  In the `GameState` enum, add the following constants:
+2.  In the `GameState` enum, copy and paste the snippet below. These will be the constants of this enum, representing the different states of the game. 
 
         IN_PROGRESS,
         PLAYER_ONE,
@@ -111,7 +111,7 @@ We'll create a Game class later on, but first, we'll define two enums to specify
 
 3.  Go to **File > New > New Java Class...**. Enter the name `TileState` and kind `Enum`. Leave other settings unchanged and press OK.
 
-4.  In the `TileState` enum, add the following constants:
+4.  In the `TileState` enum, copy and paste the snippet below. These will be the constants of this enum, representing the state of a particular tile.
 
         BLANK,
         CROSS,
